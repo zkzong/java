@@ -2,15 +2,15 @@
 [![Build Status](https://travis-ci.org/zkzong/java.svg?branch=master)](https://travis-ci.org/zkzong/java)
 [![codecov](https://codecov.io/gh/zkzong/java/branch/master/graph/badge.svg)](https://codecov.io/gh/zkzong/java)
 
-# javabasics
+## javabasics
 
 Java基础知识
 
-## algorithm 算法
+### algorithm 算法
 
-## collection 集合
+### collection 集合
 
-## designpattern 设计模式
+### designpattern 设计模式
 
 com.zkzong.designpattern.zen.DynamicProxy 动态代理：
 要实现动态代理的首要条件是：被代理类必须实现一个接口
@@ -33,37 +33,37 @@ com.zkzong.designpattern.zen.factory.simplefactory.section5
 延迟初始化
 com.zkzong.designpattern.zen.factory.simplefactory.section6
 
-## ehcache
+### ehcache
 
-## interview 面试
+### interview 面试
 
-## jvm
+### jvm
 
-## reflect
+### reflect
 
-### Class类提供了四个public方法，用于获取某个类的构造方法
+#### Class类提供了四个public方法，用于获取某个类的构造方法
 + Constructor getConstructor(Class[] params) 根据构造函数的参数，返回一个具体的具有public属性的构造函数
 + Constructor getConstructors() 返回所有具有public属性的构造函数数组
 + Constructor getDeclaredConstructor(Class[] params) 根据构造函数的参数，返回一个具体的构造函数（不分public和非public属性）
 + Constructor getDeclaredConstructors() 返回该类中所有的构造函数数组（不分public和非public属性）
 
-### 四种获取成员方法的方法
+#### 四种获取成员方法的方法
 + Method getMethod(String name, Class[] params) 根据方法名和参数，返回一个具体的具有public属性的方法
 + Method[] getMethods() 返回所有具有public属性的方法数组
 + Method getDeclaredMethod(String name, Class[] params) 根据方法名和参数，返回一个具体的方法（不分public和非public属性）
 + Method[] getDeclaredMethods() 根据方法名和参数，返回一个具体的方法（不分public和非public属性）
 
-### 四种获取成员属性的方法
+#### 四种获取成员属性的方法
 + Field getField(String name) 根据变量名，返回一个具体的具有public属性的成员变量
 + Field[] getFields() 返回具有public属性的成员变量的数组
 + Field getDeclaredField(String name) 根据变量名，返回一个成员变量（不分public和非public属性）
 + Field[] getDeclaredFields() 返回所有成员变量组成的数组（不分public和非public属性）
 
-## test
+### test
 
-## thinkinginjava Java编程思想
+### thinkinginjava Java编程思想
 
-## thread 多线程
+### thread 多线程
 
 synchronized是Java中的关键字，是一种同步锁。它修饰的对象有以下几种：
 1. 修饰一个代码块，被修饰的代码块称为同步语句块，其作用的范围是大括号{}括起来的代码，作用的对象是调用这个代码块的对象；
@@ -92,78 +92,78 @@ Callable<V> 是 JDK1.5 时添加的类，为的就是解决 Runnable 的痛点�
 CallableTest
 
 
-# thirdparty
+## thirdparty
 
-## apache commons
+### apache commons
 
-## common
+### common
 
 公共
 
-## elastic-job
+### elastic-job
 分布式定时任务
 
-## guava
+### guava
 
-## json
+### json
 
-### fastjson
-### gson
-### jackson
-### sfjson
+#### fastjson
+#### gson
+#### jackson
+#### sfjson
 
-## lombok
+### lombok
 IDE需要安装lombok插件，否则编译报错
 
-## mockito
+### mockito
 
-## okhttp
+### okhttp
 
-## orika
+### orika
 根据字段名称赋值，类型不一样也可以赋值。
 
-## pdf
+### pdf
 
-### itext
+#### itext
 
-### pdf2image
+#### pdf2image
 使用pdfbox，把pdf转换成图片
 
 可以把整个pdf转成一张图片，也可以每页pdf转成一张图片
 
-## pinyin4j
+### pinyin4j
 
-## poi
+### poi
 
-## snowflake
+### snowflake
 雪花算法
 + struqt-unique-id
 
-## spring
+### spring
 spring工具类
 + BeanUtils
 
-## trove
+### trove
 
 使用lombok
 
 
-# library
+## library
 
 常用代码
 
-## file-type
+### file-type
 校验文件类型
 
-## image
+### image
 - 图片和字符串相互转换
 
-## pdf
+### pdf
 - pdf和字符串相互转换
 - pdf转成图片
 
-## properties
+### properties
 读取配置文件
 
-### Properties
-### ResourceBundle
+#### Properties
+#### ResourceBundle
