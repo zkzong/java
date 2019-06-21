@@ -110,7 +110,9 @@ CallableTest
 #### fastjson
 #### gson
 #### jackson
-#### sfjson
+#### json-lib
+#### json-perform-test
+使用JMH基准测试
 
 ### lombok
 IDE需要安装lombok插件，否则编译报错
