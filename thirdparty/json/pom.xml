@@ -17,7 +17,8 @@
         <module>fastjson</module>
         <module>gson</module>
         <module>jackson</module>
-        <module>sfjson</module>
+        <module>json-lib</module>
+        <module>json-perform-test</module>
     </modules>
 
     <properties>
