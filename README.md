@@ -91,6 +91,8 @@ RunnableTest
 Callable<V> 是 JDK1.5 时添加的类，为的就是解决 Runnable 的痛点（没有返回值和不能抛出异常）。
 CallableTest
 
+#### sms-batch
+使用多线程批量发送短信
 
 ## thirdparty
 
