@@ -46,16 +46,14 @@ class Consumer extends Thread {
 //I am Producer : Produced Item 4
 
 
-// 没有调用yield()方法情况下的输出，去掉优先级
+// 调用yield()方法情况下的输出，去掉优先级
 //I am Producer : Produced Item 0
 //I am Consumer : Consumed Item 0
-//I am Consumer : Consumed Item 1
 //I am Producer : Produced Item 1
-//I am Consumer : Consumed Item 2
+//I am Consumer : Consumed Item 1
 //I am Producer : Produced Item 2
-//I am Consumer : Consumed Item 3
+//I am Consumer : Consumed Item 2
 //I am Producer : Produced Item 3
-//I am Consumer : Consumed Item 4
+//I am Consumer : Consumed Item 3
 //I am Producer : Produced Item 4
-
-
+//I am Consumer : Consumed Item 4
