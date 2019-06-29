@@ -34,7 +34,6 @@
             <artifactId>bcprov-jdk15</artifactId>
             <version>1.46</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.bouncycastle/bcmail-jdk15on -->
         <dependency>
             <groupId>org.bouncycastle</groupId>
             <artifactId>bcmail-jdk15on</artifactId>

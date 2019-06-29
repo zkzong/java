@@ -17,6 +17,11 @@ public class PdfOptTest {
     }
 
     @Test
+    public void simple() throws Exception {
+        pdfOpt.simple("../pdf/simple.pdf", "../pdf/simple-output.pdf");
+    }
+
+    @Test
     public void fillTemplateSimple() throws Exception {
         pdfOpt.fillTemplateSimple("../pdf/template.pdf", "../pdf/output1.pdf");
     }

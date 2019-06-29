@@ -27,6 +27,23 @@ import java.util.Map;
 
 public class PdfOpt {
 
+    public void simple(String templateFile, String outputFile) throws IOException, DocumentException {
+        // 模版文件目录
+        PdfReader reader = new PdfReader(templateFile);
+        // 生成的输出流
+        PdfStamper ps = new PdfStamper(reader, new FileOutputStream(outputFile));
+        //ByteArrayOutputStream bos = new ByteArrayOutputStream();
+        //PdfStamper ps = new PdfStamper(reader, bos);
+
+        AcroFields acroFields = ps.getAcroFields();
+        acroFields.setField("name", "在路上");
+
+        ps.setFormFlattening(true);
+
+        ps.close();
+        reader.close();
+    }
+
     public void fillTemplateSimple(String templateFile, String outputFile) throws Exception {
         FileOutputStream fos = null;
 
