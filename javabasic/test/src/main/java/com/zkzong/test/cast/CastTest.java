@@ -15,6 +15,7 @@ public class CastTest {
     public void f2s() {
         father = son;
         son = (Son) fs;
+        // todo java 8不报错
         son = (Son) father; // 报错
     }
 }
