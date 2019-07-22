@@ -34,6 +34,7 @@
         <module>snowflake</module>
         <module>pdf</module>
         <module>orika</module>
+        <module>junit</module>
     </modules>
 
     <dependencies>
