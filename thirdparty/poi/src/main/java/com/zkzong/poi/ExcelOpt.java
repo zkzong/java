@@ -23,7 +23,7 @@ public class ExcelOpt {
 
     @Test
     public void readExcel() throws IOException {
-        File file = new File("T1区域表.xlsx");
+        File file = new File("region.xlsx");
         InputStream is = new FileInputStream(file);
         XSSFWorkbook xssfWorkbook = new XSSFWorkbook(is);
         for (int numSheet = 0; numSheet < xssfWorkbook.getNumberOfSheets(); numSheet++) {
@@ -47,6 +47,15 @@ public class ExcelOpt {
         }
     }
 
+    /**
+     * 读取数字时自动带.0
+     * 解决方法有两种：
+     * 1. cell.setCellType(CellType.STRING);
+     * 2. DataFormatter dataFormatter = new DataFormatter();
+     * String value = dataFormatter.formatCellValue(cell);
+     *
+     * @throws IOException
+     */
     @Test
     public void readNumber() throws IOException {
         File file = new File("number.xlsx");
@@ -62,6 +71,7 @@ public class ExcelOpt {
                 for (Cell cell : row) {
                     // 第1种方式
                     cell.setCellType(CellType.STRING);
+                    System.out.println(cell);
                     // 第2种方式
                     String value = dataFormatter.formatCellValue(cell);
                     System.out.println(value);
@@ -69,4 +79,81 @@ public class ExcelOpt {
             }
         }
     }
+
+    @Test
+    public void formula() throws IOException {
+        File file = new File("formula.xlsx");
+        InputStream is = new FileInputStream(file);
+        XSSFWorkbook xssfWorkbook = new XSSFWorkbook(is);
+        for (Sheet sheet : xssfWorkbook) {
+            String sheetName = sheet.getSheetName();
+            int lastRowNum = sheet.getLastRowNum();
+            System.out.println("SheetName = " + sheetName + "，总共有 " + (lastRowNum + 1) + " 行");
+
+            for (Row row : sheet) {
+                for (Cell cell : row) {
+                    switch (cell.getCellType()) {
+                        case STRING:
+                            System.out.print("STRING ");
+                            String stringCellValue = cell.getStringCellValue();
+                            System.out.println(stringCellValue);
+                        case NUMERIC:
+                            System.out.print("NUMERIC ");
+                            double numericCellValue = cell.getNumericCellValue();
+                            System.out.println(numericCellValue);
+                            break;
+                        case FORMULA:
+                            System.out.print("FORMULA ");
+                            String formulaCellValue = cell.getStringCellValue();
+                            System.out.println(formulaCellValue);
+                            break;
+                        default:
+                            System.out.print("default ");
+                            String value = cell.getStringCellValue();
+                            System.out.println(value);
+                            break;
+                    }
+                }
+            }
+        }
+        xssfWorkbook.close();
+    }
+
+    @Test
+    public void formula2() throws IOException {
+        File file = new File("formula.xlsx");
+        InputStream is = new FileInputStream(file);
+        XSSFWorkbook xssfWorkbook = new XSSFWorkbook(is);
+        for (int i = 0; i < xssfWorkbook.getNumberOfSheets(); i++) {
+            XSSFSheet sheet = xssfWorkbook.getSheetAt(i);
+            for (int j = 0; j <= sheet.getLastRowNum(); j++) {
+                XSSFRow row = sheet.getRow(j);
+                for (int k = 0; k < row.getLastCellNum(); k++) {
+                    XSSFCell cell = row.getCell(k);
+                    switch (cell.getCellType()) {
+                        case STRING:
+                            System.out.print("STRING ");
+                            String stringCellValue = cell.getStringCellValue();
+                            System.out.println(stringCellValue);
+                        case NUMERIC:
+                            System.out.print("NUMERIC ");
+                            double numericCellValue = cell.getNumericCellValue();
+                            System.out.println(numericCellValue);
+                            break;
+                        case FORMULA:
+                            System.out.print("FORMULA ");
+                            String formulaCellValue = cell.getRawValue();
+                            System.out.println(formulaCellValue);
+                            break;
+                        default:
+                            System.out.print("default ");
+                            String value = cell.getStringCellValue();
+                            System.out.println(value);
+                            break;
+                    }
+                }
+            }
+        }
+    }
+
 }
