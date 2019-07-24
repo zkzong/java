@@ -66,13 +66,13 @@ public class ExcelOpt {
             int lastRowNum = sheet.getLastRowNum();
             System.out.println("SheetName = " + sheetName + "，总共有 " + lastRowNum + " 行");
 
-            DataFormatter dataFormatter = new DataFormatter();
             for (Row row : sheet) {
                 for (Cell cell : row) {
                     // 第1种方式
                     cell.setCellType(CellType.STRING);
                     System.out.println(cell);
                     // 第2种方式
+                    DataFormatter dataFormatter = new DataFormatter();
                     String value = dataFormatter.formatCellValue(cell);
                     System.out.println(value);
                 }
@@ -99,12 +99,18 @@ public class ExcelOpt {
                             System.out.println(stringCellValue);
                         case NUMERIC:
                             System.out.print("NUMERIC ");
-                            double numericCellValue = cell.getNumericCellValue();
-                            System.out.println(numericCellValue);
+                            DataFormatter dataFormatter = new DataFormatter();
+                            String cellValue = dataFormatter.formatCellValue(cell);
+                            // 使用getNumericCellValue方法，3变成3.0
+                            //double numericCellValue = cell.getNumericCellValue();
+                            System.out.println(cellValue);
                             break;
                         case FORMULA:
                             System.out.print("FORMULA ");
-                            String formulaCellValue = cell.getStringCellValue();
+                            // Cell强转为XSSFCell，否则没有getRawValue方法
+                            XSSFCell xssfCell = (XSSFCell) cell;
+                            String formulaCellValue = xssfCell.getRawValue();
+                            //String formulaCellValue = cell.getStringCellValue();
                             System.out.println(formulaCellValue);
                             break;
                         default:
@@ -137,8 +143,11 @@ public class ExcelOpt {
                             System.out.println(stringCellValue);
                         case NUMERIC:
                             System.out.print("NUMERIC ");
-                            double numericCellValue = cell.getNumericCellValue();
-                            System.out.println(numericCellValue);
+                            DataFormatter dataFormatter = new DataFormatter();
+                            String cellValue = dataFormatter.formatCellValue(cell);
+                            // 使用getNumericCellValue方法，3变成3.0
+                            //double numericCellValue = cell.getNumericCellValue();
+                            System.out.println(cellValue);
                             break;
                         case FORMULA:
                             System.out.print("FORMULA ");
