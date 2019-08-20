@@ -1,4 +1,4 @@
-package com.zkzong.interview.override;
+package com.zkzong.override;
 
 import org.junit.Test;
 

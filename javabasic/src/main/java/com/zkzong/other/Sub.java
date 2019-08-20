@@ -32,5 +32,15 @@ public class Sub extends Super {
 
     public static void main(String[] args) {
         new Sub();
+        /**
+         * 输出结果：
+         * static Super
+         * static Sub
+         * not static Super
+         * Super Constructor
+         * not static Sub
+         * Sub Constructor
+         */
+        // 父类静态代码块 子类静态代码块 父类非静态代码块 父类构造方法 子类非静态代码块 子类构造方法
     }
 }
