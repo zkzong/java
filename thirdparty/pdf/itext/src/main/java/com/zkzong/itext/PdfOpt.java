@@ -36,7 +36,11 @@ public class PdfOpt {
         //PdfStamper ps = new PdfStamper(reader, bos);
 
         AcroFields acroFields = ps.getAcroFields();
-        acroFields.setField("name", "在路上");
+
+        // new Float(0)：自适应大小，且setFieldProperty必须在setField之前才起作用
+        acroFields.setFieldProperty("name", "textsize", new Float(0), null);
+
+        acroFields.setField("name", "在路上法兰蝶阀据了解发了来到福建");
 
         ps.setFormFlattening(true);
 
@@ -153,7 +157,7 @@ public class PdfOpt {
         acroFields.setFieldProperty(nameField, "textfont", baseFont, null);
         // 设置字体大小
         // 不能用int，setFieldProperty方法重载了，使用int会执行另一个方法，不能设置大小
-        acroFields.setFieldProperty(nameField, "textsize", new Float(8), null);
+        acroFields.setFieldProperty(nameField, "textsize", new Float(3), null);
         // 设置颜色
         acroFields.setFieldProperty(nameField, "textcolor", BaseColor.RED, null);
         // 居中方式：靠右对齐
