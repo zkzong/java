@@ -4,7 +4,9 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Zong on 2016/12/7.
@@ -40,5 +42,15 @@ public class CollectionsTest {
 
         Collections.fill(list, "hello");
         System.out.println(list);
+    }
+
+    @Test
+    public void map() {
+        Map<String, String> map = new HashMap<>();
+        map.put("1", "1");
+        map.put("2", "2");
+        map.put("3", "3");
+        Map<String, String> synchronizedMap = Collections.synchronizedMap(map);
+        System.out.println(synchronizedMap);
     }
 }
