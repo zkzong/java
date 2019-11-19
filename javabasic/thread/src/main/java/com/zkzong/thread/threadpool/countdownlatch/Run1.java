@@ -17,7 +17,8 @@ public class Run1 implements Runnable {
             Thread.sleep(100);
         } catch (InterruptedException e) {
             e.printStackTrace();
+        } finally {
+            countDownLatch.countDown();
         }
-        countDownLatch.countDown();
     }
 }

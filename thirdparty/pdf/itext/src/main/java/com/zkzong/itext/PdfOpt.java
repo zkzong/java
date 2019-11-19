@@ -1,5 +1,6 @@
 package com.zkzong.itext;
 
+import com.itextpdf.awt.geom.Rectangle2D;
 import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.Chunk;
 import com.itextpdf.text.DocumentException;
@@ -16,6 +17,7 @@ import com.itextpdf.text.pdf.PdfName;
 import com.itextpdf.text.pdf.PdfNumber;
 import com.itextpdf.text.pdf.PdfReader;
 import com.itextpdf.text.pdf.PdfStamper;
+import com.itextpdf.text.pdf.parser.PdfReaderContentParser;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
@@ -271,6 +273,38 @@ public class PdfOpt {
 
         ps.close();
         reader.close();
+    }
+
+    /**
+     * 获取文本位置
+     * @param filePath
+     * @param name
+     * @throws IOException
+     * @throws DocumentException
+     */
+    public void getPosition(String filePath, String name) throws IOException, DocumentException {
+        PdfReader reader = new PdfReader(filePath);
+        // 新建一个PDF解析对象
+        PdfReaderContentParser parser = new PdfReaderContentParser(reader);
+        // 包含了PDF页面的信息，作为处理的对象
+        // PdfStamper stamper = new PdfStamper(reader, new FileOutputStream("d:/test.pdf"));
+        for (int i = 1; i <= reader.getNumberOfPages(); i++) {
+            // 新建一个ImageRenderListener对象，该对象实现了RenderListener接口，作为处理PDF的主要类
+            TextRenderListener listener = new TextRenderListener();
+            // 解析PDF，并处理里面的文字
+            parser.processContent(i, listener);
+            // 获取文字的矩形边框
+            List<Rectangle2D.Float> rectText = listener.rectText;
+            List<String> textList = listener.textList;
+            List<Float> listY = listener.listY;
+            List<Map<String, Rectangle2D.Float>> list_text = listener.rows_text_rect;
+            for (int k = 0; k < list_text.size(); k++) {
+                Map<String, Rectangle2D.Float> map = list_text.get(k);
+                for (Map.Entry<String, Rectangle2D.Float> entry : map.entrySet()) {
+                    System.out.println(entry.getKey() + "---" + entry.getValue());
+                }
+            }
+        }
     }
 
 }
