@@ -1,7 +1,10 @@
 package com.zkzong.itext;
 
+import com.itextpdf.text.DocumentException;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.io.IOException;
 
 /**
  * @Author: Zong
@@ -34,5 +37,16 @@ public class PdfOptTest {
     @Test
     public void multiLineAndBold() throws Exception {
         pdfOpt.multiLineAndBold("../pdf/chunk-template.pdf", "../pdf/output3.pdf");
+    }
+
+    @Test
+    public void getPosition() {
+        try {
+            pdfOpt.getPosition("../pdf/simple.pdf", "");
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (DocumentException e) {
+            e.printStackTrace();
+        }
     }
 }
