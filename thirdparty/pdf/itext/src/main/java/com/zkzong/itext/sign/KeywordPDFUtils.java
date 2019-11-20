@@ -90,7 +90,8 @@ public class KeywordPDFUtils {
                 KeyWordBean beanNext = list.get(i + 1);
                 float x = beanNext.getX() - bean.getX();
                 float y = beanNext.getY() - bean.getY();
-                if (y == 0 && x <= 1) {// System.out.print(“去除因字体加粗产生的重复数字”);
+                if (y == 0 && x <= 1) {
+                    // System.out.print(“去除因字体加粗产生的重复数字”);
                 } else {
                     if (StringUtils.contains(content.toString(), keyWord) || StringUtils.contains(text, keyWord)) {
                         if (keyMatch == num) {

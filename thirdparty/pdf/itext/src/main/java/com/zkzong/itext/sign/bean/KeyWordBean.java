@@ -56,16 +56,16 @@ public class KeyWordBean implements Comparable {
                 + ", text=" + text + "]";
     }
 
-    public int compareTo(KeyWordBean o) {
-        int i = (int) (o.getY() - this.getY());//先按照Y轴排序
-        if (i == 0) {
-            return (int) (this.x - o.getX());//如果Y轴相等了再按X轴进行排序
-        }
-        return i;
-    }
-
     @Override
     public int compareTo(Object o) {
+        if (o instanceof KeyWordBean) {
+            KeyWordBean bean = (KeyWordBean) o;
+            int i = (int) (bean.getY() - this.getY());//先按照Y轴排序
+            if (i == 0) {
+                return (int) (this.x - bean.getX());//如果Y轴相等了再按X轴进行排序
+            }
+            return i;
+        }
         return 0;
     }
 }

@@ -30,8 +30,8 @@ public class Test {
         // String signLocation = "设置签章地点 "; // 设置签章地点
         List list = new ArrayList();
         SignPDFBean bean1 = new SignPDFBean();
-        bean1.setKeyStorePass("11111111");
-        bean1.setKeyStorePath("D:/pdf/key/keystore");
+        bean1.setKeyStorePass("123456");
+        bean1.setKeyStorePath("src/main/resources/sign.keystore");
         // bean1.setKeyStorePass("Jitadmin001");
         // bean1.setKeyStorePath("D:\pdf\keystore");
         bean1.setKeyWord("85000315");
@@ -39,26 +39,26 @@ public class Test {
         bean1.setPage(1);
         bean1.setSealPath("D:/pdf/印章.png");
         bean1.setSignLocation("知春路1");
-        bean1.setSignReason("孙测试1");
+        bean1.setSignReason("测试1");
         SignPDFBean bean2 = new SignPDFBean();
-        bean2.setKeyStorePass("Jitadmin001");
-        bean2.setKeyStorePath("D:\\pdf\\keystore");
+        bean2.setKeyStorePass("123456");
+        bean2.setKeyStorePath("src/main/resources/sign.keystore");
         bean2.setKeyWord("客户");
         bean2.setNum(1);
         bean2.setPage(1);
         bean2.setSealPath("D:\\pdf\\印章2.png");
         bean2.setSignLocation("知春路2");
-        bean2.setSignReason("孙测试2");
+        bean2.setSignReason("测试2");
 
         SignPDFBean bean3 = new SignPDFBean();
-        bean3.setKeyStorePass("Jitadmin001");
-        bean3.setKeyStorePath("D:\\pdf\\keystore");
+        bean3.setKeyStorePass("123456");
+        bean3.setKeyStorePath("src/main/resources/sign.keystore");
         bean3.setKeyWord("五");
         bean3.setNum(1);
         bean3.setPage(1);
         bean3.setSealPath("D:\\pdf\\印章3.png");
         bean3.setSignLocation("知春路3");
-        bean3.setSignReason("孙测试3");
+        bean3.setSignReason("测试3");
 
         list.add(bean1);
         list.add(bean2);
