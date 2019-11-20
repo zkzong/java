@@ -47,6 +47,12 @@
             <version>2.0.1</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.xhtmlrenderer</groupId>
+            <artifactId>core-renderer</artifactId>
+            <version>R8</version>
+        </dependency>
+
         <!--<dependency>-->
             <!--<groupId>org.jpedal</groupId>-->
             <!--<artifactId>jpedal-lgpl</artifactId>-->

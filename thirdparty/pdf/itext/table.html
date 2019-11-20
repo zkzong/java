@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta name="renderer" content="webkit" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <title></title>
     <style>
-        body{
-            font-family:SimHei;
+        body {
+            font-family: SimHei;
         }
+
+        /*分页，同一行的数据不分页*/
+        /*table, tr, td, th, tbody, thead, tfoot {*/
+        /*    page-break-inside: avoid !important;*/
+        /*}*/
+
         .table {
             width: 100%;
             max-width: 100%;
@@ -28,8 +34,16 @@
             border-spacing: 0;
             border-collapse: collapse;
         }
-        table{border-right:1px solid #000;border-bottom:1px solid #000}
-        td{border-left:1px solid #000;border-top:1px solid #000}
+
+        table {
+            border-right: 1px solid #000;
+            border-bottom: 1px solid #000
+        }
+
+        td {
+            border-left: 1px solid #000;
+            border-top: 1px solid #000
+        }
 
         * {
             -webkit-box-sizing: border-box;
@@ -49,10 +63,12 @@
             vertical-align: inherit;
             border-color: inherit;
         }
+
         td {
-            width: 5.55555555555555555%;
-            word-wrap:break-word;
-            word-break:break-all;
+            /*width: 5.55555555555555555%;*/
+            font-size: 10px;
+            word-wrap: break-word;
+            word-break: break-all;
         }
 
         tbody {
@@ -69,8 +85,8 @@
             /* border-top: 0 !important; */
         }
 
-        .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td,
-        .table>tbody>tr>td, .table>tfoot>tr>td {
+        .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td,
+        .table > tbody > tr > td, .table > tfoot > tr > td {
             padding: 8px;
             line-height: 1.42857143;
             vertical-align: top;
@@ -82,6 +98,7 @@
             display: table-cell;
             float: none;
         }
+
         .proto-table {
             font-size: 1.3rem;
         }
@@ -114,24 +131,24 @@
     <table class="table proto-table" style="margin-bottom:0;">
         <tbody class="proto-tbody">
         <tr class="proto-tr">
-            <td>序号</td>
-            <td>借款合同编号</td>
-            <td>借据号</td>
-            <td>借款人姓名</td>
-            <td>借款人身份证号码</td>
-            <td>借款人手机号</td>
-            <td>贷款本金（元）</td>
-            <td>银行份额（元）</td>
-            <td>机构份额（元）</td>
-            <td>借款期限（月）</td>
-            <td>贷款发放日期</td>
-            <td>逾期发生日期</td>
-            <td>银行贷款份额本金余额（元）</td>
-            <td>银行贷款份额当期利息（元）</td>
-            <td>银行贷款份额逾期罚息（元）</td>
-            <td>银行贷款份额账面余额合计（元）</td>
-            <td>需支付转让价款（元）</td>
-            <td>备注</td>
+            <td width="50px">序号</td>
+            <td width="100px">借款合同编号</td>
+            <td width="100px">借据号</td>
+            <td width="50px">借款人姓名</td>
+            <td width="100px">借款人身份证号码</td>
+            <td width="50px">借款人手机号</td>
+            <td width="50px">贷款本金（元）</td>
+            <td width="50px">银行份额（元）</td>
+            <td width="50px">机构份额（元）</td>
+            <td width="20px">借款期限（月）</td>
+            <td width="50px">贷款发放日期</td>
+            <td width="50px">逾期发生日期</td>
+            <td width="50px">银行贷款份额本金余额（元）</td>
+            <td width="50px">银行贷款份额当期利息（元）</td>
+            <td width="50px">银行贷款份额逾期罚息（元）</td>
+            <td width="50px">银行贷款份额账面余额合计（元）</td>
+            <td width="50px">需支付转让价款（元）</td>
+            <td width="50px">备注</td>
         </tr>
         ${content}
         </tbody>

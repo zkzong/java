@@ -1,21 +1,18 @@
 package com.zkzong.itext;
 
-import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
-import com.itextpdf.text.pdf.PdfWriter;
-import com.itextpdf.tool.xml.XMLWorkerFontProvider;
-import com.itextpdf.tool.xml.XMLWorkerHelper;
+import com.itextpdf.text.pdf.BaseFont;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
+import org.xhtmlrenderer.pdf.ITextFontResolver;
+import org.xhtmlrenderer.pdf.ITextRenderer;
 
-import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.io.StringWriter;
 import java.io.Writer;
-import java.net.URL;
-import java.nio.charset.Charset;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -30,8 +27,6 @@ public class Table {
         freemarkerCfg = new Configuration();
         // freemarker的模板目录
         try {
-            URL url = Table.class.getClassLoader().getResource(HTML);
-            String path = url.getFile();
             freemarkerCfg.setDirectoryForTemplateLoading(new File("thirdparty/pdf/itext"));
         } catch (IOException e) {
             e.printStackTrace();
@@ -43,7 +38,7 @@ public class Table {
         Map<String, Object> data = new HashMap();
         StringBuilder sb = new StringBuilder();
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 10000; i++) {
             sb.append("<tr class=\"proto-tr\"><td>" + (i + 1) + "</td>")
                     .append("<td>GMLOC93848487483234</td>")
                     .append("<td>GMLOC93848487483234</td>")
@@ -71,20 +66,51 @@ public class Table {
 
 
     public static void createPdf(String content, String dest) throws IOException, DocumentException {
-        // step 1
-        Document document = new Document();
-        // step 2
-        PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(dest));
-        // step 3
-        document.open();
-        // step 4
-        XMLWorkerFontProvider fontImp = new XMLWorkerFontProvider(XMLWorkerFontProvider.DONTLOOKFORFONTS);
-        fontImp.register(FONT);
-        XMLWorkerHelper.getInstance().parseXHtml(writer, document,
-                new ByteArrayInputStream(content.getBytes()), null, Charset.forName("UTF-8"), fontImp);
-        // step 5
-        document.close();
+        /**
+         * 使用该方式，表格 列内容过长，不自动换行
+         */
+        //// step 1
+        //Document document = new Document(PageSize.A4);
+        //// step 2
+        //PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(dest));
+        //// step 3
+        //document.open();
+        //// step 4
+        //XMLWorkerFontProvider fontImp = new XMLWorkerFontProvider(XMLWorkerFontProvider.DONTLOOKFORFONTS);
+        //fontImp.register(FONT);
+        //XMLWorkerHelper.getInstance().parseXHtml(writer, document,
+        //        new ByteArrayInputStream(content.getBytes()), null, Charset.forName("UTF-8"), fontImp);
+        //// step 5
+        //document.close();
 
+        //OutputStream outputStream = new FileOutputStream(new File("test.html"));
+        //outputStream.write(content.getBytes());
+        //outputStream.close();
+
+        /**
+         * 自动换行，需要引入core-renderer包
+         */
+        ITextRenderer renderer = new ITextRenderer();
+        renderer.setDocumentFromString(content);
+
+        ITextFontResolver fontResolver = renderer.getFontResolver();
+        //if("linux".equals(getCurrentOperatingSystem())){
+        //    fontResolver.addFont("/usr/share/fonts/chiness/simsun.ttc", BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
+        //}else{
+        //    fontResolver.addFont("c:/Windows/Fonts/simsun.ttc", BaseFont.IDENTITY_H, BaseFont.NOT_EMBEDDED);
+        //}
+        //BaseFont baseFont = BaseFont.createFont("simhei.ttf", BaseFont.IDENTITY_H, BaseFont.NOT_EMBEDDED);
+        try {
+            fontResolver.addFont("simhei.ttf", BaseFont.IDENTITY_H, BaseFont.NOT_EMBEDDED);
+
+            OutputStream pdf = new FileOutputStream(new File(dest));
+
+            renderer.layout();
+            renderer.createPDF(pdf);
+            pdf.close();
+        } catch (com.lowagie.text.DocumentException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
