@@ -65,11 +65,11 @@
             <version>28.0-jre</version>
         </dependency>
 
-        <!--<dependency>-->
-            <!--<groupId>org.jpedal</groupId>-->
-            <!--<artifactId>jpedal-lgpl</artifactId>-->
-            <!--<version>4.74b27</version>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>org.jpedal</groupId>
+            <artifactId>jpedal-lgpl</artifactId>
+            <version>4.74b27</version>
+        </dependency>
 
         <!--<dependency>-->
             <!--<groupId>javax.media</groupId>-->
@@ -84,18 +84,10 @@
         <!--</dependency>-->
     </dependencies>
 
-
     <repositories>
         <repository>
-            <id>mvnrepository</id>
-            <name>mvnrepository</name>
-            <url>http://mvnrepository.com/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
+            <id>clojars</id>
+            <url>https://clojars.org/repo/</url>
         </repository>
     </repositories>
 

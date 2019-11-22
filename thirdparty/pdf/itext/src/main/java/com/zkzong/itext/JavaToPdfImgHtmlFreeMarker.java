@@ -1,18 +1,23 @@
 package com.zkzong.itext;
 
 import com.itextpdf.text.pdf.BaseFont;
-import com.itextpdf.text.pdf.PdfReader;
 import com.zkzong.itext.util.PathUtil;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
-import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.rendering.PDFRenderer;
+import org.jpedal.PdfDecoder;
+import org.jpedal.exception.PdfException;
+import org.jpedal.fonts.FontMappings;
 import org.xhtmlrenderer.pdf.ITextFontResolver;
 import org.xhtmlrenderer.pdf.ITextRenderer;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
-import java.io.*;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.StringWriter;
+import java.io.Writer;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -35,7 +40,6 @@ public class JavaToPdfImgHtmlFreeMarker {
         }
     }
 
-    // todo 生成图片打不开
     public static void main(String[] args) throws IOException {
         Map<String, Object> data = new HashMap();
         data.put("name", "宗");
@@ -109,50 +113,29 @@ public class JavaToPdfImgHtmlFreeMarker {
         return null;
     }
 
-//    /**
-//     * 根据pdf二进制文件 生成图片文件
-//     *
-//     * @param bytes   pdf二进制
-//     * @param scaling 清晰度
-//     * @param pageNum 页数
-//     */
-//    public static ByteArrayOutputStream pdfToImg(byte[] bytes, float scaling, int pageNum, String formatName) {
-//        // 推荐的方法打开PdfDecoder
-//        PdfDecoder pdfDecoder = new PdfDecoder(true);
-//        FontMappings.setFontReplacements();
-//        // 修改图片的清晰度
-//        pdfDecoder.scaling = scaling;
-//        ByteArrayOutputStream out = new ByteArrayOutputStream();
-//        try {
-//            // 打开pdf文件，生成PdfDecoder对象
-//            pdfDecoder.openPdfArray(bytes); //bytes is byte[] array with PDF
-//            // 获取第pageNum页的pdf
-//            BufferedImage img = pdfDecoder.getPageAsImage(pageNum);
-//
-//            ImageIO.write(img, formatName, out);
-//        } catch (PdfException e) {
-//            e.printStackTrace();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//
-//        return out;
-//    }
-
+    /**
+     * 根据pdf二进制文件 生成图片文件
+     *
+     * @param bytes   pdf二进制
+     * @param scaling 清晰度
+     * @param pageNum 页数
+     */
     public static ByteArrayOutputStream pdfToImg(byte[] bytes, float scaling, int pageNum, String formatName) {
+        // 推荐的方法打开PdfDecoder
+        PdfDecoder pdfDecoder = new PdfDecoder(true);
+        FontMappings.setFontReplacements();
+        // 修改图片的清晰度
+        pdfDecoder.scaling = scaling;
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         try {
-            PDDocument pdDocument = PDDocument.load(bytes);
-            PDFRenderer renderer = new PDFRenderer(pdDocument);
-            /* dpi越大转换后越清晰，相对转换速度越慢 */
-            PdfReader reader = new PdfReader(bytes);
-            int pages = reader.getNumberOfPages();
-            for (int i = 0; i < pages; i++) {
-                if (i == pageNum) {
-                    BufferedImage image = renderer.renderImageWithDPI(i, scaling);
-                    ImageIO.write(image, formatName, out);
-                }
-            }
+            // 打开pdf文件，生成PdfDecoder对象
+            pdfDecoder.openPdfArray(bytes); //bytes is byte[] array with PDF
+            // 获取第pageNum页的pdf
+            BufferedImage img = pdfDecoder.getPageAsImage(pageNum);
+
+            ImageIO.write(img, formatName, out);
+        } catch (PdfException e) {
+            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
