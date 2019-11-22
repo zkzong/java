@@ -18,7 +18,7 @@ import java.util.Map;
 
 public class JavaToPdfImgHtmlFreeMarker {
     private static final String DEST = "HelloWorld_CN_HTML_FREEMARKER_FS_IMG.png";
-    private static final String HTML = "template_freemarker_fs.html";
+    private static final String HTML = "html/template_freemarker_fs.html";
     private static final String FONT = "simhei.ttf";
     private static final String LOGO_PATH = "file:/" + PathUtil.getCurrentPath() + "/logo.png";
     private static final String IMG_EXT = "png";
@@ -29,7 +29,7 @@ public class JavaToPdfImgHtmlFreeMarker {
         freemarkerCfg = new Configuration();
         // freemarker的模板目录
         try {
-            freemarkerCfg.setDirectoryForTemplateLoading(new File("pdf/itext"));
+            freemarkerCfg.setDirectoryForTemplateLoading(new File(PathUtil.getCurrentPath()));
         } catch (IOException e) {
             e.printStackTrace();
         }

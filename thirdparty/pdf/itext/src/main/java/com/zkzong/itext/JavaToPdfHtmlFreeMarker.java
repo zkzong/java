@@ -5,6 +5,7 @@ import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.pdf.PdfWriter;
 import com.itextpdf.tool.xml.XMLWorkerFontProvider;
 import com.itextpdf.tool.xml.XMLWorkerHelper;
+import com.zkzong.itext.util.PathUtil;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 
@@ -20,7 +21,7 @@ import java.util.Map;
 
 public class JavaToPdfHtmlFreeMarker {
     private static final String DEST = "HelloWorld_CN_HTML_FREEMARKER.pdf";
-    private static final String HTML = "template_freemarker.html";
+    private static final String HTML = "html/template_freemarker.html";
     private static final String FONT = "simhei.ttf";
 
     private static Configuration freemarkerCfg = null;
@@ -29,7 +30,7 @@ public class JavaToPdfHtmlFreeMarker {
         freemarkerCfg = new Configuration();
         // freemarker的模板目录
         try {
-            freemarkerCfg.setDirectoryForTemplateLoading(new File("pdf/itext"));
+            freemarkerCfg.setDirectoryForTemplateLoading(new File(PathUtil.getCurrentPath()));
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -5,6 +5,7 @@ import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.pdf.PdfWriter;
 import com.itextpdf.tool.xml.XMLWorkerFontProvider;
 import com.itextpdf.tool.xml.XMLWorkerHelper;
+import com.zkzong.itext.util.PathUtil;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -17,7 +18,7 @@ import java.nio.charset.Charset;
  */
 public class JavaToPdfHtml {
     private static final String DEST = "HelloWorld_CN_HTML.pdf";
-    private static final String HTML = "itext/template.html";
+    private static final String HTML = "html/template.html";
     private static final String FONT = "simhei.ttf";
 
     public static void main(String[] args) throws IOException, DocumentException {
@@ -31,7 +32,7 @@ public class JavaToPdfHtml {
         XMLWorkerFontProvider fontImp = new XMLWorkerFontProvider(XMLWorkerFontProvider.DONTLOOKFORFONTS);
         fontImp.register(FONT);
         XMLWorkerHelper.getInstance().parseXHtml(writer, document,
-                new FileInputStream(HTML), null, Charset.forName("UTF-8"), fontImp);
+                new FileInputStream(PathUtil.getCurrentPath() + "/" + HTML), null, Charset.forName("UTF-8"), fontImp);
         // step 5
         document.close();
     }

@@ -2,6 +2,7 @@ package com.zkzong.itext;
 
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.pdf.BaseFont;
+import com.zkzong.itext.util.PathUtil;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import org.xhtmlrenderer.pdf.ITextFontResolver;
@@ -18,7 +19,7 @@ import java.util.Map;
 
 public class Table {
     private static final String DEST = "table.pdf";
-    private static final String HTML = "table.html";
+    private static final String HTML = "html/table.html";
     private static final String FONT = "simhei.ttf";
 
     private static Configuration freemarkerCfg = null;
@@ -27,7 +28,7 @@ public class Table {
         freemarkerCfg = new Configuration();
         // freemarker的模板目录
         try {
-            freemarkerCfg.setDirectoryForTemplateLoading(new File("thirdparty/pdf/itext"));
+            freemarkerCfg.setDirectoryForTemplateLoading(new File(PathUtil.getCurrentPath()));
         } catch (IOException e) {
             e.printStackTrace();
         }
