@@ -84,11 +84,4 @@
         <!--</dependency>-->
     </dependencies>
 
-    <repositories>
-        <repository>
-            <id>clojars</id>
-            <url>https://clojars.org/repo/</url>
-        </repository>
-    </repositories>
-
 </project>
