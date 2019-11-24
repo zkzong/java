@@ -32,10 +32,6 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
-        <repository>
-            <id>clojars</id>
-            <url>https://clojars.org/repo/</url>
-        </repository>
     </repositories>
     <pluginRepositories>
         <pluginRepository>

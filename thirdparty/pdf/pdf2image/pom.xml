@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>pdf2image</artifactId>
+    <name>pdf pdf2image</name>
 
     <dependencies>
         <dependency>

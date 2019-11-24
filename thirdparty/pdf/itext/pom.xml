@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>itext</artifactId>
+    <name>pdf itext</name>
 
     <dependencies>
         <dependency>
@@ -70,18 +71,13 @@
             <artifactId>jpedal-lgpl</artifactId>
             <version>4.74b27</version>
         </dependency>
-
-        <!--<dependency>-->
-            <!--<groupId>javax.media</groupId>-->
-            <!--<artifactId>jai_core</artifactId>-->
-            <!--<version>1.1.3</version>-->
-        <!--</dependency>-->
-
-        <!--<dependency>-->
-            <!--<groupId>javax.media</groupId>-->
-            <!--<artifactId>jai_codec</artifactId>-->
-            <!--<version>1.1.3</version>-->
-        <!--</dependency>-->
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>clojars</id>
+            <url>https://clojars.org/repo/</url>
+        </repository>
+    </repositories>
 
 </project>
