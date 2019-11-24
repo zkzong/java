@@ -2,7 +2,12 @@ package com.zkzong.jdk8.stream;
 
 import org.junit.Test;
 
-import java.util.*;
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public class StreamTest {
@@ -37,5 +42,33 @@ public class StreamTest {
             System.out.println(l);
             System.out.println(entry);
         }
+    }
+
+    @Test
+    public void user() {
+        List<User> users = new ArrayList<>();
+
+        User u1 = new User();
+        u1.setName("张");
+        u1.setAge(10);
+        u1.setSalary(new BigDecimal("100"));
+        users.add(u1);
+
+        User u2 = new User();
+        u2.setName("王");
+        u2.setAge(20);
+        u2.setSalary(new BigDecimal("200"));
+        users.add(u2);
+
+        User u3 = new User();
+        u3.setName("张");
+        u3.setAge(30);
+        u3.setSalary(new BigDecimal("300"));
+        users.add(u3);
+
+        int ageSum = users.stream().mapToInt(x -> x.getAge()).sum();
+        System.out.println(ageSum);
+        BigDecimal salarySum = users.stream().map(User::getSalary).reduce(BigDecimal.ZERO, BigDecimal::add);
+        System.out.println(salarySum);
     }
 }
