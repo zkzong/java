@@ -37,4 +37,17 @@ public class ListTest {
         }
     }
 
+    @Test
+    public void c() {
+        List<String> strings = new ArrayList<>();
+        strings.add("135");
+        System.out.println(strings);
+
+        if (strings.contains("135")) {
+            strings.add("137");
+        }
+        System.out.println(strings);
+
+    }
+
 }
