@@ -162,4 +162,14 @@ public class DateTimeTest {
         // LocalDate转Date
         Date date2 = Date.from(LocalDate.now().atStartOfDay().atZone(ZoneId.systemDefault()).toInstant());
     }
+
+    @Test
+    public void t() {
+        LocalDate now = LocalDate.now();
+        LocalDate next = now.plus(1, ChronoUnit.MONTHS);
+        LocalDate firstDayOfMonth = LocalDate.parse(next.toString()).with(TemporalAdjusters.firstDayOfMonth());
+        LocalDate lastDayOfMonth = LocalDate.parse(next.toString()).with(TemporalAdjusters.lastDayOfMonth());
+        System.out.println(firstDayOfMonth);
+        System.out.println(lastDayOfMonth);
+    }
 }
