@@ -2,6 +2,7 @@ package com.zkzong.json;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.NameFilter;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.alibaba.fastjson.serializer.ValueFilter;
@@ -165,5 +166,32 @@ public class Others2Json {
 //        map.put("c", "c");
 //        map.put("d", "d");
 //        System.out.println(JSON.toJSONString(mo));
+    }
+
+    @Test
+    public void getJsonValue() {
+        String s = "{\"statusCode\":\"000000\",\"templateSMS\":{\"smsMessageSid\":\"047a08c0e29a4432a63f8c96ce35ff90\",\"dateCreated\":\"20191231172901\"}}";
+
+        JSONObject jsonObject = JSON.parseObject(s);
+        Object statusCodeObj = jsonObject.get("statusCode");
+        String statusCode = "";
+        if (statusCodeObj != null) {
+            statusCode = statusCodeObj.toString();
+        }
+        //if (ChannelResultEnum.CLOOPEN_SUBMIT_RESULT.getCode().equals(statusCode)) {
+            Object templateSMSObj = jsonObject.get("templateSMS");
+            if (statusCodeObj != null) {
+                JSONObject template = JSON.parseObject(templateSMSObj.toString());
+                Object smsMessageSidObj = template.get("smsMessageSid");
+                if (smsMessageSidObj != null) {
+                    String smsMessageSid = smsMessageSidObj.toString();
+                    //sms.setBatchNo(smsMessageSid);
+                    // 保存批次号
+                    //smsMapper.updateByPrimaryKey(sms);
+                }
+            //}
+        }
+
+
     }
 }
