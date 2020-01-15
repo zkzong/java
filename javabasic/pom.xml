@@ -33,6 +33,7 @@
         <module>reflect</module>
         <module>string</module>
         <module>override</module>
+        <module>socket</module>
     </modules>
 
     <dependencies>
