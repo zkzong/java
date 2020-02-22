@@ -1,8 +1,10 @@
 package com.zkzong.apache.commons.http;
 
 import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpRequestRetryHandler;
+import org.apache.http.client.ServiceUnavailableRetryStrategy;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -12,9 +14,9 @@ import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
-import org.apache.http.impl.client.HttpClients;
 import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
 import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.protocol.HttpContext;
 import org.apache.http.util.EntityUtils;
 
 import java.io.IOException;
@@ -47,13 +49,36 @@ public class HttpClientUtil {
         init();
         // 添加重试次数
         HttpRequestRetryHandler httpRequestRetryHandler = (exception, executionCount, context) -> {
+            System.out.println("retryHandler : " + executionCount);
             if (executionCount > 3) {
                 return false;
             }
             return true;
         };
-        HttpClientBuilder.create().setConnectionManager(cm).setRetryHandler(httpRequestRetryHandler).build();
-        return HttpClients.custom().setConnectionManager(cm).build();
+        ServiceUnavailableRetryStrategy serviceUnavailableRetryStrategy = new ServiceUnavailableRetryStrategy() {
+            /**
+             * retry逻辑
+             */
+            @Override
+            public boolean retryRequest(HttpResponse response, int executionCount, HttpContext context) {
+                System.out.println("serviceUnavailableRetryStrategy : " + executionCount);
+                if (executionCount <= 3) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+
+            /**
+             * retry间隔时间
+             */
+            @Override
+            public long getRetryInterval() {
+                return 2000;
+            }
+        };
+        return HttpClientBuilder.create().setConnectionManager(cm).setRetryHandler(httpRequestRetryHandler).setServiceUnavailableRetryStrategy(serviceUnavailableRetryStrategy).build();
+        //return HttpClients.custom().setConnectionManager(cm).build();
     }
 
     /**
