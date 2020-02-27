@@ -104,4 +104,10 @@ public class StreamTest {
         Comparator<User> comparing = Comparator.comparing(User::getAge);
         Collector<User, ?, Optional<User>> userOptionalCollector = Collectors.minBy(comparing);
     }
+
+    @Test
+    public void filter() {
+        long count = users.stream().filter(o -> o.getAge() == 10).count();
+        System.out.println(count);
+    }
 }
