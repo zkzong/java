@@ -4,14 +4,9 @@ import com.itextpdf.text.pdf.BaseFont;
 import com.zkzong.itext.util.PathUtil;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
-import org.jpedal.PdfDecoder;
-import org.jpedal.exception.PdfException;
-import org.jpedal.fonts.FontMappings;
 import org.xhtmlrenderer.pdf.ITextFontResolver;
 import org.xhtmlrenderer.pdf.ITextRenderer;
 
-import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -46,10 +41,10 @@ public class JavaToPdfImgHtmlFreeMarker {
 
         String content = JavaToPdfImgHtmlFreeMarker.freeMarkerRender(data, HTML);
         ByteArrayOutputStream pdfStream = JavaToPdfImgHtmlFreeMarker.createPdf(content);
-        ByteArrayOutputStream imgSteam = JavaToPdfImgHtmlFreeMarker.pdfToImg(pdfStream.toByteArray(), 2, 1, IMG_EXT);
+        //ByteArrayOutputStream imgSteam = JavaToPdfImgHtmlFreeMarker.pdfToImg(pdfStream.toByteArray(), 2, 1, IMG_EXT);
 
         FileOutputStream fileStream = new FileOutputStream(new File(DEST));
-        fileStream.write(imgSteam.toByteArray());
+        //fileStream.write(imgSteam.toByteArray());
         fileStream.close();
 
     }
@@ -120,26 +115,26 @@ public class JavaToPdfImgHtmlFreeMarker {
      * @param scaling 清晰度
      * @param pageNum 页数
      */
-    public static ByteArrayOutputStream pdfToImg(byte[] bytes, float scaling, int pageNum, String formatName) {
-        // 推荐的方法打开PdfDecoder
-        PdfDecoder pdfDecoder = new PdfDecoder(true);
-        FontMappings.setFontReplacements();
-        // 修改图片的清晰度
-        pdfDecoder.scaling = scaling;
-        ByteArrayOutputStream out = new ByteArrayOutputStream();
-        try {
-            // 打开pdf文件，生成PdfDecoder对象
-            pdfDecoder.openPdfArray(bytes); //bytes is byte[] array with PDF
-            // 获取第pageNum页的pdf
-            BufferedImage img = pdfDecoder.getPageAsImage(pageNum);
-
-            ImageIO.write(img, formatName, out);
-        } catch (PdfException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return out;
-    }
+    //public static ByteArrayOutputStream pdfToImg(byte[] bytes, float scaling, int pageNum, String formatName) {
+    //    // 推荐的方法打开PdfDecoder
+    //    PdfDecoder pdfDecoder = new PdfDecoder(true);
+    //    FontMappings.setFontReplacements();
+    //    // 修改图片的清晰度
+    //    pdfDecoder.scaling = scaling;
+    //    ByteArrayOutputStream out = new ByteArrayOutputStream();
+    //    try {
+    //        // 打开pdf文件，生成PdfDecoder对象
+    //        pdfDecoder.openPdfArray(bytes); //bytes is byte[] array with PDF
+    //        // 获取第pageNum页的pdf
+    //        BufferedImage img = pdfDecoder.getPageAsImage(pageNum);
+    //
+    //        ImageIO.write(img, formatName, out);
+    //    } catch (PdfException e) {
+    //        e.printStackTrace();
+    //    } catch (IOException e) {
+    //        e.printStackTrace();
+    //    }
+    //    return out;
+    //}
 
 }
