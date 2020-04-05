@@ -8,7 +8,7 @@ import java.util.UUID;
 
 public class BIOClient {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws UnknownHostException, IOException {
 
         //要和谁进行通信，服务器IP、服务器的端口
         //一台机器的端口号是有限
@@ -27,6 +27,8 @@ public class BIOClient {
         os.write(name.getBytes());
         os.close();
         client.close();
+
+
     }
 
 }

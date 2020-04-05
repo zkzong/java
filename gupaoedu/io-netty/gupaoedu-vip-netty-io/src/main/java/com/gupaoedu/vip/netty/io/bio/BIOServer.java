@@ -5,6 +5,7 @@ import java.io.InputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+
 //同步阻塞IO模型
 public class BIOServer {
 
@@ -53,6 +54,7 @@ public class BIOServer {
             }
         }
     }
+
 
     public static void main(String[] args) throws IOException {
         new BIOServer(8080).listen();

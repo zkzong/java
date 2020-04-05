@@ -15,7 +15,7 @@ public class AIOClient {
         client = AsynchronousSocketChannel.open();
     }
 
-    public void connect(String host, int port) {
+    public void connect(String host, int port) throws Exception {
         client.connect(new InetSocketAddress(host, port), null, new CompletionHandler<Void, Void>() {
             @Override
             public void completed(Void result, Void attachment) {
