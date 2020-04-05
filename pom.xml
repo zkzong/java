@@ -12,6 +12,7 @@
         <module>javabasic</module>
         <module>library</module>
         <module>thirdparty</module>
+        <module>gupaoedu</module>
     </modules>
 
     <properties>
