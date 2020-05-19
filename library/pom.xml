@@ -20,6 +20,7 @@
         <module>ftp</module>
         <module>http</module>
         <module>sftp</module>
+        <module>qrcode</module>
     </modules>
 
     <properties>
