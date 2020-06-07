@@ -21,6 +21,7 @@
     <modules>
         <module>pattern</module>
         <module>io-netty</module>
+        <module>thread-demo</module>
     </modules>
 
 
