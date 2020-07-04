@@ -13,7 +13,6 @@
         <module>mongo-java</module>
         <module>mongo-spring</module>
         <module>mongo-spring-boot</module>
-        <module>mongodb-demo</module>
     </modules>
 
     <dependencyManagement>

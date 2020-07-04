@@ -1,6 +1,6 @@
-package com.zkzong.mongodb.dao;
+package com.zkzong.mongo.repository;
 
-import com.zkzong.mongodb.domain.Person;
+import com.zkzong.mongo.entity.Person;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

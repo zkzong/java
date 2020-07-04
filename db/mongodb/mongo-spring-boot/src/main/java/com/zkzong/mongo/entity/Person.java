@@ -1,4 +1,4 @@
-package com.zkzong.mongodb.domain;
+package com.zkzong.mongo.entity;
 
 import lombok.Getter;
 import lombok.Setter;
