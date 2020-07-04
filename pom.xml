@@ -16,6 +16,8 @@
         <module>spring-parent</module>
         <module>db</module>
         <module>mq</module>
+        <module>job-scheduler</module>
+        <module>log</module>
     </modules>
 
     <properties>
