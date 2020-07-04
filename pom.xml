@@ -13,6 +13,7 @@
         <module>library</module>
         <module>thirdparty</module>
         <module>gupaoedu</module>
+        <module>spring-parent</module>
     </modules>
 
     <properties>

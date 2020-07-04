@@ -14,11 +14,11 @@
     <artifactId>library</artifactId>
 
     <modules>
-        <module>properties</module>
+        <module>properties-library</module>
         <module>file-type</module>
         <module>image</module>
         <module>ftp</module>
-        <module>http</module>
+        <module>http-library</module>
         <module>sftp</module>
         <module>qrcode</module>
     </modules>

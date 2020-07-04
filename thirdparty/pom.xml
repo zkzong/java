@@ -24,7 +24,7 @@
         <module>okhttp</module>
         <module>mockito</module>
         <module>trove</module>
-        <module>spring</module>
+        <module>spring-tools</module>
         <module>common</module>
         <module>rxjava</module>
         <module>elastic-job</module>

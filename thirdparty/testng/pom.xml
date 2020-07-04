@@ -13,7 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>helloworld</module>
-        <module>config</module>
+        <module>config-testng</module>
     </modules>
 
     <dependencies>
