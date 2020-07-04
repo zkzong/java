@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:p="http://www.springframework.org/schema/p">
+
+    <bean id="sentinelConfig" class="org.springframework.data.redis.connection.RedisSentinelConfiguration">
+        <constructor-arg name="master" value="mymaster" />
+        <constructor-arg name="sentinelHostAndPorts">
+            <set>
+                <!--<value>127.0.0.1:6379</value>-->
+                <value>192.168.88.153:26379</value>
+                <value>192.168.88.153:26380</value>
+                <value>192.168.88.153:26382</value>
+            </set>
+        </constructor-arg>
+    </bean>
+    <bean id="jedisConnectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory"
+          p:host-name="127.0.0.1" p:port="6379">
+        <constructor-arg ref="sentinelConfig" />
+    </bean>
+</beans>

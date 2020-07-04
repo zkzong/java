@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:rabbit="http://www.springframework.org/schema/rabbit"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/rabbit
+       http://www.springframework.org/schema/rabbit/spring-rabbit.xsd">
+
+    <!--配置connection-factory，指定连接rabbit server参数-->
+    <rabbit:connection-factory id="connectionFactory"
+                               addresses="${amqp.address}" username="${amqp.username}" password="${amqp.password}"
+                               virtual-host="${amqp.vhost}"/>
+
+    <!--通过指定下面的admin信息，当前producer中的exchange和queue会在rabbitmq服务器上自动生成-->
+    <rabbit:admin connection-factory="connectionFactory"/>
+
+    <!--定义queue-->
+    <rabbit:queue name="${amqp.queue.name1}" durable="true" auto-delete="false" exclusive="false"/>
+    <rabbit:queue name="${amqp.queue.name2}" durable="true" auto-delete="false" exclusive="false"/>
+
+    <!-- 定义direct exchange，绑定queue -->
+    <rabbit:direct-exchange name="${amqp.exchange.name}" durable="true" auto-delete="false">
+        <rabbit:bindings>
+            <rabbit:binding queue="${amqp.queue.name1}" key="${amqp.routing.key1}"></rabbit:binding>
+            <rabbit:binding queue="${amqp.queue.name2}" key="${amqp.routing.key2}"></rabbit:binding>
+        </rabbit:bindings>
+    </rabbit:direct-exchange>
+
+    <bean id="messageConverter" class="org.springframework.amqp.support.converter.SimpleMessageConverter" />
+
+    <!--定义rabbit template用于数据的接收和发送-->
+    <rabbit:template id="myAmqpTemplate" connection-factory="connectionFactory" exchange="${amqp.exchange.name}" message-converter="messageConverter" />
+
+</beans>

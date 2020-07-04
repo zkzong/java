@@ -9,7 +9,6 @@
     <modules>
         <module>web</module>
         <module>webflux</module>
-        <module>mq</module>
         <module>spring-boot-admin</module>
         <module>spring-batch</module>
         <module>shutdown</module>

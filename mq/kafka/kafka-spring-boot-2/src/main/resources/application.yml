@@ -1,0 +1,19 @@
+server:
+  port: 9000
+
+spring:
+  kafka:
+    producer:
+      bootstrap-servers: 192.168.133.111:9092,192.168.133.112:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    consumer:
+      bootstrap-servers: 192.168.133.111:9092,192.168.133.112:9092
+      key-serializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-serializer: org.apache.kafka.common.serialization.StringDeserializer
+      group-id: group-id
+      auto-offset-reset: earliest
+
+#logging:
+#  level:
+#    root: debug

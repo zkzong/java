@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:redisson="http://redisson.org/schema/redisson"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://redisson.org/schema/redisson
+       http://redisson.org/schema/redisson/redisson.xsd">
+    <bean id="stringCodec" class="org.redisson.client.codec.StringCodec"></bean>
+    <redisson:client id="cloud" codec-ref="stringCodec">
+        <redisson:replicated-servers master-connection-pool-size="500"
+                                     slave-connection-pool-size="500"
+                                     idle-connection-timeout="10000"
+                                     connect-timeout="10000"
+                                     timeout="3000"
+                                     ping-timeout="1000"
+                                     reconnection-timeout="3000"
+                                     database="0">
+            <redisson:node-address value="redis://123.57.221.104:6379"/>
+            <redisson:node-address value="redis://123.57.221.105:6380"/>
+            <redisson:node-address value="redis://123.57.221.106:6381"/>
+        </redisson:replicated-servers>
+
+    </redisson:client>
+</beans>

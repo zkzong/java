@@ -28,7 +28,6 @@
         <module>mybatis</module>
         <module>mybatis-plus</module>
         <module>properties</module>
-        <module>redis</module>
         <module>repository</module>
         <module>roncoo</module>
         <module>spring-boot-admin-sb</module>
@@ -41,7 +40,6 @@
         <module>shutdown-sb</module>
         <module>aop-sb</module>
         <module>hot-deploy</module>
-        <module>mongodb</module>
         <module>exception-sb</module>
         <module>lock</module>
         <module>validator</module>

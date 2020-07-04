@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:redisson="http://redisson.org/schema/redisson"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://redisson.org/schema/redisson
+       http://redisson.org/schema/redisson/redisson.xsd">
+    <bean id="stringCodec" class="org.redisson.client.codec.StringCodec"></bean>
+    <redisson:client id="sentinel" codec-ref="stringCodec">
+        <redisson:sentinel-servers master-name="my-sentinel-name"
+                                   master-connection-pool-size="500"
+                                   slave-connection-pool-size="500"
+                                   idle-connection-timeout="10000"
+                                   connect-timeout="10000"
+                                   timeout="3000"
+                                   ping-timeout="1000"
+                                   reconnection-timeout="3000"
+                                   database="0">
+            <redisson:sentinel-address value="redis://127.0.0.1:26379"/>
+            <redisson:sentinel-address value="redis://127.0.0.1:26389"/>
+            <redisson:sentinel-address value="redis://127.0.0.1:26399"/>
+            <redisson:sentinel-address/>
+        </redisson:sentinel-servers>
+    </redisson:client>
+
+</beans>
