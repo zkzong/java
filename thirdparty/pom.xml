@@ -27,7 +27,6 @@
         <module>spring-tools</module>
         <module>common</module>
         <module>rxjava</module>
-        <module>elastic-job</module>
         <module>guice</module>
         <module>testng</module>
         <!--<module>groboutils</module>-->

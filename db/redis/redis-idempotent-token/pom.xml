@@ -2,14 +2,24 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>redis</artifactId>
-        <groupId>com.zkzong.springboot</groupId>
-        <version>0.0.1-SNAPSHOT</version>
-    </parent>
+
+    <groupId>com.zkzong</groupId>
+    <artifactId>redis-idempotent-token</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>redis-idempotent-token</artifactId>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <!-- Import dependency management from Spring Boot -->
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>1.5.10.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <dependencies>
         <dependency>
@@ -37,7 +47,7 @@
         <dependency>
             <groupId>redis.clients</groupId>
             <artifactId>jedis</artifactId>
-<!--            <version>${jedis.version}</version>-->
+            <!--            <version>${jedis.version}</version>-->
         </dependency>
         <!--mybatis-->
         <dependency>
