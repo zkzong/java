@@ -1,0 +1,13 @@
+# DataSource Config
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    # schema: classpath:db/schema.sql
+    # data: db/data.sql
+    url: jdbc:mysql://localhost:3306/mp?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+
+mybatis-plus:
+  # \u626B\u63CF mapper.xml
+  mapper-locations: classpath*:mapper/*Mapper.xml

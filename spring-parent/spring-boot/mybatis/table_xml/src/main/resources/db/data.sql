@@ -1,0 +1,1 @@
+insert into t_users(user_name, age) VALUES ('zong', 30);

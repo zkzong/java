@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zkzong.mybatis.mapper.TutorMapper">
+
+    <resultMap type="Address" id="AddressResult">
+        <id property="addrId" column="addr_id"/>
+        <result property="street" column="street"/>
+        <result property="city" column="city"/>
+        <result property="state" column="state"/>
+        <result property="zip" column="zip"/>
+        <result property="country" column="country"/>
+    </resultMap>
+
+    <resultMap type="Course" id="CourseResult">
+        <id property="courseId" column="course_id"/>
+        <result property="name" column="course_name"/>
+        <result property="description" column="description"/>
+        <result property="startDate" column="start_date"/>
+        <result property="endDate" column="end_date"/>
+    </resultMap>
+
+    <resultMap type="Tutor" id="TutorResult">
+        <id property="tutorId" column="tutor_id" />
+        <result property="name" column="tutor_name" />
+        <result property="email" column="email" />
+        <!--namespace-->
+        <association property="address" resultMap="AddressResult" />
+        <collection property="courses" resultMap="CourseResult" />
+    </resultMap>
+
+</mapper>

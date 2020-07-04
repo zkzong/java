@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com.zkzong.modelattribute"></context:component-scan>
+
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/jsp/"></property>
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+
+    <!--<mvc:resources mapping="/pages/**" location="WEB-INF/pages/"/>-->
+    <!--<mvc:annotation-driven/>-->
+
+    <!--<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">-->
+        <!--<property name="location" value="classpath:/config.properties"/>-->
+    <!--</bean>-->
+
+    <!--<bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">-->
+    <!--<property name="exceptionMappings">-->
+    <!--<props>-->
+    <!--<prop key="com.zkzong.springmvc.exception.SpringExceptiontion">-->
+    <!--ExceptionPage-->
+    <!--</prop>-->
+    <!--</props>-->
+    <!--</property>-->
+    <!--<property name="defaultErrorView" value="error"/>-->
+    <!--</bean>-->
+
+</beans>

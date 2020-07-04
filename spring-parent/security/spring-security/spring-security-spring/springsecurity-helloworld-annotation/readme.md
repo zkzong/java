@@ -1,0 +1,3 @@
+1. This tutorial is using WebApplicationInitializer to load the Spring Context Loader automatically, which is supported in Servlet 3.x container only, for example, Tomcat 7 and Jetty 8.
+2. Since we are using WebApplicationInitializer, the web.xml file is NOT required.
+3. Spring Security annotations are supported in older Servlet 2.x container, for example, Tomcat 6. If you use the classic XML file to load the Spring context, this tutorial is still able to deploy on Servlet 2.x container, for example, Tomcat 6

@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: http://git.oschina.net/zkzong/spring-cloud-config-repo
+          search-paths: config-client
+          username: zong
+          password: zong
+
+server:
+  port: 1201

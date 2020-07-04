@@ -1,0 +1,26 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/zkzong/spring-cloud-config-repo.git
+          username:
+          password:
+          search-paths: config-repo
+
+    bus:
+      trace:
+        enabled: true
+
+  application:
+    name: config-server-bus
+
+  ## 配置rabbitMQ 信息
+  rabbitmq:
+    host: 192.168.133.111
+    port: 5672
+    username: guest
+    password: guest
+
+server:
+  port: 9090
