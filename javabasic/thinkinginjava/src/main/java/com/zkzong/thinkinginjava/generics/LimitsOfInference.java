@@ -15,6 +15,7 @@ public class LimitsOfInference {
     }
 
     public static void main(String[] args) {
-        f(New.map());
+        // todo 报错
+        //f(New.map());
     }
 }
