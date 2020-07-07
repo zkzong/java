@@ -11,7 +11,6 @@
 
     <modules>
         <module>spring-cloud-alibaba-starter</module>
-        <module>spring-cloud-alibaba-dubbo</module>
         <module>spring-cloud-alibaba-nacos</module>
     </modules>
 

@@ -18,6 +18,7 @@
         <module>mq</module>
         <module>job-scheduler</module>
         <module>log</module>
+        <module>dubbo</module>
     </modules>
 
     <properties>
