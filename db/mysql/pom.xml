@@ -12,6 +12,13 @@
     <modules>
         <module>mysql-read-write</module>
         <module>mysql-multi-datasource</module>
+        <module>jdbcTemplate</module>
+        <module>jdbcTemplate-multi-datasource</module>
+        <module>jpa</module>
+        <module>jpa-multi-datasource</module>
+        <module>mybatis-detail</module>
+        <module>mybatis-didispace</module>
+        <module>tkmybatis</module>
     </modules>
 
     <properties>
