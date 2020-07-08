@@ -14,17 +14,8 @@
     <version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>exception-didispace</module>
-        <module>jdbcTemplate</module>
-        <module>jpa</module>
-        <module>mybatis-didispace</module>
-        <module>mybatis-detail</module>
         <module>swagger2</module>
-        <module>jdbcTemplate-multi-datasource</module>
-        <module>jpa-multi-datasource</module>
-        <module>log4j</module>
         <module>aop-didispace</module>
-        <module>rabbitmq-didispace</module>
-        <module>redis-didispace</module>
         <module>dubbo-service</module>
         <module>dubbo-consumer</module>
         <module>dubbo-api-service</module>
@@ -35,11 +26,7 @@
         <module>async</module>
         <module>mail</module>
         <module>statemachine</module>
-        <module>log4j-multi</module>
-        <module>security-didispace</module>
         <module>transaction</module>
-        <module>security2</module>
-        <module>mongodb-didispace</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -12,7 +12,7 @@ public class PersonTest {
         Person p = new Person();
         p.setName("zong");
         p.setAge(30);
-        p.setSex('男');
+        //p.setSex('男');
         p.setHeight(1.69);
         p.setAddress("henna");
         System.out.println(p);

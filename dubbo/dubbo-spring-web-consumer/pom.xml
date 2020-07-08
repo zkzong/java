@@ -12,7 +12,7 @@
     <url>http://maven.apache.org</url>
     <dependencies>
         <dependency>
-            <groupId>com.zkzong.dubbo</groupId>
+            <groupId>com.zkzong</groupId>
             <artifactId>dubbo-spring-web-facade</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>

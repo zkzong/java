@@ -33,7 +33,6 @@
         <module>spring-boot-admin-sb</module>
         <module>spring-retry</module>
         <module>runner</module>
-        <module>tkmybatis</module>
         <module>upload</module>
         <module>transactional</module>
         <module>apollo</module>
