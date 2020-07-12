@@ -32,6 +32,8 @@
         <module>junit</module>
         <module>hutool</module>
         <module>xml</module>
+        <module>sharding-jdbc</module>
+        <module>fastdfs</module>
     </modules>
 
     <properties>

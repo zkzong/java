@@ -16,10 +16,6 @@
         <module>exception-didispace</module>
         <module>swagger2</module>
         <module>aop-didispace</module>
-        <module>dubbo-service</module>
-        <module>dubbo-consumer</module>
-        <module>dubbo-api-service</module>
-        <module>dubbo-api-consumer</module>
         <module>banner</module>
         <module>actuator</module>
         <module>scheduled</module>

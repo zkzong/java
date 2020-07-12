@@ -23,7 +23,6 @@
         <module>deploy-war</module>
         <module>didispace</module>
         <module>druid</module>
-        <module>dubbo-sb</module>
         <module>http-sb</module>
         <module>mybatis</module>
         <module>mybatis-plus</module>

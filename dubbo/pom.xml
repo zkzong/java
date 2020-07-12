@@ -7,18 +7,13 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>zookeeper</module>
-        <module>dubbo-simple-demo</module>
-        <module>dubbo-spring-web-facade</module>
-        <module>dubbo-spring-web-provider</module>
-        <module>dubbo-spring-web-consumer</module>
-        <module>dubbo-main</module>
-        <module>dubbo-web-main</module>
         <!--<module>jmeter</module>-->
         <!--<module>dubbox</module>-->
         <!--<module>dubbox-rest</module>-->
-
+        <module>dubbo-sb</module>
         <module>dubbo-sb2</module>
         <module>dubbo-sca</module>
+        <module>dubbo-spring</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -27,7 +22,6 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spring.version>4.3.26.RELEASE</spring.version>
     </properties>
 
     <dependencyManagement>
@@ -38,48 +32,7 @@
                 <version>4.12</version>
             </dependency>
 
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>dubbo</artifactId>
-                <version>2.5.5</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.springframework</groupId>
-                        <artifactId>spring</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
 
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-web</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-webmvc</artifactId>
-                <version>${spring.version}}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-beans</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-context</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-test</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
 
             <dependency>
                 <groupId>org.apache.zookeeper</groupId>

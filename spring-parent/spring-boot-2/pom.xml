@@ -13,7 +13,6 @@
         <module>spring-batch</module>
         <module>shutdown</module>
         <module>nacos-sb</module>
-        <module>shardingsphere</module>
         <module>ratelimit-sb2</module>
         <module>undertow</module>
     </modules>
