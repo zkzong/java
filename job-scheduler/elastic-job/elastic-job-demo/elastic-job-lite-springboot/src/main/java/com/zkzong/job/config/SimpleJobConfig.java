@@ -9,7 +9,6 @@ import com.dangdang.ddframe.job.lite.config.LiteJobConfiguration;
 import com.dangdang.ddframe.job.lite.spring.api.SpringJobScheduler;
 import com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter;
 import com.zkzong.job.job.simple.SpringSimpleJob;
-import com.zkzong.job.job.simple.SpringSimpleJob2;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -30,21 +29,10 @@ public class SimpleJobConfig {
         return new SpringSimpleJob();
     }
 
-    @Bean
-    public SimpleJob simpleJob2() {
-        return new SpringSimpleJob2();
-    }
-
     @Bean(initMethod = "init")
     public JobScheduler simpleJobScheduler(final SimpleJob simpleJob, @Value("${simpleJob.cron}") final String cron, @Value("${simpleJob.shardingTotalCount}") final int shardingTotalCount,
                                            @Value("${simpleJob.shardingItemParameters}") final String shardingItemParameters) {
         return new SpringJobScheduler(simpleJob, regCenter, getLiteJobConfiguration(simpleJob.getClass(), cron, shardingTotalCount, shardingItemParameters), jobEventConfiguration);
-    }
-
-    @Bean(initMethod = "init")
-    public JobScheduler simpleJobScheduler2(final SimpleJob simpleJob2, @Value("${simpleJob.cron}") final String cron, @Value("${simpleJob.shardingTotalCount}") final int shardingTotalCount,
-                                           @Value("${simpleJob.shardingItemParameters}") final String shardingItemParameters) {
-        return new SpringJobScheduler(simpleJob2, regCenter, getLiteJobConfiguration(simpleJob2.getClass(), cron, shardingTotalCount, shardingItemParameters), jobEventConfiguration);
     }
 
     private LiteJobConfiguration getLiteJobConfiguration(final Class<? extends SimpleJob> jobClass, final String cron, final int shardingTotalCount, final String shardingItemParameters) {

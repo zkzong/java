@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/elastic_job_log?useUnicode=true&characterEncoding=utf-8&verifyServerCertificate=false&useSSL=false&requireSSL=false
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&verifyServerCertificate=false&useSSL=false&requireSSL=false
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: root
@@ -14,3 +14,5 @@ spring:
       time-between-eviction-runs-millis: 18800
       remove-abandoned: true
       remove-abandoned-timeout: 180
+#    schema: classpath:db/schema.sql
+#    data: db/data.sql
