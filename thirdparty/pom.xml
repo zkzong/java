@@ -31,6 +31,7 @@
         <module>orika</module>
         <module>junit</module>
         <module>hutool</module>
+        <module>xml</module>
     </modules>
 
     <properties>

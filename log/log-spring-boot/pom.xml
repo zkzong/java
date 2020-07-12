@@ -15,6 +15,8 @@
         <module>sample</module>
         <module>spring-boot-log4j2</module>
         <module>spring-boot-logback</module>
+        <module>log4j</module>
+        <module>log4j-multi</module>
     </modules>
 
     <dependencyManagement>
@@ -28,5 +30,12 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

@@ -11,11 +11,9 @@
 
     <modules>
         <module>kafka-java</module>
-        <module>kafka-action</module>
-        <module>kafka-log4j</module>
+        <!--<module>kafka-action</module>-->
         <module>kafka-spark</module>
         <module>kafka-spring</module>
-
         <module>kafka-spring-boot-2</module>
         <module>kafka-spring-boot-imooc</module>
     </modules>

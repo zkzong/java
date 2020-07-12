@@ -6,7 +6,6 @@ import kafka.server.ConfigType;
 import kafka.utils.ZkUtils;
 import org.apache.kafka.common.security.JaasUtils;
 import scala.collection.JavaConverters;
-import scala.collection.Map;
 import scala.collection.Seq;
 
 import java.util.*;
