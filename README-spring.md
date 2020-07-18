@@ -1,6 +1,4 @@
 # spring-parent
-[![Build Status](https://travis-ci.org/zkzong/spring-parent.svg?branch=master)](https://travis-ci.org/zkzong/spring-parent)
-[![codecov](https://codecov.io/gh/zkzong/spring-parent/branch/master/graph/badge.svg)](https://codecov.io/gh/zkzong/spring-parent)
 
 # 1. spring
 

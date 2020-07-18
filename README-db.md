@@ -1,6 +1,4 @@
 # db
-[![Build Status](https://travis-ci.org/zkzong/db.svg?branch=master)](https://travis-ci.org/zkzong/db)
-[![codecov](https://codecov.io/gh/zkzong/db/branch/master/graph/badge.svg)](https://codecov.io/gh/zkzong/db)
 
 ## 1. redis
 

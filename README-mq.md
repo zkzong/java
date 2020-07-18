@@ -1,6 +1,4 @@
 # mq
-[![Build Status](https://travis-ci.org/zkzong/mq.svg?branch=master)](https://travis-ci.org/zkzong/mq)
-[![codecov](https://codecov.io/gh/zkzong/mq/branch/master/graph/badge.svg)](https://codecov.io/gh/zkzong/mq)
 
 ## ActiveMQ
 
