@@ -249,11 +249,6 @@ url测试：http://localhost:8080/index/get/1/无境
 
 使用redis、AOP实现限流
 
-## mq
-
-### rabbitmq
-+ [延迟队列](https://mp.weixin.qq.com/s?__biz=MzUzMTA2NTU2Ng==&mid=2247485829&idx=2&sn=59fd11d1b19d201fa958e8c9e11d1d2e&chksm=fa497634cd3eff22505453f31a210fd88dc11c3994e3582b955ca30e5059f3fda35f8ae0da65&mpshare=1&scene=1&srcid=1213KiT3TehNcUGcTFlgXwiB#rd)
-
 # 4. spring-cloud
 
 ## spring-cloud-g
