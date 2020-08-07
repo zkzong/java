@@ -13,7 +13,6 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>http-spring</module>
         <module>chapter1</module>
         <module>filter</module>
         <module>mvc</module>
