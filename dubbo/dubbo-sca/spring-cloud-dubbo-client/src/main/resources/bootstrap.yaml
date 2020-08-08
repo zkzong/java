@@ -1,8 +1,8 @@
-dubbo:
-  registry:
-    address: spring-cloud://localhost
-  cloud:
-    subscribed-services: spring-cloud-alibaba-dubbo-server
+#dubbo:
+#  registry:
+#    address: nacos://192.168.133.115:8848
+#  cloud:
+#    subscribed-services: spring-cloud-alibaba-dubbo-server
 
 spring:
   application:
@@ -12,4 +12,4 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 127.0.0.1:8848
+        server-addr: 192.168.133.115:8848
