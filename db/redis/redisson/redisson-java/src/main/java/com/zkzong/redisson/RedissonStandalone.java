@@ -17,7 +17,7 @@ public class RedissonStandalone {
         config.setCodec(new org.redisson.client.codec.StringCodec());
 
         //指定使用单节点部署方式
-        config.useSingleServer().setAddress("redis://127.0.0.1:6379");
+        config.useSingleServer().setAddress("redis://192.168.133.115:6379").setPassword("zong");
         //设置密码
         //config.setPassword("password");
         //设置对于master节点的连接池中连接数最大为500

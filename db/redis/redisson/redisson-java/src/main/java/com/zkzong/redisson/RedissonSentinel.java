@@ -21,12 +21,12 @@ public class RedissonSentinel {
         config.useSentinelServers()
                 //设置sentinel.conf配置里的sentinel别名
                 //比如sentinel.conf里配置为sentinel monitor my-sentinel-name 127.0.0.1 6379 2,那么这里就配置my-sentinel-name
-                .setMasterName("my-sentinel-name")
+                .setMasterName("mymaster").setPassword("zong")
                 //这里设置sentinel节点的服务IP和端口，sentinel是采用Paxos拜占庭协议，一般sentinel至少3个节点
                 //记住这里不是配置redis节点的服务端口和IP，sentinel会自己把请求转发给后面monitor的redis节点
-                .addSentinelAddress("redis://127.0.0.1:26379")
-                .addSentinelAddress("redis://127.0.0.1:26389")
-                .addSentinelAddress("redis://127.0.0.1:26399");
+                .addSentinelAddress("redis://192.168.133.115:26379")
+                .addSentinelAddress("redis://192.168.133.115:26379")
+                .addSentinelAddress("redis://192.168.133.115:26379");
 
         //设置密码
         //config.setPassword("password");
