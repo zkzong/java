@@ -10,7 +10,6 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>spring-cloud-docker</module>
-        <module>spring-cloud-in-action</module>
         <module>spring-cloud-alibaba</module>
         <module>spring-cloud-g</module>
     </modules>

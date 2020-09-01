@@ -17,3 +17,6 @@
 
 #### Properties
 #### ResourceBundle
+
+### idempotent
+幂等

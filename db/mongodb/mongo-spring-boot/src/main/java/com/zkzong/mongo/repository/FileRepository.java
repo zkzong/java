@@ -1,5 +1,6 @@
-package com.zkzong.sb.domain;
+package com.zkzong.mongo.repository;
 
+import com.zkzong.mongo.entity.FileVo;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 /**

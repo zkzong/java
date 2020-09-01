@@ -1,7 +1,7 @@
-package com.zkzong.sb;
+package com.zkzong.mongo.controller;
 
-import com.zkzong.sb.domain.FileRepository;
-import com.zkzong.sb.domain.FileVo;
+import com.zkzong.mongo.entity.FileVo;
+import com.zkzong.mongo.repository.FileRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Random;
 
 @RestController
-public class MongoController {
+public class FileController {
 
     @Autowired
     private FileRepository fileRepository;

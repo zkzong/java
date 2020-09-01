@@ -1,4 +1,4 @@
-package com.zkzong.sb.domain;
+package com.zkzong.mongo.entity;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

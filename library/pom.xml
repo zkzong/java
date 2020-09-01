@@ -17,6 +17,7 @@
         <module>sftp</module>
         <module>qrcode</module>
         <module>http</module>
+        <module>idempotent</module>
     </modules>
 
     <properties>
