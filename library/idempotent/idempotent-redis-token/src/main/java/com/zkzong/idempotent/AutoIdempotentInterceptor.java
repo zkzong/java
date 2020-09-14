@@ -81,8 +81,9 @@ public class AutoIdempotentInterceptor implements HandlerInterceptor {
 
         } catch (IOException e) {
         } finally {
-            if (writer != null)
+            if (writer != null) {
                 writer.close();
+            }
         }
     }
 

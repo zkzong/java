@@ -1,5 +1,6 @@
 package com.zkzong.idempotent;
 
+import org.apache.commons.lang.text.StrBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,7 +23,7 @@ public class TokenServiceImpl implements TokenService {
         String str = RandomUtil.randomUUID();
         StrBuilder token = new StrBuilder();
         try {
-            token.append(Constant.Redis.TOKEN_PREFIX).append(str);
+            token.append(Redis.TOKEN_PREFIX).append(str);
             redisService.setEx(token.toString(), token.toString(), 10000L);
             boolean notEmpty = StrUtil.isNotEmpty(token.toString());
             if (notEmpty) {
@@ -48,17 +49,17 @@ public class TokenServiceImpl implements TokenService {
         if (StrUtil.isBlank(token)) {// header中不存在token
             token = request.getParameter(Constant.TOKEN_NAME);
             if (StrUtil.isBlank(token)) {// parameter中也不存在token
-                throw new ServiceException(Constant.ResponseCode.ILLEGAL_ARGUMENT, 100);
+                throw new ServiceException(ResponseCode.ILLEGAL_ARGUMENT, 100);
             }
         }
 
         if (!redisService.exists(token)) {
-            throw new ServiceException(Constant.ResponseCode.REPETITIVE_OPERATION, 200);
+            throw new ServiceException(ResponseCode.REPETITIVE_OPERATION, 200);
         }
 
         boolean remove = redisService.remove(token);
         if (!remove) {
-            throw new ServiceException(Constant.ResponseCode.REPETITIVE_OPERATION, 200);
+            throw new ServiceException(ResponseCode.REPETITIVE_OPERATION, 200);
         }
         return true;
     }
