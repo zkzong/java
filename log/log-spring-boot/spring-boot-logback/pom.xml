@@ -42,11 +42,29 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <includeSystemScope>true</includeSystemScope>
+                    <!--<mainClass>com.zkzong.sb.logback.LogbackApplication</mainClass>-->
+                </configuration>
+            </plugin>
+            <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>1.0.0</version>
                 <configuration>
-                    <dockerDirectory>src/main/docker</dockerDirectory>
+                    <imageName>${project.name}:${project.version}</imageName>
+                    <!--dockerDirectory：Dockerfile文件目录-->
+                    <dockerDirectory>${project.basedir}</dockerDirectory>
                     <resources>
                         <resource>
                             <targetPath>/</targetPath>
