@@ -20,3 +20,5 @@
 
 ### idempotent
 幂等
+
+#### idempotent-redis-token
