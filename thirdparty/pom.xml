@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>common</module>
         <module>pinyin4j</module>
         <module>guava</module>
         <module>jodatime</module>
@@ -21,7 +22,6 @@
         <module>mockito</module>
         <module>trove</module>
         <module>spring-tools</module>
-        <module>common</module>
         <module>rxjava</module>
         <module>guice</module>
         <module>testng</module>
