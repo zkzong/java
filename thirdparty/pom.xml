@@ -15,13 +15,13 @@
         <module>guava</module>
         <module>jodatime</module>
         <module>poi</module>
-        <!--<module>apachecommons</module>-->
+        <module>apachecommons</module>
         <module>json</module>
         <module>lombok</module>
         <module>okhttp</module>
         <module>mockito</module>
         <module>trove</module>
-        <!--<module>spring-tools</module>-->
+        <module>spring-tools</module>
         <module>rxjava</module>
         <module>guice</module>
         <module>testng</module>
