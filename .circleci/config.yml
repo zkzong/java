@@ -8,5 +8,6 @@ orbs:
 #    jobs:
 #      - maven/test # checkout, build, test, and upload test results
 jobs:
-  steps:
-    - run: mvn clean package
+  build:
+    steps:
+      - run: mvn clean package
