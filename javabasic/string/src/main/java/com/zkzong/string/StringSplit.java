@@ -20,5 +20,14 @@ public class StringSplit {
             String s = ipArr[i];
             System.out.println(s);
         }
+
+        // 多个分隔符
+        String s = "a,b,c|d|e";
+        String[] regArr = s.split(",|\\|");
+        for (String s1 : regArr) {
+            System.out.println(s1);
+        }
+        String replaceAll = s.replaceAll(",|\\|", ";");
+        System.out.println(replaceAll);
     }
 }
