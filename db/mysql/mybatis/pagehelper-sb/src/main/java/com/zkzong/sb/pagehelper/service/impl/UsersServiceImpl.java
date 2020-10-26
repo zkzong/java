@@ -1,9 +1,9 @@
 package com.zkzong.sb.pagehelper.service.impl;
 
-import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.zkzong.sb.pagehelper.domain.Users;
+import com.zkzong.sb.pagehelper.domain.UsersDto;
 import com.zkzong.sb.pagehelper.mapper.UsersMapper;
 import com.zkzong.sb.pagehelper.service.UsersService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,4 +33,16 @@ public class UsersServiceImpl implements UsersService {
         PageInfo<Users> page = new PageInfo<Users>(allUsers);
         return page;
     }
+
+    @Override
+    public PageInfo<Users> page(UsersDto param) {
+        return PageHelper.startPage(param.getPageNum(), param.getPageSize())
+                .doSelectPageInfo(() -> list());
+    }
+
+    @Override
+    public List<Users> list() {
+        return usersMapper.getAllUsers();
+    }
+
 }

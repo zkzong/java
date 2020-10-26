@@ -2,6 +2,7 @@ package com.zkzong.sb.pagehelper;
 
 import com.github.pagehelper.PageInfo;
 import com.zkzong.sb.pagehelper.domain.Users;
+import com.zkzong.sb.pagehelper.domain.UsersDto;
 import com.zkzong.sb.pagehelper.service.UsersService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -42,6 +43,21 @@ public class PageHelperApplicationTest {
     @Test
     public void getUsersByPage() {
         PageInfo<Users> page = usersService.getUsersByPage();
+        System.out.println(page);
+    }
+
+    @Test
+    public void list() {
+        List<Users> list = usersService.list();
+        System.out.println(list);
+    }
+
+    @Test
+    public void page() {
+        UsersDto dto = new UsersDto();
+        dto.setPageNum(1);
+        dto.setPageSize(3);
+        PageInfo<Users> page = usersService.page(dto);
         System.out.println(page);
     }
 }

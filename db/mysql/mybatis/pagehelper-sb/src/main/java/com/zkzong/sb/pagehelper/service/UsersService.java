@@ -2,6 +2,7 @@ package com.zkzong.sb.pagehelper.service;
 
 import com.github.pagehelper.PageInfo;
 import com.zkzong.sb.pagehelper.domain.Users;
+import com.zkzong.sb.pagehelper.domain.UsersDto;
 
 import java.util.List;
 
@@ -12,4 +13,8 @@ public interface UsersService {
     List<Users> getAllUsers();
 
     PageInfo<Users> getUsersByPage();
+
+    PageInfo<Users> page(UsersDto param);
+
+    List<Users> list();
 }
