@@ -16,5 +16,5 @@ public interface UsersService {
 
     PageInfo<Users> page(UsersDto param);
 
-    List<Users> list();
+    List<Users> list(UsersDto param);
 }

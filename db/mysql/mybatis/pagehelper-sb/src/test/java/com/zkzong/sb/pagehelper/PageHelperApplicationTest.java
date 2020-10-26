@@ -48,7 +48,8 @@ public class PageHelperApplicationTest {
 
     @Test
     public void list() {
-        List<Users> list = usersService.list();
+        UsersDto dto = new UsersDto();
+        List<Users> list = usersService.list(dto);
         System.out.println(list);
     }
 

@@ -37,11 +37,11 @@ public class UsersServiceImpl implements UsersService {
     @Override
     public PageInfo<Users> page(UsersDto param) {
         return PageHelper.startPage(param.getPageNum(), param.getPageSize())
-                .doSelectPageInfo(() -> list());
+                .doSelectPageInfo(() -> list(param));
     }
 
     @Override
-    public List<Users> list() {
+    public List<Users> list(UsersDto param) {
         return usersMapper.getAllUsers();
     }
 
