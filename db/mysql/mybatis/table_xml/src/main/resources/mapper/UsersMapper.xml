@@ -15,4 +15,19 @@
     <insert id="insertOne">
         insert into t_users(user_name, age) values(#{userName}, #{age})
     </insert>
+
+    <select id="findByIndex" resultType="com.zkzong.sb.mybatis.domain.Users">
+        select id, user_name userName, age from t_users
+        where user_name = #{arg0} and age = #{arg1}
+    </select>
+
+    <select id="findByMap" resultType="com.zkzong.sb.mybatis.domain.Users">
+        select id, user_name userName, age from t_users
+        where user_name = #{userName} and age = #{age}
+    </select>
+
+    <select id="findByParam" resultType="com.zkzong.sb.mybatis.domain.Users">
+        select id, user_name userName, age from t_users
+        where user_name = #{userName} and age = #{age}
+    </select>
 </mapper>

@@ -1,8 +1,10 @@
 package com.zkzong.sb.mybatis.service;
 
 import com.zkzong.sb.mybatis.domain.Users;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Zong on 2017/6/1.
@@ -14,5 +16,11 @@ public interface UsersService {
     Users findByUserName(String userName);
 
     void insertOne(String userName, int age);
+
+    Users findByIndex(String userName, int age);
+
+    Users findByMap(Map map);
+
+    Users findByParam(@Param("userName") String userName, @Param("age") int age);
 
 }
