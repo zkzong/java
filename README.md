@@ -1,5 +1,4 @@
 # java
-[![Actions Status](https://xxx.execute-api.us-west-2.amazonaws.com/production/badge/zkzong/java)](https://xxx.execute-api.us-west-2.amazonaws.com/production/results/zkzong/java)
 [![Build Status](https://travis-ci.org/zkzong/java.svg?branch=master)](https://travis-ci.org/zkzong/java)
 [![CircleCI](https://circleci.com/gh/zkzong/java.svg?style=svg)](https://circleci.com/gh/zkzong/java)
 [![codecov](https://codecov.io/gh/zkzong/java/branch/master/graph/badge.svg)](https://codecov.io/gh/zkzong/java)
