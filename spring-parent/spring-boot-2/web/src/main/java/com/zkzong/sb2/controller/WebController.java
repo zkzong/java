@@ -1,6 +1,8 @@
 package com.zkzong.sb2.controller;
 
 import com.alibaba.fastjson.JSON;
+import com.zkzong.sb2.model.A;
+import com.zkzong.sb2.model.B;
 import com.zkzong.sb2.model.JsonRootBean;
 import com.zkzong.sb2.model.User;
 import com.zkzong.sb2.service.UserService;
@@ -52,6 +54,12 @@ public class WebController {
     @RequestMapping(value = "request")
     public String request(@RequestBody JsonRootBean bean) {
         System.out.println(bean);
+        return null;
+    }
+
+    @RequestMapping(value = "ab")
+    public String ab(@RequestBody A<B> ab) {
+        System.out.println(ab);
         return null;
     }
 }

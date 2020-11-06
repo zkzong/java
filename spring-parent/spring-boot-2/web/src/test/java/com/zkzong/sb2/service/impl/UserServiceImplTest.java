@@ -1,5 +1,8 @@
 package com.zkzong.sb2.service.impl;
 
+import com.alibaba.fastjson.JSON;
+import com.zkzong.sb2.model.A;
+import com.zkzong.sb2.model.B;
 import com.zkzong.sb2.model.User;
 import com.zkzong.sb2.service.UserService;
 import org.junit.Test;
@@ -36,5 +39,15 @@ public class UserServiceImplTest {
         System.out.println(u);
         List<User> userList = userService.findAll();
         System.out.println(userList);
+    }
+
+    @Test
+    public void test() {
+        A<B> ab = new A<>();
+
+        B b = new B();
+        b.setName("zong");
+        ab.setT(b);
+        System.out.println(JSON.toJSONString(ab));
     }
 }
