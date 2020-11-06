@@ -28,6 +28,27 @@ public class WebController {
         return userStr;
     }
 
+    /**
+     * 请求报文
+     * {
+     *     "Request": {
+     *         "action": "SMSArrived",
+     *         "smsType": "1",
+     *         "apiVersion": "2013-12-26",
+     *         "content": "4121908f3d1b4edb9210f0eb4742f62c",
+     *         "fromNum": "13912345678",
+     *         "dateSent": "20130923010000",
+     *         "deliverCode": "DELIVRD",
+     *         "recvTime": "20130923010010",
+     *         "status": "0",
+     *         "reqId": "123",
+     *         "smsCount": "2"
+     *     }
+     * }
+     *
+     * @param bean
+     * @return
+     */
     @RequestMapping(value = "request")
     public String request(@RequestBody JsonRootBean bean) {
         System.out.println(bean);

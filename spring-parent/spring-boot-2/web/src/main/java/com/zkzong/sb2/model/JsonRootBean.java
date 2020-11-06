@@ -13,12 +13,4 @@ public class JsonRootBean {
     @JsonProperty(value = "Request")
     private Request request;
 
-    public void setRequest(Request request) {
-        this.request = request;
-    }
-
-    public Request getRequest() {
-        return request;
-    }
-
 }
