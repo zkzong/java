@@ -1,5 +1,7 @@
 package com.zkzong.test;
 
+import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
 import java.util.Random;
 
 /**
@@ -22,5 +24,14 @@ public class RandomTest {
         System.out.println("i = " + i);
         long l = random.nextLong();
         System.out.println("l = " + l);
+
+        try {
+            SecureRandom instanceStrong = SecureRandom.getInstanceStrong();
+            int j = instanceStrong.nextInt(10);
+            System.out.println(j);
+
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
     }
 }
