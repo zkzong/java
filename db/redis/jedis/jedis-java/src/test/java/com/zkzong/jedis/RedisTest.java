@@ -15,9 +15,11 @@ public class RedisTest {
         // 查看服务是否运行
         System.out.println("Server is running: " + jedis.ping());
 
+        // string
         jedis.set("key", "Redis tutorial");
         System.out.println("Stored string in redis: " + jedis.get("key"));
 
+        // list
         jedis.lpush("tlist", "Redis");
         jedis.lpush("tlist", "MongoDB");
         jedis.lpush("tlist", "Mysql");
@@ -25,5 +27,10 @@ public class RedisTest {
         for (int i = 0; i < list.size(); i++) {
             System.out.println("Stored string in redis: " + list.get(i));
         }
+
+        // hash
+        jedis.hset("testHash", "field1", "value1");
+        jedis.hset("testHash", "field2", "value1");
+        System.out.println(jedis.hgetAll("testHash"));
     }
 }
