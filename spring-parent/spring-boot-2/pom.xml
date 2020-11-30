@@ -15,6 +15,7 @@
         <module>nacos-sb</module>
         <module>ratelimit-sb2</module>
         <module>undertow</module>
+        <module>swagger3</module>
     </modules>
     <packaging>pom</packaging>
 
