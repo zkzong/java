@@ -42,10 +42,10 @@ public class JedisPoolTest {
         String host = bundle.getString("redis.host");
         int port = Integer.valueOf(bundle.getString("redis.port"));
         int timeout = Integer.valueOf(bundle.getString("redis.timeout"));
-//        String password = bundle.getString("redis.password");
+        String password = bundle.getString("redis.password");
 
         // 构造连接池
-//        jedisPool = new JedisPool(jedisPoolConfig, host, port, timeout, password);
+        //jedisPool = new JedisPool(jedisPoolConfig, host, port, timeout, password);
         jedisPool = new JedisPool(jedisPoolConfig, host, port, timeout);
     }
 
@@ -82,7 +82,7 @@ public class JedisPoolTest {
             Assert.fail(e.getMessage());
         } finally {
             // 还会到连接池
-            jedisPool.returnResource(jedis);
+            jedisPool.close();
         }
     }
 
