@@ -1,7 +1,5 @@
 package com.zkzong.rocketmq.springboot;
 
-import com.zkzong.rocketmq.springboot.domain.OrderPaidEvent;
-import org.apache.rocketmq.client.producer.SendCallback;
 import org.apache.rocketmq.client.producer.SendResult;
 import org.apache.rocketmq.spring.annotation.RocketMQTransactionListener;
 import org.apache.rocketmq.spring.core.RocketMQLocalTransactionListener;
@@ -17,7 +15,6 @@ import org.springframework.messaging.MessagingException;
 import org.springframework.messaging.support.MessageBuilder;
 
 import javax.annotation.Resource;
-import java.math.BigDecimal;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -44,33 +41,34 @@ public class ProducerApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        // Send string
-        SendResult sendResult = rocketMQTemplate.syncSend(springTopic, "Hello, World!");
-        System.out.printf("syncSend1 to topic %s sendResult=%s %n", springTopic, sendResult);
+        SendResult sendResult;
+        //// Send string
+        //sendResult = rocketMQTemplate.syncSend(springTopic, "Hello, World!");
+        //System.out.printf("syncSend1 to topic %s sendResult=%s %n", springTopic, sendResult);
 
-        // Send string with spring Message
-        sendResult = rocketMQTemplate.syncSend(springTopic, MessageBuilder.withPayload("Hello, World! I'm from spring message").build());
-        System.out.printf("syncSend2 to topic %s sendResult=%s %n", springTopic, sendResult);
+        //// Send string with spring Message
+        //sendResult = rocketMQTemplate.syncSend(springTopic, MessageBuilder.withPayload("Hello, World! I'm from spring message").build());
+        //System.out.printf("syncSend2 to topic %s sendResult=%s %n", springTopic, sendResult);
 
-        // Send user-defined object
-        rocketMQTemplate.asyncSend(orderPaidTopic, new OrderPaidEvent("T_001", new BigDecimal("88.00")), new SendCallback() {
-            @Override
-            public void onSuccess(SendResult var1) {
-                System.out.printf("async onSucess SendResult=%s %n", var1);
-            }
+        //// Send user-defined object
+        //rocketMQTemplate.asyncSend(orderPaidTopic, new OrderPaidEvent("T_001", new BigDecimal("88.00")), new SendCallback() {
+        //    @Override
+        //    public void onSuccess(SendResult var1) {
+        //        System.out.printf("async onSucess SendResult=%s %n", var1);
+        //    }
+        //
+        //    @Override
+        //    public void onException(Throwable var1) {
+        //        System.out.printf("async onException Throwable=%s %n", var1);
+        //    }
+        //
+        //});
 
-            @Override
-            public void onException(Throwable var1) {
-                System.out.printf("async onException Throwable=%s %n", var1);
-            }
-
-        });
-
-        // Send message with special tag
-        rocketMQTemplate.convertAndSend(msgExtTopic + ":tag0", "I'm from tag0");  // tag0 will not be consumer-selected
-        System.out.printf("syncSend topic %s tag %s %n", msgExtTopic, "tag0");
-        rocketMQTemplate.convertAndSend(msgExtTopic + ":tag1", "I'm from tag1");
-        System.out.printf("syncSend topic %s tag %s %n", msgExtTopic, "tag1");
+        //// Send message with special tag
+        //rocketMQTemplate.convertAndSend(msgExtTopic + ":tag0", "I'm from tag0");  // tag0 will not be consumer-selected
+        //System.out.printf("syncSend topic %s tag %s %n", msgExtTopic, "tag0");
+        //rocketMQTemplate.convertAndSend(msgExtTopic + ":tag1", "I'm from tag1");
+        //System.out.printf("syncSend topic %s tag %s %n", msgExtTopic, "tag1");
 
         // Send transactional messages
         testTransaction();

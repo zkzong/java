@@ -16,6 +16,7 @@
         <module>ratelimit-sb2</module>
         <module>undertow</module>
         <module>swagger3</module>
+        <module>distributed-transaction</module>
     </modules>
     <packaging>pom</packaging>
 
