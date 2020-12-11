@@ -10,6 +10,10 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.util.StopWatch;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.atomic.AtomicInteger;
+
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
 public class JdbcApplicationTest {
@@ -82,5 +86,54 @@ public class JdbcApplicationTest {
 
         String result = stopwatch.prettyPrint();
         System.out.println(result);
+    }
+
+    private AtomicInteger ai = new AtomicInteger();
+
+    /**
+     * 使用线程池插入
+     */
+    @Test
+    public void testDBTimePool() {
+
+        StopWatch stopwatch = new StopWatch("执行sql时间消耗");
+
+        /**
+         * auto_increment key任务
+         */
+        final String insertSql = "INSERT INTO user_key_auto(user_id,user_name,sex,address,city,email,state) VALUES(?,?,?,?,?,?,?)";
+        stopwatch.start("自动生成key表任务开始");
+        long start1 = System.currentTimeMillis();
+
+        ExecutorService executorService = Executors.newFixedThreadPool(1000);
+        for (int i = 0; i < 1000000; i++) {
+            executorService.submit(
+                    new Runnable() {
+                        @Override
+                        public void run() {
+                            int i = ai.getAndIncrement();
+                            if (i >= 999999) {
+                                executorService.shutdown();
+                            }
+                            jdbcTemplate.update(insertSql, i, i, 1, "beijing", "beijing", "zong@163.com", 10);
+                        }
+                    }
+            );
+        }
+
+        while (true) {
+            if (executorService.isTerminated()) {
+                break;
+            }
+        }
+
+        long end1 = System.currentTimeMillis();
+        System.out.println("auto key消耗的时间:" + (end1 - start1));
+
+        stopwatch.stop();
+
+        String result = stopwatch.prettyPrint();
+        System.out.println(result);
+
     }
 }
