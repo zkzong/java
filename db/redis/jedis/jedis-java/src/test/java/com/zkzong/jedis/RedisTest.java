@@ -28,7 +28,10 @@ public class RedisTest {
         config.setMaxTotal(25);
         config.setMaxIdle(20);
         config.setMinIdle(5);
-        JedisPool pool = new JedisPool(config, "127.0.0.1", 6379);
+        // 无密码
+        //JedisPool pool = new JedisPool(config, "127.0.0.1", 6379);
+        // 有密码
+        JedisPool pool = new JedisPool(config, "127.0.0.1", 6379, 60000, "zong");
         jedis = pool.getResource();
         jedis.select(0);
     }
@@ -70,5 +73,6 @@ public class RedisTest {
     @Test
     public void zset() {
         // zset
+        //jedis.zs
     }
 }
