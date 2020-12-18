@@ -18,7 +18,6 @@
     <modules>
         <module>elastic-job-java</module>
         <module>elastic-job-springboot</module>
-        <module>elastic-job-demo</module>
     </modules>
 
 
