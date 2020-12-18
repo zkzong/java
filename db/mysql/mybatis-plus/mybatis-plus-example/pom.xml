@@ -11,12 +11,12 @@
 
     <artifactId>mybatis-plus-example</artifactId>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.zkzong</groupId>
-            <artifactId>mybatis-plus-common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
+    <!--<dependencies>-->
+    <!--    <dependency>-->
+    <!--        <groupId>com.zkzong</groupId>-->
+    <!--        <artifactId>mybatis-plus-common</artifactId>-->
+    <!--        <version>0.0.1-SNAPSHOT</version>-->
+    <!--    </dependency>-->
+    <!--</dependencies>-->
 
 </project>
