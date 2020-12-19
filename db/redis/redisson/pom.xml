@@ -14,6 +14,7 @@
     <modules>
         <module>redisson-java</module>
         <module>redisson-spring</module>
+        <module>redisson-spring-boot</module>
     </modules>
 
     <dependencies>
