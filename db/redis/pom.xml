@@ -10,7 +10,6 @@
         <module>redisson</module>
         <module>lettuce</module>
         <module>redis-demo</module>
-        <module>redis-idempotent-token</module>
     </modules>
     <packaging>pom</packaging>
 
