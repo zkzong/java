@@ -8,11 +8,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <dependencies>
-        <!--<dependency>-->
-        <!--    <groupId>com.zkzong</groupId>-->
-        <!--    <artifactId>common</artifactId>-->
-        <!--    <version>${project.version}</version>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>com.zkzong</groupId>
+            <artifactId>common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
