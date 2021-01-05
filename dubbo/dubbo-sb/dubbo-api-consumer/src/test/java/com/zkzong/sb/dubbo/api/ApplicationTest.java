@@ -1,5 +1,6 @@
 package com.zkzong.sb.dubbo.api;
 
+import com.zkzong.sb.dubbo.api.service.ComputeService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
