@@ -7,8 +7,11 @@ public class ThreadLocalTest {
     public static void main(String[] args) {
         threadLocal.set(1000);
         new Thread(() -> {
+            // null
             System.out.println(Thread.currentThread() + "===" + threadLocal.get());
         }).start();
+        // 1000
+        System.out.println(threadLocal.get());
     }
 
 }

@@ -7,7 +7,7 @@ public class ThreadLocalTest {
         //1.1  打印当前线程本地内存中localVariable变量的值
         System.out.println(str + ":" + localVariable.get());
         //1.2 清除当前线程本地内存中localVariable变量
-//        localVariable.remove();
+        //localVariable.remove();
     }
 
     //(2) 创建ThreadLocal变量
