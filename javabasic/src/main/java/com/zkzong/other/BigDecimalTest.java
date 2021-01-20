@@ -23,8 +23,13 @@ public class BigDecimalTest {
     public void deleteZero() {
         BigDecimal bd = new BigDecimal("0.20");
         System.out.println(bd.stripTrailingZeros()); // 0.2
-        bd = new BigDecimal("1.00");
-        System.out.println(bd.stripTrailingZeros()); // 1
+        bd = new BigDecimal("8.00");
+        System.out.println(bd.stripTrailingZeros()); // 8
+        // 大于等于10之后变成科学计数法
+        bd = new BigDecimal("10.00");
+        System.out.println(bd.stripTrailingZeros()); // 1E+1
+        // 使用toPlainString解决科学计数法问题
+        System.out.println(bd.stripTrailingZeros().toPlainString()); // 10
     }
 
     /**
