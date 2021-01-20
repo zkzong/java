@@ -109,5 +109,11 @@ public class StreamTest {
     public void filter() {
         long count = users.stream().filter(o -> o.getAge() == 10).count();
         System.out.println(count);
+
+        Optional<User> user = users.stream().filter(o -> o.getName().equals("王")).findFirst();
+        if (user.isPresent()) {
+            User u = user.get();
+            System.out.println(u.getAge());
+        }
     }
 }
