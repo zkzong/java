@@ -19,6 +19,7 @@ public class IntegerTest {
         } else {
             System.out.println("not equals");
         }
+        System.out.println(i1.equals(i2));
 
         Integer i3 = 100;
         Integer i4 = 100;
