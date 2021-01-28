@@ -26,19 +26,19 @@ public class StreamTest {
         User u1 = new User();
         u1.setName("张");
         u1.setAge(10);
-        u1.setSalary(new BigDecimal("100"));
+        u1.setSalary(new BigDecimal("100.10"));
         users.add(u1);
 
         User u2 = new User();
         u2.setName("王");
         u2.setAge(10);
-        u2.setSalary(new BigDecimal("200"));
+        u2.setSalary(new BigDecimal("200.20"));
         users.add(u2);
 
         User u3 = new User();
         u3.setName("张");
         u3.setAge(30);
-        u3.setSalary(new BigDecimal("300"));
+        u3.setSalary(new BigDecimal("300.30"));
         users.add(u3);
     }
 
@@ -118,7 +118,8 @@ public class StreamTest {
             System.out.println(u.getAge());
         }
 
-        int sum = users.stream().filter(o -> o.getName().equals("张")).mapToInt(x -> x.getAge()).sum();
+        BigDecimal sum = users.stream().filter(o -> o.getName().equals("张"))
+                .map(User::getSalary).reduce(BigDecimal.ZERO, BigDecimal::add);
         System.out.println(sum);
     }
 }
