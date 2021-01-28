@@ -6,9 +6,10 @@ package com.zkzong.algorithm.sort;
  */
 public class BubbleSort {
     public void bubbleSort1(int[] source) {
-        for (int i = 0; i < source.length; i++) {
+        int length = source.length;
+        for (int i = 0; i < length; i++) {
             // 从最后一个开始，往前比较，小的上浮
-            for (int j = source.length - 1; j > i; j--) {
+            for (int j = length - 1; j > i; j--) {
                 if (source[j] < source[j - 1]) {
                     SortUtil.swap(source, j, j - 1);
                 }
@@ -17,7 +18,8 @@ public class BubbleSort {
     }
 
     public void bubbleSort2(int[] source) {
-        for (int i = source.length - 1; i > 0; i--) {
+        int length = source.length;
+        for (int i = length - 1; i > 0; i--) {
             // 从第一个开始，往后比较，大的下沉
             for (int j = 0; j < i; j++) {
                 if (source[j] > source[j + 1]) {
