@@ -11,6 +11,8 @@ public class ArraysTest {
         String[] strArray = {"a", "b", "c", "d"};
         List<String> stringList = Arrays.asList(strArray);
         System.out.println(stringList);
+        strArray[0] = "aaa";
+        System.out.println(stringList);
 
         String str = "a, b, c,,";
         String[] ary = str.split(",");
