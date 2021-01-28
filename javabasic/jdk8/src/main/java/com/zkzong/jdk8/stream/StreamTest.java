@@ -62,16 +62,18 @@ public class StreamTest {
         map4.put("id", "2");
         map4.put("idNo", "2345");
         list.add(map4);
-        System.out.println(list);
+        System.out.println("原始数据：" + list);
 
         // 根据idNo分组
         Map<String, List<Map<String, String>>> maps = list.stream().collect(Collectors.groupingBy((Map<String, String> m) -> m.get("idNo")));
-        System.out.println(maps);
+        System.out.println("分组后：" + maps);
         Set<Map.Entry<String, List<Map<String, String>>>> entries = maps.entrySet();
         for (Map.Entry<String, List<Map<String, String>>> entry : entries) {
-            List<Map<String, String>> l = entry.getValue();
-            System.out.println(l);
-            System.out.println(entry);
+            String key = entry.getKey();
+            List<Map<String, String>> value = entry.getValue();
+            System.out.println("分组后entry：" + entry);
+            System.out.println("分组后key：" + key);
+            System.out.println("分组后value：" + value);
         }
     }
 
@@ -115,5 +117,8 @@ public class StreamTest {
             User u = user.get();
             System.out.println(u.getAge());
         }
+
+        int sum = users.stream().filter(o -> o.getName().equals("张")).mapToInt(x -> x.getAge()).sum();
+        System.out.println(sum);
     }
 }
