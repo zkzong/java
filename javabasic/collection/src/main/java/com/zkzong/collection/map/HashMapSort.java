@@ -12,12 +12,13 @@ import java.util.Map;
  */
 public class HashMapSort {
     public static void main(String[] args) {
-//        HashMap的值是没有顺序的，他是按照key的HashCode来实现的。
+        //HashMap的值是没有顺序的，他是按照key的HashCode来实现的。
         Map<String, String> map = new HashMap<String, String>();
         map.put("d", "d");
         map.put("b", "b");
         map.put("a", "a");
         map.put("c", "c");
+        System.out.println(map);
 
         List<Map.Entry<String, String>> list = new ArrayList<Map.Entry<String, String>>(map.entrySet());
         Collections.sort(list, new Comparator<Map.Entry<String, String>>() {

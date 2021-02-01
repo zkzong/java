@@ -15,8 +15,8 @@ import java.util.TreeMap;
 public class MapSortKey {
     public static void main(String[] args) {
         Map<String, String> map = new TreeMap<String, String>(
-//               Comparator可以对集合对象或者数组进行排序的比较器接口，实现该接口的public compare(T o1,To2)方法即可实现排序，
-//              该方法主要是根据第一个参数o1,小于、等于或者大于o2分别返回负整数、0或者正整数。
+                // Comparator可以对集合对象或者数组进行排序的比较器接口，实现该接口的public compare(T o1,To2)方法即可实现排序，
+                // 该方法主要是根据第一个参数o1,小于、等于或者大于o2分别返回负整数、0或者正整数。
                 new Comparator<String>() {
                     @Override
                     public int compare(String o1, String o2) {
