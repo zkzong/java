@@ -19,6 +19,9 @@ public class ThreadPoolExecutorTest {
         int threadNum = strList.size() < 5 ? strList.size() : 5;
         ThreadPoolExecutor executor = new ThreadPoolExecutor(2, threadNum, 300, TimeUnit.MILLISECONDS,
                 new ArrayBlockingQueue<Runnable>(3), new ThreadPoolExecutor.CallerRunsPolicy());
+        //executor.allowCoreThreadTimeOut(true);
+        //executor.prestartCoreThread();
+        //executor.prestartAllCoreThreads();
         for (int i = 0; i < threadNum; i++) {
             executor.execute(new PrintStringThread(i, strList, threadNum));
         }
