@@ -12,7 +12,6 @@
         <module>javabasic</module>
         <module>library</module>
         <module>thirdparty</module>
-        <module>gupaoedu</module>
         <module>spring-parent</module>
         <module>db</module>
         <module>mq</module>
