@@ -18,6 +18,7 @@
         <module>qrcode</module>
         <module>http</module>
         <module>delay</module>
+        <module>distributed-lock</module>
     </modules>
 
     <properties>
