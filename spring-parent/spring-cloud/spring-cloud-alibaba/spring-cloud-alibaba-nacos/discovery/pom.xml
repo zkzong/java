@@ -14,6 +14,7 @@
     <modules>
         <module>nacos-discovery-provider</module>
         <module>nacos-discovery-consumer</module>
+        <module>nacos-discovery-provider-test</module>
     </modules>
 
 
