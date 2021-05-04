@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: order-service #微服务id
+  profiles:
+    active: prd #指定环境名
+  cloud:
+    nacos:
+      config: #这里配置的是Nacos配置中心
+        file-extension: yml #指定文件扩展名
+        server-addr: 127.0.0.1:8848
+        username: nacos
+        password: nacos
+logging:
+  level:
+    root: debug
