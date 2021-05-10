@@ -21,6 +21,7 @@
 		<module>roncoo-log</module>
 		<module>roncoo-multi-properties</module>
 		<module>roncoo-multi-yaml</module>
+		<module>roncoo-multi-configfile</module>
 	</modules>
 
 	<properties>
