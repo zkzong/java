@@ -76,4 +76,12 @@ public class BigDecimalTest {
 
         System.out.println(new BigDecimal("0.00").subtract(new BigDecimal("0.00").setScale(2, BigDecimal.ROUND_HALF_UP)));
     }
+
+    @Test
+    public void compareTo() {
+        BigDecimal bd = new BigDecimal("5");
+        System.out.println(bd.compareTo(BigDecimal.ZERO)); // 大于 1
+        System.out.println(bd.compareTo(new BigDecimal("10"))); // 小于 -1
+        System.out.println(bd.compareTo(new BigDecimal("5"))); // 等于 0
+    }
 }
