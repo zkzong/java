@@ -15,7 +15,6 @@
     <modules>
         <module>standalone</module>
         <module>spring-boot-sentinel</module>
-        <module>redis-didispace</module>
     </modules>
 
     <dependencyManagement>
