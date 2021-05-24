@@ -16,7 +16,7 @@ public class RedisConfig {
 
     @Bean
     public <T> RedisTemplate<String, T> redisTemplate(LettuceConnectionFactory lettuceConnectionFactory) {
-        RedisTemplate<String, T> template = new RedisTemplate<String, T>();
+        RedisTemplate<String, T> template = new RedisTemplate<>();
         template.setConnectionFactory(lettuceConnectionFactory);
         template.setKeySerializer(new StringRedisSerializer());
         GenericToStringSerializer genericToStringSerializer = new GenericToStringSerializer(Object.class);
