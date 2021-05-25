@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>java</artifactId>
+        <groupId>com.zkzong</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>skywalking-itcast</artifactId>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+    <modules>
+        <module>java_agent_demo</module>
+        <module>java_agent_user</module>
+        <module>skywalking_alarm</module>
+        <module>skywalking_dubbo_consumer</module>
+        <module>skywalking_dubbo_provider</module>
+        <module>skywalking_mysql</module>
+        <module>skywalking_plugins</module>
+        <module>skywalking_springboot</module>
+        <module>skywalking_springmvc</module>
+    </modules>
+
+</project>
