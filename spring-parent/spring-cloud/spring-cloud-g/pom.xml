@@ -15,7 +15,6 @@
         <module>nacos-sc</module>
         <module>ratelimit</module>
         <module>config-bus</module>
-        <module>skywalking</module>
         <module>feign</module>
     </modules>
 
