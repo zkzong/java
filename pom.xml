@@ -19,6 +19,7 @@
         <module>log</module>
         <module>dubbo</module>
         <module>idempotent</module>
+        <module>skywalking</module>
     </modules>
 
     <properties>
