@@ -25,7 +25,7 @@
         <module>rxjava</module>
         <module>guice</module>
         <module>testng</module>
-        <module>groboutils</module>
+        <!--<module>groboutils</module>-->
         <module>snowflake</module>
         <module>pdf</module>
         <module>orika</module>
