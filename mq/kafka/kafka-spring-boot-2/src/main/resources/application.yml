@@ -4,11 +4,11 @@ server:
 spring:
   kafka:
     producer:
-      bootstrap-servers: 192.168.133.111:9092,192.168.133.112:9092
+      bootstrap-servers: 127.0.0.1:9092
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
     consumer:
-      bootstrap-servers: 192.168.133.111:9092,192.168.133.112:9092
+      bootstrap-servers: 127.0.0.1:9092
       key-serializer: org.apache.kafka.common.serialization.StringDeserializer
       value-serializer: org.apache.kafka.common.serialization.StringDeserializer
       group-id: group-id
