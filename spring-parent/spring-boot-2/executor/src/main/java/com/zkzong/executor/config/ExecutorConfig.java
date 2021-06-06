@@ -29,7 +29,8 @@ public class ExecutorConfig {
     @Bean(name = "asyncServiceExecutor")
     public Executor asyncServiceExecutor() {
         logger.info("start asyncServiceExecutor");
-        ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
+        //ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
+        ThreadPoolTaskExecutor executor = new VisiableThreadPoolTaskExecutor();
         //配置核心线程数
         executor.setCorePoolSize(corePoolSize);
         //配置最大线程数
