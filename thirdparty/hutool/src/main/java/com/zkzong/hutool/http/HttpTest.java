@@ -10,7 +10,7 @@ public class HttpTest {
     @Test
     public void get() {
         //GET请求
-        String content = HttpUtil.get("https://www.baidu.com/s?wd=java");
+        String content = HttpUtil.get("https://www.baidu.com");
         System.out.println(content);
     }
 
@@ -20,7 +20,7 @@ public class HttpTest {
         HashMap<String, Object> paramMap = new HashMap<>();
         paramMap.put("city", "北京");
 
-        String result = HttpUtil.post("https://www.baidu.com", paramMap);
+        String result = HttpUtil.post("url", paramMap);
         System.out.println(result);
     }
 }

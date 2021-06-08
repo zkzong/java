@@ -105,4 +105,10 @@ public class IntegerTest {
         System.out.println(b == c); // true
     }
 
+    @Test
+    public void toBinaryString() {
+        String s = Integer.toBinaryString(255);
+        System.out.println(s);
+    }
+
 }
