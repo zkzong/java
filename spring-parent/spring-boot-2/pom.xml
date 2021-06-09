@@ -18,6 +18,7 @@
         <module>swagger3</module>
         <module>distributed-transaction</module>
         <module>executor</module>
+        <module>map</module>
     </modules>
     <packaging>pom</packaging>
 
