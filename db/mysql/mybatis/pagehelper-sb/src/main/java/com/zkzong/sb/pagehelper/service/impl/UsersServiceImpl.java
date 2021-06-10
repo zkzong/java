@@ -26,7 +26,7 @@ public class UsersServiceImpl implements UsersService {
 
     @Override
     public PageInfo<Users> getUsersByPage() {
-        PageHelper.startPage(1, 5);
+        PageHelper.startPage(10, 5);
         // 查找所有
 //        PageHelper.startPage(1, 0);
         List<Users> allUsers = usersMapper.getAllUsers();

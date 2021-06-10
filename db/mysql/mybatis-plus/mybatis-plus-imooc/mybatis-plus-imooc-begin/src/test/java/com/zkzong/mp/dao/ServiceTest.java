@@ -1,6 +1,8 @@
 package com.zkzong.mp.dao;
 
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.zkzong.mp.entity.User;
 import com.zkzong.mp.service.UserService;
 import org.junit.Test;
@@ -23,6 +25,14 @@ public class ServiceTest {
     public void getOne() {
         User user = userService.getOne(Wrappers.<User>lambdaQuery().gt(User::getAge, 25), false);
         System.out.println(user);
+    }
+
+    @Test
+    public void page() {
+        PageHelper.startPage(10,1);
+        List<User> list = userService.list();
+        PageInfo pageInfo = new PageInfo(list);
+        System.out.println(pageInfo);
     }
 
     @Test
