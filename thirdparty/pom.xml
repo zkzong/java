@@ -26,7 +26,6 @@
         <module>guice</module>
         <module>testng</module>
         <!--<module>groboutils</module>-->
-        <module>snowflake</module>
         <module>pdf</module>
         <module>orika</module>
         <module>junit</module>
@@ -34,6 +33,7 @@
         <module>xml</module>
         <module>sharding-jdbc</module>
         <module>fastdfs</module>
+        <module>id</module>
     </modules>
 
     <properties>
