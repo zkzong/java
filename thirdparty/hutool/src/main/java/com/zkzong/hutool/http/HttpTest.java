@@ -1,6 +1,7 @@
 package com.zkzong.hutool.http;
 
 import cn.hutool.http.HttpUtil;
+import com.google.gson.Gson;
 import org.junit.Test;
 
 import java.util.HashMap;
@@ -18,9 +19,25 @@ public class HttpTest {
     public void post() {
         //POST请求
         HashMap<String, Object> paramMap = new HashMap<>();
-        paramMap.put("city", "北京");
+        paramMap.put("name", "long");
 
-        String result = HttpUtil.post("url", paramMap);
+        String result = HttpUtil.post("http://localhost:8080/post", paramMap);
+        System.out.println(result);
+    }
+
+    @Test
+    public void postjson() {
+        //POST请求
+        User user = new User();
+        user.setId(1);
+        user.setName("long");
+        user.setAge(30);
+        user.setSex('M');
+
+        Gson gson = new Gson();
+        String json = gson.toJson(user);
+
+        String result = HttpUtil.post("http://localhost:8080/post/json", json);
         System.out.println(result);
     }
 }
