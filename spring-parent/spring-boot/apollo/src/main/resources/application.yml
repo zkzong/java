@@ -5,7 +5,11 @@ spring:
   application:
     name: apollo
 
+app:
+  id: 1001
+
 apollo:
+  cluster: default
   bootstrap:
     enabled: true
     namespaces: application
