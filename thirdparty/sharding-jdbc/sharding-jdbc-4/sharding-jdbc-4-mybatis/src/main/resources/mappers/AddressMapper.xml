@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zkzong.sj4.repository.AddressMapper">
+    <resultMap id="baseResultMap" type="com.zkzong.sj4.entity.Address">
+        <result column="address_id" property="addressId" jdbcType="BIGINT"/>
+        <result column="address_name" property="addressName" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <update id="createTableIfNotExists">
+        CREATE TABLE IF NOT EXISTS t_address (address_id BIGINT NOT NULL, address_name VARCHAR(100) NOT NULL, PRIMARY KEY (address_id));
+    </update>
+
+    <update id="truncateTable">
+        TRUNCATE TABLE t_address;
+    </update>
+
+    <update id="dropTable">
+        DROP TABLE IF EXISTS t_address;
+    </update>
+
+    <insert id="insert">
+        INSERT INTO t_address (address_id, address_name) VALUES (#{addressId,jdbcType=BIGINT}, #{addressName,jdbcType=VARCHAR});
+    </insert>
+
+    <delete id="delete">
+        DELETE FROM t_address WHERE address_id = #{addressId,jdbcType=BIGINT};
+    </delete>
+
+    <select id="selectAll" resultMap="baseResultMap">
+        SELECT * FROM t_address;
+    </select>
+
+</mapper>
