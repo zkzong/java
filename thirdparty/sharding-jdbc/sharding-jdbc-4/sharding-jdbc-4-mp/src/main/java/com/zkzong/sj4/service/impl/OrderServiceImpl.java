@@ -59,4 +59,12 @@ public class OrderServiceImpl implements OrderService {
         PageInfo pageInfo = new PageInfo(orders);
         return pageInfo;
     }
+
+    @Override
+    public List<Order> betweenand() {
+        QueryWrapper<Order> queryWrapper = new QueryWrapper<>();
+        queryWrapper.lambda().between(Order::getOrderId, 3, 5);
+        List<Order> orders = orderMapper.selectList(queryWrapper);
+        return orders;
+    }
 }
