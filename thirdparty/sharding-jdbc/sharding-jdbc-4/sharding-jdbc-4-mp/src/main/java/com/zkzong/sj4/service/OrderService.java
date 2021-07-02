@@ -1,7 +1,7 @@
-package com.zkzong.ss.service;
+package com.zkzong.sj4.service;
 
 import com.github.pagehelper.PageInfo;
-import com.zkzong.ss.entity.Order;
+import com.zkzong.sj4.entity.Order;
 
 import java.util.List;
 

@@ -1,13 +1,13 @@
-package com.zkzong.ss.service.impl;
+package com.zkzong.sj4.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.zkzong.ss.entity.Order;
-import com.zkzong.ss.entity.OrderItem;
-import com.zkzong.ss.mapper.OrderItemMapper;
-import com.zkzong.ss.mapper.OrderMapper;
-import com.zkzong.ss.service.OrderService;
+import com.zkzong.sj4.entity.Order;
+import com.zkzong.sj4.entity.OrderItem;
+import com.zkzong.sj4.mapper.OrderItemMapper;
+import com.zkzong.sj4.mapper.OrderMapper;
+import com.zkzong.sj4.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -29,6 +29,7 @@ public class OrderServiceImpl implements OrderService {
             Order order = new Order();
             order.setOrderId(i);
             order.setUserId(i);
+            order.setAddressId(i);
             order.setStatus("S");
             orderMapper.insert(order);
 
@@ -36,6 +37,7 @@ public class OrderServiceImpl implements OrderService {
             orderItem.setOrderItemId(i);
             orderItem.setOrderId(i);
             orderItem.setUserId(i);
+            orderItem.setStatus("S");
             orderItemMapper.insert(orderItem);
         }
 

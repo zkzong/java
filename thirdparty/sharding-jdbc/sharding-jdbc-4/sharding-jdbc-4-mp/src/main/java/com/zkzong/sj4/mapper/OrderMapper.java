@@ -1,7 +1,7 @@
-package com.zkzong.ss.mapper;
+package com.zkzong.sj4.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.zkzong.ss.entity.Order;
+import com.zkzong.sj4.entity.Order;
 
 public interface OrderMapper extends BaseMapper<Order> {
 }

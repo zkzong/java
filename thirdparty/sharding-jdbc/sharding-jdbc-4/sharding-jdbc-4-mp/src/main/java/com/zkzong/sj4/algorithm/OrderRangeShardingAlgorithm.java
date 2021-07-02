@@ -1,4 +1,4 @@
-package com.zkzong.ss.algorithm;
+package com.zkzong.sj4.algorithm;
 
 import org.apache.shardingsphere.api.sharding.standard.RangeShardingAlgorithm;
 import org.apache.shardingsphere.api.sharding.standard.RangeShardingValue;
