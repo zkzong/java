@@ -55,7 +55,7 @@ public class OrderServiceImpl implements OrderService {
     public PageInfo<Order> page() {
         PageHelper.startPage(1, 2);
         QueryWrapper<Order> queryWrapper = new QueryWrapper<>();
-        List<Order> orders = orderMapper.selectList(queryWrapper);
+        List<Order> orders = orderMapper.selectList(queryWrapper.lambda().orderByAsc(Order::getOrderId));
         PageInfo pageInfo = new PageInfo(orders);
         return pageInfo;
     }
