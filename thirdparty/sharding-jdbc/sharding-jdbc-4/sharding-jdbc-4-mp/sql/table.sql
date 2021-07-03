@@ -33,3 +33,8 @@ CREATE TABLE IF NOT EXISTS t_order_item_1 (
     status        VARCHAR(50),
     PRIMARY KEY (order_item_id)
 );
+
+
+-- 分库
+create database demo_ds_0;
+create database demo_ds_1;
