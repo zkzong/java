@@ -1,8 +1,8 @@
 
 package com.zkzong.sj5.service;
 
-import com.zkzong.sj5.entity.User;
-import com.zkzong.sj5.repository.UserRepository;
+import com.zkzong.sj5.entity.ShadowUser;
+import com.zkzong.sj5.repository.ShadowUserRepository;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -10,11 +10,11 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-@Service("encrypt")
-public class UserServiceImpl implements ExampleService {
+@Service("shadow")
+public class ShadowUserServiceImpl implements ExampleService {
 
     @Resource
-    private UserRepository userRepository;
+    private ShadowUserRepository userRepository;
 
     @Override
     public void initEnvironment() throws SQLException {
@@ -41,10 +41,11 @@ public class UserServiceImpl implements ExampleService {
         System.out.println("---------------------------- Insert Data ----------------------------");
         List<Long> result = new ArrayList<>(10);
         for (int i = 1; i <= 10; i++) {
-            User user = new User();
+            ShadowUser user = new ShadowUser();
             user.setUserId(i);
             user.setUserName("test_mybatis_" + i);
             user.setPwd("pwd_mybatis_" + i);
+            user.setShadow(i % 2 == 0);
             userRepository.insert(user);
             result.add((long) user.getUserId());
         }

@@ -4,5 +4,5 @@ package com.zkzong.sj5.repository;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
-public interface AddressMapper {
+public interface MybatisOrderItemRepository extends OrderItemRepository {
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.zkzong.sj5.repository.OrderMapper">
+<mapper namespace="com.zkzong.sj5.repository.MybatisOrderRepository">
     <resultMap id="baseResultMap" type="com.zkzong.sj5.entity.Order">
         <result column="order_id" property="orderId" jdbcType="BIGINT"/>
         <result column="user_id" property="userId" jdbcType="INTEGER"/>
@@ -21,12 +21,8 @@
         DROP TABLE IF EXISTS t_order;
     </update>
 
-    <!--<insert id="insert" useGeneratedKeys="true" keyProperty="orderId">-->
-    <!--    INSERT INTO t_order (user_id, address_id, status) VALUES (#{userId,jdbcType=INTEGER}, #{addressId,jdbcType=BIGINT}, #{status,jdbcType=VARCHAR});-->
-    <!--</insert>-->
-
     <insert id="insert" useGeneratedKeys="true" keyProperty="orderId">
-        INSERT INTO t_order (order_id, user_id, address_id, status) VALUES (#{orderId,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{addressId,jdbcType=BIGINT}, #{status,jdbcType=VARCHAR});
+        INSERT INTO t_order (user_id, address_id, status) VALUES (#{userId,jdbcType=INTEGER}, #{addressId,jdbcType=BIGINT}, #{status,jdbcType=VARCHAR});
     </insert>
 
     <delete id="delete">

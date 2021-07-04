@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.zkzong.sj5.repository.MybatisUserRepository">
-    <resultMap id="baseResultMap" type="com.zkzong.sj5.entity.User">
+<mapper namespace="com.zkzong.sj5.repository.MybatisShadowUserRepository">
+    <resultMap id="baseResultMap" type="com.zkzong.sj5.entity.ShadowUser">
         <result column="user_id" property="userId" jdbcType="INTEGER"/>
         <result column="user_name" property="userName" jdbcType="VARCHAR"/>
         <result column="pwd" property="pwd" jdbcType="VARCHAR"/>
         <result column="assisted_query_pwd" property="assistedQueryPwd" jdbcType="VARCHAR"/>
+        <result column="shadow" property="shadow" jdbcType="BOOLEAN"/>
     </resultMap>
 
     <update id="createTableIfNotExists">
@@ -22,14 +23,18 @@
     </update>
 
     <insert id="insert">
-        INSERT INTO t_user (user_id, user_name, pwd) VALUES (#{userId,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}, #{pwd,jdbcType=VARCHAR})
+        INSERT INTO t_user (user_id, user_name, pwd, shadow) VALUES (#{userId,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}, #{pwd,jdbcType=VARCHAR}, #{shadow,jdbcType=BOOLEAN})
     </insert>
 
     <delete id="delete">
-        DELETE FROM t_user WHERE user_id = #{userId,jdbcType=INTEGER};
+        DELETE FROM t_user WHERE user_id = #{userId,jdbcType=INTEGER} AND shadow = #{shadow,jdbcType=BOOLEAN};
     </delete>
 
     <select id="selectAll" resultMap="baseResultMap">
         SELECT * FROM t_user;
+    </select>
+
+    <select id="selectAllByShadow" resultMap="baseResultMap">
+        SELECT * FROM t_user WHERE shadow = #{shadow,jdbcType=BOOLEAN};
     </select>
 </mapper>
