@@ -16,7 +16,7 @@
 
     <modules>
         <module>snowflake</module>
-        <module>id-hutool</module>
+        <!--<module>id-hutool</module>-->
     </modules>
 
 </project>
