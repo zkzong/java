@@ -1,7 +1,7 @@
 
-package com.zkzong.sj4.repository;
+package com.zkzong.sj5.mapper;
 
-import com.zkzong.sj4.entity.OrderItem;
+import com.zkzong.sj5.entity.OrderItem;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

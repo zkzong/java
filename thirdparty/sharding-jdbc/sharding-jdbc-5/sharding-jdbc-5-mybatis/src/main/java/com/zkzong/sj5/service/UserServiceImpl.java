@@ -2,7 +2,7 @@
 package com.zkzong.sj5.service;
 
 import com.zkzong.sj5.entity.User;
-import com.zkzong.sj5.repository.UserRepository;
+import com.zkzong.sj5.mapper.UserMapper;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -14,17 +14,17 @@ import java.util.List;
 public class UserServiceImpl implements ExampleService {
 
     @Resource
-    private UserRepository userRepository;
+    private UserMapper userMapper;
 
     @Override
     public void initEnvironment() throws SQLException {
-        userRepository.createTableIfNotExists();
-        userRepository.truncateTable();
+        userMapper.createTableIfNotExists();
+        userMapper.truncateTable();
     }
 
     @Override
     public void cleanEnvironment() throws SQLException {
-        userRepository.dropTable();
+        userMapper.dropTable();
     }
 
     @Override
@@ -45,7 +45,7 @@ public class UserServiceImpl implements ExampleService {
             user.setUserId(i);
             user.setUserName("test_mybatis_" + i);
             user.setPwd("pwd_mybatis_" + i);
-            userRepository.insert(user);
+            userMapper.insert(user);
             result.add((long) user.getUserId());
         }
         return result;
@@ -62,14 +62,14 @@ public class UserServiceImpl implements ExampleService {
     private void deleteData(final List<Long> userIds) throws SQLException {
         System.out.println("---------------------------- Delete Data ----------------------------");
         for (Long each : userIds) {
-            userRepository.delete(each);
+            userMapper.delete(each);
         }
     }
 
     @Override
     public void printData() throws SQLException {
         System.out.println("---------------------------- Print User Data -----------------------");
-        for (Object each : userRepository.selectAll()) {
+        for (Object each : userMapper.selectAll()) {
             System.out.println(each);
         }
     }

@@ -4,9 +4,9 @@ package com.zkzong.sj5.service;
 import com.zkzong.sj5.entity.Address;
 import com.zkzong.sj5.entity.Order;
 import com.zkzong.sj5.entity.OrderItem;
-import com.zkzong.sj5.repository.AddressRepository;
-import com.zkzong.sj5.repository.OrderItemRepository;
-import com.zkzong.sj5.repository.OrderRepository;
+import com.zkzong.sj5.mapper.AddressMapper;
+import com.zkzong.sj5.mapper.OrderItemMapper;
+import com.zkzong.sj5.mapper.OrderMapper;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -21,38 +21,38 @@ import java.util.List;
 public class OrderServiceImpl implements ExampleService {
 
     @Resource
-    private OrderRepository orderRepository;
+    private OrderMapper orderMapper;
 
     @Resource
-    private OrderItemRepository orderItemRepository;
+    private OrderItemMapper orderItemMapper;
 
     @Resource
-    private AddressRepository addressRepository;
+    private AddressMapper addressMapper;
 
     @Override
     public void initEnvironment() throws SQLException {
-        orderRepository.createTableIfNotExists();
-        orderItemRepository.createTableIfNotExists();
-        orderRepository.truncateTable();
-        orderItemRepository.truncateTable();
+        orderMapper.createTableIfNotExists();
+        orderItemMapper.createTableIfNotExists();
+        orderMapper.truncateTable();
+        orderItemMapper.truncateTable();
         initAddressTable();
     }
 
     private void initAddressTable() throws SQLException {
-        addressRepository.createTableIfNotExists();
-        addressRepository.truncateTable();
+        addressMapper.createTableIfNotExists();
+        addressMapper.truncateTable();
         for (int i = 1; i <= 10; i++) {
             Address entity = new Address();
             entity.setAddressId((long) i);
             entity.setAddressName("address_" + i);
-            addressRepository.insert(entity);
+            addressMapper.insert(entity);
         }
     }
 
     @Override
     public void cleanEnvironment() throws SQLException {
-        orderRepository.dropTable();
-        orderItemRepository.dropTable();
+        orderMapper.dropTable();
+        orderItemMapper.dropTable();
     }
 
     @Override
@@ -83,12 +83,12 @@ public class OrderServiceImpl implements ExampleService {
             order.setUserId(i);
             order.setAddressId(i);
             order.setStatus("INSERT_TEST");
-            orderRepository.insert(order);
+            orderMapper.insert(order);
             OrderItem item = new OrderItem();
             item.setOrderId(order.getOrderId());
             item.setUserId(i);
             item.setStatus("INSERT_TEST");
-            orderItemRepository.insert(item);
+            orderItemMapper.insert(item);
             result.add(order.getOrderId());
         }
         return result;
@@ -97,19 +97,19 @@ public class OrderServiceImpl implements ExampleService {
     private void deleteData(final List<Long> orderIds) throws SQLException {
         System.out.println("---------------------------- Delete Data ----------------------------");
         for (Long each : orderIds) {
-            orderRepository.delete(each);
-            orderItemRepository.delete(each);
+            orderMapper.delete(each);
+            orderItemMapper.delete(each);
         }
     }
 
     @Override
     public void printData() throws SQLException {
         System.out.println("---------------------------- Print Order Data -----------------------");
-        for (Object each : orderRepository.selectAll()) {
+        for (Object each : orderMapper.selectAll()) {
             System.out.println(each);
         }
         System.out.println("---------------------------- Print OrderItem Data -------------------");
-        for (Object each : orderItemRepository.selectAll()) {
+        for (Object each : orderItemMapper.selectAll()) {
             System.out.println(each);
         }
     }

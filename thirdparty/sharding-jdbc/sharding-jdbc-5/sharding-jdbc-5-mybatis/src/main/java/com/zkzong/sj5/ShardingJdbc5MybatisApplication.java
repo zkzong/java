@@ -4,7 +4,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@MapperScan(basePackages = "com.zkzong.sj5.repository")
+@MapperScan(basePackages = "com.zkzong.sj5.mapper")
 @SpringBootApplication
 public class ShardingJdbc5MybatisApplication {
 
