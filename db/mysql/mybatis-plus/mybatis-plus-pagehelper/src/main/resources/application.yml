@@ -11,3 +11,6 @@ spring:
 mybatis-plus:
   # \u626B\u63CF mapper.xml
   mapper-locations: classpath*:mapper/*Mapper.xml
+logging:
+  level:
+    root: debug
