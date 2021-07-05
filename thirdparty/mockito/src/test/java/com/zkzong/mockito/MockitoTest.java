@@ -6,9 +6,8 @@ import java.util.Iterator;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
+import static org.mockito.ArgumentMatchers.anyInt;
+import static org.mockito.Mockito.*;
 
 /**
  * Created by Zong on 2017/4/7.
@@ -41,5 +40,45 @@ public class MockitoTest {
         String result = iterator.next() + " " + iterator.next() + " " + iterator.next();
         // 验证结果
         assertEquals("hello world world", result);
+    }
+
+    @Test
+    public void verifyTest() {
+        Person mockPerson = mock(Person.class);
+        mockPerson.setId(1);
+        mockPerson.setName("TestOps");
+
+        // 验证
+        verify(mockPerson).setId(1);
+        verify(mockPerson).setName("TestOps");
+    }
+
+    @Test
+    public void stubTest() {
+        Person mockPerson = mock(Person.class);
+        when(mockPerson.getId()).thenReturn(1);
+        when(mockPerson.getName()).thenThrow(new NoSuchMethodError());
+
+        System.out.println(mockPerson.getId());
+        System.out.println(mockPerson.getName());
+    }
+
+    @Test
+    public void matchTest() {
+        Person mockPerson = mock(Person.class);
+        when(mockPerson.setKeyById(anyInt())).thenReturn("001TestOps100");
+        System.out.println(mockPerson.setKeyById(10));
+        verify(mockPerson).setKeyById(anyInt());
+    }
+
+    @Test
+    public void timesTest() {
+        Person mockPerson = mock(Person.class);
+        mockPerson.setId(1);
+        mockPerson.setName("TestOps");
+        mockPerson.setName("TestOps");
+
+        verify(mockPerson).setId(1);
+        verify(mockPerson, times(2)).setName("TestOps");
     }
 }
