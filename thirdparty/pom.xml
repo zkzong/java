@@ -20,6 +20,7 @@
         <module>lombok</module>
         <module>okhttp</module>
         <module>mockito</module>
+        <module>powermock</module>
         <module>trove</module>
         <module>spring-tools</module>
         <module>rxjava</module>
