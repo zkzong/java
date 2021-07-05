@@ -28,3 +28,19 @@ for (int i = 1; i <= 10; i++) {
     INSERT INTO t_order (order_id, user_id, address_id, status) VALUES (#{orderId,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{addressId,jdbcType=BIGINT}, #{status,jdbcType=VARCHAR});
 </insert>
 ```
+
+
+`Inline sharding algorithm expression cannot be null`
+spring boot 版本问题
+
+
+
+### done
+
+分表：inline方式、自定义算法（PreciseShardingAlgorithm不支持范围查询）
+分页
+
+### todo
+
+[ ] 雪花算法
+
