@@ -5,14 +5,11 @@ import com.zkzong.mockito.req.UserReq;
 import com.zkzong.mockito.resp.UserResp;
 import com.zkzong.mockito.service.UserService;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.runners.MockitoJUnitRunner;
-import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import org.mockito.junit.MockitoJUnitRunner;
 
 import java.util.List;
 
@@ -20,21 +17,24 @@ import java.util.List;
  * @Author: zong
  * @Date: 2021/7/5
  */
-@RunWith(MockitoJUnitRunner.class)
+@RunWith(MockitoJUnitRunner.StrictStubs.class)
 public class UserControllerTest {
 
-    private MockMvc mockMvc;
+    //private MockMvc mockMvc;
 
     @InjectMocks
     private UserController userController;
 
+    /**
+     * 必须mock service，否则报空指针
+     */
     @Mock
     private UserService userService;
 
-    @Before
-    public void before() {
-        mockMvc = MockMvcBuilders.standaloneSetup(userController).build();
-    }
+    //@Before
+    //public void before() {
+    //    mockMvc = MockMvcBuilders.standaloneSetup(userController).build();
+    //}
 
     @Test
     public void insert() {
