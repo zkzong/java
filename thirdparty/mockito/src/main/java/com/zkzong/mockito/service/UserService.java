@@ -8,6 +8,8 @@ import java.util.List;
 
 public interface UserService extends IService<User> {
 
+    User selectById(Long id);
+
     List<User> query(String userName);
 
     List<User> query(UserReq req);

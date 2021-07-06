@@ -20,6 +20,11 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     private UserMapper userMapper;
 
     @Override
+    public User selectById(Long id) {
+        return userMapper.selectById(id);
+    }
+
+    @Override
     public List<User> query(String userName) {
         Map<String, Object> map = new HashMap<>();
         map.put("f_user_name", userName);

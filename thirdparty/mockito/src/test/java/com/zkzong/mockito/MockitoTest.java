@@ -1,6 +1,7 @@
 package com.zkzong.mockito;
 
 import org.junit.Test;
+import org.mockito.InOrder;
 
 import java.util.Iterator;
 import java.util.List;
@@ -80,5 +81,46 @@ public class MockitoTest {
 
         verify(mockPerson).setId(1);
         verify(mockPerson, times(2)).setName("TestOps");
+    }
+
+    @Test
+    public void orderTest() {
+        Person singleMock = mock(Person.class);
+        singleMock.setName("TestOps");
+        singleMock.setName("Mango");
+
+        InOrder inOrder = inOrder(singleMock);
+        inOrder.verify(singleMock).setName("TestOps");
+        inOrder.verify(singleMock).setName("Mango");
+
+        Person firstMock = mock(Person.class);
+        Person secondMock = mock(Person.class);
+        firstMock.setId(1);
+        secondMock.setId(2);
+
+        InOrder inOrder1 = inOrder(firstMock, secondMock);
+        inOrder1.verify(firstMock).setId(1);
+        inOrder1.verify(secondMock).setId(2);
+    }
+
+    @Test
+    public void consStubTest() {
+        Person personMock = mock(Person.class);
+        when(personMock.getName())
+                .thenReturn("TestOps")
+                .thenReturn("1")
+                .thenThrow(new NoSuchMethodError());
+        System.out.println(personMock.getName());
+        System.out.println(personMock.getName());
+        //System.out.println(personMock.getName());
+    }
+
+    @Test
+    public void spyTest() {
+        Person person = new Person(1, "TestOps");
+        Person spy = spy(person);
+        when(spy.getName()).thenReturn("Mango");
+        System.out.println(spy.getName());
+        System.out.println(spy.getId());
     }
 }

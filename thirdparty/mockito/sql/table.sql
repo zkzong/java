@@ -1,3 +1,7 @@
+create database mp;
+
+use mp;
+
 create table t_user(
     f_id bigint not null primary key auto_increment,
     f_user_name varchar(50) not null,

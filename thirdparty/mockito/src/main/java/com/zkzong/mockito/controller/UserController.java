@@ -21,6 +21,18 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    @GetMapping("/select")
+    public UserResp<User> select(@RequestParam Long id) {
+        UserResp<User> resp = new UserResp<>();
+        resp.setCode("0000");
+        resp.setMsg("SUCCESS");
+
+        User user = userService.selectById(id);
+        resp.setData(user);
+
+        return resp;
+    }
+
     @PostMapping("/insert")
     public UserResp insert(@RequestBody UserReq userReq) {
         UserResp resp = new UserResp();
