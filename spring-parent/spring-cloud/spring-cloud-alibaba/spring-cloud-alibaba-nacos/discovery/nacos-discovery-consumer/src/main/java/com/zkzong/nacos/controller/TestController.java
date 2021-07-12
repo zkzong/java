@@ -1,5 +1,6 @@
 package com.zkzong.nacos.controller;
 
+import com.zkzong.nacos.api.EchoClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,8 +22,13 @@ public class TestController {
         this.restTemplate = restTemplate;
     }
 
+    @Autowired
+    private EchoClient echoClient;
+
     @RequestMapping(value = "/echo/{str}", method = RequestMethod.GET)
     public String echo(@PathVariable String str) {
-        return restTemplate.getForObject("http://service-provider/echo/" + str, String.class);
+        // 1. resttemplate
+        //return restTemplate.getForObject("http://service-provider/echo/" + str, String.class);
+        return echoClient.echo(str);
     }
 }
