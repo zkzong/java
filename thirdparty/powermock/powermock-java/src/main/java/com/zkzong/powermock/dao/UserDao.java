@@ -8,7 +8,7 @@ public class UserDao {
         throw new UnsupportedOperationException();
     }
 
-    public int insertUser(User user) {
+    public void insertUser(User user) {
         throw new UnsupportedOperationException();
     }
 }
