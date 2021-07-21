@@ -4,6 +4,7 @@ import com.zkzong.sb.dto.RspDTO;
 import com.zkzong.sb.dto.UserDTO;
 import com.zkzong.sb.dto.assist.Update;
 import com.zkzong.sb.service.UserService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@Slf4j
 public class ValidatorController {
 
     @Autowired
@@ -24,6 +26,7 @@ public class ValidatorController {
      */
     @PostMapping("/save/valid")
     public RspDTO save(@RequestBody @Validated UserDTO userDTO) {
+        log.info("入参：{}", userDTO);
         userService.save(userDTO);
         return RspDTO.success();
     }
