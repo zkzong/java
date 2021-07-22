@@ -34,10 +34,18 @@ for (int i = 1; i <= 10; i++) {
 spring boot 版本问题
 
 
+# 4 
+## 分表
+### inline方式
+### 自定义算法
+标准分片策略
+对应StandardShardingStrategy。提供对SQL语句中的=, >, <, >=, <=, IN和BETWEEN AND的分片操作支持。StandardShardingStrategy只支持单分片键，提供PreciseShardingAlgorithm和RangeShardingAlgorithm两个分片算法。PreciseShardingAlgorithm是必选的，用于处理=和IN的分片。RangeShardingAlgorithm是可选的，用于处理BETWEEN AND, >, <, >=, <=分片，如果不配置RangeShardingAlgorithm，SQL中的BETWEEN AND将按照全库路由处理。
+
+# 5
 
 ### done
 
-分表：inline方式、自定义算法（PreciseShardingAlgorithm不支持范围查询）
+、（PreciseShardingAlgorithm不支持范围查询）
 分页
 
 ### todo

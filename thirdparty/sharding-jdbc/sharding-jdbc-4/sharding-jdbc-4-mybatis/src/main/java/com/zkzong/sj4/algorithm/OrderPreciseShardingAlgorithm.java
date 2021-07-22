@@ -17,8 +17,8 @@ public class OrderPreciseShardingAlgorithm implements PreciseShardingAlgorithm<L
         for (String each : collection) {
             int value = preciseShardingValue.getValue().intValue();
             int i = value % 2;
-            Object[] array = collection.toArray();
-            return array[i].toString();
+            String[] tables = collection.toArray(new String[]{});
+            return tables[i];
         }
         return null;
     }

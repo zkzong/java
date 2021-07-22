@@ -113,4 +113,10 @@ public class OrderServiceImpl implements ExampleService {
             System.out.println(each);
         }
     }
+
+    @Override
+    public List<Order> selectRange() {
+        List<Order> orders = orderMapper.selectRange();
+        return orders;
+    }
 }
