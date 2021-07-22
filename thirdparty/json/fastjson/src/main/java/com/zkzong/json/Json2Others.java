@@ -3,21 +3,19 @@ package com.zkzong.json;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by Zong on 2016/8/11.
  */
 public class Json2Others {
-    public static void main(String[] args) {
+
+    @Test
+    public void parseArray() {
         String str = "[{\"id\":1,\"name\":\"zong\"},{\"id\":2,\"name\":\"liu\"},{\"id\":3,\"name\":\"ma\"}]";
 
         System.out.println("转换成List<User>对象");
@@ -154,5 +152,26 @@ public class Json2Others {
     public void tt() {
         String ss = "id=" + "1" + ",name=" + "zong";
         System.out.println(JSON.toJSONString(ss));
+    }
+
+    /**
+     * 泛型
+     */
+    @Test
+    public void resp() {
+        Resp<User> resp = new Resp<>();
+        resp.setCode("0000");
+        resp.setMsg("S");
+        User user = new User();
+        user.setId(1L);
+        user.setName("zong");
+        resp.setData(user);
+
+        String s = JSON.toJSONString(resp);
+
+        //Resp r = JSON.parseObject(s, Resp.class);
+        Resp<User> r = JSON.parseObject(s, new TypeReference<Resp<User>>() {});
+        System.out.println(r);
+
     }
 }
