@@ -15,7 +15,6 @@
 
     <modules>
         <module>sharding-jdbc-5-mybatis</module>
-        <module>sharding-jdbc-5-mp</module>
     </modules>
 
     <dependencyManagement>
@@ -24,7 +23,7 @@
                 <!-- Import dependency management from Spring Boot -->
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.3.7.RELEASE</version>
+                <version>2.1.0.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

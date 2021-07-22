@@ -60,7 +60,7 @@ public class OrderServiceImpl implements ExampleService {
     public void processSuccess() throws SQLException {
         System.out.println("-------------- Process Success Begin ---------------");
         List<Long> orderIds = insertData();
-        printData();
+        //printData();
         //deleteData(orderIds);
         //printData();
         System.out.println("-------------- Process Success Finish --------------");
@@ -80,11 +80,13 @@ public class OrderServiceImpl implements ExampleService {
         List<Long> result = new ArrayList<>(10);
         for (int i = 1; i <= 10; i++) {
             Order order = new Order();
+            order.setOrderId(i);
             order.setUserId(i);
             order.setAddressId(i);
             order.setStatus("INSERT_TEST");
             orderMapper.insert(order);
             OrderItem item = new OrderItem();
+            item.setOrderItemId(i);
             item.setOrderId(order.getOrderId());
             item.setUserId(i);
             item.setStatus("INSERT_TEST");

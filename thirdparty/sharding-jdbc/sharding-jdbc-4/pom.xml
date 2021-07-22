@@ -16,7 +16,6 @@
 
     <modules>
         <module>sharding-jdbc-4-mybatis</module>
-        <module>sharding-jdbc-4-mp</module>
     </modules>
 
     <dependencyManagement>

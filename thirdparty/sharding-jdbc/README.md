@@ -43,9 +43,7 @@ spring boot 版本问题
 
 # 5
 
-### done
 
-、（PreciseShardingAlgorithm不支持范围查询）
 分页
 
 ### todo
