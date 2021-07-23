@@ -1,7 +1,10 @@
 
 package com.zkzong.sj5.service;
 
+import com.zkzong.sj5.entity.Order;
+
 import java.sql.SQLException;
+import java.util.List;
 
 public interface ExampleService {
 
@@ -39,4 +42,6 @@ public interface ExampleService {
      * @throws SQLException SQL exception
      */
     void printData() throws SQLException;
+
+    List<Order> selectRange();
 }

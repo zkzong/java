@@ -1,6 +1,7 @@
 
 package com.zkzong.sj5.service;
 
+import com.zkzong.sj5.entity.Order;
 import com.zkzong.sj5.entity.User;
 import com.zkzong.sj5.mapper.UserMapper;
 import org.springframework.stereotype.Service;
@@ -72,5 +73,10 @@ public class UserServiceImpl implements ExampleService {
         for (Object each : userMapper.selectAll()) {
             System.out.println(each);
         }
+    }
+
+    @Override
+    public List<Order> selectRange() {
+        return null;
     }
 }

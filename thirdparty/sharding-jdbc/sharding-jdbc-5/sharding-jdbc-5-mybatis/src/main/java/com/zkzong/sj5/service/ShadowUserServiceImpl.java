@@ -1,6 +1,7 @@
 
 package com.zkzong.sj5.service;
 
+import com.zkzong.sj5.entity.Order;
 import com.zkzong.sj5.entity.ShadowUser;
 import com.zkzong.sj5.mapper.ShadowUserMapper;
 import org.springframework.stereotype.Service;
@@ -73,5 +74,10 @@ public class ShadowUserServiceImpl implements ExampleService {
         for (Object each : shadowUserMapper.selectAll()) {
             System.out.println(each);
         }
+    }
+
+    @Override
+    public List<Order> selectRange() {
+        return null;
     }
 }
