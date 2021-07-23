@@ -1,5 +1,6 @@
 package com.zkzong.sj5.algorithm;
 
+import com.google.common.collect.Range;
 import org.apache.shardingsphere.sharding.api.sharding.standard.PreciseShardingValue;
 import org.apache.shardingsphere.sharding.api.sharding.standard.RangeShardingValue;
 import org.apache.shardingsphere.sharding.api.sharding.standard.StandardShardingAlgorithm;
@@ -25,8 +26,15 @@ public class OrderStandardShardingAlgorithm implements StandardShardingAlgorithm
     public Collection<String> doSharding(Collection<String> collection, RangeShardingValue<Long> rangeShardingValue) {
         Set<String> result = new LinkedHashSet<>();
         // between and 的起始值
-        long lower = rangeShardingValue.getValueRange().lowerEndpoint();
-        long upper = rangeShardingValue.getValueRange().upperEndpoint();
+        long lower = 0;
+        long upper = 0;
+        Range<Long> valueRange = rangeShardingValue.getValueRange();
+        if (valueRange.hasLowerBound()) {
+            lower = valueRange.lowerEndpoint();
+        }
+        if (valueRange.hasUpperBound()) {
+            upper = valueRange.upperEndpoint();
+        }
 
         String[] tables = collection.toArray(new String[]{});
         // 循环范围计算分库逻辑
