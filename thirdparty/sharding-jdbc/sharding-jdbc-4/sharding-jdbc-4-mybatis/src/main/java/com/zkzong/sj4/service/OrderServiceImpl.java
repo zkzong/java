@@ -78,13 +78,13 @@ public class OrderServiceImpl implements ExampleService {
         List<Long> result = new ArrayList<>(10);
         for (int i = 1; i <= 10; i++) {
             Order order = new Order();
-            order.setOrderId(i);
+            order.setOrderId(Long.valueOf(i));
             order.setUserId(i);
-            order.setAddressId(i);
+            order.setAddressId(Long.valueOf(i));
             order.setStatus("INSERT_TEST");
             orderMapper.insert(order);
             OrderItem item = new OrderItem();
-            item.setOrderItemId(i);
+            item.setOrderItemId(Long.valueOf(i));
             item.setOrderId(order.getOrderId());
             item.setUserId(i);
             item.setStatus("INSERT_TEST");
@@ -115,8 +115,25 @@ public class OrderServiceImpl implements ExampleService {
     }
 
     @Override
+    public Order selectByOrderId() {
+        return orderMapper.selectByOrderId();
+    }
+
+    @Override
     public List<Order> selectRange() {
         List<Order> orders = orderMapper.selectRange();
+        return orders;
+    }
+
+    @Override
+    public List<Order> selectgt() {
+        List<Order> orders = orderMapper.selectgt();
+        return orders;
+    }
+
+    @Override
+    public List<Order> selectlt() {
+        List<Order> orders = orderMapper.selectlt();
         return orders;
     }
 }

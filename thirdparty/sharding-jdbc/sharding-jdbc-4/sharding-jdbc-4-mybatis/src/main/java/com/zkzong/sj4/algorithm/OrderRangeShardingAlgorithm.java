@@ -1,5 +1,6 @@
 package com.zkzong.sj4.algorithm;
 
+import com.google.common.collect.Range;
 import org.apache.shardingsphere.api.sharding.standard.RangeShardingAlgorithm;
 import org.apache.shardingsphere.api.sharding.standard.RangeShardingValue;
 
@@ -13,8 +14,15 @@ public class OrderRangeShardingAlgorithm implements RangeShardingAlgorithm<Integ
     public Collection<String> doSharding(Collection<String> collection, RangeShardingValue<Integer> rangeShardingValue) {
         Set<String> result = new LinkedHashSet<>();
         // between and 的起始值
-        int lower = rangeShardingValue.getValueRange().lowerEndpoint();
-        int upper = rangeShardingValue.getValueRange().upperEndpoint();
+        int lower = 0;
+        int upper = 0;
+        Range<Integer> valueRange = rangeShardingValue.getValueRange();
+        if (valueRange.hasLowerBound()) {
+            lower = valueRange.lowerEndpoint();
+        }
+        if (valueRange.hasUpperBound()) {
+            upper = valueRange.upperEndpoint();
+        }
 
         String[] tables = collection.toArray(new String[]{});
         // 循环范围计算分库逻辑

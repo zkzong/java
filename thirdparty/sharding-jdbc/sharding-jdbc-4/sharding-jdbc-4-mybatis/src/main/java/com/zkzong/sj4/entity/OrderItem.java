@@ -8,11 +8,11 @@ import java.io.Serializable;
 @Data
 public class OrderItem implements Serializable {
 
-    private long orderItemId;
+    private Long orderItemId;
 
-    private long orderId;
+    private Long orderId;
 
-    private int userId;
+    private Integer userId;
 
     private String status;
 
