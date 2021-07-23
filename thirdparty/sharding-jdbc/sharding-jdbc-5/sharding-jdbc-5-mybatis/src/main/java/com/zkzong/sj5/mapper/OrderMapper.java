@@ -21,6 +21,12 @@ public interface OrderMapper {
 
     List<Order> selectAll();
 
+    Order selectByOrderId();
+
     List<Order> selectRange();
+
+    List<Order> selectgt();
+
+    List<Order> selectlt();
 
 }

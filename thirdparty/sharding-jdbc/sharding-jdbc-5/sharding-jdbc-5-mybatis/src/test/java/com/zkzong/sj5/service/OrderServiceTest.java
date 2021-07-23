@@ -28,8 +28,26 @@ public class OrderServiceTest {
     }
 
     @Test
+    public void selectByOrderId() {
+        Order order = exampleService.selectByOrderId();
+        System.out.println(order);
+    }
+
+    @Test
     public void selectRange() {
         List<Order> orders = exampleService.selectRange();
+        System.out.println(orders);
+    }
+
+    @Test
+    public void selectgt() {
+        List<Order> orders = exampleService.selectgt();
+        System.out.println(orders);
+    }
+
+    @Test
+    public void selectlt() {
+        List<Order> orders = exampleService.selectlt();
         System.out.println(orders);
     }
 

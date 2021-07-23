@@ -77,7 +77,22 @@ public class ShadowUserServiceImpl implements ExampleService {
     }
 
     @Override
+    public Order selectByOrderId() {
+        return null;
+    }
+
+    @Override
     public List<Order> selectRange() {
+        return null;
+    }
+
+    @Override
+    public List<Order> selectgt() {
+        return null;
+    }
+
+    @Override
+    public List<Order> selectlt() {
         return null;
     }
 }

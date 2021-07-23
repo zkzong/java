@@ -37,7 +37,19 @@
         SELECT * FROM t_order;
     </select>
 
+    <select id="selectByOrderId" resultMap="baseResultMap">
+        SELECT * FROM t_order WHERE order_id = 5
+    </select>
+
     <select id="selectRange" resultMap="baseResultMap">
-        SELECT * FROM t_order WHERE order_id BETWEEN 200000000000000000 AND 400000000000000000
+        SELECT * FROM t_order WHERE order_id BETWEEN 1 AND 5
+    </select>
+
+    <select id="selectgt" resultMap="baseResultMap">
+        SELECT * FROM t_order WHERE order_id > 5
+    </select>
+
+    <select id="selectlt" resultMap="baseResultMap">
+        SELECT * FROM t_order WHERE order_id &lt; 5
     </select>
 </mapper>

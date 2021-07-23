@@ -43,5 +43,11 @@ public interface ExampleService {
      */
     void printData() throws SQLException;
 
+    Order selectByOrderId();
+
     List<Order> selectRange();
+
+    List<Order> selectgt();
+
+    List<Order> selectlt();
 }
