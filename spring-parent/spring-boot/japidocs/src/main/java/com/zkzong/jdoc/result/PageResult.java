@@ -1,4 +1,4 @@
-package result;
+package com.zkzong.jdoc.result;
 
 /**
  * @author yeguozhong yedaxia.github.com

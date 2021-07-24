@@ -2,6 +2,7 @@ package com.zkzong.jdoc.controller;
 
 import com.zkzong.jdoc.form.PageForm;
 import com.zkzong.jdoc.result.ApiResult;
+import com.zkzong.jdoc.result.PageResult;
 import com.zkzong.jdoc.result.book.BookDetailVO;
 import com.zkzong.jdoc.result.book.BookVO;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,7 +25,7 @@ public class BookController {
      * @return
      */
     @GetMapping("list")
-    public ApiResult<result.PageResult<BookVO>> getBookList(PageForm pageForm){
+    public ApiResult<PageResult<BookVO>> getBookList(PageForm pageForm){
         return null;
     }
 

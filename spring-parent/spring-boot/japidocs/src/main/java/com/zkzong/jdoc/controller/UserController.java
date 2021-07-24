@@ -2,14 +2,9 @@ package com.zkzong.jdoc.controller;
 
 import com.zkzong.jdoc.form.UserListForm;
 import com.zkzong.jdoc.result.ApiResult;
+import com.zkzong.jdoc.result.PageResult;
 import com.zkzong.jdoc.result.user.UserVO;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * 用户接口
@@ -26,7 +21,7 @@ public class UserController {
      * @author yedaxia
      */
     @RequestMapping(path = "list", method = {RequestMethod.GET,  RequestMethod.POST}  )
-    public ApiResult<result.PageResult<UserVO>> list(UserListForm listForm){
+    public ApiResult<PageResult<UserVO>> list(UserListForm listForm){
         return null;
     }
 
