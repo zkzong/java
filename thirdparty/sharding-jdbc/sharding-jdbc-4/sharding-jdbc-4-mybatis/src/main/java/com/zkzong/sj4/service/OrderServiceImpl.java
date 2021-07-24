@@ -1,6 +1,8 @@
 
 package com.zkzong.sj4.service;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.zkzong.sj4.entity.Order;
 import com.zkzong.sj4.entity.OrderItem;
 import com.zkzong.sj4.repository.OrderItemMapper;
@@ -135,5 +137,13 @@ public class OrderServiceImpl implements ExampleService {
     public List<Order> selectlt() {
         List<Order> orders = orderMapper.selectlt();
         return orders;
+    }
+
+    @Override
+    public PageInfo<Order> page() {
+        PageHelper.startPage(1, 1);
+        List<Order> orders = orderMapper.selectAll();
+        PageInfo<Order> page = new PageInfo<>(orders);
+        return page;
     }
 }

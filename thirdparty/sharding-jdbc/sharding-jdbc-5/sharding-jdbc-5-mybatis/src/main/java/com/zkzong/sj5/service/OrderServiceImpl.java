@@ -1,6 +1,8 @@
 
 package com.zkzong.sj5.service;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.zkzong.sj5.entity.Address;
 import com.zkzong.sj5.entity.Order;
 import com.zkzong.sj5.entity.OrderItem;
@@ -135,5 +137,13 @@ public class OrderServiceImpl implements ExampleService {
     @Override
     public List<Order> selectlt() {
         return orderMapper.selectlt();
+    }
+
+    @Override
+    public PageInfo<Order> page() {
+        PageHelper.startPage(2, 1);
+        List<Order> orders = orderMapper.selectAll();
+        PageInfo<Order> page = new PageInfo<>(orders);
+        return page;
     }
 }

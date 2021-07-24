@@ -1,5 +1,6 @@
 package com.zkzong.sj4.service;
 
+import com.github.pagehelper.PageInfo;
 import com.zkzong.sj4.entity.Order;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -49,6 +50,12 @@ public class OrderServiceTest {
     public void selectlt() {
         List<Order> orders = exampleService.selectlt();
         System.out.println(orders);
+    }
+
+    @Test
+    public void page() {
+        PageInfo<Order> page = exampleService.page();
+        System.out.println(page);
     }
 
     @Test

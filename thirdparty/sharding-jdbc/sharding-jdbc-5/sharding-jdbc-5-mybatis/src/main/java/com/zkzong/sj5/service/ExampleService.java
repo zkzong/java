@@ -1,6 +1,7 @@
 
 package com.zkzong.sj5.service;
 
+import com.github.pagehelper.PageInfo;
 import com.zkzong.sj5.entity.Order;
 
 import java.sql.SQLException;
@@ -50,4 +51,6 @@ public interface ExampleService {
     List<Order> selectgt();
 
     List<Order> selectlt();
+
+    PageInfo<Order> page();
 }

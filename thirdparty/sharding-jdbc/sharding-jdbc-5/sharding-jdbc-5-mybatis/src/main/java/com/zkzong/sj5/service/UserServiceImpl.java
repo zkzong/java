@@ -1,6 +1,7 @@
 
 package com.zkzong.sj5.service;
 
+import com.github.pagehelper.PageInfo;
 import com.zkzong.sj5.entity.Order;
 import com.zkzong.sj5.entity.User;
 import com.zkzong.sj5.mapper.UserMapper;
@@ -92,6 +93,11 @@ public class UserServiceImpl implements ExampleService {
 
     @Override
     public List<Order> selectlt() {
+        return null;
+    }
+
+    @Override
+    public PageInfo<Order> page() {
         return null;
     }
 }

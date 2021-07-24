@@ -10,15 +10,15 @@
     </resultMap>
 
     <update id="createTableIfNotExists">
-        CREATE TABLE IF NOT EXISTS t_order (order_id BIGINT AUTO_INCREMENT, user_id INT NOT NULL, address_id BIGINT NOT NULL, status VARCHAR(50), PRIMARY KEY (order_id));
+        CREATE TABLE IF NOT EXISTS t_order (order_id BIGINT AUTO_INCREMENT, user_id INT NOT NULL, address_id BIGINT NOT NULL, status VARCHAR(50), PRIMARY KEY (order_id))
     </update>
 
     <update id="truncateTable">
-        TRUNCATE TABLE t_order;
+        TRUNCATE TABLE t_order
     </update>
 
     <update id="dropTable">
-        DROP TABLE IF EXISTS t_order;
+        DROP TABLE IF EXISTS t_order
     </update>
 
     <!--<insert id="insert" useGeneratedKeys="true" keyProperty="orderId">-->
@@ -26,15 +26,15 @@
     <!--</insert>-->
 
     <insert id="insert" useGeneratedKeys="true" keyProperty="orderId">
-        INSERT INTO t_order (order_id, user_id, address_id, status) VALUES (#{orderId,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{addressId,jdbcType=BIGINT}, #{status,jdbcType=VARCHAR});
+        INSERT INTO t_order (order_id, user_id, address_id, status) VALUES (#{orderId,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{addressId,jdbcType=BIGINT}, #{status,jdbcType=VARCHAR})
     </insert>
 
     <delete id="delete">
-        DELETE FROM t_order WHERE order_id = #{orderId,jdbcType=INTEGER};
+        DELETE FROM t_order WHERE order_id = #{orderId,jdbcType=INTEGER}
     </delete>
 
     <select id="selectAll" resultMap="baseResultMap">
-        SELECT * FROM t_order;
+        SELECT * FROM t_order
     </select>
 
     <select id="selectByOrderId" resultMap="baseResultMap">
