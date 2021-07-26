@@ -10,12 +10,12 @@ elasticjob:
     namespace: elasticjob-lite-springboot
   jobs:
     simpleJob:
-      elasticJobClass: org.apache.shardingsphere.elasticjob.lite.example.job.SpringBootSimpleJob
+      elasticJobClass: com.zkzong.elasticjob.job.SpringBootSimpleJob
       cron: 0/5 * * * * ?
       shardingTotalCount: 3
       shardingItemParameters: 0=Beijing,1=Shanghai,2=Guangzhou
     dataflowJob:
-      elasticJobClass: org.apache.shardingsphere.elasticjob.lite.example.job.SpringBootDataflowJob
+      elasticJobClass: com.zkzong.elasticjob.job.SpringBootDataflowJob
       cron: 0/5 * * * * ?
       shardingTotalCount: 3
       shardingItemParameters: 0=Beijing,1=Shanghai,2=Guangzhou
@@ -31,51 +31,51 @@ elasticjob:
       shardingTotalCount: 9
       props:
         script.command.line: "echo Manual SCRIPT Job: "
-    occurErrorNoticeDingtalkJob:
-      elasticJobClass: org.apache.shardingsphere.elasticjob.lite.example.job.SpringBootOccurErrorNoticeDingtalkJob
-      overwrite: true
-      shardingTotalCount: 3
-      shardingItemParameters: 0=Beijing,1=Shanghai,2=Guangzhou
-      jobErrorHandlerType: DINGTALK
-      jobBootstrapBeanName: occurErrorNoticeDingtalkBean
-      props:
-        dingtalk:
-          webhook: you_webhook
-          keyword: you_keyword
-          secret: you_secret
-          connectTimeout: 3000
-          readTimeout: 5000
-    occurErrorNoticeWechatJob:
-      elasticJobClass: org.apache.shardingsphere.elasticjob.lite.example.job.SpringBootOccurErrorNoticeWechatJob
-      overwrite: true
-      shardingTotalCount: 3
-      shardingItemParameters: 0=Beijing,1=Shanghai,2=Guangzhou
-      jobErrorHandlerType: WECHAT
-      jobBootstrapBeanName: occurErrorNoticeWechatBean
-      props:
-        wechat:
-          webhook: you_webhook
-          connectTimeout: 3000
-          readTimeout: 5000
-    occurErrorNoticeEmailJob:
-      elasticJobClass: org.apache.shardingsphere.elasticjob.lite.example.job.SpringBootOccurErrorNoticeEmailJob
-      overwrite: true
-      shardingTotalCount: 3
-      shardingItemParameters: 0=Beijing,1=Shanghai,2=Guangzhou
-      jobErrorHandlerType: EMAIL
-      jobBootstrapBeanName: occurErrorNoticeEmailBean
-      props:
-        email:
-          host: host
-          port: 465
-          username: username
-          password: password
-          useSsl: true
-          subject: ElasticJob error message
-          from: from@xxx.xx
-          to: to1@xxx.xx,to2@xxx.xx
-          cc: cc@xxx.xx
-          bcc: bcc@xxx.xx
-          debug: false
+#    occurErrorNoticeDingtalkJob:
+#      elasticJobClass: com.zkzong.elasticjob.job.SpringBootOccurErrorNoticeDingtalkJob
+#      overwrite: true
+#      shardingTotalCount: 3
+#      shardingItemParameters: 0=Beijing,1=Shanghai,2=Guangzhou
+#      jobErrorHandlerType: DINGTALK
+#      jobBootstrapBeanName: occurErrorNoticeDingtalkBean
+#      props:
+#        dingtalk:
+#          webhook: you_webhook
+#          keyword: you_keyword
+#          secret: you_secret
+#          connectTimeout: 3000
+#          readTimeout: 5000
+#    occurErrorNoticeWechatJob:
+#      elasticJobClass: com.zkzong.elasticjob.job.SpringBootOccurErrorNoticeWechatJob
+#      overwrite: true
+#      shardingTotalCount: 3
+#      shardingItemParameters: 0=Beijing,1=Shanghai,2=Guangzhou
+#      jobErrorHandlerType: WECHAT
+#      jobBootstrapBeanName: occurErrorNoticeWechatBean
+#      props:
+#        wechat:
+#          webhook: you_webhook
+#          connectTimeout: 3000
+#          readTimeout: 5000
+#    occurErrorNoticeEmailJob:
+#      elasticJobClass: com.zkzong.elasticjob.job.SpringBootOccurErrorNoticeEmailJob
+#      overwrite: true
+#      shardingTotalCount: 3
+#      shardingItemParameters: 0=Beijing,1=Shanghai,2=Guangzhou
+#      jobErrorHandlerType: EMAIL
+#      jobBootstrapBeanName: occurErrorNoticeEmailBean
+#      props:
+#        email:
+#          host: host
+#          port: 465
+#          username: username
+#          password: password
+#          useSsl: true
+#          subject: ElasticJob error message
+#          from: from@xxx.xx
+#          to: to1@xxx.xx,to2@xxx.xx
+#          cc: cc@xxx.xx
+#          bcc: bcc@xxx.xx
+#          debug: false
   dump:
     port: 9888

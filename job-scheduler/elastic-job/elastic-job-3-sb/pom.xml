@@ -42,6 +42,22 @@
             <version>${elasticjob.version}</version>
         </dependency>
 
+        <!--<dependency>-->
+        <!--    <groupId>org.apache.shardingsphere.elasticjob</groupId>-->
+        <!--    <artifactId>elasticjob-error-handler-dingtalk</artifactId>-->
+        <!--    <version>${elasticjob.version}</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+        <!--    <groupId>org.apache.shardingsphere.elasticjob</groupId>-->
+        <!--    <artifactId>elasticjob-error-handler-wechat</artifactId>-->
+        <!--    <version>${elasticjob.version}</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+        <!--    <groupId>org.apache.shardingsphere.elasticjob</groupId>-->
+        <!--    <artifactId>elasticjob-error-handler-email</artifactId>-->
+        <!--    <version>${elasticjob.version}</version>-->
+        <!--</dependency>-->
+
         <dependency>
             <groupId>org.apache.curator</groupId>
             <artifactId>curator-test</artifactId>
