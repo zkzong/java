@@ -1,6 +1,9 @@
 package com.zkzong.hutool.crypto;
 
+import cn.hutool.core.codec.Base64;
+import cn.hutool.core.util.CharsetUtil;
 import cn.hutool.core.util.HexUtil;
+import cn.hutool.core.util.StrUtil;
 import cn.hutool.crypto.SecureUtil;
 import cn.hutool.crypto.asymmetric.KeyType;
 import cn.hutool.crypto.asymmetric.RSA;
@@ -20,8 +23,35 @@ public class RsaTest {
     @Test
     public void generate() {
         KeyPair pair = SecureUtil.generateKeyPair("RSA");
-        pair.getPrivate();
-        pair.getPublic();
+        final String pv = Base64.encode(pair.getPrivate().getEncoded());
+        final String pb = Base64.encode(pair.getPublic().getEncoded());
+        System.out.println(pv);
+        System.out.println(pb);
+
+        RSA rsa = new RSA();
+        // 获得私钥
+        rsa.getPrivateKey();
+        final String privateKeyBase64 = rsa.getPrivateKeyBase64();
+        System.out.println(privateKeyBase64);
+        // 获得公钥
+        rsa.getPublicKey();
+        final String publicKeyBase64 = rsa.getPublicKeyBase64();
+        System.out.println(publicKeyBase64);
+
+        // 公钥加密，私钥解密
+        byte[] encrypt = rsa.encrypt(StrUtil.bytes("我是一段测试aaaa", CharsetUtil.CHARSET_UTF_8), KeyType.PublicKey);
+        // 加密后字符串
+        final String en1 = Base64.encode(encrypt);
+        System.out.println(en1);
+        // 解密后二进制
+        byte[] decrypt = rsa.decrypt(en1, KeyType.PrivateKey);
+        // 解密后字符串
+        final String s = new String(decrypt);
+        System.out.println(s);
+
+        // 私钥加密，公钥解密
+        byte[] encrypt2 = rsa.encrypt(StrUtil.bytes("我是一段测试aaaa", CharsetUtil.CHARSET_UTF_8), KeyType.PrivateKey);
+        byte[] decrypt2 = rsa.decrypt(encrypt2, KeyType.PublicKey);
     }
 
     /**
