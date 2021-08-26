@@ -1,6 +1,6 @@
-package com.zkzong.springboot.redis.service;
+package com.zkzong.sb.redis.service;
 
-import com.zkzong.springboot.redis.domain.User;
+import com.zkzong.sb.redis.domain.User;
 
 import java.util.List;
 import java.util.Map;

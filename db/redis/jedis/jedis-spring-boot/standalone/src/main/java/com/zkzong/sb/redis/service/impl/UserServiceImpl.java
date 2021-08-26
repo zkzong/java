@@ -1,8 +1,8 @@
-package com.zkzong.springboot.redis.service.impl;
+package com.zkzong.sb.redis.service.impl;
 
-import com.zkzong.springboot.redis.domain.User;
-import com.zkzong.springboot.redis.mapper.UserMapper;
-import com.zkzong.springboot.redis.service.UserService;
+import com.zkzong.sb.redis.domain.User;
+import com.zkzong.sb.redis.mapper.UserMapper;
+import com.zkzong.sb.redis.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
@@ -12,14 +12,14 @@ import java.util.Map;
 
 @Service
 public class UserServiceImpl implements UserService {
-	
+
 	@Autowired
 	private UserMapper userMapper;
-	
+
 	/*@Autowired
 	private JedisCluster jedisCluster;*/
-	
-	
+
+
 	@Override
 	@Cacheable(value = "allUser")
 	public List<User> findAllUser() {

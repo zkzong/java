@@ -1,4 +1,4 @@
-package com.zkzong.sb.redis;
+package com.zkzong.sb.redis.redis;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

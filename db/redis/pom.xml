@@ -9,7 +9,6 @@
         <module>jedis</module>
         <module>redisson</module>
         <module>lettuce</module>
-        <module>redis-demo</module>
     </modules>
     <packaging>pom</packaging>
 

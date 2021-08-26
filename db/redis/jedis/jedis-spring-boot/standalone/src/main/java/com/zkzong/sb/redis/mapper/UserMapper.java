@@ -1,6 +1,6 @@
-package com.zkzong.springboot.redis.mapper;
+package com.zkzong.sb.redis.mapper;
 
-import com.zkzong.springboot.redis.domain.User;
+import com.zkzong.sb.redis.domain.User;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

@@ -1,11 +1,11 @@
-package com.zkzong.springboot.redis.controller;
+package com.zkzong.sb.redis.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class JdController {
-	
+
 	/**
 	 * 需求：返回jd首页
 	 */
