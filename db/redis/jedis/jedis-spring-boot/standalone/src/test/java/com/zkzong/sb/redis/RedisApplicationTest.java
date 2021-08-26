@@ -11,6 +11,8 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * Created by Zong on 2017/5/10.
  */
@@ -49,5 +51,14 @@ public class RedisApplicationTest {
         Person p = new Person("mo", 1);
         redisTemplate1.opsForValue().set("mo", p);
         System.out.println(redisTemplate.opsForValue().get("mo"));
+    }
+
+    /**
+     * 自增时不用判断key是否存在
+     */
+    @Test
+    public void incr() {
+        redisTemplate.opsForValue().increment("aaa", 1);
+        redisTemplate.expire("aaa", 1, TimeUnit.MINUTES);
     }
 }
