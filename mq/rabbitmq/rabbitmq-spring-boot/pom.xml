@@ -12,7 +12,6 @@
     <artifactId>rabbitmq-spring-boot</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>gs-messaging-rabbitmq</module>
         <module>basic</module>
         <module>rabbitmq-sb2</module>
     </modules>
