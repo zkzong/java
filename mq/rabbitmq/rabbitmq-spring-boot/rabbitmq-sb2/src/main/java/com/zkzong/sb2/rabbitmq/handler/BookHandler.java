@@ -7,7 +7,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.core.Message;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
-import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.time.LocalDateTime;
@@ -15,7 +14,7 @@ import java.time.LocalDateTime;
 /**
  * BOOK_QUEUE 消费者
  */
-@Component
+//@Component
 public class BookHandler {
 
     private static final Logger log = LoggerFactory.getLogger(BookHandler.class);

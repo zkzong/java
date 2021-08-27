@@ -1,4 +1,4 @@
-package com.zkzong.ack.config;
+package com.zkzong.sb2.rabbitmq.ack.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

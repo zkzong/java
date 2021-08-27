@@ -14,9 +14,7 @@
     <modules>
         <module>gs-messaging-rabbitmq</module>
         <module>basic</module>
-        <module>manual-ack</module>
         <module>rabbitmq-sb2</module>
-        <module>rabbitmq-didispace</module>
     </modules>
 
     <properties>

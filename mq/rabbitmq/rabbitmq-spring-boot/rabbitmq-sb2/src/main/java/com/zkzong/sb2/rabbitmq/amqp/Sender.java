@@ -9,7 +9,7 @@ import java.util.Date;
 /**
  * Created by Zong on 2017/5/12.
  */
-@Component
+//@Component
 public class Sender {
     @Autowired
     private AmqpTemplate amqpTemplate;

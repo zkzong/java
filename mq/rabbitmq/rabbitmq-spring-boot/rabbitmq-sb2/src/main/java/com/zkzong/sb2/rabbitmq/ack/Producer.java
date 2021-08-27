@@ -1,12 +1,13 @@
-package com.zkzong.ack;
+package com.zkzong.sb2.rabbitmq.ack;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.amqp.rabbit.support.CorrelationData;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
-//@Component
+@Component
 public class Producer {
 
     private Logger log = LoggerFactory.getLogger(Producer.class);

@@ -1,4 +1,4 @@
-package com.zkzong.ack;
+package com.zkzong.sb2.rabbitmq.ack;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -6,23 +6,26 @@ import org.springframework.amqp.core.Message;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.amqp.rabbit.support.CorrelationData;
 import org.springframework.amqp.utils.SerializationUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import javax.annotation.PostConstruct;
 
 @Component
 public class CallBackProducer implements RabbitTemplate.ConfirmCallback, RabbitTemplate.ReturnCallback {
 
     private Logger log = LoggerFactory.getLogger(CallBackProducer.class);
 
-    //@Autowired
+    @Autowired
     private RabbitTemplate rabbitTemplate;
 
-    //@PostConstruct
-    //public void init() {
-    //    // 指定 ConfirmCallback
-    //    rabbitTemplate.setConfirmCallback(this);
-    //    // 指定 ReturnCallback
-    //    rabbitTemplate.setReturnCallback(this);
-    //}
+    @PostConstruct
+    public void init() {
+        // 指定 ConfirmCallback
+        rabbitTemplate.setConfirmCallback(this);
+        // 指定 ReturnCallback
+        rabbitTemplate.setReturnCallback(this);
+    }
 
     public CallBackProducer(RabbitTemplate rabbitTemplate) {
         this.rabbitTemplate = rabbitTemplate;
@@ -33,9 +36,9 @@ public class CallBackProducer implements RabbitTemplate.ConfirmCallback, RabbitT
      * 给hello队列发送消息
      */
     public void send() {
-        String msg = "hello";
+        String msg = "hello callback";
         log.info("Producer, " + msg);
-        rabbitTemplate.convertAndSend("queue-test", msg);
+        rabbitTemplate.convertAndSend("queue-test-callback", msg);
     }
 
     @Override
@@ -47,6 +50,7 @@ public class CallBackProducer implements RabbitTemplate.ConfirmCallback, RabbitT
         }
     }
 
+    // todo 没有调用
     @Override
     public void returnedMessage(Message message, int replyCode, String replyText, String exchange, String routingKey) {
         // 反序列化对象输出
