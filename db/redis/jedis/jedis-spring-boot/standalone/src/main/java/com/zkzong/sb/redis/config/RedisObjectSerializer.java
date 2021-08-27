@@ -1,4 +1,4 @@
-package com.zkzong.sb.redis.redis;
+package com.zkzong.sb.redis.config;
 
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.core.serializer.support.DeserializingConverter;
