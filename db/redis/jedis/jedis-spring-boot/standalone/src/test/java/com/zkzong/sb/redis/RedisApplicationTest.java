@@ -7,10 +7,13 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.data.redis.core.*;
+import org.springframework.data.redis.serializer.RedisSerializer;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -22,35 +25,37 @@ public class RedisApplicationTest {
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
     @Autowired
-    private RedisTemplate<String, User> redisTemplate;
+    private RedisTemplate<String, User> userRedisTemplate;
     @Autowired
-    private RedisTemplate<String, Person> redisTemplate1;
+    private RedisTemplate<String, Person> personRedisTemplate;
+    @Autowired
+    private RedisTemplate<String, Integer> integerRedisTemplate;
 
     @Test
     public void test() {
-        stringRedisTemplate.opsForValue().set("aaa", "111");
-        Assert.assertEquals("111", stringRedisTemplate.opsForValue().get("aaa"));
+        stringRedisTemplate.opsForValue().set("key1", "1");
+        Assert.assertEquals("1", stringRedisTemplate.opsForValue().get("key1"));
     }
 
     @Test
     public void testRedisTemplate() {
         User u = new User("zong", 30);
-        redisTemplate.opsForValue().set("zong", u);
-        System.out.println(redisTemplate.opsForValue().get("zong"));
+        userRedisTemplate.opsForValue().set("zong", u);
+        System.out.println(userRedisTemplate.opsForValue().get("zong"));
 
         User user = new User("超人", 20);
-        redisTemplate.opsForValue().set(user.getUsername(), user);
+        userRedisTemplate.opsForValue().set(user.getUsername(), user);
         user = new User("蝙蝠侠", 30);
-        redisTemplate.opsForValue().set(user.getUsername(), user);
+        userRedisTemplate.opsForValue().set(user.getUsername(), user);
         user = new User("蜘蛛侠", 40);
-        redisTemplate.opsForValue().set(user.getUsername(), user);
-        Assert.assertEquals(20, redisTemplate.opsForValue().get("超人").getAge().longValue());
-        Assert.assertEquals(30, redisTemplate.opsForValue().get("蝙蝠侠").getAge().longValue());
-        Assert.assertEquals(40, redisTemplate.opsForValue().get("蜘蛛侠").getAge().longValue());
+        userRedisTemplate.opsForValue().set(user.getUsername(), user);
+        Assert.assertEquals(20, userRedisTemplate.opsForValue().get("超人").getAge().longValue());
+        Assert.assertEquals(30, userRedisTemplate.opsForValue().get("蝙蝠侠").getAge().longValue());
+        Assert.assertEquals(40, userRedisTemplate.opsForValue().get("蜘蛛侠").getAge().longValue());
 
         Person p = new Person("mo", 1);
-        redisTemplate1.opsForValue().set("mo", p);
-        System.out.println(redisTemplate.opsForValue().get("mo"));
+        personRedisTemplate.opsForValue().set("mo", p);
+        System.out.println(userRedisTemplate.opsForValue().get("mo"));
     }
 
     /**
@@ -58,7 +63,51 @@ public class RedisApplicationTest {
      */
     @Test
     public void incr() {
-        redisTemplate.opsForValue().increment("aaa", 1);
-        redisTemplate.expire("aaa", 1, TimeUnit.MINUTES);
+        integerRedisTemplate.opsForValue().increment("intKey", 1);
+        integerRedisTemplate.expire("intKey", 1, TimeUnit.MINUTES);
     }
+
+    /**
+     * 获取所有key和value
+     */
+    @Test
+    public void keyvalue1() {
+        for (int i = 0; i < 10; i++) {
+            integerRedisTemplate.opsForValue().set("i" + i, i, i + 1, TimeUnit.MINUTES);
+        }
+        // 获取所有key和value
+        Map<String, Integer> map = new HashMap<>();
+        final Set<String> keys = integerRedisTemplate.keys("*");
+        for (String key : keys) {
+            final Integer value = integerRedisTemplate.opsForValue().get(key);
+            map.put(key, value);
+        }
+        System.out.println(map);
+
+
+    }
+
+    /**
+     * 获取所有key和value
+     * 生产环境可能会禁用keys，当keys不能使用时，可使用该方法
+     */
+    @Test
+    public void keyvalue2() {
+        Map<String, Integer> map = new HashMap<>();
+        final Cursor<String> scan = scan(integerRedisTemplate, "*", 1000);
+        while (scan.hasNext()) {
+            final String key = scan.next();
+            final Integer value = integerRedisTemplate.opsForValue().get(key);
+            map.put(key, value);
+        }
+        System.out.println(map);
+    }
+
+    private static Cursor<String> scan(RedisTemplate redisTemplate, String match, int count) {
+        ScanOptions scanOptions = ScanOptions.scanOptions().match(match).count(count).build();
+        RedisSerializer<String> redisSerializer = (RedisSerializer<String>) redisTemplate.getKeySerializer();
+        return (Cursor) redisTemplate.executeWithStickyConnection(redisConnection ->
+                new ConvertingCursor<>(redisConnection.scan(scanOptions), redisSerializer::deserialize));
+    }
+
 }
