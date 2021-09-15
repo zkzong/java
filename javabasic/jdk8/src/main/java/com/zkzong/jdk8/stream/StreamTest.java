@@ -4,14 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
-import java.util.Random;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
@@ -86,11 +79,45 @@ public class StreamTest {
         System.out.println(salarySum);
     }
 
+    // 分组求和
+    @Test
+    public void groupsum() {
+        final Map<String, List<User>> collect = users.stream().collect(Collectors.groupingBy(User::getName));
+        System.out.println(collect);
+
+        Map<String, BigDecimal> map = new HashMap<>();
+
+        collect.forEach((name, userList) -> {
+            //System.out.println(name);
+            //System.out.println(userList);
+            BigDecimal sum = new BigDecimal(0);
+            for (User user : userList) {
+                BigDecimal salary = user.getSalary();
+                sum = sum.add(salary);
+                map.put(name, sum);
+            }
+        });
+        System.out.println(map);
+
+        final Map<String, IntSummaryStatistics> m = users.stream().collect(Collectors.groupingBy(User::getName, Collectors.summarizingInt(User::getAge)));
+        System.out.println(m);
+    }
+
+    @Test
+    public void b() {
+        BigDecimal bd = new BigDecimal(0);
+        for (int i = 0; i < 10; i++) {
+            bd = bd.add(new BigDecimal(10));
+        }
+        System.out.println(bd);
+    }
+
     @Test
     public void min() {
         // 获取年龄最小的人，有可能是多个
         // 1. 按年龄分组
         Map<Integer, List<User>> collect = users.stream().collect(Collectors.groupingBy(User::getAge));
+        System.out.println(collect);
         // 获取年龄最小的List
         Set<Integer> ageSet = collect.keySet();
         Object[] objects = ageSet.toArray();

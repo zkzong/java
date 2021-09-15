@@ -153,8 +153,8 @@ public class DateTimeTest {
 
         LocalDateTime localDateTime = null;
         // Date转换为LocalDateTime
-//        localDateTime = LocalDateTime.from(new Date());
-//        System.out.println(localDateTime);
+        localDateTime = new Date().toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
+        System.out.println(localDateTime);
 
         // LocalDateTime转Date
         Date date1 = Date.from(localDateTime.atZone(ZoneId.systemDefault()).toInstant());
