@@ -17,6 +17,9 @@ public class Producer {
 
     public void sendMessage(String message) {
         logger.info(String.format("$$ -> Producing message --> %s", message));
+        // 自动分区
         this.kafkaTemplate.send(TOPIC, message);
+        // 指定分区
+        this.kafkaTemplate.send(TOPIC, "1", message);
     }
 }
