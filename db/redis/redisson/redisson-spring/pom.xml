@@ -27,6 +27,11 @@
             <artifactId>spring-context</artifactId>
             <version>4.2.8.RELEASE</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson</artifactId>
+        </dependency>
     </dependencies>
 
 </project>
