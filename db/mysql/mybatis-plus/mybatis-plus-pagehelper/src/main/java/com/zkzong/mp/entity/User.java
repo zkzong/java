@@ -20,6 +20,8 @@ public class User {
     private Long id;
     @TableField("f_user_name")
     private String userName;
+    @TableField("f_sex")
+    private String sex;
     @TableField("f_age")
     private Integer age;
     @TableField("f_address")
