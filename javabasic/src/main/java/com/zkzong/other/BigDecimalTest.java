@@ -84,4 +84,13 @@ public class BigDecimalTest {
         System.out.println(bd.compareTo(new BigDecimal("10"))); // 小于 -1
         System.out.println(bd.compareTo(new BigDecimal("5"))); // 等于 0
     }
+
+    @Test
+    public void add() {
+        BigDecimal bd = new BigDecimal(0);
+        for (int i = 0; i < 10; i++) {
+            bd = bd.add(new BigDecimal(10));
+        }
+        System.out.println(bd);
+    }
 }
