@@ -7,6 +7,7 @@ import cn.hutool.core.util.StrUtil;
 import cn.hutool.crypto.SecureUtil;
 import cn.hutool.crypto.asymmetric.KeyType;
 import cn.hutool.crypto.asymmetric.RSA;
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.security.KeyPair;
@@ -79,5 +80,8 @@ public class RsaTest {
         byte[] aByte = HexUtil.decodeHex(a);
         byte[] decrypt = rsa.decrypt(aByte, KeyType.PrivateKey);
         System.out.println(new String(decrypt));
+
+        //Junit单元测试
+        Assert.assertEquals("虎头闯杭州,多抬头看天,切勿只管种地", StrUtil.str(decrypt, CharsetUtil.CHARSET_UTF_8));
     }
 }
