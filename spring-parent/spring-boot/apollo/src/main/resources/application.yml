@@ -6,11 +6,11 @@ spring:
     name: apollo
 
 app:
-  id: 1001
+  id: test
 
 apollo:
+  meta: http://127.0.0.1:8080
   cluster: default
   bootstrap:
     enabled: true
     namespaces: application
-  meta: http://127.0.0.1:8080

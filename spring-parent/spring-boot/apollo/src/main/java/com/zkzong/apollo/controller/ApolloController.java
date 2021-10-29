@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ApolloController {
 
-    @Value("${config_info}")
+    @Value("${config.info}")
     private String configInfo;
 
     @RequestMapping("/getConfigInfo")
@@ -26,7 +26,7 @@ public class ApolloController {
     public void api() {
         // 默认命名空间
         Config appConfig = ConfigService.getAppConfig();
-        String configInfo = appConfig.getProperty("config_info", "");
+        String configInfo = appConfig.getProperty("config.info", "");
         System.out.println(configInfo);
 
         // 公共命名空间
