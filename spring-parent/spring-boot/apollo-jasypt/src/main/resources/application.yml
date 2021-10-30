@@ -1,0 +1,24 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: apollo-jasypt
+
+app:
+  id: test
+
+apollo:
+  cluster: default
+  bootstrap:
+    enabled: true
+    namespaces: application
+  meta: http://127.0.0.1:8080
+
+jasypt:
+  encryptor:
+    password: 12345678
+
+# 配置到apollo
+#config:
+#  info: ENC(YI6h4yAZUrqSYTLS0rXtSg==)
