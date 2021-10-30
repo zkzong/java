@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Date: 2019/3/2
  */
 @RestController
-public class ApolloController {
+public class JasyptController {
 
     @Autowired
     private StringEncryptor stringEncryptor;

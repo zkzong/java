@@ -8,10 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Date: 2019/3/2
  */
 @SpringBootApplication
-public class ApolloApplication {
+public class JasyptApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ApolloApplication.class, args);
+        SpringApplication.run(JasyptApplication.class, args);
     }
 
 }
