@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
+ * apollo获取配置的5种方式
  * @Author: zong
  * @Date: 2021/10/28
  */
@@ -24,6 +25,7 @@ public class ConfigController {
     @Autowired
     private Environment env;
 
+    // 不支持热更新
     @Autowired
     private PropConfig propConfig;
 
