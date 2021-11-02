@@ -19,6 +19,7 @@
         <module>distributed-transaction</module>
         <module>executor</module>
         <module>map</module>
+        <module>actuator-sb2</module>
     </modules>
     <packaging>pom</packaging>
 
