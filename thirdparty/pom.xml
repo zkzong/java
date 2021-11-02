@@ -35,6 +35,7 @@
         <module>sharding-jdbc</module>
         <module>fastdfs</module>
         <module>id</module>
+        <module>easyexcel</module>
     </modules>
 
     <properties>
