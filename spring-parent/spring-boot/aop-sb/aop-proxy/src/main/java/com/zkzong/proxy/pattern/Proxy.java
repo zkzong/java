@@ -14,7 +14,7 @@ public class Proxy implements Subject {
             realSubject.request();
         } catch (Exception e) {
             System.out.println("ex : " + e.getMessage());
-            throw e;
+            //throw e;
         } finally {
             System.out.println("after");
         }
