@@ -23,4 +23,9 @@ public class JasyptTest {
         System.out.println("PWD: " + stringEncryptor.encrypt("zong"));
     }
 
+    @Test
+    public void decrypt() {
+        System.out.println("mima: " + stringEncryptor.decrypt("YI6h4yAZUrqSYTLS0rXtSg=="));
+    }
+
 }
