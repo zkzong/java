@@ -20,6 +20,35 @@ Spring Boot设计目的是用来简化新Spring应用的初始搭建以及开发
 
 在切入点后的操作，按order的值由大到小执行
 
+### actuator
+指定端口：
+```properties
+management.port=8888
+```
+
+关闭端口
+```properties
+# 1. 关闭全部端口，只打开某个端口
+endpoints.enabled=false
+endpoints.info.enabled=true
+endpoints.health..enabled=true
+
+# 2. 只关闭某个端口
+endpoints.actuator.enabled=false
+```
+
+添加依赖：
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-security</artifactId>
+</dependency>
+```
+management.security.enabled需要设置为true，security才起作用，默认即为true。
+默认用户名：user
+密码：打印在控制台，比如：
+`Using default security password: 71f1bd96-f332-48aa-be74-e3022c6248bb`
+
 ### async
 @Async所修饰的函数不要定义为static类型，这样异步调用不会生效
 
