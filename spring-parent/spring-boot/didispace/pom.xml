@@ -22,7 +22,7 @@
         <module>actuator</module>
         <module>scheduled</module>
         <module>async</module>
-        <module>mail</module>
+        <!--<module>mail</module>-->
         <module>statemachine</module>
         <module>transaction</module>
     </modules>
