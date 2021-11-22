@@ -126,16 +126,16 @@
 		</resources>
 		<plugins>
 			<!-- 设置源文件编码方式 -->
-			<!--<plugin>
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<defaultLibBundleDir>lib</defaultLibBundleDir>
+					<!--<defaultLibBundleDir>lib</defaultLibBundleDir>-->
 					<source>1.8</source>
 					<target>1.8</target>
 					<encoding>UTF-8</encoding>
 				</configuration>
-			</plugin>-->
+			</plugin>
 			<!-- 打包jar文件时，配置manifest文件，加入lib包的jar依赖 -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
