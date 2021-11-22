@@ -12,13 +12,13 @@
         <!--<module>javabasic</module>-->
         <!--<module>library</module>-->
         <!--<module>thirdparty</module>-->
-        <!--<module>spring-parent</module>-->
+        <module>spring-parent</module>
         <!--<module>db</module>-->
         <!--<module>mq</module>-->
         <!--<module>job-scheduler</module>-->
         <!--<module>log</module>-->
         <!--<module>dubbo</module>-->
-        <module>skywalking</module>
+        <!--<module>skywalking</module>-->
     </modules>
 
     <properties>

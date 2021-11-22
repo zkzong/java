@@ -11,8 +11,7 @@
 
     <artifactId>nacos-discovery-api</artifactId>
 
-    <properties>
-    </properties>
+
 
     <dependencies>
         <dependency>
