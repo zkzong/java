@@ -133,7 +133,7 @@
 					<!--<defaultLibBundleDir>lib</defaultLibBundleDir>-->
 					<source>1.8</source>
 					<target>1.8</target>
-					<encoding>UTF-8</encoding>
+					<!--<encoding>UTF-8</encoding>-->
 				</configuration>
 			</plugin>
 			<!-- 打包jar文件时，配置manifest文件，加入lib包的jar依赖 -->
