@@ -12,8 +12,6 @@
     <artifactId>mongo-spring-boot</artifactId>
 
     <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
         <spring.boot.version>1.5.10.RELEASE</spring.boot.version>
     </properties>
 

@@ -12,8 +12,6 @@
     <artifactId>elastic-job-3-sb</artifactId>
 
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
 
         <elasticjob.version>3.0.0</elasticjob.version>
     </properties>
