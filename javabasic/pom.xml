@@ -15,7 +15,7 @@
     </properties>
 
     <modules>
-        <module>thinkinginjava</module>
+        <!--<module>thinkinginjava</module>-->
         <module>designpattern</module>
         <module>test</module>
         <module>collection</module>
@@ -36,6 +36,7 @@
         <module>override</module>
         <module>socket</module>
         <module>enum</module>
+        <module>reg</module>
     </modules>
 
     <dependencies>
