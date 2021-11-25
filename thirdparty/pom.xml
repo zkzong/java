@@ -36,6 +36,7 @@
         <module>fastdfs</module>
         <module>id</module>
         <module>easyexcel</module>
+        <module>qdox</module>
     </modules>
 
     <properties>
