@@ -26,11 +26,13 @@ public class QdoxTest {
         // 添加 java 源文件
         javaProjectBuilder.addSource(new File("/Users/admin/Desktop/code/java/thirdparty/qdox/src/main/java/com/zkzong/qdox/controller/QdoxController.java"));
 
-        // 获得解析后的类
+        // 获得解析后的类`
         Collection<JavaClass> classes = javaProjectBuilder.getClasses();
         for (JavaClass javaClass : classes) {
             // 打印类相关信息
             System.out.println("类名:" + javaClass.getName());
+            String fullClassName = javaClass.getPackageName() + "." + javaClass.getName();
+            System.out.println("全类名：" + fullClassName);
             System.out.println("实现了哪些类：" + javaClass.getImplements());
             System.out.println("继承哪个类：" + javaClass.getSuperJavaClass());
             System.out.println("注释：" + javaClass.getComment());
