@@ -8,4 +8,6 @@ public interface QdoxService {
 
     String getQdox();
 
+    String getName();
+
 }
