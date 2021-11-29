@@ -1,5 +1,6 @@
 package com.zkzong.qdox;
 
+import cn.hutool.core.util.StrUtil;
 import com.thoughtworks.qdox.JavaProjectBuilder;
 import com.thoughtworks.qdox.model.JavaClass;
 import com.thoughtworks.qdox.model.JavaField;
@@ -63,15 +64,38 @@ public class QdoxTest {
 
     @Test
     public void recursion() throws ClassNotFoundException {
-        List<String> fileList = new ArrayList<>();
+        List<String> fileList1 = new ArrayList<>();
 
         String[] apis = api();
         for (String api : apis) {
-            recInject("/Users/admin/zong/code/java/thirdparty/qdox/qdox-server", api, null, fileList);
+            System.out.println(api);
+            recInject("/Users/admin/zong/code/java/thirdparty/qdox/qdox-server", api, null, fileList1);
+        }
+
+        System.out.println("------------------------------------------------------");
+
+        List<String> fileList2 = new ArrayList<>();
+        List<String> fileList3 = new ArrayList<>();
+        List<String> files = files("/Users/admin/zong/code/java/thirdparty/qdox/qdox-server", fileList2);
+        for (String api : apis) {
+            System.out.println(api);
+            for (String file : files) {
+                System.out.println(api);
+                recInjectFile(file, api, null, fileList3);
+            }
         }
 
     }
 
+    /**
+     * 根据目录递归
+     *
+     * @param modulePath
+     * @param className
+     * @param methodName
+     * @param fileList
+     * @throws ClassNotFoundException
+     */
     private void recInject(String modulePath, String className, String methodName, List<String> fileList) throws ClassNotFoundException {
 
         JavaProjectBuilder builder = new JavaProjectBuilder();
@@ -89,7 +113,6 @@ public class QdoxTest {
             for (JavaField field : fields) {
                 String fieldName = field.getName();
                 JavaClass fieldType = field.getType();
-                String fieldTypeName = fieldType.getName();
 
                 for (JavaMethod method : methods) {
                     String sourceCode = method.getSourceCode();
@@ -109,12 +132,59 @@ public class QdoxTest {
     }
 
     /**
+     * 根据文件递归
+     *
+     * @param file
+     * @param className
+     * @param methodName
+     * @param fileList
+     * @throws ClassNotFoundException
+     */
+    private void recInjectFile(String file, String className, String methodName, List<String> fileList) throws ClassNotFoundException {
+
+        JavaProjectBuilder builder = new JavaProjectBuilder();
+
+        int i = StrUtil.ordinalIndexOf(file, "/", 9);
+
+        builder.addSourceTree(new File(file.substring(0, i)));
+        Collection<JavaClass> classes = builder.getClasses();
+        for (JavaClass aClass : classes) {
+            JavaClass javaClass = aClass;
+
+            String fullClassName = javaClass.getPackageName() + "." + javaClass.getName();
+
+            List<JavaField> fields = javaClass.getFields();
+
+            List<JavaMethod> methods = javaClass.getMethods();
+
+            for (JavaField field : fields) {
+                String fieldName = field.getName();
+                JavaClass fieldType = field.getType();
+
+                for (JavaMethod method : methods) {
+                    String sourceCode = method.getSourceCode();
+
+                    // todo 优化继承关系判断 className.toUpperCase().contains(fieldName.toUpperCase())
+                    if ((className.equals(fieldType.toString()) || className.toUpperCase().contains(fieldName.toUpperCase())) && sourceCode.contains(fieldName + "." + (methodName == null ? "" : methodName))) {
+                        if (javaClass.getPackageName().contains("service") || javaClass.getPackageName().contains("mapper")) {
+                            recInjectFile(file, fullClassName, method.getName(), fileList);
+                        } else {
+                            System.out.println(fullClassName + "." + method.getName());
+                            fileList.add(fullClassName + "." + method.getName());
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /**
      * 根据模块路径，查找模块下的所有类
      *
      * @param path
      * @return
      */
-    private List<File> files(String path, List<File> fileList) {
+    private List<String> files(String path, List<String> fileList) {
         File filePath = new File(path);
         if (filePath.isDirectory()) {
             File[] files = filePath.listFiles();
@@ -122,7 +192,7 @@ public class QdoxTest {
                 files(file.getAbsolutePath(), fileList);
 
                 if (file.isFile() && file.toString().contains("main") && file.toString().contains("java") && !file.toString().contains("test") && !file.toString().contains("resources")) {
-                    fileList.add(file);
+                    fileList.add(file.toString());
                 }
             }
         }
@@ -131,9 +201,9 @@ public class QdoxTest {
 
     @Test
     public void filesTest() {
-        List<File> fileList = new ArrayList<>();
-        List<File> files = files("/Users/admin/Desktop/code/java/thirdparty/qdox/", fileList);
-        for (File file : files) {
+        List<String> fileList = new ArrayList<>();
+        List<String> files = files("/Users/admin/Desktop/code/java/thirdparty/qdox/", fileList);
+        for (String file : files) {
             System.out.println(file);
         }
     }
