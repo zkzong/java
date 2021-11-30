@@ -26,7 +26,7 @@ public class QdoxTest {
         JavaProjectBuilder javaProjectBuilder = new JavaProjectBuilder();
 
         // 添加 java 源文件
-        javaProjectBuilder.addSource(new File("/Users/admin/Desktop/code/java/thirdparty/qdox/src/main/java/com/zkzong/qdox/controller/QdoxController.java"));
+        javaProjectBuilder.addSource(new File("/Users/admin/Desktop/code/java/thirdparty/qdox/qdox-server/src/main/java/com/zkzong/qdox/controller/QdoxController.java"));
 
         // 获得解析后的类`
         Collection<JavaClass> classes = javaProjectBuilder.getClasses();
