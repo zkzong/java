@@ -94,9 +94,8 @@ public class QdoxTest {
      * @param className
      * @param methodName
      * @param fileList
-     * @throws ClassNotFoundException
      */
-    private void recInject(String modulePath, String className, String methodName, List<String> fileList) throws ClassNotFoundException {
+    private void recInject(String modulePath, String className, String methodName, List<String> fileList) {
 
         JavaProjectBuilder builder = new JavaProjectBuilder();
         builder.addSourceTree(new File(modulePath));
@@ -138,9 +137,8 @@ public class QdoxTest {
      * @param className
      * @param methodName
      * @param fileList
-     * @throws ClassNotFoundException
      */
-    private void recInjectFile(String file, String className, String methodName, List<String> fileList) throws ClassNotFoundException {
+    private void recInjectFile(String file, String className, String methodName, List<String> fileList) {
 
         JavaProjectBuilder builder = new JavaProjectBuilder();
 
