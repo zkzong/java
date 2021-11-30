@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <!--<module>javabasic</module>-->
+        <module>javabasic</module>
         <!--<module>library</module>-->
         <module>thirdparty</module>
         <module>spring-parent</module>
