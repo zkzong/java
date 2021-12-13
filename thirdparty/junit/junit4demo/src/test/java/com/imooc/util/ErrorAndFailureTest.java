@@ -12,7 +12,7 @@ public class ErrorAndFailureTest {
      * 一个隐藏的bug
      * 3.测试用例不是用来证明你是对的，而是用来证明你没有错。
      */
-    @Test
+    @Test(expected = AssertionError.class)
     public void testAdd() {
         assertEquals(5, new Calculate().add(3, 3));
     }
