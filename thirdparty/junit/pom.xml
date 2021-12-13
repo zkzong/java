@@ -10,14 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>junit4demo</module>
+        <module>junit5demo</module>
     </modules>
-
-    <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-        </dependency>
-    </dependencies>
 
 </project>

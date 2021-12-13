@@ -61,7 +61,7 @@ public class MockitoTest {
         when(mockPerson.getName()).thenThrow(new NoSuchMethodError());
 
         System.out.println(mockPerson.getId());
-        System.out.println(mockPerson.getName());
+        //System.out.println(mockPerson.getName());
     }
 
     @Test

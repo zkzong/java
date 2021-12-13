@@ -17,7 +17,7 @@ public class ErrorAndFailureTest {
         assertEquals(5, new Calculate().add(3, 3));
     }
 
-    @Test
+    @Test(expected = ArithmeticException.class)
     public void testDivide() {
         assertEquals(3, new Calculate().divide(6, 0));
     }

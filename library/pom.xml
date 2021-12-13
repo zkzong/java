@@ -13,8 +13,8 @@
         <module>properties-library</module>
         <module>file-type</module>
         <module>image</module>
-        <module>ftp</module>
-        <module>sftp</module>
+        <!--<module>ftp</module>-->
+        <!--<module>sftp</module>-->
         <module>qrcode</module>
         <module>http</module>
         <module>delay</module>
