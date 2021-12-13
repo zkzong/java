@@ -17,7 +17,7 @@
     <modules>
         <!--<module>thinkinginjava</module>-->
         <module>designpattern</module>
-        <module>test</module>
+        <module>test-java</module>
         <module>collection</module>
         <module>jvm</module>
         <module>interview</module>

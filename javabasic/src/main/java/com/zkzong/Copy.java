@@ -5,6 +5,9 @@ import org.junit.Test;
 
 public class Copy {
 
+    /**
+     * 使用=对对象赋值，是两个对象
+     */
     @Test
     public void test() {
         User u1 = new User();
