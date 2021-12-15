@@ -7,6 +7,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.transaction.Transactional;
@@ -20,7 +21,7 @@ public class TransactionApplicationTest {
     @Autowired
     private UserRepository userRepository;
 
-    @Test
+    @Test(expected = DataIntegrityViolationException.class)
     @Transactional
     public void test() {
         // 创建10条记录
