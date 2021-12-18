@@ -1,4 +1,4 @@
-package com.zkzong.sb.startup;
+package com.zkzong.sb.runner;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

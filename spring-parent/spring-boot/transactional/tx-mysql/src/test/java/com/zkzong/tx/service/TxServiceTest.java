@@ -17,7 +17,7 @@ public class TxServiceTest {
     @Autowired
     private TxService txService;
 
-    @Test
+    @Test(expected = ArithmeticException.class)
     public void insertAll() {
         txService.insertAll("aaaa", 25);
     }

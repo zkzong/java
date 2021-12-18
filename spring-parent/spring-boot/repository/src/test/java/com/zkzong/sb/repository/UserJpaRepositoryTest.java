@@ -21,7 +21,7 @@ public class UserJpaRepositoryTest {
     private UserJpaRepository userJpaRepository;
 
     @Test
-    public void add() {
+    public void save() {
         User user = new User();
         user.setId(1L);
         user.setName("zong");
