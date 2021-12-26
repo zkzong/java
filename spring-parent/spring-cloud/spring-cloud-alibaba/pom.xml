@@ -13,6 +13,7 @@
         <module>spring-cloud-alibaba-starter</module>
         <module>spring-cloud-alibaba-nacos</module>
         <module>sca-code</module>
+        <module>loadbalancer</module>
     </modules>
 
     <properties>
