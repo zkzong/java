@@ -38,11 +38,12 @@ public class RedisKeyTest {
     }
 
     /**
-     * 使用scan获取key，需要指定获取个数
+     * 使用scan获取所有key，需要指定获取个数，每次获取指定个数的key，循环获取
+     * 生产环境可能会禁用keys，当keys不能使用时，可使用该方法
      */
     @Test
     public void iter2() {
-        Cursor<String> scan = scan(redisTemplate, "*", 1);
+        Cursor<String> scan = scan(redisTemplate, "*", 1000);
         while (scan.hasNext()) {
             String key = scan.next();
             System.out.println(key);
