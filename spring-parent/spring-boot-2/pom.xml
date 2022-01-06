@@ -20,7 +20,8 @@
         <module>executor</module>
         <module>map</module>
         <module>actuator-sb2</module>
-        <module>test</module>
+        <module>test-sb2</module>
+        <module>listener-sb2</module>
     </modules>
     <packaging>pom</packaging>
 

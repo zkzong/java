@@ -27,4 +27,9 @@ CustomBuildInfoContributor
 MySystemEndpoint
 http://localhost:8080/actuator/mysystem
 
+## listener
+事件监听
+
+https://mp.weixin.qq.com/s/_y6PC4VFa1wlGlprtuRs1A
+
 
