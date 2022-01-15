@@ -26,3 +26,7 @@ eureka注册中心
 Spring Cloud微服务实战
 
 ## spring cloud alibaba
+
+### multi-register
+多注册中心
+eureka nacos
