@@ -2,6 +2,7 @@ package com.zkzong.multi;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * @Author: zong
@@ -11,6 +12,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 public interface ProviderClient {
 
     @GetMapping("/echo1")
-    public String echo(String name);
+    public String echo(@RequestParam String name);
 
 }

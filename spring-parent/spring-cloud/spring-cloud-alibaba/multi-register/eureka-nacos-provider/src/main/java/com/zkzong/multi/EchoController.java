@@ -1,6 +1,7 @@
 package com.zkzong.multi;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -16,7 +17,7 @@ public class EchoController {
     }
 
     @GetMapping("/echo1")
-    public String echo1(String name) {
+    public String echo1(@RequestParam String name) {
         return "echo: " + name;
     }
 
