@@ -10,12 +10,12 @@
 
     <packaging>pom</packaging>
     <modules>
-        <module>eureka-server</module>
         <module>consul</module>
         <module>nacos-sc</module>
         <module>ratelimit</module>
         <module>config-bus</module>
         <module>feign</module>
+        <module>eureka</module>
     </modules>
 
     <parent>
