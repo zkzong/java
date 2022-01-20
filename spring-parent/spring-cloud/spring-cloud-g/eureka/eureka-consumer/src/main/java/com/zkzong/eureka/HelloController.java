@@ -52,6 +52,7 @@ public class HelloController {
     @GetMapping("/hello1")
     public String hello1() {
         providerApi.echo1(null);
+        return "success";
     }
 
 }

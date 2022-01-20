@@ -56,7 +56,7 @@ public class HelloController {
 
     @GetMapping("/hello1")
     public String hello1() {
-        String echo = providerClient.echo("zong");
+        String echo = providerClient.echo(null);
         return echo;
     }
 
