@@ -13,4 +13,4 @@ apollo:
   cluster: default
   bootstrap:
     enabled: true
-    namespaces: application
+    namespaces: test,application
