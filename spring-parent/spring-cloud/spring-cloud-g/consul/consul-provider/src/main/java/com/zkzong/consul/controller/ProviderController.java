@@ -1,6 +1,8 @@
 package com.zkzong.consul.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -21,8 +23,8 @@ public class ProviderController {
      *
      * @return String
      */
-    @GetMapping("/sayHello")
-    public String sayHello(String name) {
+    @PostMapping("/sayHello")
+    public String sayHello(@RequestParam("name") String name) {
         return "hello," + name;
     }
 

@@ -24,7 +24,7 @@ public class ConsumerController {
      */
     @GetMapping("/hello")
     public String hello(String name) {
-        return helloService.sayHello(name);
+        return helloService.sayHello(null);
     }
 
 }
