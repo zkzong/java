@@ -1,9 +1,6 @@
 package com.zkzong.nacos.controller;
 
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class EchoController {
@@ -11,4 +8,10 @@ public class EchoController {
     public String echo(@PathVariable String string) {
         return "Hello Nacos Discovery " + string;
     }
+
+    @PostMapping("echo1")
+    public String echo1(@RequestParam String name) {
+        return "echo, " + name;
+    }
+
 }
