@@ -10,10 +10,10 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients
-public class EurekaConsumer {
+public class EurekaConsumerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EurekaConsumer.class, args);
+        SpringApplication.run(EurekaConsumerApplication.class, args);
     }
 
     @Bean
