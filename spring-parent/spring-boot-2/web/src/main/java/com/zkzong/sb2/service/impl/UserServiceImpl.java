@@ -1,6 +1,6 @@
 package com.zkzong.sb2.service.impl;
 
-import com.zkzong.sb2.model.User;
+import com.zkzong.sb2.entity.User;
 import com.zkzong.sb2.repository.UserRepository;
 import com.zkzong.sb2.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,9 +1,9 @@
 package com.zkzong.sb2.service.impl;
 
 import com.alibaba.fastjson.JSON;
-import com.zkzong.sb2.model.A;
-import com.zkzong.sb2.model.B;
-import com.zkzong.sb2.model.User;
+import com.zkzong.sb2.dto.A;
+import com.zkzong.sb2.dto.B;
+import com.zkzong.sb2.entity.User;
 import com.zkzong.sb2.service.UserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;

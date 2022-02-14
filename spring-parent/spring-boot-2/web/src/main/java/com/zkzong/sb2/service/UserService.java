@@ -1,6 +1,6 @@
 package com.zkzong.sb2.service;
 
-import com.zkzong.sb2.model.User;
+import com.zkzong.sb2.entity.User;
 
 import java.util.List;
 

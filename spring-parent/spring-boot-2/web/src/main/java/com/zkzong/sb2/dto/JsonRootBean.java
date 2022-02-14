@@ -1,4 +1,4 @@
-package com.zkzong.sb2.model;
+package com.zkzong.sb2.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;

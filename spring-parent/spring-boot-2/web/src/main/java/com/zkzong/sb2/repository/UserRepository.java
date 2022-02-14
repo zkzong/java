@@ -1,6 +1,6 @@
 package com.zkzong.sb2.repository;
 
-import com.zkzong.sb2.model.User;
+import com.zkzong.sb2.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

@@ -1,4 +1,4 @@
-package com.zkzong.sb2.model;
+package com.zkzong.sb2.entity;
 
 import lombok.Data;
 
