@@ -12,7 +12,6 @@
     <description>Spring Boot 1.x</description>
 
     <modules>
-        <module>bysocket</module>
         <module>deploy-war</module>
         <module>didispace</module>
         <module>properties</module>

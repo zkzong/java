@@ -20,6 +20,7 @@
 		<module>mybatis-generator</module>
         <module>resultType-resultMap</module>
         <module>mybatis-master-slave</module>
+		<module>bysocket</module>
     </modules>
 	<packaging>pom</packaging>
 
