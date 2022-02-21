@@ -1,6 +1,9 @@
 package com.zkzong.aop;
 
 import com.zkzong.aop.dao.ProductDao;
+import com.zkzong.aop.datalog.ActionDao;
+import com.zkzong.aop.domain.Action;
+import com.zkzong.aop.domain.ActionType;
 import com.zkzong.aop.domain.Product;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -18,6 +21,9 @@ public class DatalogApplicationTest {
     @Autowired
     private ProductDao productDao;
 
+    @Autowired
+    private ActionDao actionDao;
+
     @Test
     public void testInsert() {
         Product product = new Product();
@@ -33,8 +39,13 @@ public class DatalogApplicationTest {
 
     @Test
     public void testUpdate() {
-        Product product = productDao.findOne(1L);
-        product.setName("test-update");
+        Product product = new Product();
+        product.setId(1L);
+        product.setName("宗");
+        productDao.save(product);
+
+        product = productDao.findOne(1L);
+        product.setName("马");
         product.setBuyPrice(new BigDecimal("23.5"));
         product.setOnlineTime(new Date());
         productDao.save(product);
@@ -43,6 +54,20 @@ public class DatalogApplicationTest {
     @Test
     public void testDelete() {
         productDao.delete(1L);
+    }
+
+    @Test
+    public void testSaveMongo() {
+        Action action = new Action();
+        action.setId("1");
+        action.setObjectId(1L);
+        action.setObjectClass("mongo");
+        action.setOperator("admin");
+        action.setOperateTime(new Date());
+        action.setActionType(ActionType.INSERT);
+        //action.setChanges(Lists.newArrayList());
+
+        actionDao.save(action);
     }
 
 }

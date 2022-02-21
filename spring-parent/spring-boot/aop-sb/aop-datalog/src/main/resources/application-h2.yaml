@@ -1,0 +1,19 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans: false
+  datasource:
+      username: sa
+      password:
+      url: jdbc:h2:mem:test
+      driver-class-name: org.h2.Driver
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: aop-datalog
+      repositories:
+        enabled: true
