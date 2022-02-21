@@ -1,7 +1,7 @@
 prefix:
     stringProp1: propValue1
     stringProp2: propValue2
-    intProp1: 100
+    intProp1: 99 # 100
     listProp:
         - listValue1
         - listValue2

@@ -17,6 +17,7 @@ public class SamplePropertyLoadingProdTest {
 
     @Test
     public void testLoadingOfProperties() {
-
+        Integer intProp1 = sampleProperty.getIntProp1();
+        System.out.println(intProp1);
     }
 }
