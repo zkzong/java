@@ -15,7 +15,7 @@
     </properties>
 
     <modules>
-        <!--<module>thinkinginjava</module>-->
+        <module>thinkinginjava</module>
         <module>designpattern</module>
         <module>test-java</module>
         <module>collection</module>
