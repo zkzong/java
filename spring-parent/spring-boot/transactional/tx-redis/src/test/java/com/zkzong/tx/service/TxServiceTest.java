@@ -13,7 +13,7 @@ public class TxServiceTest {
     @Autowired
     private TxService txService;
 
-    @Test
+    @Test(expected = ArithmeticException.class)
     public void insert() {
         txService.insert();
     }

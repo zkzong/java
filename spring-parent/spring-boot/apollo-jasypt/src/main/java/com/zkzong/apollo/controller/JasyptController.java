@@ -16,7 +16,7 @@ public class JasyptController {
     @Autowired
     private StringEncryptor stringEncryptor;
 
-    @Value("${config.info}")
+    @Value("${config.info:test}")
     private String configInfo;
 
     @GetMapping("/get")

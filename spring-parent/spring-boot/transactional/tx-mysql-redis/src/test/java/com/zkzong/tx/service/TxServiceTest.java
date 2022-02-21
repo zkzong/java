@@ -13,12 +13,12 @@ public class TxServiceTest {
     @Autowired
     private TxService txService;
 
-    @Test
+    @Test(expected = ArithmeticException.class)
     public void insertAll() {
         txService.insertAll("hehe", 20);
     }
 
-    @Test
+    @Test(expected = ArithmeticException.class)
     public void insertMysqlThenRedis() {
         txService.insertMysqlThenRedis("hehe", 20);
     }
