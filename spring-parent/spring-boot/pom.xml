@@ -33,7 +33,7 @@
         <module>starter</module>
         <module>netty</module>
         <module>knife4j</module>
-        <module>japidocs</module>
+        <!--<module>japidocs</module>-->
     </modules>
 
     <properties>
