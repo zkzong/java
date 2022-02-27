@@ -1,6 +1,6 @@
-drop database if exists mybatis;
-CREATE database mybatis;
-use mybatis;
+-- drop database if exists mybatis;
+-- CREATE database mybatis;
+-- use mybatis;
 
 drop table if exists t_users;
 CREATE TABLE t_users(
