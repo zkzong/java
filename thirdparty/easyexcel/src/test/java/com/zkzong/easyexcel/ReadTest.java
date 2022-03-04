@@ -84,16 +84,30 @@ public class ReadTest {
      * 获取所有sheet
      */
     @Test
-    public void repeatedRead1() {
+    public void sheet() {
         String fileName = TestFileUtil.getPath() + "demo" + File.separator + "demo.xlsx";
-        // 有几个sheet
         ExcelReader excelReader = EasyExcel.read(fileName).build();
         List<ReadSheet> readSheets = excelReader.excelExecutor().sheetList();
         int size = readSheets.size();
         System.out.println("readSheets.size()=" + size);
         for (int i = 0; i < size; i++) {
             List<DemoData> dataList = EasyExcel.read(fileName).head(DemoData.class).sheet(i).doReadSync();
+            for (DemoData demoData : dataList) {
+                System.out.println(demoData);
+            }
             System.out.println(dataList);
+        }
+    }
+
+    /**
+     * 当headRowNumber <= 0时，第一行也会被当作数据行而不是head
+     */
+    @Test
+    public void nohead() {
+        String fileName = TestFileUtil.getPath() + "demo" + File.separator + "demo.xlsx";
+        List<Object> list = EasyExcel.read(fileName).headRowNumber(0).sheet().doReadSync();
+        for (Object demoData : list) {
+            System.out.println(demoData);
         }
     }
 
