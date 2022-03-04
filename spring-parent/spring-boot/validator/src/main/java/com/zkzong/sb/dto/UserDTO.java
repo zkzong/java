@@ -7,10 +7,13 @@ import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.NotBlank;
 
+import javax.validation.constraints.DecimalMin;
+import javax.validation.constraints.Digits;
 import javax.validation.constraints.Future;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.Date;
 
 /**
@@ -65,6 +68,11 @@ public class UserDTO implements Serializable {
     @NotBlank(message = "身份证号不能为空")
     @IdentityCardNumber(message = "身份证信息有误,请核对后提交")
     private String clientCardNo;
+
+    @NotNull(message = "金额不能为空")
+    @Digits(integer = 5, fraction = 1, message = "整数位上限为5位，小数位上限为1位")
+    @DecimalMin(value = "0.1", message = "必须大于等于0.1")
+    private BigDecimal amount;
 
 
 }

@@ -2,6 +2,7 @@ package com.zkzong.sb.controller;
 
 import com.zkzong.sb.dto.RspDTO;
 import com.zkzong.sb.dto.UserDTO;
+import com.zkzong.sb.dto.UserReq;
 import com.zkzong.sb.dto.assist.Update;
 import com.zkzong.sb.service.UserService;
 import lombok.extern.slf4j.Slf4j;
@@ -28,6 +29,15 @@ public class ValidatorController {
     public RspDTO save(@RequestBody @Validated UserDTO userDTO) {
         log.info("入参：{}", userDTO);
         userService.save(userDTO);
+        return RspDTO.success();
+    }
+
+    @PostMapping("/save/valid/list")
+    public RspDTO save(@RequestBody @Validated UserReq req) {
+        log.info("入参：{}", req);
+        for (UserDTO userDTO : req.getDtoList()) {
+            userService.save(userDTO);
+        }
         return RspDTO.success();
     }
 
