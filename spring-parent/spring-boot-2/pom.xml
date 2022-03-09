@@ -22,6 +22,7 @@
         <module>actuator-sb2</module>
         <module>test-sb2</module>
         <module>listener-sb2</module>
+        <module>log-aspect</module>
     </modules>
     <packaging>pom</packaging>
 

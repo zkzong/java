@@ -32,4 +32,8 @@ http://localhost:8080/actuator/mysystem
 
 https://mp.weixin.qq.com/s/_y6PC4VFa1wlGlprtuRs1A
 
+## log-aspect
+
+使用注解+切面方式打印日志
+
 
