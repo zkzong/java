@@ -25,14 +25,14 @@ public class ValidatorController {
      * @param userDTO
      * @return
      */
-    @PostMapping("/save/valid")
+    @PostMapping("/create")
     public RspDTO save(@RequestBody @Validated UserDTO userDTO) {
         log.info("入参：{}", userDTO);
         userService.save(userDTO);
         return RspDTO.success();
     }
 
-    @PostMapping("/save/valid/list")
+    @PostMapping("/create/list")
     public RspDTO save(@RequestBody @Validated UserReq req) {
         log.info("入参：{}", req);
         for (UserDTO userDTO : req.getDtoList()) {
