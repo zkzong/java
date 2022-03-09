@@ -1,5 +1,6 @@
 package com.zkzong.sb.dto;
 
+import com.zkzong.sb.annotation.EnumString;
 import com.zkzong.sb.annotation.IdentityCardNumber;
 import com.zkzong.sb.dto.assist.Update;
 import lombok.Data;
@@ -47,6 +48,7 @@ public class UserDTO implements Serializable {
     /**
      * 性别
      */
+    @EnumString(value = {"F", "M"}, message = "性别只允许为F或M")
     private String sex;
 
     /**
