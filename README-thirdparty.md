@@ -54,3 +54,8 @@ spring工具类
 ### trove
 
 使用lombok
+
+### easyexcel
+
+指定写入的列
+@ExcelProperty(value = "数字标题", index = 3)
