@@ -16,9 +16,9 @@
         <module>db</module>
         <module>mq</module>
         <module>job-scheduler</module>
-        <module>log</module>
-        <module>dubbo</module>
-        <module>skywalking</module>
+        <!--<module>log</module>-->
+        <!--<module>dubbo</module>-->
+        <!--<module>skywalking</module>-->
     </modules>
 
     <properties>
