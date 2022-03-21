@@ -23,6 +23,7 @@
         <module>test-sb2</module>
         <module>listener-sb2</module>
         <module>log-aspect</module>
+        <module>api</module>
     </modules>
     <packaging>pom</packaging>
 
