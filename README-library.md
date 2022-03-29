@@ -21,4 +21,5 @@
 ### idempotent
 幂等
 
-#### idempotent-redis-token
+#### token
+使用防重 Token 令牌方案，该方案能保证在不同请求动作下的幂等性
