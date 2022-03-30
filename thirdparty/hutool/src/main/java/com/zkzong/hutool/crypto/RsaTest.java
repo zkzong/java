@@ -7,9 +7,13 @@ import cn.hutool.core.util.StrUtil;
 import cn.hutool.crypto.SecureUtil;
 import cn.hutool.crypto.asymmetric.KeyType;
 import cn.hutool.crypto.asymmetric.RSA;
+import cn.hutool.crypto.asymmetric.SM2;
+import cn.hutool.crypto.asymmetric.Sign;
+import cn.hutool.crypto.asymmetric.SignAlgorithm;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.nio.charset.StandardCharsets;
 import java.security.KeyPair;
 
 /**
@@ -83,5 +87,36 @@ public class RsaTest {
 
         //Junit单元测试
         Assert.assertEquals("虎头闯杭州,多抬头看天,切勿只管种地", StrUtil.str(decrypt, CharsetUtil.CHARSET_UTF_8));
+    }
+
+    /**
+     * todo 使用自定义的公私钥
+     * 签名、签名验证
+     */
+    @Test
+    public void sign() {
+        String privateKey = "MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBAJS0X4+zz+OeIari1JpLmq8mOeIubZXfAa+an7GS/abM/EMmZ9resjLeE/QnHGPZqDDRVVYpYHv9Qa7/m0PGwX/99fNzc7088pODjIZ464AOA69zwYcmmhyCch+kQyJLZV2IbXcy5banV0jYQ50w5y9wGi0O3igRQhrViV3K9RALAgMBAAECgYEAhTddkKgeaiRktulEWwG2DoipPFYpeCTzJrTXsUYklER5DVMfoPT2IRnQOF69UTpRMYKm92xT8l+8cyCroLky6LAoVTbekeY2MWQ8ljW9rTwQBGDKe8O09A83ca0CA/9b/etnS29wWUtQnGLOY5cPX6YjCG2zzMSR72n/WvJzWdkCQQDFVm42rITeYCdePPJLag9Y8f1yCGKk074jdKmu2LW9tGQn3/YHKAwtuzp5eSMs4IeXAOq488ukKtCjw3uLRoo9AkEAwOjs2NKbJkiunOgJRNjWzA9jBR281IxoWwHD0J/fggTKsHNh6akthszPd1czV2MdFRJ7DltezQhpk3sDOhPP5wJAfHRKBgk/ss+JhJGDbbRyAXJ8mRJYxAMWg13sNe1OkVnXYJ6Kl3DWXXEbK8kOOhtQ6BcX8ZUv9VVbSCzdGbVfMQJBAKp/c43zHiNJC+MsBb0utTGny8mizdlBu53rwmiqVH3yxD4NzJUa7Fz+ucLtdDghJnwQWGiJAxHOBJnPmDuFdTMCQEpx7IHtVsWjNd0gkcErvvu2IuHdlvhUgKOb6vQUVFKFDMfUq7cNisOSVf/A5T/1IgB3r/GLE6fHj9YEDmCCgo8=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCUtF+Ps8/jniGq4tSaS5qvJjniLm2V3wGvmp+xkv2mzPxDJmfa3rIy3hP0Jxxj2agw0VVWKWB7/UGu/5tDxsF//fXzc3O9PPKTg4yGeOuADgOvc8GHJpocgnIfpEMiS2VdiG13MuW2p1dI2EOdMOcvcBotDt4oEUIa1YldyvUQCwIDAQAB";
+        String publicKey = "MIICeAIBADANBgkqhkiG9w0BAQEFAASCAmIwggJeAgEAAoGBANx7qOCc2ZEslkhLGCXVn5YLWWnauUEuyP1/wunFhAjyjLF87MJXOWTy2kPHCuySDYC1xtttxxvWHd+tpA6OlUaD3DJrCVqOvxcYgqib/zr7v7peFzZS/swuqBrdwcR55SkTlZKXuR++BeSSD2Q35Oe4pOtWWY4gCDCxGeFn1AIHAgMBAAECgYBnz42HHDLQSMcFiN34ymlWU0epMIOzLh0SRnp2aTouoE0gMGqlYj4yyql76ha5plbXOD9GB50M/TaZn380H2wmpBhsdU0QGSlRu0XqqjrfIOXr8sVXmZx9jxFNy15p9nTYUugZNVL9NYJAxwxSDvA1jbvsnPKdEjqGYjg6tl8wEQJBAP9BKp5vJmpZ+eNhrQlsMqXzr4837vjsjaIeTYpPwyitD8CQ3O5K1R0sdX9Upxzgyrl1vMR7q0eal83wKG1gnTkCQQDdIH9PaiXjH86xxIEElAAQy8crrk1ols9fm0I5WgSHbdHLnEQffGyOYtw73KL6bQQu1aDelMD26YXVMfYeCNk/AkEA9fclymXw7qqlUabdxyar555anfeYH+ZS1NW+gnk55gheFYGCY11Y3zPoRTqdjgZPU0dRD0TcV7NwdNHnIv7mgQJBANHztg0f+uMgYy8UJW/EWh+Ya/5EW8kPT8w17PXpS12O3uBU+bVvfN7gbL0Fq1Tcx1j0iu5rDKAjb2fSLR2tRx8CQQCO4kZowo4WVkUcK0IA3D2V8m6dy/neNGS1KQLfPIt+z8ZZgTQMznG843VGK7dY10OYz/yiA50gwZLfkGecNXUkMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDce6jgnNmRLJZISxgl1Z+WC1lp2rlBLsj9f8LpxYQI8oyxfOzCVzlk8tpDxwrskg2Atcbbbccb1h3fraQOjpVGg9wyawlajr8XGIKom/86+7+6Xhc2Uv7MLqga3cHEeeUpE5WSl7kfvgXkkg9kN+TnuKTrVlmOIAgwsRnhZ9QCBwIDAQAB";
+
+        String data = "zong";
+
+        Sign sign = SecureUtil.sign(SignAlgorithm.MD5withRSA);
+        byte[] bytes = sign.sign(data.getBytes(StandardCharsets.UTF_8));
+        //System.out.println(HexUtil.encodeHex(bytes));
+        boolean verify = sign.verify(data.getBytes(StandardCharsets.UTF_8), bytes);
+        System.out.println(verify);
+    }
+
+    @Test
+    public void s() {
+        String privateKey = "MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBAJS0X4+zz+OeIari1JpLmq8mOeIubZXfAa+an7GS/abM/EMmZ9resjLeE/QnHGPZqDDRVVYpYHv9Qa7/m0PGwX/99fNzc7088pODjIZ464AOA69zwYcmmhyCch+kQyJLZV2IbXcy5banV0jYQ50w5y9wGi0O3igRQhrViV3K9RALAgMBAAECgYEAhTddkKgeaiRktulEWwG2DoipPFYpeCTzJrTXsUYklER5DVMfoPT2IRnQOF69UTpRMYKm92xT8l+8cyCroLky6LAoVTbekeY2MWQ8ljW9rTwQBGDKe8O09A83ca0CA/9b/etnS29wWUtQnGLOY5cPX6YjCG2zzMSR72n/WvJzWdkCQQDFVm42rITeYCdePPJLag9Y8f1yCGKk074jdKmu2LW9tGQn3/YHKAwtuzp5eSMs4IeXAOq488ukKtCjw3uLRoo9AkEAwOjs2NKbJkiunOgJRNjWzA9jBR281IxoWwHD0J/fggTKsHNh6akthszPd1czV2MdFRJ7DltezQhpk3sDOhPP5wJAfHRKBgk/ss+JhJGDbbRyAXJ8mRJYxAMWg13sNe1OkVnXYJ6Kl3DWXXEbK8kOOhtQ6BcX8ZUv9VVbSCzdGbVfMQJBAKp/c43zHiNJC+MsBb0utTGny8mizdlBu53rwmiqVH3yxD4NzJUa7Fz+ucLtdDghJnwQWGiJAxHOBJnPmDuFdTMCQEpx7IHtVsWjNd0gkcErvvu2IuHdlvhUgKOb6vQUVFKFDMfUq7cNisOSVf/A5T/1IgB3r/GLE6fHj9YEDmCCgo8=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCUtF+Ps8/jniGq4tSaS5qvJjniLm2V3wGvmp+xkv2mzPxDJmfa3rIy3hP0Jxxj2agw0VVWKWB7/UGu/5tDxsF//fXzc3O9PPKTg4yGeOuADgOvc8GHJpocgnIfpEMiS2VdiG13MuW2p1dI2EOdMOcvcBotDt4oEUIa1YldyvUQCwIDAQAB";
+        String publicKey = "MIICeAIBADANBgkqhkiG9w0BAQEFAASCAmIwggJeAgEAAoGBANx7qOCc2ZEslkhLGCXVn5YLWWnauUEuyP1/wunFhAjyjLF87MJXOWTy2kPHCuySDYC1xtttxxvWHd+tpA6OlUaD3DJrCVqOvxcYgqib/zr7v7peFzZS/swuqBrdwcR55SkTlZKXuR++BeSSD2Q35Oe4pOtWWY4gCDCxGeFn1AIHAgMBAAECgYBnz42HHDLQSMcFiN34ymlWU0epMIOzLh0SRnp2aTouoE0gMGqlYj4yyql76ha5plbXOD9GB50M/TaZn380H2wmpBhsdU0QGSlRu0XqqjrfIOXr8sVXmZx9jxFNy15p9nTYUugZNVL9NYJAxwxSDvA1jbvsnPKdEjqGYjg6tl8wEQJBAP9BKp5vJmpZ+eNhrQlsMqXzr4837vjsjaIeTYpPwyitD8CQ3O5K1R0sdX9Upxzgyrl1vMR7q0eal83wKG1gnTkCQQDdIH9PaiXjH86xxIEElAAQy8crrk1ols9fm0I5WgSHbdHLnEQffGyOYtw73KL6bQQu1aDelMD26YXVMfYeCNk/AkEA9fclymXw7qqlUabdxyar555anfeYH+ZS1NW+gnk55gheFYGCY11Y3zPoRTqdjgZPU0dRD0TcV7NwdNHnIv7mgQJBANHztg0f+uMgYy8UJW/EWh+Ya/5EW8kPT8w17PXpS12O3uBU+bVvfN7gbL0Fq1Tcx1j0iu5rDKAjb2fSLR2tRx8CQQCO4kZowo4WVkUcK0IA3D2V8m6dy/neNGS1KQLfPIt+z8ZZgTQMznG843VGK7dY10OYz/yiA50gwZLfkGecNXUkMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDce6jgnNmRLJZISxgl1Z+WC1lp2rlBLsj9f8LpxYQI8oyxfOzCVzlk8tpDxwrskg2Atcbbbccb1h3fraQOjpVGg9wyawlajr8XGIKom/86+7+6Xhc2Uv7MLqga3cHEeeUpE5WSl7kfvgXkkg9kN+TnuKTrVlmOIAgwsRnhZ9QCBwIDAQAB";
+
+        String data = "zong";
+
+        SM2 sm2 = new SM2(privateKey, publicKey);
+        byte[] sign = sm2.sign(data.getBytes(StandardCharsets.UTF_8));
+        boolean verify = sm2.verify(data.getBytes(StandardCharsets.UTF_8), sign);
+        System.out.println(verify);
     }
 }
