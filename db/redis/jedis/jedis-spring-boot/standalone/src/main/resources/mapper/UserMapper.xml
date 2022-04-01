@@ -4,4 +4,8 @@
 	<select id="findAll" resultType="user">
 		select * from user
 	</select>
+
+	<select id="findById" resultType="user">
+		select * from user
+	</select>
 </mapper>
