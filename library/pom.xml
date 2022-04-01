@@ -19,6 +19,7 @@
         <module>http</module>
         <module>delay</module>
         <module>distributed-lock</module>
+        <module>idempotent</module>
     </modules>
 
     <properties>
