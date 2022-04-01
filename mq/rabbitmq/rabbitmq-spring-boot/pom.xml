@@ -12,6 +12,7 @@
     <modules>
         <module>basic</module>
         <module>rabbitmq-sb</module>
+        <module>delay-rabbitmq</module>
     </modules>
 
     <properties>
