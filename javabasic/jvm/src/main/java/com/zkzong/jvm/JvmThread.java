@@ -5,6 +5,9 @@ import java.util.Date;
 import java.util.List;
 
 /**
+ * JVM 堆内存溢出后，其他线程是否可继续工作
+ * 还能运行
+ *
  * @Author: zong
  * @Date: 2022/3/26
  */
@@ -37,4 +40,8 @@ public class JvmThread {
         }).start();
     }
 }
+/**
+ * 其实发生OOM的线程一般情况下会死亡，也就是会被终结掉，该线程持有的对象占用的heap都会被gc了，释放内存。
+ * 因为发生OOM之前要进行gc，就算其他线程能够正常工作，也会因为频繁gc产生较大的影响。
+ */
 
