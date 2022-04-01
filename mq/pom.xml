@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>activemq</module>
+        <!--<module>activemq</module>-->
         <module>rabbitmq</module>
         <module>kafka</module>
         <module>rocketmq</module>
