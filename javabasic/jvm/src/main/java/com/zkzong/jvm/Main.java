@@ -3,6 +3,10 @@ package com.zkzong.jvm;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+/**
+ * 内存泄漏
+ * -Xms20m -Xmx20m -XX:+PrintGC -XX:+HeapDumpOnOutOfMemoryError  -XX:HeapDumpPath=heap.bin
+ */
 public class Main {
     public static void main(String[] args) {
         Main main = new Main();
