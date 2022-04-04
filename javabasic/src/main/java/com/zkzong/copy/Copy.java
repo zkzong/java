@@ -1,4 +1,4 @@
-package com.zkzong;
+package com.zkzong.copy;
 
 import lombok.Data;
 import org.junit.Test;
@@ -20,6 +20,15 @@ public class Copy {
         u2.setName("ma");
         System.out.println("u1=" + u1);
         System.out.println("u2=" + u2);
+    }
+
+    @Test
+    public void copy() {
+        Person person1 = new Person(new Address("武汉"));
+        Person person1Copy = person1.clone();
+        // 浅拷贝：true
+        // 深拷贝：false
+        System.out.println(person1.getAddress() == person1Copy.getAddress());
     }
 
 }
