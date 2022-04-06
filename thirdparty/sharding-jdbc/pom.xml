@@ -9,8 +9,6 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <!--<module>sharding-jdbc-spring-boot</module>-->
-        <!--<module>sharding-jdbc-spring</module>-->
         <!--<module>sharding-jdbc-3</module>-->
         <module>sharding-jdbc-spring-boot-2</module>
         <module>sharding-jdbc-5</module>
