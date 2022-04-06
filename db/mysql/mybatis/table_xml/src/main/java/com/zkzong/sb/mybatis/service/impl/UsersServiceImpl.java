@@ -33,6 +33,11 @@ public class UsersServiceImpl implements UsersService {
     }
 
     @Override
+    public int insertAndGetId(Users users) {
+        return usersMapper.insertAndGetId(users);
+    }
+
+    @Override
     public Users findByIndex(String userName, int age) {
         return usersMapper.findByIndex(userName, age);
     }

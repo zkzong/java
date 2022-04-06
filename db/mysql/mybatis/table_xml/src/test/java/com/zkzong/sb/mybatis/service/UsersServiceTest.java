@@ -11,8 +11,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static org.junit.Assert.*;
-
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class UsersServiceTest {
@@ -35,6 +33,16 @@ public class UsersServiceTest {
     @Test
     public void insertOne() {
         usersService.insertOne("m", 22);
+    }
+
+    @Test
+    public void insertAndGetId() {
+        Users users = new Users();
+        users.setUserName("m");
+        users.setAge(10);
+        int i = usersService.insertAndGetId(users);
+        System.out.println(i);
+        System.out.println(users.getId());
     }
 
     @Test

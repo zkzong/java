@@ -20,6 +20,9 @@
 		<module>mybatis-generator</module>
         <module>resultType-resultMap</module>
         <module>mybatis-master-slave</module>
+		<module>mybatis-class</module>
+		<module>mybatis-redis</module>
+		<module>mybatis-redis-annotation</module>
     </modules>
 	<packaging>pom</packaging>
 

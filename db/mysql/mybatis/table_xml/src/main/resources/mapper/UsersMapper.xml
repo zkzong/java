@@ -16,6 +16,13 @@
         insert into t_users(user_name, age) values(#{userName}, #{age})
     </insert>
 
+    <insert id="insertAndGetId" parameterType="com.zkzong.sb.mybatis.domain.Users" useGeneratedKeys="true" keyProperty="id">
+        <!--<selectKey resultType="java.lang.Long" keyProperty="id" order="AFTER">-->
+        <!--    SELECT LAST_INSERT_ID()-->
+        <!--</selectKey>-->
+        insert into t_users(user_name, age) values(#{userName}, #{age})
+    </insert>
+
     <select id="findByIndex" resultType="com.zkzong.sb.mybatis.domain.Users">
         select id, user_name userName, age from t_users
         where user_name = #{arg0} and age = #{arg1}
