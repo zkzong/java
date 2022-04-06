@@ -1,7 +1,7 @@
 package com.zkzong.sb.mybatis.service.impl;
 
-import com.zkzong.sb.mybatis.dao.CityDao;
 import com.zkzong.sb.mybatis.domain.City;
+import com.zkzong.sb.mybatis.mapper.CityDao;
 import com.zkzong.sb.mybatis.service.CityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

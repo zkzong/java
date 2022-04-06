@@ -15,11 +15,9 @@
 	<version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>mybatis-bysocket</module>
-        <module>mybatis-annotation</module>
         <module>mybatis-redis</module>
         <module>mybatis-redis-annotation</module>
         <module>mybatis-class</module>
-		<module>mybatis-xml</module>
 	</modules>
     <packaging>pom</packaging>
 

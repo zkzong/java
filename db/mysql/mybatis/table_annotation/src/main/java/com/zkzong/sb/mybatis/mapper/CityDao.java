@@ -1,4 +1,4 @@
-package com.zkzong.sb.mybatis.dao;
+package com.zkzong.sb.mybatis.mapper;
 
 import com.zkzong.sb.mybatis.domain.City;
 import org.apache.ibatis.annotations.Mapper;

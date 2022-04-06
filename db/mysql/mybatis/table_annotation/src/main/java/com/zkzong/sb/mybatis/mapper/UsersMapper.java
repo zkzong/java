@@ -16,9 +16,9 @@ public interface UsersMapper {
     @Select("select * from t_users")
     List<Users> getAllUsers();
 
-    @Select("select * from t_users where name = #{name}")
+    @Select("select * from t_users where user_name = #{name}")
     Users findByName(String name);
 
-    @Insert("insert into t_users(name, age) values(#{name}, #{age})")
+    @Insert("insert into t_users(user_name, age) values(#{name}, #{age})")
     void insertOne(@Param("name") String name, @Param("age") int age);
 }

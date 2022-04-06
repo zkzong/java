@@ -9,7 +9,7 @@
     </select>
 
     <select id="findByUserName" resultType="com.zkzong.sb.mybatis.domain.Users">
-        select id, user_name userName, age from t_users where name = #{name}
+        select id, user_name userName, age from t_users where user_name = #{name}
     </select>
 
     <insert id="insertOne">
