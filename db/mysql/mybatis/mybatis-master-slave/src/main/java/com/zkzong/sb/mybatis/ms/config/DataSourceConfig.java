@@ -3,8 +3,8 @@ package com.zkzong.sb.mybatis.ms.config;
 import com.zkzong.sb.mybatis.ms.bean.MyRoutingDataSource;
 import com.zkzong.sb.mybatis.ms.enums.DBTypeEnum;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceBuilder;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
