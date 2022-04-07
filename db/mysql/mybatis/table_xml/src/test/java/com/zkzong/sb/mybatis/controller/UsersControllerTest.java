@@ -41,7 +41,6 @@ public class UsersControllerTest {
         users.setAge(20);
         String json = JSONObject.toJSONString(users);
 
-        // 调用获取 Token 接口
         String post = mockMvc.perform(MockMvcRequestBuilders.post("/users/insert")
                         .contentType(MediaType.APPLICATION_JSON).content(json))
                 .andExpect(status().isOk()).andDo(print())
@@ -52,7 +51,6 @@ public class UsersControllerTest {
 
     @Test
     public void getAllUsers() throws Exception {
-        // 调用获取 Token 接口
         String get = mockMvc.perform(MockMvcRequestBuilders.get("/users/getAll")
                         .accept(MediaType.ALL))
                 .andExpect(status().isOk()).andDo(print())
