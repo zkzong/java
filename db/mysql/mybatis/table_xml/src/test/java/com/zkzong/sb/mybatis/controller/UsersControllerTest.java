@@ -43,12 +43,11 @@ public class UsersControllerTest {
 
         // 调用获取 Token 接口
         String post = mockMvc.perform(MockMvcRequestBuilders.post("/users/insert")
-                        .content(json)
-                        .accept(MediaType.APPLICATION_JSON))
+                        .contentType(MediaType.APPLICATION_JSON).content(json))
                 .andExpect(status().isOk()).andDo(print())
                 .andReturn()
                 .getResponse().getContentAsString();
-        log.info("获取的 Token 串：{}", post);
+        log.info("post请求插入数据，返回 {}", post);
     }
 
     @Test
@@ -59,6 +58,6 @@ public class UsersControllerTest {
                 .andExpect(status().isOk()).andDo(print())
                 .andReturn()
                 .getResponse().getContentAsString();
-        log.info("获取的 Token 串：{}", get);
+        log.info("get请求查询数据，返回 {}", get);
     }
 }
