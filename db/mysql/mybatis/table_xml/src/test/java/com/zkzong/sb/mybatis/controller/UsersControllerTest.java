@@ -51,8 +51,7 @@ public class UsersControllerTest {
 
     @Test
     public void getAllUsers() throws Exception {
-        String get = mockMvc.perform(MockMvcRequestBuilders.get("/users/getAll")
-                        .accept(MediaType.ALL))
+        String get = mockMvc.perform(MockMvcRequestBuilders.get("/users/getAll"))
                 .andExpect(status().isOk()).andDo(print())
                 .andReturn()
                 .getResponse().getContentAsString();
