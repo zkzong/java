@@ -16,6 +16,13 @@
         insert into t_users(user_name, age) values(#{userName}, #{age})
     </insert>
 
+    <insert id="insertBatch" useGeneratedKeys="true" keyProperty="id">
+        insert into t_users(user_name, age) values
+        <foreach collection="userlist" separator="," item="item">
+            (#{item.userName}, #{item.age})
+        </foreach>
+    </insert>
+
     <insert id="insertAndGetId" parameterType="com.zkzong.sb.mybatis.domain.Users" useGeneratedKeys="true" keyProperty="id">
         <!--<selectKey resultType="java.lang.Long" keyProperty="id" order="AFTER">-->
         <!--    SELECT LAST_INSERT_ID()-->

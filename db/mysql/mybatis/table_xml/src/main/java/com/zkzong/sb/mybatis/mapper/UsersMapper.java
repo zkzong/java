@@ -19,6 +19,8 @@ public interface UsersMapper {
 
     void insertOne(@Param("userName") String userName, @Param("age") int age);
 
+    int insertBatch(@Param("userlist") List<Users> userList);
+
     int insertAndGetId(Users users);
 
     Users findByIndex(String userName, int age);

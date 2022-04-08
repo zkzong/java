@@ -33,6 +33,11 @@ public class UsersServiceImpl implements UsersService {
     }
 
     @Override
+    public int insertBatch(List<Users> userList) {
+        return usersMapper.insertBatch(userList);
+    }
+
+    @Override
     public int insertAndGetId(Users users) {
         return usersMapper.insertAndGetId(users);
     }

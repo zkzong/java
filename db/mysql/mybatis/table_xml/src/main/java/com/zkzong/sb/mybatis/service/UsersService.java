@@ -17,6 +17,8 @@ public interface UsersService {
 
     void insertOne(String userName, int age);
 
+    int insertBatch(List<Users> userList);
+
     int insertAndGetId(Users users);
 
     Users findByIndex(String userName, int age);
