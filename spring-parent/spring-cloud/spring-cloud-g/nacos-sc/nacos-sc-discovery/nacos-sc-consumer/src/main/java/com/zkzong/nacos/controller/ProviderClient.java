@@ -12,6 +12,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface ProviderClient {
 
     @PostMapping("echo1")
-    public String echo1(@RequestParam String name);
+    String echo1(@RequestParam String name);
 
 }

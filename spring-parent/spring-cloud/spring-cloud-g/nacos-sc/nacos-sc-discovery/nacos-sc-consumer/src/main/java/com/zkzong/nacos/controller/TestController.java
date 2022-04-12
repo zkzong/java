@@ -21,7 +21,7 @@ public class TestController {
      */
     @RequestMapping(value = "/echo/{str}", method = RequestMethod.GET)
     public String echo(@PathVariable String str) {
-        return restTemplate.getForObject("http://service-provider/echo/" + str, String.class);
+        return restTemplate.getForObject("http://nacos-provider/echo/" + str, String.class);
     }
 
     /**
@@ -31,7 +31,7 @@ public class TestController {
      */
     @GetMapping("/get")
     public String get() {
-        String s = providerClient.echo1(null);
+        String s = providerClient.echo1("zong");
         return s;
     }
 }
