@@ -13,11 +13,22 @@ public class TestController {
     @Autowired
     private ProviderClient providerClient;
 
+    /**
+     * 使用restTemplate调用
+     *
+     * @param str
+     * @return
+     */
     @RequestMapping(value = "/echo/{str}", method = RequestMethod.GET)
     public String echo(@PathVariable String str) {
         return restTemplate.getForObject("http://service-provider/echo/" + str, String.class);
     }
 
+    /**
+     * 使用FeignClient调用
+     *
+     * @return
+     */
     @GetMapping("/get")
     public String get() {
         String s = providerClient.echo1(null);

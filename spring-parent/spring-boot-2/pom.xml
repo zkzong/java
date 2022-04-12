@@ -12,7 +12,6 @@
         <module>spring-boot-admin</module>
         <module>spring-batch</module>
         <module>shutdown</module>
-        <module>nacos-sb</module>
         <module>ratelimit-sb2</module>
         <module>undertow</module>
         <module>swagger3</module>
