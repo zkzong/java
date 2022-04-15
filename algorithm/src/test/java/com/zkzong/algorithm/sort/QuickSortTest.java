@@ -2,8 +2,6 @@ package com.zkzong.algorithm.sort;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 /**
  * @Author: Zong
  * @Date: 2018/12/7

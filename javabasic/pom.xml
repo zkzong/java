@@ -21,7 +21,6 @@
         <module>collection</module>
         <module>jvm</module>
         <module>interview</module>
-        <module>algorithm</module>
         <module>thread</module>
         <module>bouncycastle</module>
         <module>io</module>
