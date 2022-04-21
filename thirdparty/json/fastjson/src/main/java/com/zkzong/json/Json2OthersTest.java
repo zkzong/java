@@ -12,7 +12,7 @@ import java.util.*;
 /**
  * Created by Zong on 2016/8/11.
  */
-public class Json2Others {
+public class Json2OthersTest {
 
     @Test
     public void parseArray() {

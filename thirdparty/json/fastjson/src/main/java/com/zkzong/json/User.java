@@ -1,14 +1,16 @@
 package com.zkzong.json;
 
-import com.alibaba.fastjson.annotation.JSONField;
+import lombok.Data;
 
 /**
  * Created by Zong on 2016/8/6.
  */
+@Data
 public class User {
-    @JSONField(serialize = false)
+    //@JSONField(serialize = false)
     private Long id;
     private String name;
+    private Integer age;
 
     public User() {
     }
@@ -18,19 +20,4 @@ public class User {
         this.name = name;
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 }

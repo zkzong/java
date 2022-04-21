@@ -16,7 +16,7 @@ import java.util.Map;
 /**
  * Created by Zong on 2016/8/11.
  */
-public class Others2Json {
+public class Others2JsonTest {
     public static void main(String[] args) {
         User u1 = new User(1L, "zong");
         User u2 = new User(2L, "liu");
