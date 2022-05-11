@@ -1,4 +1,4 @@
-package com.zkzong.hutool.str;
+package com.zkzong.hutool.util;
 
 import cn.hutool.core.util.StrUtil;
 import org.junit.Test;
@@ -10,7 +10,7 @@ import org.junit.Test;
 public class StrUtilTest {
 
     @Test
-    public void a() {
+    public void indexOf() {
         String s = "/aaaaa/b/c/d/e";
         // 从 坐标 3 开始查找/出现的位置
         int i = StrUtil.indexOf(s, '/', 3);
@@ -32,7 +32,7 @@ public class StrUtilTest {
     }
 
     @Test
-    public void c() {
+    public void lastIndexOfIgnoreCase() {
         String s = "a.b.c.d.e";
         // 查找 . 最后1次出现位置
         int i = StrUtil.lastIndexOfIgnoreCase(s, ".");
