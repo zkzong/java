@@ -1,0 +1,13 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: feign-apachehttpclient
+
+feign:
+  httpclient:
+      enabled: true
+
+logging:
+  level:
+    root: debug

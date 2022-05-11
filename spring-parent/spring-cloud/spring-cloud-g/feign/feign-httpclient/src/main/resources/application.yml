@@ -1,0 +1,10 @@
+server:
+  port: 8009
+spring:
+  application:
+    name: feign-httpclient
+
+
+logging:
+  level:
+    root: debug

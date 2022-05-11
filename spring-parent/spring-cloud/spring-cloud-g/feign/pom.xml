@@ -14,6 +14,9 @@
 
     <modules>
         <module>feign-upload</module>
+        <module>feign-apachehttpclient</module>
+        <module>feign-okhttp</module>
+        <module>feign-httpclient</module>
     </modules>
 
 </project>
