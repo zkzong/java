@@ -3,6 +3,12 @@
 [![CircleCI](https://circleci.com/gh/zkzong/java.svg?style=svg)](https://circleci.com/gh/zkzong/java)
 [![codecov](https://codecov.io/gh/zkzong/java/branch/master/graph/badge.svg)](https://codecov.io/gh/zkzong/java)
 
+javabasic：
+[javabasic](README-javabasic.md)
+
+designpattern：
+[designpattern](README-designpattern.md)
+
 数据库：
 [db](README-db.md)
 - mysql
@@ -17,8 +23,6 @@ dubbo：
 fastdfs：
 [fastdfs](README-fastdfs.md)
 
-javabasic：
-[javabasic](README-javabasic.md)
 
 job-scheduler：
 [job-scheduler](README-job-scheduler.md)
