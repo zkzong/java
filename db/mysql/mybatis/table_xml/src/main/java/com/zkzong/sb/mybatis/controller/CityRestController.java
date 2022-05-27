@@ -7,7 +7,11 @@ import org.apache.ibatis.cursor.Cursor;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.TransactionTemplate;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -27,7 +31,7 @@ public class CityRestController {
     private SqlSessionFactory sqlSessionFactory;
 
     @Autowired
-    private transactionmanager transactionManager;
+    private PlatformTransactionManager transactionManager;
 
 
     @RequestMapping(value = "/api/city", method = RequestMethod.GET)
@@ -35,6 +39,12 @@ public class CityRestController {
         return cityService.findCityByName(cityName);
     }
 
+    /**
+     * 流式查询
+     *
+     * @param limit
+     * @return
+     */
     @RequestMapping(value = "/scan", method = RequestMethod.GET)
     public String findOneCity(int limit) {
         // java.lang.IllegalStateException: A Cursor is already closed.
@@ -54,8 +64,7 @@ public class CityRestController {
             throw new RuntimeException(e);
         }
 
-        TransactionTemplate transactionTemplate =
-                new TransactionTemplate(transactionManager);  // 1
+        TransactionTemplate transactionTemplate = new TransactionTemplate(transactionManager);  // 1
 
         transactionTemplate.execute(status -> {               // 2
             try (Cursor<City> cursor = cityService.scan(limit)) {
@@ -65,7 +74,19 @@ public class CityRestController {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+            return null;
+        });
 
-            return "success";
+        return "success";
+    }
+
+    @GetMapping("/scan/{limit}")
+    @Transactional
+    public void scanFoo3(@PathVariable("limit") int limit) throws Exception {
+        try (Cursor<City> cursor = cityService.scan(limit)) {
+            cursor.forEach(city -> {
+                System.out.println(city);
+            });
         }
     }
+}
