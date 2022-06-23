@@ -10,8 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 public class ConfigController {
 
-    @Value("${name:zong}")
+    @Value("${name}")
     private String name;
+
+    @Value("${age}")
+    private String age;
 
     /**
      * http://localhost:8080/config/name
