@@ -52,5 +52,17 @@ public class IterMap {
                 System.out.println("hello 1");
             }
         });
+
+        // Streams 单线程
+        System.out.println("Streams 单线程");
+        map.entrySet().stream().forEach(entry -> {
+            System.out.println("key : " + entry.getKey() + " value : " + entry.getValue());
+        });
+
+        // Streams 多线程
+        System.out.println("Streams 多线程");
+        map.entrySet().parallelStream().forEach(entry -> {
+            System.out.println("key : " + entry.getKey() + " value : " + entry.getValue());
+        });
     }
 }
