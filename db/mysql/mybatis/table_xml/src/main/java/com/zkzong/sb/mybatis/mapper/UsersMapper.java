@@ -29,4 +29,6 @@ public interface UsersMapper {
 
     Users findByParam(@Param("userName") String userName, @Param("age") int age);
 
+    List<Users> namein(@Param("names") List<String> names, @Param("name") String name);
+
 }

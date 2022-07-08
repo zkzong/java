@@ -8,6 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -86,4 +87,12 @@ public class UsersServiceTest {
         Users user = usersService.findByParam("zong", 30);
         System.out.println(user);
     }
+
+    @Test
+    public void namein() {
+        List<Users> users = usersService.namein(Arrays.asList("ma"), "");
+        System.out.println(users);
+    }
+
+
 }

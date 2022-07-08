@@ -57,4 +57,9 @@ public class UsersServiceImpl implements UsersService {
         return usersMapper.findByParam(userName, age);
     }
 
+    @Override
+    public List<Users> namein(List<String> names, String name) {
+        return usersMapper.namein(names, name);
+    }
+
 }

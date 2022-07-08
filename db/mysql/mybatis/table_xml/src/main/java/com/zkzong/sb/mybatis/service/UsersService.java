@@ -27,4 +27,6 @@ public interface UsersService {
 
     Users findByParam(@Param("userName") String userName, @Param("age") int age);
 
+    List<Users> namein(List<String> names, String name);
+
 }

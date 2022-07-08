@@ -1,6 +1,7 @@
 package com.zkzong.sb.mybatis.controller;
 
 import com.zkzong.sb.mybatis.domain.Users;
+import com.zkzong.sb.mybatis.req.NameInReq;
 import com.zkzong.sb.mybatis.service.UsersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -27,5 +28,10 @@ public class UsersController {
     @GetMapping("/getAll")
     public List<Users> getAllUsers() {
         return usersService.getAllUsers();
+    }
+
+    @GetMapping("/namein")
+    public List<Users> namein(@RequestBody NameInReq nameInReq) {
+        return usersService.namein(nameInReq.getNames(), nameInReq.getName());
     }
 }
