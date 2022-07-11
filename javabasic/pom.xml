@@ -35,6 +35,7 @@
         <module>socket</module>
         <module>enum</module>
         <module>reg</module>
+        <module>proxy</module>
     </modules>
 
     <dependencies>

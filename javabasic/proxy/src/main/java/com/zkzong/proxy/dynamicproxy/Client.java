@@ -1,4 +1,4 @@
-package com.zkzong.proxy;
+package com.zkzong.proxy.dynamicproxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;

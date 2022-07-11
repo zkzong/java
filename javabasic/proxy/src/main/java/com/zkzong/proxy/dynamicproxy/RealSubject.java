@@ -1,4 +1,4 @@
-package com.zkzong.proxy;
+package com.zkzong.proxy.dynamicproxy;
 
 /**
  * Created by Zong on 2016/7/20.
