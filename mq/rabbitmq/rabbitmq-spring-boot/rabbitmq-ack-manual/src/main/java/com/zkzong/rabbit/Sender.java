@@ -11,6 +11,6 @@ public class Sender {
     private RabbitTemplate rabbitTemplate;
 
     public void send() {
-        rabbitTemplate.convertAndSend("hello", "hello rabbitmq");
+        rabbitTemplate.convertAndSend(RabbitConfig.EXCHANGE_NAME, RabbitConfig.ROUTING_KEY, "hello rabbitmq");
     }
 }

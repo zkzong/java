@@ -11,7 +11,7 @@ import java.io.IOException;
 @Component
 public class Receiver {
 
-    @RabbitListener(queues = "hello")
+    @RabbitListener(queues = RabbitConfig.QUEUE_NAME)
     public void receive(Channel channel, Message message) throws IOException {
         System.out.println("Received <" + message + ">");
         //if (true) {
