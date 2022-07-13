@@ -2,7 +2,6 @@ package com.zkzong.sb2.rabbitmq.amqp;
 
 import org.springframework.amqp.core.Queue;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
 /**
  * Created by Zong on 2017/5/12.

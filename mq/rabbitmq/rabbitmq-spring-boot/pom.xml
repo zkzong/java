@@ -11,8 +11,9 @@
     <packaging>pom</packaging>
     <modules>
         <module>basic</module>
-        <module>rabbitmq-sb</module>
+        <module>rabbitmq-sb2</module>
         <module>delay-rabbitmq</module>
+        <module>rabbitmq-ack-manual</module>
     </modules>
 
     <properties>
