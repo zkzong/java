@@ -59,6 +59,9 @@ public class DateTimeTest {
         System.out.println("这个月的第一天：" + firstDayOfMonth); // 2017-08-01
         firstDayOfMonth = firstDayOfMonth.withDayOfMonth(1);
         System.out.println("这个月的第一天：" + firstDayOfMonth); // 2017-08-01
+        // 获取这个月的第一天
+        LocalDate lastDayOfMonth = LocalDate.parse("2017-08-25").with(TemporalAdjusters.lastDayOfMonth());
+        System.out.println("这个月的最后一天：" + lastDayOfMonth); // 2017-08-31
 
         LocalDate birthday = LocalDate.of(2017, 8, 25);
         MonthDay birthdayMd = MonthDay.of(birthday.getMonth(), birthday.getDayOfMonth());
@@ -163,13 +166,4 @@ public class DateTimeTest {
         Date date2 = Date.from(LocalDate.now().atStartOfDay().atZone(ZoneId.systemDefault()).toInstant());
     }
 
-    @Test
-    public void t() {
-        LocalDate now = LocalDate.now();
-        LocalDate next = now.plus(1, ChronoUnit.MONTHS);
-        LocalDate firstDayOfMonth = LocalDate.parse(next.toString()).with(TemporalAdjusters.firstDayOfMonth());
-        LocalDate lastDayOfMonth = LocalDate.parse(next.toString()).with(TemporalAdjusters.lastDayOfMonth());
-        System.out.println(firstDayOfMonth);
-        System.out.println(lastDayOfMonth);
-    }
 }
