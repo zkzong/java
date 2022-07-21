@@ -1,4 +1,4 @@
-package com.zkzong.rabbit;
+package com.zkzong.rabbit.config;
 
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
