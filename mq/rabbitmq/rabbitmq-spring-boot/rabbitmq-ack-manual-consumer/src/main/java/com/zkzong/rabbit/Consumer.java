@@ -10,7 +10,7 @@ import java.io.IOException;
 
 
 @Component
-public class Receiver {
+public class Consumer {
 
     @RabbitListener(queues = RabbitConfig.QUEUE_NAME)
     public void receive(Channel channel, Message message) throws IOException {

@@ -13,7 +13,8 @@
         <module>basic</module>
         <module>rabbitmq-sb2</module>
         <module>delay-rabbitmq</module>
-        <module>rabbitmq-ack-manual</module>
+        <module>rabbitmq-ack-manual-producer</module>
+        <module>rabbitmq-ack-manual-consumer</module>
     </modules>
 
     <properties>

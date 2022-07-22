@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>rabbitmq-ack-manual</artifactId>
+    <artifactId>rabbitmq-ack-manual-consumer</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
