@@ -164,6 +164,13 @@ public class DateTimeTest {
 
         // LocalDate转Date
         Date date2 = Date.from(LocalDate.now().atStartOfDay().atZone(ZoneId.systemDefault()).toInstant());
+
+        // LocalDateTime转LocalDate
+        LocalDate localDate = LocalDateTime.now().toLocalDate();
+
+        // LocalDate转LocalDateTime
+        LocalDateTime ldt = LocalDate.now().atTime(0, 0, 0);
+
     }
 
 }
