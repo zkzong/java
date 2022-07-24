@@ -1,5 +1,6 @@
 package com.zkzong.hutool.date;
 
+import cn.hutool.core.date.DateTime;
 import cn.hutool.core.date.DateUnit;
 import cn.hutool.core.date.DateUtil;
 import org.junit.Test;
@@ -15,7 +16,7 @@ import java.util.Date;
 public class DateTest {
 
     @Test
-    public void test() throws ParseException {
+    public void date() throws ParseException {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 
         // between
@@ -29,6 +30,12 @@ public class DateTest {
         // yesterday
         final Date date = DateUtil.yesterday().toJdkDate();
         System.out.println(date);
+
+        // 月初/月末
+        DateTime beginOfMonth = DateUtil.beginOfMonth(new Date());
+        System.out.println(beginOfMonth);
+        DateTime endOfMonth = DateUtil.endOfMonth(new Date());
+        System.out.println(endOfMonth);
     }
 
 }
