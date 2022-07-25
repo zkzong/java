@@ -36,6 +36,12 @@ public class DateTest {
         System.out.println(beginOfMonth);
         DateTime endOfMonth = DateUtil.endOfMonth(new Date());
         System.out.println(endOfMonth);
+
+        // 下个月月初
+        DateTime dateTime = DateUtil.nextMonth();
+        System.out.println(dateTime);
+        DateTime begin = DateUtil.beginOfMonth(dateTime);
+        System.out.println(begin);
     }
 
 }
