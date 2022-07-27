@@ -19,5 +19,9 @@ public class Consumer {
         //    throw new RuntimeException("Something went wrong");
         //}
         channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
+
+        // 重回队列
+        //channel.basicNack(message.getMessageProperties().getDeliveryTag(), false, true);
+        //channel.basicReject(message.getMessageProperties().getDeliveryTag(), true);
     }
 }
