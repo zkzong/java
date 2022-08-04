@@ -1,9 +1,13 @@
 package com.zkzong.guava;
 
 import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
+import com.google.common.collect.Range;
 import com.google.common.collect.Sets;
+import com.google.common.math.LongMath;
 import org.junit.Test;
 
+import java.math.RoundingMode;
 import java.util.HashMap;
 import java.util.LinkedHashSet;
 import java.util.List;
@@ -71,5 +75,22 @@ public class CollectTest {
 
     @Test
     public void map() {
+    }
+
+    @Test
+    public void range() {
+        // 400w * 10 分库
+        long lower = 4000000 * 10L;
+        long upper = 4000000 * 10 * 2L;
+        long volume = 4000000 * 10L;
+        int partitionSize = Math.toIntExact(LongMath.divide(upper - lower, volume, RoundingMode.CEILING));
+        Map<Integer, Range<Long>> result = Maps.newHashMapWithExpectedSize(partitionSize + 2);
+        result.put(0, Range.lessThan(lower));
+
+        for (int i = 0; i < partitionSize; ++i) {
+            result.put(i + 1, Range.closedOpen(lower + (long) i * volume, Math.min(lower + (long) (i + 1) * volume, upper)));
+        }
+        result.put(partitionSize + 1, Range.atLeast(upper));
+        System.out.println(result);
     }
 }
