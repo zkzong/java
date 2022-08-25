@@ -45,4 +45,11 @@ public class StringTest {
         System.out.println(Str.matches("www(.*)"));
     }
 
+    @Test
+    public void substring() {
+        String s = "北京市昌平区天通苑";
+        String substring = s.substring(0, 5);
+        System.out.println(substring);
+    }
+
 }
