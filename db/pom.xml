@@ -20,6 +20,7 @@
         <module>elasticsearch</module>
         <module>hbase</module>
         <module>mysql</module>
+        <module>neo4j</module>
     </modules>
 
     <build>
