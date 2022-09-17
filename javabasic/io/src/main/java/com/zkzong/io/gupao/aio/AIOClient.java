@@ -56,7 +56,7 @@ public class AIOClient {
 
     }
 
-    public static void main(String args[]) throws Exception {
+    public static void main(String[] args) throws Exception {
         new AIOClient().connect("localhost", 8000);
     }
 }
