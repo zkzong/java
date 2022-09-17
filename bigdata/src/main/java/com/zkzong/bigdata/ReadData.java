@@ -4,17 +4,17 @@ import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 
 public class ReadData {
     private static String FILE_NAME = "/Users/admin/User.dat";
 
     private static void readData() throws IOException {
 
-        BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(FILE_NAME), "utf-8"));
-        String line;
+        BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(FILE_NAME), StandardCharsets.UTF_8));
         long start = System.currentTimeMillis();
         int count = 1;
-        while ((line = br.readLine()) != null) {
+        while (br.readLine() != null) {
             // 按行读取
 //            SplitData.splitLine(line);
             if (count % 100 == 0) {
