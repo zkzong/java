@@ -17,9 +17,11 @@ public class Producer {
             System.out.println("b: " + b);
             System.out.println("s: " + s);
         });
+        // todo 未执行
         rabbitTemplate.setReturnCallback((message, i, s, s1, s2) -> {
             System.out.println("message: " + message);
-            System.out.println("i: " + i);            System.out.println("s: " + s);
+            System.out.println("i: " + i);
+            System.out.println("s: " + s);
             System.out.println("s1: " + s1);
             System.out.println("s2: " + s2);
         });
