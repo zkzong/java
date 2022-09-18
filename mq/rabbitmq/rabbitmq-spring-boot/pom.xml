@@ -15,6 +15,7 @@
         <module>delay-rabbitmq</module>
         <module>rabbitmq-ack-manual-producer</module>
         <module>rabbitmq-ack-manual-consumer</module>
+        <module>rabbitmq-multi</module>
     </modules>
 
     <properties>
