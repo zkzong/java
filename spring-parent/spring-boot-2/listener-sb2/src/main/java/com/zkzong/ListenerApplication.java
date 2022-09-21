@@ -17,6 +17,6 @@ public class ListenerApplication {
         // 装载监听
         context.addApplicationListener(new MyListener1());
         // 发布事件
-        context.publishEvent(new MyEvent("测试事件."));
+        context.publishEvent(new MyEvent("测试事件"));
     }
 }

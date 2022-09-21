@@ -14,6 +14,6 @@ public class MyListener4 {
 
     @EventListener
     public void listener(MyEvent event) {
-        log.info(String.format("%s监听到事件源：%s.", MyListener4.class.getName(), event.getSource()));
+        log.info(String.format("%s监听到事件源：%s", MyListener4.class.getName(), event.getSource()));
     }
 }
