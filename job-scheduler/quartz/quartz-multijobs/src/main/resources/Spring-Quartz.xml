@@ -3,21 +3,21 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<!--    <bean id="jobA" class="com.zkzong.quartz.spring.JobA"/>-->
-<!--    <bean id="jobB" class="com.zkzong.quartz.spring.JobB"/>-->
-<!--    <bean id="jobC" class="com.zkzong.quartz.spring.JobC"/>-->
+<!--    <bean id="jobA" class="spring.quartz.org.example.JobA"/>-->
+<!--    <bean id="jobB" class="spring.quartz.org.example.JobB"/>-->
+<!--    <bean id="jobC" class="spring.quartz.org.example.JobC"/>-->
 
     <!-- Quartz Job -->
     <bean name="JobA" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
-        <property name="jobClass" value="com.zkzong.quartz.spring.JobA"/>
+        <property name="jobClass" value="org.example.quartz.spring.JobA"/>
     </bean>
 
     <bean name="JobB" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
-        <property name="jobClass" value="com.zkzong.quartz.spring.JobB"/>
+        <property name="jobClass" value="org.example.quartz.spring.JobB"/>
     </bean>
 
     <bean name="JobC" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
-        <property name="jobClass" value="com.zkzong.quartz.spring.JobC"/>
+        <property name="jobClass" value="org.example.quartz.spring.JobC"/>
     </bean>
 
     <!-- Cron Trigger, run every 5 seconds -->

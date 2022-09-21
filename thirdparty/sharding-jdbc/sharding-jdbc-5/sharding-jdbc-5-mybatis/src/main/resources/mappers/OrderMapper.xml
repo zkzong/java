@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.zkzong.sj5.mapper.OrderMapper">
-    <resultMap id="baseResultMap" type="com.zkzong.sj5.entity.Order">
+<mapper namespace="org.example.sj5.mapper.OrderMapper">
+    <resultMap id="baseResultMap" type="org.example.sj5.entity.Order">
         <result column="order_id" property="orderId" jdbcType="BIGINT"/>
         <result column="user_id" property="userId" jdbcType="INTEGER"/>
         <result column="address_id" property="addressId" jdbcType="BIGINT"/>

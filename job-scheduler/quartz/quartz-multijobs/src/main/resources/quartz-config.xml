@@ -12,7 +12,7 @@
             <name>JobA</name>
             <group>GroupDummy</group>
             <description>This is Job A</description>
-            <job-class>com.zkzong.quartz.JobA</job-class>
+            <job-class>org.example.quartz.JobA</job-class>
         </job>
 
         <trigger>
@@ -31,7 +31,7 @@
             <name>JobB</name>
             <group>GroupDummy</group>
             <description>This is Job B</description>
-            <job-class>com.zkzong.quartz.JobB</job-class>
+            <job-class>org.example.quartz.JobB</job-class>
         </job>
 
         <trigger>

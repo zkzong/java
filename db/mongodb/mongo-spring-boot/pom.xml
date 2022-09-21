@@ -56,7 +56,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring.boot.version}</version>
                 <configuration>
-                    <mainClass>com.zkzong.mongo.MongoApplication</mainClass>
+                    <mainClass>org.example.mongo.MongoApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>

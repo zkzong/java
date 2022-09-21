@@ -30,5 +30,5 @@
         <property name="defaultSerializer" ref="defaultRedisSerializer"/>
     </bean>
 
-    <bean id="userDao" class="com.zkzong.springredis.case1.dao.impl.UserDao" />
+    <bean id="userDao" class="org.example.springredis.case1.dao.impl.UserDao" />
 </beans>

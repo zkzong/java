@@ -3,7 +3,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-    <bean id="t1HomeTask" class="com.zkzong.common.scheduledtask.T1HomeTask" scope="singleton"></bean>
+    <bean id="t1HomeTask" class="org.example.common.scheduledtask.T1HomeTask" scope="singleton"></bean>
     <bean id="t1HomeTaskJob"
           class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
         <property name="targetObject">

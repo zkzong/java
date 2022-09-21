@@ -3,11 +3,11 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-    <bean id="runMeTask" class="com.zkzong.common.RunMeTask" />
+    <bean id="runMeTask" class="org.example.common.RunMeTask" />
 
     <!-- Spring Quartz -->
     <!--<bean name="runMeJob" class="org.springframework.scheduling.quartz.JobDetailBean">-->
-        <!--<property name="jobClass" value="com.zkzong.common.RunMeJob" />-->
+        <!--<property name="jobClass" value="common.org.example.RunMeJob" />-->
         <!--<property name="jobDataAsMap">-->
             <!--<map>-->
                 <!--<entry key="runMeTask" value-ref="runMeTask"></entry>-->

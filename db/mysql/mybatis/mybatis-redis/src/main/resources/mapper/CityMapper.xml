@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.zkzong.sb.redis.dao.CityDao">
-    <resultMap id="BaseResultMap" type="com.zkzong.sb.redis.domain.City">
+<mapper namespace="dao.redis.sb.org.example.CityDao">
+    <resultMap id="BaseResultMap" type="domain.redis.sb.org.example.City">
         <result column="id" property="id" />
         <result column="province_id" property="provinceId" />
         <result column="city_name" property="cityName" />
         <result column="description" property="description" />
     </resultMap>
 
-    <parameterMap id="City" type="com.zkzong.sb.redis.domain.City" />
+    <parameterMap id="City" type="domain.redis.sb.org.example.City" />
 
     <sql id="Base_Column_List">
         id, province_id, city_name, description

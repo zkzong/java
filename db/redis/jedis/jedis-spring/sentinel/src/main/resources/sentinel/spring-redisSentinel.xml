@@ -4,7 +4,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
      http://www.springframework.org/schema/beans/spring-beans.xsd
-	 http://www.springframework.org/schema/context 
+	 http://www.springframework.org/schema/context
 	 http://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:property-placeholder location="classpath:sentinel/sentinel.properties"/>
@@ -53,7 +53,7 @@
         <property name="connectionFactory" ref="jedisConnectionFactory"/>
     </bean>
 
-    <bean id="redisUtil" class="com.zkzong.redis.RedisUtil">
+    <bean id="redisUtil" class="org.example.redis.RedisUtil">
         <constructor-arg name="redisTemplate" ref="redisTemplate"/>
     </bean>
 

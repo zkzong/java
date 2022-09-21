@@ -3,13 +3,13 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.zkzong.sb.mybatis.ms.mapper.MemberMapper">
+<mapper namespace="org.example.sb.mybatis.ms.mapper.MemberMapper">
 
     <insert id="insert">
         insert into member(user_name, age) values(#{userName}, #{age})
     </insert>
 
-    <select id="selectAll" resultType="com.zkzong.sb.mybatis.ms.entity.Member">
+    <select id="selectAll" resultType="org.example.sb.mybatis.ms.entity.Member">
         select id, user_name userName, age from member
     </select>
 

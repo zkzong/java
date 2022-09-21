@@ -3,11 +3,11 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.zkzong.mybatis.mapper.UsersMapper">
+<mapper namespace="org.example.mybatis.mapper.UsersMapper">
 
-    <resultMap id="userMap" type="com.zkzong.mybatis.domain.Users">
+    <resultMap id="userMap" type="org.example.mybatis.domain.Users">
         <id property="id" column="id"/>
-        <result property="userName" column="user_name" typeHandler="com.zkzong.mybatis.handler.MyStringTypeHandler"/>
+        <result property="userName" column="user_name" typeHandler="org.example.mybatis.handler.MyStringTypeHandler"/>
         <result property="sex" column="sex"/>
     </resultMap>
 
@@ -19,7 +19,7 @@
         select id, user_name, sex from t_users
     </select>
 
-    <select id="getUsersType" resultType="com.zkzong.mybatis.domain.Users">
+    <select id="getUsersType" resultType="org.example.mybatis.domain.Users">
         select user_name userName, sex from t_users
     </select>
 

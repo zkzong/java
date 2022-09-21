@@ -3,8 +3,8 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="
-           http://www.springframework.org/schema/beans  
-           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
            http://www.springframework.org/schema/context
            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
@@ -47,7 +47,7 @@
     </bean>
 
     <!-- cache配置 -->
-    <bean id="methodCacheInterceptor" class="com.zkzong.redis.cache.MethodCacheInterceptor">
+    <bean id="methodCacheInterceptor" class="org.example.redis.cache.MethodCacheInterceptor">
         <property name="redisTemplate" ref="redisTemplate"/>
     </bean>
 
@@ -56,7 +56,7 @@
         <property name="advice" ref="methodCacheInterceptor"/>
         <property name="pattern" value=".*ServiceImpl.*getTimestamp"/>
     </bean>
-    <bean id="redisTestService" class="com.zkzong.service.impl.RedisTestServiceImpl">
+    <bean id="redisTestService" class="org.example.service.impl.RedisTestServiceImpl">
     </bean>
     <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"/>
 

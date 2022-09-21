@@ -6,9 +6,9 @@
     <!-- @BeforeTest -->
     <test name="case1">
         <classes>
-            <class name="com.zkzong.testng.TestConfiguration" />
-            <class name="com.zkzong.testng.TestDBConnection" />
-            <class name="com.zkzong.testng.DBConfig" />
+            <class name="testng.org.example.TestConfiguration" />
+            <class name="testng.org.example.TestDBConnection" />
+            <class name="testng.org.example.DBConfig" />
         </classes>
     </test>
     <!-- @AfterTest -->
@@ -16,8 +16,8 @@
     <!-- @BeforeTest -->
     <test name="case2">
         <classes>
-            <class name="com.zkzong.testng.TestDBConnection" />
-            <class name="com.zkzong.testng.DBConfig" />
+            <class name="testng.org.example.TestDBConnection" />
+            <class name="testng.org.example.DBConfig" />
         </classes>
     </test>
     <!-- @AfterTest -->
