@@ -5,9 +5,9 @@ import org.springframework.stereotype.Component;
 
 /**
  * //匹配AOP对象的目标对象为指定类型的方法,即LogService的aop代理对象的方法
- * @Pointcut("this(com.zkzong.aop.log.Loggable)")
+ * @Pointcut("this(org.example.aop.log.Loggable)")
  * //匹配实现Loggable接口的目标对象(而不是aop代理后的对象)的方法
- * @Pointcut("target(com.zkzong.aop.log.Loggable)")
+ * @Pointcut("target(org.example.aop.log.Loggable)")
  * //this 可以拦截 DeclareParents(Introduction)
  * //target 不拦截 DeclareParents(Introduction)
  * //匹配所有以Service结尾的bean里头的方法
@@ -19,7 +19,7 @@ import org.springframework.stereotype.Component;
 public class ObjectAspectConfig {
 
     //@Pointcut("bean(logService)")
-    //@Pointcut("this(com.zkzong.aop.log.Loggable)")
+    //@Pointcut("this(org.example.aop.log.Loggable)")
     //public void matchCondition(){}
     //
     //@Before("matchCondition()")

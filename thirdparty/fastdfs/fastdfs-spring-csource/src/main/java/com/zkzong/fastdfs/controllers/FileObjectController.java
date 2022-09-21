@@ -1,10 +1,10 @@
-package com.zkzong.fastdfs.controllers;
+package org.example.fastdfs.controllers;
 
-import com.zkzong.fastdfs.client.ErrorCode;
-import com.zkzong.fastdfs.client.FastDFSClient;
-import com.zkzong.fastdfs.client.FastDFSException;
-import com.zkzong.fastdfs.client.FileCheck;
-import com.zkzong.fastdfs.client.FileResponseData;
+import org.example.fastdfs.client.ErrorCode;
+import org.example.fastdfs.client.FastDFSClient;
+import org.example.fastdfs.client.FastDFSException;
+import org.example.fastdfs.client.FileCheck;
+import org.example.fastdfs.client.FileResponseData;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

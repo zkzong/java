@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("com.zkzong.mp.dao")
+@MapperScan("org.example.mp.dao")
 public class MpApplication {
     public static void main(String[] args) {
         SpringApplication.run(MpApplication.class, args);

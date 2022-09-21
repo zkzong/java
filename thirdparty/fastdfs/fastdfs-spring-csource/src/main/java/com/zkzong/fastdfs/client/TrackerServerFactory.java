@@ -1,4 +1,4 @@
-package com.zkzong.fastdfs.client;
+package org.example.fastdfs.client;
 
 import org.apache.commons.pool2.BasePooledObjectFactory;
 import org.apache.commons.pool2.PooledObject;

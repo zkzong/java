@@ -1,7 +1,7 @@
-package com.zkzong.ftp.config;
+package org.example.ftp.config;
 
-import com.zkzong.ftp.core.FtpClientFactory;
-import com.zkzong.ftp.core.FtpClientTemplate;
+import org.example.ftp.core.FtpClientFactory;
+import org.example.ftp.core.FtpClientTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;

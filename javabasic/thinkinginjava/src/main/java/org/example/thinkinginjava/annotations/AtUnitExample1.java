@@ -42,6 +42,6 @@ public class AtUnitExample1 {
     }
 
     public static void main(String[] args) {
-        OSExecute.command("java com.zkzong.thinkinginjava.atunit.AtUnit AtUnitExample1");
+        OSExecute.command("java org.example.thinkinginjava.atunit.AtUnit AtUnitExample1");
     }
 }

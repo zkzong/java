@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Date: 2018.9.12
  */
 @SpringBootApplication
-@MapperScan("com.zkzong.mg")
+@MapperScan("org.example.mg")
 public class GeneratorApplication {
     public static void main(String[] args) {
         SpringApplication.run(GeneratorApplication.class, args);

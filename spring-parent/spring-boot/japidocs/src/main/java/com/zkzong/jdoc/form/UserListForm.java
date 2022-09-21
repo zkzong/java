@@ -1,4 +1,4 @@
-package com.zkzong.jdoc.form;
+package org.example.jdoc.form;
 
 import javax.validation.constraints.NotNull;
 

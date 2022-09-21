@@ -1,4 +1,4 @@
-package com.zkzong.jdoc;
+package org.example.jdoc;
 
 import io.github.yedaxia.apidocs.Docs;
 import io.github.yedaxia.apidocs.DocsConfig;

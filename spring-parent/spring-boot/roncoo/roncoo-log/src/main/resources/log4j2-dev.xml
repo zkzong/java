@@ -10,9 +10,9 @@
 			<PatternLayout pattern="${PATTERN}" />
 		</Console>
 	</appenders>
-	
+
 	<loggers>
-		<logger name="com.zkzong.springboot" level="debug" />
+		<logger name="org.example.springboot" level="debug" />
 		<root level="info">
 			<appenderref ref="CONSOLE" />
 		</root>

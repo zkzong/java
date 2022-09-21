@@ -9,7 +9,7 @@
            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
     <!-- 自动扫描注解的bean -->
-    <context:component-scan base-package="com.zkzong.service"/>
+    <context:component-scan base-package="org.example.service"/>
 
     <!-- 引入properties配置文件 -->
     <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">

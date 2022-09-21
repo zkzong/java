@@ -1,4 +1,4 @@
-package com.zkzong.activemq.spring.mq.consumer.topic;
+package org.example.activemq.spring.mq.consumer.topic;
 
 import org.springframework.stereotype.Component;
 

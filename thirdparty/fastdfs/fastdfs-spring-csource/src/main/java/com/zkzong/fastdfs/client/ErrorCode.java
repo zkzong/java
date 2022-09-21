@@ -1,4 +1,4 @@
-package com.zkzong.fastdfs.client;
+package org.example.fastdfs.client;
 
 /**
  * <p>

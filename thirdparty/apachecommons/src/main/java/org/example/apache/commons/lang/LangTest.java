@@ -16,7 +16,7 @@ public class LangTest {
         System.out.println(ClassUtils.getShortClassName(LangTest.class)); // LangTest
 
         // 取得包名
-        System.out.println(ClassUtils.getPackageName(LangTest.class)); // com.zkzong.apache.commons.lang
+        System.out.println(ClassUtils.getPackageName(LangTest.class)); // org.example.apache.commons.lang
 
         // 字符串转数字
         System.out.println(NumberUtils.toInt("6")); // 6

@@ -30,7 +30,7 @@ public class ClassForNameAndClassLoaderTest {
         System.out.println("--------------");
 
         // 全路径
-        String wholeNamePoint = "com.zkzong.jvm.Point";
+        String wholeNamePoint = "org.example.jvm.Point";
         // 使用Class类的forName()静态方法--类的全路径
         try {
             Class c1 = Class.forName(wholeNamePoint);
@@ -41,7 +41,7 @@ public class ClassForNameAndClassLoaderTest {
         System.out.println("--------------");
 
         // 测试使用ClassLoader的反射方式来获得该类对应的Class对象
-        String wholeNameLine = "com.zkzong.jvm.Line";
+        String wholeNameLine = "org.example.jvm.Line";
         Class<?> demo = null;
         ClassLoader loader = ClassLoader.getSystemClassLoader();
         try {

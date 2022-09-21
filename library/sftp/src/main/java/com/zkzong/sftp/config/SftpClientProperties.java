@@ -1,4 +1,4 @@
-package com.zkzong.sftp.config;
+package org.example.sftp.config;
 
 import lombok.Getter;
 import lombok.Setter;

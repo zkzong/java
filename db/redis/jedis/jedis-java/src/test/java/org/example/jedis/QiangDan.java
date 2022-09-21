@@ -1,4 +1,4 @@
-//package com.zkzong.jedis;
+//package org.example.jedis;
 //
 //import org.junit.Test;
 //

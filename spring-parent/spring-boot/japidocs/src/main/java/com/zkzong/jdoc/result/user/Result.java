@@ -1,4 +1,4 @@
-package com.zkzong.jdoc.result.user;
+package org.example.jdoc.result.user;
 
 import java.util.List;
 

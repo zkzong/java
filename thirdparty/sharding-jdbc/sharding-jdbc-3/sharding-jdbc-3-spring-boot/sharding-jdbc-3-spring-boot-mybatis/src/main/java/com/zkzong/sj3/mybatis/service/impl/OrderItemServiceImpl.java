@@ -1,10 +1,10 @@
-package com.zkzong.sj3.mybatis.service.impl;
+package org.example.sj3.mybatis.service.impl;
 
-import com.zkzong.sj3.mybatis.entity.Order;
-import com.zkzong.sj3.mybatis.entity.OrderItem;
-import com.zkzong.sj3.mybatis.mapper.OrderItemMapper;
-import com.zkzong.sj3.mybatis.mapper.OrderMapper;
-import com.zkzong.sj3.mybatis.service.OrderItemService;
+import org.example.sj3.mybatis.entity.Order;
+import org.example.sj3.mybatis.entity.OrderItem;
+import org.example.sj3.mybatis.mapper.OrderItemMapper;
+import org.example.sj3.mybatis.mapper.OrderMapper;
+import org.example.sj3.mybatis.service.OrderItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

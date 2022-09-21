@@ -1,6 +1,6 @@
-package com.zkzong.jdoc.result.book;
+package org.example.jdoc.result.book;
 
-import com.zkzong.jdoc.result.user.UserVO;
+import org.example.jdoc.result.user.UserVO;
 
 /**
  * @author yeguozhong yedaxia.github.com

@@ -1,4 +1,4 @@
-package com.zkzong.jdoc;
+package org.example.jdoc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

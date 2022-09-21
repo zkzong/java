@@ -1,9 +1,9 @@
-package com.zkzong.jdoc.controller;
+package org.example.jdoc.controller;
 
-import com.zkzong.jdoc.form.UserListForm;
-import com.zkzong.jdoc.result.ApiResult;
-import com.zkzong.jdoc.result.PageResult;
-import com.zkzong.jdoc.result.user.UserVO;
+import org.example.jdoc.form.UserListForm;
+import org.example.jdoc.result.ApiResult;
+import org.example.jdoc.result.PageResult;
+import org.example.jdoc.result.user.UserVO;
 import org.springframework.web.bind.annotation.*;
 
 /**

@@ -1,7 +1,7 @@
-package com.zkzong.activemq.spring.controller;
+package org.example.activemq.spring.controller;
 
-import com.zkzong.activemq.spring.mq.producer.queue.QueueSender;
-import com.zkzong.activemq.spring.mq.producer.topic.TopicSender;
+import org.example.activemq.spring.mq.producer.queue.QueueSender;
+import org.example.activemq.spring.mq.producer.topic.TopicSender;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;

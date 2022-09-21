@@ -10,12 +10,12 @@ elasticjob:
     namespace: elasticjob-lite-springboot
   jobs:
     simpleJob:
-      elasticJobClass: com.zkzong.elasticjob.job.SpringBootSimpleJob
+      elasticJobClass: org.example.elasticjob.job.SpringBootSimpleJob
       cron: 0/5 * * * * ?
       shardingTotalCount: 3
       shardingItemParameters: 0=Beijing,1=Shanghai,2=Guangzhou
     dataflowJob:
-      elasticJobClass: com.zkzong.elasticjob.job.SpringBootDataflowJob
+      elasticJobClass: org.example.elasticjob.job.SpringBootDataflowJob
       cron: 0/5 * * * * ?
       shardingTotalCount: 3
       shardingItemParameters: 0=Beijing,1=Shanghai,2=Guangzhou
@@ -32,7 +32,7 @@ elasticjob:
       props:
         script.command.line: "echo Manual SCRIPT Job: "
 #    occurErrorNoticeDingtalkJob:
-#      elasticJobClass: com.zkzong.elasticjob.job.SpringBootOccurErrorNoticeDingtalkJob
+#      elasticJobClass: org.example.elasticjob.job.SpringBootOccurErrorNoticeDingtalkJob
 #      overwrite: true
 #      shardingTotalCount: 3
 #      shardingItemParameters: 0=Beijing,1=Shanghai,2=Guangzhou
@@ -46,7 +46,7 @@ elasticjob:
 #          connectTimeout: 3000
 #          readTimeout: 5000
 #    occurErrorNoticeWechatJob:
-#      elasticJobClass: com.zkzong.elasticjob.job.SpringBootOccurErrorNoticeWechatJob
+#      elasticJobClass: org.example.elasticjob.job.SpringBootOccurErrorNoticeWechatJob
 #      overwrite: true
 #      shardingTotalCount: 3
 #      shardingItemParameters: 0=Beijing,1=Shanghai,2=Guangzhou
@@ -58,7 +58,7 @@ elasticjob:
 #          connectTimeout: 3000
 #          readTimeout: 5000
 #    occurErrorNoticeEmailJob:
-#      elasticJobClass: com.zkzong.elasticjob.job.SpringBootOccurErrorNoticeEmailJob
+#      elasticJobClass: org.example.elasticjob.job.SpringBootOccurErrorNoticeEmailJob
 #      overwrite: true
 #      shardingTotalCount: 3
 #      shardingItemParameters: 0=Beijing,1=Shanghai,2=Guangzhou

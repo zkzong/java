@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
 @Configuration
-@ComponentScan({ "com.zkzong.mongodb.config", "com.zkzong.mongodb.seq", "com.zkzong.mongodb.hosting" })
+@ComponentScan({ "org.example.mongodb.config", "org.example.mongodb.seq", "org.example.mongodb.hosting" })
 @Import({ MongoConfig.class })
 public class AppConfig {
 

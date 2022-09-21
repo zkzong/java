@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.zkzong</groupId>
+    <groupId>org.example</groupId>
     <artifactId>swagger3</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 

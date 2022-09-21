@@ -1,7 +1,7 @@
-package com.zkzong.jdoc.controller.admin;
+package org.example.jdoc.controller.admin;
 
-import com.zkzong.jdoc.form.AdminForm;
-import com.zkzong.jdoc.result.user.AdminVO;
+import org.example.jdoc.form.AdminForm;
+import org.example.jdoc.result.user.AdminVO;
 import io.github.yedaxia.apidocs.ApiDoc;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;

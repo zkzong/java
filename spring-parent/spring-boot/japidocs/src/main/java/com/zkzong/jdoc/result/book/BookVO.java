@@ -1,4 +1,4 @@
-package com.zkzong.jdoc.result.book;
+package org.example.jdoc.result.book;
 
 /**
  * @author yeguozhong yedaxia.github.com

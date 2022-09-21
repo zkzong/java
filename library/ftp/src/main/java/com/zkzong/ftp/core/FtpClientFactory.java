@@ -1,6 +1,6 @@
-package com.zkzong.ftp.core;
+package org.example.ftp.core;
 
-import com.zkzong.ftp.config.FtpClientProperties;
+import org.example.ftp.config.FtpClientProperties;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.net.ftp.FTPClient;
 import org.apache.commons.net.ftp.FTPReply;

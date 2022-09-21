@@ -22,19 +22,19 @@ public class AdviceAspectConfig {
 
     /******pointcut********/
 
-    @Pointcut("@annotation(org.example.aop.anno.AdminOnly) && within(com.zkzong.aop..*)")
+    @Pointcut("@annotation(org.example.aop.anno.AdminOnly) && within(org.example.aop..*)")
     public void matchAnno() {
     }
 
-    @Pointcut("execution(* *..find*(Long)) && within(com.zkzong.aop..*) ")
+    @Pointcut("execution(* *..find*(Long)) && within(org.example.aop..*) ")
     public void matchLongArg() {
     }
 
-    @Pointcut("execution(public * com.zkzong.aop.service..*Service.*(..) throws java.lang.IllegalAccessException) && within(com.zkzong.aop..*)")
+    @Pointcut("execution(public * org.example.aop.service..*Service.*(..) throws java.lang.IllegalAccessException) && within(org.example.aop..*)")
     public void matchException() {
     }
 
-    @Pointcut("execution(String com.zkzong.aop..*.*(..)) && within(com.zkzong.aop..*)")
+    @Pointcut("execution(String org.example.aop..*.*(..)) && within(org.example.aop..*)")
     public void matchReturn() {
     }
 

@@ -28,7 +28,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ExecutionAspectConfig {
 
-    //@Pointcut("execution(public * com.zkzong.aop.service..*Service.*(..) throws java.lang.IllegalAccessException)")
+    //@Pointcut("execution(public * org.example.aop.service..*Service.*(..) throws java.lang.IllegalAccessException)")
     //public void matchCondition() {
     //}
     //

@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("com.zkzong.mockito.mapper")
+@MapperScan("org.example.mockito.mapper")
 public class MockitoApplication {
 
     public static void main(String[] args) {

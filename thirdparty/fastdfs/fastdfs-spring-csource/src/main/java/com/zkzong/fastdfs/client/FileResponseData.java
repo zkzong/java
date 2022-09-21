@@ -1,4 +1,4 @@
-package com.zkzong.fastdfs.client;
+package org.example.fastdfs.client;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;

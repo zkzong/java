@@ -21,7 +21,7 @@ import javax.sql.DataSource;
         entityManagerFactoryRef = "productEntityManagerFactory",
         transactionManagerRef = "productTransactionManager",
         basePackages = {
-                "com.zkzong.mysql.product.repo"
+                "org.example.mysql.product.repo"
         }
 )
 public class ProductConfig {
@@ -39,7 +39,7 @@ public class ProductConfig {
             @Qualifier("productDataSource") DataSource dataSource) {
         return builder
                 .dataSource(dataSource)
-                .packages("com.zkzong.mysql.product.data")
+                .packages("org.example.mysql.product.data")
                 .persistenceUnit("db2")
                 .build();
     }

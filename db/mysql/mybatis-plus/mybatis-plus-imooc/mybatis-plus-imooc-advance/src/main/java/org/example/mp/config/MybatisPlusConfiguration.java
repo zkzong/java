@@ -90,7 +90,7 @@ public class MybatisPlusConfiguration {
             @Override
             public boolean doFilter(MetaObject metaObject) {
                 MappedStatement ms = SqlParserHelper.getMappedStatement(metaObject);
-                if ("com.zkzong.mp.dao.UserMapper.selectById".equals(ms.getId())) {
+                if ("org.example.mp.dao.UserMapper.selectById".equals(ms.getId())) {
                     return true;
                 }
                 return false;

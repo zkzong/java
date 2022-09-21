@@ -1,4 +1,4 @@
-package com.zkzong.sftp.util;
+package org.example.sftp.util;
 
 import com.jcraft.jsch.Channel;
 import com.jcraft.jsch.ChannelSftp;

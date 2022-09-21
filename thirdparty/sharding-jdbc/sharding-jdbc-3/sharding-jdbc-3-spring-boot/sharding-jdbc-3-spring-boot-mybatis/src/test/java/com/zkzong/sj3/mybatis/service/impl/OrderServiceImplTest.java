@@ -1,7 +1,7 @@
-package com.zkzong.sj3.mybatis.service.impl;
+package org.example.sj3.mybatis.service.impl;
 
-import com.zkzong.sj3.mybatis.entity.Order;
-import com.zkzong.sj3.mybatis.service.OrderService;
+import org.example.sj3.mybatis.entity.Order;
+import org.example.sj3.mybatis.service.OrderService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

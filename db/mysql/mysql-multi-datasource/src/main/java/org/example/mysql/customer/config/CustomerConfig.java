@@ -21,7 +21,7 @@ import javax.sql.DataSource;
 @EnableJpaRepositories(
         entityManagerFactoryRef = "customerEntityManagerFactory",
         transactionManagerRef = "customerTransactionManager",
-        basePackages = {"com.zkzong.mysql.customer.repo"}
+        basePackages = {"org.example.mysql.customer.repo"}
 )
 public class CustomerConfig {
 
@@ -39,7 +39,7 @@ public class CustomerConfig {
             @Qualifier("customerDataSource") DataSource dataSource) {
         return builder
                 .dataSource(dataSource)
-                .packages("com.zkzong.mysql.customer.data")
+                .packages("org.example.mysql.customer.data")
                 .persistenceUnit("db1")
                 .build();
     }

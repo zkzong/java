@@ -1,4 +1,4 @@
-package com.zkzong.fastdfs.client;
+package org.example.fastdfs.client;
 
 import org.apache.commons.lang3.StringUtils;
 

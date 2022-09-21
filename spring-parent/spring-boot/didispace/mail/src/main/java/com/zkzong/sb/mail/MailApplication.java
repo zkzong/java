@@ -1,4 +1,4 @@
-package com.zkzong.sb.mail;
+package org.example.sb.mail;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

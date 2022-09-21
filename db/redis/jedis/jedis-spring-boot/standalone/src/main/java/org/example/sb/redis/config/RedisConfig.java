@@ -1,4 +1,4 @@
-//package com.zkzong.sb.redis.config;
+//package org.example.sb.redis.config;
 //
 //import org.springframework.context.annotation.Bean;
 //import org.springframework.context.annotation.Configuration;

@@ -12,7 +12,7 @@ import redis.clients.jedis.JedisPoolConfig;
  * Created by Zong on 2017/2/9.
  */
 @Configuration
-@ComponentScan(basePackages = "com.zkzong.spring.data.redis")
+@ComponentScan(basePackages = "org.example.spring.data.redis")
 public class LocalRedisConfig {
 
     @Bean

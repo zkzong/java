@@ -1,6 +1,6 @@
-package com.zkzong.jdoc.result.user;
+package org.example.jdoc.result.user;
 
-import com.zkzong.jdoc.result.book.BookVO;
+import org.example.jdoc.result.book.BookVO;
 import io.github.yedaxia.apidocs.RapMock;
 
 import java.util.List;

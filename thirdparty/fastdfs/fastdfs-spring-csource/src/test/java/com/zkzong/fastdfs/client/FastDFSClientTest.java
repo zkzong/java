@@ -1,4 +1,4 @@
-package com.zkzong.fastdfs.client;
+package org.example.fastdfs.client;
 
 import org.junit.Before;
 import org.junit.Test;

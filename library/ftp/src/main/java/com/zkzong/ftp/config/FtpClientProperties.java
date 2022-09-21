@@ -1,4 +1,4 @@
-package com.zkzong.ftp.config;
+package org.example.ftp.config;
 
 import lombok.Getter;
 import lombok.Setter;

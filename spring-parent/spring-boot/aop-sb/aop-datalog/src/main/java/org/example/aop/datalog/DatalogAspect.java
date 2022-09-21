@@ -23,12 +23,12 @@ public class DatalogAspect {
     @Autowired
     ActionDao actionDao;
 
-    @Pointcut("execution(public * com.zkzong.aop.dao.*.save*(..))")
+    @Pointcut("execution(public * org.example.aop.dao.*.save*(..))")
     public void save() {
 
     }
 
-    @Pointcut("execution(public * com.zkzong.aop.dao.*.delete*(..))")
+    @Pointcut("execution(public * org.example.aop.dao.*.delete*(..))")
     public void delete() {
 
     }

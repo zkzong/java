@@ -11,7 +11,7 @@ import static org.example.thinkinginjava.util.Print.print;
  * Using reflection to show all the methods of a class,
  * even if the methods are defined in the base class.
  * <p>
- * args : com.zkzong.thinkinginjava.typeinfo.ShowMethods
+ * args : org.example.thinkinginjava.typeinfo.ShowMethods
  */
 public class ShowMethods {
     private static String usage =

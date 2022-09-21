@@ -1,7 +1,7 @@
-//package com.zkzong.mp.mapper;
+//package org.example.mp.mapper;
 //
-//import com.zkzong.mp.entity.Temp;
-//import com.zkzong.mp.mapper.test.TempMapper;
+//import org.example.mp.entity.Temp;
+//import org.example.mp.mapper.test.TempMapper;
 //import org.junit.Test;
 //import org.junit.runner.RunWith;
 //import org.springframework.beans.factory.annotation.Autowired;

@@ -1,10 +1,10 @@
-package com.zkzong.sj3.jpa.service.impl;
+package org.example.sj3.jpa.service.impl;
 
-import com.zkzong.sj3.jpa.entity.Order;
-import com.zkzong.sj3.jpa.entity.OrderItem;
-import com.zkzong.sj3.jpa.repository.OrderItemRepository;
-import com.zkzong.sj3.jpa.repository.OrderRepository;
-import com.zkzong.sj3.jpa.service.OrderItemService;
+import org.example.sj3.jpa.entity.Order;
+import org.example.sj3.jpa.entity.OrderItem;
+import org.example.sj3.jpa.repository.OrderItemRepository;
+import org.example.sj3.jpa.repository.OrderRepository;
+import org.example.sj3.jpa.service.OrderItemService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

@@ -1,4 +1,4 @@
-package com.zkzong.test;
+package org.example.test;
 
 import net.sourceforge.groboutils.junit.v1.MultiThreadedTestRunner;
 import net.sourceforge.groboutils.junit.v1.TestRunnable;

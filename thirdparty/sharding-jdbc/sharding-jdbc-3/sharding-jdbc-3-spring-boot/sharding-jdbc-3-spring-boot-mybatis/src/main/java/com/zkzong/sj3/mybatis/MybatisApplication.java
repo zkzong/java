@@ -1,4 +1,4 @@
-package com.zkzong.sj3.mybatis;
+package org.example.sj3.mybatis;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

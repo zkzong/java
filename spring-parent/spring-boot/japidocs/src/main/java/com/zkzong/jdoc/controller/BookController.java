@@ -1,10 +1,10 @@
-package com.zkzong.jdoc.controller;
+package org.example.jdoc.controller;
 
-import com.zkzong.jdoc.form.PageForm;
-import com.zkzong.jdoc.result.ApiResult;
-import com.zkzong.jdoc.result.PageResult;
-import com.zkzong.jdoc.result.book.BookDetailVO;
-import com.zkzong.jdoc.result.book.BookVO;
+import org.example.jdoc.form.PageForm;
+import org.example.jdoc.result.ApiResult;
+import org.example.jdoc.result.PageResult;
+import org.example.jdoc.result.book.BookDetailVO;
+import org.example.jdoc.result.book.BookVO;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;

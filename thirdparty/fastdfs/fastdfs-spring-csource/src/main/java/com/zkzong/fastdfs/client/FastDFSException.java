@@ -1,4 +1,4 @@
-package com.zkzong.fastdfs.client;
+package org.example.fastdfs.client;
 
 /**
  * FastDFS 上传下载时可能出现的一些异常信息

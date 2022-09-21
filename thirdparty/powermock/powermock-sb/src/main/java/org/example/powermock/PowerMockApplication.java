@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("com.zkzong.powermock.mapper")
+@MapperScan("org.example.powermock.mapper")
 public class PowerMockApplication {
 
     public static void main(String[] args) {

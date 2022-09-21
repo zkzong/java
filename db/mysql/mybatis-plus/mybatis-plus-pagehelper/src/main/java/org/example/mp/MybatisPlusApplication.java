@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("com.zkzong.mp.mapper")
+@MapperScan("org.example.mp.mapper")
 public class MybatisPlusApplication {
 
     public static void main(String[] args) {

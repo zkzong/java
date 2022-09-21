@@ -1,6 +1,6 @@
-//package com.zkzong.rabbit;
+//package org.example.rabbit;
 //
-//import com.zkzong.rabbit.config.RabbitConfig;
+//import org.example.rabbit.config.RabbitConfig;
 //import org.springframework.amqp.core.Message;
 //import org.springframework.amqp.rabbit.connection.CorrelationData;
 //import org.springframework.amqp.rabbit.core.RabbitTemplate;

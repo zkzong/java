@@ -1,4 +1,4 @@
-package com.zkzong.activemq.spring.mq.producer.topic;
+package org.example.activemq.spring.mq.producer.topic;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

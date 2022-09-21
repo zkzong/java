@@ -1,4 +1,4 @@
-package com.zkzong.jdoc.result.user;
+package org.example.jdoc.result.user;
 
 import io.github.yedaxia.apidocs.Ignore;
 import io.github.yedaxia.apidocs.RapMock;

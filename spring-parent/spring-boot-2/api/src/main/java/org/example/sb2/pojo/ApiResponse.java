@@ -1,6 +1,6 @@
 package org.example.sb2.pojo;
 
-import com.zkzong.sb2.ApiCodeEnum;
+import org.example.sb2.ApiCodeEnum;
 import org.example.sb2.util.ApiUtil;
 import org.example.sb2.util.MD5Util;
 import lombok.Data;

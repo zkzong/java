@@ -1,7 +1,7 @@
 //
-//package com.zkzong.sj4.service;
+//package org.example.sj4.service;
 //
-//import com.zkzong.sj4.entity.User;
+//import org.example.sj4.entity.User;
 //import org.springframework.stereotype.Service;
 //
 //import javax.annotation.Resource;

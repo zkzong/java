@@ -1,6 +1,6 @@
-package com.zkzong.sj3.jpa.service.impl;
+package org.example.sj3.jpa.service.impl;
 
-import com.zkzong.sj3.jpa.service.OrderService;
+import org.example.sj3.jpa.service.OrderService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

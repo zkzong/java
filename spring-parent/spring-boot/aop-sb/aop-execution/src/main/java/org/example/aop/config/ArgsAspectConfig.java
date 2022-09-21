@@ -18,7 +18,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ArgsAspectConfig {
 
-    //@Pointcut("args(Long,String) && within(com.zkzong.aop.service.*)")
+    //@Pointcut("args(Long,String) && within(org.example.aop.service.*)")
     //public void matchArgs() {
     //}
     //

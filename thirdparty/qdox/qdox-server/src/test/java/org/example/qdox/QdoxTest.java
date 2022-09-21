@@ -208,7 +208,7 @@ public class QdoxTest {
 
     private String[] api() {
         String[] api = new String[]{
-                "com.zkzong.api.QdoxClient"
+                "org.example.api.QdoxClient"
         };
         return api;
     }
