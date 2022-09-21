@@ -1,5 +1,7 @@
-package com.zkzong.listener;
+package com.zkzong;
 
+import com.zkzong.listener.MyEvent;
+import com.zkzong.listener.MyListener1;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;

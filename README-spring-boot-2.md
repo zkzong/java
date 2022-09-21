@@ -28,7 +28,11 @@ MySystemEndpoint
 http://localhost:8080/actuator/mysystem
 
 ## listener
-事件监听
+事件监听4种方式：
+1、context.addApplicationListener(new MyListener1());
+2、Listener类上添加注解@Component
+3、配置文件中添加context.listener.classes=com.zkzong.listener.MyListener3
+4、不实现ApplicationListener，但是在方法上添加注解@EventListener；如果要指定监听类型，可以`@EventListener(String.class)`，即只监听String
 
 https://mp.weixin.qq.com/s/_y6PC4VFa1wlGlprtuRs1A
 
