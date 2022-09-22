@@ -28,7 +28,6 @@
         <module>hutool</module>
         <module>xml</module>
         <module>sharding-jdbc</module>
-        <module>fastdfs</module>
         <module>id</module>
         <module>easyexcel</module>
     </modules>
