@@ -21,14 +21,10 @@
         <module>okhttp</module>
         <module>mockito</module>
         <module>powermock</module>
-        <module>trove</module>
         <module>spring-tools</module>
         <module>rxjava</module>
         <module>guice</module>
-        <module>testng</module>
-        <!--<module>groboutils</module>-->
         <module>pdf</module>
-        <module>orika</module>
         <module>junit</module>
         <module>hutool</module>
         <module>xml</module>
@@ -36,7 +32,6 @@
         <module>fastdfs</module>
         <module>id</module>
         <module>easyexcel</module>
-        <module>qdox</module>
     </modules>
 
     <properties>

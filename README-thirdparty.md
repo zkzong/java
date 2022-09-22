@@ -27,8 +27,7 @@ IDE需要安装lombok插件，否则编译报错
 
 ### okhttp
 
-### orika
-根据字段名称赋值，类型不一样也可以赋值。
+
 
 ### pdf
 
@@ -51,7 +50,6 @@ IDE需要安装lombok插件，否则编译报错
 spring工具类
 + BeanUtils
 
-### trove
 
 使用lombok
 
