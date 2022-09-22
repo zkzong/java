@@ -28,12 +28,9 @@
         <module>aop-sb</module>
         <module>hot-deploy</module>
         <module>exception-sb</module>
-        <module>lock</module>
         <module>validator</module>
         <module>starter</module>
         <module>netty</module>
-        <module>knife4j</module>
-        <!--<module>japidocs</module>-->
     </modules>
 
     <properties>
