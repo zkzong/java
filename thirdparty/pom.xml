@@ -23,7 +23,6 @@
         <module>powermock</module>
         <module>spring-tools</module>
         <module>rxjava</module>
-        <module>guice</module>
         <module>pdf</module>
         <module>junit</module>
         <module>hutool</module>
