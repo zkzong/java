@@ -4,16 +4,13 @@ server:
 spring:
   application:
     name: cloud-stream-provider
-  rabbitmq:
-    host: 127.0.0.1
-    port: 5672
-    username: admin
-    password: admin
   cloud:
     stream:
       bindings:
         empChannel:
           destination: publishMessage
+  profiles:
+    active: rabbit
 
 
 eureka:

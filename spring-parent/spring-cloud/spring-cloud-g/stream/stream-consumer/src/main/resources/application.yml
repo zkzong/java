@@ -4,18 +4,13 @@ server:
 spring:
   application:
     name: cloud-stream-consumer
-  rabbitmq:
-    host: 127.0.0.1
-    port: 5672
-    username: admin
-    password: admin
   cloud:
     stream:
       bindings:
         empChannel:
           destination: publishMessage
-
-
+  profiles:
+    active: rabbit
 
 
 eureka:
@@ -27,4 +22,3 @@ eureka:
     lease-expiration-duration-in-seconds: 5 # 如果现在超过了5秒的间隔（默认是90秒）
     instance-id: receive-8802.com  # 在信息列表时显示主机名称
     prefer-ip-address: true     # 访问的路径变为IP地址
-
