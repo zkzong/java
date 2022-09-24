@@ -10,7 +10,7 @@ spring:
         empChannel:
           destination: publishMessage
   profiles:
-    active: rabbit
+    active: kafka
 
 
 eureka:
