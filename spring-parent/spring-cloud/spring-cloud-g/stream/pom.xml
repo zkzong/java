@@ -18,4 +18,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <modules>
+        <module>stream-provider</module>
+        <module>stream-consumer</module>
+    </modules>
+
 </project>
