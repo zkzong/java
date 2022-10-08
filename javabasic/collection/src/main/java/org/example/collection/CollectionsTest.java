@@ -7,11 +7,16 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * Created by Zong on 2016/12/7.
  */
 public class CollectionsTest {
+
+    /**
+     * 排序
+     */
     @Test
     public void list() {
         List list = new ArrayList();
@@ -24,6 +29,9 @@ public class CollectionsTest {
         System.out.println(list); // [2, 3, 5, 7, 9]
     }
 
+    /**
+     * 内置方法
+     */
     @Test
     public void method() {
         List list = new ArrayList();
@@ -44,6 +52,9 @@ public class CollectionsTest {
         System.out.println(list);
     }
 
+    /**
+     * 转换线程安全集合
+     */
     @Test
     public void map() {
         Map<String, String> map = new HashMap<>();
@@ -52,5 +63,20 @@ public class CollectionsTest {
         map.put("3", "3");
         Map<String, String> synchronizedMap = Collections.synchronizedMap(map);
         System.out.println(synchronizedMap);
+    }
+
+    /**
+     * 空集合
+     */
+    @Test
+    public void empty() {
+        List<Object> list = Collections.emptyList();
+        System.out.println(list == null); // false
+
+        Map<Object, Object> map = Collections.emptyMap();
+        System.out.println(map == null); // false
+
+        Set<Object> set = Collections.emptySet();
+        System.out.println(set == null); // false
     }
 }
