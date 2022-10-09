@@ -79,4 +79,36 @@ public class CollectionsTest {
         Set<Object> set = Collections.emptySet();
         System.out.println(set == null); // false
     }
+
+    /**
+     * 二分查找
+     */
+    @Test
+    public void binarySearch() {
+        List<Integer> list = new ArrayList<>();
+        list.add(2);
+        list.add(1);
+        list.add(3);
+
+        // 二分查找
+        int i = Collections.binarySearch(list, 4);
+        System.out.println(i);
+    }
+
+    /**
+     * 转换成不可修改集合
+     */
+    @Test
+    public void unmodify() {
+        List<Integer> list = new ArrayList<>();
+        list.add(2);
+        list.add(1);
+        list.add(3);
+
+        List<Integer> integers = Collections.unmodifiableList(list);
+        integers.add(4);
+        System.out.println(integers);
+
+    }
+
 }
