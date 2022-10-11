@@ -5,7 +5,7 @@ package com.company.section5;
  * I'm glad to share my knowledge with you all.
  */
 public class Client {
-	public static void main(String[] args) {
-		SingletonFactory.getSingleton().doSomething();
-	}
+    public static void main(String[] args) {
+        SingletonFactory.getSingleton().doSomething();
+    }
 }

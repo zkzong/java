@@ -34,6 +34,8 @@ org.example.designpattern.zen.DynamicProxy 动态代理：
 
 工厂方法模式实现单例模式
 
+可以通过反射的方式建立一个单例对象（不能保证单例）
+
 #### section6
 
 延迟初始化

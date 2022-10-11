@@ -6,8 +6,8 @@ package com.company.section6;
  */
 public class ConcreteProduct2 extends Product {
 
-	public void doSomething() {
-		//逻辑处理
-	}
+    public void doSomething() {
+        //逻辑处理
+    }
 
 }
