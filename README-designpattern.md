@@ -24,7 +24,7 @@ org.example.designpattern.zen.DynamicProxy 动态代理：
 
 #### section3
 
-简单工厂模式
+简单工厂模式/静态工厂模式
 
 #### section4
 
