@@ -5,7 +5,7 @@ package com.company.section2;
  * I'm glad to share my knowledge with you all.
  */
 public interface Strategy {
-	
-	//策略模式的运算法则
-	public void doSomething();
+
+    //策略模式的运算法则
+    public void doSomething();
 }

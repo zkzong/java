@@ -6,8 +6,8 @@ package com.company.section2;
  */
 public class ConcreteStrategy1 implements Strategy {
 
-	public void doSomething() {
-		System.out.println("具体策略1的运算法则");
-	}
+    public void doSomething() {
+        System.out.println("具体策略1的运算法则");
+    }
 
 }

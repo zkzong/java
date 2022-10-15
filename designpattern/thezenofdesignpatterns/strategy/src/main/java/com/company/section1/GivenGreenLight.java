@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package com.company.section1;
 
@@ -11,8 +11,8 @@ package com.company.section1;
 public class GivenGreenLight implements IStrategy {
 
 
-	public void operate() {
-		System.out.println("求吴国太开个绿灯,放行！");
-	}
+    public void operate() {
+        System.out.println("求吴国太开个绿灯,放行！");
+    }
 
 }
