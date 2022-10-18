@@ -39,3 +39,21 @@ org.example.designpattern.zen.DynamicProxy 动态代理：
 #### section6
 
 延迟初始化
+
+### strategy
+
+策略模式
+
+#### section1
+
+策略模式
+
+#### section2
+
+通用策略模式
+
+#### section5
+
+#### section6
+
+策略枚举
