@@ -29,6 +29,7 @@
         <module>sharding-jdbc</module>
         <module>id</module>
         <module>easyexcel</module>
+        <module>http</module>
     </modules>
 
     <properties>

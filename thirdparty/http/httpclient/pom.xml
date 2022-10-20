@@ -9,7 +9,7 @@
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>http-sb</artifactId>
+	<artifactId>httpclient</artifactId>
 	<packaging>jar</packaging>
 
 	<name>http</name>

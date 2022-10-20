@@ -10,8 +10,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>http-library</module>
-        <module>http-sb</module>
+        <module>httpclient</module>
         <module>okhttp</module>
     </modules>
 
