@@ -1,21 +1,14 @@
 package org.example.http;
 
 import com.alibaba.fastjson.JSON;
-import org.apache.http.HttpStatus;
 import org.apache.http.NameValuePair;
-import org.apache.http.client.HttpClient;
-import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
 import org.example.http.entity.User;
 import org.example.http.util.HttpClientUtil;
-import org.hibernate.validator.internal.util.privilegedactions.GetMethod;
 import org.junit.Test;
 
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * @Author: zong
@@ -56,12 +49,18 @@ public class HttpClientUtilTest {
 
     @Test
     public void postJson() {
-        String url = "http://127.0.0.1:8080/http/post/json";
+        url += "/http/post/json";
         User user = new User();
         user.setUsername("zong");
         user.setAge(20);
         String userStr = JSON.toJSONString(user);
         HttpClientUtil.postJson(url, userStr);
+    }
+
+    @Test
+    public void upload() {
+        url += "/http/upload";
+        HttpClientUtil.upload(url);
     }
 
 }
