@@ -1,6 +1,5 @@
-package org.example.http.controller;
+package org.example.http;
 
-import org.example.http.bean.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -13,23 +12,25 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @Controller
-@RequestMapping("/http")
-public class HttpController {
+@RequestMapping("/http2")
+public class HttpController2 {
 
     @RequestMapping(value = "/index", method = RequestMethod.GET)
+    @ResponseBody
     public String testGet(HttpServletRequest request, HttpServletResponse response) {
         System.out.println(request.getParameter("name"));
         System.out.println(request.getParameter("age"));
         System.out.println(request.getParameter("sex"));
-        return "success";
+        return "get success";
     }
 
     @RequestMapping(value = "/index", method = RequestMethod.POST)
+    @ResponseBody
     public String testPost(HttpServletRequest request, HttpServletResponse response) {
         System.out.println(request.getParameter("name"));
         System.out.println(request.getParameter("age"));
         System.out.println(request.getParameter("sex"));
-        return "success";
+        return "post success";
     }
 
     @RequestMapping(value = "/index2", method = RequestMethod.GET)

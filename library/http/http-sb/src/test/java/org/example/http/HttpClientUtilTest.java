@@ -1,7 +1,6 @@
-package org.example.http.util;
+package org.example.http;
 
 import com.alibaba.fastjson.JSON;
-import org.example.http.pojo.User;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.junit.Test;

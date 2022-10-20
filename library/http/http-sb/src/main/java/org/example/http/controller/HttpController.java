@@ -1,6 +1,6 @@
 package org.example.http.controller;
 
-import org.example.http.pojo.User;
+import org.example.http.entity.User;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

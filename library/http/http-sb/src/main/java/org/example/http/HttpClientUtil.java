@@ -1,4 +1,4 @@
-package org.example.http.util;
+package org.example.http;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;

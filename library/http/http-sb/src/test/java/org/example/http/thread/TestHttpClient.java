@@ -1,6 +1,6 @@
 package org.example.http.thread;
 
-import org.example.http.util.HttpClientUtils;
+import org.example.http.HttpClientUtils;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;

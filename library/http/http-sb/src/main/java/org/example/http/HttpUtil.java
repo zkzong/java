@@ -1,4 +1,4 @@
-package org.example.http.util;
+package org.example.http;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
