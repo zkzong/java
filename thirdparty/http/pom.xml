@@ -12,7 +12,7 @@
     <modules>
         <module>http-library</module>
         <module>http-sb</module>
-        <module>http-spring</module>
+        <module>okhttp</module>
     </modules>
 
     <properties>
