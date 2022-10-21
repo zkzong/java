@@ -25,7 +25,13 @@ IDE需要安装lombok插件，否则编译报错
 
 ### mockito
 
-### okhttp
+### http
+
+#### httpclient
+
+commons-httpclient已经不在维护
+
+#### okhttp
 
 
 

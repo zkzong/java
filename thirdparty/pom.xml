@@ -18,7 +18,6 @@
         <module>apachecommons</module>
         <module>json</module>
         <module>lombok</module>
-        <module>okhttp</module>
         <module>mockito</module>
         <module>powermock</module>
         <module>spring-tools</module>
@@ -30,6 +29,7 @@
         <module>sharding-jdbc</module>
         <module>id</module>
         <module>easyexcel</module>
+        <module>http</module>
     </modules>
 
     <properties>
