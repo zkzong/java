@@ -30,6 +30,7 @@
         <module>id</module>
         <module>easyexcel</module>
         <module>http</module>
+        <module>jmh</module>
     </modules>
 
     <properties>
