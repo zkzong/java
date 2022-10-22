@@ -7,14 +7,14 @@ package com.company.section4;
 public class Client {
 
 	public static void main(String[] args) {
-		//在对象池中初始化四个对象
-		SignInfoFactory.getSignInfo("科目1");
-		SignInfoFactory.getSignInfo("科目2");
-		SignInfoFactory.getSignInfo("科目3");
-		SignInfoFactory.getSignInfo("科目4");
+		//鍦ㄥ璞℃睜涓垵濮嬪寲鍥涗釜瀵硅薄
+		SignInfoFactory.getSignInfo("绉戠洰1");
+		SignInfoFactory.getSignInfo("绉戠洰2");
+		SignInfoFactory.getSignInfo("绉戠洰3");
+		SignInfoFactory.getSignInfo("绉戠洰4");
 		
-		//取得对象
-		SignInfo signInfo = SignInfoFactory.getSignInfo("科目2");
+		//鍙栧緱瀵硅薄
+		SignInfo signInfo = SignInfoFactory.getSignInfo("绉戠洰2");
 		while(true){
 			signInfo.setId("ZhangSan");
 			signInfo.setLocation("ZhangSan");

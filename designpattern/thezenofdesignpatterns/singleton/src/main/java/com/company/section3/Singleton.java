@@ -7,17 +7,17 @@ package com.company.section3;
 public class Singleton {
 	private static final Singleton singleton = new Singleton();
 	
-	//ÏŞÖÆ²úÉú¶à¸ö¶ÔÏó
+	//é™åˆ¶äº§ç”Ÿå¤šä¸ªå¯¹è±¡
 	private Singleton(){
 		
 	}
 	
-	//Í¨¹ı¸Ã·½·¨»ñµÃÊµÀı¶ÔÏó
+	//é€šè¿‡è¯¥æ–¹æ³•è·å¾—å®ä¾‹å¯¹è±¡
 	public static Singleton getSingleton(){
 		return singleton;
 	}
 	
-	//ÀàÖĞÆäËû·½·¨£¬¾¡Á¿ÊÇstatic
+	//ç±»ä¸­å…¶ä»–æ–¹æ³•ï¼Œå°½é‡æ˜¯static
 	public static void doSomething(){
 		
 	}

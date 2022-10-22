@@ -5,24 +5,24 @@ import java.util.Stack;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * Í¨³£¸ÃÀàÎªÒ»¸ö·â×°Àà
+ * é€šå¸¸è¯¥ç±»ä¸ºä¸€ä¸ªå°è£…ç±»
  */
 @SuppressWarnings("all")
 public class Client {
 
 	public static void main(String[] args) {
 		Context ctx = new Context();
-		//Í¨³£¶¨Ò»¸öÓï·¨ÈİÆ÷£¬ÈİÄÉÒ»¸ö¾ßÌåµÄ±í´ïÊ½£¬Í¨³£ÎªListArray,LinkedList,StackµÈÀàĞÍ
+		//é€šå¸¸å®šä¸€ä¸ªè¯­æ³•å®¹å™¨ï¼Œå®¹çº³ä¸€ä¸ªå…·ä½“çš„è¡¨è¾¾å¼ï¼Œé€šå¸¸ä¸ºListArray,LinkedList,Stackç­‰ç±»å‹
 		Stack<Expression> stack = null; 
 		/*
 		for(;;){
-			//½øĞĞÓï·¨ÅĞ¶Ï£¬²¢²úÉúµİ¹éµ÷ÓÃ
+			//è¿›è¡Œè¯­æ³•åˆ¤æ–­ï¼Œå¹¶äº§ç”Ÿé€’å½’è°ƒç”¨
 		}
 		*/
-		//²úÉúÒ»¸öÍêÕûµÄÓï·¨Ê÷£¬ÓÉ¸÷¸÷¸ö¾ßÌåµÄÓï·¨·ÖÎö½øĞĞ½âÎö
+		//äº§ç”Ÿä¸€ä¸ªå®Œæ•´çš„è¯­æ³•æ ‘ï¼Œç”±å„å„ä¸ªå…·ä½“çš„è¯­æ³•åˆ†æè¿›è¡Œè§£æ
 		Expression exp = stack.pop();
 		
-		//¾ßÌåÔªËØ½øÈë³¡¾°
+		//å…·ä½“å…ƒç´ è¿›å…¥åœºæ™¯
 		exp.interpreter(ctx);
 	}
 }

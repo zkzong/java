@@ -7,16 +7,16 @@ package com.company.section3;
 public class Client {
 	
 	public static void main(String[] args) {
-		//ÉùÃ÷³öÈİÆ÷
+		//å£°æ˜å‡ºå®¹å™¨
 		Aggregate agg = new ConcreteAggregate();
 		
 		
-		//²úÉú¶ÔÏóÊı¾İ·Å½øÈ¥
+		//äº§ç”Ÿå¯¹è±¡æ•°æ®æ”¾è¿›å»
 		agg.add("abc");
 		agg.add("aaa");
 		agg.add("1234");
 		
-		//±éÀúÒ»ÏÂ
+		//éå†ä¸€ä¸‹
 		Iterator iterator = agg.iterator();
 		while(iterator.hasNext()){
 			System.out.println(iterator.next());

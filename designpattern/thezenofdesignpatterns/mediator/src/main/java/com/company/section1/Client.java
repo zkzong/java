@@ -3,23 +3,23 @@ package com.company.section1;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÒµÎñ³¡¾°Àà
+ * ä¸šåŠ¡åœºæ™¯ç±»
  */
 public class Client {
 	
 	public static void main(String[] args) {
-		//²É¹ºÈËÔ±²É¹ºµçÄÔ
-		System.out.println("------²É¹ºÈËÔ±²É¹ºµçÄÔ--------");
+		//é‡‡è´­äººå‘˜é‡‡è´­ç”µè„‘
+		System.out.println("------é‡‡è´­äººå‘˜é‡‡è´­ç”µè„‘--------");
 		Purchase purchase = new Purchase();
 		purchase.buyIBMcomputer(100);
 		
-		//ÏúÊÛÈËÔ±ÏúÊÛµçÄÔ
-		System.out.println("\n------ÏúÊÛÈËÔ±ÏúÊÛµçÄÔ--------");
+		//é”€å”®äººå‘˜é”€å”®ç”µè„‘
+		System.out.println("\n------é”€å”®äººå‘˜é”€å”®ç”µè„‘--------");
 		Sale sale = new Sale();
 		sale.sellIBMComputer(1);
 		
-		//¿â·¿¹ÜÀíÈËÔ±¹ÜÀí¿â´æ
-		System.out.println("\n------¿â·¿¹ÜÀíÈËÔ±Çå¿â´¦Àí--------");
+		//åº“æˆ¿ç®¡ç†äººå‘˜ç®¡ç†åº“å­˜
+		System.out.println("\n------åº“æˆ¿ç®¡ç†äººå‘˜æ¸…åº“å¤„ç†--------");
 		Stock stock = new Stock();
 		stock.clearStock();
 	}

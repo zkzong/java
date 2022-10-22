@@ -5,24 +5,24 @@ package com.company.section2;
  * I'm glad to share my knowledge with you all.
  */
 public class HummerH2Model extends HummerModel {
-	//H2ĞÍºÅµÄº·Âí³µÃùµÑ
+	//H2å‹å·çš„æ‚é©¬è½¦é¸£ç¬›
 	public void alarm() {
-		System.out.println("º·ÂíH2ÃùµÑ...");
+		System.out.println("æ‚é©¬H2é¸£ç¬›...");
 	}
 
-	//ÒıÇæºäÃùÉù
+	//å¼•æ“è½°é¸£å£°
 	public void engineBoom() {
-		System.out.println("º·ÂíH2ÒıÇæÉùÒôÊÇÕâÑùÔÚ...");
+		System.out.println("æ‚é©¬H2å¼•æ“å£°éŸ³æ˜¯è¿™æ ·åœ¨...");
 	}
 
-	//Æû³µ·¢¶¯
+	//æ±½è½¦å‘åŠ¨
 	public void start() {
-		System.out.println("º·ÂíH2·¢¶¯...");
+		System.out.println("æ‚é©¬H2å‘åŠ¨...");
 	}
 	
-	//Í£³µ
+	//åœè½¦
 	public void stop() {
-		System.out.println("º·ÂíH2Í£³µ...");
+		System.out.println("æ‚é©¬H2åœè½¦...");
 	}
 
 }

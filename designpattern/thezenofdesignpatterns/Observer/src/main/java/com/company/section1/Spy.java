@@ -3,14 +3,14 @@ package com.company.section1;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¼à¿Ø³ÌĞò
+ * ç›‘æ§ç¨‹åº
  */
 class Spy extends Thread{
 	private HanFeiZi hanFeiZi;
 	private LiSi liSi;
 	private String type;
 	
-	//Í¨¹ı¹¹Ôìº¯Êı´«µİ²ÎÊı£¬ÎÒÒª¼à¿ØµÄÊÇË­,Ë­À´¼à¿Ø,Òª¼à¿ØÊ²Ã´
+	//é€šè¿‡æ„é€ å‡½æ•°ä¼ é€’å‚æ•°ï¼Œæˆ‘è¦ç›‘æ§çš„æ˜¯è°,è°æ¥ç›‘æ§,è¦ç›‘æ§ä»€ä¹ˆ
 	public Spy(HanFeiZi _hanFeiZi,LiSi _liSi,String _type){
 		this.hanFeiZi =_hanFeiZi;
 		this.liSi = _liSi;
@@ -20,16 +20,16 @@ class Spy extends Thread{
 	@Override
 	public void run(){
 		while(true){
-			if(this.type.equals("breakfast")){ //¼à¿ØÊÇ·ñÔÚ³ÔÔç²Í
-				//Èç¹û·¢ÏÖº«·Ç×ÓÔÚ³Ô·¹£¬¾ÍÍ¨ÖªÀîË¹
+			if(this.type.equals("breakfast")){ //ç›‘æ§æ˜¯å¦åœ¨åƒæ—©é¤
+				//å¦‚æœå‘ç°éŸ©éå­åœ¨åƒé¥­ï¼Œå°±é€šçŸ¥ææ–¯
 				if(this.hanFeiZi.isHavingBreakfast()){
-					this.liSi.update("º«·Ç×ÓÔÚ³Ô·¹");
-					//ÖØÖÃ×´Ì¬£¬¼ÌĞø¼à¿Ø
+					this.liSi.update("éŸ©éå­åœ¨åƒé¥­");
+					//é‡ç½®çŠ¶æ€ï¼Œç»§ç»­ç›‘æ§
 					this.hanFeiZi.setHavingBreakfast(false);
 				}
-			}else{//¼à¿ØÊÇ·ñÔÚÓéÀÖ
+			}else{//ç›‘æ§æ˜¯å¦åœ¨å¨±ä¹
 				if(this.hanFeiZi.isHavingFun()){
-					this.liSi.update("º«·Ç×ÓÔÚÓéÀÖ");
+					this.liSi.update("éŸ©éå­åœ¨å¨±ä¹");
 					this.hanFeiZi.setHavingFun(false);
 				}
 			}

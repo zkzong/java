@@ -5,37 +5,37 @@ import java.util.Random;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÏúÊÛ
+ * é”€å”®
  */
 public class Sale {
 
 	
-	//ÏúÊÛIBMĞÍºÅµÄµçÄÔ
+	//é”€å”®IBMå‹å·çš„ç”µè„‘
 	public void sellIBMComputer(int number){
-		//·ÃÎÊ¿â´æ
+		//è®¿é—®åº“å­˜
 		Stock stock = new Stock();
-		//·ÃÎÊ²É¹º
+		//è®¿é—®é‡‡è´­
 		Purchase purchase = new Purchase();
 			
-		if(stock.getStockNumber()<number){  //¿â´æÊıÁ¿²»¹»ÏúÊÛ
+		if(stock.getStockNumber()<number){  //åº“å­˜æ•°é‡ä¸å¤Ÿé”€å”®
 			purchase.buyIBMcomputer(number);			
 		}
-		System.out.println("ÏúÊÛIBMµçÄÔ"+number+"Ì¨");
+		System.out.println("é”€å”®IBMç”µè„‘"+number+"å°");
 		stock.decrease(number);
 	}
 	
-	//·´À¡ÏúÊÛÇé¿ö,0¡ª¡ª100Ö®¼ä±ä»¯£¬0´ú±í¸ù±¾¾ÍÃ»ÈËÂô£¬100´ú±í·Ç³£³©Ïú£¬³ö1Ò»¸öÂôÒ»¸ö
+	//åé¦ˆé”€å”®æƒ…å†µ,0â€”â€”100ä¹‹é—´å˜åŒ–ï¼Œ0ä»£è¡¨æ ¹æœ¬å°±æ²¡äººå–ï¼Œ100ä»£è¡¨éå¸¸ç•…é”€ï¼Œå‡º1ä¸€ä¸ªå–ä¸€ä¸ª
 	public int getSaleStatus(){
 		Random rand = new Random(System.currentTimeMillis());
 		int saleStatus = rand.nextInt(100);
-		System.out.println("IBMµçÄÔµÄÏúÊÛÇé¿öÎª£º"+saleStatus);
+		System.out.println("IBMç”µè„‘çš„é”€å”®æƒ…å†µä¸ºï¼š"+saleStatus);
 		return saleStatus;
 	}
 	
-	//ÕÛ¼Û´¦Àí
+	//æŠ˜ä»·å¤„ç†
 	public void offSale(){
-		//¿â·¿ÓĞ¶àÉÙÂô¶àÉÙ
+		//åº“æˆ¿æœ‰å¤šå°‘å–å¤šå°‘
 		Stock stock = new Stock();
-		System.out.println("ÕÛ¼ÛÏúÊÛIBMµçÄÔ"+stock.getStockNumber()+"Ì¨");
+		System.out.println("æŠ˜ä»·é”€å”®IBMç”µè„‘"+stock.getStockNumber()+"å°");
 	}
 }

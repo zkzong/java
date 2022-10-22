@@ -8,12 +8,12 @@ import com.company.command_name.os.DiskManager;
  * I'm glad to share my knowledge with you all.
  */
 public class DF_G extends AbstractDF{
-	//¶¨ÒåÒ»ÏÂ×Ô¼ºÄÜ´¦ÀíÊ²Ã´²ÎÊı
+	//å®šä¹‰ä¸€ä¸‹è‡ªå·±èƒ½å¤„ç†ä»€ä¹ˆå‚æ•°
 	protected String getOperateParam() {
 		return super.G_PARAM;
 	}
 	
-	//ÃüÁî´¦Àí
+	//å‘½ä»¤å¤„ç†
 	protected String echo(CommandVO vo) {
 		return DiskManager.df_g();
 	}

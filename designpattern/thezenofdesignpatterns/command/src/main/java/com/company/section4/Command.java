@@ -5,12 +5,12 @@ package com.company.section4;
  * I'm glad to share my knowledge with you all.
  */
 public abstract class Command {
-	//¶¨ÒåÒ»¸ö×ÓÀàµÄÈ«¾Ö¹²Ïí±äÁ¿
+	//å®šä¹‰ä¸€ä¸ªå­ç±»çš„å…¨å±€å…±äº«å˜é‡
 	protected final Receiver receiver;	
-	//ÊµÏÖÀà±ØĞë¶¨ÒåÒ»¸ö½ÓÊÕÕß
+	//å®ç°ç±»å¿…é¡»å®šä¹‰ä¸€ä¸ªæ¥æ”¶è€…
 	public Command(Receiver _receiver){
 		this.receiver = _receiver;
 	}	
-	//Ã¿¸öÃüÁîÀà¶¼±ØĞëÓĞÒ»¸öÖ´ĞĞÃüÁîµÄ·½·¨
+	//æ¯ä¸ªå‘½ä»¤ç±»éƒ½å¿…é¡»æœ‰ä¸€ä¸ªæ‰§è¡Œå‘½ä»¤çš„æ–¹æ³•
 	public abstract void execute();
 }

@@ -5,9 +5,9 @@ package com.company.section3;
  * I'm glad to share my knowledge with you all.
  */
 public abstract class Product {	
-	//±Â¹ÜÊÇÊ²Ã´²úÆ·Ëü×ÜÒªÊÇÄÜ±»Éú²ú³öÀ´
+	//ç”­ç®¡æ˜¯ä»€ä¹ˆäº§å“å®ƒæ€»è¦æ˜¯èƒ½è¢«ç”Ÿäº§å‡ºæ¥
 	public abstract void beProducted();
-	//Éú²ú³öÀ´µÄ¶«Î÷£¬Ò»¶¨ÒªÏúÊÛ³öÈ¥£¬·ñÔò¿÷±¾Ñ½
+	//ç”Ÿäº§å‡ºæ¥çš„ä¸œè¥¿ï¼Œä¸€å®šè¦é”€å”®å‡ºå»ï¼Œå¦åˆ™äºæœ¬å‘€
 	public abstract void beSelled();
 }
 

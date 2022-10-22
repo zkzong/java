@@ -7,24 +7,24 @@ import java.util.Vector;
  * I'm glad to share my knowledge with you all.
  */
 public abstract class EventCustomer {
-	//ÈİÄÉÃ¿¸öÏû·ÑÕßÄÜ¹»´¦ÀíµÄ¼¶±ğ
+	//å®¹çº³æ¯ä¸ªæ¶ˆè´¹è€…èƒ½å¤Ÿå¤„ç†çš„çº§åˆ«
 	private Vector<EventCustomType> customType = new Vector<EventCustomType>();
 	
-	//Ã¿¸öÏû·ÑÕß¶¼ÒªÉùÃ÷×Ô¼º´¦ÀíÄÄÒ»Àà±ğµÄÏûÏ¢
+	//æ¯ä¸ªæ¶ˆè´¹è€…éƒ½è¦å£°æ˜è‡ªå·±å¤„ç†å“ªä¸€ç±»åˆ«çš„æ¶ˆæ¯
 	public EventCustomer(EventCustomType _type){
 		addCustomType(_type);
 	}
 	
-	//Ã¿¸öÏû·ÑÕß¿ÉÒÔÏû·Ñ¶à¸öÊÂ¼ş
+	//æ¯ä¸ªæ¶ˆè´¹è€…å¯ä»¥æ¶ˆè´¹å¤šä¸ªäº‹ä»¶
 	public void addCustomType(EventCustomType _type){
 		customType.add(_type);
 	}
 	
-	//µÃµ½×Ô¼ºµÄ´¦ÀíÄÜÁ¦
+	//å¾—åˆ°è‡ªå·±çš„å¤„ç†èƒ½åŠ›
 	public Vector<EventCustomType> getCustomType(){
 		return customType;
 	}
 	
-	//Ã¿¸öÊÂ¼ş¶¼Òª¶ÔÊÂ¼ş½øĞĞÉùÃ÷Ê½Ïû·Ñ
+	//æ¯ä¸ªäº‹ä»¶éƒ½è¦å¯¹äº‹ä»¶è¿›è¡Œå£°æ˜å¼æ¶ˆè´¹
 	public abstract void exec(ProductEvent event);
 }

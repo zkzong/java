@@ -3,12 +3,12 @@ package com.company.section2;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÖÕ½á·û±í´ïÊ½
+ * ç»ˆç»“ç¬¦è¡¨è¾¾å¼
  */
 public class TerminalExpression extends Expression {
 	
 
-	//Í¨³£ÖÕ½á·û±í´ïÊ½Ö»ÓĞÒ»¸ö£¬µ«ÊÇÓĞ¶à¸ö¶ÔÏó
+	//é€šå¸¸ç»ˆç»“ç¬¦è¡¨è¾¾å¼åªæœ‰ä¸€ä¸ªï¼Œä½†æ˜¯æœ‰å¤šä¸ªå¯¹è±¡
 	public Object interpreter(Context ctx) {	
 		return null;
 	}

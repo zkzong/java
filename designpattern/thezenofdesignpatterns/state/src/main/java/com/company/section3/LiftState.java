@@ -3,27 +3,27 @@ package com.company.section3;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¶¨ÒåÒ»¸öµçÌİµÄ½Ó¿Ú
+ * å®šä¹‰ä¸€ä¸ªç”µæ¢¯çš„æ¥å£
  */
 public abstract class LiftState{
 
-	//¶¨ÒåÒ»¸ö»·¾³½ÇÉ«£¬Ò²¾ÍÊÇ·â×°×´Ì¬µÄ±ä»»ÒıÆğµÄ¹¦ÄÜ±ä»¯
+	//å®šä¹‰ä¸€ä¸ªç¯å¢ƒè§’è‰²ï¼Œä¹Ÿå°±æ˜¯å°è£…çŠ¶æ€çš„å˜æ¢å¼•èµ·çš„åŠŸèƒ½å˜åŒ–
 	protected Context context;	
 	
 	public void setContext(Context _context){
 		this.context = _context;
 	}
 
-	//Ê×ÏÈµçÌİÃÅ¿ªÆô¶¯×÷
+	//é¦–å…ˆç”µæ¢¯é—¨å¼€å¯åŠ¨ä½œ
 	public abstract void open();
 	
-	//µçÌİÃÅÓĞ¿ªÆô£¬ÄÇµ±È»Ò²¾ÍÓĞ¹Ø±ÕÁË
+	//ç”µæ¢¯é—¨æœ‰å¼€å¯ï¼Œé‚£å½“ç„¶ä¹Ÿå°±æœ‰å…³é—­äº†
 	public abstract void close();
 	
-	//µçÌİÒªÄÜÉÏÄÜÏÂ£¬ÅÜÆğÀ´
+	//ç”µæ¢¯è¦èƒ½ä¸Šèƒ½ä¸‹ï¼Œè·‘èµ·æ¥
 	public abstract void run();
 	
-	//µçÌİ»¹ÒªÄÜÍ£ÏÂÀ´£¬Í£²»ÏÂÀ´ÄÇ¾Í³¶µ­ÁË
+	//ç”µæ¢¯è¿˜è¦èƒ½åœä¸‹æ¥ï¼Œåœä¸ä¸‹æ¥é‚£å°±æ‰¯æ·¡äº†
 	public abstract void stop();
 	
 }

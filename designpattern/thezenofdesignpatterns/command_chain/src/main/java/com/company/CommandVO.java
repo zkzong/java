@@ -6,35 +6,35 @@ import java.util.HashSet;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÃüÁî×Ö·û´®½âÎö
+ * å‘½ä»¤å­—ç¬¦ä¸²è§£æ
  */
 public class CommandVO {
-	//¶¨Òå²ÎÊıÃûÓë²ÎÊıµÄ·Ö¸î·ûºÅ,Ò»°ãÊÇ¿Õ¸ñ
+	//å®šä¹‰å‚æ•°åä¸å‚æ•°çš„åˆ†å‰²ç¬¦å·,ä¸€èˆ¬æ˜¯ç©ºæ ¼
 	public final static String DIVIDE_FLAG =" ";
 	
-	//¶¨Òå²ÎÊıÇ°µÄ·ûºÅ£¬UNIXÒ»°ãÊÇ-,Èçls -la
+	//å®šä¹‰å‚æ•°å‰çš„ç¬¦å·ï¼ŒUNIXä¸€èˆ¬æ˜¯-,å¦‚ls -la
 	public final static String PREFIX="-";
 	
-	//ÃüÁîÃû£¬Èçls,du
+	//å‘½ä»¤åï¼Œå¦‚ls,du
 	private String commandName = "";
-	//²ÎÊıÁĞ±í
+	//å‚æ•°åˆ—è¡¨
 	private ArrayList<String> paramList = new ArrayList<String>();
 	
-	//²Ù×÷ÊıÁĞ±í
+	//æ“ä½œæ•°åˆ—è¡¨
 	private ArrayList<String> dataList = new ArrayList<String>();
 	
-	//Í¨¹ı¹¹Ôìº¯Êı´«µİ½øÀ´ÃüÁî
+	//é€šè¿‡æ„é€ å‡½æ•°ä¼ é€’è¿›æ¥å‘½ä»¤
 	public CommandVO(String commandStr){
-		//³£¹æÅĞ¶Ï
+		//å¸¸è§„åˆ¤æ–­
 		if(commandStr != null && commandStr.length() !=0){		
-			//¸ù¾İ·Ö¸î·ûºÅ²ğ·Ö³öÖ´ĞĞ·ûºÅ
+			//æ ¹æ®åˆ†å‰²ç¬¦å·æ‹†åˆ†å‡ºæ‰§è¡Œç¬¦å·
 			String[] complexStr = commandStr.split(CommandVO.DIVIDE_FLAG);
-			//µÚÒ»¸ö²ÎÊıÊÇÖ´ĞĞ·ûºÅ
+			//ç¬¬ä¸€ä¸ªå‚æ•°æ˜¯æ‰§è¡Œç¬¦å·
 			this.commandName = complexStr[0];
-			//°Ñ²ÎÊı·Åµ½ListÖĞ
+			//æŠŠå‚æ•°æ”¾åˆ°Listä¸­
 			for(int i=1;i<complexStr.length;i++){
 				String str = complexStr[i];
-				//°üº¬Ç°×º·ûºÅ£¬ÈÏÎªÊÇ²ÎÊı
+				//åŒ…å«å‰ç¼€ç¬¦å·ï¼Œè®¤ä¸ºæ˜¯å‚æ•°
 				if(str.indexOf(CommandVO.PREFIX)==0){
 					this.paramList.add(str.replace(CommandVO.PREFIX, "").trim());
 				}else{
@@ -42,33 +42,33 @@ public class CommandVO {
 				}
 			}
 		}else{
-			//´«µİµÄÃüÁî´íÎó
-			System.out.println("ÃüÁî½âÎöÊ§°Ü£¬±ØĞë´«µİÒ»¸öÃüÁî²ÅÄÜÖ´ĞĞ£¡");
+			//ä¼ é€’çš„å‘½ä»¤é”™è¯¯
+			System.out.println("å‘½ä»¤è§£æå¤±è´¥ï¼Œå¿…é¡»ä¼ é€’ä¸€ä¸ªå‘½ä»¤æ‰èƒ½æ‰§è¡Œï¼");
 		}
 	}
 	
-	//µÃµ½ÃüÁîÃû
+	//å¾—åˆ°å‘½ä»¤å
 	public String getCommandName(){
 		return this.commandName;
 	}
 	
-	//»ñµÃ²ÎÊı
+	//è·å¾—å‚æ•°
 	public ArrayList<String> getParam(){
-		//ÎªÁË·½±ã´¦Àí¿Õ²ÎÊı
+		//ä¸ºäº†æ–¹ä¾¿å¤„ç†ç©ºå‚æ•°
 		if(this.paramList.size() ==0){
 			this.paramList.add("");
 		}		
 		return new ArrayList(new HashSet(this.paramList));
 	}
 	
-	//»ñµÃ²Ù×÷Êı
+	//è·å¾—æ“ä½œæ•°
 	public ArrayList<String> getData(){
 		return this.dataList;
 	}
 	
-	//»ñµÃ²Ù×÷Êı£¬·µ»ØÖµÎªStringÀàĞÍ
+	//è·å¾—æ“ä½œæ•°ï¼Œè¿”å›å€¼ä¸ºStringç±»å‹
 	public String formatData(){
-		//Ã»ÓĞ²Ù×÷Êı
+		//æ²¡æœ‰æ“ä½œæ•°
 		if(this.dataList.size() ==0){
 			return "";
 		}else{
@@ -80,9 +80,9 @@ public class CommandVO {
 		//String str ="ls -l -s -l /usr /password   ";
 		String str = "ls";
 		CommandVO vo = new CommandVO(str);
-		System.out.println("ÃüÁîÃûÎª£º"+vo.getCommandName());
-		System.out.println("²ÎÊıÃûÎª£º"+vo.getParam());
-		System.out.println("²Ù×÷ÊıÎª£º"+vo.getData());
+		System.out.println("å‘½ä»¤åä¸ºï¼š"+vo.getCommandName());
+		System.out.println("å‚æ•°åä¸ºï¼š"+vo.getParam());
+		System.out.println("æ“ä½œæ•°ä¸ºï¼š"+vo.getData());
 		System.out.println(vo.getParam().contains(""));
 	}
 }

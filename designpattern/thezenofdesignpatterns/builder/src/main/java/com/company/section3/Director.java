@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * µ¼Ñİ°²ÅÅË³Ğò£¬Éú²ú³µÁ¾Ä£ĞÍ
+ * å¯¼æ¼”å®‰æ’é¡ºåºï¼Œç”Ÿäº§è½¦è¾†æ¨¡å‹
  */
 public class Director {
 	private ArrayList<String> sequence = new ArrayList();
@@ -13,24 +13,24 @@ public class Director {
 	private BMWBuilder bmwBuilder = new BMWBuilder();
 	
 	/*
-	 * AÀàĞÍµÄ±¼³Û³µÄ£ĞÍ£¬ÏÈstart,È»ºóstop,ÆäËûÊ²Ã´ÒıÇæÁË£¬À®°ÈÒ»¸ÅÃ»ÓĞ
+	 * Aç±»å‹çš„å¥”é©°è½¦æ¨¡å‹ï¼Œå…ˆstart,ç„¶åstop,å…¶ä»–ä»€ä¹ˆå¼•æ“äº†ï¼Œå–‡å­ä¸€æ¦‚æ²¡æœ‰
 	 */
 	public BenzModel getABenzModel(){
-		//ÇåÀí³¡¾°£¬ÕâÀïÊÇÒ»Ğ©³õ¼¶³ÌĞòÔ±²»×¢ÒâµÄµØ·½
+		//æ¸…ç†åœºæ™¯ï¼Œè¿™é‡Œæ˜¯ä¸€äº›åˆçº§ç¨‹åºå‘˜ä¸æ³¨æ„çš„åœ°æ–¹
 		this.sequence.clear();
 		
-		//ÕâÖ»ABenzModelµÄÖ´ĞĞË³Ğò
+		//è¿™åªABenzModelçš„æ‰§è¡Œé¡ºåº
 		this.sequence.add("start");
 		this.sequence.add("stop");
 		
-		//°´ÕÕË³Ğò·µ»ØÒ»¸ö±¼³Û³µ
+		//æŒ‰ç…§é¡ºåºè¿”å›ä¸€ä¸ªå¥”é©°è½¦
 		this.benzBuilder.setSequence(this.sequence);
 		return (BenzModel)this.benzBuilder.getCarModel();
 		
 	}
 	
 	/*
-	 * BĞÍºÅµÄ±¼³Û³µÄ£ĞÍ£¬ÊÇÏÈ·¢¶¯ÒıÇæ£¬È»ºóÆô¶¯£¬È»ºóÍ£Ö¹£¬Ã»ÓĞÀ®°È
+	 * Bå‹å·çš„å¥”é©°è½¦æ¨¡å‹ï¼Œæ˜¯å…ˆå‘åŠ¨å¼•æ“ï¼Œç„¶åå¯åŠ¨ï¼Œç„¶ååœæ­¢ï¼Œæ²¡æœ‰å–‡å­
 	 */
 	public BenzModel getBBenzModel(){
 		this.sequence.clear();
@@ -44,7 +44,7 @@ public class Director {
 	}
 	
 	/*
-	 * CĞÍºÅµÄ±¦Âí³µÊÇÏÈ°´ÏÂÀ®°È£¨ìÅÒ«Âï£©£¬È»ºóÆô¶¯£¬È»ºóÍ£Ö¹
+	 * Cå‹å·çš„å®é©¬è½¦æ˜¯å…ˆæŒ‰ä¸‹å–‡å­ï¼ˆç‚«è€€å˜›ï¼‰ï¼Œç„¶åå¯åŠ¨ï¼Œç„¶ååœæ­¢
 	 */
 	public BMWModel getCBMWModel(){
 		this.sequence.clear();
@@ -58,7 +58,7 @@ public class Director {
 	}
 	
 	/*
-	 * DÀàĞÍµÄ±¦Âí³µÖ»ÓĞÒ»¸ö¹¦ÄÜ£¬¾ÍÊÇÅÜ£¬Æô¶¯ÆğÀ´¾ÍÅÜ£¬ÓÀÔ¶²»Í£Ö¹£¬Å£²æ
+	 * Dç±»å‹çš„å®é©¬è½¦åªæœ‰ä¸€ä¸ªåŠŸèƒ½ï¼Œå°±æ˜¯è·‘ï¼Œå¯åŠ¨èµ·æ¥å°±è·‘ï¼Œæ°¸è¿œä¸åœæ­¢ï¼Œç‰›å‰
 	 */
 	public BMWModel getDBMWModel(){
 		this.sequence.clear();
@@ -70,7 +70,7 @@ public class Director {
 	}
 	
 	/*
-	 * Õâ±ßºÜ¿ÉÒÔÓĞºÜ¶à·½·¨£¬Äã¿ÉÒÔÏÈÍ£Ö¹£¬È»ºóÔÙÆô¶¯£¬»òÕßÒ»Ö±Í£×Å²»¶¯£¬¾²Ì¬µÄÂï
-	 * µ¼ÑİÀàÂï£¬°´ÕÕÊ²Ã´Ë³ĞòÊÇµ¼ÑİËµÁËËã
+	 * è¿™è¾¹å¾ˆå¯ä»¥æœ‰å¾ˆå¤šæ–¹æ³•ï¼Œä½ å¯ä»¥å…ˆåœæ­¢ï¼Œç„¶åå†å¯åŠ¨ï¼Œæˆ–è€…ä¸€ç›´åœç€ä¸åŠ¨ï¼Œé™æ€çš„å˜›
+	 * å¯¼æ¼”ç±»å˜›ï¼ŒæŒ‰ç…§ä»€ä¹ˆé¡ºåºæ˜¯å¯¼æ¼”è¯´äº†ç®—
 	 */
 }

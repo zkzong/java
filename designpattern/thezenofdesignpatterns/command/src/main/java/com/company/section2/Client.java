@@ -5,24 +5,24 @@ package com.company.section2;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¿Í»§¾ÍÊÇ¼×·½£¬¸øÎÒÃÇÇ®µÄÒ»·½£¬ÊÇÀÏ´ó
+ * å®¢æˆ·å°±æ˜¯ç”²æ–¹ï¼Œç»™æˆ‘ä»¬é’±çš„ä¸€æ–¹ï¼Œæ˜¯è€å¤§
  */
 public class Client {
 	
 	public static void main(String[] args) {
-		//¶¨ÒåÎÒÃÇµÄ½ÓÍ·ÈË
-		Invoker xiaoSan = new Invoker();  //½ÓÍ·ÈË¾ÍÊÇÎÒĞ¡Èı
+		//å®šä¹‰æˆ‘ä»¬çš„æ¥å¤´äºº
+		Invoker xiaoSan = new Invoker();  //æ¥å¤´äººå°±æ˜¯æˆ‘å°ä¸‰
 		
-		//¿Í»§ÒªÇóÔö¼ÓÒ»ÏîĞèÇó
-		System.out.println("-------------¿Í»§ÒªÇóÉ¾³ıÒ»¸öÒ³Ãæ-----------------");
-		//¿Í»§¸øÎÒÃÇÏÂÃüÁîÀ´
+		//å®¢æˆ·è¦æ±‚å¢åŠ ä¸€é¡¹éœ€æ±‚
+		System.out.println("-------------å®¢æˆ·è¦æ±‚åˆ é™¤ä¸€ä¸ªé¡µé¢-----------------");
+		//å®¢æˆ·ç»™æˆ‘ä»¬ä¸‹å‘½ä»¤æ¥
 		//Command command = new AddRequirementCommand();
 		Command command = new DeletePageCommand();
 		
-		//½ÓÍ·ÈË½ÓÊÕµ½ÃüÁî
+		//æ¥å¤´äººæ¥æ”¶åˆ°å‘½ä»¤
 		xiaoSan.setCommand(command);
 		
-		//½ÓÍ·ÈËÖ´ĞĞÃüÁî
+		//æ¥å¤´äººæ‰§è¡Œå‘½ä»¤
 		xiaoSan.action();
 		
 	}

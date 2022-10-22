@@ -5,12 +5,12 @@ package com.company.section2;
  * I'm glad to share my knowledge with you all.
  */
 public interface ILetterProcess {
-	//Ê×ÏÈÒªĞ´ĞÅµÄÄÚÈİ
+	//é¦–å…ˆè¦å†™ä¿¡çš„å†…å®¹
 	public void writeContext(String context);
-	//Æä´ÎĞ´ĞÅ·â
+	//å…¶æ¬¡å†™ä¿¡å°
 	public void fillEnvelope(String address);
-	//°ÑĞÅ·Åµ½ĞÅ·âÀï
+	//æŠŠä¿¡æ”¾åˆ°ä¿¡å°é‡Œ
 	public void letterInotoEnvelope();
-	//È»ºóÓÊµİ
+	//ç„¶åé‚®é€’
 	public void sendLetter();
 }

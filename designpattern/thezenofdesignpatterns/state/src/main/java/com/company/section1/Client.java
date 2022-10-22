@@ -3,23 +3,23 @@ package com.company.section1;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * Ä£ÄâµçÌİµÄ¶¯×÷
+ * æ¨¡æ‹Ÿç”µæ¢¯çš„åŠ¨ä½œ
  */
 public class Client {
 	
 	public static void main(String[] args) {
 		ILift lift = new Lift();
 	
-		//Ê×ÏÈÊÇµçÌİÃÅ¿ªÆô£¬ÈË½øÈ¥
+		//é¦–å…ˆæ˜¯ç”µæ¢¯é—¨å¼€å¯ï¼Œäººè¿›å»
 		lift.open();
 		
-		//È»ºóµçÌİÃÅ¹Ø±Õ
+		//ç„¶åç”µæ¢¯é—¨å…³é—­
 		lift.close();
 		
-		//ÔÙÈ»ºó£¬µçÌİÅÜÆğÀ´£¬ÏòÉÏ»òÕßÏòÏÂ
+		//å†ç„¶åï¼Œç”µæ¢¯è·‘èµ·æ¥ï¼Œå‘ä¸Šæˆ–è€…å‘ä¸‹
 		lift.run();
 		
-		//×îºóµ½´ïÄ¿µÄµØ£¬µçÌİÍ¦ÏÂÀ´
+		//æœ€ååˆ°è¾¾ç›®çš„åœ°ï¼Œç”µæ¢¯æŒºä¸‹æ¥
 		lift.stop();
 	}
 }

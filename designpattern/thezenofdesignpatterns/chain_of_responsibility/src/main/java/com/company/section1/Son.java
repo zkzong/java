@@ -3,14 +3,14 @@ package com.company.section1;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¶ù×ÓÀà
+ * å„¿å­ç±»
  */
 public class Son implements IHandler {
 
-	//Ä¿Ç°Ïò¶ù×ÓÇëÊ¾
+	//ç›®å‰å‘å„¿å­è¯·ç¤º
 	public void HandleMessage(IWomen women) {
-		System.out.println("Ä¸Ç×µÄÇëÊ¾ÊÇ£º"+women.getRequest());
-		System.out.println("¶ù×ÓµÄ´ğ¸´ÊÇ£ºÍ¬Òâ");
+		System.out.println("æ¯äº²çš„è¯·ç¤ºæ˜¯ï¼š"+women.getRequest());
+		System.out.println("å„¿å­çš„ç­”å¤æ˜¯ï¼šåŒæ„");
 	}
 
 }

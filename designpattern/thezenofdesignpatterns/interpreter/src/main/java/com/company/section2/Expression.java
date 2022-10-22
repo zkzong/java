@@ -6,6 +6,6 @@ package com.company.section2;
  */
 public abstract class Expression {
 	
-	//Ã¿¸ö±í´ïÊ½±ØĞëÓĞÒ»¸ö½âÎöÈÎÎñ
+	//æ¯ä¸ªè¡¨è¾¾å¼å¿…é¡»æœ‰ä¸€ä¸ªè§£æä»»åŠ¡
 	public abstract Object interpreter(Context  ctx);
 }

@@ -8,7 +8,7 @@ import com.company.command.LSCommand;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ËùÓĞµÄÃüÁîÔÚÕâÀï¶¨Òå
+ * æ‰€æœ‰çš„å‘½ä»¤åœ¨è¿™é‡Œå®šä¹‰
  */
 public enum CommandEnum {
 	ls("com.company.command.LSCommand"),
@@ -16,7 +16,7 @@ public enum CommandEnum {
 	
 	private String value = "";
 	
-	//¶¨Òå¹¹Ôìº¯Êı£¬Ä¿µÄÊÇData(value)ÀàĞÍµÄÏàÆ¥Åä
+	//å®šä¹‰æ„é€ å‡½æ•°ï¼Œç›®çš„æ˜¯Data(value)ç±»å‹çš„ç›¸åŒ¹é…
 	private CommandEnum(String value){
 		this.value = value;
 	}
@@ -26,7 +26,7 @@ public enum CommandEnum {
 		return this.value;
 	}
 	
-	//·µ»ØËùÓĞµÄenum¶ÔÏó
+	//è¿”å›æ‰€æœ‰çš„enumå¯¹è±¡
 	public static List<String> getNames(){
 		CommandEnum[] commandEnum = CommandEnum.values();
 		List<String> names = new ArrayList<String>();

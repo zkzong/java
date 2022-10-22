@@ -3,10 +3,10 @@ package com.company.section2;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * 类似于李斯的这种人，现代嘛叫做偷窥狂
+ * 绫讳技浜庢潕鏂殑杩欑浜猴紝鐜颁唬鍢涘彨鍋氬伔绐ョ媯
  */
 public interface ILiSi {
 	
-	//一发现别人有动静，自己也要行动起来
+	//涓�鍙戠幇鍒汉鏈夊姩闈欙紝鑷繁涔熻琛屽姩璧锋潵
 	public void update(String context);  
 }

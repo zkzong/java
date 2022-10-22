@@ -12,52 +12,52 @@ import java.util.HashMap;
  */
 public class BeanUtils {
 
-	//°ÑbeanµÄËùÓĞÊôĞÔ¼°ÊıÖµ·ÅÈëµ½HashmapÖĞ
+	//æŠŠbeançš„æ‰€æœ‰å±æ€§åŠæ•°å€¼æ”¾å…¥åˆ°Hashmapä¸­
 	public static HashMap<String,Object> backupProp(Object bean){
 		HashMap<String,Object> result = new HashMap<String,Object>();
 		try {
-			//»ñµÃBeanÃèÊö
+			//è·å¾—Beanæè¿°
 			BeanInfo beanInfo = Introspector.getBeanInfo(bean.getClass());
-			//»ñµÃÊôĞÔÃèÊö
+			//è·å¾—å±æ€§æè¿°
 			PropertyDescriptor[] descriptors = beanInfo.getPropertyDescriptors();
-			//±éÀúËùÓĞÊôĞÔ
+			//éå†æ‰€æœ‰å±æ€§
 			for(PropertyDescriptor des:descriptors){
-				//ÊôĞÔÃû³Æ
+				//å±æ€§åç§°
 				String fieldName = des.getName();
-				//¶ÁÈ¡ÊôĞÔµÄ·½·¨
+				//è¯»å–å±æ€§çš„æ–¹æ³•
 				Method getter = des.getReadMethod();
-				//¶ÁÈ¡ÊôĞÔÖµ
+				//è¯»å–å±æ€§å€¼
 				Object fieldValue = getter.invoke(bean, new Object[]{});
 				if(!fieldName.equalsIgnoreCase("class")){
 					result.put(fieldName, fieldValue);
 				}
 			}
 		} catch (Exception e) {
-			//Òì³£´¦Àí
+			//å¼‚å¸¸å¤„ç†
 		}
 		return result;
 	}
 	
-	//°ÑHashMapµÄÖµ·µ»Øµ½beanÖĞ
+	//æŠŠHashMapçš„å€¼è¿”å›åˆ°beanä¸­
 	public static void restoreProp(Object bean,HashMap<String,Object> propMap){
 		try {
-			//»ñµÃBeanÃèÊö
+			//è·å¾—Beanæè¿°
 			BeanInfo beanInfo = Introspector.getBeanInfo(bean.getClass());
-			//»ñµÃÊôĞÔÃèÊö
+			//è·å¾—å±æ€§æè¿°
 			PropertyDescriptor[] descriptors = beanInfo.getPropertyDescriptors();
-			//±éÀúËùÓĞÊôĞÔ
+			//éå†æ‰€æœ‰å±æ€§
 			for(PropertyDescriptor des:descriptors){
-				//ÊôĞÔÃû³Æ
+				//å±æ€§åç§°
 				String fieldName = des.getName();
-				//Èç¹ûÓĞÕâ¸öÊôĞÔ
+				//å¦‚æœæœ‰è¿™ä¸ªå±æ€§
 				if(propMap.containsKey(fieldName)){
-					//Ğ´ÊôĞÔµÄ·½·¨
+					//å†™å±æ€§çš„æ–¹æ³•
 					Method setter = des.getWriteMethod();
 					setter.invoke(bean, new Object[]{propMap.get(fieldName)});
 				}
 			}
 		} catch (Exception e) {
-			//Òì³£´¦Àí
+			//å¼‚å¸¸å¤„ç†
 			System.out.println("shit");
 			e.printStackTrace();
 		}

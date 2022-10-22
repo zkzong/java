@@ -3,10 +3,10 @@ package com.company.section2;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * 目标角色
+ * 鐩爣瑙掕壊
  */
 public interface Target {
 	
-	//目标角色有自己的方法
+	//鐩爣瑙掕壊鏈夎嚜宸辩殑鏂规硶
 	public void request();
 }

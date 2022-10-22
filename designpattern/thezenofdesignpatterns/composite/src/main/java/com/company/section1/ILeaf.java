@@ -3,11 +3,11 @@ package com.company.section1;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * 叶子节点，也就是最小的小兵了，只能自己干活，不能指派别人了
+ * 鍙跺瓙鑺傜偣锛屼篃灏辨槸鏈�灏忕殑灏忓叺浜嗭紝鍙兘鑷繁骞叉椿锛屼笉鑳芥寚娲惧埆浜轰簡
  */
 public interface ILeaf {
 	
-	//获得自己的信息呀
+	//鑾峰緱鑷繁鐨勪俊鎭憖
 	public String getInfo();
 
 }

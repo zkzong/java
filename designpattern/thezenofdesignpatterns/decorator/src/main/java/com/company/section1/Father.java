@@ -3,16 +3,16 @@ package com.company.section1;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÀÏ°Ö¿´³É¼¨µ¥ÁË
+ * è€çˆ¸çœ‹æˆç»©å•äº†
  */
 public class Father {
 	
 	public static void main(String[] args) {
-		//³É¼¨µ¥ÄÃ¹ıÀ´
+		//æˆç»©å•æ‹¿è¿‡æ¥
 		SchoolReport sr = new FouthGradeSchoolReport();		
-		//¿´³É¼¨µ¥
+		//çœ‹æˆç»©å•
 		sr.report();		
-		//Ç©Ãû£¿ĞİÏë£¡
+		//ç­¾åï¼Ÿä¼‘æƒ³ï¼
 	}
 }
 

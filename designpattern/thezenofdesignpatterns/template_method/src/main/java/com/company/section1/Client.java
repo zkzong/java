@@ -3,15 +3,15 @@ package com.company.section1;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¿Í»§¿ªÊ¼Ê¹ÓÃÕâ¸öÄ£ĞÍ
+ * å®¢æˆ·å¼€å§‹ä½¿ç”¨è¿™ä¸ªæ¨¡å‹
  */
 public class Client {
 
 	public static void main(String[] args) {
-		//Å£²æ¹«Ë¾ÒªH1ĞÍºÅµÄº·Âí
+		//ç‰›å‰å…¬å¸è¦H1å‹å·çš„æ‚é©¬
 		HummerH1Model h1 = new HummerH1Model();
 		
-		//H1Ä£ĞÍÑİÊ¾
+		//H1æ¨¡å‹æ¼”ç¤º
 		h1.start();
 		h1.engineBoom();
 		h1.run();

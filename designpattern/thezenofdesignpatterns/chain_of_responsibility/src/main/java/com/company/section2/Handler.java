@@ -3,45 +3,45 @@ package com.company.section2;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¸¸ÏµÉç»á£¬ÄÇ¾ÍÊÇÄĞĞÔÓĞÖÁ¸ßÈ¨Àû£¬handler¿ØÖÆÈ¨
+ * çˆ¶ç³»ç¤¾ä¼šï¼Œé‚£å°±æ˜¯ç”·æ€§æœ‰è‡³é«˜æƒåˆ©ï¼Œhandleræ§åˆ¶æƒ
  */
 public abstract class Handler {
 	public final static int FATHER_LEVEL_REQUEST = 1;
 	public final static  int HUSBAND_LEVEL_REQUEST = 2;
 	public final static  int SON_LEVEL_REQUEST = 3;
-	//ÄÜ´¦ÀíµÄ¼¶±ğ
+	//èƒ½å¤„ç†çš„çº§åˆ«
 	private int level =0;
 	
-	//ÔğÈÎ´«µİ£¬ÏÂÒ»¸öÈËÔğÈÎÈËÊÇË­
+	//è´£ä»»ä¼ é€’ï¼Œä¸‹ä¸€ä¸ªäººè´£ä»»äººæ˜¯è°
 	private Handler nextHanlder;
 	
-	//Ã¿¸öÀà¶¼ÒªËµÃ÷Ò»ÏÂ×Ô¼ºÄÜ´¦ÀíÄÄĞ©ÇëÇó
+	//æ¯ä¸ªç±»éƒ½è¦è¯´æ˜ä¸€ä¸‹è‡ªå·±èƒ½å¤„ç†å“ªäº›è¯·æ±‚
 	public Handler(int _level){
 		this.level = _level;
 	}
 	
-	//Ò»¸öÅ®ĞÔ£¨Å®¶ù£¬ÆŞ×Ó»òÕßÊÇÄ¸Ç×£©ÒªÇó¹ä½Ö£¬ÄãÒª´¦ÀíÕâ¸öÇëÇó
+	//ä¸€ä¸ªå¥³æ€§ï¼ˆå¥³å„¿ï¼Œå¦»å­æˆ–è€…æ˜¯æ¯äº²ï¼‰è¦æ±‚é€›è¡—ï¼Œä½ è¦å¤„ç†è¿™ä¸ªè¯·æ±‚
 	public final void HandleMessage(IWomen women){
 		if(women.getType() == this.level){
 			this.response(women);
 		}else{
-			if(this.nextHanlder != null){  //ÓĞºóĞø»·½Ú£¬²Å°ÑÇëÇóÍùºóµİËÍ
+			if(this.nextHanlder != null){  //æœ‰åç»­ç¯èŠ‚ï¼Œæ‰æŠŠè¯·æ±‚å¾€åé€’é€
 				this.nextHanlder.HandleMessage(women);
-			}else{ //ÒÑ¾­Ã»ÓĞºóĞø´¦ÀíÈËÁË£¬²»ÓÃ´¦ÀíÁË
-				System.out.println("-----------Ã»µØ·½ÇëÊ¾ÁË£¬°´²»Í¬Òâ´¦Àí---------\n");
+			}else{ //å·²ç»æ²¡æœ‰åç»­å¤„ç†äººäº†ï¼Œä¸ç”¨å¤„ç†äº†
+				System.out.println("-----------æ²¡åœ°æ–¹è¯·ç¤ºäº†ï¼ŒæŒ‰ä¸åŒæ„å¤„ç†---------\n");
 			}
 			
 		}
 	}
 	
 	/*
-	 * Èç¹ûÄãÊôÓÚÄã´¦ÀíµÄ·µ»Ø£¬ÄãÓ¦¸ÃÈÃËıÕÒÏÂÒ»¸ö»·½ÚµÄÈË£¬±ÈÈç
-	 * Å®¶ù³ö¼ŞÁË£¬»¹Ïò¸¸Ç×ÇëÊ¾ÊÇ·ñ¿ÉÒÔ¹ä½Ö£¬ÄÇ¸¸Ç×¾ÍÓ¦¸Ã¸æËßÅ®¶ù£¬Ó¦¸ÃÕÒÕÉ·òÇëÊ¾
+	 * å¦‚æœä½ å±äºä½ å¤„ç†çš„è¿”å›ï¼Œä½ åº”è¯¥è®©å¥¹æ‰¾ä¸‹ä¸€ä¸ªç¯èŠ‚çš„äººï¼Œæ¯”å¦‚
+	 * å¥³å„¿å‡ºå«äº†ï¼Œè¿˜å‘çˆ¶äº²è¯·ç¤ºæ˜¯å¦å¯ä»¥é€›è¡—ï¼Œé‚£çˆ¶äº²å°±åº”è¯¥å‘Šè¯‰å¥³å„¿ï¼Œåº”è¯¥æ‰¾ä¸ˆå¤«è¯·ç¤º
 	 */
 	public void setNext(Handler _handler){
 		this.nextHanlder = _handler;
 	}
 	
-	//ÓĞÇëÊ¾ÄÇµ±È»Òª»ØÓ¦
+	//æœ‰è¯·ç¤ºé‚£å½“ç„¶è¦å›åº”
 	protected abstract void response(IWomen women);
 }

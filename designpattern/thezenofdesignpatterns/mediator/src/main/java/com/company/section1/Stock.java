@@ -5,37 +5,37 @@ import java.util.Random;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ´æ»õ
+ * å­˜è´§
  */
 public class Stock {
-	//¸Õ¿ªÊ¼ÓĞ100Ì¨µçÄÔ
+	//åˆšå¼€å§‹æœ‰100å°ç”µè„‘
 	private static int COMPUTER_NUMBER =100;  
 	
-	//¿â´æÔö¼Ó
+	//åº“å­˜å¢åŠ 
 	public void increase(int number){
 		COMPUTER_NUMBER = COMPUTER_NUMBER + number;
-		System.out.println("¿â´æÊıÁ¿Îª£º"+COMPUTER_NUMBER);
+		System.out.println("åº“å­˜æ•°é‡ä¸ºï¼š"+COMPUTER_NUMBER);
 	}
 	
-	//¿â´æ½µµÍ
+	//åº“å­˜é™ä½
 	public void decrease(int number){
 		COMPUTER_NUMBER = COMPUTER_NUMBER - number;
-		System.out.println("¿â´æÊıÁ¿Îª£º"+COMPUTER_NUMBER);
+		System.out.println("åº“å­˜æ•°é‡ä¸ºï¼š"+COMPUTER_NUMBER);
 	}
 	
-	//»ñµÃ¿â´æÊıÁ¿
+	//è·å¾—åº“å­˜æ•°é‡
 	public int getStockNumber(){
 		return COMPUTER_NUMBER;
 	}
 	
-	//´æ»õÑ¹Á¦´óÁË£¬¾ÍÒªÍ¨Öª²É¹ºÈËÔ±²»Òª²É¹º£¬ÏúÊÛÈËÔ±Òª¾¡¿ìÏúÊÛ
+	//å­˜è´§å‹åŠ›å¤§äº†ï¼Œå°±è¦é€šçŸ¥é‡‡è´­äººå‘˜ä¸è¦é‡‡è´­ï¼Œé”€å”®äººå‘˜è¦å°½å¿«é”€å”®
 	public void clearStock(){
 		Purchase purchase = new Purchase();
 		Sale sale = new Sale();
-		System.out.println("ÇåÀí´æ»õÊıÁ¿Îª£º"+COMPUTER_NUMBER);
-		//ÒªÇóÕÛ¼ÛÏúÊÛ
+		System.out.println("æ¸…ç†å­˜è´§æ•°é‡ä¸ºï¼š"+COMPUTER_NUMBER);
+		//è¦æ±‚æŠ˜ä»·é”€å”®
 		sale.offSale();
-		//ÒªÇó²É¹ºÈËÔ±²»Òª²É¹º
+		//è¦æ±‚é‡‡è´­äººå‘˜ä¸è¦é‡‡è´­
 		purchase.refuseBuyIBM();
 		
 	}

@@ -8,27 +8,27 @@ import java.util.HashMap;
  * I'm glad to share my knowledge with you all.
  */
 public class SignInfoFactory {
-	//³ØÈİÆ÷
+	//æ± å®¹å™¨
 	private static HashMap<String,SignInfo> pool = new HashMap<String,SignInfo>();
 	
-	//±¨ÃûĞÅÏ¢µÄ¶ÔÏó¹¤³§
+	//æŠ¥åä¿¡æ¯çš„å¯¹è±¡å·¥å‚
 	@Deprecated
 	public static SignInfo getSignInfo(){
 		return new SignInfo();
 	}
 	
-	//´Ó³ØÖĞ»ñµÃ¶ÔÏó
+	//ä»æ± ä¸­è·å¾—å¯¹è±¡
 	public static SignInfo getSignInfo(String key){
-		//ÉèÖÃ·µ»Ø¶ÔÏó
+		//è®¾ç½®è¿”å›å¯¹è±¡
 		SignInfo result = null;
-		//³ØÖĞÃ»ÓĞ¸Ã¶ÔÏó£¬Ôò½¨Á¢£¬²¢·ÅÈë³ØÖĞ
+		//æ± ä¸­æ²¡æœ‰è¯¥å¯¹è±¡ï¼Œåˆ™å»ºç«‹ï¼Œå¹¶æ”¾å…¥æ± ä¸­
 		if(!pool.containsKey(key)){
-			System.out.println(key + "----½¨Á¢¶ÔÏó£¬²¢·ÅÖÃµ½³ØÖĞ");
+			System.out.println(key + "----å»ºç«‹å¯¹è±¡ï¼Œå¹¶æ”¾ç½®åˆ°æ± ä¸­");
 			result = new SignInfo4Pool(key);
 			pool.put(key, result);
 		}else{
 			result = pool.get(key);
-			System.out.println(key +"---Ö±½Ó´ÓÖ±³ØÖĞÈ¡µÃ");
+			System.out.println(key +"---ç›´æ¥ä»ç›´æ± ä¸­å–å¾—");
 		}
 		return result;
 	}

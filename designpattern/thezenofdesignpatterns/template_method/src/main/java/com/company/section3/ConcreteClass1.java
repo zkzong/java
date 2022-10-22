@@ -6,13 +6,13 @@ package com.company.section3;
  */
 public class ConcreteClass1 extends AbstractClass {
 
-	//实现基本方法
+	//瀹炵幇鍩烘湰鏂规硶
 	protected void doAnything() {
-		//业务逻辑处理
+		//涓氬姟閫昏緫澶勭悊
 	}
 
 	protected void doSomething() {
-		//业务逻辑处理
+		//涓氬姟閫昏緫澶勭悊
 	}
 
 }

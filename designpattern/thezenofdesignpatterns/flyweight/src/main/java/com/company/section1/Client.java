@@ -3,9 +3,9 @@ package com.company.section1;
 public class Client {
 
 	public static void main(String[] args) {
-		//´Ó¹¤³§ÖĞ»ñµÃÒ»¸ö¶ÔÏó
+		//ä»å·¥å‚ä¸­è·å¾—ä¸€ä¸ªå¯¹è±¡
 		SignInfo signInfo = SignInfoFactory.getSignInfo();
-		//½øĞĞÆäËûÒµÎñ´¦Àí
+		//è¿›è¡Œå…¶ä»–ä¸šåŠ¡å¤„ç†
 	}
 
 	

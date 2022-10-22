@@ -6,16 +6,16 @@ import com.company.command_name.os.FileManager;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÃüÁîÃûºóÃæ²»¸ú²ÎÊı
+ * å‘½ä»¤ååé¢ä¸è·Ÿå‚æ•°
  */
 public class LS extends AbstractLS {
 
-	//×î¼òµ¥µÄlsÃüÁî
+	//æœ€ç®€å•çš„lså‘½ä»¤
 	protected String echo(CommandVO vo) {
 		return FileManager.ls(vo.formatData());
 	}
 
-	//²ÎÊıÎª¿Õ
+	//å‚æ•°ä¸ºç©º
 	protected String getOperateParam() {
 		return super.DEFAULT_PARAM;
 	}

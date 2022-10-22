@@ -8,7 +8,7 @@ import java.util.Vector;
  */
 public class ConcreteIterator implements Iterator {
 	private Vector vector = new Vector();
-	//¶¨Òåµ±Ç°ÓÎ±ê
+	//å®šä¹‰å½“å‰æ¸¸æ ‡
 	public int cursor = 0;
 	
 	@SuppressWarnings("unchecked")
@@ -16,7 +16,7 @@ public class ConcreteIterator implements Iterator {
 		this.vector = _vector;
 	}
 	
-	//ÅĞ¶ÏÊÇ·ñµ½´ïÎ²²¿
+	//åˆ¤æ–­æ˜¯å¦åˆ°è¾¾å°¾éƒ¨
 	public boolean hasNext() {
 		if(this.cursor == this.vector.size()){
 			return false;
@@ -25,7 +25,7 @@ public class ConcreteIterator implements Iterator {
 		}
 	}
 	
-	//·µ»ØÏÂÒ»¸öÔªËØ
+	//è¿”å›ä¸‹ä¸€ä¸ªå…ƒç´ 
 	public Object next() {
 		Object result = null;
 		
@@ -37,7 +37,7 @@ public class ConcreteIterator implements Iterator {
 		return result;
 	}
 
-	//É¾³ıµ±Ç°ÔªËØ
+	//åˆ é™¤å½“å‰å…ƒç´ 
 	public boolean remove() {
 		this.vector.remove(this.cursor);
 		return true;

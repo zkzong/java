@@ -5,53 +5,53 @@ import java.util.ArrayList;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ClientµÄ×÷ÓÃÊÇ×é×°Õâ¿ÃÊ÷£¬²¢±éÀúÒ»±é
+ * Clientçš„ä½œç”¨æ˜¯ç»„è£…è¿™æ£µæ ‘ï¼Œå¹¶éå†ä¸€é
  */
 @SuppressWarnings("all")
 public class Client {
 	
 	public static void main(String[] args) {
-		//Ê×ÏÈ²úÉúÁËÒ»¸ö¸ú½Úµã
-		IRoot ceo = new Root("Íõ´óÂé×Ó","×Ü¾­Àí",100000);
+		//é¦–å…ˆäº§ç”Ÿäº†ä¸€ä¸ªè·ŸèŠ‚ç‚¹
+		IRoot ceo = new Root("ç‹å¤§éº»å­","æ€»ç»ç†",100000);
 		
-		//²úÉúÈı¸ö²¿ÃÅ¾­Àí£¬Ò²¾ÍÊÇÊ÷Ö¦½Úµã
-		IBranch developDep = new Branch("Áõ´óÈ³×Ó","ÑĞ·¢²¿ÃÅ¾­Àí",10000);
-		IBranch salesDep = new Branch("Âí¶ş¹Õ×Ó","ÏúÊÛ²¿ÃÅ¾­Àí",20000);
-		IBranch financeDep = new Branch("ÕÔÈıÍÕ×Ó","²ÆÎñ²¿¾­Àí",30000);
+		//äº§ç”Ÿä¸‰ä¸ªéƒ¨é—¨ç»ç†ï¼Œä¹Ÿå°±æ˜¯æ ‘æèŠ‚ç‚¹
+		IBranch developDep = new Branch("åˆ˜å¤§ç˜¸å­","ç ”å‘éƒ¨é—¨ç»ç†",10000);
+		IBranch salesDep = new Branch("é©¬äºŒæ‹å­","é”€å”®éƒ¨é—¨ç»ç†",20000);
+		IBranch financeDep = new Branch("èµµä¸‰é©¼å­","è´¢åŠ¡éƒ¨ç»ç†",30000);
 		
-		//ÔÙ°ÑÈı¸öĞ¡×é³¤²úÉú³öÀ´
-		IBranch firstDevGroup = new Branch("ÑîÈıØ¿Ğ±","¿ª·¢Ò»×é×é³¤",5000);
-		IBranch secondDevGroup = new Branch("Îâ´ó°ôé³","¿ª·¢¶ş×é×é³¤",6000);
+		//å†æŠŠä¸‰ä¸ªå°ç»„é•¿äº§ç”Ÿå‡ºæ¥
+		IBranch firstDevGroup = new Branch("æ¨ä¸‰ä¹œæ–œ","å¼€å‘ä¸€ç»„ç»„é•¿",5000);
+		IBranch secondDevGroup = new Branch("å´å¤§æ£’æ§Œ","å¼€å‘äºŒç»„ç»„é•¿",6000);
 		
-		//Ê£ÏÂµÄ¼°Ê±ÎÒÃÇÕâĞ©Ğ¡±øÁË,¾ÍÊÇÂ·ÈË¼×£¬Â·ÈËÒÒ
-		ILeaf a = new Leaf("a","¿ª·¢ÈËÔ±",2000);
-		ILeaf b = new Leaf("b","¿ª·¢ÈËÔ±",2000);
-		ILeaf c = new Leaf("c","¿ª·¢ÈËÔ±",2000);
-		ILeaf d = new Leaf("d","¿ª·¢ÈËÔ±",2000);
-		ILeaf e = new Leaf("e","¿ª·¢ÈËÔ±",2000);
-		ILeaf f = new Leaf("f","¿ª·¢ÈËÔ±",2000);
-		ILeaf g = new Leaf("g","¿ª·¢ÈËÔ±",2000);
-		ILeaf h = new Leaf("h","ÏúÊÛÈËÔ±",5000);
-		ILeaf i = new Leaf("i","ÏúÊÛÈËÔ±",4000);
-		ILeaf j = new Leaf("j","²ÆÎñÈËÔ±",5000);
-		ILeaf k = new Leaf("k","CEOÃØÊé",8000);
-		ILeaf zhengLaoLiu = new Leaf("Ö£ÀÏÁù","ÑĞ·¢²¿¸±×Ü",20000);
+		//å‰©ä¸‹çš„åŠæ—¶æˆ‘ä»¬è¿™äº›å°å…µäº†,å°±æ˜¯è·¯äººç”²ï¼Œè·¯äººä¹™
+		ILeaf a = new Leaf("a","å¼€å‘äººå‘˜",2000);
+		ILeaf b = new Leaf("b","å¼€å‘äººå‘˜",2000);
+		ILeaf c = new Leaf("c","å¼€å‘äººå‘˜",2000);
+		ILeaf d = new Leaf("d","å¼€å‘äººå‘˜",2000);
+		ILeaf e = new Leaf("e","å¼€å‘äººå‘˜",2000);
+		ILeaf f = new Leaf("f","å¼€å‘äººå‘˜",2000);
+		ILeaf g = new Leaf("g","å¼€å‘äººå‘˜",2000);
+		ILeaf h = new Leaf("h","é”€å”®äººå‘˜",5000);
+		ILeaf i = new Leaf("i","é”€å”®äººå‘˜",4000);
+		ILeaf j = new Leaf("j","è´¢åŠ¡äººå‘˜",5000);
+		ILeaf k = new Leaf("k","CEOç§˜ä¹¦",8000);
+		ILeaf zhengLaoLiu = new Leaf("éƒ‘è€å…­","ç ”å‘éƒ¨å‰¯æ€»",20000);
 		
-		//¸Ã²úÉúµÄÈË¶¼²úÉú³öÀ´ÁË£¬È»ºóÎÒÃÇÔõÃ´×é×°Õâ¿ÃÊ÷
-		//Ê×ÏÈÊÇ¶¨Òå×Ü¾­ÀíÏÂÓĞÈı¸ö²¿ÃÅ¾­Àí
+		//è¯¥äº§ç”Ÿçš„äººéƒ½äº§ç”Ÿå‡ºæ¥äº†ï¼Œç„¶åæˆ‘ä»¬æ€ä¹ˆç»„è£…è¿™æ£µæ ‘
+		//é¦–å…ˆæ˜¯å®šä¹‰æ€»ç»ç†ä¸‹æœ‰ä¸‰ä¸ªéƒ¨é—¨ç»ç†
 		ceo.add(developDep);
 		ceo.add(salesDep);
 		ceo.add(financeDep);
-		//×Ü¾­ÀíÏÂ»¹ÓĞÒ»¸öÃØÊé
+		//æ€»ç»ç†ä¸‹è¿˜æœ‰ä¸€ä¸ªç§˜ä¹¦
 		ceo.add(k);
 		
-		//¶¨ÒåÑĞ·¢²¿ÃÅ ÏÂµÄ½á¹¹
+		//å®šä¹‰ç ”å‘éƒ¨é—¨ ä¸‹çš„ç»“æ„
 		developDep.add(firstDevGroup);
 		developDep.add(secondDevGroup);
-		//ÑĞ·¢²¿¾­ÀíÏÂ»¹ÓĞÒ»¸ö¸±×Ü
+		//ç ”å‘éƒ¨ç»ç†ä¸‹è¿˜æœ‰ä¸€ä¸ªå‰¯æ€»
 		developDep.add(zhengLaoLiu);
 		
-		//¿´¿´¿ª·¢Á½¸ö¿ª·¢Ğ¡×éÏÂÓĞÊ²Ã´
+		//çœ‹çœ‹å¼€å‘ä¸¤ä¸ªå¼€å‘å°ç»„ä¸‹æœ‰ä»€ä¹ˆ
 		firstDevGroup.add(a);
 		firstDevGroup.add(b);
 		firstDevGroup.add(c);
@@ -59,33 +59,33 @@ public class Client {
 		secondDevGroup.add(e);
 		secondDevGroup.add(f);
 		
-		//ÔÙ¿´ÏúÊÛ²¿ÏÂµÄÈËÔ±Çé¿ö
+		//å†çœ‹é”€å”®éƒ¨ä¸‹çš„äººå‘˜æƒ…å†µ
 		salesDep.add(h);
 		salesDep.add(i);
 		
-		//×îºóÒ»¸ö²ÆÎñ
+		//æœ€åä¸€ä¸ªè´¢åŠ¡
 		financeDep.add(j);
 		
-		//Ê÷×´½á¹¹Ğ´Íê±Ï£¬È»ºóÎÒÃÇ´òÓ¡³öÀ´
+		//æ ‘çŠ¶ç»“æ„å†™å®Œæ¯•ï¼Œç„¶åæˆ‘ä»¬æ‰“å°å‡ºæ¥
 		System.out.println(ceo.getInfo());
 	
-		//´òÓ¡³öÀ´Õû¸öÊ÷ĞÎ
+		//æ‰“å°å‡ºæ¥æ•´ä¸ªæ ‘å½¢
 		getAllSubordinateInfo(ceo.getSubordinateInfo());
 		
 	}
 	
-	//±éÀúËùÓĞµÄÊ÷Ö¦½Úµã£¬´òÓ¡³öĞÅÏ¢
+	//éå†æ‰€æœ‰çš„æ ‘æèŠ‚ç‚¹ï¼Œæ‰“å°å‡ºä¿¡æ¯
 	private static String getAllSubordinateInfo(ArrayList subordinateList){
 		int length = subordinateList.size();
-		for(int m=0;m<length;m++){  //¶¨ÒåÒ»¸öArrayList³¤¶È£¬²»ÒªÔÚforÑ­»·ÖĞÃ¿´Î¼ÆËã
+		for(int m=0;m<length;m++){  //å®šä¹‰ä¸€ä¸ªArrayListé•¿åº¦ï¼Œä¸è¦åœ¨forå¾ªç¯ä¸­æ¯æ¬¡è®¡ç®—
 			Object s = subordinateList.get(m);
-			if(s instanceof Leaf){  //ÊÇ¸öÒ¶×Ó½Úµã£¬Ò²¾ÍÊÇÔ±¹¤
+			if(s instanceof Leaf){  //æ˜¯ä¸ªå¶å­èŠ‚ç‚¹ï¼Œä¹Ÿå°±æ˜¯å‘˜å·¥
 				ILeaf employee = (ILeaf)s;
 				System.out.println(((Leaf) s).getInfo());
 			}else{
 				IBranch branch = (IBranch)s;
 				System.out.println(branch.getInfo());
-				//ÔÙµİ¹éµ÷ÓÃ
+				//å†é€’å½’è°ƒç”¨
 				getAllSubordinateInfo(branch.getSubordinateInfo());
 			}
 		}

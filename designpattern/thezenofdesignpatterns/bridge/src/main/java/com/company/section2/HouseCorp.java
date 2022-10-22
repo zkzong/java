@@ -3,21 +3,21 @@ package com.company.section2;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ·¿µØ²ú¹«Ë¾£¬°´ÕÕ·­ÒëÀ´ËµÓ¦¸Ã½Ğrealty corp£¬Õâ¸öÊÇ±È½Ï×¼È·µÄ·­Òë
- * µ«ÊÇÎÒÎÊÄãËµ¸ö·¿µØ²ú¹«Ë¾ÒªÄã·­Òë³ÉÓ¢ÎÄ£¬ÄãµÚÒ»·´Ó³Ê²Ã´£¿¶ÔÂï»¹ÊÇhouse corp!
+ * æˆ¿åœ°äº§å…¬å¸ï¼ŒæŒ‰ç…§ç¿»è¯‘æ¥è¯´åº”è¯¥å«realty corpï¼Œè¿™ä¸ªæ˜¯æ¯”è¾ƒå‡†ç¡®çš„ç¿»è¯‘
+ * ä½†æ˜¯æˆ‘é—®ä½ è¯´ä¸ªæˆ¿åœ°äº§å…¬å¸è¦ä½ ç¿»è¯‘æˆè‹±æ–‡ï¼Œä½ ç¬¬ä¸€åæ˜ ä»€ä¹ˆï¼Ÿå¯¹å˜›è¿˜æ˜¯house corp!
  */
 public class HouseCorp extends Corp {
-	//·¿µØ²ú¹«Ë¾¾ÍÊÇ¸Ç·¿×Ó
+	//æˆ¿åœ°äº§å…¬å¸å°±æ˜¯ç›–æˆ¿å­
 	protected void produce() {
-		System.out.println("·¿µØ²ú¹«Ë¾¸Ç·¿×Ó...");
+		System.out.println("æˆ¿åœ°äº§å…¬å¸ç›–æˆ¿å­...");
 	}
-	//·¿µØ²úÂô·¿×Ó£¬×Ô¼º×¡ÄÇ¿É²»×¬Ç®
+	//æˆ¿åœ°äº§å–æˆ¿å­ï¼Œè‡ªå·±ä½é‚£å¯ä¸èµšé’±
 	protected void sell() {
-		System.out.println("·¿µØ²ú¹«Ë¾³öÊÛ·¿×Ó...");
+		System.out.println("æˆ¿åœ°äº§å…¬å¸å‡ºå”®æˆ¿å­...");
 	}
-	//·¿µØ²ú¹«Ë¾ºÜHighÁË£¬×¬Ç®£¬¼ÆËãÀûÈó
+	//æˆ¿åœ°äº§å…¬å¸å¾ˆHighäº†ï¼Œèµšé’±ï¼Œè®¡ç®—åˆ©æ¶¦
 	public void makeMoney(){
 		super.makeMoney();
-		System.out.println("·¿µØ²ú¹«Ë¾×¬´óÇ®ÁË...");
+		System.out.println("æˆ¿åœ°äº§å…¬å¸èµšå¤§é’±äº†...");
 	}
 }

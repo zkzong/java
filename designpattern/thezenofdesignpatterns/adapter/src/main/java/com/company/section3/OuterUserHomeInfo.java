@@ -10,13 +10,13 @@ import java.util.Map;
 public class OuterUserHomeInfo implements IOuterUserHomeInfo {
 
 	/* 
-	 * Ô±¹¤µÄ¼ÒÍ¥ĞÅÏ¢
+	 * å‘˜å·¥çš„å®¶åº­ä¿¡æ¯
 	 */
 	public Map getUserHomeInfo() {
 		HashMap homeInfo = new HashMap();
 		
-		homeInfo.put("homeTelNumbner", "Ô±¹¤µÄ¼ÒÍ¥µç»°ÊÇ....");
-		homeInfo.put("homeAddress", "Ô±¹¤µÄ¼ÒÍ¥µØÖ·ÊÇ....");
+		homeInfo.put("homeTelNumbner", "å‘˜å·¥çš„å®¶åº­ç”µè¯æ˜¯....");
+		homeInfo.put("homeAddress", "å‘˜å·¥çš„å®¶åº­åœ°å€æ˜¯....");
 		
 		return homeInfo;
 	}

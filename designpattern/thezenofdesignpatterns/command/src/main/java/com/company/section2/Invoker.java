@@ -4,18 +4,18 @@ package com.company.section2;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ½ÓÍ·ÈËµÄÖ°Ôğ¾ÍÊÇ½ÓÊÕÃüÁî£¬²¢Ö´ĞĞ
+ * æ¥å¤´äººçš„èŒè´£å°±æ˜¯æ¥æ”¶å‘½ä»¤ï¼Œå¹¶æ‰§è¡Œ
  */
 public class Invoker {
-	//Ê²Ã´ÃüÁî
+	//ä»€ä¹ˆå‘½ä»¤
 	private Command command;
 	
-	//¿Í»§·¢³öÃüÁî
+	//å®¢æˆ·å‘å‡ºå‘½ä»¤
 	public void setCommand(Command command){
 		this.command = command;
 	}
 	
-	//Ö´ĞĞ¿Í»§µÄÃüÁî
+	//æ‰§è¡Œå®¢æˆ·çš„å‘½ä»¤
 	public void action(){
 		this.command.execute();
 	}

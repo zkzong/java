@@ -3,20 +3,20 @@ package com.company.section2;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ²É¹ºÀà
+ * é‡‡è´­ç±»
  */
 public class Purchase extends AbstractColleague{
 	
 	public Purchase(AbstractMediator _mediator){
 		super(_mediator);
 	}
-	//²É¹ºIBMĞÍºÅµÄµçÄÔ
+	//é‡‡è´­IBMå‹å·çš„ç”µè„‘
 	public void buyIBMcomputer(int number){
 		super.mediator.execute("purchase.buy", number);
 	}
 	
-	//²»ÔÚ²É¹ºIBMµçÄÔ
+	//ä¸åœ¨é‡‡è´­IBMç”µè„‘
 	public void refuseBuyIBM(){
-		System.out.println("²»ÔÙ²É¹ºIBMµçÄÔ");
+		System.out.println("ä¸å†é‡‡è´­IBMç”µè„‘");
 	}
 }

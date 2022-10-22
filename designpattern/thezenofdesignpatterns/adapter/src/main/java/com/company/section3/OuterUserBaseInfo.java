@@ -10,13 +10,13 @@ import java.util.Map;
 public class OuterUserBaseInfo implements IOuterUserBaseInfo {
 
 	/* 
-	 * ÓÃ»§µÄ»ù±¾ĞÅÏ¢
+	 * ç”¨æˆ·çš„åŸºæœ¬ä¿¡æ¯
 	 */
 	public Map getUserBaseInfo() {
 		HashMap baseInfoMap = new HashMap();
 		
-		baseInfoMap.put("userName", "Õâ¸öÔ±¹¤½Ğ»ìÊÀÄ§Íõ....");
-		baseInfoMap.put("mobileNumber", "Õâ¸öÔ±¹¤µç»°ÊÇ....");
+		baseInfoMap.put("userName", "è¿™ä¸ªå‘˜å·¥å«æ··ä¸–é­”ç‹....");
+		baseInfoMap.put("mobileNumber", "è¿™ä¸ªå‘˜å·¥ç”µè¯æ˜¯....");
 		
 		return baseInfoMap;
 	}

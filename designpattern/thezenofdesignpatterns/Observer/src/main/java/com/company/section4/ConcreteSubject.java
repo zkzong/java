@@ -6,7 +6,7 @@ package com.company.section4;
  */
 public class ConcreteSubject extends Subject {
 	
-	//¾ßÌåµÄÒµÎñ
+	//å…·ä½“çš„ä¸šåŠ¡
 	public void doSomething(){
 		/*
 		 * do something

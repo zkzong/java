@@ -3,30 +3,30 @@ package com.company.section2;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * LeafÊÇÊ÷Ò¶µÄÒ²ÊÇ£¬ÔÚÕâÀï¾ÍÊÇÎÒÃÇÕâĞ©Ğ¡±ø
+ * Leafæ˜¯æ ‘å¶çš„ä¹Ÿæ˜¯ï¼Œåœ¨è¿™é‡Œå°±æ˜¯æˆ‘ä»¬è¿™äº›å°å…µ
  */
 @SuppressWarnings("all")
 public class Leaf implements ILeaf {
-	//Ğ¡±øÒ²ÓĞÃû³Æ
+	//å°å…µä¹Ÿæœ‰åç§°
 	private String name = "";
-	//Ğ¡±øÒ²ÓĞÖ°Î»
+	//å°å…µä¹Ÿæœ‰èŒä½
 	private String position = "";
-	//Ğ¡±øÒ²ÓĞĞ½Ë®£¬·ñÔòË­¸øÄã¸É
+	//å°å…µä¹Ÿæœ‰è–ªæ°´ï¼Œå¦åˆ™è°ç»™ä½ å¹²
 	private int salary = 0;
 	
-	//Í¨¹ıÒ»¸ö¹¹Ôìº¯Êı´«µİĞ¡±øµÄĞÅÏ¢
+	//é€šè¿‡ä¸€ä¸ªæ„é€ å‡½æ•°ä¼ é€’å°å…µçš„ä¿¡æ¯
 	public Leaf(String name,String position,int salary){
 		this.name = name;
 		this.position = position;
 		this.salary = salary;
 	}
 	
-	//»ñµÃĞ¡±øµÄĞÅÏ¢
+	//è·å¾—å°å…µçš„ä¿¡æ¯
 	public String getInfo() {
 		String info = "";
-		info = "ĞÕÃû£º" + this.name;
-		info = info + "\tÖ°Î»£º"+ this.position;
-		info = info + "\tĞ½Ë®£º" + this.salary;
+		info = "å§“åï¼š" + this.name;
+		info = info + "\tèŒä½ï¼š"+ this.position;
+		info = info + "\tè–ªæ°´ï¼š" + this.salary;
 		return info;
 	}
 

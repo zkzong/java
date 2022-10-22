@@ -7,15 +7,15 @@ package com.company.section1;
 public class Client {
 
 	public static void main(String[] args) {
-		//´´½¨Ò»¸ö´¦ÀíĞÅ¼şµÄ¹ı³Ì
+		//åˆ›å»ºä¸€ä¸ªå¤„ç†ä¿¡ä»¶çš„è¿‡ç¨‹
 		ILetterProcess letterProcess = new LetterProcessImpl();	
-		//¿ªÊ¼Ğ´ĞÅ
+		//å¼€å§‹å†™ä¿¡
 		letterProcess.writeContext("Hello,It's me,do you know who I am? I'm your old lover. I'd like to....");	
-		//¿ªÊ¼Ğ´ĞÅ·â
+		//å¼€å§‹å†™ä¿¡å°
 		letterProcess.fillEnvelope("Happy Road No. 666,God Province,Heaven");	
-		//°ÑĞÅ·Åµ½ĞÅ·âÀï£¬²¢·â×°ºÃ
+		//æŠŠä¿¡æ”¾åˆ°ä¿¡å°é‡Œï¼Œå¹¶å°è£…å¥½
 		letterProcess.letterInotoEnvelope();	
-		//ÅÜµ½ÓÊ¾Ö°ÑĞÅÈûµ½ÓÊÏä£¬Í¶µİ
+		//è·‘åˆ°é‚®å±€æŠŠä¿¡å¡åˆ°é‚®ç®±ï¼ŒæŠ•é€’
 		letterProcess.sendLetter();
 	}
 }

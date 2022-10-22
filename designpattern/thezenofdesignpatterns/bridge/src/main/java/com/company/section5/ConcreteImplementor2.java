@@ -7,10 +7,10 @@ package com.company.section5;
 public class ConcreteImplementor2 implements Implementor{
 
 	public void doSomething(){
-		//业务逻辑处理
+		//涓氬姟閫昏緫澶勭悊
 	}
 	
 	public void doAnything(){
-		//业务逻辑处理
+		//涓氬姟閫昏緫澶勭悊
 	}
 }

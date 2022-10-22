@@ -5,13 +5,13 @@ package com.company.section3;
  * I'm glad to share my knowledge with you all.
  */
 public class House extends Product {
-	//豆腐渣就豆腐渣呗，好歹也是个房子
+	//璞嗚厫娓ｅ氨璞嗚厫娓ｅ憲锛屽ソ姝逛篃鏄釜鎴垮瓙
 	public void beProducted() {
-		System.out.println("生产出的房子是这个样子的...");
+		System.out.println("鐢熶骇鍑虹殑鎴垮瓙鏄繖涓牱瀛愮殑...");
 	}
-	//虽然是豆腐渣，也是能够销售出去的
+	//铏界劧鏄眴鑵愭福锛屼篃鏄兘澶熼攢鍞嚭鍘荤殑
 	public void beSelled() {
-		System.out.println("生产出的房子卖出去了...");
+		System.out.println("鐢熶骇鍑虹殑鎴垮瓙鍗栧嚭鍘讳簡...");
 	}
 }
 

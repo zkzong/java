@@ -7,14 +7,14 @@ package com.company.section8;
 public class Client {
 	
 	public static void main(String[] args) {
-		//¶¨Òå³ö·¢ÆğÈË
+		//å®šä¹‰å‡ºå‘èµ·äºº
 		Originator originator = new Originator();
-		//¶¨Òå³ö±¸ÍüÂ¼¹ÜÀíÔ±
+		//å®šä¹‰å‡ºå¤‡å¿˜å½•ç®¡ç†å‘˜
 		Caretaker caretaker = new Caretaker();
-		//´´½¨Á½¸ö±¸ÍüÂ¼
+		//åˆ›å»ºä¸¤ä¸ªå¤‡å¿˜å½•
 		caretaker.setMemento("001",originator.createMemento());
 		caretaker.setMemento("002",originator.createMemento());
-		//»Ö¸´Ò»¸öÖ¸¶¨±ê¼ÇµÄ±¸ÍüÂ¼
+		//æ¢å¤ä¸€ä¸ªæŒ‡å®šæ ‡è®°çš„å¤‡å¿˜å½•
 		originator.restoreMemento(caretaker.getMemento("001"));
 	}
 }

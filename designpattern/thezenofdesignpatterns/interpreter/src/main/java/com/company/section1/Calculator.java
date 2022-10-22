@@ -6,28 +6,28 @@ import java.util.Stack;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¼ÆËãÆ÷
+ * è®¡ç®—å™¨
  */
 public class Calculator {
-	//¶¨ÒåµÄ±í´ïÊ½
+	//å®šä¹‰çš„è¡¨è¾¾å¼
 	private Expression expression;  
 	
-	//¹¹Ôìº¯Êı´«²Î,²¢½âÎö
+	//æ„é€ å‡½æ•°ä¼ å‚,å¹¶è§£æ
 	public Calculator(String expStr){
-		//¶¨ÒåÒ»¸ö¶ÑÕ»£¬°²ÅÅÔËËãµÄÏÈºóË³Ğò
+		//å®šä¹‰ä¸€ä¸ªå †æ ˆï¼Œå®‰æ’è¿ç®—çš„å…ˆåé¡ºåº
 		Stack<Expression> stack = new Stack<Expression>();
 		
-		//±í´ïÊ½²ğ·ÖÎª×Ö·ûÊı×é
+		//è¡¨è¾¾å¼æ‹†åˆ†ä¸ºå­—ç¬¦æ•°ç»„
 		char[] charArray = expStr.toCharArray();
 		
-		//ÔËËã
+		//è¿ç®—
 		Expression left = null;
 		Expression right = null;
 		for(int i=0;i<charArray.length;i++){
 		
 			switch(charArray[i])	{			
-				case '+': //¼Ó·¨				
-					//¼Ó·¨½á¹û·Åµ½¶ÑÕ»ÖĞ
+				case '+': //åŠ æ³•				
+					//åŠ æ³•ç»“æœæ”¾åˆ°å †æ ˆä¸­
 					left = stack.pop();
 					right = new VarExpression(String.valueOf(charArray[++i]));
 					stack.push(new AddExpression(left,right));
@@ -37,16 +37,16 @@ public class Calculator {
 					right = new VarExpression(String.valueOf(charArray[++i]));
 					stack.push(new SubExpression(left,right));
 					break;
-				default:  //¹«Ê½ÖĞµÄ±äÁ¿			
+				default:  //å…¬å¼ä¸­çš„å˜é‡			
 					stack.push(new VarExpression(String.valueOf(charArray[i])));
 			}
 		}
 		
-		//°ÑÔËËã½á¹ûÅ×³öÀ´
+		//æŠŠè¿ç®—ç»“æœæŠ›å‡ºæ¥
 		this.expression = stack.pop();
 	}
 	
-	//¿ªÊ¼ÔËËã
+	//å¼€å§‹è¿ç®—
 	public int run(HashMap<String,Integer> var){
 		return this.expression.interpreter(var);
 	}

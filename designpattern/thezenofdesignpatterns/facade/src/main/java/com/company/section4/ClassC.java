@@ -7,6 +7,6 @@ package com.company.section4;
 public class ClassC {
 	
 	public void doSomethingC(){
-		//ÒµÎñÂß¼­
+		//ä¸šåŠ¡é€»è¾‘
 	}
 }

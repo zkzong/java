@@ -3,20 +3,20 @@ package com.company.section3;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÁõË¹Õâ¸öÈË£¬ÊÇ¸ö¹Û²ìÕß£¬Ö»Òªº«·Ç×ÓÒ»ÓĞ¶¯¾²£¬Õâ±ß¾ÍÖªµÀ
- * ¶Å×«µÄÈËÃû
+ * åˆ˜æ–¯è¿™ä¸ªäººï¼Œæ˜¯ä¸ªè§‚å¯Ÿè€…ï¼Œåªè¦éŸ©éå­ä¸€æœ‰åŠ¨é™ï¼Œè¿™è¾¹å°±çŸ¥é“
+ * æœæ’°çš„äººå
  */
 public class LiuSi implements Observer{
 	
-	//ÁõË¹£¬¹Û²ìµ½º«·Ç×Ó»î¶¯ºó£¬×Ô¼ºÒ²×öÒ»¶¨µÃÊÂÇé
+	//åˆ˜æ–¯ï¼Œè§‚å¯Ÿåˆ°éŸ©éå­æ´»åŠ¨åï¼Œè‡ªå·±ä¹Ÿåšä¸€å®šå¾—äº‹æƒ…
 	public void update(String str){
-		System.out.println("ÁõË¹£º¹Û²ìµ½º«·Ç×Ó»î¶¯£¬¿ªÊ¼¶¯×÷ÁË...");
+		System.out.println("åˆ˜æ–¯ï¼šè§‚å¯Ÿåˆ°éŸ©éå­æ´»åŠ¨ï¼Œå¼€å§‹åŠ¨ä½œäº†...");
 		this.happy(str);
-		System.out.println("ÁõË¹£ºÕæ±»ÀÖËÀÁË\n");
+		System.out.println("åˆ˜æ–¯ï¼šçœŸè¢«ä¹æ­»äº†\n");
 	}
 	
-	//Ò»¿´º«·Ç×ÓÓĞ±ä»¯£¬Ëû¾Í¿ìÀÖ
+	//ä¸€çœ‹éŸ©éå­æœ‰å˜åŒ–ï¼Œä»–å°±å¿«ä¹
 	private void happy(String context){
-		System.out.println("ÁõË¹£ºÒòÎª" +context+",¡ª¡ªËùÒÔÎÒ¿ìÀÖÑ½£¡" );
+		System.out.println("åˆ˜æ–¯ï¼šå› ä¸º" +context+",â€”â€”æ‰€ä»¥æˆ‘å¿«ä¹å‘€ï¼" );
 	}
 }

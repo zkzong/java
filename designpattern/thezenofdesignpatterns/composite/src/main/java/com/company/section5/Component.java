@@ -8,17 +8,17 @@ import java.util.ArrayList;
  */
 public abstract class Component {
 	
-	//¸öÌåºÍÕûÌå¶¼¾ßÓĞµÄ¹²Ïí
+	//ä¸ªä½“å’Œæ•´ä½“éƒ½å…·æœ‰çš„å…±äº«
 	public void doSomething(){
-		//±àĞ´ÒµÎñÂß¼­
+		//ç¼–å†™ä¸šåŠ¡é€»è¾‘
 	}	
 	
-	//Ôö¼ÓÒ»¸öÒ¶×Ó¹¹¼ş»òÊ÷Ö¦¹¹¼ş
+	//å¢åŠ ä¸€ä¸ªå¶å­æ„ä»¶æˆ–æ ‘ææ„ä»¶
 	public abstract void add(Component component);
 	
-	//É¾³ıÒ»¸öÒ¶×Ó¹¹¼ş»òÊ÷Ö¦¹¹¼ş
+	//åˆ é™¤ä¸€ä¸ªå¶å­æ„ä»¶æˆ–æ ‘ææ„ä»¶
 	public abstract void remove(Component component);
 	
-	//»ñµÃ·ÖÖ§ÏÂµÄËùÓĞÒ¶×Ó¹¹¼şºÍÊ÷Ö¦¹¹¼ş
+	//è·å¾—åˆ†æ”¯ä¸‹çš„æ‰€æœ‰å¶å­æ„ä»¶å’Œæ ‘ææ„ä»¶
 	public abstract ArrayList<Component> getChildren();
 }

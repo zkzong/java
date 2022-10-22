@@ -10,7 +10,7 @@ public abstract class SymbolExpression extends Expression {
 	protected Expression left;
 	protected Expression right;
 	
-	//ËùÓĞµÄ½âÎö¹«Ê½¶¼Ó¦Ö»¹ØĞÄ×Ô¼º×óÓÒÁ½¸ö±í´ïÊ½µÄ½á¹û
+	//æ‰€æœ‰çš„è§£æå…¬å¼éƒ½åº”åªå…³å¿ƒè‡ªå·±å·¦å³ä¸¤ä¸ªè¡¨è¾¾å¼çš„ç»“æœ
 	public SymbolExpression(Expression _left,Expression _right){
 		this.left = _left;
 		this.right = _right;

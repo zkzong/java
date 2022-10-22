@@ -3,14 +3,14 @@ package com.company.section1;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¸¸Ç×
+ * çˆ¶äº²
  */
 public class Father implements IHandler {
 
-	//Î´³ö¼ŞÅ®¶ùÀ´ÇëÊ¾¸¸Ç×
+	//æœªå‡ºå«å¥³å„¿æ¥è¯·ç¤ºçˆ¶äº²
 	public void HandleMessage(IWomen women) {
-		System.out.println("Å®¶ùµÄÇëÊ¾ÊÇ£º"+women.getRequest());
-		System.out.println("¸¸Ç×µÄ´ğ¸´ÊÇ:Í¬Òâ");
+		System.out.println("å¥³å„¿çš„è¯·ç¤ºæ˜¯ï¼š"+women.getRequest());
+		System.out.println("çˆ¶äº²çš„ç­”å¤æ˜¯:åŒæ„");
 	}
 
 }

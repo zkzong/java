@@ -8,7 +8,7 @@ import com.company.command_name.os.FileManager;
  * I'm glad to share my knowledge with you all.
  */
 public class LS_A extends AbstractLS {
-	//ls -aÃüÁî
+	//ls -aå‘½ä»¤
 	protected String echo(CommandVO vo) {
 		return FileManager.ls_a(vo.formatData());
 	}

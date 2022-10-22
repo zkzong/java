@@ -7,7 +7,7 @@ package com.company.section7;
  */
 public class Originator {
 	
-	//ÄÚ²¿×´Ì¬
+	//å†…éƒ¨çŠ¶æ€
 	private String state1 = "";
 	private String state2 = "";
 	private String state3 = ""; 
@@ -36,17 +36,17 @@ public class Originator {
 		this.state3 = state3;
 	}
 
-	//´´½¨Ò»¸ö±¸ÍüÂ¼
+	//åˆ›å»ºä¸€ä¸ªå¤‡å¿˜å½•
 	public Memento createMemento(){
 		return new Memento(BeanUtils.backupProp(this));
 	}
 	
-	//»Ö¸´Ò»¸ö±¸ÍüÂ¼
+	//æ¢å¤ä¸€ä¸ªå¤‡å¿˜å½•
 	public void restoreMemento(Memento _memento){
 		BeanUtils.restoreProp(this, _memento.getStateMap());
 	}
 	
-	//Ôö¼ÓÒ»¸ötoString·½·¨
+	//å¢åŠ ä¸€ä¸ªtoStringæ–¹æ³•
 	@Override
 	public String toString(){
 		return "state1=" +state1+"\nstat2="+state2+"\nstate3="+state3; 

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * 给定一个顺序，返回一个宝马车
+ * 缁欏畾涓�涓『搴忥紝杩斿洖涓�涓疂椹溅
  */
 public class BMWBuilder extends CarBuilder {
 	private BMWModel bmw = new BMWModel();

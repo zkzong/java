@@ -7,50 +7,50 @@ package com.company.section1;
 public class UserInfo implements IUserInfo {
 
 	/* 
-	 * »ñµÃ¼ÒÍ¥µØÖ·£¬ÏÂÊôËÍÀñÒ²¿ÉÒÔÕÒµ½µØ·½
+	 * è·å¾—å®¶åº­åœ°å€ï¼Œä¸‹å±é€ç¤¼ä¹Ÿå¯ä»¥æ‰¾åˆ°åœ°æ–¹
 	 */
 	public String getHomeAddress() {
-		System.out.println("ÕâÀïÊÇÔ±¹¤µÄ¼ÒÍ¥µØÖ·....");
+		System.out.println("è¿™é‡Œæ˜¯å‘˜å·¥çš„å®¶åº­åœ°å€....");
 		return null;
 	}
 
 	/* 
-	 * »ñµÃ¼ÒÍ¥µç»°ºÅÂë
+	 * è·å¾—å®¶åº­ç”µè¯å·ç 
 	 */
 	public String getHomeTelNumber() {
-		System.out.println("Ô±¹¤µÄ¼ÒÍ¥µç»°ÊÇ....");
+		System.out.println("å‘˜å·¥çš„å®¶åº­ç”µè¯æ˜¯....");
 		return null;
 	}
 
 	/* 
-	 * Ô±¹¤µÄÖ°Î»£¬ÊÇ²¿ÃÅ¾­Àí»¹ÊÇĞ¡±ø
+	 * å‘˜å·¥çš„èŒä½ï¼Œæ˜¯éƒ¨é—¨ç»ç†è¿˜æ˜¯å°å…µ
 	 */
 	public String getJobPosition() {
-		System.out.println("Õâ¸öÈËµÄÖ°Î»ÊÇBOSS....");
+		System.out.println("è¿™ä¸ªäººçš„èŒä½æ˜¯BOSS....");
 		return null;
 	}
 
 	/* 
-	 * ÊÖ»úºÅÂë
+	 * æ‰‹æœºå·ç 
 	 */
 	public String getMobileNumber() {
-		System.out.println("Õâ¸öÈËµÄÊÖ»úºÅÂëÊÇ0000....");
+		System.out.println("è¿™ä¸ªäººçš„æ‰‹æœºå·ç æ˜¯0000....");
 		return null;
 	}
 
 	/* 
-	 * °ì¹«ÊÒµç»°£¬·³ÔêµÄÊ±ºò×îºÃ¡°²»Ğ¡ĞÄ¡±°Ñµç»°ÏßÌßµô£¬ÎÒ¾­³£ÕâÃ´¸É£¬¶Ô¼º¶ÔÈË¶¼ÓĞºÃ´¦
+	 * åŠå…¬å®¤ç”µè¯ï¼Œçƒ¦èºçš„æ—¶å€™æœ€å¥½â€œä¸å°å¿ƒâ€æŠŠç”µè¯çº¿è¸¢æ‰ï¼Œæˆ‘ç»å¸¸è¿™ä¹ˆå¹²ï¼Œå¯¹å·±å¯¹äººéƒ½æœ‰å¥½å¤„
 	 */
 	public String getOfficeTelNumber() {
-		System.out.println("°ì¹«ÊÒµç»°ÊÇ....");
+		System.out.println("åŠå…¬å®¤ç”µè¯æ˜¯....");
 		return null;
 	}
 
 	/* 
-	 * ĞÕÃûÁË£¬Õâ¸öÀÏÖØÒªÁË
+	 * å§“åäº†ï¼Œè¿™ä¸ªè€é‡è¦äº†
 	 */
 	public String getUserName() {
-		System.out.println("ĞÕÃû½Ğ×ö...");
+		System.out.println("å§“åå«åš...");
 		return null;
 	}
 

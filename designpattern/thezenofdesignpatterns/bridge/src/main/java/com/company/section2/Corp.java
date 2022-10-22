@@ -7,23 +7,23 @@ package com.company.section2;
 public abstract class Corp {
 	
 	/*
-	 * �ǹ�˾��Ӧ���������ѣ��¹���ʲô������˾��������ҵ��˾
-	 * ��ÿ����˾�������Ķ�������һ����������ʵ���������
+	 * 是公司就应该有生产把，甭管是什么软件公司还是制造业公司
+	 * 那每个公司的生产的东西都不一样，所以由实现类来完成
 	 */
 	protected abstract void  produce();
 	
 	/*
-	 * �в�Ʒ�ˣ��ǿ϶�Ҫ����ѽ���������㹫˾��ô����
+	 * 有产品了，那肯定要销售呀，不销售你公司怎么生存
 	 */
 	protected abstract void sell(); 
 	
-	//��˾�Ǹ�ʲô�ģ�׬Ǯ��ѽ����׬Ǯɵ�ӲŸ�
+	//公司是干什么的？赚钱的呀，不赚钱傻子才干
 	public void makeMoney(){
 		
-		//ÿ����˾����һ����������
+		//每个公司都是一样，先生产
 		this.produce();
 		
-		//Ȼ������
+		//然后销售
 		this.sell();
 		
 	}

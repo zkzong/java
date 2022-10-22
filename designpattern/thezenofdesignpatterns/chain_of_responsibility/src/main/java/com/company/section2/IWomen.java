@@ -3,13 +3,13 @@ package com.company.section2;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¹Å´ú±¯°§Å®ĞÔµÄ×Ü³Æ
+ * å¤ä»£æ‚²å“€å¥³æ€§çš„æ€»ç§°
  */
 public interface IWomen {
 
-	//»ñµÃ¸öÈË×´¿ö
+	//è·å¾—ä¸ªäººçŠ¶å†µ
 	public int getType();
 	
-	//»ñµÃ¸öÈËÇëÊ¾£¬ÄãÒª¸ÉÊ²Ã´£¿³öÈ¥¹ä½Ö£¿Ô¼»á?»¹ÊÇ¿´µçÓ°
+	//è·å¾—ä¸ªäººè¯·ç¤ºï¼Œä½ è¦å¹²ä»€ä¹ˆï¼Ÿå‡ºå»é€›è¡—ï¼Ÿçº¦ä¼š?è¿˜æ˜¯çœ‹ç”µå½±
 	public String getRequest();
 }

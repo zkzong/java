@@ -3,16 +3,16 @@ package com.company.section3;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ËùÓĞ±»¹Û²ìÕßÕß£¬Í¨ÓÃ½Ó¿Ú
+ * æ‰€æœ‰è¢«è§‚å¯Ÿè€…è€…ï¼Œé€šç”¨æ¥å£
  */
 public interface Observable {
 	
-	//Ôö¼ÓÒ»¸ö¹Û²ìÕß
+	//å¢åŠ ä¸€ä¸ªè§‚å¯Ÿè€…
 	public void addObserver(Observer observer);
 	
-	//É¾³ıÒ»¸ö¹Û²ìÕß£¬¡ª¡ªÎÒ²»ÏëÈÃÄã¿´ÁË
+	//åˆ é™¤ä¸€ä¸ªè§‚å¯Ÿè€…ï¼Œâ€”â€”æˆ‘ä¸æƒ³è®©ä½ çœ‹äº†
 	public void deleteObserver(Observer observer);
 	
-	//¼ÈÈ»Òª¹Û²ì£¬ÎÒ·¢Éú¸Ä±äÁËËûÒ²Ó¦¸ÃÓÃËù¶¯×÷¡ª¡ªÍ¨Öª¹Û²ìÕß
+	//æ—¢ç„¶è¦è§‚å¯Ÿï¼Œæˆ‘å‘ç”Ÿæ”¹å˜äº†ä»–ä¹Ÿåº”è¯¥ç”¨æ‰€åŠ¨ä½œâ€”â€”é€šçŸ¥è§‚å¯Ÿè€…
 	public void notifyObservers(String context);
 }

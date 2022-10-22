@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * 各种设施都给了，我们按照一定的顺序制造一个奔驰车
+ * 鍚勭璁炬柦閮界粰浜嗭紝鎴戜滑鎸夌収涓�瀹氱殑椤哄簭鍒堕�犱竴涓椹拌溅
  */
 public class BenzBuilder extends CarBuilder {
 	private BenzModel benz = new BenzModel();

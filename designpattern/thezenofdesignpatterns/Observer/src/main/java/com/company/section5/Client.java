@@ -5,26 +5,26 @@ import java.util.Observer;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * Õâ¸öClient¾ÍÊÇÎÒÃÇ£¬ÓÃÎÒÃÇµÄÊÓ½Ç¿´´ıÕâ¶ÎÀúÊ·
+ * è¿™ä¸ªClientå°±æ˜¯æˆ‘ä»¬ï¼Œç”¨æˆ‘ä»¬çš„è§†è§’çœ‹å¾…è¿™æ®µå†å²
  */
 public class Client {
 	
 	public static void main(String[] args) {
-		//Èı¸ö¹Û²ìÕß²úÉú³öÀ´
+		//ä¸‰ä¸ªè§‚å¯Ÿè€…äº§ç”Ÿå‡ºæ¥
 		Observer liSi = new LiSi();
 		Observer wangSi = new WangSi();
 		Observer liuSi = new LiuSi();
 		
-		//¶¨Òå³öº«·Ç×Ó
+		//å®šä¹‰å‡ºéŸ©éå­
 		HanFeiZi hanFeiZi = new HanFeiZi();
 		
-		//ÎÒÃÇºóÈË¸ù¾İÀúÊ·£¬ÃèÊöÕâ¸ö³¡¾°£¬ÓĞÈı¸öÈËÔÚ¹Û²ìº«·Ç×Ó
+		//æˆ‘ä»¬åäººæ ¹æ®å†å²ï¼Œæè¿°è¿™ä¸ªåœºæ™¯ï¼Œæœ‰ä¸‰ä¸ªäººåœ¨è§‚å¯ŸéŸ©éå­
 		
 		hanFeiZi.addObserver(wangSi);
 		hanFeiZi.addObserver(liuSi);
 		hanFeiZi.addObserver(liSi);
 		
-		//È»ºóÕâÀïÎÒÃÇ¿´¿´º«·Ç×ÓÔÚ¸ÉÊ²Ã´
+		//ç„¶åè¿™é‡Œæˆ‘ä»¬çœ‹çœ‹éŸ©éå­åœ¨å¹²ä»€ä¹ˆ
 		hanFeiZi.haveBreakfast();		
 	}
 }

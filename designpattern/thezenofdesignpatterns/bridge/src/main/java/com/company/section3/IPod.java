@@ -7,10 +7,10 @@ package com.company.section3;
 public class IPod extends Product {
 
 	public void beProducted() {
-		System.out.println("生产出的iPod是这个样子的...");
+		System.out.println("鐢熶骇鍑虹殑iPod鏄繖涓牱瀛愮殑...");
 	}
 	public void beSelled() {
-		System.out.println("生产出的iPod卖出去了...");
+		System.out.println("鐢熶骇鍑虹殑iPod鍗栧嚭鍘讳簡...");
 	}
 }
 

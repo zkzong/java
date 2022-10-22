@@ -5,65 +5,65 @@ import java.util.ArrayList;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ×é×°Õâ¸öÊ÷ĞÎ½á¹¹£¬²¢Õ¹Ê¾³öÀ´
+ * ç»„è£…è¿™ä¸ªæ ‘å½¢ç»“æ„ï¼Œå¹¶å±•ç¤ºå‡ºæ¥
  */
 @SuppressWarnings("all") 
 public class Client {
 
 	public static void main(String[] args) {
-		//Ê×ÏÈÊÇ×é×°Ò»¸ö×éÖ¯½á¹¹³öÀ´
+		//é¦–å…ˆæ˜¯ç»„è£…ä¸€ä¸ªç»„ç»‡ç»“æ„å‡ºæ¥
 		Branch ceo = compositeCorpTree();
 		
-		//Ê×ÏÈ°ÑCEOµÄĞÅÏ¢´òÓ¡³öÀ´£º
+		//é¦–å…ˆæŠŠCEOçš„ä¿¡æ¯æ‰“å°å‡ºæ¥ï¼š
 		System.out.println(ceo.getInfo());
 		
-		//È»ºóÊÇËùÓĞÔ±¹¤ĞÅÏ¢
+		//ç„¶åæ˜¯æ‰€æœ‰å‘˜å·¥ä¿¡æ¯
 		System.out.println(getTreeInfo(ceo));
 	}
 	
-	//°ÑÕû¸öÊ÷×é×°³öÀ´
+	//æŠŠæ•´ä¸ªæ ‘ç»„è£…å‡ºæ¥
 	public static Branch compositeCorpTree(){
-		//Ê×ÏÈ²úÉú×Ü¾­ÀíCEO
-		Branch root = new Branch("Íõ´óÂé×Ó","×Ü¾­Àí",100000);
-		//°ÑÈı¸ö²¿ÃÅ¾­Àí²úÉú³öÀ´
-		Branch developDep = new Branch("Áõ´óÈ³×Ó","ÑĞ·¢²¿ÃÅ¾­Àí",10000);
-		Branch salesDep = new Branch("Âí¶ş¹Õ×Ó","ÏúÊÛ²¿ÃÅ¾­Àí",20000);
-		Branch financeDep = new Branch("ÕÔÈıÍÕ×Ó","²ÆÎñ²¿¾­Àí",30000);
+		//é¦–å…ˆäº§ç”Ÿæ€»ç»ç†CEO
+		Branch root = new Branch("ç‹å¤§éº»å­","æ€»ç»ç†",100000);
+		//æŠŠä¸‰ä¸ªéƒ¨é—¨ç»ç†äº§ç”Ÿå‡ºæ¥
+		Branch developDep = new Branch("åˆ˜å¤§ç˜¸å­","ç ”å‘éƒ¨é—¨ç»ç†",10000);
+		Branch salesDep = new Branch("é©¬äºŒæ‹å­","é”€å”®éƒ¨é—¨ç»ç†",20000);
+		Branch financeDep = new Branch("èµµä¸‰é©¼å­","è´¢åŠ¡éƒ¨ç»ç†",30000);
 		
-		//ÔÙ°ÑÈı¸öĞ¡×é³¤²úÉú³öÀ´
-		Branch firstDevGroup = new Branch("ÑîÈıØ¿Ğ±","¿ª·¢Ò»×é×é³¤",5000);
-		Branch secondDevGroup = new Branch("Îâ´ó°ôé³","¿ª·¢¶ş×é×é³¤",6000);
+		//å†æŠŠä¸‰ä¸ªå°ç»„é•¿äº§ç”Ÿå‡ºæ¥
+		Branch firstDevGroup = new Branch("æ¨ä¸‰ä¹œæ–œ","å¼€å‘ä¸€ç»„ç»„é•¿",5000);
+		Branch secondDevGroup = new Branch("å´å¤§æ£’æ§Œ","å¼€å‘äºŒç»„ç»„é•¿",6000);
 		
-		//°ÑËùÓĞµÄĞ¡±ø¶¼²úÉú³öÀ´
-		Leaf a = new Leaf("a","¿ª·¢ÈËÔ±",2000);
-		Leaf b = new Leaf("b","¿ª·¢ÈËÔ±",2000);
-		Leaf c = new Leaf("c","¿ª·¢ÈËÔ±",2000);
-		Leaf d = new Leaf("d","¿ª·¢ÈËÔ±",2000);
-		Leaf e = new Leaf("e","¿ª·¢ÈËÔ±",2000);
-		Leaf f = new Leaf("f","¿ª·¢ÈËÔ±",2000);
-		Leaf g = new Leaf("g","¿ª·¢ÈËÔ±",2000);
-		Leaf h = new Leaf("h","ÏúÊÛÈËÔ±",5000);
-		Leaf i = new Leaf("i","ÏúÊÛÈËÔ±",4000);
-		Leaf j = new Leaf("j","²ÆÎñÈËÔ±",5000);
-		Leaf k = new Leaf("k","CEOÃØÊé",8000);
-		Leaf zhengLaoLiu = new Leaf("Ö£ÀÏÁù","ÑĞ·¢²¿¸±¾­Àí",20000);
+		//æŠŠæ‰€æœ‰çš„å°å…µéƒ½äº§ç”Ÿå‡ºæ¥
+		Leaf a = new Leaf("a","å¼€å‘äººå‘˜",2000);
+		Leaf b = new Leaf("b","å¼€å‘äººå‘˜",2000);
+		Leaf c = new Leaf("c","å¼€å‘äººå‘˜",2000);
+		Leaf d = new Leaf("d","å¼€å‘äººå‘˜",2000);
+		Leaf e = new Leaf("e","å¼€å‘äººå‘˜",2000);
+		Leaf f = new Leaf("f","å¼€å‘äººå‘˜",2000);
+		Leaf g = new Leaf("g","å¼€å‘äººå‘˜",2000);
+		Leaf h = new Leaf("h","é”€å”®äººå‘˜",5000);
+		Leaf i = new Leaf("i","é”€å”®äººå‘˜",4000);
+		Leaf j = new Leaf("j","è´¢åŠ¡äººå‘˜",5000);
+		Leaf k = new Leaf("k","CEOç§˜ä¹¦",8000);
+		Leaf zhengLaoLiu = new Leaf("éƒ‘è€å…­","ç ”å‘éƒ¨å‰¯ç»ç†",20000);
 		
-		//¿ªÊ¼×é×°
-		//CEOÏÂÓĞÈı¸ö²¿ÃÅ¾­ÀíºÍÒ»¸öÃØÊé
+		//å¼€å§‹ç»„è£…
+		//CEOä¸‹æœ‰ä¸‰ä¸ªéƒ¨é—¨ç»ç†å’Œä¸€ä¸ªç§˜ä¹¦
 		root.addSubordinate(k);
 		root.addSubordinate(developDep);
 		root.addSubordinate(salesDep);
 		root.addSubordinate(financeDep);
 		
 		
-		//ÑĞ·¢²¿¾­Àí
+		//ç ”å‘éƒ¨ç»ç†
 		developDep.addSubordinate(zhengLaoLiu);
 		developDep.addSubordinate(firstDevGroup);
 		developDep.addSubordinate(secondDevGroup);
 		
 		
 		
-		//¿´¿´¿ª·¢Á½¸ö¿ª·¢Ğ¡×éÏÂÓĞÊ²Ã´
+		//çœ‹çœ‹å¼€å‘ä¸¤ä¸ªå¼€å‘å°ç»„ä¸‹æœ‰ä»€ä¹ˆ
 		firstDevGroup.addSubordinate(a);
 		firstDevGroup.addSubordinate(b);
 		firstDevGroup.addSubordinate(c);
@@ -71,24 +71,24 @@ public class Client {
 		secondDevGroup.addSubordinate(e);
 		secondDevGroup.addSubordinate(f);
 		
-		//ÔÙ¿´ÏúÊÛ²¿ÏÂµÄÈËÔ±Çé¿ö
+		//å†çœ‹é”€å”®éƒ¨ä¸‹çš„äººå‘˜æƒ…å†µ
 		salesDep.addSubordinate(h);
 		salesDep.addSubordinate(i);
 		
-		//×îºóÒ»¸ö²ÆÎñ
+		//æœ€åä¸€ä¸ªè´¢åŠ¡
 		financeDep.addSubordinate(j);
 		
 		return root;
 	}
 	
-	//±éÀúÕû¿ÃÊ÷,Ö»Òª¸øÎÒ¸ù½Úµã£¬ÎÒ¾ÍÄÜ±éÀú³öËùÓĞµÄ½Úµã
+	//éå†æ•´æ£µæ ‘,åªè¦ç»™æˆ‘æ ¹èŠ‚ç‚¹ï¼Œæˆ‘å°±èƒ½éå†å‡ºæ‰€æœ‰çš„èŠ‚ç‚¹
 	public static String getTreeInfo(Branch root){
 		ArrayList<Corp> subordinateList = root.getSubordinate();
 		String info = "";
 		for(Corp s :subordinateList){
-			if(s instanceof Leaf){ //ÊÇÔ±¹¤¾ÍÖ±½Ó»ñµÃĞÅÏ¢
+			if(s instanceof Leaf){ //æ˜¯å‘˜å·¥å°±ç›´æ¥è·å¾—ä¿¡æ¯
 				info = info+ s.getInfo()+"\n";
-			}else{ //ÊÇ¸öĞ¡Í·Ä¿
+			}else{ //æ˜¯ä¸ªå°å¤´ç›®
 				info = info +s.getInfo() +"\n"+ getTreeInfo((Branch)s);
 			}
 		}

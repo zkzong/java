@@ -5,13 +5,13 @@ package com.company.section3;
  * I'm glad to share my knowledge with you all.
  */
 public class Context {
-	//¶¨Òå³öËùÓĞµÄµçÌİ×´Ì¬
+	//å®šä¹‰å‡ºæ‰€æœ‰çš„ç”µæ¢¯çŠ¶æ€
 	public final static OpenningState openningState = new OpenningState();
 	public final static ClosingState closeingState = new ClosingState();
 	public final static RunningState runningState = new RunningState();
 	public final static StoppingState stoppingState = new StoppingState();
 	
-	//¶¨Ò»¸öµ±Ç°µçÌİ×´Ì¬
+	//å®šä¸€ä¸ªå½“å‰ç”µæ¢¯çŠ¶æ€
 	private LiftState liftState;
 	
 	public LiftState getLiftState() {
@@ -20,7 +20,7 @@ public class Context {
 
 	public void setLiftState(LiftState liftState) {
 		this.liftState = liftState;
-		//°Ñµ±Ç°µÄ»·¾³Í¨Öªµ½¸÷¸öÊµÏÖÀàÖĞ
+		//æŠŠå½“å‰çš„ç¯å¢ƒé€šçŸ¥åˆ°å„ä¸ªå®ç°ç±»ä¸­
 		this.liftState.setContext(this);
 	}
 	

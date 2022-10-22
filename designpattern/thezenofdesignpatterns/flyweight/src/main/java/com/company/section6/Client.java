@@ -8,19 +8,19 @@ package com.company.section6;
 public class Client {
 
 	public static void main(String[] args) {
-		String key1 = "¿ÆÄ¿1ÉÏº£";
-		String key2 = "¿ÆÄ¿1ÉÏº£";
-		//³õÊ¼»¯¶ÔÏó³Ø
+		String key1 = "ç§‘ç›®1ä¸Šæµ·";
+		String key2 = "ç§‘ç›®1ä¸Šæµ·";
+		//åˆå§‹åŒ–å¯¹è±¡æ± 
 		SignInfoFactory.getSignInfo(key1);
 
-		//¼ÆËãÖ´ĞĞ10Íò´ÎĞèÒªµÄÊ±¼ä
+		//è®¡ç®—æ‰§è¡Œ10ä¸‡æ¬¡éœ€è¦çš„æ—¶é—´
 		long currentTime = System.currentTimeMillis();
 		for(int i=0;i<1000000;i++){
 			SignInfoFactory.getSignInfo(key2);
 		}
 		long tailTime = System.currentTimeMillis();
 		
-		System.out.println("Ö´ĞĞÊ±¼ä£º"+(tailTime - currentTime) + " ms");
+		System.out.println("æ‰§è¡Œæ—¶é—´ï¼š"+(tailTime - currentTime) + " ms");
 	}
 
 		

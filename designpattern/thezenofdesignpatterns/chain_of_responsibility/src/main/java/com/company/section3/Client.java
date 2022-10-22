@@ -7,14 +7,14 @@ package com.company.section3;
 public class Client {
 
 	public static void main(String[] args) {
-		//ÉùÃ÷³öËùÓĞµÄ´¦Àí½Úµã
+		//å£°æ˜å‡ºæ‰€æœ‰çš„å¤„ç†èŠ‚ç‚¹
 		Handler handler1 = new ConcreteHandler1();
 		Handler handler2 = new ConcreteHandler2();
 		Handler handler3 = new ConcreteHandler3();
-		//ÉèÖÃÁ´ÖĞµÄ½×¶ÎË³Ğò,1-->2-->3
+		//è®¾ç½®é“¾ä¸­çš„é˜¶æ®µé¡ºåº,1-->2-->3
 		handler1.setNext(handler2);
 		handler2.setNext(handler3);
-		//Ìá½»ÇëÇó£¬·µ»Ø½á¹û
+		//æäº¤è¯·æ±‚ï¼Œè¿”å›ç»“æœ
 		Response response = handler1.handlerMessage(new Request());
 	}
 

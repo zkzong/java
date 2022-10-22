@@ -8,10 +8,10 @@ public class Client {
 
 
 	public static void main(String[] args) {
-		//²úÉúÒ»¸ö¶ÔÏó
+		//äº§ç”Ÿä¸€ä¸ªå¯¹è±¡
 		Thing thing = new Thing();
 		
-		//¿½±´Ò»¸ö¶ÔÏó
+		//æ‹·è´ä¸€ä¸ªå¯¹è±¡
 		Thing cloneThing = thing.clone();
 
 	}

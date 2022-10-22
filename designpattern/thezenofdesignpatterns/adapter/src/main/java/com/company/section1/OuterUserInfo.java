@@ -5,17 +5,17 @@ import java.util.Map;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * °ÑOuterUser°ü×°³ÉUserInfo
+ * æŠŠOuterUseråŒ…è£…æˆUserInfo
  */
 @SuppressWarnings("all")
 public class OuterUserInfo extends OuterUser implements IUserInfo {
 	
-	private Map baseInfo = super.getUserBaseInfo();  //Ô±¹¤µÄ»ù±¾ĞÅÏ¢
-	private Map homeInfo = super.getUserHomeInfo(); //Ô±¹¤µÄ¼ÒÍ¥ ĞÅÏ¢
-	private Map officeInfo = super.getUserOfficeInfo(); //¹¤×÷ĞÅÏ¢
+	private Map baseInfo = super.getUserBaseInfo();  //å‘˜å·¥çš„åŸºæœ¬ä¿¡æ¯
+	private Map homeInfo = super.getUserHomeInfo(); //å‘˜å·¥çš„å®¶åº­ ä¿¡æ¯
+	private Map officeInfo = super.getUserOfficeInfo(); //å·¥ä½œä¿¡æ¯
 	
 	/* 
-	 * ¼ÒÍ¥µØÖ·
+	 * å®¶åº­åœ°å€
 	 */
 	public String getHomeAddress() {
 		String homeAddress = (String)this.homeInfo.get("homeAddress");
@@ -24,7 +24,7 @@ public class OuterUserInfo extends OuterUser implements IUserInfo {
 	}
 
 	/* 
-	 * ¼ÒÍ¥µç»°ºÅÂë
+	 * å®¶åº­ç”µè¯å·ç 
 	 */
 	public String getHomeTelNumber() {
 		String homeTelNumber = (String)this.homeInfo.get("homeTelNumber");
@@ -33,7 +33,7 @@ public class OuterUserInfo extends OuterUser implements IUserInfo {
 	}
 
 	/* 
-	 *Ö°Î»ĞÅÏ¢
+	 *èŒä½ä¿¡æ¯
 	 */
 	public String getJobPosition() {
 		String jobPosition = (String)this.officeInfo.get("jobPosition");
@@ -42,7 +42,7 @@ public class OuterUserInfo extends OuterUser implements IUserInfo {
 	}
 
 	/* 
-	 * ÊÖ»úºÅÂë
+	 * æ‰‹æœºå·ç 
 	 */
 	public String getMobileNumber() {
 		String mobileNumber = (String)this.baseInfo.get("mobileNumber");
@@ -51,7 +51,7 @@ public class OuterUserInfo extends OuterUser implements IUserInfo {
 	}
 
 	/* 
-	 * °ì¹«µç»°
+	 * åŠå…¬ç”µè¯
 	 */
 	public String getOfficeTelNumber() {
 		String officeTelNumber = (String)this.officeInfo.get("officeTelNumber");
@@ -60,7 +60,7 @@ public class OuterUserInfo extends OuterUser implements IUserInfo {
 	}
 
 	/* 
-	 * Ô±¹¤µÄÃû³Æ
+	 * å‘˜å·¥çš„åç§°
 	 */
 	public String getUserName() {
 		String userName = (String)this.baseInfo.get("userName");

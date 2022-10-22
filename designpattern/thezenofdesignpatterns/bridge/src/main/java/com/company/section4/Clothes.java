@@ -7,11 +7,11 @@ package com.company.section4;
 public class Clothes extends Product {
 
 	public void beProducted() {
-		System.out.println("生产出的衣服是这个样子的...");
+		System.out.println("鐢熶骇鍑虹殑琛ｆ湇鏄繖涓牱瀛愮殑...");
 	}
 	
 	public void beSelled() {
-		System.out.println("生产出的衣服卖出去了...");
+		System.out.println("鐢熶骇鍑虹殑琛ｆ湇鍗栧嚭鍘讳簡...");
 	}
 }
 

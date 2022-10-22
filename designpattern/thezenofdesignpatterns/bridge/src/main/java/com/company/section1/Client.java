@@ -3,18 +3,18 @@ package com.company.section1;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÎÒÒª¹ØĞÄÎÒ×Ô¼ºµÄ¹«Ë¾ÁË
+ * æˆ‘è¦å…³å¿ƒæˆ‘è‡ªå·±çš„å…¬å¸äº†
  */
 public class Client {
 
 	public static void main(String[] args) {
-		System.out.println("-------·¿µØ²ú¹«Ë¾ÊÇÕâ¸öÑù×ÓÔËĞĞµÄ-------");
-		//ÏÈÕÒµ½ÎÒµÄ¹«Ë¾
+		System.out.println("-------æˆ¿åœ°äº§å…¬å¸æ˜¯è¿™ä¸ªæ ·å­è¿è¡Œçš„-------");
+		//å…ˆæ‰¾åˆ°æˆ‘çš„å…¬å¸
 		HouseCorp houseCorp =new HouseCorp();
-		//¿´ÎÒÔõÃ´ÕõÇ®
+		//çœ‹æˆ‘æ€ä¹ˆæŒ£é’±
 		houseCorp.makeMoney();
 		System.out.println("\n");
-		System.out.println("-------·ş×°¹«Ë¾ÊÇÕâÑùÔËĞĞµÄ-------");
+		System.out.println("-------æœè£…å…¬å¸æ˜¯è¿™æ ·è¿è¡Œçš„-------");
 		ClothesCorp clothesCorp = new ClothesCorp();
 		clothesCorp.makeMoney();
 	}

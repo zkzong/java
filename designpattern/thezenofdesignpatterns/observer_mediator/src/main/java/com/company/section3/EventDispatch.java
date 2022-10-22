@@ -9,31 +9,31 @@ import java.util.Vector;
  * I'm glad to share my knowledge with you all.
  */
 public class EventDispatch implements Observer{
-	//µ¥ÀıÄ£Ê½
+	//å•ä¾‹æ¨¡å¼
 	private final static EventDispatch dispatch = new EventDispatch(); 
-	//ÊÂ¼şÏû·ÑÕß
+	//äº‹ä»¶æ¶ˆè´¹è€…
 	private Vector<EventCustomer> customer = new Vector<EventCustomer>();
 	
-	//²»ÔÊĞíÉú³ÉĞÂµÄÊµÀı
+	//ä¸å…è®¸ç”Ÿæˆæ–°çš„å®ä¾‹
 	private EventDispatch(){
 		
 	}
 	
-	//»ñµÃµ¥Àı¶ÔÏó
+	//è·å¾—å•ä¾‹å¯¹è±¡
 	public static EventDispatch getEventDispathc(){
 		return dispatch;
 	}
 	
-	//ÊÂ¼ş´¥·¢
+	//äº‹ä»¶è§¦å‘
 	public void update(Observable o, Object arg) {
-		//ÊÂ¼şµÄÔ´Í·
+		//äº‹ä»¶çš„æºå¤´
 		Product product = (Product)arg;
-		//ÊÂ¼ş
+		//äº‹ä»¶
 		ProductEvent event = (ProductEvent)o;
 	
-		//´¦ÀíÕß´¦Àí£¬ÕâÀïÊÇÖĞ½éÕßÄ£Ê½µÄºËĞÄ£¬¿ÉÒÔÊÇºÜ¸´ÔÓµÄÒµÎñÂß¼­
+		//å¤„ç†è€…å¤„ç†ï¼Œè¿™é‡Œæ˜¯ä¸­ä»‹è€…æ¨¡å¼çš„æ ¸å¿ƒï¼Œå¯ä»¥æ˜¯å¾ˆå¤æ‚çš„ä¸šåŠ¡é€»è¾‘
 		for(EventCustomer e:customer){			
-			//´¦ÀíÄÜÁ¦ÊÇ·ñÆ¥Åä
+			//å¤„ç†èƒ½åŠ›æ˜¯å¦åŒ¹é…
 			for(EventCustomType t:e.getCustomType()){				
 				if(t.getValue() == event.getEventType().getValue()){
 					e.exec(event);
@@ -43,7 +43,7 @@ public class EventDispatch implements Observer{
 		}
 	}
 
-	//×¢²áÊÂ¼ş´¦ÀíÕß
+	//æ³¨å†Œäº‹ä»¶å¤„ç†è€…
 	public void registerCustomer(EventCustomer _customer){
 		customer.add(_customer);
 	}	

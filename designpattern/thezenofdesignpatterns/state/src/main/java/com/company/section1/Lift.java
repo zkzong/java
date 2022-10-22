@@ -3,29 +3,29 @@ package com.company.section1;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * µçÌİµÄÊµÏÖÀà
+ * ç”µæ¢¯çš„å®ç°ç±»
  */
 public class Lift implements ILift {
 
-	//µçÌİÃÅ¹Ø±Õ
+	//ç”µæ¢¯é—¨å…³é—­
 	public void close() {
-		System.out.println("µçÌİÃÅ¹Ø±Õ...");
+		System.out.println("ç”µæ¢¯é—¨å…³é—­...");
 	}
 		
-	//µçÌİÃÅ¿ªÆô
+	//ç”µæ¢¯é—¨å¼€å¯
 	public void open() {
-		System.out.println("µçÌİÃÅ¿ªÆô...");
+		System.out.println("ç”µæ¢¯é—¨å¼€å¯...");
 	}
 	
-	//µçÌİ¿ªÊ¼ÅÜÆğÀ´
+	//ç”µæ¢¯å¼€å§‹è·‘èµ·æ¥
 	public void run() {
-		System.out.println("µçÌİÉÏÏÂÅÜÆğÀ´...");
+		System.out.println("ç”µæ¢¯ä¸Šä¸‹è·‘èµ·æ¥...");
 
 	}
 
-	//µçÌİÍ£Ö¹
+	//ç”µæ¢¯åœæ­¢
 	public void stop() {
-		System.out.println("µçÌİÍ£Ö¹ÁË...");
+		System.out.println("ç”µæ¢¯åœæ­¢äº†...");
 	}
 }
 		

@@ -6,12 +6,12 @@ package com.company.section3;
  */
 public interface Iterator {
 	
-	//±éÀúµ½ÏÂÒ»¸öÔªËØ
+	//éå†åˆ°ä¸‹ä¸€ä¸ªå…ƒç´ 
 	public Object next();
 	
-	//ÊÇ·ñÒÑ¾­±éÀúµ½Î²²¿
+	//æ˜¯å¦å·²ç»éå†åˆ°å°¾éƒ¨
 	public boolean hasNext();
 	
-	//É¾³ıµ±Ç°Ö¸ÏòµÄÔªËØ
+	//åˆ é™¤å½“å‰æŒ‡å‘çš„å…ƒç´ 
 	public boolean remove();
 }

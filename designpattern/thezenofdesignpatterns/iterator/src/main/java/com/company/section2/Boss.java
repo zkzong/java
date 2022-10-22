@@ -4,27 +4,27 @@ package com.company.section2;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÀÏ°åÀ´¿´ÏîÄ¿ĞÅÏ¢ÁË 
+ * è€æ¿æ¥çœ‹é¡¹ç›®ä¿¡æ¯äº† 
  */
 public class Boss {
 
 		public static void main(String[] args) {
-			//¶¨ÒåÒ»¸öList£¬´æ·ÅËùÓĞµÄÏîÄ¿¶ÔÏó
+			//å®šä¹‰ä¸€ä¸ªListï¼Œå­˜æ”¾æ‰€æœ‰çš„é¡¹ç›®å¯¹è±¡
 			IProject project = new Project();
 			
-			//Ôö¼ÓĞÇÇò´óÕ½ÏîÄ¿
-			project.add("ĞÇÇò´óÕ½ÏîÄ¿ddddd",10,100000);
-			//Ôö¼ÓÅ¤×ªÊ±¿ÕÏîÄ¿
-			project.add("Å¤×ªÊ±¿ÕÏîÄ¿",100,10000000);
-			//Ôö¼Ó³¬ÈË¸ÄÔìÏîÄ¿
-			project.add("³¬ÈË¸ÄÔìÏîÄ¿",10000,1000000000);
+			//å¢åŠ æ˜Ÿçƒå¤§æˆ˜é¡¹ç›®
+			project.add("æ˜Ÿçƒå¤§æˆ˜é¡¹ç›®ddddd",10,100000);
+			//å¢åŠ æ‰­è½¬æ—¶ç©ºé¡¹ç›®
+			project.add("æ‰­è½¬æ—¶ç©ºé¡¹ç›®",100,10000000);
+			//å¢åŠ è¶…äººæ”¹é€ é¡¹ç›®
+			project.add("è¶…äººæ”¹é€ é¡¹ç›®",10000,1000000000);
 			
-			//Õâ±ß100¸öÏîÄ¿
+			//è¿™è¾¹100ä¸ªé¡¹ç›®
 			for(int i=4;i<104;i++){
-				project.add("µÚ"+i+"¸öÏîÄ¿",i*5,i*1000000);
+				project.add("ç¬¬"+i+"ä¸ªé¡¹ç›®",i*5,i*1000000);
 			}
 			
-			//±éÀúÒ»ÏÂArrayList£¬°ÑËùÓĞµÄÊı¾İ¶¼È¡³ö
+			//éå†ä¸€ä¸‹ArrayListï¼ŒæŠŠæ‰€æœ‰çš„æ•°æ®éƒ½å–å‡º
 			IProjectIterator projectIterator = project.iterator();
 			while(projectIterator.hasNext()){
 				IProject p = (IProject)projectIterator.next();

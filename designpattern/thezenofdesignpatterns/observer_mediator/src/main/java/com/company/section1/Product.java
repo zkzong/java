@@ -5,14 +5,14 @@ package com.company.section1;
  * I'm glad to share my knowledge with you all.
  */
 public class Product implements Cloneable{
-	//²úÆ·Ãû³Æ
+	//äº§å“åç§°
 	private String name;
-	//ÊÇ·ñ¿ÉÒÔÊôĞÔ±ä¸ü
+	//æ˜¯å¦å¯ä»¥å±æ€§å˜æ›´
 	private boolean canChanged = false;
 	
-	//²úÉúÒ»¸öĞÂµÄ²úÆ·
+	//äº§ç”Ÿä¸€ä¸ªæ–°çš„äº§å“
 	public Product(ProductManager manager,String _name){
-		//ÔÊĞí½¨Á¢²úÆ·
+		//å…è®¸å»ºç«‹äº§å“
 		if(manager.isCreateProduct()){
 			canChanged =true;
 			this.name = _name;
@@ -30,7 +30,7 @@ public class Product implements Cloneable{
 		
 	}
 	
-	//¸²Ğ´clone·½·¨
+	//è¦†å†™cloneæ–¹æ³•
 	@Override
 	public Product clone(){
 		Product p =null;

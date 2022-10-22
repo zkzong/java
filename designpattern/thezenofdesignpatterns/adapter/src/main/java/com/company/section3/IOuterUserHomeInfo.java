@@ -7,6 +7,6 @@ import java.util.Map;
  * I'm glad to share my knowledge with you all.
  */
 public interface IOuterUserHomeInfo {
-	//ÓÃ»§µÄ¼ÒÍ¥ĞÅÏ¢
+	//ç”¨æˆ·çš„å®¶åº­ä¿¡æ¯
 	public Map getUserHomeInfo();
 }

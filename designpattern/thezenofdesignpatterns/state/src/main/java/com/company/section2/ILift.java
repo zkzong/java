@@ -3,27 +3,27 @@ package com.company.section2;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¶¨ÒåÒ»¸öµçÌİµÄ½Ó¿Ú
+ * å®šä¹‰ä¸€ä¸ªç”µæ¢¯çš„æ¥å£
  */
 public interface ILift {
-	//µçÌİµÄËÄ¸ö×´Ì¬
-	public final static int OPENING_STATE = 1;  //ÃÅ³¨×´Ì¬
-	public final static int CLOSING_STATE = 2;  //ÃÅ±Õ×´Ì¬
-	public final static int RUNNING_STATE = 3;  //ÔËĞĞ×´Ì¬
-	public final static int STOPPING_STATE = 4; //Í£Ö¹×´Ì¬£»
+	//ç”µæ¢¯çš„å››ä¸ªçŠ¶æ€
+	public final static int OPENING_STATE = 1;  //é—¨æ•çŠ¶æ€
+	public final static int CLOSING_STATE = 2;  //é—¨é—­çŠ¶æ€
+	public final static int RUNNING_STATE = 3;  //è¿è¡ŒçŠ¶æ€
+	public final static int STOPPING_STATE = 4; //åœæ­¢çŠ¶æ€ï¼›
 	
-	//ÉèÖÃµçÌİµÄ×´Ì¬
+	//è®¾ç½®ç”µæ¢¯çš„çŠ¶æ€
 	public void setState(int state);
 	
-	//Ê×ÏÈµçÌİÃÅ¿ªÆô¶¯×÷
+	//é¦–å…ˆç”µæ¢¯é—¨å¼€å¯åŠ¨ä½œ
 	public void open();
 	
-	//µçÌİÃÅÓĞ¿ªÆô£¬ÄÇµ±È»Ò²¾ÍÓĞ¹Ø±ÕÁË
+	//ç”µæ¢¯é—¨æœ‰å¼€å¯ï¼Œé‚£å½“ç„¶ä¹Ÿå°±æœ‰å…³é—­äº†
 	public void close();
 	
-	//µçÌİÒªÄÜÉÏÄÜÏÂ£¬ÅÜÆğÀ´
+	//ç”µæ¢¯è¦èƒ½ä¸Šèƒ½ä¸‹ï¼Œè·‘èµ·æ¥
 	public void run();
 	
-	//µçÌİ»¹ÒªÄÜÍ£ÏÂÀ´£¬Í£²»ÏÂÀ´ÄÇ¾Í³¶µ­ÁË
+	//ç”µæ¢¯è¿˜è¦èƒ½åœä¸‹æ¥ï¼Œåœä¸ä¸‹æ¥é‚£å°±æ‰¯æ·¡äº†
 	public void stop();
 }

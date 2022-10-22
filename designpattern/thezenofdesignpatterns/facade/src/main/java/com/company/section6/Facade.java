@@ -5,12 +5,12 @@ package com.company.section6;
  * I'm glad to share my knowledge with you all.
  */
 public class Facade {
-	//被委托的对象
+	//琚鎵樼殑瀵硅薄
 	private ClassA a = new ClassA();
 	private ClassB b = new ClassB();
 	private ClassC c = new ClassC();
 	
-	//提供给外部访问的方法
+	//鎻愪緵缁欏閮ㄨ闂殑鏂规硶
 	public void methodA(){
 		this.a.doSomethingA();
 	}

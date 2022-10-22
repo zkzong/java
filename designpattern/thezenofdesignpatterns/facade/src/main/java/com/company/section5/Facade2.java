@@ -5,10 +5,10 @@ package com.company.section5;
  * I'm glad to share my knowledge with you all.
  */
 public class Facade2 {
-	//ÒıÓÃÔ­ÓĞµÄÃÅÃæ
+	//å¼•ç”¨åŸæœ‰çš„é—¨é¢
 	private Facade facade = new Facade();
 	
-	//¶ÔÍâÌá¹©Î¨Ò»µÄ·ÃÎÊ×ÓÏµÍ³µÄ·½·¨
+	//å¯¹å¤–æä¾›å”¯ä¸€çš„è®¿é—®å­ç³»ç»Ÿçš„æ–¹æ³•
 	public void methodB(){
 		this.facade.methodB();
 	}

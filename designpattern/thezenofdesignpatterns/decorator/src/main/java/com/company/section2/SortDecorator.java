@@ -3,21 +3,21 @@ package com.company.section2;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * Ñ§Ğ£ÅÅÃûµÄÇé¿ö»ã±¨
+ * å­¦æ ¡æ’åçš„æƒ…å†µæ±‡æŠ¥
  */
 public class SortDecorator extends Decorator {
 
-	//¹¹Ôìº¯Êı
+	//æ„é€ å‡½æ•°
 	public SortDecorator(SchoolReport sr){
 		super(sr);
 	}
 	
-	//¸æËßÀÏ°ÖÑ§Ğ£µÄÅÅÃûÇé¿ö
+	//å‘Šè¯‰è€çˆ¸å­¦æ ¡çš„æ’åæƒ…å†µ
 	private void reportSort(){
-		System.out.println("ÎÒÊÇÅÅÃûµÚ38Ãû...");
+		System.out.println("æˆ‘æ˜¯æ’åç¬¬38å...");
 	}
 	
-	//ÀÏ°Ö¿´Íê³É¼¨µ¥ºóÔÙ¸æËßËû£¬¼ÓÇ¿×÷ÓÃ
+	//è€çˆ¸çœ‹å®Œæˆç»©å•åå†å‘Šè¯‰ä»–ï¼ŒåŠ å¼ºä½œç”¨
 	@Override
 	public void report(){
 		super.report();

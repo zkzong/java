@@ -3,19 +3,19 @@ package com.company.section2;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¶ù×ÓÀà
+ * å„¿å­ç±»
  */
 public class Son extends Handler {
-	//¶ù×ÓÖ»´¦ÀíÄ¸Ç×µÄÇëÇó
+	//å„¿å­åªå¤„ç†æ¯äº²çš„è¯·æ±‚
 	public Son(){
 		super(Handler.SON_LEVEL_REQUEST);
 	}
 	
-	//¶ù×ÓµÄ´ğ¸´
+	//å„¿å­çš„ç­”å¤
 	protected void response(IWomen women) {
-		System.out.println("--------Ä¸Ç×Ïò¶ù×ÓÇëÊ¾-------");
+		System.out.println("--------æ¯äº²å‘å„¿å­è¯·ç¤º-------");
 		System.out.println(women.getRequest());
-		System.out.println("¶ù×ÓµÄ´ğ¸´ÊÇ£ºÍ¬Òâ\n");
+		System.out.println("å„¿å­çš„ç­”å¤æ˜¯ï¼šåŒæ„\n");
 	}
 
 	

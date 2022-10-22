@@ -5,18 +5,18 @@ import java.util.Map;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÍâÏµÍ³µÄÈËÔ±ĞÅÏ¢
+ * å¤–ç³»ç»Ÿçš„äººå‘˜ä¿¡æ¯
  */
 @SuppressWarnings("all")
 public interface IOuterUser {
 	
-	//»ù±¾ĞÅÏ¢£¬±ÈÈçÃû³Æ£¬ĞÔ±ğ£¬ÊÖ»úºÅÂëÁËµÈ
+	//åŸºæœ¬ä¿¡æ¯ï¼Œæ¯”å¦‚åç§°ï¼Œæ€§åˆ«ï¼Œæ‰‹æœºå·ç äº†ç­‰
 	public Map getUserBaseInfo();
 	
-	//¹¤×÷ÇøÓòĞÅÏ¢
+	//å·¥ä½œåŒºåŸŸä¿¡æ¯
 	public Map getUserOfficeInfo();
 	
-	//ÓÃ»§µÄ¼ÒÍ¥ĞÅÏ¢
+	//ç”¨æˆ·çš„å®¶åº­ä¿¡æ¯
 	public Map getUserHomeInfo();
 	
 }

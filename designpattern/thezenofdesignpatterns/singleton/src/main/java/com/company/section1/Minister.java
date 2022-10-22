@@ -6,7 +6,7 @@ package com.company.section1;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ´ó³¼ÊÇÌìÌìÒªÃæ¼û»ÊµÛ£¬½ñÌì¼ûµÄ»ÊµÛºÍ×òÌìµÄ£¬Ç°Ìì²»Ò»ÑùÄÇ¾Í³öÎÊÌâÁË£¡
+ * å¤§è‡£æ˜¯å¤©å¤©è¦é¢è§çš‡å¸ï¼Œä»Šå¤©è§çš„çš‡å¸å’Œæ˜¨å¤©çš„ï¼Œå‰å¤©ä¸ä¸€æ ·é‚£å°±å‡ºé—®é¢˜äº†ï¼
  */
 @SuppressWarnings("all")
 public class Minister {
@@ -20,7 +20,7 @@ public class Minister {
 			emperor.say();  
 		}
 				
-		//ÈıÌì¼ûµÄ»ÊµÛ¶¼ÊÇÍ¬Ò»¸öÈË£¬ÈÙĞÒ°É£¡
+		//ä¸‰å¤©è§çš„çš‡å¸éƒ½æ˜¯åŒä¸€ä¸ªäººï¼Œè£å¹¸å§ï¼
 	}
 
 }

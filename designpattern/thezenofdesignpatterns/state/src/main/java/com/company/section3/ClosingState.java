@@ -3,35 +3,35 @@ package com.company.section3;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * µçÌİÃÅ¹Ø±ÕÒÔºó£¬µçÌİ¿ÉÒÔ×öÄÄĞ©ÊÂÇé
+ * ç”µæ¢¯é—¨å…³é—­ä»¥åï¼Œç”µæ¢¯å¯ä»¥åšå“ªäº›äº‹æƒ…
  */
 public class ClosingState extends LiftState {
 
-	//µçÌİÃÅ¹Ø±Õ£¬ÕâÊÇ¹Ø±Õ×´Ì¬ÒªÊµÏÖµÄ¶¯×÷
+	//ç”µæ¢¯é—¨å…³é—­ï¼Œè¿™æ˜¯å…³é—­çŠ¶æ€è¦å®ç°çš„åŠ¨ä½œ
 	@Override
 	public void close() {
-		System.out.println("µçÌİÃÅ¹Ø±Õ...");
+		System.out.println("ç”µæ¢¯é—¨å…³é—­...");
 
 	}
 
-	//µçÌİÃÅ¹ØÁËÔÙ´ò¿ª£¬¶ºÄãÍæÄØ£¬ÄÇÕâ¸öÔÊĞíÑ½
+	//ç”µæ¢¯é—¨å…³äº†å†æ‰“å¼€ï¼Œé€—ä½ ç©å‘¢ï¼Œé‚£è¿™ä¸ªå…è®¸å‘€
 	@Override
 	public void open() {
-		super.context.setLiftState(Context.openningState);  //ÖÃÎªÃÅ³¨×´Ì¬
+		super.context.setLiftState(Context.openningState);  //ç½®ä¸ºé—¨æ•çŠ¶æ€
 		super.context.getLiftState().open();
 	}
 
-	//µçÌİÃÅ¹ØÁË¾ÍÅÜ£¬ÕâÊÇÔÙÕı³£²»¹ıÁË
+	//ç”µæ¢¯é—¨å…³äº†å°±è·‘ï¼Œè¿™æ˜¯å†æ­£å¸¸ä¸è¿‡äº†
 	@Override
 	public void run() {
-		super.context.setLiftState(Context.runningState); //ÉèÖÃÎªÔËĞĞ×´Ì¬£»
+		super.context.setLiftState(Context.runningState); //è®¾ç½®ä¸ºè¿è¡ŒçŠ¶æ€ï¼›
 		super.context.getLiftState().run();
 	}
 
-	//µçÌİÃÅ¹Ø×Å£¬ÎÒ¾Í²»°´Â¥²ã
+	//ç”µæ¢¯é—¨å…³ç€ï¼Œæˆ‘å°±ä¸æŒ‰æ¥¼å±‚
 	@Override
 	public void stop() {
-		super.context.setLiftState(Context.stoppingState);  //ÉèÖÃÎªÍ£Ö¹×´Ì¬£»
+		super.context.setLiftState(Context.stoppingState);  //è®¾ç½®ä¸ºåœæ­¢çŠ¶æ€ï¼›
 		super.context.getLiftState().stop();
 	}
 	

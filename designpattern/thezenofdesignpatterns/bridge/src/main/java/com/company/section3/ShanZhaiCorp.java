@@ -5,14 +5,14 @@ package com.company.section3;
  * I'm glad to share my knowledge with you all.
  */
 public class ShanZhaiCorp extends Corp {
-	 //²úÊ²Ã´²úÆ·£¬²»ÖªµÀ£¬µÈ±»µ÷ÓÃµÄ²ÅÖªµÀ
+	 //äº§ä»€ä¹ˆäº§å“ï¼Œä¸çŸ¥é“ï¼Œç­‰è¢«è°ƒç”¨çš„æ‰çŸ¥é“
 	public ShanZhaiCorp(Product product){
 		super(product);
 	}
-	//¿ñ×¬Ç®
+	//ç‹‚èµšé’±
 	public void makeMoney(){
 		super.makeMoney();
-		System.out.println("ÎÒ×¬Ç®Ñ½...");
+		System.out.println("æˆ‘èµšé’±å‘€...");
 	}
 }
 

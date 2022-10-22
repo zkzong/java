@@ -6,17 +6,17 @@ package com.company.command_name.os;
  */
 public class DiskManager {
 	
-	//Ä¬ÈÏµÄ¼ÆËã´óĞ¡
+	//é»˜è®¤çš„è®¡ç®—å¤§å°
 	public static String df(){
 		return "/\t10485760\n/usr\t104857600\n/home\t1048576000\n";
 	}
 	
-	//°´ÕÕkbÀ´¼ÆËã
+	//æŒ‰ç…§kbæ¥è®¡ç®—
 	public static String df_k(){
 		return "/\t10240\n/usr\t102400\n/home\tt10240000\n";
 	}
 	
-	//°´ÕÕgb¼ÆËã
+	//æŒ‰ç…§gbè®¡ç®—
 	public static String df_g(){
 		return "/\t10\n/usr\t100\n/home\tt10000\n";
 	}

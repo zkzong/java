@@ -11,7 +11,7 @@ import com.company.command_name.ls.AbstractLS;
 public class LSCommand extends Command{
 	
 	public String execute(CommandVO vo){
-		//返回链表的首节点
+		//杩斿洖閾捐〃鐨勯鑺傜偣
 		CommandName firstNode = super.buildChain(AbstractLS.class).get(0);
 		return firstNode.handleMessage(vo);
 	}

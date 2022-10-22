@@ -3,13 +3,13 @@ package com.company.section2;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ³É¼¨µ¥µÄ³éÏóÀà
+ * æˆç»©å•çš„æŠ½è±¡ç±»
  */
 public abstract class SchoolReport {
 
-	//³É¼¨µ¥µÄÖ÷ÒªÕ¹Ê¾µÄ¾ÍÊÇÄãµÄ³É¼¨Çé¿ö
+	//æˆç»©å•çš„ä¸»è¦å±•ç¤ºçš„å°±æ˜¯ä½ çš„æˆç»©æƒ…å†µ
 	public abstract void report();
 	
-	//³É¼¨µ¥Òª¼Ò³¤Ç©×Ö£¬Õâ¸öÊÇ×îÒªÃüµÄ
+	//æˆç»©å•è¦å®¶é•¿ç­¾å­—ï¼Œè¿™ä¸ªæ˜¯æœ€è¦å‘½çš„
 	public abstract void sign(String name);
 }

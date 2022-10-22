@@ -8,11 +8,11 @@ import com.company.command_name.CommandName;
  * I'm glad to share my knowledge with you all.
  */
 public abstract class AbstractDF extends CommandName {
-	//默认参数
+	//榛樿鍙傛暟
 	public final static String DEFAULT_PARAM = "";
-	//参数k
+	//鍙傛暟k
 	public final static String K_PARAM = "k";
-	//参数g
+	//鍙傛暟g
 	public final static String G_PARAM = "g";
 
 }

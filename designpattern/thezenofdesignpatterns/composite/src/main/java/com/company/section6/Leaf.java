@@ -3,11 +3,11 @@ package com.company.section6;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÆÕÍ¨Ô±¹¤ºÜ¼òµ¥£¬¾ÍĞ´Ò»¸ö¹¹Ôìº¯Êı¾Í¿ÉÒÔÁË
+ * æ™®é€šå‘˜å·¥å¾ˆç®€å•ï¼Œå°±å†™ä¸€ä¸ªæ„é€ å‡½æ•°å°±å¯ä»¥äº†
  */
 public class Leaf extends Corp {
 	
-	//¾ÍĞ´Ò»¸ö¹¹Ôìº¯Êı£¬Õâ¸öÊÇ±ØĞëµÄ
+	//å°±å†™ä¸€ä¸ªæ„é€ å‡½æ•°ï¼Œè¿™ä¸ªæ˜¯å¿…é¡»çš„
 	public Leaf(String _name,String _position,int _salary){
 		super(_name,_position,_salary);
 	}

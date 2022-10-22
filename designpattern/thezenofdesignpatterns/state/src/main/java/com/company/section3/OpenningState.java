@@ -3,32 +3,32 @@ package com.company.section3;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÔÚµçÌİÃÅ¿ªÆôµÄ×´Ì¬ÏÂÄÜ×öÊ²Ã´ÊÂÇé
+ * åœ¨ç”µæ¢¯é—¨å¼€å¯çš„çŠ¶æ€ä¸‹èƒ½åšä»€ä¹ˆäº‹æƒ…
  */
 public class OpenningState extends LiftState {
 
-	//¿ªÆôµ±È»¿ÉÒÔ¹Ø±ÕÁË£¬ÎÒ¾ÍÏë²âÊÔÒ»ÏÂµçÌİÃÅ¿ª¹Ø¹¦ÄÜ
+	//å¼€å¯å½“ç„¶å¯ä»¥å…³é—­äº†ï¼Œæˆ‘å°±æƒ³æµ‹è¯•ä¸€ä¸‹ç”µæ¢¯é—¨å¼€å…³åŠŸèƒ½
 	@Override
 	public void close() {
-		//×´Ì¬ĞŞ¸Ä
+		//çŠ¶æ€ä¿®æ”¹
 		super.context.setLiftState(Context.closeingState);
-		//¶¯×÷Î¯ÍĞÎªCloseStateÀ´Ö´ĞĞ
+		//åŠ¨ä½œå§”æ‰˜ä¸ºCloseStateæ¥æ‰§è¡Œ
 		super.context.getLiftState().close();
 	}
 
-	//´ò¿ªµçÌİÃÅ
+	//æ‰“å¼€ç”µæ¢¯é—¨
 	@Override
 	public void open() {
-		System.out.println("µçÌİÃÅ¿ªÆô...");
+		System.out.println("ç”µæ¢¯é—¨å¼€å¯...");
 	}
 	
-	//ÃÅ¿ª×ÅµçÌİ¾ÍÏëÅÜ£¬ÕâµçÌİ£¬ÏÅËÀÄã£¡
+	//é—¨å¼€ç€ç”µæ¢¯å°±æƒ³è·‘ï¼Œè¿™ç”µæ¢¯ï¼Œå“æ­»ä½ ï¼
 	@Override
 	public void run() {
 		//do nothing;
 	}
 
-	//¿ªÃÅ»¹²»Í£Ö¹£¿
+	//å¼€é—¨è¿˜ä¸åœæ­¢ï¼Ÿ
 	public void stop() {
 		//do nothing;
 	}

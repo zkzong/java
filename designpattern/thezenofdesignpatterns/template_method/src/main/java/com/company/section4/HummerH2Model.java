@@ -3,28 +3,28 @@ package com.company.section4;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * H1ºÍH2ÓĞÊ²Ã´²î±ğ£¬»¹Õæ²»ÖªµÀ£¬ÕæÃ»½Ó´¥¹ıº·Âí
+ * H1å’ŒH2æœ‰ä»€ä¹ˆå·®åˆ«ï¼Œè¿˜çœŸä¸çŸ¥é“ï¼ŒçœŸæ²¡æ¥è§¦è¿‡æ‚é©¬
  */
 public class HummerH2Model extends HummerModel {
 
 	protected void alarm() {
-		System.out.println("º·ÂíH2ÃùµÑ...");
+		System.out.println("æ‚é©¬H2é¸£ç¬›...");
 	}
 
 	protected void engineBoom() {
-		System.out.println("º·ÂíH2ÒıÇæÉùÒôÊÇÕâÑùÔÚ...");
+		System.out.println("æ‚é©¬H2å¼•æ“å£°éŸ³æ˜¯è¿™æ ·åœ¨...");
 	}
 	
 	protected void start() {
-		System.out.println("º·ÂíH2·¢¶¯...");
+		System.out.println("æ‚é©¬H2å‘åŠ¨...");
 	}
 
 	protected void stop() {
-		System.out.println("º·ÂíH2Í£³µ...");
+		System.out.println("æ‚é©¬H2åœè½¦...");
 	}
 	
 	
-	//Ä¬ÈÏÃ»ÓĞÀ®°ÈµÄ
+	//é»˜è®¤æ²¡æœ‰å–‡å­çš„
 	protected boolean isAlarm() {		
 		return false;
 	}

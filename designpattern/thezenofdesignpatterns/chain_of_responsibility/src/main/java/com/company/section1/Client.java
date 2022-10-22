@@ -6,36 +6,36 @@ import java.util.Random;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÎÒÃÇºóÈËÀ´¿´ÕâÑùµÄÉç»áµÀµÂ
+ * æˆ‘ä»¬åäººæ¥çœ‹è¿™æ ·çš„ç¤¾ä¼šé“å¾·
  */
 @SuppressWarnings("all")
 public class Client {
 	
 	public static void main(String[] args) {
-		//Ëæ»úÌôÑ¡¼¸¸öÅ®ĞÔ
+		//éšæœºæŒ‘é€‰å‡ ä¸ªå¥³æ€§
 		Random rand = new Random();
 		ArrayList<IWomen> arrayList = new ArrayList();
 		for(int i=0;i<5;i++){
-			arrayList.add(new Women(rand.nextInt(4),"ÎÒÒª³öÈ¥¹ä½Ö"));
+			arrayList.add(new Women(rand.nextInt(4),"æˆ‘è¦å‡ºå»é€›è¡—"));
 		}
 
-		//¶¨ÒåÈı¸öÇëÊ¾¶ÔÏó
+		//å®šä¹‰ä¸‰ä¸ªè¯·ç¤ºå¯¹è±¡
 		IHandler father = new Father();
 		IHandler husband = new Husband();
 		IHandler son = new Son();
 		
 		for(IWomen women:arrayList){
-			if(women.getType() ==1){ //Î´½á»éÉÙÅ®£¬ÇëÊ¾¸¸Ç×
-				System.out.println("\n--------Å®¶ùÏò¸¸Ç×ÇëÊ¾-------");
+			if(women.getType() ==1){ //æœªç»“å©šå°‘å¥³ï¼Œè¯·ç¤ºçˆ¶äº²
+				System.out.println("\n--------å¥³å„¿å‘çˆ¶äº²è¯·ç¤º-------");
 				father.HandleMessage(women);
-			}else if(women.getType() ==2){  //ÒÑ»éÉÙ¸¾£¬ÇëÊ¾ÕÉ·ò
-				System.out.println("\n--------ÆŞ×ÓÏòÕÉ·òÇëÊ¾-------");
+			}else if(women.getType() ==2){  //å·²å©šå°‘å¦‡ï¼Œè¯·ç¤ºä¸ˆå¤«
+				System.out.println("\n--------å¦»å­å‘ä¸ˆå¤«è¯·ç¤º-------");
 				husband.HandleMessage(women);
-			}else if(women.getType() == 3){ //Ä¸Ç×ÇëÊ¾¶ù×Ó
-				System.out.println("\n--------Ä¸Ç×Ïò¶ù×ÓÇëÊ¾-------");
+			}else if(women.getType() == 3){ //æ¯äº²è¯·ç¤ºå„¿å­
+				System.out.println("\n--------æ¯äº²å‘å„¿å­è¯·ç¤º-------");
 				son.HandleMessage(women);
 			}else{
-				//ÔİÊ±É¶Ò²²»×ö
+				//æš‚æ—¶å•¥ä¹Ÿä¸åš
 			}
 		}
 

@@ -5,24 +5,24 @@ import java.util.ArrayList;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ½ÚµãÀà£¬Ò²¼òµ¥ÁËºÜ¶à
+ * èŠ‚ç‚¹ç±»ï¼Œä¹Ÿç®€å•äº†å¾ˆå¤š
  */
 public class Branch extends Corp {
-	//Áìµ¼ÏÂ±ßÓĞÄÇĞ©ÏÂ¼¶Áìµ¼ºÍĞ¡±ø
+	//é¢†å¯¼ä¸‹è¾¹æœ‰é‚£äº›ä¸‹çº§é¢†å¯¼å’Œå°å…µ
 	ArrayList<Corp> subordinateList = new ArrayList<Corp>();
 	
-	//¹¹Ôìº¯ÊıÊÇ±ØĞëµÄÁË
+	//æ„é€ å‡½æ•°æ˜¯å¿…é¡»çš„äº†
 	public Branch(String _name,String _position,int _salary){
 		super(_name,_position,_salary);
 	}
 	
-	//Ôö¼ÓÒ»¸öÏÂÊô£¬¿ÉÄÜÊÇĞ¡Í·Ä¿£¬Ò²¿ÉÄÜÊÇ¸öĞ¡±ø
+	//å¢åŠ ä¸€ä¸ªä¸‹å±ï¼Œå¯èƒ½æ˜¯å°å¤´ç›®ï¼Œä¹Ÿå¯èƒ½æ˜¯ä¸ªå°å…µ
 	public void addSubordinate(Corp corp) {
-		corp.setParent(this); //ÉèÖÃ¸¸½Úµã
+		corp.setParent(this); //è®¾ç½®çˆ¶èŠ‚ç‚¹
 		this.subordinateList.add(corp);
 	}
 	
-	//ÎÒÓĞÄÄĞ©ÏÂÊô
+	//æˆ‘æœ‰å“ªäº›ä¸‹å±
 	public ArrayList<Corp> getSubordinate() {
 		return this.subordinateList;
 	}

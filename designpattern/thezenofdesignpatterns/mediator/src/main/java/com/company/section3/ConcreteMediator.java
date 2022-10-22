@@ -8,7 +8,7 @@ public class ConcreteMediator extends Mediator {
 
 	@Override
 	public void doSomething1() {
-		//µ÷ÓÃÍ¬ÊÂÀàµÄ·½·¨£¬Ö»ÒªÊÇpublic·½·¨¶¼¿ÉÒÔµ÷ÓÃ
+		//è°ƒç”¨åŒäº‹ç±»çš„æ–¹æ³•ï¼Œåªè¦æ˜¯publicæ–¹æ³•éƒ½å¯ä»¥è°ƒç”¨
 		super.c1.selfMethod1();
 		super.c2.selfMethod2();
 	}

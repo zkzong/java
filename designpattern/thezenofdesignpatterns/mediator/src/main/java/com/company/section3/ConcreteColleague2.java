@@ -3,24 +3,24 @@ package com.company.section3;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * »ù±¾ÉÏÃ¿Ò»¸öÍ¬ÊÂÀàµÄÄÜ´Ó¸¸Àà¼Ì³ĞµÄ·½·¨·Ç³£ÉÙ
+ * åŸºæœ¬ä¸Šæ¯ä¸€ä¸ªåŒäº‹ç±»çš„èƒ½ä»çˆ¶ç±»ç»§æ‰¿çš„æ–¹æ³•éå¸¸å°‘
  */
 public class ConcreteColleague2 extends Colleague {
 
-	//Í¨¹ı¹¹Ôìº¯Êı´«µİÖĞ½éÕß
+	//é€šè¿‡æ„é€ å‡½æ•°ä¼ é€’ä¸­ä»‹è€…
 	public ConcreteColleague2(Mediator _mediator){
 		super(_mediator);
 	}
 	
-	//×ÔÓĞ·½·¨ self-method
+	//è‡ªæœ‰æ–¹æ³• self-method
 	public void selfMethod2(){
-		//´¦Àí×Ô¼ºµÄÒµÎñÂß¼­
+		//å¤„ç†è‡ªå·±çš„ä¸šåŠ¡é€»è¾‘
 	}
 	
-	//ÒÀÀµ·½·¨ dep-method
+	//ä¾èµ–æ–¹æ³• dep-method
 	public void depMethod2(){
-		//´¦Àí×Ô¼ºµÄÒµÎñÂß¼­
-		//×Ô¼º²»ÄÜ´¦ÀíµÄÒµÎñÂß¼­£¬Î¯ÍĞ¸øÖĞ½éÕß´¦Àí
+		//å¤„ç†è‡ªå·±çš„ä¸šåŠ¡é€»è¾‘
+		//è‡ªå·±ä¸èƒ½å¤„ç†çš„ä¸šåŠ¡é€»è¾‘ï¼Œå§”æ‰˜ç»™ä¸­ä»‹è€…å¤„ç†
 		super.mediator.doSomething2();
 	}
 	

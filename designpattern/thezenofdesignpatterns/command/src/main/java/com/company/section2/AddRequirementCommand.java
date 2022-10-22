@@ -3,24 +3,24 @@ package com.company.section2;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * Ôö¼ÓÒ»ÏîĞèÇó
+ * å¢åŠ ä¸€é¡¹éœ€æ±‚
  */
 public class AddRequirementCommand extends Command {
-	//Ö´ĞĞÔö¼ÓÒ»ÏîĞèÇóµÄÃüÁî
+	//æ‰§è¡Œå¢åŠ ä¸€é¡¹éœ€æ±‚çš„å‘½ä»¤
 	public void execute() {
-		//ÕÒµ½ĞèÇó×é
+		//æ‰¾åˆ°éœ€æ±‚ç»„
 		super.rg.find();
 		
-		//Ôö¼ÓÒ»·İĞèÇó
+		//å¢åŠ ä¸€ä»½éœ€æ±‚
 		super.rg.add();
 		
-		//Ò³ÃæÒ²ÒªÔö¼Ó
+		//é¡µé¢ä¹Ÿè¦å¢åŠ 
 		super.pg.add();
 		
-		//¹¦ÄÜÒ²ÒªÔö¼Ó
+		//åŠŸèƒ½ä¹Ÿè¦å¢åŠ 
 		super.cg.add();
 		
-		//¸ø³ö¼Æ»®
+		//ç»™å‡ºè®¡åˆ’
 		super.rg.plan();
 	}
 

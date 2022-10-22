@@ -5,18 +5,18 @@ import java.util.ArrayList;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÕâĞ©ÏÂ±ßÓĞĞ¡±ø»òÕßÊÇ¾­ÀíµÄ·çÔÆÈËÎï
+ * è¿™äº›ä¸‹è¾¹æœ‰å°å…µæˆ–è€…æ˜¯ç»ç†çš„é£äº‘äººç‰©
  */
 public interface IBranch {
 	
-	//ÄÜ¹»Ôö¼ÓĞ¡±ø(Ê÷Ò¶½Úµã£©»òÕßÊÇ¾­Àí£¨Ê÷Ö¦½Úµã£©
+	//èƒ½å¤Ÿå¢åŠ å°å…µ(æ ‘å¶èŠ‚ç‚¹ï¼‰æˆ–è€…æ˜¯ç»ç†ï¼ˆæ ‘æèŠ‚ç‚¹ï¼‰
 	public void addSubordinate(ICorp corp);
 	
-	//ÎÒ»¹ÒªÄÜ¹»»ñµÃÏÂÊôµÄĞÅÏ¢
+	//æˆ‘è¿˜è¦èƒ½å¤Ÿè·å¾—ä¸‹å±çš„ä¿¡æ¯
 	public ArrayList<ICorp> getSubordinate();
 	
-	/*±¾À´»¹Ó¦¸ÃÓĞÒ»¸ö·½·¨delSubordinate(ICorp corp)£¬É¾³ıÏÂÊô
-	 * Õâ¸ö·½·¨ÎÒÃÇÃ»ÓĞÓÃµ½¾Í²»Ğ´½øÀ´ÁË
+	/*æœ¬æ¥è¿˜åº”è¯¥æœ‰ä¸€ä¸ªæ–¹æ³•delSubordinate(ICorp corp)ï¼Œåˆ é™¤ä¸‹å±
+	 * è¿™ä¸ªæ–¹æ³•æˆ‘ä»¬æ²¡æœ‰ç”¨åˆ°å°±ä¸å†™è¿›æ¥äº†
 	 */
 	
 }

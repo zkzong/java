@@ -6,7 +6,7 @@ package com.company.section9;
  */
 public class Caretaker {
 	
-	//±¸ÍüÂ¼¶ÔÏó
+	//å¤‡å¿˜å½•å¯¹è±¡
 	private IMemento memento;
 
 	public IMemento getMemento() {

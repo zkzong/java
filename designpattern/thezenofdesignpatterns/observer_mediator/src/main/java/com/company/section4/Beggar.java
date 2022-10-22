@@ -6,18 +6,18 @@ package com.company.section4;
  */
 public class Beggar extends EventCustomer {
 	
-	//Ö»ÄÜ´¦Àí±»ÈËÒÅÆúµÄ¶«Î÷
+	//åªèƒ½å¤„ç†è¢«äººé—å¼ƒçš„ä¸œè¥¿
 	public Beggar(){
 		super(EventCustomType.DEL);
 	}
 	
 	@Override
 	public void exec(ProductEvent event) {
-		//ÊÂ¼şµÄÔ´Í·
+		//äº‹ä»¶çš„æºå¤´
 		Product p = event.getSource();
-		//ÊÂ¼şÀàĞÍ
+		//äº‹ä»¶ç±»å‹
 		ProductEventType type = event.getEventType();
-		System.out.println("ÆòØ¤´¦ÀíÊÂ¼ş:"+p.getName() +"Ïú»Ù,ÊÂ¼şÀàĞÍ="+type);				
+		System.out.println("ä¹ä¸å¤„ç†äº‹ä»¶:"+p.getName() +"é”€æ¯,äº‹ä»¶ç±»å‹="+type);				
 	}
 
 }

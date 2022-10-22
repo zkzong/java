@@ -5,39 +5,39 @@ package com.company.section1;
  * I'm glad to share my knowledge with you all.
  */
 public class HummerH2Model extends HummerModel {
-	//H2ĞÍºÅµÄº·Âí³µÃùµÑ
+	//H2å‹å·çš„æ‚é©¬è½¦é¸£ç¬›
 	public void alarm() {
-		System.out.println("º·ÂíH2ÃùµÑ...");
+		System.out.println("æ‚é©¬H2é¸£ç¬›...");
 	}
 
-	//ÒıÇæºäÃùÉù
+	//å¼•æ“è½°é¸£å£°
 	public void engineBoom() {
-		System.out.println("º·ÂíH2ÒıÇæÉùÒôÊÇÕâÑùÔÚ...");
+		System.out.println("æ‚é©¬H2å¼•æ“å£°éŸ³æ˜¯è¿™æ ·åœ¨...");
 	}
 
-	//Æû³µ·¢¶¯
+	//æ±½è½¦å‘åŠ¨
 	public void start() {
-		System.out.println("º·ÂíH2·¢¶¯...");
+		System.out.println("æ‚é©¬H2å‘åŠ¨...");
 	}
 	
-	//Í£³µ
+	//åœè½¦
 	public void stop() {
-		System.out.println("º·ÂíH2Í£³µ...");
+		System.out.println("æ‚é©¬H2åœè½¦...");
 	}
 	
-	//¿ª¶¯ÆğÀ´
+	//å¼€åŠ¨èµ·æ¥
 	public void run(){
 
-		//ÏÈ·¢¶¯Æû³µ
+		//å…ˆå‘åŠ¨æ±½è½¦
 		this.start();
 		
-		//ÒıÇæ¿ªÊ¼ºäÃù
+		//å¼•æ“å¼€å§‹è½°é¸£
 		this.engineBoom();
 		
-		//È»ºó¾Í¿ªÊ¼ÅÜÁË£¬ÅÜµÄ¹ı³ÌÖĞÓöµ½Ò»Ìõ¹·µ²Â·£¬¾Í°´À®°È
+		//ç„¶åå°±å¼€å§‹è·‘äº†ï¼Œè·‘çš„è¿‡ç¨‹ä¸­é‡åˆ°ä¸€æ¡ç‹—æŒ¡è·¯ï¼Œå°±æŒ‰å–‡å­
 		this.alarm();
 		
-		//µ½´ïÄ¿µÄµØ¾ÍÍ£³µ
+		//åˆ°è¾¾ç›®çš„åœ°å°±åœè½¦
 		this.stop();
 	}
 

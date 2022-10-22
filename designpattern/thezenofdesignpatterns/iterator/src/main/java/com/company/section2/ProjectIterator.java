@@ -5,23 +5,23 @@ import java.util.ArrayList;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¶¨ÒåÒ»¸öµü´úÆ÷
+ * å®šä¹‰ä¸€ä¸ªè¿­ä»£å™¨
  */
 public class ProjectIterator implements IProjectIterator {
 	
-	//ËùÓĞµÄÏîÄ¿¶¼·ÅÔÚÕâÀïArrayListÖĞ
+	//æ‰€æœ‰çš„é¡¹ç›®éƒ½æ”¾åœ¨è¿™é‡ŒArrayListä¸­
 	private ArrayList<IProject> projectList = new ArrayList<IProject>();
 	
 	private int currentItem = 0; 
 	
-	//¹¹Ôìº¯Êı³öÈëprojectList
+	//æ„é€ å‡½æ•°å‡ºå…¥projectList
 	public ProjectIterator(ArrayList<IProject> projectList){
 		this.projectList = projectList;
 	}
 	
-	//ÅĞ¶ÏÊÇ·ñ»¹ÓĞÔªËØ£¬±ØĞëÊµÏÖ
+	//åˆ¤æ–­æ˜¯å¦è¿˜æœ‰å…ƒç´ ï¼Œå¿…é¡»å®ç°
 	public boolean hasNext() {
-		//¶¨ÒåÒ»¸ö·µ»ØÖµ
+		//å®šä¹‰ä¸€ä¸ªè¿”å›å€¼
 		boolean b = true;
 		if(this.currentItem>=projectList.size() || this.projectList.get(this.currentItem) == null){
 			b =false;
@@ -29,14 +29,14 @@ public class ProjectIterator implements IProjectIterator {
 		return b;
 	}
 
-	//È¡µÃÏÂÒ»¸öÖµ
+	//å–å¾—ä¸‹ä¸€ä¸ªå€¼
 	public IProject next() {
 		return (IProject)this.projectList.get(this.currentItem++);
 	}
 
-	//É¾³ıÒ»¸ö¶ÔÏó
+	//åˆ é™¤ä¸€ä¸ªå¯¹è±¡
 	public void remove() {
-		//ÔİÊ±Ã»ÓĞÊ¹ÓÃµ½
+		//æš‚æ—¶æ²¡æœ‰ä½¿ç”¨åˆ°
 	}
 
 }

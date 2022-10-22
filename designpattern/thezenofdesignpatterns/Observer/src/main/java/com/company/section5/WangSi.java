@@ -4,19 +4,19 @@ import java.util.Observer;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÍõË¹£¬Ò²ÊÇ¹Û²ìÕß£¬¶Å×«µÄÈËÃû
+ * ç‹æ–¯ï¼Œä¹Ÿæ˜¯è§‚å¯Ÿè€…ï¼Œæœæ’°çš„äººå
  */
 public class WangSi implements Observer{
 	
-	//ÍõË¹£¬¿´µ½ÀîË¹ÓĞ»î¶¯£¬×Ô¼º¾ÍÊÜ²»ÁË
+	//ç‹æ–¯ï¼Œçœ‹åˆ°ææ–¯æœ‰æ´»åŠ¨ï¼Œè‡ªå·±å°±å—ä¸äº†
 	public void update(Observable observable,Object obj){
-		System.out.println("ÍõË¹£º¹Û²ìµ½º«·Ç×Ó»î¶¯£¬×Ô¼ºÒ²¿ªÊ¼»î¶¯ÁË...");
+		System.out.println("ç‹æ–¯ï¼šè§‚å¯Ÿåˆ°éŸ©éå­æ´»åŠ¨ï¼Œè‡ªå·±ä¹Ÿå¼€å§‹æ´»åŠ¨äº†...");
 		this.cry(obj.toString());
-		System.out.println("ÍõË¹£ºÕæÕæµÄ¿ŞËÀÁË...\n");
+		System.out.println("ç‹æ–¯ï¼šçœŸçœŸçš„å“­æ­»äº†...\n");
 	}
 	
-	//Ò»¿´ÀîË¹ÓĞ»î¶¯£¬¾Í¿Ş£¬Í´¿Ş
+	//ä¸€çœ‹ææ–¯æœ‰æ´»åŠ¨ï¼Œå°±å“­ï¼Œç—›å“­
 	private void cry(String context){
-		System.out.println("ÍõË¹£ºÒòÎª"+context+"£¬¡ª¡ªËùÒÔÎÒ±¯ÉËÑ½£¡");
+		System.out.println("ç‹æ–¯ï¼šå› ä¸º"+context+"ï¼Œâ€”â€”æ‰€ä»¥æˆ‘æ‚²ä¼¤å‘€ï¼");
 	}
 }

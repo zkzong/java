@@ -3,29 +3,29 @@ package com.company.section1;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ×îĞ¡µÄÒ¶×Ó½Úµã
+ * æœ€å°çš„å¶å­èŠ‚ç‚¹
  */
 @SuppressWarnings("all")
 public class Leaf implements ILeaf {
-	//Ò¶×Ó½ĞÊ²Ã´Ãû×Ö
+	//å¶å­å«ä»€ä¹ˆåå­—
 	private String name = "";
-	//Ò¶×ÓµÄÖ°Î»
+	//å¶å­çš„èŒä½
 	private String position = "";
-	//Ò¶×ÓµÄĞ½Ë®
+	//å¶å­çš„è–ªæ°´
 	private int salary=0;
 	
-	//Í¨¹ı¹¹Ôìº¯Êı´«µİĞÅÏ¢
+	//é€šè¿‡æ„é€ å‡½æ•°ä¼ é€’ä¿¡æ¯
 	public Leaf(String name,String position,int salary){
 		this.name = name;
 		this.position = position;
 		this.salary = salary;
 	}
-	//×îĞ¡µÄĞ¡±øÖ»ÄÜ»ñµÃ×Ô¼ºµÄĞÅÏ¢ÁË
+	//æœ€å°çš„å°å…µåªèƒ½è·å¾—è‡ªå·±çš„ä¿¡æ¯äº†
 	public String getInfo() {
 		String info = "";
-		info = "Ãû³Æ£º" + this.name;
-		info = info + "\tÖ°Î»£º"+ this.position;
-		info = info + "\tĞ½Ë®£º"+this.salary;
+		info = "åç§°ï¼š" + this.name;
+		info = info + "\tèŒä½ï¼š"+ this.position;
+		info = info + "\tè–ªæ°´ï¼š"+this.salary;
 		return info;
 	}
 

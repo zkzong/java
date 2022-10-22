@@ -7,36 +7,36 @@ package com.company.section4;
  */
 public class Client {
 	public static void main(String[] args) {
-		//»ñµÃÊÂ¼ş·Ö·¢ÖĞĞÄ
+		//è·å¾—äº‹ä»¶åˆ†å‘ä¸­å¿ƒ
 		EventDispatch dispatch = EventDispatch.getEventDispathc();
-		//½ÓÊÜÆòØ¤¶ÔÊÂ¼şµÄ´¦Àí
+		//æ¥å—ä¹ä¸å¯¹äº‹ä»¶çš„å¤„ç†
 		dispatch.registerCustomer(new Beggar());	
-		//½ÓÊÜÆ½Ãñ¶ÔÊÂ¼şµÄ´¦Àí
+		//æ¥å—å¹³æ°‘å¯¹äº‹ä»¶çš„å¤„ç†
 		dispatch.registerCustomer(new Commoner());
-		//½ÓÊÜ¹ó×å¶Ô¸ÃÊÂ¼şµÄ´¦Àí
+		//æ¥å—è´µæ—å¯¹è¯¥äº‹ä»¶çš„å¤„ç†
 		dispatch.registerCustomer(new Nobleman());
 		
-		//½¨Á¢Ò»¸öÔ­×Óµ¯Éú²ú¹¤³§
+		//å»ºç«‹ä¸€ä¸ªåŸå­å¼¹ç”Ÿäº§å·¥å‚
 		ProductManager factory = new ProductManager();
 		
-		//ÖÆÔìÒ»¸ö²úÆ·
-		System.out.println("=====Ä£Äâ´´½¨²úÆ·ÊÂ¼ş========");
-		System.out.println("´´½¨Ò»¸ö½Ğ×öĞ¡ÄĞº¢µÄÔ­×Óµ¯");
-		Product p = factory.createProduct("Ğ¡ÄĞº¢Ô­×Óµ¯");
+		//åˆ¶é€ ä¸€ä¸ªäº§å“
+		System.out.println("=====æ¨¡æ‹Ÿåˆ›å»ºäº§å“äº‹ä»¶========");
+		System.out.println("åˆ›å»ºä¸€ä¸ªå«åšå°ç”·å­©çš„åŸå­å¼¹");
+		Product p = factory.createProduct("å°ç”·å­©åŸå­å¼¹");
 		
-		//ĞŞ¸ÄÒ»¸ö²úÆ·
-		System.out.println("\n=====Ä£ÄâĞŞ¸Ä²úÆ·ÊÂ¼ş========");
-		System.out.println("°ÑĞ¡ÄĞº¢Ô­×Óµ¯ĞŞ¸ÄÎªÅÖ×ÓºÅÔ­×Óµ¯");
-		factory.editProduct(p, "ÅÖ×ÓºÅÔ­×Óµ¯");
+		//ä¿®æ”¹ä¸€ä¸ªäº§å“
+		System.out.println("\n=====æ¨¡æ‹Ÿä¿®æ”¹äº§å“äº‹ä»¶========");
+		System.out.println("æŠŠå°ç”·å­©åŸå­å¼¹ä¿®æ”¹ä¸ºèƒ–å­å·åŸå­å¼¹");
+		factory.editProduct(p, "èƒ–å­å·åŸå­å¼¹");
 		
-		//ÔÙ¿ËÂ¡Ò»¸öÔ­×Óµ¯
-		System.out.println("\n=====Ä£Äâ¿ËÂ¡²úÆ·ÊÂ¼ş========");
-		System.out.println("¿ËÂ¡ÅÖ×ÓºÅÔ­×Óµ¯");
+		//å†å…‹éš†ä¸€ä¸ªåŸå­å¼¹
+		System.out.println("\n=====æ¨¡æ‹Ÿå…‹éš†äº§å“äº‹ä»¶========");
+		System.out.println("å…‹éš†èƒ–å­å·åŸå­å¼¹");
 		factory.clone(p);
 		
-		//Ïú»ÙÒ»¸ö²úÆ·£¬Ïú»ÙµØµãµØÇòÈË¶¼ÖªµÀ
-		System.out.println("\n=====Ä£ÄâÏú»Ù²úÆ·ÊÂ¼ş========");
-		System.out.println("ÒÅÆúÅÖ×ÓºÅÔ­×Óµ¯");
+		//é”€æ¯ä¸€ä¸ªäº§å“ï¼Œé”€æ¯åœ°ç‚¹åœ°çƒäººéƒ½çŸ¥é“
+		System.out.println("\n=====æ¨¡æ‹Ÿé”€æ¯äº§å“äº‹ä»¶========");
+		System.out.println("é—å¼ƒèƒ–å­å·åŸå­å¼¹");
 		factory.abandonProduct(p);
 		
 	}

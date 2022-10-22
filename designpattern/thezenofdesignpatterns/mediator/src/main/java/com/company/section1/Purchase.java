@@ -3,31 +3,31 @@ package com.company.section1;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ²É¹ºÀà
+ * é‡‡è´­ç±»
  */
 public class Purchase {
 
-	//²É¹ºIBMĞÍºÅµÄµçÄÔ
+	//é‡‡è´­IBMå‹å·çš„ç”µè„‘
 	public void buyIBMcomputer(int number){
-		//·ÃÎÊ¿â´æ
+		//è®¿é—®åº“å­˜
 		Stock stock = new Stock();
-		//·ÃÎÊÏúÊÛ
+		//è®¿é—®é”€å”®
 		Sale sale = new Sale();
 		
-		//µçÄÔµÄÏúÊÛÇé¿ö
+		//ç”µè„‘çš„é”€å”®æƒ…å†µ
 		int saleStatus = sale.getSaleStatus();
 	
-		if(saleStatus>80){  //ÏúÊÛÇé¿öÁ¼ºÃ
-			System.out.println("²É¹ºIBMµçÄÔ:"+number + "Ì¨");
+		if(saleStatus>80){  //é”€å”®æƒ…å†µè‰¯å¥½
+			System.out.println("é‡‡è´­IBMç”µè„‘:"+number + "å°");
 			stock.increase(number);
-		}else{  //ÏúÊÛÇé¿ö²»ºÃ
-			int buyNumber = number/2;  //ÕÛ°ë²É¹º
-			System.out.println("²É¹ºIBMµçÄÔ£º"+buyNumber+ "Ì¨");
+		}else{  //é”€å”®æƒ…å†µä¸å¥½
+			int buyNumber = number/2;  //æŠ˜åŠé‡‡è´­
+			System.out.println("é‡‡è´­IBMç”µè„‘ï¼š"+buyNumber+ "å°");
 		}
 	}
 	
-	//²»ÔÙ²É¹ºIBMµçÄÔ
+	//ä¸å†é‡‡è´­IBMç”µè„‘
 	public void refuseBuyIBM(){
-		System.out.println("²»ÔÙ²É¹ºIBMµçÄÔ");
+		System.out.println("ä¸å†é‡‡è´­IBMç”µè„‘");
 	}
 }

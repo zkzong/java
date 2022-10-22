@@ -7,20 +7,20 @@ import java.util.Vector;
  * I'm glad to share my knowledge with you all.
  */
 public class ConcreteAggregate implements Aggregate {
-	//ÈİÄÉ¶ÔÏóµÄÈİÆ÷
+	//å®¹çº³å¯¹è±¡çš„å®¹å™¨
 	private Vector vector = new Vector();
 	
-	//Ôö¼ÓÒ»¸öÔªËØ
+	//å¢åŠ ä¸€ä¸ªå…ƒç´ 
 	public void add(Object object) {
 		this.vector.add(object);
 	}
 
-	//·µ»Øµü´úÆ÷¶ÔÏó
+	//è¿”å›è¿­ä»£å™¨å¯¹è±¡
 	public Iterator iterator() {
 		return new ConcreteIterator(this.vector);
 	}
 
-	//É¾³ıÒ»¸öÔªËØ
+	//åˆ é™¤ä¸€ä¸ªå…ƒç´ 
 	public void remove(Object object) {
 		this.remove(object);
 	}

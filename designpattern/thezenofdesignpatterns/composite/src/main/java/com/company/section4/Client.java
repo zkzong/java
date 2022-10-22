@@ -7,27 +7,27 @@ package com.company.section4;
 public class Client {
 
 	public static void main(String[] args) {
-		//´´½¨Ò»¸ö¸ù½Úµã
+		//åˆ›å»ºä¸€ä¸ªæ ¹èŠ‚ç‚¹
 		Composite root = new Composite();
 		root.doSomething();
 		
-		//´´½¨Ò»¸öÊ÷Ö¦¹¹¼ş
+		//åˆ›å»ºä¸€ä¸ªæ ‘ææ„ä»¶
 		Composite branch = new Composite();
-		//´´½¨Ò»¸öÒ¶×Ó½Úµã
+		//åˆ›å»ºä¸€ä¸ªå¶å­èŠ‚ç‚¹
 		Leaf leaf = new Leaf();
 		
-		//½¨Á¢ÕûÌå
+		//å»ºç«‹æ•´ä½“
 		root.add(branch);
 		branch.add(leaf);		
 	}
 	
-	//Í¨¹ıµİ¹é±éÀúÊ÷
+	//é€šè¿‡é€’å½’éå†æ ‘
 	public static void display(Composite root){
 
 		for(Component c:root.getChildren()){
-			if(c instanceof Leaf){ //Ò¶×Ó½Úµã
+			if(c instanceof Leaf){ //å¶å­èŠ‚ç‚¹
 				c.doSomething();
-			}else{ //Ê÷Ö¦½Úµã
+			}else{ //æ ‘æèŠ‚ç‚¹
 				display((Composite)c);
 			}
 		}

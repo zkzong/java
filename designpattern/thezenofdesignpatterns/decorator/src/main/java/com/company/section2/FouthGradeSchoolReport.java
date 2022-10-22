@@ -3,25 +3,25 @@ package com.company.section2;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ËÄÄê¼¶µÄ³É¼¨µ¥£¬Õâ¸öÊÇÎÒÃÇÑ§Ğ£µÚÒ»´ÎÊµÊ©£¬ÒÔÇ°Ã»ÓĞ¸É¹ı
- * ÕâÖÖ¡°È±µÂ¡±ÊÂ¡£
+ * å››å¹´çº§çš„æˆç»©å•ï¼Œè¿™ä¸ªæ˜¯æˆ‘ä»¬å­¦æ ¡ç¬¬ä¸€æ¬¡å®æ–½ï¼Œä»¥å‰æ²¡æœ‰å¹²è¿‡
+ * è¿™ç§â€œç¼ºå¾·â€äº‹ã€‚
  */
 public class FouthGradeSchoolReport extends SchoolReport {
 
-	//ÎÒµÄ³É¼¨µ¥
+	//æˆ‘çš„æˆç»©å•
 	public void report() {
-		//³É¼¨µ¥µÄ¸ñÊ½ÊÇÕâ¸öÑù×ÓµÄ
-		System.out.println("×ğ¾´µÄXXX¼Ò³¤:");  
+		//æˆç»©å•çš„æ ¼å¼æ˜¯è¿™ä¸ªæ ·å­çš„
+		System.out.println("å°Šæ•¬çš„XXXå®¶é•¿:");  
 		System.out.println("  ......");
-		System.out.println("  ÓïÎÄ 62  ÊıÑ§65 ÌåÓı 98  ×ÔÈ»  63");
+		System.out.println("  è¯­æ–‡ 62  æ•°å­¦65 ä½“è‚² 98  è‡ªç„¶  63");
 		System.out.println("  .......");
-		System.out.println("               ¼Ò³¤Ç©Ãû£º       ");
+		System.out.println("               å®¶é•¿ç­¾åï¼š       ");
 	}
 
 
-	//¼Ò³¤Ç©Ãû
+	//å®¶é•¿ç­¾å
 	public void sign(String name) {
-		System.out.println("¼Ò³¤Ç©ÃûÎª£º"+name);
+		System.out.println("å®¶é•¿ç­¾åä¸ºï¼š"+name);
 	}
 
 }

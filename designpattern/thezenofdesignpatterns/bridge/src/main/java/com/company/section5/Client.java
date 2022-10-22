@@ -8,11 +8,11 @@ package com.company.section5;
 public class Client {
 
 	public static void main(String[] args) {
-		//定义一个实现化角色
+		//瀹氫箟涓�涓疄鐜板寲瑙掕壊
 		Implementor imp = new ConcreteImplementor1();
-		//定义一个抽象化角色
+		//瀹氫箟涓�涓娊璞″寲瑙掕壊
 		Abstraction abs = new RefinedAbstraction(imp);
-		//执行行文
+		//鎵ц琛屾枃
 		abs.request();
 	}
 }

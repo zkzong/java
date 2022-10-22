@@ -3,21 +3,21 @@ package com.company.section1;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¹ã¸æĞÅÄ£°å£¬¸ÃÊı¶ÔÏóÊÇÓÉÊı¾İ¿â²úÉúµÄ
+ * å¹¿å‘Šä¿¡æ¨¡æ¿ï¼Œè¯¥æ•°å¯¹è±¡æ˜¯ç”±æ•°æ®åº“äº§ç”Ÿçš„
  */
 public class AdvTemplate {
-	//¹ã¸æĞÅÃû³Æ
-	private String advSubject ="XXÒøĞĞ¹úÇìĞÅÓÃ¿¨³é½±»î¶¯";
+	//å¹¿å‘Šä¿¡åç§°
+	private String advSubject ="XXé“¶è¡Œå›½åº†ä¿¡ç”¨å¡æŠ½å¥–æ´»åŠ¨";
 	
-	//¹ã¸æĞÅÄÚÈİ
-	private String advContext = "¹úÇì³é½±»î¶¯Í¨Öª£ºÖ»ÒªË¢¿¨¾ÍËÍÄã1°ÙÍò£¡....";
+	//å¹¿å‘Šä¿¡å†…å®¹
+	private String advContext = "å›½åº†æŠ½å¥–æ´»åŠ¨é€šçŸ¥ï¼šåªè¦åˆ·å¡å°±é€ä½ 1ç™¾ä¸‡ï¼....";
 	
-	//È¡µÃ¹ã¸æĞÅµÄÃû³Æ
+	//å–å¾—å¹¿å‘Šä¿¡çš„åç§°
 	public String getAdvSubject(){
 		return this.advSubject;
 	}
 	
-	//È¡µÃ¹ã¸æĞÅµÄÄÚÈİ
+	//å–å¾—å¹¿å‘Šä¿¡çš„å†…å®¹
 	public String getAdvContext(){
 		return this.advContext;
 	}

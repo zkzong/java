@@ -3,24 +3,24 @@ package com.company.section2;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ×°ÊÎÀà£¬ÎÒÒª°ÑÎÒµÄ³É¼¨µ¥×°ÊÎÒ»ÏÂ
+ * è£…é¥°ç±»ï¼Œæˆ‘è¦æŠŠæˆ‘çš„æˆç»©å•è£…é¥°ä¸€ä¸‹
  */
 public abstract class Decorator extends SchoolReport{
 	
-	//Ê×ÏÈÎÒÒªÖªµÀÊÇÄÇ¸ö³É¼¨µ¥
+	//é¦–å…ˆæˆ‘è¦çŸ¥é“æ˜¯é‚£ä¸ªæˆç»©å•
 	private SchoolReport sr;
 	
-	//¹¹Ôìº¯Êı£¬´«µİ³É¼¨µ¥¹ıÀ´
+	//æ„é€ å‡½æ•°ï¼Œä¼ é€’æˆç»©å•è¿‡æ¥
 	public Decorator(SchoolReport sr){
 		this.sr = sr;
 	}
 	
-	//³É¼¨µ¥»¹ÊÇÒª±»¿´µ½µÄ
+	//æˆç»©å•è¿˜æ˜¯è¦è¢«çœ‹åˆ°çš„
 	public void report(){
 		this.sr.report();
 	}
 	
-	//¿´Íê±Ï»¹ÊÇÒªÇ©ÃûµÄ
+	//çœ‹å®Œæ¯•è¿˜æ˜¯è¦ç­¾åçš„
 	public void sign(String name){
 		this.sr.sign(name);
 	}

@@ -3,27 +3,27 @@ package com.company.section1;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * º«·Ç×Ó£¬ÀîË¹µÄÊ¦µÜ£¬º«¹úµÄÖØÒªÈËÎï
+ * éŸ©éå­ï¼Œææ–¯çš„å¸ˆå¼Ÿï¼ŒéŸ©å›½çš„é‡è¦äººç‰©
  */
 public class HanFeiZi implements IHanFeiZi{
-	//º«·Ç×ÓÊÇ·ñÔÚ³Ô·¹£¬×÷Îª¼à¿ØµÄÅĞ¶Ï±ê×¼
+	//éŸ©éå­æ˜¯å¦åœ¨åƒé¥­ï¼Œä½œä¸ºç›‘æ§çš„åˆ¤æ–­æ ‡å‡†
 	private boolean isHavingBreakfast = false;
-	//º«·Ç×ÓÊÇ·ñÔÚÓéÀÖ
+	//éŸ©éå­æ˜¯å¦åœ¨å¨±ä¹
 	private boolean isHavingFun = false;
 	
-	//º«·Ç×ÓÒª³Ô·¹ÁË
+	//éŸ©éå­è¦åƒé¥­äº†
 	public void haveBreakfast(){
-		System.out.println("º«·Ç×Ó:¿ªÊ¼³Ô·¹ÁË...");
+		System.out.println("éŸ©éå­:å¼€å§‹åƒé¥­äº†...");
 		this.isHavingBreakfast =true;
 	}
 	
-	//º«·Ç×Ó¿ªÊ¼ÓéÀÖÁË,¹Å´úÈËÃ»É¶ÓéÀÖ£¬ÄãÄÜÏëµ½µÄ¾ÍÄÇÃ´¶à
+	//éŸ©éå­å¼€å§‹å¨±ä¹äº†,å¤ä»£äººæ²¡å•¥å¨±ä¹ï¼Œä½ èƒ½æƒ³åˆ°çš„å°±é‚£ä¹ˆå¤š
 	public void haveFun(){
-		System.out.println("º«·Ç×Ó:¿ªÊ¼ÓéÀÖÁË...");
+		System.out.println("éŸ©éå­:å¼€å§‹å¨±ä¹äº†...");
 		this.isHavingFun = true;
 	}
 		
-	//ÒÔÏÂÊÇbeanµÄ»ù±¾·½·¨£¬getter/setter£¬²»¶àËµ
+	//ä»¥ä¸‹æ˜¯beançš„åŸºæœ¬æ–¹æ³•ï¼Œgetter/setterï¼Œä¸å¤šè¯´
 	public boolean isHavingBreakfast() {
 		return isHavingBreakfast;
 	}

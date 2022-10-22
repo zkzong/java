@@ -7,25 +7,25 @@ package com.company.section5;
 public class Client {
 
 	public static void main(String[] args) {
-		//³õÊ¼»¯¶ÔÏó³Ø
+		//åˆå§‹åŒ–å¯¹è±¡æ± 
 		ExtrinsicState state1 = new ExtrinsicState();
-		state1.setSubject("¿ÆÄ¿1");
-		state1.setLocation("ÉÏº£");
+		state1.setSubject("ç§‘ç›®1");
+		state1.setLocation("ä¸Šæµ·");
 		SignInfoFactory.getSignInfo(state1);
 		
 		ExtrinsicState state2 = new ExtrinsicState();
-		state2.setSubject("¿ÆÄ¿1");
-		state2.setLocation("ÉÏº£");
+		state2.setSubject("ç§‘ç›®1");
+		state2.setLocation("ä¸Šæµ·");
 		
 		
-		//¼ÆËãÖ´ĞĞ10Íò´ÎĞèÒªµÄÊ±¼ä
+		//è®¡ç®—æ‰§è¡Œ10ä¸‡æ¬¡éœ€è¦çš„æ—¶é—´
 		long currentTime = System.currentTimeMillis();
 		for(int i=0;i<1000000;i++){
 			SignInfoFactory.getSignInfo(state2);
 		}
 		long tailTime = System.currentTimeMillis();
 		
-		System.out.println("Ö´ĞĞÊ±¼ä£º"+(tailTime - currentTime) + " ms");
+		System.out.println("æ‰§è¡Œæ—¶é—´ï¼š"+(tailTime - currentTime) + " ms");
 	}
 
 		

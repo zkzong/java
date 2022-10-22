@@ -6,7 +6,7 @@ package com.company.section5;
  */
 public interface Implementor {
 	
-	//基本方法
+	//鍩烘湰鏂规硶
 	public void doSomething();
 	
 	public void doAnything();

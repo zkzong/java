@@ -6,17 +6,17 @@ package com.company.section3;
  * I'm glad to share my knowledge with you all.
  */
 public class ConcreteCommand1 extends Command {
-	//Ò²¶ÔÄÇ¸öReceiverÀà½øĞĞÃüÁî´¦Àí
+	//ä¹Ÿå¯¹é‚£ä¸ªReceiverç±»è¿›è¡Œå‘½ä»¤å¤„ç†
 	private Receiver receiver;
 	
-	//¹¹Ôìº¯Êı´«µİ½ÓÊÕÕß
+	//æ„é€ å‡½æ•°ä¼ é€’æ¥æ”¶è€…
 	public ConcreteCommand1(Receiver _receiver){
 		this.receiver = _receiver;
 	}
 	
-	//Ã¿¸ö¾ßÌåµÄÃüÁî¶¼±ØĞëÊµÏÖÒ»¸öÃüÁî
+	//æ¯ä¸ªå…·ä½“çš„å‘½ä»¤éƒ½å¿…é¡»å®ç°ä¸€ä¸ªå‘½ä»¤
 	public void execute() {
-		//ÒµÎñ´¦Àí
+		//ä¸šåŠ¡å¤„ç†
 		this.receiver.doSomething();
 	}
 

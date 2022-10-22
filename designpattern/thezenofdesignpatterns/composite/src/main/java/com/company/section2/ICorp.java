@@ -3,10 +3,10 @@ package com.company.section2;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * 公司类，定义每个员工都有信息
+ * 鍏徃绫伙紝瀹氫箟姣忎釜鍛樺伐閮芥湁淇℃伅
  */
 public interface ICorp {
 
-	//每个员工都有信息，你想隐藏，门儿都没有！
+	//姣忎釜鍛樺伐閮芥湁淇℃伅锛屼綘鎯抽殣钘忥紝闂ㄥ効閮芥病鏈夛紒
 	public String getInfo();
 }

@@ -5,7 +5,7 @@ import java.util.HashMap;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * 加法运算
+ * 鍔犳硶杩愮畻
  */
 public class AddExpression extends SymbolExpression {
 
@@ -13,7 +13,7 @@ public class AddExpression extends SymbolExpression {
 		super(_left,_right);
 	}
 	
-	//把左右两个表达式运算的结果加起来
+	//鎶婂乏鍙充袱涓〃杈惧紡杩愮畻鐨勭粨鏋滃姞璧锋潵
 	public int interpreter(HashMap<String, Integer> var) {
 		return super.left.interpreter(var) + super.right.interpreter(var);
 	}

@@ -5,13 +5,13 @@ import java.util.ArrayList;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÒªÊ²Ã´Ë³ĞòµÄ³µ£¬ÄãËµ£¬ÎÒ¸ø½¨Ôì³öÀ´
+ * è¦ä»€ä¹ˆé¡ºåºçš„è½¦ï¼Œä½ è¯´ï¼Œæˆ‘ç»™å»ºé€ å‡ºæ¥
  */
 public abstract class CarBuilder {
 	
-	//½¨ÔìÒ»¸öÄ£ĞÍ£¬ÄãÒª¸øÎÒÒ»¸öË³ĞòÒª£¬¾ÍÊÇ×é×°Ë³Ğò
+	//å»ºé€ ä¸€ä¸ªæ¨¡å‹ï¼Œä½ è¦ç»™æˆ‘ä¸€ä¸ªé¡ºåºè¦ï¼Œå°±æ˜¯ç»„è£…é¡ºåº
 	public abstract void setSequence(ArrayList<String> sequence);
 	
-	//ÉèÖÃÍê±ÏË³Ğòºó£¬¾Í¿ÉÒÔÖ±½ÓÄÃµ½Õâ¸öÕâÁ½Ä£ĞÍ
+	//è®¾ç½®å®Œæ¯•é¡ºåºåï¼Œå°±å¯ä»¥ç›´æ¥æ‹¿åˆ°è¿™ä¸ªè¿™ä¸¤æ¨¡å‹
 	public abstract CarModel getCarModel();
 }

@@ -7,7 +7,7 @@ package com.company.section6;
 public class Originator implements Cloneable{
 	private Originator backup;
 	
-	//ÄÚ²¿×´Ì¬
+	//å†…éƒ¨çŠ¶æ€
 	private String state = "";
 	
 	public String getState() {
@@ -18,18 +18,18 @@ public class Originator implements Cloneable{
 		this.state = state;
 	}
 
-	//´´½¨Ò»¸ö±¸ÍüÂ¼
+	//åˆ›å»ºä¸€ä¸ªå¤‡å¿˜å½•
 	public void createMemento(){
 		this.backup = this.clone();
 	}
 	
-	//»Ö¸´Ò»¸ö±¸ÍüÂ¼
+	//æ¢å¤ä¸€ä¸ªå¤‡å¿˜å½•
 	public void restoreMemento(){
-		//ÔÚ½øĞĞ»Ö¸´Ç°Ó¦¸Ã½øĞĞ¶ÏÑÔ£¬·ÀÖ¹¿ÕÖ¸Õë
+		//åœ¨è¿›è¡Œæ¢å¤å‰åº”è¯¥è¿›è¡Œæ–­è¨€ï¼Œé˜²æ­¢ç©ºæŒ‡é’ˆ
 		this.setState(this.backup.getState());
 	}
 	
-	//¿ËÂ¡µ±Ç°¶ÔÏó
+	//å…‹éš†å½“å‰å¯¹è±¡
 	@Override
 	protected Originator clone(){
 		

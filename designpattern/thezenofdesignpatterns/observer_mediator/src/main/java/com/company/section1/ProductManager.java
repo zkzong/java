@@ -6,37 +6,37 @@ package com.company.section1;
  */
 public class ProductManager {
 	
-	//ÊÇ·ñ¿ÉÒÔ´´½¨Ò»¸ö²úÆ·
+	//æ˜¯å¦å¯ä»¥åˆ›å»ºä¸€ä¸ªäº§å“
 	private boolean isPermittedCreate = false;
 	
-	//½¨Á¢Ò»¸ö²úÆ·
+	//å»ºç«‹ä¸€ä¸ªäº§å“
 	public Product createProduct(String name){
-		//Ê×ÏÈĞŞ¸ÄÈ¨ÏŞ£¬ÔÊĞí´´½¨
+		//é¦–å…ˆä¿®æ”¹æƒé™ï¼Œå…è®¸åˆ›å»º
 		isPermittedCreate = true;
 		Product p = new Product(this,name);
 		return p;
 	}
 	
-	//·ÏÆúÒ»¸ö²úÆ·
+	//åºŸå¼ƒä¸€ä¸ªäº§å“
 	public void abandonProduct(Product p){
-		//Ïú»ÙÒ»¸ö²úÆ·£¬ÀıÈçÉ¾³ıÊı¾İ¿â¼ÇÂ¼
+		//é”€æ¯ä¸€ä¸ªäº§å“ï¼Œä¾‹å¦‚åˆ é™¤æ•°æ®åº“è®°å½•
 		p = null;
 	}
 	
-	//ĞŞ¸ÄÒ»¸ö²úÆ·
+	//ä¿®æ”¹ä¸€ä¸ªäº§å“
 	public void editProduct(Product p,String name){
-		//ĞŞ¸ÄºóµÄ²úÆ·
+		//ä¿®æ”¹åçš„äº§å“
 		p.setName(name);
 	}
 	
-	//»ñµÃÊÇ·ñ¿ÉÒÔ´´½¨Ò»¸ö²úÆ·
+	//è·å¾—æ˜¯å¦å¯ä»¥åˆ›å»ºä¸€ä¸ªäº§å“
 	public boolean isCreateProduct(){
 		return isPermittedCreate;
 	}
 	
-	//¿ËÂ¡Ò»¸ö²úÆ·
+	//å…‹éš†ä¸€ä¸ªäº§å“
 	public Product clone(Product p){
-		//²úÉú¿ËÂ¡ÊÂ¼ş
+		//äº§ç”Ÿå…‹éš†äº‹ä»¶
 		return p.clone();
 	}
 }

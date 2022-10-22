@@ -5,23 +5,23 @@ import java.util.ArrayList;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * 节点类，也简单了很多
+ * 鑺傜偣绫伙紝涔熺畝鍗曚簡寰堝
  */
 public class Branch extends Corp {
-	//领导下边有那些下级领导和小兵
+	//棰嗗涓嬭竟鏈夐偅浜涗笅绾ч瀵煎拰灏忓叺
 	ArrayList<Corp> subordinateList = new ArrayList<Corp>();
 	
-	//构造函数是必须的了
+	//鏋勯�犲嚱鏁版槸蹇呴』鐨勪簡
 	public Branch(String _name,String _position,int _salary){
 		super(_name,_position,_salary);
 	}
 	
-	//增加一个下属，可能是小头目，也可能是个小兵
+	//澧炲姞涓�涓笅灞烇紝鍙兘鏄皬澶寸洰锛屼篃鍙兘鏄釜灏忓叺
 	public void addSubordinate(Corp corp) {
 		this.subordinateList.add(corp);
 	}
 	
-	//我有哪些下属
+	//鎴戞湁鍝簺涓嬪睘
 	public ArrayList<Corp> getSubordinate() {
 		return this.subordinateList;
 	}

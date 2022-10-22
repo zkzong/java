@@ -5,19 +5,19 @@ import java.util.ArrayList;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * Ê÷Ö¦½Úµã£¬Ò²¾ÍÊÇ¸÷¸ö²¿ÃÅ¾­ÀíºÍ×é³¤µÄ½ÇÉ«
+ * æ ‘æèŠ‚ç‚¹ï¼Œä¹Ÿå°±æ˜¯å„ä¸ªéƒ¨é—¨ç»ç†å’Œç»„é•¿çš„è§’è‰²
  */
 public interface IBranch {
 	
-	//»ñµÃĞÅÏ¢
+	//è·å¾—ä¿¡æ¯
 	public String getInfo();
 	
-	//Ôö¼ÓÊı¾İ½Úµã£¬ÀıÈçÑĞ·¢²¿ÏÂµÄÑĞ·¢Ò»×é
+	//å¢åŠ æ•°æ®èŠ‚ç‚¹ï¼Œä¾‹å¦‚ç ”å‘éƒ¨ä¸‹çš„ç ”å‘ä¸€ç»„
 	public void add(IBranch branch);
 	
-	//Ôö¼ÓÒ¶×Ó½Úµã
+	//å¢åŠ å¶å­èŠ‚ç‚¹
 	public void add(ILeaf leaf);
 	
-	//»ñµÃÏÂ¼¶ĞÅÏ¢
+	//è·å¾—ä¸‹çº§ä¿¡æ¯
 	public ArrayList getSubordinateInfo();
 }

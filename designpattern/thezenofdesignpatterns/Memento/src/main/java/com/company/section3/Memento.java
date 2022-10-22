@@ -6,10 +6,10 @@ package com.company.section3;
  */
 public class Memento {
 	
-	//ÄĞº¢µÄ×´Ì¬
+	//ç”·å­©çš„çŠ¶æ€
 	private String state = "";
 	
-	//Í¨¹ı¹¹Ôìº¯Êı´«µİ×´Ì¬ĞÅÏ¢
+	//é€šè¿‡æ„é€ å‡½æ•°ä¼ é€’çŠ¶æ€ä¿¡æ¯
 	public Memento(String _state){
 		this.state = _state;
 	}

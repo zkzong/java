@@ -6,7 +6,7 @@ package com.company.section1;
  * I'm glad to share my knowledge with you all.
  */
 public class SignInfoFactory {
-	//报名信息的对象擦很难生气
+	//鎶ュ悕淇℃伅鐨勫璞℃摝寰堥毦鐢熸皵
 	public static SignInfo getSignInfo(){
 		return new SignInfo();
 	}

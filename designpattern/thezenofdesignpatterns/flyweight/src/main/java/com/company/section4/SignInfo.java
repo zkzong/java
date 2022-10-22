@@ -6,13 +6,13 @@ package com.company.section4;
  */
 public class SignInfo {
 	
-	//报名人员的ID
+	//鎶ュ悕浜哄憳鐨処D
 	private String id;
-	//考试地点
+	//鑰冭瘯鍦扮偣
 	private String location;
-	//考试科目
+	//鑰冭瘯绉戠洰
 	private String subject;
-	//邮寄地址
+	//閭瘎鍦板潃
 	private String postAddress;
 	
 	public String getId() {

@@ -7,12 +7,12 @@ package com.company.section4;
 public final class Singleton {
 	private static Singleton singleton = null;
 	
-	//ÏŞÖÆ²úÉú¶à¸ö¶ÔÏó
+	//é™åˆ¶äº§ç”Ÿå¤šä¸ªå¯¹è±¡
 	private Singleton(){
 		
 	}
 	
-	//Í¨¹ı¸Ã·½·¨»ñµÃÊµÀı¶ÔÏó
+	//é€šè¿‡è¯¥æ–¹æ³•è·å¾—å®ä¾‹å¯¹è±¡
 	public synchronized static Singleton getSingleton(){
 		if(singleton == null){
 			singleton = new Singleton();

@@ -3,21 +3,21 @@ package com.company.section2;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÎÒÒª°ÑÎÒÑ§Ğ£µÄ×î¸ß³É¼¨¸æËßÀÏ°Ö
+ * æˆ‘è¦æŠŠæˆ‘å­¦æ ¡çš„æœ€é«˜æˆç»©å‘Šè¯‰è€çˆ¸
  */
 public class HighScoreDecorator extends Decorator {
 
-	//¹¹Ôìº¯Êı
+	//æ„é€ å‡½æ•°
 	public HighScoreDecorator(SchoolReport sr){
 		super(sr);
 	}
 	
-	//ÎÒÒª»Ø±¨×î¸ß³É¼¨
+	//æˆ‘è¦å›æŠ¥æœ€é«˜æˆç»©
 	private void reportHighScore(){
-		System.out.println("Õâ´Î¿¼ÊÔÓïÎÄ×î¸ßÊÇ75£¬ÊıÑ§ÊÇ78£¬×ÔÈ»ÊÇ80");
+		System.out.println("è¿™æ¬¡è€ƒè¯•è¯­æ–‡æœ€é«˜æ˜¯75ï¼Œæ•°å­¦æ˜¯78ï¼Œè‡ªç„¶æ˜¯80");
 	}
 	
-	//×î¸ß³É¼¨ÎÒÒª×öÀÏ°Ö¿´³É¼¨µ¥Ç°¸æËßËû£¬·ñÔòµÈËûÒ»¿´£¬¾ÍÂÕÆğóÔÖãÓĞ×áÎÒ£¬ÎÒÄÇ»¹ÓĞ»ú»áËµÑ½
+	//æœ€é«˜æˆç»©æˆ‘è¦åšè€çˆ¸çœ‹æˆç»©å•å‰å‘Šè¯‰ä»–ï¼Œå¦åˆ™ç­‰ä»–ä¸€çœ‹ï¼Œå°±æŠ¡èµ·ç¬¤å¸šæœ‰ææˆ‘ï¼Œæˆ‘é‚£è¿˜æœ‰æœºä¼šè¯´å‘€
 	@Override
 	public void report(){
 		this.reportHighScore();

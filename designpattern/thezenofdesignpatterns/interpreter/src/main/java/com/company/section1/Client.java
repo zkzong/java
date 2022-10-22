@@ -11,31 +11,31 @@ import java.util.HashMap;
  */
 public class Client {
 	
-	//ÔËĞĞËÄÔòÔËËã
+	//è¿è¡Œå››åˆ™è¿ç®—
 	public static void main(String[] args) throws IOException{
 		String expStr = getExpStr();
-		//¸³Öµ
+		//èµ‹å€¼
 		HashMap<String,Integer> var = getValue(expStr);
 		
 		Calculator cal = new Calculator(expStr);		
-		System.out.println("ÔËËã½á¹ûÎª£º"+expStr +"="+cal.run(var));
+		System.out.println("è¿ç®—ç»“æœä¸ºï¼š"+expStr +"="+cal.run(var));
 	}
 	
-	//»ñµÃ±í´ïÊ½
+	//è·å¾—è¡¨è¾¾å¼
 	public static String getExpStr() throws IOException{
-		System.out.print("ÇëÊäÈë±í´ïÊ½£º");
+		System.out.print("è¯·è¾“å…¥è¡¨è¾¾å¼ï¼š");
 		return (new BufferedReader(new InputStreamReader(System.in))).readLine();
 	}
 	
-	//»ñµÃÖµÓ³Éä
+	//è·å¾—å€¼æ˜ å°„
 	public static HashMap<String,Integer> getValue(String exprStr) throws IOException{
 		HashMap<String,Integer> map = new HashMap<String,Integer>();
 		
-		//½âÎöÓĞ¼¸¸ö²ÎÊıÒª´«µİ
+		//è§£ææœ‰å‡ ä¸ªå‚æ•°è¦ä¼ é€’
 		for(char ch:exprStr.toCharArray()){
 			if(ch != '+' && ch != '-'){
-				if(!map.containsKey(String.valueOf(ch))){ //½â¾öÖØ¸´²ÎÊıµÄÎÊÌâ
-					System.out.print("ÇëÊäÈë"+ch+"µÄÖµ:");
+				if(!map.containsKey(String.valueOf(ch))){ //è§£å†³é‡å¤å‚æ•°çš„é—®é¢˜
+					System.out.print("è¯·è¾“å…¥"+ch+"çš„å€¼:");
 					String in = (new BufferedReader(new InputStreamReader(System.in))).readLine();
 					map.put(String.valueOf(ch),Integer.valueOf(in));
 				}

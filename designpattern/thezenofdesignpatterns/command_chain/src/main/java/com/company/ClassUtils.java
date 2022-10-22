@@ -15,15 +15,15 @@ import java.util.List;
 @SuppressWarnings("all")
 public class ClassUtils {
 	
-	//¸ù¾İ¸¸Àà²éÕÒµ½ËùÓĞµÄ×ÓÀà£¬Ä¬ÈÏÇé¿öÊÇ×ÓÀàºÍ¸¸Àà¶¼ÔÚÍ¬Ò»¸ö°üÃûÏÂ
+	//æ ¹æ®çˆ¶ç±»æŸ¥æ‰¾åˆ°æ‰€æœ‰çš„å­ç±»ï¼Œé»˜è®¤æƒ…å†µæ˜¯å­ç±»å’Œçˆ¶ç±»éƒ½åœ¨åŒä¸€ä¸ªåŒ…åä¸‹
 	public static List<Class> getSonClass(Class fatherClass){
-		//¶¨ÒåÒ»¸ö·µ»ØÖµ
+		//å®šä¹‰ä¸€ä¸ªè¿”å›å€¼
 		List<Class> returnClassList = new ArrayList<Class>();
-		//»ñµÃ°üÃû³Æ
+		//è·å¾—åŒ…åç§°
 		String packageName = fatherClass.getPackage().getName();
-		//»ñµÃ°üÖĞµÄËùÓĞÀà
+		//è·å¾—åŒ…ä¸­çš„æ‰€æœ‰ç±»
 		List<Class>  packClasses = getClasses(packageName);
-		//ÅĞ¶ÏÊÇ·ñÊÇÊÇ×ÓÀà
+		//åˆ¤æ–­æ˜¯å¦æ˜¯æ˜¯å­ç±»
 		for(Class c:packClasses){
 			if(fatherClass.isAssignableFrom(c) && !fatherClass.equals(c)){
 				returnClassList.add(c);
@@ -34,7 +34,7 @@ public class ClassUtils {
 
 	
 	
-	//´ÓÒ»¸ö°üÖĞ²éÕÒ³öËùÓĞµÄÀà£¬ÔÚjar°üÖĞ²»ÄÜ²éÕÒ
+	//ä»ä¸€ä¸ªåŒ…ä¸­æŸ¥æ‰¾å‡ºæ‰€æœ‰çš„ç±»ï¼Œåœ¨jaråŒ…ä¸­ä¸èƒ½æŸ¥æ‰¾
 	private static List<Class> getClasses(String packageName) {
 		ClassLoader classLoader = Thread.currentThread()
 				.getContextClassLoader();

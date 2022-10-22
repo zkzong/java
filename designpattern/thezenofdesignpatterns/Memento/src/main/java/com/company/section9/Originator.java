@@ -6,7 +6,7 @@ package com.company.section9;
  */
 public class Originator {
 	
-	//ÄÚ²¿×´Ì¬
+	//å†…éƒ¨çŠ¶æ€
 	private String state = "";
 	
 	public String getState() {
@@ -17,23 +17,23 @@ public class Originator {
 		this.state = state;
 	}
 
-	//´´½¨Ò»¸ö±¸ÍüÂ¼
+	//åˆ›å»ºä¸€ä¸ªå¤‡å¿˜å½•
 	public IMemento createMemento(){
 		return new Memento(this.state);
 	}
 	
-	//»Ö¸´Ò»¸ö±¸ÍüÂ¼
+	//æ¢å¤ä¸€ä¸ªå¤‡å¿˜å½•
 	public void restoreMemento(IMemento _memento){
 		this.setState(((Memento)_memento).getState());
 	}
 	
-	//ÄÚÖÃÀà
+	//å†…ç½®ç±»
 	private class Memento implements IMemento{
 		
-		//·¢ÆğÈËµÄÄÚ²¿×´Ì¬
+		//å‘èµ·äººçš„å†…éƒ¨çŠ¶æ€
 		private String state = "";
 		
-		//¹¹Ôìº¯Êı´«µİ²ÎÊı
+		//æ„é€ å‡½æ•°ä¼ é€’å‚æ•°
 		private Memento(String _state){
 			this.state = _state;
 		}

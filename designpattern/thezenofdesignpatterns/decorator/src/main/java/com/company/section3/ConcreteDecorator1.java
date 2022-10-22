@@ -6,17 +6,17 @@ package com.company.section3;
  */
 public class ConcreteDecorator1 extends Decorator {
 	
-	//¶¨Òå±»ĞŞÊÎÕß
+	//å®šä¹‰è¢«ä¿®é¥°è€…
 	public ConcreteDecorator1(Component _component){
 		super(_component);
 	}
 	
-	//¶¨Òå×Ô¼ºµÄĞŞÊÎ·½·¨
+	//å®šä¹‰è‡ªå·±çš„ä¿®é¥°æ–¹æ³•
 	private void method1(){
-		System.out.println("method1 ĞŞÊÎ");
+		System.out.println("method1 ä¿®é¥°");
 	}
 	
-	//ÖØĞ´¸¸ÀàµÄOperation·½·¨
+	//é‡å†™çˆ¶ç±»çš„Operationæ–¹æ³•
 	public void operate(){
 		this.method1();
 		super.operate();

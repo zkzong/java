@@ -6,7 +6,7 @@ package com.company.section3;
  */
 public class ConcreteComponent extends Component {
 
-	//具体实现
+	//鍏蜂綋瀹炵幇
 	@Override
 	public void operate() {
 		System.out.println("do Something");

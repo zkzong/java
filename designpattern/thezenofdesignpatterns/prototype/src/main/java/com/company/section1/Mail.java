@@ -3,25 +3,25 @@ package com.company.section1;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ĞèÒª·¢ËÍ³öÈ¥µÄÓÊ¼şÕËµ¥
+ * éœ€è¦å‘é€å‡ºå»çš„é‚®ä»¶è´¦å•
  */
 public class Mail implements Cloneable{	
-	//ÊÕ¼şÈË
+	//æ”¶ä»¶äºº
 	private String receiver;
 
-	//ÓÊ¼şÃû³Æ
+	//é‚®ä»¶åç§°
 	private String subject;
 	
-	//³ÆÎ½
+	//ç§°è°“
 	private String appellation;
 	
-	//ÓÊ¼şÄÚÈİ
+	//é‚®ä»¶å†…å®¹
 	private String contxt;
 	
-	//ÓÊ¼şµÄÎ²²¿£¬Ò»°ã¶¼ÊÇ¼ÓÉÏ¡°XXX°æÈ¨ËùÓĞ¡±µÈĞÅÏ¢
+	//é‚®ä»¶çš„å°¾éƒ¨ï¼Œä¸€èˆ¬éƒ½æ˜¯åŠ ä¸Šâ€œXXXç‰ˆæƒæ‰€æœ‰â€ç­‰ä¿¡æ¯
 	private String tail;
 	
-	//¹¹Ôìº¯Êı
+	//æ„é€ å‡½æ•°
 	public Mail(AdvTemplate advTemplate){
 		this.contxt = advTemplate.getAdvContext();
 		this.subject = advTemplate.getAdvSubject();
@@ -39,7 +39,7 @@ public class Mail implements Cloneable{
 		return mail;
 	}
 	
-	//ÒÔÏÂÎªgetter/setter·½·¨
+	//ä»¥ä¸‹ä¸ºgetter/setteræ–¹æ³•
 	public String getReceiver() {
 		return receiver;
 	}

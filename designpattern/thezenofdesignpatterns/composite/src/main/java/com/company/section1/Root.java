@@ -5,46 +5,46 @@ import java.util.ArrayList;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¸ú½ÚµãµÄÊµÏÖÀà
+ * è·ŸèŠ‚ç‚¹çš„å®ç°ç±»
  */
 @SuppressWarnings("all")
 public class Root implements IRoot {
-	//±£´æ¸ú½ÚµãÏÂµÄÊ÷Ö¦½ÚµãºÍÊ÷Ò¶½Úµã£¬SubordinateµÄÒâË¼ÊÇÏÂ¼¶
+	//ä¿å­˜è·ŸèŠ‚ç‚¹ä¸‹çš„æ ‘æèŠ‚ç‚¹å’Œæ ‘å¶èŠ‚ç‚¹ï¼ŒSubordinateçš„æ„æ€æ˜¯ä¸‹çº§
 	private ArrayList subordinateList = new ArrayList();
-	//¸ú½ÚµãµÄÃû³Æ
+	//è·ŸèŠ‚ç‚¹çš„åç§°
 	private String name = "";
-	//¸ù½ÚµãµÄÖ°Î»
+	//æ ¹èŠ‚ç‚¹çš„èŒä½
 	private String position = "";
-	//¸ú½ÚµãµÄĞ½Ë®
+	//è·ŸèŠ‚ç‚¹çš„è–ªæ°´
 	private int salary = 0;
 	
-	//Í¨¹ı¹¹Ôìº¯Êı´«µİ½øÀ´×Ü¾­ÀíµÄĞÅÏ¢
+	//é€šè¿‡æ„é€ å‡½æ•°ä¼ é€’è¿›æ¥æ€»ç»ç†çš„ä¿¡æ¯
 	public Root(String name,String position,int salary){
 		this.name = name;
 		this.position = position;
 		this.salary = salary;
 	}
 	
-	//Ôö¼ÓÊ÷Ö¦½Úµã
+	//å¢åŠ æ ‘æèŠ‚ç‚¹
 	public void add(IBranch branch) {
 		this.subordinateList.add(branch);
 	}
 
-	//Ôö¼ÓÒ¶×Ó½Úµã£¬±ÈÈçÃØÊé£¬Ö±½ÓÁ¥ÊôÓÚ×Ü¾­Àí
+	//å¢åŠ å¶å­èŠ‚ç‚¹ï¼Œæ¯”å¦‚ç§˜ä¹¦ï¼Œç›´æ¥éš¶å±äºæ€»ç»ç†
 	public void add(ILeaf leaf) {
 		this.subordinateList.add(leaf);
 	}
 	
-	//µÃµ½×Ô¼ºµÄĞÅÏ¢
+	//å¾—åˆ°è‡ªå·±çš„ä¿¡æ¯
 	public String getInfo() {
 		String info = "";
-		info = "Ãû³Æ£º"+ this.name;;
-		info = info + "\tÖ°Î»£º" + this.position;
-		info = info + "\tĞ½Ë®: " + this.salary;
+		info = "åç§°ï¼š"+ this.name;;
+		info = info + "\tèŒä½ï¼š" + this.position;
+		info = info + "\tè–ªæ°´: " + this.salary;
 		return info;
 	}
 
-	//µÃµ½ÏÂ¼¶µÄĞÅÏ¢
+	//å¾—åˆ°ä¸‹çº§çš„ä¿¡æ¯
 	public ArrayList getSubordinateInfo() {
 		return this.subordinateList;
 	}

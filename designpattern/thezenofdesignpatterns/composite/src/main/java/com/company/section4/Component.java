@@ -6,8 +6,8 @@ package com.company.section4;
  */
 public abstract class Component {
 	
-	//¸öÌåºÍÕûÌå¶¼¾ßÓĞµÄ¹²Ïí
+	//ä¸ªä½“å’Œæ•´ä½“éƒ½å…·æœ‰çš„å…±äº«
 	public void doSomething(){
-		//±àĞ´ÒµÎñÂß¼­
+		//ç¼–å†™ä¸šåŠ¡é€»è¾‘
 	}
 }

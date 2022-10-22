@@ -5,42 +5,42 @@ import java.util.ArrayList;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÕâĞ©Ê÷Ö¦½ÚµãÒ²¾ÍÊÇÕâĞ©Áìµ¼ÃÇ¼ÈÒªÓĞ×Ô¼ºµÄĞÅÏ¢£¬»¹ÒªÖªµÀ×Ô¼ºµÄÏÂÊôÇé¿ö
+ * è¿™äº›æ ‘æèŠ‚ç‚¹ä¹Ÿå°±æ˜¯è¿™äº›é¢†å¯¼ä»¬æ—¢è¦æœ‰è‡ªå·±çš„ä¿¡æ¯ï¼Œè¿˜è¦çŸ¥é“è‡ªå·±çš„ä¸‹å±æƒ…å†µ
  */
 @SuppressWarnings("all")
 public class Branch implements IBranch, ICorp {
-	//Áìµ¼Ò²ÊÇÈË£¬Ò²ÓĞÃû×Ö
+	//é¢†å¯¼ä¹Ÿæ˜¯äººï¼Œä¹Ÿæœ‰åå­—
 	private String name = "";
-	//Áìµ¼ºÍÁìµ¼²»Í¬£¬Ò²ÊÇÖ°Î»Çø±ğ
+	//é¢†å¯¼å’Œé¢†å¯¼ä¸åŒï¼Œä¹Ÿæ˜¯èŒä½åŒºåˆ«
 	private String position = "";
-	//Áìµ¼Ò²ÊÇÄÃĞ½Ë®µÄ
+	//é¢†å¯¼ä¹Ÿæ˜¯æ‹¿è–ªæ°´çš„
 	private int salary = 0;
-	//Áìµ¼ÏÂ±ßÓĞÄÇĞ©ÏÂ¼¶Áìµ¼ºÍĞ¡±ø
+	//é¢†å¯¼ä¸‹è¾¹æœ‰é‚£äº›ä¸‹çº§é¢†å¯¼å’Œå°å…µ
 	ArrayList<ICorp> subordinateList = new ArrayList<ICorp>();
 	
-	//Í¨¹ı¹¹Ôìº¯Êı´«µİÁìµ¼µÄĞÅÏ¢
+	//é€šè¿‡æ„é€ å‡½æ•°ä¼ é€’é¢†å¯¼çš„ä¿¡æ¯
 	public Branch(String name,String position,int salary){
 		this.name = name;
 		this.position = position;
 		this.salary = salary;
 	}
 	
-	//Ôö¼ÓÒ»¸öÏÂÊô£¬¿ÉÄÜÊÇĞ¡Í·Ä¿£¬Ò²¿ÉÄÜÊÇ¸öĞ¡±ø
+	//å¢åŠ ä¸€ä¸ªä¸‹å±ï¼Œå¯èƒ½æ˜¯å°å¤´ç›®ï¼Œä¹Ÿå¯èƒ½æ˜¯ä¸ªå°å…µ
 	public void addSubordinate(ICorp corp) {
 		this.subordinateList.add(corp);
 	}
 
-	//ÎÒÓĞÄÄĞ©ÏÂÊô
+	//æˆ‘æœ‰å“ªäº›ä¸‹å±
 	public ArrayList<ICorp> getSubordinate() {
 		return this.subordinateList;
 	}
 
-	//Áìµ¼Ò²ÊÇÈË£¬ËûÒ²ÓĞĞÅÏ¢
+	//é¢†å¯¼ä¹Ÿæ˜¯äººï¼Œä»–ä¹Ÿæœ‰ä¿¡æ¯
 	public String getInfo() {
 		String info = "";
-		info = "ĞÕÃû£º" + this.name;
-		info = info + "\tÖ°Î»£º"+ this.position;
-		info = info + "\tĞ½Ë®£º" + this.salary;
+		info = "å§“åï¼š" + this.name;
+		info = info + "\tèŒä½ï¼š"+ this.position;
+		info = info + "\tè–ªæ°´ï¼š" + this.salary;
 		return info;
 	}
 

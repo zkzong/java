@@ -8,10 +8,10 @@ import java.util.HashMap;
  */
 public class Memento {
 	
-	//½ÓÊÜHashMap×÷Îª×´Ì¬
+	//æ¥å—HashMapä½œä¸ºçŠ¶æ€
 	private HashMap<String,Object> stateMap;
 	
-	//½ÓÊÜÒ»¸ö¶ÔÏó£¬½¨Á¢Ò»¸ö±¸·İ
+	//æ¥å—ä¸€ä¸ªå¯¹è±¡ï¼Œå»ºç«‹ä¸€ä¸ªå¤‡ä»½
 	public Memento(HashMap<String,Object> map){
 		this.stateMap = map;
 	}

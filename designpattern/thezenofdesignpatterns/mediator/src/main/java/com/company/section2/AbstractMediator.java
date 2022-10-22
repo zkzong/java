@@ -9,13 +9,13 @@ public abstract class AbstractMediator {
 	protected Sale sale;
 	protected Stock stock;
 	
-	//¹¹Ôìº¯Êı
+	//æ„é€ å‡½æ•°
 	public AbstractMediator(){
 		purchase = new Purchase(this);
 		sale = new Sale(this);
 		stock = new Stock(this);
 	}
 	
-	//ÖĞ½éÕß×îÖØÒªµÄ·½·¨£¬½Ğ×öÊÂ¼ş·½·¨£¬´¦Àí¶à¸ö¶ÔÏóÖ®¼äµÄ¹ØÏµ
+	//ä¸­ä»‹è€…æœ€é‡è¦çš„æ–¹æ³•ï¼Œå«åšäº‹ä»¶æ–¹æ³•ï¼Œå¤„ç†å¤šä¸ªå¯¹è±¡ä¹‹é—´çš„å…³ç³»
 	public abstract void execute(String str,Object...objects);
 }

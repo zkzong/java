@@ -5,54 +5,54 @@ import java.util.ArrayList;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ËùÓĞÏîÄ¿µÄĞÅÏ¢Àà
+ * æ‰€æœ‰é¡¹ç›®çš„ä¿¡æ¯ç±»
  */
 @SuppressWarnings("all")
 public class Project implements IProject {
-	//¶¨ÒåÒ»¸öÏîÄ¿ÁĞ±í£¬ËµÓĞµÄÏîÄ¿¶¼·ÅÔÚÕâÀï
+	//å®šä¹‰ä¸€ä¸ªé¡¹ç›®åˆ—è¡¨ï¼Œè¯´æœ‰çš„é¡¹ç›®éƒ½æ”¾åœ¨è¿™é‡Œ
 	private ArrayList<IProject> projectList = new ArrayList<IProject>();
 	
-	//ÏîÄ¿Ãû³Æ
+	//é¡¹ç›®åç§°
 	private String name = "";
 	
-	//ÏîÄ¿³ÉÔ±ÊıÁ¿
+	//é¡¹ç›®æˆå‘˜æ•°é‡
 	private int num = 0;
 	
-	//ÏîÄ¿·ÑÓÃ
+	//é¡¹ç›®è´¹ç”¨
 	private int cost = 0;
 	
 	public Project(){
 	
 	}
 	
-	//¶¨ÒåÒ»¸ö¹¹Ôìº¯Êı£¬°ÑËùÓĞÀÏ°åĞèÒª¿´µ½µÄĞÅÏ¢´æ´¢ÆğÀ´
+	//å®šä¹‰ä¸€ä¸ªæ„é€ å‡½æ•°ï¼ŒæŠŠæ‰€æœ‰è€æ¿éœ€è¦çœ‹åˆ°çš„ä¿¡æ¯å­˜å‚¨èµ·æ¥
 	private Project(String name,int num,int cost){
-		//¸³Öµµ½ÀàµÄ³ÉÔ±±äÁ¿ÖĞ
+		//èµ‹å€¼åˆ°ç±»çš„æˆå‘˜å˜é‡ä¸­
 		this.name = name;
 		this.num = num;
 		this.cost=cost;
 	}
 	
-	//Ôö¼ÓÏîÄ¿
+	//å¢åŠ é¡¹ç›®
 	public void add(String name,int num,int cost){
 		this.projectList.add(new Project(name,num,cost));
 	}
 	
-	//µÃµ½ÏîÄ¿µÄĞÅÏ¢
+	//å¾—åˆ°é¡¹ç›®çš„ä¿¡æ¯
 	public String getProjectInfo() {
 		String info = "";
 		
-		//»ñµÃÏîÄ¿µÄÃû³Æ
-		info = info+ "ÏîÄ¿Ãû³ÆÊÇ£º" + this.name;
-		//»ñµÃÏîÄ¿ÈËÊı
-		info = info + "\tÏîÄ¿ÈËÊı: "+ this.num;
-		//ÏîÄ¿·ÑÓÃ
-		info = info+ "\t ÏîÄ¿·ÑÓÃ£º"+ this.cost;
+		//è·å¾—é¡¹ç›®çš„åç§°
+		info = info+ "é¡¹ç›®åç§°æ˜¯ï¼š" + this.name;
+		//è·å¾—é¡¹ç›®äººæ•°
+		info = info + "\té¡¹ç›®äººæ•°: "+ this.num;
+		//é¡¹ç›®è´¹ç”¨
+		info = info+ "\t é¡¹ç›®è´¹ç”¨ï¼š"+ this.cost;
 		
 		return info;
 	}
 	
-	//²úÉúÒ»¸ö±éÀú¶ÔÏó
+	//äº§ç”Ÿä¸€ä¸ªéå†å¯¹è±¡
 	public IProjectIterator iterator(){
 		return new ProjectIterator(this.projectList);
 	}

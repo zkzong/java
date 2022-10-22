@@ -5,27 +5,27 @@ import java.util.ArrayList;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÀÏ°åÀ´¿´ÏîÄ¿ĞÅÏ¢ÁË 
+ * è€æ¿æ¥çœ‹é¡¹ç›®ä¿¡æ¯äº† 
  */
 public class Boss {
 
 		public static void main(String[] args) {
-			//¶¨ÒåÒ»¸öList£¬´æ·ÅËùÓĞµÄÏîÄ¿¶ÔÏó
+			//å®šä¹‰ä¸€ä¸ªListï¼Œå­˜æ”¾æ‰€æœ‰çš„é¡¹ç›®å¯¹è±¡
 			ArrayList<IProject> projectList = new ArrayList<IProject>();
 			
-			//Ôö¼ÓĞÇÇò´óÕ½ÏîÄ¿
-			projectList.add(new Project("ĞÇÇò´óÕ½ÏîÄ¿",10,100000));
-			//Ôö¼ÓÅ¤×ªÊ±¿ÕÏîÄ¿
-			projectList.add(new Project("Å¤×ªÊ±¿ÕÏîÄ¿",100,10000000));
-			//Ôö¼Ó³¬ÈË¸ÄÔìÏîÄ¿
-			projectList.add(new Project("³¬ÈË¸ÄÔìÏîÄ¿",10000,1000000000));
+			//å¢åŠ æ˜Ÿçƒå¤§æˆ˜é¡¹ç›®
+			projectList.add(new Project("æ˜Ÿçƒå¤§æˆ˜é¡¹ç›®",10,100000));
+			//å¢åŠ æ‰­è½¬æ—¶ç©ºé¡¹ç›®
+			projectList.add(new Project("æ‰­è½¬æ—¶ç©ºé¡¹ç›®",100,10000000));
+			//å¢åŠ è¶…äººæ”¹é€ é¡¹ç›®
+			projectList.add(new Project("è¶…äººæ”¹é€ é¡¹ç›®",10000,1000000000));
 			
-			//Õâ±ß100¸öÏîÄ¿
+			//è¿™è¾¹100ä¸ªé¡¹ç›®
 			for(int i=4;i<104;i++){
-				projectList.add(new Project("µÚ"+i+"¸öÏîÄ¿",i*5,i*1000000));
+				projectList.add(new Project("ç¬¬"+i+"ä¸ªé¡¹ç›®",i*5,i*1000000));
 			}
 			
-			//±éÀúÒ»ÏÂArrayList£¬°ÑËùÓĞµÄÊı¾İ¶¼È¡³ö
+			//éå†ä¸€ä¸‹ArrayListï¼ŒæŠŠæ‰€æœ‰çš„æ•°æ®éƒ½å–å‡º
 			for(IProject project:projectList){
 				System.out.println(project.getProjectInfo());
 			}

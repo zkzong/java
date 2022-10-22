@@ -6,7 +6,7 @@ package com.company.section4;
  */
 public class Leaf extends Component {
 	/*
-	 * 可以覆写父类方法
+	 * 鍙互瑕嗗啓鐖剁被鏂规硶
 	 * public void doSomething(){
 	 * 
 	 * }

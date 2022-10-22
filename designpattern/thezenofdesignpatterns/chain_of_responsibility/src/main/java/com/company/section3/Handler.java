@@ -8,34 +8,34 @@ package com.company.section3;
 public abstract class Handler {
 	private Handler nextHandler;
 	
-	//Ã¿¸ö´¦ÀíÕß¶¼±ØĞë¶ÔÇëÇó×ö³ö´¦Àí
+	//æ¯ä¸ªå¤„ç†è€…éƒ½å¿…é¡»å¯¹è¯·æ±‚åšå‡ºå¤„ç†
 	public final Response handlerMessage(Request request){
 		Response response = null;
 		
-		//ÅĞ¶ÏÊÇ·ñÊÇ×Ô¼ºµÄ´¦Àí¼¶±ğ
+		//åˆ¤æ–­æ˜¯å¦æ˜¯è‡ªå·±çš„å¤„ç†çº§åˆ«
 		if(this.getHandlerLevel().equals(request.getRequestLevel())){
 			response = this.echo(request);
-		}else{  //²»ÊôÓÚ×Ô¼ºµÄ´¦Àí¼¶±ğ
-			//ÅĞ¶ÏÊÇ·ñÓĞÏÂÒ»¸ö´¦ÀíÕß
+		}else{  //ä¸å±äºè‡ªå·±çš„å¤„ç†çº§åˆ«
+			//åˆ¤æ–­æ˜¯å¦æœ‰ä¸‹ä¸€ä¸ªå¤„ç†è€…
 			if(this.nextHandler != null){
 				response = this.nextHandler.handlerMessage(request);
 			}else{
-				//Ã»ÓĞÊÊµ±µÄ´¦ÀíÕß£¬ÒµÎñ×ÔĞĞ´¦Àí
+				//æ²¡æœ‰é€‚å½“çš„å¤„ç†è€…ï¼Œä¸šåŠ¡è‡ªè¡Œå¤„ç†
 			}
 		}
 		return response;
 	}
 	
 	
-	//ÉèÖÃÏÂÒ»¸ö´¦ÀíÕßÊÇË­
+	//è®¾ç½®ä¸‹ä¸€ä¸ªå¤„ç†è€…æ˜¯è°
 	public void setNext(Handler _handler){
 		this.nextHandler = _handler;
 	}
 	
-	//Ã¿¸ö´¦ÀíÕß¶¼ÓĞÒ»¸ö´¦Àí¼¶±ğ
+	//æ¯ä¸ªå¤„ç†è€…éƒ½æœ‰ä¸€ä¸ªå¤„ç†çº§åˆ«
 	protected abstract Level getHandlerLevel();
 	
-	//Ã¿¸ö´¦ÀíÕß¶¼±ØĞëÊµÏÖ´¦ÀíÈÎÎñ
+	//æ¯ä¸ªå¤„ç†è€…éƒ½å¿…é¡»å®ç°å¤„ç†ä»»åŠ¡
 	protected abstract Response echo(Request request);
 	
 }

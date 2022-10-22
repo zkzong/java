@@ -7,18 +7,18 @@ package com.company.section1;
  * 
  */
 public class ClothesCorp extends Corp {	
-	//·ş×°¹«Ë¾Éú²úµÄ¾ÍÊÇÒÂ·şÁË
+	//æœè£…å…¬å¸ç”Ÿäº§çš„å°±æ˜¯è¡£æœäº†
 	protected void produce() {
-		System.out.println("·ş×°¹«Ë¾Éú²úÒÂ·ş...");
+		System.out.println("æœè£…å…¬å¸ç”Ÿäº§è¡£æœ...");
 	}
-	//·ş×°¹«Ë¾Âô·ş×°£¬¿ÉÖ»Âô·ş×°£¬²»Âô´©ÒÂ·şµÄÄ£ÌØ
+	//æœè£…å…¬å¸å–æœè£…ï¼Œå¯åªå–æœè£…ï¼Œä¸å–ç©¿è¡£æœçš„æ¨¡ç‰¹
 	protected void sell() {
-		System.out.println("·ş×°¹«Ë¾³öÊÛÒÂ·ş...");
+		System.out.println("æœè£…å…¬å¸å‡ºå”®è¡£æœ...");
 	}
-	//·ş×°¹«Ë¾²»¾°Æø£¬µ«ÔõÃ´ËµÒ²ÊÇ×¬Ç®ĞĞÒµ
+	//æœè£…å…¬å¸ä¸æ™¯æ°”ï¼Œä½†æ€ä¹ˆè¯´ä¹Ÿæ˜¯èµšé’±è¡Œä¸š
 	public void makeMoney(){
 		super.makeMoney();
-		System.out.println("·ş×°¹«Ë¾×¬Ğ¡Ç®...");
+		System.out.println("æœè£…å…¬å¸èµšå°é’±...");
 	}
 }
 

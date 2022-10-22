@@ -7,11 +7,11 @@ package com.company.section2;
 public class Client {
 	
 	public static void main(String[] args) {
-		//Ô­ÓÐµÄÒµÎñÂß¼­
+		//åŽŸæœ‰çš„ä¸šåŠ¡é€»è¾‘
 		Target target = new ConcreteTarget();
 		target.request();
 		
-		//ÏÖÔÚÔö¼ÓÁËÊÊÅäÆ÷½ÇÉ«ºóµÄÒµÎñÂß¼­
+		//çŽ°åœ¨å¢žåŠ äº†é€‚é…å™¨è§’è‰²åŽçš„ä¸šåŠ¡é€»è¾‘
 		Target target2 = new Adapter();
 		target2.request();
 	}

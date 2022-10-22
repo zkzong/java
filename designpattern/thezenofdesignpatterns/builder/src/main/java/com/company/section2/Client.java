@@ -5,25 +5,25 @@ import java.util.ArrayList;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÕâÀïÊÇÅ£²æ¹«Ë¾µÄÌìÏÂ£¬ËûÒªÉ¶ÎÒÃÇ¸øÉ¶
+ * è¿™é‡Œæ˜¯ç‰›å‰å…¬å¸çš„å¤©ä¸‹ï¼Œä»–è¦å•¥æˆ‘ä»¬ç»™å•¥
  */
 public class Client {
 
 	public static void main(String[] args) {
-		ArrayList<String> sequence  = new ArrayList<String>();  //´æ·ÅrunµÄË³Ğò
-		sequence.add("engine boom");  //¿Í»§ÒªÇó£¬runµÄÊ±ºòÊ±ºòÏÈ·¢¶¯ÒıÇæ
-		sequence.add("start");  //Æô¶¯ÆğÀ´
-		sequence.add("stop");  //¿ªÁËÒ»¶Î¾ÍÍ¦ÏÂÀ´
+		ArrayList<String> sequence  = new ArrayList<String>();  //å­˜æ”¾runçš„é¡ºåº
+		sequence.add("engine boom");  //å®¢æˆ·è¦æ±‚ï¼Œrunçš„æ—¶å€™æ—¶å€™å…ˆå‘åŠ¨å¼•æ“
+		sequence.add("start");  //å¯åŠ¨èµ·æ¥
+		sequence.add("stop");  //å¼€äº†ä¸€æ®µå°±æŒºä¸‹æ¥
 		
-		//ÒªÒ»¸ö±¼³Û³µ£º
+		//è¦ä¸€ä¸ªå¥”é©°è½¦ï¼š
 		BenzBuilder benzBuilder = new BenzBuilder();
-		//°ÑË³Ğò¸øÕâ¸öbuilderÀà£¬ÖÆÔì³öÕâÑùÒ»¸ö³µ³öÀ´
+		//æŠŠé¡ºåºç»™è¿™ä¸ªbuilderç±»ï¼Œåˆ¶é€ å‡ºè¿™æ ·ä¸€ä¸ªè½¦å‡ºæ¥
 		benzBuilder.setSequence(sequence);
-		//ÖÆÔì³öÒ»¸ö±¼³Û³µ
+		//åˆ¶é€ å‡ºä¸€ä¸ªå¥”é©°è½¦
 		BenzModel benz = (BenzModel)benzBuilder.getCarModel();
-		//±¼³Û³µÅÜÒ»ÏÂ¿´¿´
+		//å¥”é©°è½¦è·‘ä¸€ä¸‹çœ‹çœ‹
 		benz.run();
-		//°´ÕÕÍ¬ÑùµÄË³Ğò£¬ÎÒÔÙÒªÒ»¸ö±¦Âí
+		//æŒ‰ç…§åŒæ ·çš„é¡ºåºï¼Œæˆ‘å†è¦ä¸€ä¸ªå®é©¬
 		BMWBuilder bmwBuilder = new BMWBuilder();
 		bmwBuilder.setSequence(sequence);
 		BMWModel bmw = (BMWModel)bmwBuilder.getCarModel();

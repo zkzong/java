@@ -6,20 +6,20 @@ package com.company.section5;
  */
 public abstract class Abstraction {
 
-	//¶¨Òå¶ÔÊµÏÖ»¯½ÇÉ«µÄÒıÓÃ
+	//å®šä¹‰å¯¹å®ç°åŒ–è§’è‰²çš„å¼•ç”¨
 	private Implementor imp;
 	
-	//Ô¼Êø×ÓÀà±ØĞëÊµÏÖ¸Ã¹¹Ôìº¯Êı
+	//çº¦æŸå­ç±»å¿…é¡»å®ç°è¯¥æ„é€ å‡½æ•°
 	public Abstraction(Implementor _imp){
 		this.imp = _imp;
 	}
 	
-	//×ÔÉíµÄĞĞÎªºÍÊôĞÔ
+	//è‡ªèº«çš„è¡Œä¸ºå’Œå±æ€§
 	public void request(){
 		this.imp.doSomething();
 	}
 	
-	//»ñµÃÊµÏÖ»¯½ÇÉ«
+	//è·å¾—å®ç°åŒ–è§’è‰²
 	public Implementor getImp(){
 		return imp;
 	}

@@ -7,13 +7,13 @@ package com.company.section4;
 public class Client {
 	
 	public static void main(String[] args) {
-		//´´½¨Ò»¸ö±»¹Û²ìÕß
+		//åˆ›å»ºä¸€ä¸ªè¢«è§‚å¯Ÿè€…
 		ConcreteSubject subject = new ConcreteSubject();
-		//¶¨ÒåÒ»¸ö¹Û²ìÔò
+		//å®šä¹‰ä¸€ä¸ªè§‚å¯Ÿåˆ™
 		Observer obs= new ConcreteObserver();
-		//¹Û²ìÕß¹Û²ì±»±»¹Û²ìÔò
+		//è§‚å¯Ÿè€…è§‚å¯Ÿè¢«è¢«è§‚å¯Ÿåˆ™
 		subject.addObserver(obs);
-		//¹Û²ìÕß¿ªÊ¼»î¶¯ÁË
+		//è§‚å¯Ÿè€…å¼€å§‹æ´»åŠ¨äº†
 		subject.doSomething();		
 	}
 	

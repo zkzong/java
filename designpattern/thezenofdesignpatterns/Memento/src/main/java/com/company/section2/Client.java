@@ -7,21 +7,21 @@ package com.company.section2;
 public class Client {
 
 	public static void main(String[] args) {
-		//ÉùÃ÷³öÖ÷½Ç
+		//å£°æ˜å‡ºä¸»è§’
 		Boy boy = new Boy();
-		//³õÊ¼»¯µ±Ç°×´Ì¬
-		boy.setState("ĞÄÇéºÜ°ô£¡");
-		System.out.println("=====ÄĞº¢ÏÖÔÚµÄ×´Ì¬======");
+		//åˆå§‹åŒ–å½“å‰çŠ¶æ€
+		boy.setState("å¿ƒæƒ…å¾ˆæ£’ï¼");
+		System.out.println("=====ç”·å­©ç°åœ¨çš„çŠ¶æ€======");
 		System.out.println(boy.getState());
-		//ĞèÒª¼ÇÂ¼ÏÂµ±Ç°×´Ì¬Ñ½
+		//éœ€è¦è®°å½•ä¸‹å½“å‰çŠ¶æ€å‘€
 		Memento mem = boy.createMemento();
-		//ÄĞº¢È¥×·Å®º¢£¬×´Ì¬¸Ä±ä
+		//ç”·å­©å»è¿½å¥³å­©ï¼ŒçŠ¶æ€æ”¹å˜
 		boy.changeState();
-		System.out.println("\n=====ÄĞº¢×·Å®º¢×ÓºóµÄ×´Ì¬======");
+		System.out.println("\n=====ç”·å­©è¿½å¥³å­©å­åçš„çŠ¶æ€======");
 		System.out.println(boy.getState());
-		//×·Å®º¢Ê§°Ü£¬»Ö¸´Ô­×´
+		//è¿½å¥³å­©å¤±è´¥ï¼Œæ¢å¤åŸçŠ¶
 		boy.restoreMemento(mem);
-		System.out.println("\n=====ÄĞº¢»Ö¸´ºóµÄ×´Ì¬======");
+		System.out.println("\n=====ç”·å­©æ¢å¤åçš„çŠ¶æ€======");
 		System.out.println(boy.getState());
 		
 	}

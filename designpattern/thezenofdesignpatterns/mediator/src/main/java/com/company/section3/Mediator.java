@@ -3,14 +3,14 @@ package com.company.section3;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÖĞ½éÕß
+ * ä¸­ä»‹è€…
  */
 public abstract class Mediator {
-	//¶¨ÒåÍ¬ÊÂÀà
+	//å®šä¹‰åŒäº‹ç±»
 	protected ConcreteColleague1 c1;
 	protected ConcreteColleague2 c2;
 	
-	//Í¨¹ıgetter/setter·½·¨°ÉÍ¬ÊÂÀà×¢Èë½øÀ´
+	//é€šè¿‡getter/setteræ–¹æ³•å§åŒäº‹ç±»æ³¨å…¥è¿›æ¥
 	public ConcreteColleague1 getC1() {
 		return c1;
 	}
@@ -24,7 +24,7 @@ public abstract class Mediator {
 		this.c2 = c2;
 	}
 	
-	//ÖĞ½éÕßÄ£Ê½µÄÒµÎñÂß¼­
+	//ä¸­ä»‹è€…æ¨¡å¼çš„ä¸šåŠ¡é€»è¾‘
 	public abstract void doSomething1();
 	public abstract void doSomething2();
 	

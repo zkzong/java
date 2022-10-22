@@ -9,19 +9,19 @@ import java.util.ArrayList;
 public class Leaf extends Component {	
 	@Deprecated
 	public void add(Component component) throws UnsupportedOperationException{
-		//¿ÕÊµÏÖ,Ö±½ÓÅ×ÆúÒ»¸ö¡°²»Ö§³ÖÇëÇó¡±Òì³£
+		//ç©ºå®ç°,ç›´æ¥æŠ›å¼ƒä¸€ä¸ªâ€œä¸æ”¯æŒè¯·æ±‚â€å¼‚å¸¸
 		throw new UnsupportedOperationException();
 	}
 	
 	@Deprecated
 	public void remove(Component component)throws UnsupportedOperationException{
-		//¿ÕÊµÏÖ
+		//ç©ºå®ç°
 		throw new UnsupportedOperationException();
 	}
 	
 	@Deprecated
 	public ArrayList<Component> getChildren()throws UnsupportedOperationException{
-		//¿ÕÊµÏÖ
+		//ç©ºå®ç°
 		throw new UnsupportedOperationException();		
 	}
 }

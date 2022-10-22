@@ -7,16 +7,16 @@ package com.company.section2;
 public class Client {
 
 	public static void main(String[] args) {
-		//初始化对象池
+		//鍒濆鍖栧璞℃睜
 		for(int i=0;i<4;i++){
-			String subject = "科目" + i;
-			//初始化地址
+			String subject = "绉戠洰" + i;
+			//鍒濆鍖栧湴鍧�
 			for(int j=0;j<30;j++){
-				String key = subject + "考试地点"+j;
+				String key = subject + "鑰冭瘯鍦扮偣"+j;
 				SignInfoFactory.getSignInfo(key);
 			}
 		}
-		SignInfo signInfo = SignInfoFactory.getSignInfo("科目1考试地点1");
+		SignInfo signInfo = SignInfoFactory.getSignInfo("绉戠洰1鑰冭瘯鍦扮偣1");
 	}
 
 		

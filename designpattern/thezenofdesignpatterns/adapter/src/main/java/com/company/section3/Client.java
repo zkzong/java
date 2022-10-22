@@ -3,20 +3,20 @@ package com.company.section3;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * Õâ¾ÍÊÇÎÒÃÇ¾ßÌåµÄÓ¦ÓÃÁË£¬±ÈÈçÀÏ°åÒª²éËùÓĞµÄ20-30µÄÅ®ĞÔĞÅÏ¢
+ * è¿™å°±æ˜¯æˆ‘ä»¬å…·ä½“çš„åº”ç”¨äº†ï¼Œæ¯”å¦‚è€æ¿è¦æŸ¥æ‰€æœ‰çš„20-30çš„å¥³æ€§ä¿¡æ¯
  */
 public class Client {
 
 
 	public static void main(String[] args) {
 	
-		//ÍâÏµÍ³µÄÈËÔ±ĞÅÏ¢
+		//å¤–ç³»ç»Ÿçš„äººå‘˜ä¿¡æ¯
 		IOuterUserBaseInfo baseInfo = new OuterUserBaseInfo();
 		IOuterUserHomeInfo homeInfo = new OuterUserHomeInfo();
 		IOuterUserOfficeInfo officeInfo = new OuterUserOfficeInfo();
-		//´«µİÈı¸ö¶ÔÏó
+		//ä¼ é€’ä¸‰ä¸ªå¯¹è±¡
 		IUserInfo youngGirl = new OuterUserInfo(baseInfo,homeInfo,officeInfo); 
-		//´ÓÊı¾İ¿âÖĞ²éµ½101¸ö
+		//ä»æ•°æ®åº“ä¸­æŸ¥åˆ°101ä¸ª
 		for(int i=0;i<101;i++){
 			youngGirl.getMobileNumber();
 		}

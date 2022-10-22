@@ -3,25 +3,25 @@ package com.company.section3;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * 用户信息对象
+ * 鐢ㄦ埛淇℃伅瀵硅薄
  */
 public interface IUserInfo {
 	
-	//获得用户姓名
+	//鑾峰緱鐢ㄦ埛濮撳悕
 	public String getUserName();
 	
-	//获得家庭地址
+	//鑾峰緱瀹跺涵鍦板潃
 	public String getHomeAddress();
 	
-	//手机号码，这个太重要，手机泛滥呀
+	//鎵嬫満鍙风爜锛岃繖涓お閲嶈锛屾墜鏈烘硾婊ュ憖
 	public String getMobileNumber();
 	
-	//办公电话，一般式座机
+	//鍔炲叕鐢佃瘽锛屼竴鑸紡搴ф満
 	public String getOfficeTelNumber();
 	
-	//这个人的职位是啥
+	//杩欎釜浜虹殑鑱屼綅鏄暐
 	public String getJobPosition();
 	
-	//获得家庭电话，这个有点缺德，我是不喜欢打家庭电话讨论工作
+	//鑾峰緱瀹跺涵鐢佃瘽锛岃繖涓湁鐐圭己寰凤紝鎴戞槸涓嶅枩娆㈡墦瀹跺涵鐢佃瘽璁ㄨ宸ヤ綔
 	public String getHomeTelNumber();
 }

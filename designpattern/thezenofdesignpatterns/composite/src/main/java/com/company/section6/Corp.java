@@ -3,21 +3,21 @@ package com.company.section6;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¶¨ÒåÒ»¸ö¹«Ë¾µÄÈËÔ±µÄ³éÏóÀà
+ * å®šä¹‰ä¸€ä¸ªå…¬å¸çš„äººå‘˜çš„æŠ½è±¡ç±»
  */
 @SuppressWarnings("all")
 public abstract class Corp {
-	//¹«Ë¾Ã¿¸öÈË¶¼ÓĞÃû³Æ
+	//å…¬å¸æ¯ä¸ªäººéƒ½æœ‰åç§°
 	private String name = "";
-	//¹«Ë¾Ã¿¸öÈË¶¼Ö°Î»
+	//å…¬å¸æ¯ä¸ªäººéƒ½èŒä½
 	private String position = "";
-	//¹«Ë¾Ã¿¸öÈË¶¼ÓĞĞ½Ë®
+	//å…¬å¸æ¯ä¸ªäººéƒ½æœ‰è–ªæ°´
 	private int salary =0;
-	//¸¸½ÚµãÊÇË­
+	//çˆ¶èŠ‚ç‚¹æ˜¯è°
 	private Corp parent = null;
 	
-	/*Í¨¹ı½Ó¿ÚµÄ·½Ê½´«µİ£¬ÎÒÃÇ¸Ä±äÒ»ÏÂÏ°¹ß£¬´«µİ½øÀ´µÄ²ÎÊıÃûÒÔÏÂ»®Ïß¿ªÊ¼
-	 * Õâ¸öÔÚÒ»Ğ©¿ªÔ´ÏîÄ¿ÖĞ·Ç³£³£¼û£¬Ò»°ã¹¹Ôìº¯Êı¶¼ÊÇ¶¨ÒåµÄ
+	/*é€šè¿‡æ¥å£çš„æ–¹å¼ä¼ é€’ï¼Œæˆ‘ä»¬æ”¹å˜ä¸€ä¸‹ä¹ æƒ¯ï¼Œä¼ é€’è¿›æ¥çš„å‚æ•°åä»¥ä¸‹åˆ’çº¿å¼€å§‹
+	 * è¿™ä¸ªåœ¨ä¸€äº›å¼€æºé¡¹ç›®ä¸­éå¸¸å¸¸è§ï¼Œä¸€èˆ¬æ„é€ å‡½æ•°éƒ½æ˜¯å®šä¹‰çš„
 	 */
 	public Corp(String _name,String _position,int _salary){
 		this.name = _name;
@@ -25,21 +25,21 @@ public abstract class Corp {
 		this.salary = _salary;
 	}
 	
-	//»ñµÃÔ±¹¤ĞÅÏ¢
+	//è·å¾—å‘˜å·¥ä¿¡æ¯
 	public String getInfo(){
 		String info = "";
-		info = "ĞÕÃû£º" + this.name;
-		info = info + "\tÖ°Î»£º"+ this.position;
-		info = info + "\tĞ½Ë®£º" + this.salary;
+		info = "å§“åï¼š" + this.name;
+		info = info + "\tèŒä½ï¼š"+ this.position;
+		info = info + "\tè–ªæ°´ï¼š" + this.salary;
 		return info;
 	}
 	
-	//ÉèÖÃ¸¸½Úµã
+	//è®¾ç½®çˆ¶èŠ‚ç‚¹
 	protected void setParent(Corp _parent){
 		this.parent = _parent;
 	}
 	
-	//µÈµ½¸¸½Úµã
+	//ç­‰åˆ°çˆ¶èŠ‚ç‚¹
 	public Corp getParent(){
 		return this.parent;
 	}

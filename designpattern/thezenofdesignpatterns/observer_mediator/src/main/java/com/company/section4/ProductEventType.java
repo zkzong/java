@@ -5,13 +5,13 @@ package com.company.section4;
  * I'm glad to share my knowledge with you all.
  */
 public enum ProductEventType {
-	//ĞÂ½¨Ò»¸ö²úÆ·
+	//æ–°å»ºä¸€ä¸ªäº§å“
 	NEW_PRODUCT(1),
-	//É¾³ıÒ»¸ö²úÆ·
+	//åˆ é™¤ä¸€ä¸ªäº§å“
 	DEL_PRODUCT(2),
-	//ĞŞ¸ÄÒ»¸ö²úÆ·
+	//ä¿®æ”¹ä¸€ä¸ªäº§å“
 	EDIT_PRODUCT(3),
-	//¿ËÂ¡Ò»¸ö²úÆ·
+	//å…‹éš†ä¸€ä¸ªäº§å“
 	CLONE_PRODUCT(4);
 	
 	private int value=0;

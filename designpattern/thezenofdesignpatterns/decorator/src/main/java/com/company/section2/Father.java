@@ -3,25 +3,25 @@ package com.company.section2;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÀÏ°Ö¿´³É¼¨µ¥ÁË
+ * è€çˆ¸çœ‹æˆç»©å•äº†
  */
 public class Father {
 	
 	public static void main(String[] args) {
-		//³É¼¨µ¥ÄÃ¹ıÀ´
+		//æˆç»©å•æ‹¿è¿‡æ¥
 		SchoolReport sr;
-		sr = new FouthGradeSchoolReport();  //Ô­×°µÄ³É¼¨µ¥
+		sr = new FouthGradeSchoolReport();  //åŸè£…çš„æˆç»©å•
 		
-		//¼Ó ÁË×î¸ß·ÖËµÃ÷µÄ³É¼¨µ¥
+		//åŠ  äº†æœ€é«˜åˆ†è¯´æ˜çš„æˆç»©å•
 		sr = new HighScoreDecorator(sr);
 		
-		//ÓÖ¼ÓÁË³É¼¨ÅÅÃûµÄËµÃ÷
+		//åˆåŠ äº†æˆç»©æ’åçš„è¯´æ˜
 		sr = new SortDecorator(sr);
 		
-		//¿´³É¼¨µ¥
+		//çœ‹æˆç»©å•
 		sr.report();
 		
-		//È»ºóÀÏ°Ö£¬Ò»¿´£¬ºÜ¿ªĞÄ£¬¾ÍÇ©ÃûÁË
-		sr.sign("ÀÏÈı");  //ÎÒ½ĞĞ¡Èı£¬ÀÏ°Öµ±È»½ĞÀÏÈı
+		//ç„¶åè€çˆ¸ï¼Œä¸€çœ‹ï¼Œå¾ˆå¼€å¿ƒï¼Œå°±ç­¾åäº†
+		sr.sign("è€ä¸‰");  //æˆ‘å«å°ä¸‰ï¼Œè€çˆ¸å½“ç„¶å«è€ä¸‰
 	}
 }

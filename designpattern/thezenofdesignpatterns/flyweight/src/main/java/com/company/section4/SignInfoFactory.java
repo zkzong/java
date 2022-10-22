@@ -8,14 +8,14 @@ import java.util.HashMap;
  * I'm glad to share my knowledge with you all.
  */
 public class SignInfoFactory {
-	//³ØÈİÆ÷
+	//æ± å®¹å™¨
 	private static HashMap<String,SignInfo> pool = new HashMap<String,SignInfo>();
 	
-	//´Ó³ØÖĞ»ñµÃ¶ÔÏó
+	//ä»æ± ä¸­è·å¾—å¯¹è±¡
 	public static SignInfo getSignInfo(String key){
-		//ÉèÖÃ·µ»Ø¶ÔÏó
+		//è®¾ç½®è¿”å›å¯¹è±¡
 		SignInfo result = null;
-		//³ØÖĞÃ»ÓĞ¸Ã¶ÔÏó£¬Ôò½¨Á¢£¬²¢·ÅÈë³ØÖĞ
+		//æ± ä¸­æ²¡æœ‰è¯¥å¯¹è±¡ï¼Œåˆ™å»ºç«‹ï¼Œå¹¶æ”¾å…¥æ± ä¸­
 		if(!pool.containsKey(key)){
 			result = new SignInfo();
 			pool.put(key, result);

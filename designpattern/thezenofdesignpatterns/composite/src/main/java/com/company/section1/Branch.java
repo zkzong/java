@@ -5,47 +5,47 @@ import java.util.ArrayList;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ËùÓĞµÄÊ÷Ö¦½Úµã
+ * æ‰€æœ‰çš„æ ‘æèŠ‚ç‚¹
  */
 @SuppressWarnings("all")
 public class Branch implements IBranch {
-	//´æ´¢×Ó½ÚµãµÄĞÅÏ¢
+	//å­˜å‚¨å­èŠ‚ç‚¹çš„ä¿¡æ¯
 	private ArrayList subordinateList = new ArrayList();
 		
-	//Ê÷Ö¦½ÚµãµÄÃû³Æ
+	//æ ‘æèŠ‚ç‚¹çš„åç§°
 	private String name="";
-	//Ê÷Ö¦½ÚµãµÄÖ°Î»
+	//æ ‘æèŠ‚ç‚¹çš„èŒä½
 	private String position = "";
-	//Ê÷Ö¦½ÚµãµÄĞ½Ë®
+	//æ ‘æèŠ‚ç‚¹çš„è–ªæ°´
 	private int salary = 0;
 	
-	//Í¨¹ı¹¹Ôìº¯Êı´«µİÊ÷Ö¦½ÚµãµÄ²ÎÊı
+	//é€šè¿‡æ„é€ å‡½æ•°ä¼ é€’æ ‘æèŠ‚ç‚¹çš„å‚æ•°
 	public Branch(String name,String position,int salary){
 		this.name = name;
 		this.position = position;
 		this.salary = salary;
 	}
 	
-	//Ôö¼ÓÒ»¸ö×ÓÊ÷Ö¦½Úµã
+	//å¢åŠ ä¸€ä¸ªå­æ ‘æèŠ‚ç‚¹
 	public void add(IBranch branch) {
 		this.subordinateList.add(branch);
 	}
 
-	//Ôö¼ÓÒ»¸öÒ¶×Ó½Úµã
+	//å¢åŠ ä¸€ä¸ªå¶å­èŠ‚ç‚¹
 	public void add(ILeaf leaf) {
 		this.subordinateList.add(leaf);
 	}
 
-	//»ñµÃ×Ô¼ºÊ÷Ö¦½ÚµãµÄĞÅÏ¢
+	//è·å¾—è‡ªå·±æ ‘æèŠ‚ç‚¹çš„ä¿¡æ¯
 	public String getInfo() {
 		String info = "";
-		info = "Ãû³Æ£º" + this.name;
-		info = info + "\tÖ°Î»£º"+ this.position;
-		info = info + "\tĞ½Ë®£º"+this.salary;
+		info = "åç§°ï¼š" + this.name;
+		info = info + "\tèŒä½ï¼š"+ this.position;
+		info = info + "\tè–ªæ°´ï¼š"+this.salary;
 		return info;
 	}
 
-	//»ñµÃÏÂ¼¶µÄĞÅÏ¢
+	//è·å¾—ä¸‹çº§çš„ä¿¡æ¯
 	public ArrayList getSubordinateInfo() {
 		return this.subordinateList;
 	}

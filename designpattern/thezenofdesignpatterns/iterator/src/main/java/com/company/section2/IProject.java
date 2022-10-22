@@ -3,16 +3,16 @@ package com.company.section2;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¶¨ÒåÒ»¸ö½Ó¿Ú£¬ËùÓĞµÄÏîÄ¿¶¼ÊÇÒ»¸ö½Ó¿Ú
+ * å®šä¹‰ä¸€ä¸ªæ¥å£ï¼Œæ‰€æœ‰çš„é¡¹ç›®éƒ½æ˜¯ä¸€ä¸ªæ¥å£
  */
 public interface IProject {
 	
-	//Ôö¼ÓÏîÄ¿
+	//å¢åŠ é¡¹ç›®
 	public void add(String name,int num,int cost);
 	
-	//´ÓÀÏ°åÕâÀï¿´µ½µÄ¾ÍÊÇÏîÄ¿ĞÅÏ¢
+	//ä»è€æ¿è¿™é‡Œçœ‹åˆ°çš„å°±æ˜¯é¡¹ç›®ä¿¡æ¯
 	public String getProjectInfo();	
 	
-	//»ñµÃÒ»¸ö¿ÉÒÔ±»±éÀúµÄ¶ÔÏó
+	//è·å¾—ä¸€ä¸ªå¯ä»¥è¢«éå†çš„å¯¹è±¡
 	public IProjectIterator iterator();
 }

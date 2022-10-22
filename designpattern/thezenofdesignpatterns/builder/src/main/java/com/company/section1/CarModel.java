@@ -5,49 +5,49 @@ import java.util.ArrayList;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¶¨ÒåÒ»¸ö³µÁ¾Ä£ĞÍµÄ³éÏóÀà£¬ËùÓĞµÄ³µÁ¾Ä£ĞÍ¶¼¼Ì³ĞÕâÀïÀà
+ * å®šä¹‰ä¸€ä¸ªè½¦è¾†æ¨¡å‹çš„æŠ½è±¡ç±»ï¼Œæ‰€æœ‰çš„è½¦è¾†æ¨¡å‹éƒ½ç»§æ‰¿è¿™é‡Œç±»
  */
 public abstract class CarModel {
 	
-	//Õâ¸ö²ÎÊıÊÇ¸÷¸ö»ù±¾·½·¨Ö´ĞĞµÄË³Ğò
+	//è¿™ä¸ªå‚æ•°æ˜¯å„ä¸ªåŸºæœ¬æ–¹æ³•æ‰§è¡Œçš„é¡ºåº
 	private ArrayList<String> sequence = new ArrayList<String>();
 	
 	/*
-	 * Ä£ĞÍÊÇÆô¶¯¿ªÊ¼ÅÜÁË
+	 * æ¨¡å‹æ˜¯å¯åŠ¨å¼€å§‹è·‘äº†
 	 */
 	protected abstract void start();
 	
-	//ÄÜ·¢¶¯£¬ÄÇ»¹ÒªÄÜÍ£ÏÂÀ´£¬ÄÇ²ÅÊÇÕæ±¾ÊÂ
+	//èƒ½å‘åŠ¨ï¼Œé‚£è¿˜è¦èƒ½åœä¸‹æ¥ï¼Œé‚£æ‰æ˜¯çœŸæœ¬äº‹
 	protected abstract void stop();
 	
-	//À®°È»á³öÉùÒô£¬ÊÇµÎµÎ½Ğ£¬»¹ÊÇßÙßÙ½Ğ
+	//å–‡å­ä¼šå‡ºå£°éŸ³ï¼Œæ˜¯æ»´æ»´å«ï¼Œè¿˜æ˜¯å“”å“”å«
 	protected abstract void alarm();
 	
-	//ÒıÇæ»áºäÂ¡Â¡µÄÏì£¬²»ÏìÄÇÊÇ¼ÙµÄ
+	//å¼•æ“ä¼šè½°éš†éš†çš„å“ï¼Œä¸å“é‚£æ˜¯å‡çš„
 	protected abstract void engineBoom();
 	
-	//ÄÇÄ£ĞÍÓ¦¸Ã»áÅÜ°É£¬±ğ¹ÜÊÇÈËÍÆµÄ£¬»¹ÊÇµçÁ¦Çı¶¯£¬×ÜÖ®Òª»áÅÜ
+	//é‚£æ¨¡å‹åº”è¯¥ä¼šè·‘å§ï¼Œåˆ«ç®¡æ˜¯äººæ¨çš„ï¼Œè¿˜æ˜¯ç”µåŠ›é©±åŠ¨ï¼Œæ€»ä¹‹è¦ä¼šè·‘
 	final public void run() {
 		
-		//Ñ­»·Ò»±ß£¬Ë­ÔÚÇ°£¬¾ÍÏÈÖ´ĞĞË­
+		//å¾ªç¯ä¸€è¾¹ï¼Œè°åœ¨å‰ï¼Œå°±å…ˆæ‰§è¡Œè°
 		for(int i=0;i<this.sequence.size();i++){
 			String actionName = this.sequence.get(i);
 			
-			if(actionName.equalsIgnoreCase("start")){  //Èç¹ûÊÇstart¹Ø¼ü×Ö£¬
-				this.start();  //¿ªÆôÆû³µ
-			}else if(actionName.equalsIgnoreCase("stop")){ //Èç¹ûÊÇstop¹Ø¼ü×Ö
-				this.stop(); //Í£Ö¹Æû³µ   
-			}else if(actionName.equalsIgnoreCase("alarm")){ //Èç¹ûÊÇalarm¹Ø¼ü×Ö
-				this.alarm(); //À®°È¿ªÊ¼½ĞÁË
-			}else if(actionName.equalsIgnoreCase("engine boom")){  //Èç¹ûÊÇengine boom¹Ø¼ü×Ö
-				this.engineBoom();  //ÒıÇæ¿ªÊ¼ºäÃù
+			if(actionName.equalsIgnoreCase("start")){  //å¦‚æœæ˜¯startå…³é”®å­—ï¼Œ
+				this.start();  //å¼€å¯æ±½è½¦
+			}else if(actionName.equalsIgnoreCase("stop")){ //å¦‚æœæ˜¯stopå…³é”®å­—
+				this.stop(); //åœæ­¢æ±½è½¦   
+			}else if(actionName.equalsIgnoreCase("alarm")){ //å¦‚æœæ˜¯alarmå…³é”®å­—
+				this.alarm(); //å–‡å­å¼€å§‹å«äº†
+			}else if(actionName.equalsIgnoreCase("engine boom")){  //å¦‚æœæ˜¯engine boomå…³é”®å­—
+				this.engineBoom();  //å¼•æ“å¼€å§‹è½°é¸£
 			}
 					
 		}
 		
 	}
 	
-	//°Ñ´«µİ¹ıÀ´µÄÖµ´«µİµ½ÀàÄÚ
+	//æŠŠä¼ é€’è¿‡æ¥çš„å€¼ä¼ é€’åˆ°ç±»å†…
 	final public void setSequence(ArrayList<String> sequence){
 		this.sequence = sequence;
 	}

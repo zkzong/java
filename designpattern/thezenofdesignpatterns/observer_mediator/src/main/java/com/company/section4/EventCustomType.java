@@ -5,13 +5,13 @@ package com.company.section4;
  * I'm glad to share my knowledge with you all.
  */
 public enum EventCustomType {
-	//ÐÂ½¨Á¢ÊÂ¼þ
+	//æ–°å»ºç«‹äº‹ä»¶
 	NEW(1),
-	//É¾³ýÊÂ¼þ
+	//åˆ é™¤äº‹ä»¶
 	DEL(2),
-	//ÐÞ¸ÄÊÂ¼þ
+	//ä¿®æ”¹äº‹ä»¶
 	EDIT(3),
-	//¿ËÂ¡ÊÂ¼þ
+	//å…‹éš†äº‹ä»¶
 	CLONE(4);
 	
 	private int value=0;

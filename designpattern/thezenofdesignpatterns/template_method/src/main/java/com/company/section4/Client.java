@@ -7,13 +7,13 @@ import java.io.InputStreamReader;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.\
- * ¿Í»§¿ªÊ¼Ê¹ÓÃÕâ¸öÄ£ĞÍ
+ * å®¢æˆ·å¼€å§‹ä½¿ç”¨è¿™ä¸ªæ¨¡å‹
  */
 public class Client {
 
 	public static void main(String[] args) throws IOException {
-		System.out.println("-------H1ĞÍºÅº·Âí--------");
-		System.out.println("H1ĞÍºÅµÄº·ÂíÊÇ·ñĞèÒªÀ®°ÈÉùÏì£¿0-²»ĞèÒª   1-ĞèÒª");
+		System.out.println("-------H1å‹å·æ‚é©¬--------");
+		System.out.println("H1å‹å·çš„æ‚é©¬æ˜¯å¦éœ€è¦å–‡å­å£°å“ï¼Ÿ0-ä¸éœ€è¦   1-éœ€è¦");
 		String type=(new BufferedReader(new InputStreamReader(System.in))).readLine();
 		HummerH1Model h1 = new HummerH1Model();
 		if(type.equals("0")){  
@@ -21,7 +21,7 @@ public class Client {
 		}
 		h1.run();
 		
-		System.out.println("\n-------H2ĞÍºÅº·Âí--------");
+		System.out.println("\n-------H2å‹å·æ‚é©¬--------");
 		HummerH2Model h2 = new HummerH2Model();
 		h2.run();  
 	}

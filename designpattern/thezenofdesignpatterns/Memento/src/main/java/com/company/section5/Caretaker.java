@@ -6,7 +6,7 @@ package com.company.section5;
  */
 public class Caretaker {
 	
-	//·¢ÆğÈË¶ÔÏó
+	//å‘èµ·äººå¯¹è±¡
 	private Originator originator;
 
 	public Originator getOriginator() {

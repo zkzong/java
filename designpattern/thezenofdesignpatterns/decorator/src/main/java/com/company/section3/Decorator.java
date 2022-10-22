@@ -7,12 +7,12 @@ package com.company.section3;
 public abstract class Decorator extends Component {
 	private Component component = null;
 	
-	//Í¨¹ý¹¹Ôìº¯Êý´«µÝ±»ÐÞÊÎÕß
+	//é€šè¿‡æž„é€ å‡½æ•°ä¼ é€’è¢«ä¿®é¥°è€…
 	public Decorator(Component _component){
 		this.component = _component;
 	}
 	
-	//Î¯ÍÐ¸ø±»ÐÞÊÎÕßÖ´ÐÐ
+	//å§”æ‰˜ç»™è¢«ä¿®é¥°è€…æ‰§è¡Œ
 	@Override
 	public void operate() {
 		this.component.operate();

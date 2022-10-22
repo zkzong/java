@@ -6,7 +6,7 @@ package com.company.section3;
  */
 public class Request {
 	
-	//ÇëÇóµÄµÈ¼¶
+	//è¯·æ±‚çš„ç­‰çº§
 	public Level getRequestLevel(){
 		return null;
 	}

@@ -6,12 +6,12 @@ package com.company.section3;
  */
 public class Boy {
 	
-	//ÄĞº¢µÄ×´Ì¬
+	//ç”·å­©çš„çŠ¶æ€
 	private String state = "";
 	
-	//ÈÎºÎÅ®º¢×Óºó×´Ì¬¿Ï¶¨¸Ä±ä£¬±ÈÈçĞÄÇé¡¢ÊÖÖĞµÄ»¨¶äµÈµÈ
+	//ä»»ä½•å¥³å­©å­åçŠ¶æ€è‚¯å®šæ”¹å˜ï¼Œæ¯”å¦‚å¿ƒæƒ…ã€æ‰‹ä¸­çš„èŠ±æœµç­‰ç­‰
 	public void changeState(){
-		this.state = "ĞÄÇé¿ÉÄÜºÜ²»ºÃ";
+		this.state = "å¿ƒæƒ…å¯èƒ½å¾ˆä¸å¥½";
 	}
 
 	public String getState() {
@@ -22,12 +22,12 @@ public class Boy {
 		this.state = state;
 	}
 	
-	//±£ÁôÒ»¸ö±¸·İ
+	//ä¿ç•™ä¸€ä¸ªå¤‡ä»½
 	public Memento createMemento(){
 		return new Memento(this.state);
 	}
 	
-	//»Ö¸´Ò»¸ö±¸·İ
+	//æ¢å¤ä¸€ä¸ªå¤‡ä»½
 	public void restoreMemento(Memento _memento){
 		this.setState(_memento.getState());
 	}

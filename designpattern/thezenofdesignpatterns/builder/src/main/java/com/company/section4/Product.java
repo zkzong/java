@@ -7,6 +7,6 @@ package com.company.section4;
 public class Product {
 	
 	public void doSomething(){
-		//独立业务处理
+		//鐙珛涓氬姟澶勭悊
 	}
 }

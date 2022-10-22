@@ -7,20 +7,20 @@ import java.util.HashMap;
  * I'm glad to share my knowledge with you all.
  */
 public class FlyweightFactory {
-	//¶¨ÒåÒ»¸ö³ØÈİÆ÷
+	//å®šä¹‰ä¸€ä¸ªæ± å®¹å™¨
 	private static  HashMap<String,Flyweight> pool= new HashMap<String,Flyweight>();
 	
-	//ÏíÔª¹¤³§
+	//äº«å…ƒå·¥å‚
 	public static Flyweight getFlyweight(String Extrinsic){
-		//ĞèÒª·µ»ØµÄ¶ÔÏó
+		//éœ€è¦è¿”å›çš„å¯¹è±¡
 		Flyweight flyweight = null;
-		//ÔÚ³ØÖĞÃ»ÓĞ¸Ä¶ÔÏó
+		//åœ¨æ± ä¸­æ²¡æœ‰æ”¹å¯¹è±¡
 		if(pool.containsKey(Extrinsic)){
 			flyweight = pool.get(Extrinsic);
 		}else{
-			//¸ù¾İÍâ²¿×´Ì¬´´½¨ÏíÔª¶ÔÏó
+			//æ ¹æ®å¤–éƒ¨çŠ¶æ€åˆ›å»ºäº«å…ƒå¯¹è±¡
 			flyweight = new ConcreteFlyweight1(Extrinsic);
-			//·ÅÖÃµ½³ØÖĞ
+			//æ”¾ç½®åˆ°æ± ä¸­
 			pool.put(Extrinsic, flyweight);
 		}
 		

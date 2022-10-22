@@ -5,26 +5,26 @@ package com.company.section4;
  * I'm glad to share my knowledge with you all.
  */
 public class Context {
-	//����״̬
+	//定义状态
 	public final static State STATE1 = new ConcreteState1();
 	public final static State STATE2 = new ConcreteState2();
 	
-	//��ǰ״̬
+	//当前状态
 	private State CurrentState;
 	
-	//��õ�ǰ״̬
+	//获得当前状态
 	public State getCurrentState() {
 		return CurrentState;
 	}
 	
-	//���õ�ǰ״̬
+	//设置当前状态
 	public void setCurrentState(State currentState) {
 		this.CurrentState = currentState;
-		//�л�״̬
+		//切换状态
 		this.CurrentState.setContext(this);
 	}
 	
-	//��Ϊί��
+	//行为委托
 	public void handle1(){
 		this.CurrentState.handle1();
 	}

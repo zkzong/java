@@ -3,19 +3,19 @@ package com.company.section2;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * É¾³ıÒ»¸öÒ³ÃæµÄÃüÁî
+ * åˆ é™¤ä¸€ä¸ªé¡µé¢çš„å‘½ä»¤
  */
 public class DeletePageCommand extends Command {
 	
-	//Ö´ĞĞÉ¾³ıÒ»¸öÒ³ÃæµÄÃüÁî
+	//æ‰§è¡Œåˆ é™¤ä¸€ä¸ªé¡µé¢çš„å‘½ä»¤
 	public void execute() {
-		//ÕÒµ½Ò³Ãæ×é
+		//æ‰¾åˆ°é¡µé¢ç»„
 		super.pg.find();
 		
-		//É¾³ıÒ»¸öÒ³Ãæ
+		//åˆ é™¤ä¸€ä¸ªé¡µé¢
 		super.rg.delete();
 		
-		//¸ø³ö¼Æ»®
+		//ç»™å‡ºè®¡åˆ’
 		super.rg.plan();
 	}
 

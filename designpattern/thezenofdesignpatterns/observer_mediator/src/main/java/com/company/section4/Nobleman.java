@@ -6,7 +6,7 @@ package com.company.section4;
  */
 public class Nobleman extends EventCustomer {
 	
-	//¶¨Òå¹ó×åÄÜ¹»´¦ÀíÊÂ¼şµÄ¼¶±ğ
+	//å®šä¹‰è´µæ—èƒ½å¤Ÿå¤„ç†äº‹ä»¶çš„çº§åˆ«
 	public Nobleman() {
 		super(EventCustomType.EDIT);	
 		super.addCustomType(EventCustomType.CLONE);
@@ -14,14 +14,14 @@ public class Nobleman extends EventCustomer {
 
 	@Override
 	public void exec(ProductEvent event) {
-		//ÊÂ¼şµÄÔ´Í·
+		//äº‹ä»¶çš„æºå¤´
 		Product p = event.getSource();
-		//ÊÂ¼şÀàĞÍ
+		//äº‹ä»¶ç±»å‹
 		ProductEventType type = event.getEventType();
 		if(type.getValue() == EventCustomType.CLONE.getValue()){
-			System.out.println("¹ó×å´¦ÀíÊÂ¼ş:"+p.getName() +"¿ËÂ¡,ÊÂ¼şÀàĞÍ="+type);
+			System.out.println("è´µæ—å¤„ç†äº‹ä»¶:"+p.getName() +"å…‹éš†,äº‹ä»¶ç±»å‹="+type);
 		}else{
-			System.out.println("¹ó×å´¦ÀíÊÂ¼ş:"+p.getName() +"ĞŞ¸Ä,ÊÂ¼şÀàĞÍ="+type);
+			System.out.println("è´µæ—å¤„ç†äº‹ä»¶:"+p.getName() +"ä¿®æ”¹,äº‹ä»¶ç±»å‹="+type);
 		}
 				
 	}

@@ -5,68 +5,68 @@ import java.util.Map;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * °ÑOuterUser°ü×°³ÉUserInfo
+ * æŠŠOuterUseråŒ…è£…æˆUserInfo
  */
 @SuppressWarnings("all")
 public class OuterUserInfo implements IUserInfo {
-	//Ô´Ä¿±ê¶ÔÏó
-	private IOuterUserBaseInfo baseInfo = null;  //Ô±¹¤µÄ»ù±¾ĞÅÏ¢
-	private IOuterUserHomeInfo homeInfo = null; //Ô±¹¤µÄ¼ÒÍ¥ ĞÅÏ¢
-	private IOuterUserOfficeInfo officeInfo = null; //¹¤×÷ĞÅÏ¢
+	//æºç›®æ ‡å¯¹è±¡
+	private IOuterUserBaseInfo baseInfo = null;  //å‘˜å·¥çš„åŸºæœ¬ä¿¡æ¯
+	private IOuterUserHomeInfo homeInfo = null; //å‘˜å·¥çš„å®¶åº­ ä¿¡æ¯
+	private IOuterUserOfficeInfo officeInfo = null; //å·¥ä½œä¿¡æ¯
 	
-	//Êı¾İ´¦Àí
+	//æ•°æ®å¤„ç†
 	private Map baseMap = null;
 	private Map homeMap = null;
 	private Map officeMap = null;
 	
-	//¹¹Ôìº¯Êı´«µİ¶ÔÏó
+	//æ„é€ å‡½æ•°ä¼ é€’å¯¹è±¡
 	public OuterUserInfo(IOuterUserBaseInfo _baseInfo,IOuterUserHomeInfo _homeInfo,IOuterUserOfficeInfo _officeInfo){
 		this.baseInfo = _baseInfo;
 		this.homeInfo = _homeInfo;
 		this.officeInfo = _officeInfo;
 		
-		//Êı¾İ´¦Àí
+		//æ•°æ®å¤„ç†
 		this.baseMap = this.baseInfo.getUserBaseInfo();
 		this.homeMap = this.homeInfo.getUserHomeInfo();
 		this.officeMap = this.officeInfo.getUserOfficeInfo();
 	}
 	
-	 //¼ÒÍ¥µØÖ·
+	 //å®¶åº­åœ°å€
 	public String getHomeAddress() {
 		String homeAddress = (String)this.homeMap.get("homeAddress");
 		System.out.println(homeAddress);
 		return homeAddress;
 	}
 
-	 //¼ÒÍ¥µç»°ºÅÂë
+	 //å®¶åº­ç”µè¯å·ç 
 	public String getHomeTelNumber() {
 		String homeTelNumber = (String)this.homeMap.get("homeTelNumber");
 		System.out.println(homeTelNumber);
 		return homeTelNumber;
 	}
 
-	 //Ö°Î»ĞÅÏ¢
+	 //èŒä½ä¿¡æ¯
 	public String getJobPosition() {
 		String jobPosition = (String)this.officeMap.get("jobPosition");
 		System.out.println(jobPosition);
 		return jobPosition;
 	}
 
-	 //ÊÖ»úºÅÂë
+	 //æ‰‹æœºå·ç 
 	public String getMobileNumber() {
 		String mobileNumber = (String)this.baseMap.get("mobileNumber");
 		System.out.println(mobileNumber);
 		return mobileNumber;
 	}
 
-	 //°ì¹«µç»°
+	 //åŠå…¬ç”µè¯
 	public String getOfficeTelNumber() {
 		String officeTelNumber = (String)this.officeMap.get("officeTelNumber");
 		System.out.println(officeTelNumber);
 		return officeTelNumber;
 	}
 	
-	// Ô±¹¤µÄÃû³Æ
+	// å‘˜å·¥çš„åç§°
 	public String getUserName() {
 		String userName = (String)this.baseMap.get("userName");
 		System.out.println(userName);

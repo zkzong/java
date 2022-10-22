@@ -7,7 +7,7 @@ import java.util.HashMap;
  * I'm glad to share my knowledge with you all.
  */
 public class Caretaker {
-	//ÈİÄÉ±¸ÍüÂ¼µÄÈİÆ÷
+	//å®¹çº³å¤‡å¿˜å½•çš„å®¹å™¨
 	private HashMap<String,Memento> memMap = new HashMap<String,Memento>();
 
 	public Memento getMemento(String idx) {

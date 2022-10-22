@@ -7,32 +7,32 @@ package com.company.section2;
 public abstract class HummerModel {
 
 	/*
-	 * Ê×ÏÈ£¬Õâ¸öÄ£ÐÍÒªÄÜ¹»±»·¢¶¯ÆðÀ´£¬±ð¹ÜÊÇÊÖÒ¡·¢¶¯£¬»¹ÊÇµçÁ¦·¢¶¯£¬·´Õý
-	 * ÊÇÒªÄÜ¹»·¢¶¯ÆðÀ´£¬ÄÇÕâ¸öÊµÏÖÒªÔÚÊµÏÖÀàÀïÁË
+	 * é¦–å…ˆï¼Œè¿™ä¸ªæ¨¡åž‹è¦èƒ½å¤Ÿè¢«å‘åŠ¨èµ·æ¥ï¼Œåˆ«ç®¡æ˜¯æ‰‹æ‘‡å‘åŠ¨ï¼Œè¿˜æ˜¯ç”µåŠ›å‘åŠ¨ï¼Œåæ­£
+	 * æ˜¯è¦èƒ½å¤Ÿå‘åŠ¨èµ·æ¥ï¼Œé‚£è¿™ä¸ªå®žçŽ°è¦åœ¨å®žçŽ°ç±»é‡Œäº†
 	 */
 	public abstract void start();
 	
-	//ÄÜ·¢¶¯£¬ÄÇ»¹ÒªÄÜÍ£ÏÂÀ´£¬ÄÇ²ÅÊÇÕæ±¾ÊÂ
+	//èƒ½å‘åŠ¨ï¼Œé‚£è¿˜è¦èƒ½åœä¸‹æ¥ï¼Œé‚£æ‰æ˜¯çœŸæœ¬äº‹
 	public abstract void stop();
 	
-	//À®°È»á³öÉùÒô£¬ÊÇµÎµÎ½Ð£¬»¹ÊÇßÙßÙ½Ð
+	//å–‡å­ä¼šå‡ºå£°éŸ³ï¼Œæ˜¯æ»´æ»´å«ï¼Œè¿˜æ˜¯å“”å“”å«
 	public abstract void alarm();
 	
-	//ÒýÇæ»áºäÂ¡Â¡µÄÏì£¬²»ÏìÄÇÊÇ¼ÙµÄ
+	//å¼•æ“Žä¼šè½°éš†éš†çš„å“ï¼Œä¸å“é‚£æ˜¯å‡çš„
 	public abstract void engineBoom();
 	
-	//ÄÇÄ£ÐÍÓ¦¸Ã»áÅÜ°É£¬±ð¹ÜÊÇÈËÍÆµÄ£¬»¹ÊÇµçÁ¦Çý¶¯£¬×ÜÖ®Òª»áÅÜ
+	//é‚£æ¨¡åž‹åº”è¯¥ä¼šè·‘å§ï¼Œåˆ«ç®¡æ˜¯äººæŽ¨çš„ï¼Œè¿˜æ˜¯ç”µåŠ›é©±åŠ¨ï¼Œæ€»ä¹‹è¦ä¼šè·‘
 	public void run(){
-		//ÏÈ·¢¶¯Æû³µ
+		//å…ˆå‘åŠ¨æ±½è½¦
 		this.start();
 		
-		//ÒýÇæ¿ªÊ¼ºäÃù
+		//å¼•æ“Žå¼€å§‹è½°é¸£
 		this.engineBoom();
 		
-		//È»ºó¾Í¿ªÊ¼ÅÜÁË£¬ÅÜµÄ¹ý³ÌÖÐÓöµ½Ò»Ìõ¹·µ²Â·£¬¾Í°´À®°È
+		//ç„¶åŽå°±å¼€å§‹è·‘äº†ï¼Œè·‘çš„è¿‡ç¨‹ä¸­é‡åˆ°ä¸€æ¡ç‹—æŒ¡è·¯ï¼Œå°±æŒ‰å–‡å­
 		this.alarm();
 		
-		//µ½´ïÄ¿µÄµØ¾ÍÍ£³µ
+		//åˆ°è¾¾ç›®çš„åœ°å°±åœè½¦
 		this.stop();
 	}
 

@@ -5,10 +5,10 @@ import java.util.HashMap;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ³éÏó±í´ïÊ½
+ * æŠ½è±¡è¡¨è¾¾å¼
  */
 public abstract class Expression {
 	
-	//½âÎö¹«Ê½ºÍÊıÖµ,ÆäÖĞvarÖĞµÄkeyÖµÊÇÊÇ¹«Ê½ÖĞµÄ²ÎÊı£¬valueÖµÊÇ¾ßÌåµÄÊı×Ö
+	//è§£æå…¬å¼å’Œæ•°å€¼,å…¶ä¸­varä¸­çš„keyå€¼æ˜¯æ˜¯å…¬å¼ä¸­çš„å‚æ•°ï¼Œvalueå€¼æ˜¯å…·ä½“çš„æ•°å­—
 	public abstract int interpreter(HashMap<String,Integer> var);
 }

@@ -3,20 +3,20 @@ package com.company.section2;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¸¸Ç×
+ * çˆ¶äº²
  */
 public class Father extends Handler {
-	//¸¸Ç×Ö»´¦ÀíÅ®¶ùµÄÇëÇó
+	//çˆ¶äº²åªå¤„ç†å¥³å„¿çš„è¯·æ±‚
 	public Father(){
 		super(Handler.FATHER_LEVEL_REQUEST);
 	}
 	
-	//¸¸Ç×µÄ´ğ¸´
+	//çˆ¶äº²çš„ç­”å¤
 	@Override
 	protected void response(IWomen women) {
-		System.out.println("--------Å®¶ùÏò¸¸Ç×ÇëÊ¾-------");
+		System.out.println("--------å¥³å„¿å‘çˆ¶äº²è¯·ç¤º-------");
 		System.out.println(women.getRequest());
-		System.out.println("¸¸Ç×µÄ´ğ¸´ÊÇ:Í¬Òâ\n");
+		System.out.println("çˆ¶äº²çš„ç­”å¤æ˜¯:åŒæ„\n");
 	}
 
 }

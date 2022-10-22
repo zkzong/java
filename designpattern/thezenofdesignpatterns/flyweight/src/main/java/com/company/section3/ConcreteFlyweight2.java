@@ -6,13 +6,13 @@ package com.company.section3;
  */
 public class ConcreteFlyweight2 extends Flyweight{
 	
-	//½ÓÊÜÍâ²¿×´Ì¬
+	//æ¥å—å¤–éƒ¨çŠ¶æ€
 	public ConcreteFlyweight2(String _Extrinsic){
 		super(_Extrinsic);
 	}
 	
-	//¸ù¾İÍâ²¿×´Ì¬½øĞĞÂß¼­´¦Àí
+	//æ ¹æ®å¤–éƒ¨çŠ¶æ€è¿›è¡Œé€»è¾‘å¤„ç†
 	public void operate(){
-		//ÒµÎñÂß¼­
+		//ä¸šåŠ¡é€»è¾‘
 	}
 }

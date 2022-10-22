@@ -3,32 +3,32 @@ package com.company.section1;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ±¼³Û³µÄ£ĞÍ
+ * å¥”é©°è½¦æ¨¡å‹
  */
 public class BenzModel extends CarModel {
 
 
 	@Override
 	protected void alarm() {
-		System.out.println("±¼³Û³µµÄÀ®°ÈÉùÒôÊÇÕâ¸öÑù×ÓµÄ...");
+		System.out.println("å¥”é©°è½¦çš„å–‡å­å£°éŸ³æ˜¯è¿™ä¸ªæ ·å­çš„...");
 	}
 
 
 	@Override
 	protected void engineBoom() {
-		System.out.println("±¼³Û³µµÄÒıÇæÊÒÕâ¸öÉùÒôµÄ...");
+		System.out.println("å¥”é©°è½¦çš„å¼•æ“å®¤è¿™ä¸ªå£°éŸ³çš„...");
 	}
 
 
 	@Override
 	protected void start() {
-		System.out.println("±¼³Û³µÅÜÆğÀ´ÊÇÕâ¸öÑù×ÓµÄ...");
+		System.out.println("å¥”é©°è½¦è·‘èµ·æ¥æ˜¯è¿™ä¸ªæ ·å­çš„...");
 	}
 
 
 	@Override
 	protected void stop() {
-		System.out.println("±¼³Û³µÓ¦¸ÃÕâÑùÍ£³µ...");
+		System.out.println("å¥”é©°è½¦åº”è¯¥è¿™æ ·åœè½¦...");
 	}
 
 }

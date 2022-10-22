@@ -10,7 +10,7 @@ public class Client {
 		AbstractClass class1 = new ConcreteClass1();
 		AbstractClass class2 = new ConcreteClass2();
 		
-		//调用模版方法
+		//璋冪敤妯＄増鏂规硶
 		class1.templateMethod();
 		class2.templateMethod();
 	}

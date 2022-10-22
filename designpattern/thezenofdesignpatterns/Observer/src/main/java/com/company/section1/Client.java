@@ -3,29 +3,29 @@ package com.company.section1;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * Õâ¸öClient¾ÍÊÇÎÒÃÇ£¬ÓÃÎÒÃÇµÄÊÓ½Ç¿´´ıÕâ¶ÎÀúÊ·
+ * è¿™ä¸ªClientå°±æ˜¯æˆ‘ä»¬ï¼Œç”¨æˆ‘ä»¬çš„è§†è§’çœ‹å¾…è¿™æ®µå†å²
  */
 public class Client {
 	
 	public static void main(String[] args) throws InterruptedException {
-		//¶¨Òå³öº«·Ç×ÓºÍÀîË¹
+		//å®šä¹‰å‡ºéŸ©éå­å’Œææ–¯
 		LiSi liSi = new LiSi();
 		HanFeiZi hanFeiZi = new HanFeiZi();
 		
-		//¹Û²ìÔç²Í
+		//è§‚å¯Ÿæ—©é¤
 		Spy watchBreakfast = new Spy(hanFeiZi,liSi,"breakfast");
-		//¿ªÊ¼Æô¶¯Ïß³Ì£¬¼à¿Ø
+		//å¼€å§‹å¯åŠ¨çº¿ç¨‹ï¼Œç›‘æ§
 		watchBreakfast.start();
 		
-		//¹Û²ìÓéÀÖÇé¿ö
+		//è§‚å¯Ÿå¨±ä¹æƒ…å†µ
 		Spy watchFun = new Spy(hanFeiZi,liSi,"fun");
 		watchFun.start();
 		
-		//È»ºóÕâÀïÎÒÃÇ¿´¿´º«·Ç×ÓÔÚ¸ÉÊ²Ã´
-		Thread.sleep(1000); //Ö÷Ïß³ÌµÈ´ı1ÃëºóºóÔÙÍùÏÂÖ´ĞĞ
+		//ç„¶åè¿™é‡Œæˆ‘ä»¬çœ‹çœ‹éŸ©éå­åœ¨å¹²ä»€ä¹ˆ
+		Thread.sleep(1000); //ä¸»çº¿ç¨‹ç­‰å¾…1ç§’ååå†å¾€ä¸‹æ‰§è¡Œ
 		hanFeiZi.haveBreakfast();
 		
-		//º«·Ç×ÓÓéÀÖÁË
+		//éŸ©éå­å¨±ä¹äº†
 		Thread.sleep(1000);
 		hanFeiZi.haveFun();
 		

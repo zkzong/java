@@ -3,16 +3,16 @@ package com.company.section3;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÈİÆ÷Àà
+ * å®¹å™¨ç±»
  */
 public interface Aggregate {
 	
-	//ÊÇÈİÆ÷±ØÈ»ÓĞÔªËØµÄÔö¼Ó
+	//æ˜¯å®¹å™¨å¿…ç„¶æœ‰å…ƒç´ çš„å¢åŠ 
 	public void add(Object object);
 	
-	//¼õÉÙÔªËØ
+	//å‡å°‘å…ƒç´ 
 	public void remove(Object object);
 	
-	//ÓÉµü´úÆ÷À´±éÀúËùÓĞµÄÔªËØ
+	//ç”±è¿­ä»£å™¨æ¥éå†æ‰€æœ‰çš„å…ƒç´ 
 	public Iterator iterator();
 }

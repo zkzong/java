@@ -6,19 +6,19 @@ import java.util.Observer;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÀîË¹Õâ¸öÈË£¬ÊÇ¸ö¹Û²ìÕß£¬Ö»Òªº«·Ç×ÓÒ»ÓÐ¶¯¾²£¬Õâ±ß¾ÍÖªµÀ
+ * æŽæ–¯è¿™ä¸ªäººï¼Œæ˜¯ä¸ªè§‚å¯Ÿè€…ï¼Œåªè¦éŸ©éžå­ä¸€æœ‰åŠ¨é™ï¼Œè¿™è¾¹å°±çŸ¥é“
  */
 public class LiSi implements Observer{
 	
-	//Ê×ÏÈÀîË¹ÊÇ¸ö¹Û²ìÕß£¬Ò»µ©º«·Ç×ÓÓÐ»î¶¯£¬Ëû¾ÍÖªµÀ£¬Ëû¾ÍÒªÏòÀÏ°å»ã±¨
+	//é¦–å…ˆæŽæ–¯æ˜¯ä¸ªè§‚å¯Ÿè€…ï¼Œä¸€æ—¦éŸ©éžå­æœ‰æ´»åŠ¨ï¼Œä»–å°±çŸ¥é“ï¼Œä»–å°±è¦å‘è€æ¿æ±‡æŠ¥
 	public void update(Observable observable,Object obj){
-		System.out.println("ÀîË¹£º¹Û²ìµ½ÀîË¹»î¶¯£¬¿ªÊ¼ÏòÀÏ°å»ã±¨ÁË...");
+		System.out.println("æŽæ–¯ï¼šè§‚å¯Ÿåˆ°æŽæ–¯æ´»åŠ¨ï¼Œå¼€å§‹å‘è€æ¿æ±‡æŠ¥äº†...");
 		this.reportToQiShiHuang(obj.toString());
-		System.out.println("ÀîË¹£º»ã±¨Íê±Ï£¬ÇØÀÏ°åÉÍ¸øËûÁ½¸öÂÜ²·³Ô³Ô...\n");
+		System.out.println("æŽæ–¯ï¼šæ±‡æŠ¥å®Œæ¯•ï¼Œç§¦è€æ¿èµç»™ä»–ä¸¤ä¸ªèåœåƒåƒ...\n");
 		try {
-			System.out.println("ÎÒ¿ªÊ¼ÐÝÃß " + System.currentTimeMillis());
+			System.out.println("æˆ‘å¼€å§‹ä¼‘çœ  " + System.currentTimeMillis());
 			Thread.sleep(3000);
-			System.out.println("ÎÒÆðÀ´ÁË " + System.currentTimeMillis());
+			System.out.println("æˆ‘èµ·æ¥äº† " + System.currentTimeMillis());
 			
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
@@ -26,8 +26,8 @@ public class LiSi implements Observer{
 		}
 	}
 	
-	//»ã±¨¸øÇØÊ¼»Ê
+	//æ±‡æŠ¥ç»™ç§¦å§‹çš‡
 	private void reportToQiShiHuang(String reportContext){
-		System.out.println("ÀîË¹£º±¨¸æ£¬ÇØÀÏ°å£¡º«·Ç×ÓÓÐ»î¶¯ÁË--->"+reportContext);
+		System.out.println("æŽæ–¯ï¼šæŠ¥å‘Šï¼Œç§¦è€æ¿ï¼éŸ©éžå­æœ‰æ´»åŠ¨äº†--->"+reportContext);
 	}
 }

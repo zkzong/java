@@ -9,13 +9,13 @@ public class Client {
 	public static void main(String[] args) {
 		Component component = new ConcreteComponent();
 		
-		//µÚÒ»´ÎĞŞÊÎ
+		//ç¬¬ä¸€æ¬¡ä¿®é¥°
 		component = new ConcreteDecorator1(component);
 		
-		//µÚ¶ş´ÎĞŞÊÎ
+		//ç¬¬äºŒæ¬¡ä¿®é¥°
 		component = new ConcreteDecorator2(component);
 		
-		//ĞŞÊÎºóÔËĞĞ
+		//ä¿®é¥°åè¿è¡Œ
 		component.operate();
 		
 	}

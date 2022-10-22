@@ -5,40 +5,40 @@ import java.util.ArrayList;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * º«·Ç×Ó£¬ÀîË¹µÄÊ¦µÜ£¬º«¹úµÄÖØÒªÈËÎï
+ * éŸ©éå­ï¼Œææ–¯çš„å¸ˆå¼Ÿï¼ŒéŸ©å›½çš„é‡è¦äººç‰©
  */
 public class HanFeiZi implements Observable,IHanFeiZi{
-	//¶¨Òå¸ö±ä³¤Êı×é£¬´æ·ÅËùÓĞµÄ¹Û²ìÕß
+	//å®šä¹‰ä¸ªå˜é•¿æ•°ç»„ï¼Œå­˜æ”¾æ‰€æœ‰çš„è§‚å¯Ÿè€…
 	private ArrayList<Observer> observerList = new ArrayList<Observer>();
 	
-	//Ôö¼Ó¹Û²ìÕß
+	//å¢åŠ è§‚å¯Ÿè€…
 	public void addObserver(Observer observer){
 		this.observerList.add(observer);
 	}
 	
-	//É¾³ı¹Û²ìÕß
+	//åˆ é™¤è§‚å¯Ÿè€…
 	public void deleteObserver(Observer observer){
 		this.observerList.remove(observer);
 	}
 	
-	//Í¨ÖªËùÓĞµÄ¹Û²ìÕß
+	//é€šçŸ¥æ‰€æœ‰çš„è§‚å¯Ÿè€…
 	public void notifyObservers(String context){
 		for(Observer observer:observerList){
 			observer.update(context);
 		}
 	}
 	
-	//º«·Ç×ÓÒª³Ô·¹ÁË
+	//éŸ©éå­è¦åƒé¥­äº†
 	public void haveBreakfast(){
-		System.out.println("º«·Ç×Ó:¿ªÊ¼³Ô·¹ÁË...");
-		//Í¨ÖªËùÓĞµÄ¹Û²ìÕß
-		this.notifyObservers("º«·Ç×ÓÔÚ³Ô·¹");
+		System.out.println("éŸ©éå­:å¼€å§‹åƒé¥­äº†...");
+		//é€šçŸ¥æ‰€æœ‰çš„è§‚å¯Ÿè€…
+		this.notifyObservers("éŸ©éå­åœ¨åƒé¥­");
 	}
 	
-	//º«·Ç×Ó¿ªÊ¼ÓéÀÖÁË,¹Å´úÈËÃ»É¶ÓéÀÖ£¬ÄãÄÜÏëµ½µÄ¾ÍÄÇÃ´¶à
+	//éŸ©éå­å¼€å§‹å¨±ä¹äº†,å¤ä»£äººæ²¡å•¥å¨±ä¹ï¼Œä½ èƒ½æƒ³åˆ°çš„å°±é‚£ä¹ˆå¤š
 	public void haveFun(){
-		System.out.println("º«·Ç×Ó:¿ªÊ¼ÓéÀÖÁË...");
-		this.notifyObservers("º«·Ç×ÓÔÚÓéÀÖ");
+		System.out.println("éŸ©éå­:å¼€å§‹å¨±ä¹äº†...");
+		this.notifyObservers("éŸ©éå­åœ¨å¨±ä¹");
 	}
 	
 }

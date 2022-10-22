@@ -6,9 +6,9 @@ package com.company.section4;
  */
 public class ConcreteObserver implements Observer {
 
-	//实现更新方法
+	//瀹炵幇鏇存柊鏂规硶
 	public void update() {
-		System.out.println("接收到信息，并进行处理！");
+		System.out.println("鎺ユ敹鍒颁俊鎭紝骞惰繘琛屽鐞嗭紒");
 	}
 
 }

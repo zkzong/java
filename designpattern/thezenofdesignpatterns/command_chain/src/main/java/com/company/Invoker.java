@@ -6,29 +6,29 @@ import com.company.command.LSCommand;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * µ÷ÓÃÀà
+ * è°ƒç”¨ç±»
  */
 public class Invoker {
 	
-	//Ö´ĞĞÃüÁî
+	//æ‰§è¡Œå‘½ä»¤
 	public String  exec(String _commandStr){
-		//¶¨Òå·µ»ØÖµ
+		//å®šä¹‰è¿”å›å€¼
 		String result = "";
-		//Ê×ÏÈ½âÎöÃüÁî
+		//é¦–å…ˆè§£æå‘½ä»¤
 		CommandVO vo = new CommandVO(_commandStr);
-		//¼ì²éÊÇ·ñÖ§³ÖÖ§³Ö¸ÃÃüÁî
+		//æ£€æŸ¥æ˜¯å¦æ”¯æŒæ”¯æŒè¯¥å‘½ä»¤
 		if(CommandEnum.getNames().contains(vo.getCommandName())){
-			//²úÉúÃüÁî¶ÔÏó
+			//äº§ç”Ÿå‘½ä»¤å¯¹è±¡
 			String className = CommandEnum.valueOf(vo.getCommandName()).getValue();
 			Command command;
 			try {
 				command = (Command)Class.forName(className).newInstance();
 				result = command.execute(vo);
 			}catch(Exception e){
-				// TODO Òì³£´¦Àí
+				// TODO å¼‚å¸¸å¤„ç†
 			}			
 		}else{
-			result = "ÎŞ·¨Ö´ĞĞÃüÁî£¬Çë¼ì²éÃüÁî¸ñÊ½";
+			result = "æ— æ³•æ‰§è¡Œå‘½ä»¤ï¼Œè¯·æ£€æŸ¥å‘½ä»¤æ ¼å¼";
 		}
 		return result;
 	}

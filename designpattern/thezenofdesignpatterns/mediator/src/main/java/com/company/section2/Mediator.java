@@ -3,53 +3,53 @@ package com.company.section2;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÖĞ½éÕß
+ * ä¸­ä»‹è€…
  */
 public class Mediator extends AbstractMediator {
 
-	//ÖĞ½éÕß×îÖØÒªµÄ·½·¨
+	//ä¸­ä»‹è€…æœ€é‡è¦çš„æ–¹æ³•
 	public void execute(String str,Object...objects){
-		if(str.equals("purchase.buy")){ //²É¹ºµçÄÔ
+		if(str.equals("purchase.buy")){ //é‡‡è´­ç”µè„‘
 			this.buyComputer((Integer)objects[0]);
-		}else if(str.equals("sale.sell")){ //ÏúÊÛµçÄÔ
+		}else if(str.equals("sale.sell")){ //é”€å”®ç”µè„‘
 			this.sellComputer((Integer)objects[0]);
-		}else if(str.equals("sale.offsell")){ //ÕÛ¼ÛÏúÊÛ
+		}else if(str.equals("sale.offsell")){ //æŠ˜ä»·é”€å”®
 			this.offSell();
-		}else if(str.equals("stock.clear")){ //Çå²Ö´¦Àí
+		}else if(str.equals("stock.clear")){ //æ¸…ä»“å¤„ç†
 			this.clearStock();
 		}
 	}
 	
-	//²É¹ºµçÄÔ
+	//é‡‡è´­ç”µè„‘
 	private void buyComputer(int number){
 		int saleStatus = super.sale.getSaleStatus();		
-		if(saleStatus>80){  //ÏúÊÛÇé¿öÁ¼ºÃ
-			System.out.println("²É¹ºIBMµçÄÔ:"+number + "Ì¨");
+		if(saleStatus>80){  //é”€å”®æƒ…å†µè‰¯å¥½
+			System.out.println("é‡‡è´­IBMç”µè„‘:"+number + "å°");
 			super.stock.increase(number);
-		}else{  //ÏúÊÛÇé¿ö²»ºÃ
-			int buyNumber = number/2;  //ÕÛ°ë²É¹º
-			System.out.println("²É¹ºIBMµçÄÔ£º"+buyNumber+ "Ì¨");
+		}else{  //é”€å”®æƒ…å†µä¸å¥½
+			int buyNumber = number/2;  //æŠ˜åŠé‡‡è´­
+			System.out.println("é‡‡è´­IBMç”µè„‘ï¼š"+buyNumber+ "å°");
 		}
 	}
 	
-	//ÏúÊÛµçÄÔ
+	//é”€å”®ç”µè„‘
 	private void sellComputer(int number){
-		if(super.stock.getStockNumber()<number){  //¿â´æÊıÁ¿²»¹»ÏúÊÛ
+		if(super.stock.getStockNumber()<number){  //åº“å­˜æ•°é‡ä¸å¤Ÿé”€å”®
 			super.purchase.buyIBMcomputer(number);			
 		}
 		super.stock.decrease(number);
 	}
 	
-	//ÕÛ¼ÛÏúÊÛµçÄÔ
+	//æŠ˜ä»·é”€å”®ç”µè„‘
 	private void offSell(){
-		System.out.println("ÕÛ¼ÛÏúÊÛIBMµçÄÔ"+stock.getStockNumber()+"Ì¨");
+		System.out.println("æŠ˜ä»·é”€å”®IBMç”µè„‘"+stock.getStockNumber()+"å°");
 	}
 	
-	//Çå²Ö´¦Àí
+	//æ¸…ä»“å¤„ç†
 	private void clearStock(){
-		//ÒªÇóÇå²ÖÏúÊÛ
+		//è¦æ±‚æ¸…ä»“é”€å”®
 		super.sale.offSale();
-		//ÒªÇó²É¹ºÈËÔ±²»Òª²É¹º
+		//è¦æ±‚é‡‡è´­äººå‘˜ä¸è¦é‡‡è´­
 		super.purchase.refuseBuyIBM();
 	}
 }

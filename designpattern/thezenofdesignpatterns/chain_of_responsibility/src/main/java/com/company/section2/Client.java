@@ -6,25 +6,25 @@ import java.util.Random;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÎÒÃÇºóÈËÀ´¿´ÕâÑùµÄÉç»áµÀµÂ
+ * æˆ‘ä»¬åäººæ¥çœ‹è¿™æ ·çš„ç¤¾ä¼šé“å¾·
  */
 @SuppressWarnings("all")
 public class Client {
 	
 	public static void main(String[] args) {
-		//Ëæ»úÌôÑ¡¼¸¸öÅ®ĞÔ
+		//éšæœºæŒ‘é€‰å‡ ä¸ªå¥³æ€§
 		Random rand = new Random();
 		ArrayList<IWomen> arrayList = new ArrayList();
 		for(int i=0;i<5;i++){
-			arrayList.add(new Women(rand.nextInt(4),"ÎÒÒª³öÈ¥¹ä½Ö"));
+			arrayList.add(new Women(rand.nextInt(4),"æˆ‘è¦å‡ºå»é€›è¡—"));
 		}
 
-		//¶¨ÒåÈı¸öÇëÊ¾¶ÔÏó
+		//å®šä¹‰ä¸‰ä¸ªè¯·ç¤ºå¯¹è±¡
 		Handler father = new Father();
 		Handler husband = new Husband();
 		Handler son = new Son();
 		
-		//ÉèÖÃÇëÊ¾Ë³Ğò
+		//è®¾ç½®è¯·ç¤ºé¡ºåº
 		father.setNext(husband);
 		husband.setNext(son);
 		

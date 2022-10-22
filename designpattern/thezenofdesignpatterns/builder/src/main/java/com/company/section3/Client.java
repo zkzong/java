@@ -3,24 +3,24 @@ package com.company.section3;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * 这里是牛叉公司的天下，他要啥我们给啥
+ * 杩欓噷鏄墰鍙夊叕鍙哥殑澶╀笅锛屼粬瑕佸暐鎴戜滑缁欏暐
  */
 public class Client {
 
 	public static void main(String[] args) {
 		Director director = new Director();
 		
-		//1W辆A类型的奔驰车
+		//1W杈咥绫诲瀷鐨勫椹拌溅
 		for(int i=0;i<10000;i++){
 			director.getABenzModel().run();
 		}
 		
-		//100W辆B类型的奔驰车
+		//100W杈咮绫诲瀷鐨勫椹拌溅
 		for(int i=0;i<1000000;i++){
 			director.getBBenzModel().run();
 		}
 		
-		//1000W量C类型的宝马车
+		//1000W閲廋绫诲瀷鐨勫疂椹溅
 		for(int i=0;i<10000000;i++){
 			director.getCBMWModel().run();
 		}

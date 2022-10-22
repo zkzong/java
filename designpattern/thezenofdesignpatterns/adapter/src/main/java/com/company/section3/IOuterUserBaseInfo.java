@@ -7,6 +7,6 @@ import java.util.Map;
  * I'm glad to share my knowledge with you all.
  */
 public interface IOuterUserBaseInfo {
-	//»ù±¾ĞÅÏ¢£¬±ÈÈçÃû³Æ£¬ĞÔ±ğ£¬ÊÖ»úºÅÂëÁËµÈ
+	//åŸºæœ¬ä¿¡æ¯ï¼Œæ¯”å¦‚åç§°ï¼Œæ€§åˆ«ï¼Œæ‰‹æœºå·ç äº†ç­‰
 	public Map getUserBaseInfo();
 }

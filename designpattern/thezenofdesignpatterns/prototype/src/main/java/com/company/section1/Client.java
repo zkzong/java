@@ -5,36 +5,36 @@ import java.util.Random;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * Ä£Äâ·¢ËÍµç×ÓÕËµ¥
+ * æ¨¡æ‹Ÿå‘é€ç”µå­è´¦å•
  */
 public class Client {
-	//·¢ËÍÕËµ¥µÄÊıÁ¿£¬Õâ¸öÖµÊÇ´ÓÊı¾İ¿âÖĞ»ñµÃ
+	//å‘é€è´¦å•çš„æ•°é‡ï¼Œè¿™ä¸ªå€¼æ˜¯ä»æ•°æ®åº“ä¸­è·å¾—
 	private static int MAX_COUNT = 6;
 	
 	public static void main(String[] args) {
-		//Ä£Äâ·¢ËÍÓÊ¼ş
+		//æ¨¡æ‹Ÿå‘é€é‚®ä»¶
 		int i=0;
-		//°ÑÄ£°å¶¨Òå³öÀ´£¬Õâ¸öÊÇ´ÓÊı¾İÖĞ»ñµÃ
+		//æŠŠæ¨¡æ¿å®šä¹‰å‡ºæ¥ï¼Œè¿™ä¸ªæ˜¯ä»æ•°æ®ä¸­è·å¾—
 		Mail mail = new Mail(new AdvTemplate());
-		mail.setTail("XXÒøĞĞ°æÈ¨ËùÓĞ");
+		mail.setTail("XXé“¶è¡Œç‰ˆæƒæ‰€æœ‰");
 		while(i<MAX_COUNT){
-			//ÒÔÏÂÊÇÃ¿·âÓÊ¼ş²»Í¬µÄµØ·½
+			//ä»¥ä¸‹æ˜¯æ¯å°é‚®ä»¶ä¸åŒçš„åœ°æ–¹
 			Mail cloneMail = mail.clone();
-			cloneMail.setAppellation(getRandString(5)+" ÏÈÉú£¨Å®Ê¿£©");
+			cloneMail.setAppellation(getRandString(5)+" å…ˆç”Ÿï¼ˆå¥³å£«ï¼‰");
 			cloneMail.setReceiver(getRandString(5) + "@" + getRandString(8)+".com");
 			
-			//È»ºó·¢ËÍÓÊ¼ş
+			//ç„¶åå‘é€é‚®ä»¶
 			sendMail(cloneMail);
 			i++;
 		}
 	}
 	
-	//·¢ËÍÓÊ¼ş
+	//å‘é€é‚®ä»¶
 	public static void sendMail(Mail mail){
-		System.out.println("±êÌâ£º"+mail.getSubject() + "\tÊÕ¼şÈË£º"+mail.getReceiver()+"\t....·¢ËÍ³É¹¦£¡");
+		System.out.println("æ ‡é¢˜ï¼š"+mail.getSubject() + "\tæ”¶ä»¶äººï¼š"+mail.getReceiver()+"\t....å‘é€æˆåŠŸï¼");
 	}
 	
-	//»ñµÃÖ¸¶¨³¤¶ÈµÄËæ»ú×Ö·û´®
+	//è·å¾—æŒ‡å®šé•¿åº¦çš„éšæœºå­—ç¬¦ä¸²
 	public static String getRandString(int maxLength){
 		String source ="abcdefghijklmnopqrskuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 		StringBuffer sb = new StringBuffer();

@@ -5,6 +5,6 @@ package com.company.section3;
  * I'm glad to share my knowledge with you all.
  */
 public abstract class Component {
-	//³éÏóµÄ·½·¨
+	//æŠ½è±¡çš„æ–¹æ³•
 	public abstract void operate();
 }

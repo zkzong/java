@@ -7,18 +7,18 @@ package com.company.section6;
 public class Client {
 	
 	public static void main(String[] args) {
-		//¶¨Òå·¢ÆğÈË
+		//å®šä¹‰å‘èµ·äºº
 		Originator originator = new Originator();
-		//½¨Á¢³õÊ¼×´Ì¬
-		originator.setState("³õÊ¼×´Ì¬...");
-		System.out.println("³õÊ¼×´Ì¬ÊÇ£º"+originator.getState());
-		//½¨Á¢±¸·İ
+		//å»ºç«‹åˆå§‹çŠ¶æ€
+		originator.setState("åˆå§‹çŠ¶æ€...");
+		System.out.println("åˆå§‹çŠ¶æ€æ˜¯ï¼š"+originator.getState());
+		//å»ºç«‹å¤‡ä»½
 		originator.createMemento();
-		//ĞŞ¸Ä×´Ì¬
-		originator.setState("ĞŞ¸ÄºóµÄ×´Ì¬...");
-		System.out.println("ĞŞ¸Äºó×´Ì¬ÊÇ£º"+originator.getState());
-		//»Ö¸´Ô­ÓĞ×´Ì¬
+		//ä¿®æ”¹çŠ¶æ€
+		originator.setState("ä¿®æ”¹åçš„çŠ¶æ€...");
+		System.out.println("ä¿®æ”¹åçŠ¶æ€æ˜¯ï¼š"+originator.getState());
+		//æ¢å¤åŸæœ‰çŠ¶æ€
 		originator.restoreMemento();
-		System.out.println("»Ö¸´ºó×´Ì¬ÊÇ£º"+originator.getState());
+		System.out.println("æ¢å¤åçŠ¶æ€æ˜¯ï¼š"+originator.getState());
 	}
 }

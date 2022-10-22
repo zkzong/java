@@ -3,12 +3,12 @@ package com.company.section3;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¼ì²éĞÅ¼ş£¬±ÈÈçÊÇ²»ÊÇ¿ÖÏÅĞÅ£¬ÓĞÃ»ÓĞÌ¿¾Ò²¡¶¾£¬¼ÄÍùÄ³µØµÄÓÊ¼ş¶¼Òª¼ì²é
+ * æ£€æŸ¥ä¿¡ä»¶ï¼Œæ¯”å¦‚æ˜¯ä¸æ˜¯æå“ä¿¡ï¼Œæœ‰æ²¡æœ‰ç‚­ç–½ç—…æ¯’ï¼Œå¯„å¾€æŸåœ°çš„é‚®ä»¶éƒ½è¦æ£€æŸ¥
  */
 public class Police {
 	
-	//¼ì²éĞÅ¼ş£¬¼ì²éÍê±Ïºó¾¯²ìÔÚĞÅ·âÉÏ¸Ç¸ö´Á£º´ËĞÅÎŞ²¡¶¾
+	//æ£€æŸ¥ä¿¡ä»¶ï¼Œæ£€æŸ¥å®Œæ¯•åè­¦å¯Ÿåœ¨ä¿¡å°ä¸Šç›–ä¸ªæˆ³ï¼šæ­¤ä¿¡æ— ç—…æ¯’
 	public void checkLetter(ILetterProcess letterProcess){
-		System.out.println(letterProcess+" ĞÅ¼şÒÑ¾­¼ì²é¹ıÁË.....");
+		System.out.println(letterProcess+" ä¿¡ä»¶å·²ç»æ£€æŸ¥è¿‡äº†.....");
 	}
 }

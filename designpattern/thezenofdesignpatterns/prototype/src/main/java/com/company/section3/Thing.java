@@ -3,11 +3,11 @@ package com.company.section3;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÍòÎï
+ * ä¸‡ç‰©
  */
 public class Thing implements Cloneable{
 	public Thing(){
-		System.out.println("¹¹Ôìº¯Êý±»Ö´ÐÐÁË...");
+		System.out.println("æž„é€ å‡½æ•°è¢«æ‰§è¡Œäº†...");
 	}
 	
 	@Override

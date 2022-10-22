@@ -4,21 +4,21 @@ package com.company.section2;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÎÒÊÇÉ½Õ¯ÀÏ´ó£¬ÄãÁ÷ĞĞÉ¶ÎÒ¾ÍÉú²èÉ¶
+ * æˆ‘æ˜¯å±±å¯¨è€å¤§ï¼Œä½ æµè¡Œå•¥æˆ‘å°±ç”ŸèŒ¶å•¥
  */
 public class IPodCorp extends Corp {
-	//ÎÒ¿ªÊ¼Éú²úiPodÁË
+	//æˆ‘å¼€å§‹ç”Ÿäº§iPodäº†
 	protected void produce() {
-		System.out.println("ÎÒÉú²úiPod...");
+		System.out.println("æˆ‘ç”Ÿäº§iPod...");
 	}
-	//É½Õ¯µÄiPodºÜ³©Ïú£¬±ãÒËÑ½
+	//å±±å¯¨çš„iPodå¾ˆç•…é”€ï¼Œä¾¿å®œå‘€
 	protected void sell() {
-		System.out.println("iPod³©Ïú...");
+		System.out.println("iPodç•…é”€...");
 	}
-	//¿ñ×¬Ç®
+	//ç‹‚èµšé’±
 	public void makeMoney(){
 		super.makeMoney();
-		System.out.println("ÎÒ×¬Ç®Ñ½...");
+		System.out.println("æˆ‘èµšé’±å‘€...");
 	}
 }
 

@@ -9,13 +9,13 @@ package com.company.section4;
 public class Client {
 	
 	public static void main(String[] args) {
-		//Ê×ÏÈÉùÃ÷³öµ÷ÓÃÕßInvoker
+		//é¦–å…ˆå£°æ˜Žå‡ºè°ƒç”¨è€…Invoker
 		Invoker invoker = new Invoker();
 	
-		//¶¨ÒåÒ»¸ö·¢ËÍ¸ø½ÓÊÕÕßµÄÃüÁî
+		//å®šä¹‰ä¸€ä¸ªå‘é€ç»™æŽ¥æ”¶è€…çš„å‘½ä»¤
 		Command command = new ConcreteCommand1();
 		
-		//°ÑÃüÁî½»¸øµ÷ÓÃÕßÈ¥Ö´ÐÐ
+		//æŠŠå‘½ä»¤äº¤ç»™è°ƒç”¨è€…åŽ»æ‰§è¡Œ
 		invoker.setCommand(command);
 		invoker.action();
 		

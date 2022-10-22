@@ -7,20 +7,20 @@ import java.util.Vector;
  * I'm glad to share my knowledge with you all.
  */
 public abstract class Subject {
-	//¶¨Ò»¸öÒ»¸ö¹Û²ìÕßÊý×é
+	//å®šä¸€ä¸ªä¸€ä¸ªè§‚å¯Ÿè€…æ•°ç»„
 	private Vector<Observer> obsVector = new Vector<Observer>();
 	
-	//Ôö¼ÓÒ»¸ö¹Û²ìÕß
+	//å¢žåŠ ä¸€ä¸ªè§‚å¯Ÿè€…
 	public void addObserver(Observer o){
 		this.obsVector.add(o);
 	}
 	
-	//É¾³ýÒ»¸ö¹Û²ìÕß
+	//åˆ é™¤ä¸€ä¸ªè§‚å¯Ÿè€…
 	public void delObserver(Observer o){
 		this.obsVector.remove(o);
 	}
 	
-	//Í¨ÖªËùÓÐ¹Û²ìÕß
+	//é€šçŸ¥æ‰€æœ‰è§‚å¯Ÿè€…
 	public void notifyObserver(){
 		for(Observer o:this.obsVector){
 			o.update();

@@ -3,11 +3,11 @@ package com.company.section1;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¸¸ÏµÉç»á£¬ÄÇ¾ÍÊÇÄĞĞÔÓĞÖÁ¸ßÈ¨Àû£¬handler¿ØÖÆÈ¨
+ * çˆ¶ç³»ç¤¾ä¼šï¼Œé‚£å°±æ˜¯ç”·æ€§æœ‰è‡³é«˜æƒåˆ©ï¼Œhandleræ§åˆ¶æƒ
  */
 public interface IHandler {
 	
-	//Ò»¸öÅ®ĞÔ£¨Å®¶ù£¬ÆŞ×Ó»òÕßÊÇÄ¸Ç×£©ÒªÇó¹ä½Ö£¬ÄãÒª´¦ÀíÕâ¸öÇëÇó
+	//ä¸€ä¸ªå¥³æ€§ï¼ˆå¥³å„¿ï¼Œå¦»å­æˆ–è€…æ˜¯æ¯äº²ï¼‰è¦æ±‚é€›è¡—ï¼Œä½ è¦å¤„ç†è¿™ä¸ªè¯·æ±‚
 	public void HandleMessage(IWomen women);
 	
 }

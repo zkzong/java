@@ -7,11 +7,11 @@ package com.company.section4;
 public class Client {
 	
 	public static void main(String[] args) {
-		//¶¨Òå»·¾³½ÇÉ«
+		//å®šä¹‰ç¯å¢ƒè§’è‰²
 		Context context = new Context();
-		//³õÊ¼»¯×´Ì¬
+		//åˆå§‹åŒ–çŠ¶æ€
 		context.setCurrentState(new ConcreteState1());
-		//ĞĞÎªÖ´ĞĞ
+		//è¡Œä¸ºæ‰§è¡Œ
 		context.handle1();
 		context.handle2();
 	}

@@ -7,24 +7,24 @@ import java.util.Observable;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * º«·Ç×Ó£¬ÀîË¹µÄÊ¦µÜ£¬º«¹úµÄÖØÒªÈËÎï
+ * éŸ©éå­ï¼Œææ–¯çš„å¸ˆå¼Ÿï¼ŒéŸ©å›½çš„é‡è¦äººç‰©
  */
 public class HanFeiZi extends Observable{
 	
-	//º«·Ç×ÓÒª³Ô·¹ÁË
+	//éŸ©éå­è¦åƒé¥­äº†
 	public void haveBreakfast(){
-		System.out.println("º«·Ç×Ó:¿ªÊ¼³Ô·¹ÁË...");
-		//Í¨ÖªËùÓĞµÄ¹Û²ìÕß
+		System.out.println("éŸ©éå­:å¼€å§‹åƒé¥­äº†...");
+		//é€šçŸ¥æ‰€æœ‰çš„è§‚å¯Ÿè€…
 		super.setChanged();
-		super.notifyObservers("º«·Ç×ÓÔÚ³Ô·¹");
+		super.notifyObservers("éŸ©éå­åœ¨åƒé¥­");
 		
 	}
 	
-	//º«·Ç×Ó¿ªÊ¼ÓéÀÖÁË,¹Å´úÈËÃ»É¶ÓéÀÖ£¬ÄãÄÜÏëµ½µÄ¾ÍÄÇÃ´¶à
+	//éŸ©éå­å¼€å§‹å¨±ä¹äº†,å¤ä»£äººæ²¡å•¥å¨±ä¹ï¼Œä½ èƒ½æƒ³åˆ°çš„å°±é‚£ä¹ˆå¤š
 	public void haveFun(){
-		System.out.println("º«·Ç×Ó:¿ªÊ¼ÓéÀÖÁË...");
+		System.out.println("éŸ©éå­:å¼€å§‹å¨±ä¹äº†...");
 		super.setChanged();
-		this.notifyObservers("º«·Ç×ÓÔÚÓéÀÖ");
+		this.notifyObservers("éŸ©éå­åœ¨å¨±ä¹");
 	}
 	
 }

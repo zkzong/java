@@ -9,20 +9,20 @@ import java.util.Vector;
  * I'm glad to share my knowledge with you all.
  */
 public class EventDispatch implements Observer{
-	//µ¥ÀıÄ£Ê½
+	//å•ä¾‹æ¨¡å¼
 	private final static EventDispatch dispatch = new EventDispatch(); 
 	
-	//²»ÔÊĞíÉú³ÉĞÂµÄÊµÀı
+	//ä¸å…è®¸ç”Ÿæˆæ–°çš„å®ä¾‹
 	private EventDispatch(){
 		
 	}
 	
-	//»ñµÃµ¥Àı¶ÔÏó
+	//è·å¾—å•ä¾‹å¯¹è±¡
 	public static EventDispatch getEventDispathc(){
 		return dispatch;
 	}
 	
-	//ÊÂ¼ş´¥·¢
+	//äº‹ä»¶è§¦å‘
 	public void update(Observable o, Object arg) {
 		
 	}

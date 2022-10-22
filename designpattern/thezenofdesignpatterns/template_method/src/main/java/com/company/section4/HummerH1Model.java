@@ -3,36 +3,36 @@ package com.company.section4;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * 悍马车是每个越野者的最爱，其中H1最接近军用系列
+ * 鎮嶉┈杞︽槸姣忎釜瓒婇噹鑰呯殑鏈�鐖憋紝鍏朵腑H1鏈�鎺ヨ繎鍐涚敤绯诲垪
  */
 public class HummerH1Model extends HummerModel {
-	private boolean alarmFlag = true;  //是否要响喇叭
+	private boolean alarmFlag = true;  //鏄惁瑕佸搷鍠囧彮
 	
 	@Override
 	protected void alarm() {
-		System.out.println("悍马H1鸣笛...");
+		System.out.println("鎮嶉┈H1楦ｇ瑳...");
 	}
 
 	@Override
 	protected void engineBoom() {
-		System.out.println("悍马H1引擎声音是这样在...");
+		System.out.println("鎮嶉┈H1寮曟搸澹伴煶鏄繖鏍峰湪...");
 	}
 
 	@Override
 	protected void start() {
-		System.out.println("悍马H1发动...");
+		System.out.println("鎮嶉┈H1鍙戝姩...");
 	}
 
 	@Override
 	protected void stop() {
-		System.out.println("悍马H1停车...");
+		System.out.println("鎮嶉┈H1鍋滆溅...");
 	}
 	
 	protected boolean isAlarm() {
 		return this.alarmFlag;
 	}
 
-	//要不要响喇叭，是有客户的来决定的
+	//瑕佷笉瑕佸搷鍠囧彮锛屾槸鏈夊鎴风殑鏉ュ喅瀹氱殑
 	public void setAlarm(boolean isAlarm){
 		this.alarmFlag = isAlarm;
 	}

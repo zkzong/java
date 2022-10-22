@@ -9,14 +9,14 @@ public class Client {
 
 	public static void main(String[] args) {
 		House house = new House();
-		System.out.println("-------·¿µØ²ú¹«Ë¾ÊÇÕâ¸öÑù×ÓÔËĞĞµÄ-------");
-		//ÏÈÕÒµ½·¿µØ²ú¹«Ë¾
+		System.out.println("-------æˆ¿åœ°äº§å…¬å¸æ˜¯è¿™ä¸ªæ ·å­è¿è¡Œçš„-------");
+		//å…ˆæ‰¾åˆ°æˆ¿åœ°äº§å…¬å¸
 		HouseCorp houseCorp =new HouseCorp(house);
-		//¿´ÎÒÔõÃ´ÕõÇ®
+		//çœ‹æˆ‘æ€ä¹ˆæŒ£é’±
 		houseCorp.makeMoney();
 		System.out.println("\n");	
-		//É½Õ¯¹«Ë¾Éú²úµÄ²úÆ·ºÜ¶à£¬²»¹ıÎÒÖ»ÒªÖ¸¶¨²úÆ·¾Í³ÉÁË
-		System.out.println("-------É½Õ¯¹«Ë¾ÊÇÕâÑùÔËĞĞµÄ-------");
+		//å±±å¯¨å…¬å¸ç”Ÿäº§çš„äº§å“å¾ˆå¤šï¼Œä¸è¿‡æˆ‘åªè¦æŒ‡å®šäº§å“å°±æˆäº†
+		System.out.println("-------å±±å¯¨å…¬å¸æ˜¯è¿™æ ·è¿è¡Œçš„-------");
 		ShanZhaiCorp shanZhaiCorp = new ShanZhaiCorp(new IPod());
 		shanZhaiCorp.makeMoney();	
 	}

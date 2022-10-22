@@ -5,20 +5,20 @@ package com.company.section2;
  * I'm glad to share my knowledge with you all.
  */
 public class LetterProcessImpl implements ILetterProcess {
-	//Ğ´ĞÅ
+	//å†™ä¿¡
 	public void writeContext(String context) {
-		System.out.println("ÌîĞ´ĞÅµÄÄÚÈİ...." + context);
+		System.out.println("å¡«å†™ä¿¡çš„å†…å®¹...." + context);
 	}
-	//ÔÚĞÅ·âÉÏÌîĞ´±ØÒªµÄĞÅÏ¢
+	//åœ¨ä¿¡å°ä¸Šå¡«å†™å¿…è¦çš„ä¿¡æ¯
 	public void fillEnvelope(String address) {
-		System.out.println("ÌîĞ´ÊÕ¼şÈËµØÖ·¼°ĞÕÃû...." + address);
+		System.out.println("å¡«å†™æ”¶ä»¶äººåœ°å€åŠå§“å...." + address);
 	}
-	//°ÑĞÅ·Åµ½ĞÅ·âÖĞ£¬²¢·âºÃ
+	//æŠŠä¿¡æ”¾åˆ°ä¿¡å°ä¸­ï¼Œå¹¶å°å¥½
 	public void letterInotoEnvelope() {
-		System.out.println("°ÑĞÅ·Åµ½ĞÅ·âÖĞ....");
+		System.out.println("æŠŠä¿¡æ”¾åˆ°ä¿¡å°ä¸­....");
 	}
-	//Èûµ½ÓÊÏäÖĞ£¬ÓÊµİ
+	//å¡åˆ°é‚®ç®±ä¸­ï¼Œé‚®é€’
 	public void sendLetter() {
-		System.out.println("ÓÊµİĞÅ¼ş...");
+		System.out.println("é‚®é€’ä¿¡ä»¶...");
 	}
 }

@@ -5,17 +5,17 @@ package com.company.section2;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÃüÁîµÄ³éÏóÀà£¬ÎÒÃÇ°Ñ¿Í»§·¢³öµÄÃüÁî¶¨Òå³ÉÒ»¸öÒ»¸öµÄ¶ÔÏó
+ * å‘½ä»¤çš„æŠ½è±¡ç±»ï¼Œæˆ‘ä»¬æŠŠå®¢æˆ·å‘å‡ºçš„å‘½ä»¤å®šä¹‰æˆä¸€ä¸ªä¸€ä¸ªçš„å¯¹è±¡
  */
 public abstract class Command {
 	
-	//°ÑÈı¸ö×é¶¼¶¨ÒåºÃ£¬×ÓÀà¿ÉÒÔÖ±½ÓÊ¹ÓÃ
-	protected RequirementGroup rg = new RequirementGroup();  //ĞèÇó×é
-	protected PageGroup pg = new PageGroup();  //ÃÀ¹¤×é
-	protected CodeGroup cg = new CodeGroup();  //´úÂë×é;
+	//æŠŠä¸‰ä¸ªç»„éƒ½å®šä¹‰å¥½ï¼Œå­ç±»å¯ä»¥ç›´æ¥ä½¿ç”¨
+	protected RequirementGroup rg = new RequirementGroup();  //éœ€æ±‚ç»„
+	protected PageGroup pg = new PageGroup();  //ç¾å·¥ç»„
+	protected CodeGroup cg = new CodeGroup();  //ä»£ç ç»„;
 	
 
-	//Ö»ÒªÒ»¸ö·½·¨£¬ÄãÒªÎÒ×öÊ²Ã´ÊÂÇé
+	//åªè¦ä¸€ä¸ªæ–¹æ³•ï¼Œä½ è¦æˆ‘åšä»€ä¹ˆäº‹æƒ…
 	public abstract void execute();
 	
 

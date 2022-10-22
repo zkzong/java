@@ -3,33 +3,33 @@ package com.company.section2;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ĞèÇó×éµÄÖ°ÔğÊÇºÍ¼×·½Ì¸¶¨ĞèÇó£¬Õâ¸ö×éµÄÈËÓ¦¸Ã¶¼ÊÇÒµÎñÁìÓò×¨¼Ò
+ * éœ€æ±‚ç»„çš„èŒè´£æ˜¯å’Œç”²æ–¹è°ˆå®šéœ€æ±‚ï¼Œè¿™ä¸ªç»„çš„äººåº”è¯¥éƒ½æ˜¯ä¸šåŠ¡é¢†åŸŸä¸“å®¶
  */
 public class RequirementGroup extends Group {
 	
-	//¿Í»§ÒªÇóĞèÇó×é¹ıÈ¥ºÍËûÃÇÌ¸
+	//å®¢æˆ·è¦æ±‚éœ€æ±‚ç»„è¿‡å»å’Œä»–ä»¬è°ˆ
 	public void find() {
-		System.out.println("ÕÒµ½ĞèÇó×é...");
+		System.out.println("æ‰¾åˆ°éœ€æ±‚ç»„...");
 	}
 
-	//¿Í»§ÒªÇóÔö¼ÓÒ»ÏîĞèÇó
+	//å®¢æˆ·è¦æ±‚å¢åŠ ä¸€é¡¹éœ€æ±‚
 	public void add() {
-		System.out.println("¿Í»§ÒªÇóÔö¼ÓÒ»ÏîĞèÇó...");
+		System.out.println("å®¢æˆ·è¦æ±‚å¢åŠ ä¸€é¡¹éœ€æ±‚...");
 	}
 
-	//¿Í»§ÒªÇóĞŞ¸ÄÒ»ÏîĞèÇó
+	//å®¢æˆ·è¦æ±‚ä¿®æ”¹ä¸€é¡¹éœ€æ±‚
 	public void change() {
-		System.out.println("¿Í»§ÒªÇóĞŞ¸ÄÒ»ÏîĞèÇó...");
+		System.out.println("å®¢æˆ·è¦æ±‚ä¿®æ”¹ä¸€é¡¹éœ€æ±‚...");
 	}
 
-	//¿Í»§ÒªÇóÉ¾³ıÒ»ÏîĞèÇó
+	//å®¢æˆ·è¦æ±‚åˆ é™¤ä¸€é¡¹éœ€æ±‚
 	public void delete() {
-		System.out.println("¿Í»§ÒªÇóÉ¾³ıÒ»ÏîĞèÇó...");
+		System.out.println("å®¢æˆ·è¦æ±‚åˆ é™¤ä¸€é¡¹éœ€æ±‚...");
 	}
 
-	//¿Í»§ÒªÇó³ö±ä¸ü¼Æ»®
+	//å®¢æˆ·è¦æ±‚å‡ºå˜æ›´è®¡åˆ’
 	public void plan() {
-		System.out.println("¿Í»§ÒªÇóĞèÇó±ä¸ü¼Æ»®...");
+		System.out.println("å®¢æˆ·è¦æ±‚éœ€æ±‚å˜æ›´è®¡åˆ’...");
 	}
 
 }

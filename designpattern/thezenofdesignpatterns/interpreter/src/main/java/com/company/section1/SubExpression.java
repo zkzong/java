@@ -5,7 +5,7 @@ import java.util.HashMap;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¼õ·¨±í´ïÊ½½âÎö
+ * å‡æ³•è¡¨è¾¾å¼è§£æ
  */
 public class SubExpression extends SymbolExpression {
 
@@ -13,7 +13,7 @@ public class SubExpression extends SymbolExpression {
 		super(_left,_right);
 	}
 
-	//½âÎö¾ÍÊÇ¼õ·¨ÔËËã
+	//è§£æå°±æ˜¯å‡æ³•è¿ç®—
 	public int interpreter(HashMap<String, Integer> var) {
 		return super.left.interpreter(var) - super.right.interpreter(var);
 	}

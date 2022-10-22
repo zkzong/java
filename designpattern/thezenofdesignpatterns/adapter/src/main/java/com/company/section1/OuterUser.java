@@ -6,43 +6,43 @@ import java.util.Map;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÍâÏµÍ³µÄÓÃ»§ĞÅÏ¢µÄÊµÏÖÀà
+ * å¤–ç³»ç»Ÿçš„ç”¨æˆ·ä¿¡æ¯çš„å®ç°ç±»
  */
 @SuppressWarnings("all")
 public class OuterUser implements IOuterUser {
 
 	/* 
-	 * ÓÃ»§µÄ»ù±¾ĞÅÏ¢
+	 * ç”¨æˆ·çš„åŸºæœ¬ä¿¡æ¯
 	 */
 	public Map getUserBaseInfo() {
 		HashMap baseInfoMap = new HashMap();
 		
-		baseInfoMap.put("userName", "Õâ¸öÔ±¹¤½Ğ»ìÊÀÄ§Íõ....");
-		baseInfoMap.put("mobileNumber", "Õâ¸öÔ±¹¤µç»°ÊÇ....");
+		baseInfoMap.put("userName", "è¿™ä¸ªå‘˜å·¥å«æ··ä¸–é­”ç‹....");
+		baseInfoMap.put("mobileNumber", "è¿™ä¸ªå‘˜å·¥ç”µè¯æ˜¯....");
 		
 		return baseInfoMap;
 	}
 
 	/* 
-	 * Ô±¹¤µÄ¼ÒÍ¥ĞÅÏ¢
+	 * å‘˜å·¥çš„å®¶åº­ä¿¡æ¯
 	 */
 	public Map getUserHomeInfo() {
 		HashMap homeInfo = new HashMap();
 		
-		homeInfo.put("homeTelNumbner", "Ô±¹¤µÄ¼ÒÍ¥µç»°ÊÇ....");
-		homeInfo.put("homeAddress", "Ô±¹¤µÄ¼ÒÍ¥µØÖ·ÊÇ....");
+		homeInfo.put("homeTelNumbner", "å‘˜å·¥çš„å®¶åº­ç”µè¯æ˜¯....");
+		homeInfo.put("homeAddress", "å‘˜å·¥çš„å®¶åº­åœ°å€æ˜¯....");
 		
 		return homeInfo;
 	}
 
 	/* 
-	 * Ô±¹¤µÄ¹¤×÷ĞÅÏ¢£¬±ÈÈçÖ°Î»ÁËµÈ
+	 * å‘˜å·¥çš„å·¥ä½œä¿¡æ¯ï¼Œæ¯”å¦‚èŒä½äº†ç­‰
 	 */
 	public Map getUserOfficeInfo() {
 		HashMap officeInfo = new HashMap();
 		
-		officeInfo.put("jobPosition","Õâ¸öÈËµÄÖ°Î»ÊÇBOSS...");
-		officeInfo.put("officeTelNumber", "Ô±¹¤µÄ°ì¹«µç»°ÊÇ....");
+		officeInfo.put("jobPosition","è¿™ä¸ªäººçš„èŒä½æ˜¯BOSS...");
+		officeInfo.put("officeTelNumber", "å‘˜å·¥çš„åŠå…¬ç”µè¯æ˜¯....");
 		
 		return officeInfo;
 	}

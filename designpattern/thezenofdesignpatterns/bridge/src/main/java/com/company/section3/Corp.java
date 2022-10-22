@@ -5,17 +5,17 @@ package com.company.section3;
  * I'm glad to share my knowledge with you all.
  */
 public abstract class Corp {
-	//¶¨ÒåÒ»¸ö²úÆ·¶ÔÏó£¬³éÏóµÄÁË£¬²»ÖªµÀ¾ßÌåÊÇÊ²Ã´²úÆ·
+	//å®šä¹‰ä¸€ä¸ªäº§å“å¯¹è±¡ï¼ŒæŠ½è±¡çš„äº†ï¼Œä¸çŸ¥é“å…·ä½“æ˜¯ä»€ä¹ˆäº§å“
 	private Product product;
-	//¹¹Ôìº¯Êı£¬ÓÉ×ÓÀà¶¨Òå´«µİ¾ßÌåµÄ²úÆ·½øÀ´
+	//æ„é€ å‡½æ•°ï¼Œç”±å­ç±»å®šä¹‰ä¼ é€’å…·ä½“çš„äº§å“è¿›æ¥
 	public Corp(Product product){
 		this.product = product;
 	}
-	//¹«Ë¾ÊÇ¸ÉÊ²Ã´µÄ£¿×¬Ç®µÄÑ½£¬²»×¬Ç®Éµ×Ó²Å¸É
+	//å…¬å¸æ˜¯å¹²ä»€ä¹ˆçš„ï¼Ÿèµšé’±çš„å‘€ï¼Œä¸èµšé’±å‚»å­æ‰å¹²
 	public void makeMoney(){	
-		//Ã¿¸ö¹«Ë¾¶¼ÊÇÒ»Ñù£¬ÏÈÉú²ú
+		//æ¯ä¸ªå…¬å¸éƒ½æ˜¯ä¸€æ ·ï¼Œå…ˆç”Ÿäº§
 		this.product.beProducted();
-		//È»ºóÏúÊÛ
+		//ç„¶åé”€å”®
 		this.product.beSelled();
 	}
 }

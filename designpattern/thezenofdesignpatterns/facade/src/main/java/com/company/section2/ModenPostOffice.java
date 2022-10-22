@@ -10,19 +10,19 @@ import com.company.section1.LetterProcessImpl;
 public class ModenPostOffice {
 	private ILetterProcess letterProcess = new LetterProcessImpl();
 	
-	//Ğ´ĞÅ£¬·â×°£¬Í¶µİ£¬Ò»Ìå»¯ÁË
+	//å†™ä¿¡ï¼Œå°è£…ï¼ŒæŠ•é€’ï¼Œä¸€ä½“åŒ–äº†
 	public void sendLetter(String context,String address){
 		
-		//°ïÄãĞ´ĞÅ
+		//å¸®ä½ å†™ä¿¡
 		letterProcess.writeContext(context);
 		
-		//Ğ´ºÃĞÅ·â
+		//å†™å¥½ä¿¡å°
 		letterProcess.fillEnvelope(address);
 		
-		//°ÑĞÅ·Åµ½ĞÅ·âÖĞ
+		//æŠŠä¿¡æ”¾åˆ°ä¿¡å°ä¸­
 		letterProcess.letterInotoEnvelope();
 			
-		//ÓÊµİĞÅ¼ş
+		//é‚®é€’ä¿¡ä»¶
 		letterProcess.sendLetter();
 		
 	}

@@ -6,12 +6,12 @@ package com.company.section4;
  */
 public class Invoker {
 	private Command command;
-	//受气包，接受命令
+	//鍙楁皵鍖咃紝鎺ュ彈鍛戒护
 	public void setCommand(Command _command){
 		this.command = _command;
 	}
 	
-	//执行命令
+	//鎵ц鍛戒护
 	public void action(){
 		this.command.execute();
 	}

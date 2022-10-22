@@ -6,19 +6,19 @@ package com.company.section2;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ´ó³¼ÃÇ±¯²ÒÁË£¬Ò»¸ö»ÊµÛ¶¼ËÅºò²»¹ıÀ´ÁË£¬ÏÖÔÚ»¹À´ÁËÁ½¸ö¸ö»ÊµÛ
- * TND£¬²»¹ÜÁË£¬ÕÒµ½¸ö»ÊµÛ£¬¿ÄÍ·£¬Çë°´¾Í³ÉÁË£¡
+ * å¤§è‡£ä»¬æ‚²æƒ¨äº†ï¼Œä¸€ä¸ªçš‡å¸éƒ½ä¼ºå€™ä¸è¿‡æ¥äº†ï¼Œç°åœ¨è¿˜æ¥äº†ä¸¤ä¸ªä¸ªçš‡å¸
+ * TNDï¼Œä¸ç®¡äº†ï¼Œæ‰¾åˆ°ä¸ªçš‡å¸ï¼Œç£•å¤´ï¼Œè¯·æŒ‰å°±æˆäº†ï¼
  */
 @SuppressWarnings("all")
 public class Minister {
 
 	public static void main(String[] args) {
-		//¶¨Òå5¸ö´ó³¼
+		//å®šä¹‰5ä¸ªå¤§è‡£
 		int ministerNum =5; 
 		
 		for(int i=0;i<ministerNum;i++){
 			Emperor emperor = Emperor.getInstance();
-			System.out.print("µÚ"+(i+1)+"¸ö´ó³¼²Î°İµÄÊÇ£º");
+			System.out.print("ç¬¬"+(i+1)+"ä¸ªå¤§è‡£å‚æ‹œçš„æ˜¯ï¼š");
 			emperor.say();
 		}		
 	}

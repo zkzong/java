@@ -6,18 +6,18 @@ package com.company.section4;
  */
 public class Commoner extends EventCustomer {
 	
-	//¶¨ÒåÆ½ÃñÄÜ¹»´¦ÀíÊÂ¼şµÄ¼¶±ğ
+	//å®šä¹‰å¹³æ°‘èƒ½å¤Ÿå¤„ç†äº‹ä»¶çš„çº§åˆ«
 	public Commoner() {
 		super(EventCustomType.NEW);
 	}
 
 	@Override
 	public void exec(ProductEvent event) {
-		//ÊÂ¼şµÄÔ´Í·
+		//äº‹ä»¶çš„æºå¤´
 		Product p = event.getSource();
-		//ÊÂ¼şÀàĞÍ
+		//äº‹ä»¶ç±»å‹
 		ProductEventType type = event.getEventType();
-		System.out.println("Æ½Ãñ´¦ÀíÊÂ¼ş:"+p.getName() +"µ®Éú¼Ç,ÊÂ¼şÀàĞÍ="+type);
+		System.out.println("å¹³æ°‘å¤„ç†äº‹ä»¶:"+p.getName() +"è¯ç”Ÿè®°,äº‹ä»¶ç±»å‹="+type);
 	}
 
 }

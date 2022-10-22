@@ -10,13 +10,13 @@ import java.util.Map;
 public class OuterUserOfficeInfo implements IOuterUserOfficeInfo {
 
 	/* 
-	 * 员工的工作信息，比如职位了等
+	 * 鍛樺伐鐨勫伐浣滀俊鎭紝姣斿鑱屼綅浜嗙瓑
 	 */
 	public Map getUserOfficeInfo() {
 		HashMap officeInfo = new HashMap();
 		
-		officeInfo.put("jobPosition","这个人的职位是BOSS...");
-		officeInfo.put("officeTelNumber", "员工的办公电话是....");
+		officeInfo.put("jobPosition","杩欎釜浜虹殑鑱屼綅鏄疊OSS...");
+		officeInfo.put("officeTelNumber", "鍛樺伐鐨勫姙鍏數璇濇槸....");
 		
 		return officeInfo;
 	}

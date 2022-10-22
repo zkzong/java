@@ -6,21 +6,21 @@ package com.company.section1;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÖĞ¹úµÄÀúÊ·ÉÏÒ»°ã¶¼ÊÇÒ»¸ö³¯´úÒ»¸ö»ÊµÛ£¬ÓĞÁ½¸ö»ÊµÛµÄ»°£¬±ØÈ»ÒªPK³öÒ»¸ö»ÊµÛ³öÀ´
+ * ä¸­å›½çš„å†å²ä¸Šä¸€èˆ¬éƒ½æ˜¯ä¸€ä¸ªæœä»£ä¸€ä¸ªçš‡å¸ï¼Œæœ‰ä¸¤ä¸ªçš‡å¸çš„è¯ï¼Œå¿…ç„¶è¦PKå‡ºä¸€ä¸ªçš‡å¸å‡ºæ¥
  */
 public class Emperor {
-	private static final Emperor emperor =new Emperor();  //³õÊ¼»¯Ò»¸ö»ÊµÛ
+	private static final Emperor emperor =new Emperor();  //åˆå§‹åŒ–ä¸€ä¸ªçš‡å¸
 	
 	private Emperor(){
-		//ÊÀË×ºÍµÀµÂÔ¼ÊøÄã£¬Ä¿µÄ¾ÍÊÇ²»Ï£Íû²úÉúµÚ¶ş¸ö»ÊµÛ
+		//ä¸–ä¿—å’Œé“å¾·çº¦æŸä½ ï¼Œç›®çš„å°±æ˜¯ä¸å¸Œæœ›äº§ç”Ÿç¬¬äºŒä¸ªçš‡å¸
 	}
 	
 	public static Emperor getInstance(){
 		return emperor;
 	}
 	
-	//»ÊµÛ·¢»°ÁË
+	//çš‡å¸å‘è¯äº†
 	public static void say(){
-		System.out.println("ÎÒ¾ÍÊÇ»ÊµÛÄ³Ä³Ä³....");		
+		System.out.println("æˆ‘å°±æ˜¯çš‡å¸æŸæŸæŸ....");		
 	}
 }

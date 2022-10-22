@@ -3,43 +3,43 @@ package com.company.section2;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¹Å´úÅ®ĞÔµÄ×Ü³Æ
+ * å¤ä»£å¥³æ€§çš„æ€»ç§°
  */
 public class Women implements IWomen{
 	/*
-	 * Í¨¹ıÒ»¸öintÀàĞÍµÄ²ÎÊıÀ´ÃèÊö¸¾Å®µÄ¸öÈË×´¿ö
-	 * 1---Î´³ö¼Ş
-	 * 2---³ö¼Ş
-	 * 3---·òËÀ
+	 * é€šè¿‡ä¸€ä¸ªintç±»å‹çš„å‚æ•°æ¥æè¿°å¦‡å¥³çš„ä¸ªäººçŠ¶å†µ
+	 * 1---æœªå‡ºå«
+	 * 2---å‡ºå«
+	 * 3---å¤«æ­»
 	 */
 	private int type=0;  
 	
-	//¸¾Å®µÄÇëÊ¾
+	//å¦‡å¥³çš„è¯·ç¤º
 	private String request = "";
 	
-	//¹¹Ôìº¯Êı´«µİ¹ıÀ´ÇëÇó
+	//æ„é€ å‡½æ•°ä¼ é€’è¿‡æ¥è¯·æ±‚
 	public Women(int _type,String _request){
 		this.type = _type;
 		
-		//ÎªÁËÏÔÊ¾ºÃ¿´µã£¬ÎÒÔÚÕâÀï×öÁËµã´¦Àí
+		//ä¸ºäº†æ˜¾ç¤ºå¥½çœ‹ç‚¹ï¼Œæˆ‘åœ¨è¿™é‡Œåšäº†ç‚¹å¤„ç†
 		switch(this.type){
 		case 1:
-				this.request = "Å®¶ùµÄÇëÇóÊÇ£º" + _request;
+				this.request = "å¥³å„¿çš„è¯·æ±‚æ˜¯ï¼š" + _request;
 				break;
 		case 2:
-				this.request = "ÆŞ×ÓµÄÇëÇóÊÇ£º" + _request;
+				this.request = "å¦»å­çš„è¯·æ±‚æ˜¯ï¼š" + _request;
 				break;
 		case 3:
-				this.request = "Ä¸Ç×µÄÇëÇóÊÇ£º" + _request;
+				this.request = "æ¯äº²çš„è¯·æ±‚æ˜¯ï¼š" + _request;
 		}
 	}
 	
-	//»ñµÃ×Ô¼ºµÄ×´¿ö
+	//è·å¾—è‡ªå·±çš„çŠ¶å†µ
 	public int getType(){
 		return this.type;
 	}
 	
-	//»ñµÃ¸¾Å®µÄÇëÇó
+	//è·å¾—å¦‡å¥³çš„è¯·æ±‚
 	public String getRequest(){
 		return this.request;
 	}

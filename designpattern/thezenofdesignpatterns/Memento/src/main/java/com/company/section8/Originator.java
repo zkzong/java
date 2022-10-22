@@ -6,7 +6,7 @@ package com.company.section8;
  */
 public class Originator {
 	
-	//ÄÚ²¿×´Ì¬
+	//å†…éƒ¨çŠ¶æ€
 	private String state = "";
 	
 	public String getState() {
@@ -17,12 +17,12 @@ public class Originator {
 		this.state = state;
 	}
 
-	//´´½¨Ò»¸ö±¸ÍüÂ¼
+	//åˆ›å»ºä¸€ä¸ªå¤‡å¿˜å½•
 	public Memento createMemento(){
 		return new Memento(this.state);
 	}
 	
-	//»Ö¸´Ò»¸ö±¸ÍüÂ¼
+	//æ¢å¤ä¸€ä¸ªå¤‡å¿˜å½•
 	public void restoreMemento(Memento _memento){
 		this.setState(_memento.getState());
 	}

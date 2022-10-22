@@ -13,9 +13,9 @@ public class MultiThread extends Thread {
 	
 	public void run(){
 		if(!signInfo.getId().equals(signInfo.getLocation())){
-			System.out.println("±àºÅ£º"+signInfo.getId());
-			System.out.println("¿¼ÊÔµØÖ·£º"+signInfo.getLocation());
-			System.out.println("Ïß³Ì²»°²È«ÁË£¡");
+			System.out.println("ç¼–å·ï¼š"+signInfo.getId());
+			System.out.println("è€ƒè¯•åœ°å€ï¼š"+signInfo.getLocation());
+			System.out.println("çº¿ç¨‹ä¸å®‰å…¨äº†ï¼");
 		}
 		
 	}

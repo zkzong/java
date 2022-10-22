@@ -5,22 +5,22 @@ import java.util.ArrayList;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÕâÀïÊÇÅ£²æ¹«Ë¾µÄÌìÏÂ£¬ËûÒªÉ¶ÎÒÃÇ¸øÉ¶
+ * è¿™é‡Œæ˜¯ç‰›å‰å…¬å¸çš„å¤©ä¸‹ï¼Œä»–è¦å•¥æˆ‘ä»¬ç»™å•¥
  */
 public class Client {
 
 	public static void main(String[] args) {
 		/*
-		 * ¿Í»§¸æËßÅ£²æ¹«Ë¾£¬ÎÒÒªÕâÑùÒ»¸öÄ£ĞÍ£¬È»ºóÅ£²æ¹«Ë¾¾Í¸æËßÎÒÀÏ´ó
-		 * ËµÒªÕâÑùÒ»¸öÄ£ĞÍ£¬ÕâÑùÒ»¸öË³Ğò£¬È»ºóÎÒ¾ÍÀ´ÖÆÔì
+		 * å®¢æˆ·å‘Šè¯‰ç‰›å‰å…¬å¸ï¼Œæˆ‘è¦è¿™æ ·ä¸€ä¸ªæ¨¡å‹ï¼Œç„¶åç‰›å‰å…¬å¸å°±å‘Šè¯‰æˆ‘è€å¤§
+		 * è¯´è¦è¿™æ ·ä¸€ä¸ªæ¨¡å‹ï¼Œè¿™æ ·ä¸€ä¸ªé¡ºåºï¼Œç„¶åæˆ‘å°±æ¥åˆ¶é€ 
 		 */
 		BenzModel benz = new BenzModel();
-		//´æ·ÅrunµÄË³Ğò
+		//å­˜æ”¾runçš„é¡ºåº
 		ArrayList<String> sequence  = new ArrayList<String>();  		
-		sequence.add("engine boom");  //¿Í»§ÒªÇó£¬runµÄÊ±ºòÊ±ºòÏÈ·¢¶¯ÒıÇæ
-		sequence.add("start");  //Æô¶¯ÆğÀ´
-		sequence.add("stop");  //¿ªÁËÒ»¶Î¾ÍÍ£ÏÂÀ´		
-		//ÎÒÃÇ°ÑÕâ¸öË³Ğò¸³Óè±¼³Û³µ
+		sequence.add("engine boom");  //å®¢æˆ·è¦æ±‚ï¼Œrunçš„æ—¶å€™æ—¶å€™å…ˆå‘åŠ¨å¼•æ“
+		sequence.add("start");  //å¯åŠ¨èµ·æ¥
+		sequence.add("stop");  //å¼€äº†ä¸€æ®µå°±åœä¸‹æ¥		
+		//æˆ‘ä»¬æŠŠè¿™ä¸ªé¡ºåºèµ‹äºˆå¥”é©°è½¦
 		benz.setSequence(sequence);
 		benz.run();		
 	}

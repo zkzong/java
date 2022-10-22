@@ -7,35 +7,35 @@ import java.util.Observable;
  * I'm glad to share my knowledge with you all.
  */
 public class ProductEvent extends Observable{
-	//ÊÂ¼şÆğÔ´
+	//äº‹ä»¶èµ·æº
 	private Product source;
-	//ÊÂ¼şµÄÀàĞÍ
+	//äº‹ä»¶çš„ç±»å‹
 	private ProductEventType type;
 		
-	//´«ÈëÊÂ¼şµÄÔ´Í·,Ä¬ÈÏÎªĞÂ½¨ÀàĞÍ
+	//ä¼ å…¥äº‹ä»¶çš„æºå¤´,é»˜è®¤ä¸ºæ–°å»ºç±»å‹
 	public ProductEvent(Product p) {
 		this(p,ProductEventType.NEW_PRODUCT);
 	}
 	
-	//ÊÂ¼şÔ´Í·ÒÔ¼°ÊÂ¼şÀàĞÍ
+	//äº‹ä»¶æºå¤´ä»¥åŠäº‹ä»¶ç±»å‹
 	public ProductEvent(Product p,ProductEventType _type){	
 		this.source = p;
 		this.type = _type;
-		//ÊÂ¼ş´¥·¢
+		//äº‹ä»¶è§¦å‘
 		notifyEventDispatch();
 	}
 	
-	//»ñµÃÊÂ¼şµÄÊ¼×÷Ù¸Õß
+	//è·å¾—äº‹ä»¶çš„å§‹ä½œä¿‘è€…
 	public Product getSource(){
 		return source;
 	}
 	
-	//»ñµÃÊÂ¼şµÄÀàĞÍ
+	//è·å¾—äº‹ä»¶çš„ç±»å‹
 	public ProductEventType getEventType(){
 		return this.type;
 	}
 	
-	//Í¨ÖªÊÂ¼ş´¦ÀíÖĞĞÄ
+	//é€šçŸ¥äº‹ä»¶å¤„ç†ä¸­å¿ƒ
 	private void notifyEventDispatch(){
 		super.addObserver(EventDispatch.getEventDispathc());
 		super.setChanged();

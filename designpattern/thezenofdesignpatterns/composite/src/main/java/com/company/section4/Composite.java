@@ -7,20 +7,20 @@ import java.util.ArrayList;
  * I'm glad to share my knowledge with you all.
  */
 public class Composite extends Component {
-	//¹¹¼þÈÝÆ÷
+	//æž„ä»¶å®¹å™¨
 	private ArrayList<Component> componentArrayList = new ArrayList<Component>();
 	
-	//Ôö¼ÓÒ»¸öÒ¶×Ó¹¹¼þ»òÊ÷Ö¦¹¹¼þ
+	//å¢žåŠ ä¸€ä¸ªå¶å­æž„ä»¶æˆ–æ ‘æžæž„ä»¶
 	public void add(Component component){
 		this.componentArrayList.add(component);
 	}
 	
-	//É¾³ýÒ»¸öÒ¶×Ó¹¹¼þ»òÊ÷Ö¦¹¹¼þ
+	//åˆ é™¤ä¸€ä¸ªå¶å­æž„ä»¶æˆ–æ ‘æžæž„ä»¶
 	public void remove(Component component){
 		this.componentArrayList.remove(component);
 	}
 	
-	//»ñµÃ·ÖÖ§ÏÂµÄËùÓÐÒ¶×Ó¹¹¼þºÍÊ÷Ö¦¹¹¼þ
+	//èŽ·å¾—åˆ†æ”¯ä¸‹çš„æ‰€æœ‰å¶å­æž„ä»¶å’Œæ ‘æžæž„ä»¶
 	public ArrayList<Component> getChildren(){
 		return this.componentArrayList;
 	}
