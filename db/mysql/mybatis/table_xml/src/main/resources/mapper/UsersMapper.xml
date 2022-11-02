@@ -3,12 +3,12 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="mapper.mybatis.sb.org.example.UsersMapper">
-    <select id="getAllUsers" resultType="domain.mybatis.sb.org.example.Users">
+<mapper namespace="org.example.sb.mybatis.mapper.UsersMapper">
+    <select id="getAllUsers" resultType="org.example.sb.mybatis.domain.Users">
         select id, user_name userName, age from t_users
     </select>
 
-    <select id="findByUserName" resultType="domain.mybatis.sb.org.example.Users">
+    <select id="findByUserName" resultType="org.example.sb.mybatis.domain.Users">
         select id, user_name userName, age from t_users where user_name = #{name}
     </select>
 
@@ -23,29 +23,29 @@
         </foreach>
     </insert>
 
-    <insert id="insertAndGetId" parameterType="domain.mybatis.sb.org.example.Users" useGeneratedKeys="true" keyProperty="id">
+    <insert id="insertAndGetId" parameterType="org.example.sb.mybatis.domain.Users" useGeneratedKeys="true" keyProperty="id">
         <!--<selectKey resultType="java.lang.Long" keyProperty="id" order="AFTER">-->
         <!--    SELECT LAST_INSERT_ID()-->
         <!--</selectKey>-->
         insert into t_users(user_name, age) values(#{userName}, #{age})
     </insert>
 
-    <select id="findByIndex" resultType="domain.mybatis.sb.org.example.Users">
+    <select id="findByIndex" resultType="org.example.sb.mybatis.domain.Users">
         select id, user_name userName, age from t_users
         where user_name = #{arg0} and age = #{arg1}
     </select>
 
-    <select id="findByMap" resultType="domain.mybatis.sb.org.example.Users">
+    <select id="findByMap" resultType="org.example.sb.mybatis.domain.Users">
         select id, user_name userName, age from t_users
         where user_name = #{userName} and age = #{age}
     </select>
 
-    <select id="findByParam" resultType="domain.mybatis.sb.org.example.Users">
+    <select id="findByParam" resultType="org.example.sb.mybatis.domain.Users">
         select id, user_name userName, age from t_users
         where user_name = #{userName} and age = #{age}
     </select>
 
-    <select id="namein" resultType="domain.mybatis.sb.org.example.Users">
+    <select id="namein" resultType="org.example.sb.mybatis.domain.Users">
         select id, user_name userName, age from t_users
         <where>
             <if test="names != null and names.size > 0">

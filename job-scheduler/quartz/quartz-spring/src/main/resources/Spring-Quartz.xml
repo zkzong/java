@@ -7,7 +7,7 @@
 
     <!-- Spring Quartz -->
     <!--<bean name="runMeJob" class="org.springframework.scheduling.quartz.JobDetailBean">-->
-        <!--<property name="jobClass" value="common.org.example.RunMeJob" />-->
+        <!--<property name="jobClass" value="org.example.common.RunMeJob" />-->
         <!--<property name="jobDataAsMap">-->
             <!--<map>-->
                 <!--<entry key="runMeTask" value-ref="runMeTask"></entry>-->

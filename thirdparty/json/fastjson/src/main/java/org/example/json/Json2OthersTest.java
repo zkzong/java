@@ -5,8 +5,11 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.Data;
+import lombok.ToString;
 import org.junit.Test;
 
+import java.math.BigDecimal;
 import java.util.*;
 
 /**
@@ -174,4 +177,39 @@ public class Json2OthersTest {
         System.out.println(r);
 
     }
+
+
+    @Test
+    public void aa() {
+        Resp<A> resp = new Resp<>();
+        resp.setCode("0000");
+        resp.setMsg("S");
+        A a = new A();
+        a.setBalance(new BigDecimal("1111"));
+        resp.setData(a);
+
+
+        Resp r = resp;
+
+
+        Map<String, Object> map = (Map<String, Object>) r.getData();
+        Object balance = map.get("balance");
+        System.out.println(balance);
+
+        //System.out.println(JSON.toJSONString(resp));
+        //
+        //String s = JSON.toJSONString(resp.getData());
+        //JSONObject jsonObject = JSONObject.parseObject(s);
+        //BigDecimal balance = jsonObject.getBigDecimal("balance");
+        //System.out.println(balance);
+
+
+    }
+
+    @Data
+    @ToString
+    class A {
+        private BigDecimal balance;
+    }
+
 }

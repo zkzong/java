@@ -14,3 +14,4 @@ feign:
 logging:
   level:
     root: debug
+

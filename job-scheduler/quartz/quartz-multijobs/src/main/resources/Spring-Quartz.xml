@@ -3,9 +3,9 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<!--    <bean id="jobA" class="spring.quartz.org.example.JobA"/>-->
-<!--    <bean id="jobB" class="spring.quartz.org.example.JobB"/>-->
-<!--    <bean id="jobC" class="spring.quartz.org.example.JobC"/>-->
+<!--    <bean id="jobA" class="org.example.quartz.spring.JobA"/>-->
+<!--    <bean id="jobB" class="org.example.quartz.spring.JobB"/>-->
+<!--    <bean id="jobC" class="org.example.quartz.spring.JobC"/>-->
 
     <!-- Quartz Job -->
     <bean name="JobA" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
