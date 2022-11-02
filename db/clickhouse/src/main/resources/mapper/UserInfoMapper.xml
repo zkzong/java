@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.example.clickhouse.mapper.UserInfoMapper">
+
+    <!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="org.example.clickhouse.pojo.UserInfo" id="UserInfoMap">
+        <result property="id" jdbcType="INTEGER" column="id"/>
+        <result property="userName" jdbcType="VARCHAR" column="user_name"/>
+        <result property="passWord" jdbcType="VARCHAR" column="pass_word"/>
+        <result property="phone" jdbcType="VARCHAR" column="phone"/>
+        <result property="email" jdbcType="VARCHAR" column="email"/>
+        <result property="createDay" jdbcType="VARCHAR" column="create_day"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,user_name,pass_word,phone,email,create_day
+    </sql>
+
+    <insert id="saveData" useGeneratedKeys="false" parameterType="org.example.clickhouse.pojo.UserInfo">
+        INSERT INTO cs_user_info
+            (id, user_name, pass_word, phone, email)
+        VALUES (#{id,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}, #{passWord,jdbcType=VARCHAR},
+                #{phone,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR})
+    </insert>
+
+    <select id="selectById" parameterType="java.lang.Integer" resultMap="UserInfoMap">
+        select
+        <include refid="Base_Column_List"/>
+        from cs_user_info
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+
+    <select id="selectList" resultMap="UserInfoMap">
+        select
+        <include refid="Base_Column_List"/>
+        from cs_user_info
+    </select>
+</mapper>
