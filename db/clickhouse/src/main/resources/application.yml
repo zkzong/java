@@ -6,7 +6,7 @@ spring:
       validation-query: select 1
     click:
       driverClassName: ru.yandex.clickhouse.ClickHouseDriver
-      url: jdbc:clickhouse://127.0.0.1:8123/user
+      url: jdbc:clickhouse://127.0.0.1:8123/default
       username:
       password:
       initialSize: 10
