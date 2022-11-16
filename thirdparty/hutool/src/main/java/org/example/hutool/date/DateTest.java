@@ -55,4 +55,16 @@ public class DateTest {
         System.out.println("月初：" + begin);
     }
 
+    /**
+     * DateUtil.parse
+     */
+    @Test
+    public void parse() {
+        String dateStr = "2017-03-01";
+        Date date1 = DateUtil.parse(dateStr);
+        System.out.println(date1);
+        Date date2 = DateUtil.parse(dateStr, "yyyy-MM-dd");
+        System.out.println(date2);
+    }
+
 }
