@@ -3,9 +3,12 @@ package org.example.apollo.controller;
 import com.ctrip.framework.apollo.Config;
 import com.ctrip.framework.apollo.ConfigService;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.Date;
 
 /**
  * @Author: Zong
@@ -14,8 +17,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ApolloController {
 
-    @Value("${config.info}")
+    @Value("${config.info:1}")
     private String configInfo;
+
+    @Value("${member.level.startDate:2022-12-01}")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date memberLevelStartDate;
+    @Value("${member.level.endDate:2023-02-01}")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date memberLevelEndDate;
 
     @RequestMapping("/getConfigInfo")
     public String getConfigInfo() {
