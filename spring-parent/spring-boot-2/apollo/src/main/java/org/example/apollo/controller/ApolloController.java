@@ -20,12 +20,12 @@ public class ApolloController {
     @Value("${config.info:1}")
     private String configInfo;
 
-    @Value("${member.level.startDate:2022-12-01}")
+    @Value("${config.startDate:2022-12-01}")
     @DateTimeFormat(pattern = "yyyy-MM-dd")
-    private Date memberLevelStartDate;
-    @Value("${member.level.endDate:2023-02-01}")
+    private Date configStartDate;
+    @Value("${config.endDate:2023-02-01}")
     @DateTimeFormat(pattern = "yyyy-MM-dd")
-    private Date memberLevelEndDate;
+    private Date configEndDate;
 
     @RequestMapping("/getConfigInfo")
     public String getConfigInfo() {
@@ -48,5 +48,11 @@ public class ApolloController {
         Config privateConfig = ConfigService.getConfig("ns-private");
         String bbb = privateConfig.getProperty("bbb", "");
         System.out.println(bbb);
+    }
+
+    @GetMapping("/date")
+    public void date() {
+        System.out.println(configStartDate);
+        System.out.println(configEndDate);
     }
 }

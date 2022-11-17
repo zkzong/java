@@ -22,7 +22,6 @@
         <module>runner</module>
         <module>upload</module>
         <module>transactional</module>
-        <module>apollo</module>
         <module>apollo-jasypt</module>
         <module>shutdown-sb</module>
         <module>aop-sb</module>

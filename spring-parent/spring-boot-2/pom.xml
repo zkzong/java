@@ -23,6 +23,7 @@
         <module>listener-sb2</module>
         <module>log-aspect</module>
         <module>api</module>
+        <module>apollo</module>
     </modules>
     <packaging>pom</packaging>
 
