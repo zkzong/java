@@ -17,6 +17,7 @@
 
     <modules>
         <module>thezenofdesignpatterns</module>
+        <module>headfirstdesignpatterns</module>
     </modules>
 
     <dependencies>
