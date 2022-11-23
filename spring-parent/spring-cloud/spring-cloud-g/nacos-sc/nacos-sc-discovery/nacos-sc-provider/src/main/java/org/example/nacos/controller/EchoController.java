@@ -3,8 +3,6 @@ package org.example.nacos.controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 @RestController
 public class EchoController {
 
-    @RequestMapping(value = "/http/get/{string}", method = RequestMethod.GET)
+    @GetMapping(value = "/http/get/{string}")
     public String get(@PathVariable String string) throws InterruptedException {
         TimeUnit.SECONDS.sleep(2);
         return "Hello Nacos Discovery " + string;

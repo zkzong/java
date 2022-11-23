@@ -19,7 +19,7 @@ public class TestController {
      * @param str
      * @return
      */
-    @RequestMapping(value = "/http/get/{str}", method = RequestMethod.GET)
+    @GetMapping(value = "/http/get/{str}")
     public String get(@PathVariable String str) {
         return restTemplate.getForObject("http://nacos-provider/http/get/" + str, String.class);
     }
