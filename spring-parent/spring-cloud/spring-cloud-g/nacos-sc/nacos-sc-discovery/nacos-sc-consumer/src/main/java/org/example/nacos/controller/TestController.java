@@ -19,9 +19,9 @@ public class TestController {
      * @param str
      * @return
      */
-    @RequestMapping(value = "/echo/{str}", method = RequestMethod.GET)
-    public String echo(@PathVariable String str) {
-        return restTemplate.getForObject("http://nacos-provider/echo/" + str, String.class);
+    @RequestMapping(value = "/http/get/{str}", method = RequestMethod.GET)
+    public String get(@PathVariable String str) {
+        return restTemplate.getForObject("http://nacos-provider/http/get/" + str, String.class);
     }
 
     /**
@@ -29,9 +29,15 @@ public class TestController {
      *
      * @return
      */
-    @GetMapping("/get")
+    @GetMapping("/feign/get")
     public String get() {
-        String s = providerClient.echo1("zong");
+        String s = providerClient.get();
+        return s;
+    }
+
+    @PostMapping("/feign/post")
+    public String post() {
+        String s = providerClient.post("zong");
         return s;
     }
 }
