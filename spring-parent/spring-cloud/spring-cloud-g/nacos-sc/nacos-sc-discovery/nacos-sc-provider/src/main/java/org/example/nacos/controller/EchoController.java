@@ -13,7 +13,7 @@ public class EchoController {
 
     @GetMapping(value = "/http/get/{string}")
     public String get(@PathVariable String string) throws InterruptedException {
-        TimeUnit.SECONDS.sleep(2);
+        TimeUnit.SECONDS.sleep(5);
         return "Hello Nacos Discovery " + string;
     }
 
