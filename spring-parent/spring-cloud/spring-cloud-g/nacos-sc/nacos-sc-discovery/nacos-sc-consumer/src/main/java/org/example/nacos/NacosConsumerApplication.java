@@ -19,6 +19,11 @@ public class NacosConsumerApplication {
         return new RestTemplate();
     }
 
+    //@Bean
+    //public Retryer retryer() {
+    //    return new Retryer.Default(1L, 5L, 3);
+    //}
+
     public static void main(String[] args) {
         SpringApplication.run(NacosConsumerApplication.class, args);
     }
