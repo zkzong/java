@@ -21,15 +21,19 @@ public class EchoController {
 
     // OpenFeign 默认的接口超时时间为 1s，可以修改调用方ribbon的配置
 
-    @GetMapping("/get")
+    @GetMapping("/feign/get")
     public String get() throws InterruptedException {
-        TimeUnit.SECONDS.sleep(2);
+        System.out.println("feign get start");
+        TimeUnit.SECONDS.sleep(4);
+        System.out.println("feign get end");
         return "GET";
     }
 
-    @PostMapping("/post")
+    @PostMapping("/feign/post")
     public String post(@RequestParam String name) throws InterruptedException {
-        TimeUnit.SECONDS.sleep(2);
+        System.out.println("feign post start");
+        TimeUnit.SECONDS.sleep(4);
+        System.out.println("feign post end");
         return "POST " + name;
     }
 

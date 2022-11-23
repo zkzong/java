@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient("nacos-provider")
 public interface ProviderClient {
 
-    @GetMapping("/get")
+    @GetMapping("/feign/get")
     String get();
 
-    @PostMapping("/post")
+    @PostMapping("/feign/post")
     String post(@RequestParam String name);
 
 }
