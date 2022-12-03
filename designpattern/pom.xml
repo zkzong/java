@@ -18,6 +18,7 @@
     <modules>
         <module>thezenofdesignpatterns</module>
         <module>headfirstdesignpatterns</module>
+        <module>designpatterns-atguigu</module>
     </modules>
 
     <dependencies>
