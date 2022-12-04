@@ -1,4 +1,4 @@
-package principle.singleresponsibility;
+package com.atguigu.principle.singleresponsibility;
 
 public class SingleResponsibility3 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package principle.inversion.improve;
+package com.atguigu.principle.inversion.improve;
 
 public class DependencyInversion {
     public static void main(String[] args) {

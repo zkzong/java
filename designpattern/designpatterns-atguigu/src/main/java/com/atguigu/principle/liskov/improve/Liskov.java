@@ -1,4 +1,4 @@
-package principle.liskov.improve;
+package com.atguigu.principle.liskov.improve;
 
 public class Liskov {
 

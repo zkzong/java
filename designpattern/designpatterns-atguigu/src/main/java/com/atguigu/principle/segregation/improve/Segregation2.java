@@ -1,4 +1,4 @@
-package principle.segregation.improve;
+package com.atguigu.principle.segregation.improve;
 
 public class Segregation2 {
     public static void main(String[] args) {
