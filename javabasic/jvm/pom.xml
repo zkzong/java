@@ -5,10 +5,11 @@
         <groupId>org.example</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>jvm</artifactId>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <name>jvm</name>
     <url>http://maven.apache.org</url>
@@ -16,5 +17,10 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <modules>
+        <module>jvm-demo</module>
+        <module>optimize</module>
+    </modules>
 
 </project>
