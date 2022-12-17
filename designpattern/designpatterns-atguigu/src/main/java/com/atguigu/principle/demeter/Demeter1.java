@@ -3,13 +3,13 @@ package com.atguigu.principle.demeter;
 import java.util.ArrayList;
 import java.util.List;
 
-//¿Í»§¶Ë
+//å®¢æˆ·ç«¯
 public class Demeter1 {
 
     public static void main(String[] args) {
-        //´´½¨ÁËÒ»¸ö SchoolManager ¶ÔÏó
+        //åˆ›å»ºäº†ä¸€ä¸ª SchoolManager å¯¹è±¡
         SchoolManager schoolManager = new SchoolManager();
-        //Êä³öÑ§ÔºµÄÔ±¹¤id ºÍ  Ñ§Ğ£×Ü²¿µÄÔ±¹¤ĞÅÏ¢
+        //è¾“å‡ºå­¦é™¢çš„å‘˜å·¥id å’Œ  å­¦æ ¡æ€»éƒ¨çš„å‘˜å·¥ä¿¡æ¯
         schoolManager.printAllEmployee(new CollegeManager());
 
     }
@@ -17,7 +17,7 @@ public class Demeter1 {
 }
 
 
-//Ñ§Ğ£×Ü²¿Ô±¹¤Àà
+//å­¦æ ¡æ€»éƒ¨å‘˜å·¥ç±»
 class Employee {
     private String id;
 
@@ -31,7 +31,7 @@ class Employee {
 }
 
 
-//Ñ§ÔºµÄÔ±¹¤Àà
+//å­¦é™¢çš„å‘˜å·¥ç±»
 class CollegeEmployee {
     private String id;
 
@@ -45,54 +45,54 @@ class CollegeEmployee {
 }
 
 
-//¹ÜÀíÑ§ÔºÔ±¹¤µÄ¹ÜÀíÀà
+//ç®¡ç†å­¦é™¢å‘˜å·¥çš„ç®¡ç†ç±»
 class CollegeManager {
-    //·µ»ØÑ§ÔºµÄËùÓĞÔ±¹¤
+    //è¿”å›å­¦é™¢çš„æ‰€æœ‰å‘˜å·¥
     public List<CollegeEmployee> getAllEmployee() {
         List<CollegeEmployee> list = new ArrayList<CollegeEmployee>();
-        for (int i = 0; i < 10; i++) { //ÕâÀïÎÒÃÇÔö¼ÓÁË10¸öÔ±¹¤µ½ list
+        for (int i = 0; i < 10; i++) { //è¿™é‡Œæˆ‘ä»¬å¢åŠ äº†10ä¸ªå‘˜å·¥åˆ° list
             CollegeEmployee emp = new CollegeEmployee();
-            emp.setId("Ñ§ÔºÔ±¹¤id= " + i);
+            emp.setId("å­¦é™¢å‘˜å·¥id= " + i);
             list.add(emp);
         }
         return list;
     }
 }
 
-//Ñ§Ğ£¹ÜÀíÀà
+//å­¦æ ¡ç®¡ç†ç±»
 
-//·ÖÎö SchoolManager ÀàµÄÖ±½ÓÅóÓÑÀàÓĞÄÄĞ© Employee¡¢CollegeManager
-//CollegeEmployee ²»ÊÇ Ö±½ÓÅóÓÑ ¶øÊÇÒ»¸öÄ°ÉúÀà£¬ÕâÑùÎ¥±³ÁË µÏÃ×ÌØ·¨Ôò
+//åˆ†æ SchoolManager ç±»çš„ç›´æ¥æœ‹å‹ç±»æœ‰å“ªäº› Employeeã€CollegeManager
+//CollegeEmployee ä¸æ˜¯ ç›´æ¥æœ‹å‹ è€Œæ˜¯ä¸€ä¸ªé™Œç”Ÿç±»ï¼Œè¿™æ ·è¿èƒŒäº† è¿ªç±³ç‰¹æ³•åˆ™
 class SchoolManager {
-    //·µ»ØÑ§Ğ£×Ü²¿µÄÔ±¹¤
+    //è¿”å›å­¦æ ¡æ€»éƒ¨çš„å‘˜å·¥
     public List<Employee> getAllEmployee() {
         List<Employee> list = new ArrayList<Employee>();
 
-        for (int i = 0; i < 5; i++) { //ÕâÀïÎÒÃÇÔö¼ÓÁË5¸öÔ±¹¤µ½ list
+        for (int i = 0; i < 5; i++) { //è¿™é‡Œæˆ‘ä»¬å¢åŠ äº†5ä¸ªå‘˜å·¥åˆ° list
             Employee emp = new Employee();
-            emp.setId("Ñ§Ğ£×Ü²¿Ô±¹¤id= " + i);
+            emp.setId("å­¦æ ¡æ€»éƒ¨å‘˜å·¥id= " + i);
             list.add(emp);
         }
         return list;
     }
 
-    //¸Ã·½·¨Íê³ÉÊä³öÑ§Ğ£×Ü²¿ºÍÑ§ÔºÔ±¹¤ĞÅÏ¢(id)
+    //è¯¥æ–¹æ³•å®Œæˆè¾“å‡ºå­¦æ ¡æ€»éƒ¨å’Œå­¦é™¢å‘˜å·¥ä¿¡æ¯(id)
     void printAllEmployee(CollegeManager sub) {
 
-        //·ÖÎöÎÊÌâ
-        //1. ÕâÀïµÄ CollegeEmployee ²»ÊÇ  SchoolManagerµÄÖ±½ÓÅóÓÑ
-        //2. CollegeEmployee ÊÇÒÔ¾Ö²¿±äÁ¿·½Ê½³öÏÖÔÚ SchoolManager
-        //3. Î¥·´ÁË µÏÃ×ÌØ·¨Ôò
+        //åˆ†æé—®é¢˜
+        //1. è¿™é‡Œçš„ CollegeEmployee ä¸æ˜¯  SchoolManagerçš„ç›´æ¥æœ‹å‹
+        //2. CollegeEmployee æ˜¯ä»¥å±€éƒ¨å˜é‡æ–¹å¼å‡ºç°åœ¨ SchoolManager
+        //3. è¿åäº† è¿ªç±³ç‰¹æ³•åˆ™
 
-        //»ñÈ¡µ½Ñ§ÔºÔ±¹¤
+        //è·å–åˆ°å­¦é™¢å‘˜å·¥
         List<CollegeEmployee> list1 = sub.getAllEmployee();
-        System.out.println("------------Ñ§ÔºÔ±¹¤------------");
+        System.out.println("------------å­¦é™¢å‘˜å·¥------------");
         for (CollegeEmployee e : list1) {
             System.out.println(e.getId());
         }
-        //»ñÈ¡µ½Ñ§Ğ£×Ü²¿Ô±¹¤
+        //è·å–åˆ°å­¦æ ¡æ€»éƒ¨å‘˜å·¥
         List<Employee> list2 = this.getAllEmployee();
-        System.out.println("------------Ñ§Ğ£×Ü²¿Ô±¹¤------------");
+        System.out.println("------------å­¦æ ¡æ€»éƒ¨å‘˜å·¥------------");
         for (Employee e : list2) {
             System.out.println(e.getId());
         }
