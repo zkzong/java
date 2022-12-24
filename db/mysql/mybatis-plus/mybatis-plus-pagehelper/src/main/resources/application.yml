@@ -9,7 +9,7 @@ spring:
     password: root
 
 mybatis-plus:
-  # \u626B\u63CF mapper.xml
+  # 扫描 mapper.xml
   mapper-locations: classpath*:mapper/*Mapper.xml
 logging:
   level:
