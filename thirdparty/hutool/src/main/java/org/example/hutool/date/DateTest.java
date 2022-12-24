@@ -67,4 +67,34 @@ public class DateTest {
         System.out.println(date2);
     }
 
+    /**
+     * 获取当前时间
+     */
+    @Test
+    public void currentDate() {
+        // 当前时间，转换为{@link DateTime}对象
+        DateTime date = DateUtil.date();
+        System.out.println(date);
+
+        //当前时间，转换为{@link DateTime}对象，忽略毫秒部分
+        DateTime dateSecond = DateUtil.dateSecond();
+        System.out.println(dateSecond);
+
+        // 当前时间的时间戳
+        long current = DateUtil.current();
+        System.out.println(current);
+
+        // 当前时间的时间戳（秒）
+        long currentSeconds = DateUtil.currentSeconds();
+        System.out.println(currentSeconds);
+
+        // 当前时间，格式 yyyy-MM-dd HH:mm:ss
+        String now = DateUtil.now();
+        System.out.println(now);
+
+        // 当前日期，格式 yyyy-MM-dd
+        String today = DateUtil.today();
+        System.out.println(today);
+    }
+
 }
