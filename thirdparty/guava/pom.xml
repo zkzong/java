@@ -10,6 +10,7 @@
     <name>guava</name>
     <url>http://maven.apache.org</url>
     <modules>
+        <module>guava-demo</module>
         <module>ratelimiter</module>
     </modules>
 
