@@ -1,8 +1,8 @@
 package org.example.spring.beans;
 
-import org.example.common.Less;
-import org.example.common.More;
-import org.example.common.Person;
+import org.example.spring.beans.entity.Less;
+import org.example.spring.beans.entity.More;
+import org.example.spring.beans.entity.Person;
 import org.junit.Test;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.BeanWrapper;

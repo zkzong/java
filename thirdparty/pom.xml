@@ -10,7 +10,6 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>common</module>
         <module>pinyin4j</module>
         <module>guava</module>
         <module>jodatime</module>

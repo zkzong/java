@@ -1,4 +1,4 @@
-package org.example.common;
+package org.example.apache.commons.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
