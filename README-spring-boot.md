@@ -23,7 +23,7 @@ Spring Boot设计目的是用来简化新Spring应用的初始搭建以及开发
 ### actuator
 指定端口：
 ```properties
-management.port=8888
+management.port=8080
 ```
 
 关闭端口

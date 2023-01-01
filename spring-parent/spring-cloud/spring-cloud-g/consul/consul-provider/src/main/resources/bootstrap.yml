@@ -1,5 +1,5 @@
 server:
-  port: 8081  # 因为本地启动，防止端口冲突
+  port: 8080  # 因为本地启动，防止端口冲突
 
 spring:
   application:
