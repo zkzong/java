@@ -3,6 +3,7 @@ package org.example.sb2.controller;
 import com.alibaba.fastjson.JSON;
 import org.example.sb2.dto.A;
 import org.example.sb2.dto.B;
+import org.example.sb2.dto.JsonFieldClass;
 import org.example.sb2.dto.JsonRootBean;
 import org.example.sb2.entity.User;
 import org.example.sb2.service.UserService;
@@ -82,5 +83,14 @@ public class WebController {
     public String bb(@RequestParam String name) {
         System.out.println(name);
         return "success";
+    }
+
+    @PostMapping("/jsonfield")
+    public JsonFieldClass jsonField() {
+        JsonFieldClass jsonFieldClass = JsonFieldClass.builder().name("zong")
+                .age(10).sex(1).build();
+        //使用JSON.toJSONString时@JSONField起作用
+        System.out.println(JSON.toJSONString(jsonFieldClass));
+        return jsonFieldClass;
     }
 }
