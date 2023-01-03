@@ -57,3 +57,7 @@ org.example.designpattern.zen.DynamicProxy 动态代理：
 #### section6
 
 策略枚举
+
+## 尚硅谷Java设计模式
+
+工厂模式有问题
