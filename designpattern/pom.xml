@@ -19,6 +19,7 @@
         <module>thezenofdesignpatterns</module>
         <module>headfirstdesignpatterns</module>
         <module>designpatterns-atguigu</module>
+        <module>javapatterns</module>
     </modules>
 
     <dependencies>
