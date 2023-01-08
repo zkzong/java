@@ -4,23 +4,19 @@ import java.sql.Connection;
 import java.sql.Statement;
 import java.sql.ResultSet;
 
-public class OracleQueryRunner extends QueryRunner
-{
-    public Connection createConnection()
-    {
+public class OracleQueryRunner extends QueryRunner {
+    public Connection createConnection() {
         //mockup
-		return null;
+        return null;
     }
 
-    protected String createSql()
-    {
-		return "SELECT * FROM customers";
+    protected String createSql() {
+        return "SELECT * FROM customers";
     }
 
     protected ResultSet runSql(Connection conn, String sql)
-        throws Exception
-    {
-		Statement stmt = conn.createStatement();
+            throws Exception {
+        Statement stmt = conn.createStatement();
         return stmt.executeQuery(sql);
     }
 }

@@ -1,10 +1,9 @@
 package com.javapatterns.factorymethod.farm;
 
-public interface FruitGardener
-{
+public interface FruitGardener {
     public Fruit factory();
 
-    /** @link dependency 
+    /** @link dependency
      * @label Creates*/
     /*# Fruit lnkFruit; */
 }

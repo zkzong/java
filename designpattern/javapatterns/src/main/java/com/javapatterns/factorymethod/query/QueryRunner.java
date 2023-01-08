@@ -3,15 +3,13 @@ package com.javapatterns.factorymethod.query;
 import java.sql.Connection;
 import java.sql.ResultSet;
 
-abstract public class QueryRunner
-{
-    public ResultSet run() throws Exception
-    {
+abstract public class QueryRunner {
+    public ResultSet run() throws Exception {
         Connection conn = createConnection();
 
         String sql = createSql();
 
-		return runSql(conn, sql);
+        return runSql(conn, sql);
     }
 
     protected abstract Connection createConnection();
@@ -19,9 +17,9 @@ abstract public class QueryRunner
     protected abstract String createSql();
 
     protected abstract ResultSet runSql(Connection conn, String sql)
-        throws Exception;
+            throws Exception;
 
-    /** @link dependency 
+    /** @link dependency
      * @label Creates*/
     /*# ResultSet lnkResultSet; */
 }

@@ -1,10 +1,9 @@
 package com.javapatterns.factorymethod;
 
-public interface Creator
-{
+public interface Creator {
     public Product factory();
 
-    /** @link dependency 
+    /** @link dependency
      * @label Creates*/
     /*# Product lnkProduct; */
 }
