@@ -53,6 +53,12 @@ public class DateTest {
         System.out.println("下个月：" + dateTime);
         DateTime begin = DateUtil.beginOfMonth(dateTime);
         System.out.println("月初：" + begin);
+
+        // 是否同一天
+        Date date1 = DateUtil.parse("2023-01-01 15:00:00").toJdkDate();
+        Date date2 = DateUtil.parse("2023-01-02 00:00:00").toJdkDate();
+        boolean sameDay = DateUtil.isSameDay(date1, date2);
+        System.out.println(sameDay);
     }
 
     /**
