@@ -24,6 +24,7 @@
         <module>log-aspect</module>
         <module>api</module>
         <module>apollo</module>
+        <module>minio</module>
     </modules>
     <packaging>pom</packaging>
 
