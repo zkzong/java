@@ -1,6 +1,4 @@
-package headfirst.observer.weather;
-
-import java.util.*;
+package headfirst.observer.WeatherStation;
 
 public class WeatherStationHeatIndex {
 

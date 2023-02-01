@@ -1,4 +1,4 @@
-package headfirst.observer.weatherobservable;
+package headfirst.observer.WeatherStationObservable;
 
 public class WeatherStationHeatIndex {
 

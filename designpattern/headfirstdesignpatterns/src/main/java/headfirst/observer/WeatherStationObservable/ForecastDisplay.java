@@ -1,10 +1,10 @@
-package headfirst.observer.weatherobservable;
+package headfirst.observer.WeatherStationObservable;
 
 import java.util.Observable;
 import java.util.Observer;
 
 public class ForecastDisplay implements Observer, DisplayElement {
-	private float currentPressure = 29.92f;  
+	private float currentPressure = 29.92f;
 	private float lastPressure;
 
 	public ForecastDisplay(Observable observable) {

@@ -1,4 +1,4 @@
-package headfirst.observer.weather;
+package headfirst.observer.WeatherStation;
 
 public interface DisplayElement {
 	public void display();

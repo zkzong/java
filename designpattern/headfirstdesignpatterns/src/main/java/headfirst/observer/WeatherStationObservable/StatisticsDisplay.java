@@ -1,4 +1,4 @@
-package headfirst.observer.weatherobservable;
+package headfirst.observer.WeatherStationObservable;
 
 import java.util.Observable;
 import java.util.Observer;
@@ -23,7 +23,7 @@ public class StatisticsDisplay implements Observer, DisplayElement {
 			if (temp > maxTemp) {
 				maxTemp = temp;
 			}
- 
+
 			if (temp < minTemp) {
 				minTemp = temp;
 			}
