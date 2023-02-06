@@ -25,6 +25,7 @@
         <module>api</module>
         <module>apollo</module>
         <module>minio</module>
+        <module>disruptor</module>
     </modules>
     <packaging>pom</packaging>
 
