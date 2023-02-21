@@ -17,6 +17,7 @@
         <module>feign</module>
         <module>eureka</module>
         <module>stream</module>
+        <module>gateway</module>
     </modules>
 
     <parent>
