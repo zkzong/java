@@ -20,6 +20,7 @@ import java.util.Set;
  */
 public class BeanUtilsTest {
 
+    // 字段类型不一样不能赋值
     @Test
     public void test() {
         More more = new More(1, "zong", 1);
