@@ -89,4 +89,15 @@ public class BeanUtilsTest {
 
     }
 
+    // null覆盖有值字段
+    @Test
+    public void nullcopy() throws InvocationTargetException, IllegalAccessException {
+        More more = new More(1, "zong", 1);
+        more.setSex("1");
+        System.out.println(more);
+        Less less = new Less();
+        BeanUtils.copyProperties(more, less);
+        System.out.println(more);
+    }
+
 }
