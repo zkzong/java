@@ -15,19 +15,16 @@ public class StrUtilTest {
         // 从 坐标 3 开始查找/出现的位置
         int i = StrUtil.indexOf(s, '/', 3);
         System.out.println(i);
-    }
 
-
-    @Test
-    public void b() {
-        String s = "= service.add(user);";
+        String ss = "= service.add(user);";
         // 查找 service 第1次出现的位置
-        int i = StrUtil.ordinalIndexOf(s, "service", 1);
+         i = StrUtil.ordinalIndexOf(ss, "service", 1);
         System.out.println(i);
-        int j = StrUtil.indexOf(s, '(', i);
+        // 从指定起始位置开始查找
+        int j = StrUtil.indexOf(ss, '(', i);
         System.out.println(j);
 
-        String sub = StrUtil.sub(s, i, j);
+        String sub = StrUtil.sub(ss, i, j);
         System.out.println(sub);
     }
 
