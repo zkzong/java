@@ -8,7 +8,7 @@ spring:
       discovery:
         ip-address: ${HOST_ADDRESS:localhost}
         port: ${SERVER_PORT:${server.port}}
-#        healthCheckPath: /health
+        healthCheckPath: /actuator/health
         healthCheckInterval: 15s
         instance-id: user-${server.port}
         service-name: user
