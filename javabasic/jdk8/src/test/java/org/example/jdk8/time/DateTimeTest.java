@@ -11,6 +11,7 @@ import java.time.Month;
 import java.time.MonthDay;
 import java.time.Period;
 import java.time.ZoneId;
+import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
@@ -171,6 +172,16 @@ public class DateTimeTest {
         // LocalDate转LocalDateTime
         LocalDateTime ldt = LocalDate.now().atTime(0, 0, 0);
 
+    }
+
+    @Test
+    public void zonedDateTime() {
+        String timeStr = ZonedDateTime.now() // 获取当前时间
+                // 减少1个小时
+                .minusHours(1)
+                // 格式化时间
+                .format(DateTimeFormatter.ISO_ZONED_DATE_TIME);
+        System.out.println(timeStr);
     }
 
 }
