@@ -1,0 +1,11 @@
+# 配置启动端口
+server:
+  port: 7001
+# Spring应用（微服务）名称
+spring:
+  application:
+    name: gateway-fund
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
