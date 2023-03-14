@@ -11,6 +11,7 @@
     <name>thread</name>
     <url>http://maven.apache.org</url>
     <modules>
+        <module>thread-test</module>
         <module>sms-batch</module>
         <module>concurrent</module>
     </modules>
