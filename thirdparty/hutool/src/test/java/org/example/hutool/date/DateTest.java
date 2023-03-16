@@ -1,5 +1,6 @@
 package org.example.hutool.date;
 
+import cn.hutool.core.date.DatePattern;
 import cn.hutool.core.date.DateTime;
 import cn.hutool.core.date.DateUnit;
 import cn.hutool.core.date.DateUtil;
@@ -71,6 +72,18 @@ public class DateTest {
         System.out.println(date1);
         Date date2 = DateUtil.parse(dateStr, "yyyy-MM-dd");
         System.out.println(date2);
+    }
+
+    /**
+     * DateUtil.format
+     */
+    @Test
+    public void format() {
+        String date = DateUtil.format(new Date(), DatePattern.PURE_DATE_PATTERN);
+        System.out.println(date);
+
+        String s = DateUtil.formatDate(new Date());
+        System.out.println(s);
     }
 
     /**
