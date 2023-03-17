@@ -20,6 +20,6 @@ public class _02_thenCompose {
             });
         });
 
-        SmallTool.printTimeAndThread(cf1.join()+"好了，开饭");
+        SmallTool.printTimeAndThread(cf1.join() + "好了，开饭");
     }
 }
