@@ -11,16 +11,18 @@ spring:
       port: 8500
 
 #  cloud:
-#    gateway:
-#      # 开始配置路径
-#      routes:
-#        # 路径匹配
-#        - id: fund
-#          # 转发URI
-#          uri: http://localhost:7001
-#          # 断言配置
-#          predicates:
-#            - Path=/r4j/**
+    gateway:
+      # 开始配置路径
+      routes:
+        # 路径匹配
+        - id: fund
+          # 转发URI
+          uri: http://localhost:7001
+          # 断言配置
+          predicates:
+            - Path=/r4j/**
+          filters:
+            - Crypt
 
 #  cloud:
 #    gateway:

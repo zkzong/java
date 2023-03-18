@@ -1,5 +1,7 @@
 package com.spring.cloud.gateway.config;
 
+import com.spring.cloud.gateway.filter.RequestBodyRewrite;
+import com.spring.cloud.gateway.filter.ResponseBodyRewrite;
 import org.springframework.cloud.gateway.route.RouteLocator;
 import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
 import org.springframework.context.annotation.Bean;
@@ -304,11 +306,29 @@ public class RouteConfig {
     //        return chain.filter(exchange);
     //    };
     //}
+    //@Bean
+    //public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
+    //    return builder.routes()
+    //            // 设置请求路径满足ANT风格“/user/**”的路由
+    //            .route("user-service", r -> r.path("/user/**")
+    //                    // 使用服务发现的路由
+    //                    .uri("lb://gateway-user")) // ①
+    //            .build();
+    //}
+
+    /**
+     * 加解密
+     *
+     * @param builder
+     * @return
+     */
     @Bean
-    public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
+    public RouteLocator cryptRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
                 // 设置请求路径满足ANT风格“/user/**”的路由
                 .route("user-service", r -> r.path("/user/**")
+                        .filters(f -> f.modifyRequestBody(String.class, String.class, new RequestBodyRewrite())
+                                .modifyResponseBody(String.class, String.class, new ResponseBodyRewrite()))
                         // 使用服务发现的路由
                         .uri("lb://gateway-user")) // ①
                 .build();

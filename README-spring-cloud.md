@@ -8,6 +8,14 @@ zuul限流
 
 http://localhost:5555/client/add?a=100&b=200
 
+### gateway
+
+加解密方式有两种：
+- 使用java代码进行配置
+- 自定义filter及配置文件方式
+
+https://blog.csdn.net/K_Men/article/details/120429241
+
 ## spring-cloud-docker
 Spring Cloud与Docker微服务架构实战
 
