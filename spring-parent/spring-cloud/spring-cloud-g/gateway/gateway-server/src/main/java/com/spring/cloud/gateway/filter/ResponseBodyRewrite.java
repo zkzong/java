@@ -2,6 +2,9 @@ package com.spring.cloud.gateway.filter;
 
 import cn.hutool.crypto.SecureUtil;
 import cn.hutool.crypto.symmetric.AES;
+import com.alibaba.fastjson.JSON;
+import com.spring.cloud.gateway.req.User;
+import com.spring.cloud.gateway.resp.UserResp;
 import lombok.extern.slf4j.Slf4j;
 import org.reactivestreams.Publisher;
 import org.springframework.cloud.gateway.filter.factory.rewrite.RewriteFunction;
@@ -14,6 +17,7 @@ import reactor.core.publisher.Mono;
 public class ResponseBodyRewrite implements RewriteFunction<String, String> {
 
     AES aes = SecureUtil.aes("scgatewaygateway".getBytes());
+
     @Override
     public Publisher<String> apply(ServerWebExchange serverWebExchange, String body) {
         try {
@@ -22,7 +26,14 @@ public class ResponseBodyRewrite implements RewriteFunction<String, String> {
             if (headers.containsKey("encrypt")) {
                 // 加密返回结果
                 String data = aes.encryptHex(body);
-                return Mono.just(data);
+
+                // 组装返回值
+                UserResp<User> userResp = new UserResp<>();
+                userResp.setEncryptData(data);
+                String s = aes.decryptStr(data);
+                User user = JSON.parseObject(s, User.class);
+                userResp.setData(user);
+                return Mono.just(JSON.toJSONString(userResp));
             } else {
                 return Mono.just(body);
             }
