@@ -2,11 +2,13 @@ package com.spring.cloud.gateway.filter;
 
 import cn.hutool.crypto.SecureUtil;
 import cn.hutool.crypto.symmetric.AES;
+import com.alibaba.fastjson.JSON;
+import com.spring.cloud.gateway.req.UserReq;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.gateway.filter.GatewayFilter;
 import org.springframework.cloud.gateway.filter.factory.AbstractGatewayFilterFactory;
+import org.springframework.cloud.gateway.filter.factory.rewrite.CachedBodyOutputMessage;
 import org.springframework.cloud.gateway.support.BodyInserterContext;
-import org.springframework.cloud.gateway.support.CachedBodyOutputMessage;
 import org.springframework.core.Ordered;
 import org.springframework.core.io.buffer.DataBuffer;
 import org.springframework.http.HttpHeaders;
@@ -25,6 +27,9 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.function.BiFunction;
 
+/**
+ * Greenwich.RELEASE
+ */
 @Slf4j
 public class DecryptRequestBodyGatewayFilterFactory extends AbstractGatewayFilterFactory implements Ordered {
 
@@ -38,7 +43,6 @@ public class DecryptRequestBodyGatewayFilterFactory extends AbstractGatewayFilte
     }
 
     @Override
-    @SuppressWarnings("unchecked")
     public GatewayFilter apply(Object config) {
         return (exchange, chain) -> {
             ServerRequest serverRequest = ServerRequest.create(exchange,
@@ -64,8 +68,17 @@ public class DecryptRequestBodyGatewayFilterFactory extends AbstractGatewayFilte
     private BiFunction<ServerWebExchange, Mono<String>, Mono<String>> modifyBody() {
         return (exchange, body) -> {
             try {
+                HttpHeaders headers = exchange.getRequest().getHeaders();
                 AtomicReference<String> result = new AtomicReference<>();
-                body.subscribe(value -> result.set(aes.decryptStr(value)),
+                body.subscribe(value -> {
+                            if (headers.containsKey("encrypt")) {
+                                // 解密请求参数
+                                UserReq userReq = JSON.parseObject(value, UserReq.class);
+                                result.set(aes.decryptStr(userReq.getEncryptData()));
+                            } else {
+                                result.set(value);
+                            }
+                        },
                         e -> log.error(e.getMessage(), e)
                 );
                 return Mono.just(result.get());

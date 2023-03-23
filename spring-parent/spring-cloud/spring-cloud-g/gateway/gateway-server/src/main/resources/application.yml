@@ -22,7 +22,8 @@ spring:
           predicates:
             - Path=/r4j/**
           filters:
-            - Crypt
+            - DecryptRequestBody
+            - EncryptResponseBody
 
 #  cloud:
 #    gateway:

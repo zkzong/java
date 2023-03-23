@@ -12,7 +12,12 @@ http://localhost:5555/client/add?a=100&b=200
 
 加解密方式有两种：
 - 使用java代码进行配置
+  - RequestBodyRewrite
+  - ResponseBodyRewrite
 - 自定义filter及配置文件方式
+  - EncryptDecryptFilter(Hoxton.SR4)
+  - DecryptRequestBodyGatewayFilterFactory(Greenwich.RELEASE)
+  - EncryptResponseBodyGatewayFilterFactory(Greenwich.RELEASE)
 
 https://blog.csdn.net/K_Men/article/details/120429241
 

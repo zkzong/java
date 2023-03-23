@@ -30,8 +30,8 @@ public class ResponseBodyRewrite implements RewriteFunction<String, String> {
                 // 组装返回值
                 UserResp<User> userResp = new UserResp<>();
                 userResp.setEncryptData(data);
-                String s = aes.decryptStr(data);
-                User user = JSON.parseObject(s, User.class);
+
+                User user = JSON.parseObject(body, User.class);
                 userResp.setData(user);
                 return Mono.just(JSON.toJSONString(userResp));
             } else {

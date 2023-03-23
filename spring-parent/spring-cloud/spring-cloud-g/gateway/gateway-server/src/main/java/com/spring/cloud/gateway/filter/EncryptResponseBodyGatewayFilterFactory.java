@@ -2,13 +2,16 @@ package com.spring.cloud.gateway.filter;
 
 import cn.hutool.crypto.SecureUtil;
 import cn.hutool.crypto.symmetric.AES;
+import com.alibaba.fastjson.JSON;
+import com.spring.cloud.gateway.req.User;
+import com.spring.cloud.gateway.resp.UserResp;
 import lombok.extern.slf4j.Slf4j;
 import org.reactivestreams.Publisher;
 import org.springframework.cloud.gateway.filter.GatewayFilter;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.factory.AbstractGatewayFilterFactory;
+import org.springframework.cloud.gateway.filter.factory.rewrite.CachedBodyOutputMessage;
 import org.springframework.cloud.gateway.support.BodyInserterContext;
-import org.springframework.cloud.gateway.support.CachedBodyOutputMessage;
 import org.springframework.core.Ordered;
 import org.springframework.core.io.buffer.DataBuffer;
 import org.springframework.http.HttpHeaders;
@@ -26,6 +29,9 @@ import java.util.function.BiFunction;
 
 import static org.springframework.cloud.gateway.support.ServerWebExchangeUtils.ORIGINAL_RESPONSE_CONTENT_TYPE_ATTR;
 
+/**
+ * Greenwich.RELEASE
+ */
 @Slf4j
 public class EncryptResponseBodyGatewayFilterFactory extends AbstractGatewayFilterFactory {
 
@@ -71,8 +77,7 @@ public class EncryptResponseBodyGatewayFilterFactory extends AbstractGatewayFilt
                             .flatMap(originalBody -> modifyBody()
                                     .apply(exchange, Mono.just(originalBody)));
 
-                    BodyInserter bodyInserter = BodyInserters.fromPublisher(modifiedBody,
-                            String.class);
+                    BodyInserter bodyInserter = BodyInserters.fromPublisher(modifiedBody, String.class);
                     CachedBodyOutputMessage outputMessage = new CachedBodyOutputMessage(
                             exchange, exchange.getResponse().getHeaders());
                     return bodyInserter.insert(outputMessage, new BodyInserterContext())
@@ -92,9 +97,24 @@ public class EncryptResponseBodyGatewayFilterFactory extends AbstractGatewayFilt
                  */
                 private BiFunction<ServerWebExchange, Mono<String>, Mono<String>> modifyBody() {
                     return (exchange, json) -> {
+                        HttpHeaders headers = exchange.getRequest().getHeaders();
                         AtomicReference<String> result = new AtomicReference<>();
                         json.subscribe(
-                                value -> result.set(aes.encryptHex(value)),
+                                value -> {
+                                    if (headers.containsKey("encrypt")) {
+                                        // 加密返回结果
+                                        String data = aes.encryptHex(value);
+
+                                        // 组装返回值
+                                        UserResp<User> userResp = new UserResp<>();
+                                        userResp.setEncryptData(data);
+                                        User user = JSON.parseObject(value, User.class);
+                                        userResp.setData(user);
+                                        result.set(JSON.toJSONString(userResp));
+                                    } else {
+                                        result.set(value);
+                                    }
+                                },
                                 Throwable::printStackTrace
                         );
                         return Mono.just(result.get());
