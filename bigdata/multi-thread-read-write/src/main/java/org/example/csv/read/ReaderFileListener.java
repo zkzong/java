@@ -1,22 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package org.example.csv.read;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author mxli
+ * NIO逐行读数据回调方法
  */
 public abstract class ReaderFileListener {
 
     // 一次读取行数，默认为500
     private int readColNum = 500;
 
-    protected String encode;
+    private String encode;
 
     private List<String> list = new ArrayList<String>();
 
@@ -46,9 +41,8 @@ public abstract class ReaderFileListener {
      * @throws Exception
      */
     public void outLine(String lineStr, long lineNum, boolean over) throws Exception {
-        if (null != lineStr) {
+        if (null != lineStr)
             list.add(lineStr);
-        }
         if (!over && (lineNum % readColNum == 0)) {
             output(list);
             list.clear();
