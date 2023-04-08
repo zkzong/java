@@ -1,4 +1,4 @@
-package org.example.csv.read;
+package org.example.csv.read.bigfile;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +13,7 @@ public abstract class ReaderFileListener {
 
     private String encode;
 
-    private List<String> list = new ArrayList<String>();
+    private List<String> list = new ArrayList<>();
 
     /**
      * 设置一次读取行数
@@ -41,8 +41,9 @@ public abstract class ReaderFileListener {
      * @throws Exception
      */
     public void outLine(String lineStr, long lineNum, boolean over) throws Exception {
-        if (null != lineStr)
+        if (null != lineStr) {
             list.add(lineStr);
+        }
         if (!over && (lineNum % readColNum == 0)) {
             output(list);
             list.clear();

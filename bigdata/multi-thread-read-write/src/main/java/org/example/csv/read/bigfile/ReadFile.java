@@ -1,4 +1,4 @@
-package org.example.csv.read;
+package org.example.csv.read.bigfile;
 
 import java.io.File;
 import java.io.FileNotFoundException;
