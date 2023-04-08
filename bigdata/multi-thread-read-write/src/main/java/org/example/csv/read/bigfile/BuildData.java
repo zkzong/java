@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class BuildData {
     public static void main(String[] args) throws Exception {
-        File file = new File("E:\\1396341974289.csv");
+        File file = new File("file.csv");
         FileInputStream fis = null;
         try {
             ReadFile readFile = new ReadFile();

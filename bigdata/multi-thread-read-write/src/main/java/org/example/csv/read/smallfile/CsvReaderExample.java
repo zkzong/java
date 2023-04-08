@@ -17,6 +17,7 @@ public class CsvReaderExample {
     public static List<String[]> readCsvFile(String csvFilePath, int numThreads) throws Exception {
         List<String[]> lines = new ArrayList<>();
         BufferedReader br = new BufferedReader(new FileReader(csvFilePath));
+        // 第一行 header
         String[] headers = br.readLine().split(",");
         String line;
         while ((line = br.readLine()) != null) {
