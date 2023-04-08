@@ -34,7 +34,8 @@ public class ReadFile extends Observable {
     static class ProcessDataByPostgisListeners extends ReaderFileListener {
 
         public ProcessDataByPostgisListeners(String encode) {
-            this.encode = encode;
+            //this.encode = encode;
+            this.setEncode(encode);
         }
 
         @Override
