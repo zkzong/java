@@ -14,7 +14,7 @@ import java.util.Date;
  * @Author: zong
  * @Date: 2021/9/27
  */
-public class DateTest {
+public class DateUtilTest {
 
     @Test
     public void date() throws ParseException {

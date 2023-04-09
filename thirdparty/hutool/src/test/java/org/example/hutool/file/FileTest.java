@@ -2,6 +2,7 @@ package org.example.hutool.file;
 
 import cn.hutool.core.io.FileTypeUtil;
 import cn.hutool.core.io.FileUtil;
+import cn.hutool.core.io.file.FileAppender;
 import org.junit.Test;
 
 import java.io.File;
@@ -43,4 +44,15 @@ public class FileTest {
         list.add("bbb");
         FileUtil.appendLines(list, "a.txt", StandardCharsets.UTF_8);
     }
+
+    @Test
+    public void fileAppender() {
+        FileAppender fileAppender = new FileAppender(new File("a.txt"), StandardCharsets.UTF_8, 16, true);
+        fileAppender.append("aaa");
+        fileAppender.append("bbb");
+        fileAppender.append("ccc");
+        fileAppender.flush();
+        //fileAppender.toString();
+    }
+
 }
