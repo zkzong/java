@@ -10,6 +10,7 @@ import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class FileTest {
 
@@ -47,7 +48,7 @@ public class FileTest {
 
     @Test
     public void fileAppender() {
-        FileAppender fileAppender = new FileAppender(new File("a.txt"), StandardCharsets.UTF_8, 16, true);
+        FileAppender fileAppender = new FileAppender(new File("a.txt"), StandardCharsets.UTF_8, 16, true, new ReentrantLock());
         fileAppender.append("aaa");
         fileAppender.append("bbb");
         fileAppender.append("ccc");
