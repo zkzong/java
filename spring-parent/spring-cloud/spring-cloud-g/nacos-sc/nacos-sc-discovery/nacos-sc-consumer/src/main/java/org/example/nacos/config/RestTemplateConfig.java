@@ -11,6 +11,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 import org.springframework.web.client.RestTemplate;
 
+import java.time.Duration;
+
 @Configuration
 public class RestTemplateConfig {
 
@@ -61,8 +63,8 @@ public class RestTemplateConfig {
     @Bean
     public RestTemplate restTemplate2(RestTemplateBuilder restTemplateBuilder) {
         return restTemplateBuilder
-                .setConnectTimeout(3000)
-                .setReadTimeout(3000)
+                .setConnectTimeout(Duration.ofSeconds(3L))
+                .setReadTimeout(Duration.ofSeconds(3L))
                 .build();
     }
 
