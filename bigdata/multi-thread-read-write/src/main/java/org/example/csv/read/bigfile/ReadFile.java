@@ -1,5 +1,7 @@
 package org.example.csv.read.bigfile;
 
+import cn.hutool.core.util.StrUtil;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.RandomAccessFile;
@@ -42,7 +44,11 @@ public class ReadFile extends Observable {
         public void output(List<String> stringList) {
             for (String item : stringList) {
                 // Util.tokenize(item, '\t');
-                System.out.println(item);
+                if (StrUtil.isNotBlank(item)) {
+                    System.out.println(item);
+                } else {
+                    System.out.println("item为空");
+                }
             }
         }
 
