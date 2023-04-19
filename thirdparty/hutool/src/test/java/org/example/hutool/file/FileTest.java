@@ -59,13 +59,12 @@ public class FileTest {
 
     @Test
     public void read() {
-        List<String> strings = FileUtil.readLines("/Users/admin/Downloads/20230413_hive_result_lhprod_zongzhankui_596.csv", StandardCharsets.UTF_8);
+        List<String> strings = FileUtil.readLines("example.csv", StandardCharsets.UTF_8);
         int size = strings.size();
         for (int i = 0; i < size; i++) {
             if (i % 100000 == 0) {
                 System.out.println(strings.get(i));
             }
-
         }
     }
 
