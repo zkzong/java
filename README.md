@@ -17,13 +17,6 @@ designpattern：
 - es
 - hbase
 
-dubbo：
-[dubbo](README-dubbo.md)
-
-fastdfs：
-[fastdfs](README-fastdfs.md)
-
-
 job-scheduler：
 [job-scheduler](README-job-scheduler.md)
 
