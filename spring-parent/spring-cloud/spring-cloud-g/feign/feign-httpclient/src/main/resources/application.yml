@@ -1,10 +1,10 @@
 server:
-  port: 8009
+  port: 8010
 spring:
   application:
-    name: feign-httpclient
-
+    name: ch4-1-hello
 
 logging:
   level:
-    root: debug
+    cn.springcloud.book.feign.service.HelloFeignService: debug
+

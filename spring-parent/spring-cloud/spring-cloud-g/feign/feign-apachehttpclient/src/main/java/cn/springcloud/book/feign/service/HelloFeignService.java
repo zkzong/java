@@ -1,4 +1,4 @@
-package org.example.feign.service;
+package cn.springcloud.book.feign.service;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,6 +11,7 @@ public interface HelloFeignService {
     /**
      * content: {"message":"Validation Failed","errors":[{"resource":"Search","field":"q","code":"missing"}],
      * "documentation_url":"https://developer.github.com/v3/search"}
+     *
      * @param queryStr
      * @return
      */

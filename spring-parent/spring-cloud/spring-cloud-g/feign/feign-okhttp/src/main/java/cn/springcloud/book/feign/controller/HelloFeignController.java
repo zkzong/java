@@ -1,6 +1,6 @@
-package org.example.feign.controller;
+package cn.springcloud.book.feign.controller;
 
-import org.example.feign.service.HelloFeignService;
+import cn.springcloud.book.feign.service.HelloFeignService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -16,7 +16,6 @@ public class HelloFeignController {
     @GetMapping(value = "/search/github")
     public String searchGithubRepoByStr(@RequestParam("str") String queryStr) {
         return helloFeignService.searchRepo(queryStr);
-
     }
 
 }

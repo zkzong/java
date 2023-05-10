@@ -1,4 +1,4 @@
-package org.example.feign.service;
+package cn.springcloud.book.feign.service;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,4 +1,5 @@
-package org.example.feign;
+package cn.springcloud.book.feign;
+
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

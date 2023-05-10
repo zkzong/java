@@ -1,4 +1,4 @@
-package org.example.feign.config;
+package cn.springcloud.book.feign.config;
 
 import feign.Feign;
 import okhttp3.ConnectionPool;

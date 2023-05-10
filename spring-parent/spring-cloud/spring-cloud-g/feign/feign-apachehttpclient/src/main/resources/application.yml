@@ -2,12 +2,8 @@ server:
   port: 8010
 spring:
   application:
-    name: feign-apachehttpclient
+    name: ch4-3-httpclient
 
 feign:
   httpclient:
-      enabled: true
-
-logging:
-  level:
-    root: debug
+    enabled: true
