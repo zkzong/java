@@ -10,6 +10,7 @@
     </parent>
 
     <artifactId>feign-multi-params</artifactId>
+    <packaging>pom</packaging>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
