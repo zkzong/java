@@ -23,7 +23,8 @@ public class FeignRequestInterceptor implements RequestInterceptor {
         if (template.method().equals("GET") && template.body() != null) {
             try {
                 JsonNode jsonNode = objectMapper.readTree(template.body());
-                template.body(null);
+                String s = null;
+                template.body(s);
 
                 Map<String, Collection<String>> queries = new HashMap<>();
                 buildQuery(jsonNode, "", queries);
