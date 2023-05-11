@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 @Component
@@ -23,8 +24,7 @@ public class FeignRequestInterceptor implements RequestInterceptor {
         if (template.method().equals("GET") && template.body() != null) {
             try {
                 JsonNode jsonNode = objectMapper.readTree(template.body());
-                String s = null;
-                template.body(s);
+                template.body(null, StandardCharsets.UTF_8);
 
                 Map<String, Collection<String>> queries = new HashMap<>();
                 buildQuery(jsonNode, "", queries);
