@@ -1,11 +1,7 @@
 package org.example.jvm;
 
-import org.junit.Test;
-import sun.misc.Launcher;
-
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.URL;
 
 /**
  * Created by Zong on 2016/11/28.
@@ -14,16 +10,16 @@ public class ClassLoaderTest {
     /**
      * 根加载器
      */
-    @Test
-    public void test() {
-        URL[] urls = Launcher.getBootstrapClassPath().getURLs();
-        for (int i = 0; i < urls.length; i++) {
-            URL url = urls[i];
-            System.out.println(url.toExternalForm());
-        }
-
-        System.out.println(System.getProperty("sun.boot.class.path"));
-    }
+    //@Test
+    //public void test() {
+    //    URL[] urls = Launcher.getBootstrapClassPath().getURLs();
+    //    for (int i = 0; i < urls.length; i++) {
+    //        URL url = urls[i];
+    //        System.out.println(url.toExternalForm());
+    //    }
+    //
+    //    System.out.println(System.getProperty("sun.boot.class.path"));
+    //}
 
     /**
      * 类加载器在类相等判断中的影响
