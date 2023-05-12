@@ -4,6 +4,7 @@ import cn.springcloud.book.feign.model.User;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
@@ -12,6 +13,11 @@ import javax.servlet.http.HttpServletRequest;
 @RestController
 @RequestMapping("/user")
 public class UserController {
+
+    @RequestMapping(value = "/add/name", method = RequestMethod.GET)
+    public String addName(@RequestParam String name) {
+        return "hello," + name;
+    }
 
     @RequestMapping(value = "/add", method = RequestMethod.GET)
     public String addUser(User user, HttpServletRequest request) {

@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 
@@ -16,6 +17,17 @@ public class UserController {
 
     @Autowired
     private UserFeignService userFeignService;
+
+    /**
+     * FeignRequestInterceptor拦截器非必须，可加可不加
+     *
+     * @param name
+     * @return
+     */
+    @RequestMapping(value = "/add/name", method = RequestMethod.GET)
+    public String addName(@RequestParam String name) {
+        return userFeignService.addName(name);
+    }
 
     /**
      * 用于演示Feign的Get请求多参数传递
