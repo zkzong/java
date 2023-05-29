@@ -20,29 +20,32 @@ public class UsersServiceImpl implements UsersService {
     private UsersMapper usersMapper;
 
     @Override
-    public List<Users> getAllUsers() {
-        return usersMapper.getAllUsers();
+    public int insert(Users users) {
+        return usersMapper.insert(users);
     }
 
     @Override
-    public PageInfo<Users> getUsersByPage() {
-        PageHelper.startPage(10, 5);
-        // 查找所有
-//        PageHelper.startPage(1, 0);
-        List<Users> allUsers = usersMapper.getAllUsers();
-        PageInfo<Users> page = new PageInfo<Users>(allUsers);
-        return page;
+    public List<Users> list() {
+        return usersMapper.list();
     }
 
     @Override
     public PageInfo<Users> page(UsersDto param) {
-        return PageHelper.startPage(param.getPageNum(), param.getPageSize())
-                .doSelectPageInfo(() -> list(param));
-    }
+        if (param == null) {
+            PageHelper.startPage(10, 5);
+        } else {
+            PageHelper.startPage(param.getPageNum(), param.getPageSize());
+        }
 
-    @Override
-    public List<Users> list(UsersDto param) {
-        return usersMapper.getAllUsers();
+        // 查找所有
+        //PageHelper.startPage(1, 0);
+        List<Users> allUsers = usersMapper.list();
+        PageInfo<Users> page = new PageInfo<>(allUsers);
+        return page;
+
+        // list()为该类中list方法
+        //return PageHelper.startPage(param.getPageNum(), param.getPageSize())
+        //        .doSelectPageInfo(() -> list());
     }
 
 }

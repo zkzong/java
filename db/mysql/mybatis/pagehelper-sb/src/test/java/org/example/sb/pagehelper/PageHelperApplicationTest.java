@@ -23,34 +23,31 @@ public class PageHelperApplicationTest {
     @Autowired
     private UsersService usersService;
 
+    @Test
+    public void insert() {
+        for (int i = 0; i < 100; i++) {
+            Users users = new Users();
+            users.setName(i + "");
+            users.setAge(i);
+            usersService.insert(users);
+        }
+    }
+
     // todo
     @Test
-    public void getAllUsers() throws InterruptedException {
+    public void list() throws InterruptedException {
         ExecutorService executorService = Executors.newFixedThreadPool(10);
         for (int i = 0; i < 10; i++) {
             executorService.execute(new Runnable() {
                 @Override
                 public void run() {
-                    List<Users> allUsers = usersService.getAllUsers();
+                    List<Users> allUsers = usersService.list();
                     System.out.println(allUsers);
                 }
             });
             Thread.sleep(1000);
         }
 
-    }
-
-    @Test
-    public void getUsersByPage() {
-        PageInfo<Users> page = usersService.getUsersByPage();
-        System.out.println(page);
-    }
-
-    @Test
-    public void list() {
-        UsersDto dto = new UsersDto();
-        List<Users> list = usersService.list(dto);
-        System.out.println(list);
     }
 
     @Test
@@ -61,4 +58,5 @@ public class PageHelperApplicationTest {
         PageInfo<Users> page = usersService.page(dto);
         System.out.println(page);
     }
+
 }

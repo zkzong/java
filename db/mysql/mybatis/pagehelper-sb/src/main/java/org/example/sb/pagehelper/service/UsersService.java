@@ -10,11 +10,11 @@ import java.util.List;
  * Created by Zong on 2017/6/1.
  */
 public interface UsersService {
-    List<Users> getAllUsers();
 
-    PageInfo<Users> getUsersByPage();
+    int insert(Users users);
+
+    List<Users> list();
 
     PageInfo<Users> page(UsersDto param);
 
-    List<Users> list(UsersDto param);
 }
