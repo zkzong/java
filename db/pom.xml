@@ -21,6 +21,8 @@
         <module>hbase</module>
         <module>mysql</module>
         <module>neo4j</module>
+        <module>clickhouse</module>
+        <module>starrocks</module>
     </modules>
 
     <build>

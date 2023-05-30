@@ -2,13 +2,13 @@ package org.example.redis.dao.impl;
 
 import org.example.redis.dao.UserDAO;
 import org.example.redis.pojo.User;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.data.redis.connection.RedisConnection;
 import org.springframework.data.redis.core.RedisCallback;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.io.Serializable;
 
 /**
@@ -17,7 +17,7 @@ import java.io.Serializable;
 @Service
 public class UserDAOImpl implements UserDAO {
 
-    @Resource
+    @Autowired
     protected RedisTemplate<Serializable, Serializable> redisTemplate;
 
     @Override
