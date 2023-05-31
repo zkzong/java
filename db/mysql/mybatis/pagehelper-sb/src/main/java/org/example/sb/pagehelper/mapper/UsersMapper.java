@@ -1,9 +1,8 @@
 package org.example.sb.pagehelper.mapper;
 
 import org.apache.ibatis.annotations.Insert;
-import org.example.sb.pagehelper.domain.Users;
 import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Select;
+import org.example.sb.pagehelper.domain.Users;
 
 import java.util.List;
 
@@ -16,9 +15,9 @@ public interface UsersMapper {
     @Insert("insert into users(name, age) values(#{name}, #{age})")
     int insert(Users users);
 
-    @Select("select * from users")
+    //@Select("select * from users")
     List<Users> list();
 
-    @Select("select count(*) from users")
+    //@Select("select count(*) from users")
     Long list_COUNT();
 }

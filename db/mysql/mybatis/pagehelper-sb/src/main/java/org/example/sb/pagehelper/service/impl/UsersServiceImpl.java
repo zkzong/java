@@ -1,5 +1,6 @@
 package org.example.sb.pagehelper.service.impl;
 
+import cn.hutool.core.bean.BeanUtil;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.example.sb.pagehelper.domain.Users;
@@ -31,7 +32,7 @@ public class UsersServiceImpl implements UsersService {
 
     @Override
     public PageInfo<Users> page(UsersDto param) {
-        if (param == null) {
+        if (BeanUtil.isEmpty(param)) {
             PageHelper.startPage(10, 5);
         } else {
             PageHelper.startPage(param.getPageNum(), param.getPageSize());
