@@ -13,6 +13,9 @@ public class ScopeController {
 
     ThreadLocal<Integer> uniqueNum = ThreadLocal.withInitial(() -> num);
 
+    /**
+     * scope1
+     */
     @RequestMapping("/scope1")
     public void testScope() {
         int unum = uniqueNum.get();
@@ -21,6 +24,9 @@ public class ScopeController {
         //System.out.println(++num);
     }
 
+    /**
+     * scope2
+     */
     @RequestMapping("/scope2")
     public void testScope2() {
         int unum = uniqueNum.get();

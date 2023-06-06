@@ -26,6 +26,11 @@ public class WebController {
     @Autowired
     private UserService userService;
 
+    /**
+     * findAll
+     *
+     * @return
+     */
     @RequestMapping(value = "findAll")
     public String findAll() {
         List<User> userList = userService.findAll();
@@ -34,6 +39,8 @@ public class WebController {
     }
 
     /**
+     * 使用@JsonProperty指定入参参数
+     * <p>
      * 请求报文
      * {
      * "Request": {
@@ -60,6 +67,12 @@ public class WebController {
         return "success";
     }
 
+    /**
+     * 入参是泛型对象
+     *
+     * @param ab
+     * @return
+     */
     @RequestMapping(value = "ab")
     public String ab(@RequestBody A<B> ab) {
         System.out.println(ab);
@@ -78,19 +91,29 @@ public class WebController {
         return "success";
     }
 
-
+    /**
+     * 入参是字符串
+     *
+     * @param name
+     * @return
+     */
     @PostMapping(value = "bb")
     public String bb(@RequestParam String name) {
         System.out.println(name);
         return "success";
     }
 
+    /**
+     * 使用@JSONField注解修改字段名称
+     *
+     * @return
+     */
     @PostMapping("/jsonfield")
-    public JsonFieldClass jsonField() {
+    public String jsonField() {
         JsonFieldClass jsonFieldClass = JsonFieldClass.builder().name("zong")
                 .age(10).sex(1).build();
         //使用JSON.toJSONString时@JSONField起作用
         System.out.println(JSON.toJSONString(jsonFieldClass));
-        return jsonFieldClass;
+        return JSON.toJSONString(jsonFieldClass);
     }
 }
