@@ -28,6 +28,8 @@ public class BigDecimalTest {
         double doubleVal1 = 0.745;
         BigDecimal bdTest = new BigDecimal(doubleVal);
         BigDecimal bdTest1 = new BigDecimal(doubleVal1);
+        System.out.println(bdTest);
+        System.out.println(bdTest1);
         bdTest = bdTest.setScale(2, BigDecimal.ROUND_HALF_UP);
         bdTest1 = bdTest1.setScale(2, BigDecimal.ROUND_HALF_UP);
         System.out.println("bdTest:" + bdTest); // 1.75

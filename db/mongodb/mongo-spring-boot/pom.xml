@@ -12,7 +12,7 @@
     <artifactId>mongo-spring-boot</artifactId>
 
     <properties>
-        <spring.boot.version>1.5.10.RELEASE</spring.boot.version>
+        <spring.boot.version>2.1.0.RELEASE</spring.boot.version>
     </properties>
 
     <dependencyManagement>

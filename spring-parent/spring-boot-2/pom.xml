@@ -26,6 +26,25 @@
         <module>apollo</module>
         <module>minio</module>
         <module>disruptor</module>
+
+        <module>deploy-war</module>
+        <module>didispace</module>
+        <module>properties</module>
+        <module>repository</module>
+        <module>roncoo</module>
+        <module>spring-boot-admin-sb</module>
+        <module>spring-retry</module>
+        <module>runner</module>
+        <module>upload</module>
+        <module>transactional</module>
+        <module>apollo-jasypt</module>
+        <module>shutdown-sb</module>
+        <module>aop-sb</module>
+        <module>hot-deploy</module>
+        <module>exception-sb</module>
+        <module>validator</module>
+        <module>starter</module>
+        <module>netty</module>
     </modules>
     <packaging>pom</packaging>
 
