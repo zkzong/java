@@ -8,5 +8,5 @@ import org.springframework.data.mongodb.repository.MongoRepository;
  * @date 2017/10/20
  */
 public interface FileRepository extends MongoRepository<FileVo, Long> {
-    FileVo findById(Long id);
+    //FileVo findById(Long id);
 }

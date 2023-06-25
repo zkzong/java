@@ -2,10 +2,7 @@ package org.example.sb.shutdown.config;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.catalina.connector.Connector;
-import org.springframework.boot.context.embedded.ConfigurableEmbeddedServletContainer;
-import org.springframework.boot.context.embedded.EmbeddedServletContainerCustomizer;
-import org.springframework.boot.context.embedded.tomcat.TomcatConnectorCustomizer;
-import org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory;
+import org.springframework.boot.web.embedded.tomcat.TomcatConnectorCustomizer;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -37,17 +34,17 @@ public class ShutdownConfig {
      *
      * @return
      */
-    @Bean
-    public EmbeddedServletContainerCustomizer tomcatCustomizer() {
-        return new EmbeddedServletContainerCustomizer() {
-            @Override
-            public void customize(ConfigurableEmbeddedServletContainer container) {
-                if (container instanceof TomcatEmbeddedServletContainerFactory) {
-                    ((TomcatEmbeddedServletContainerFactory) container).addConnectorCustomizers(gracefulShutdown());
-                }
-            }
-        };
-    }
+    //@Bean
+    //public EmbeddedServletContainerCustomizer tomcatCustomizer() {
+    //    return new EmbeddedServletContainerCustomizer() {
+    //        @Override
+    //        public void customize(ConfigurableEmbeddedServletContainer container) {
+    //            if (container instanceof TomcatEmbeddedServletContainerFactory) {
+    //                ((TomcatEmbeddedServletContainerFactory) container).addConnectorCustomizers(gracefulShutdown());
+    //            }
+    //        }
+    //    };
+    //}
 
     private static class GracefulShutdown implements TomcatConnectorCustomizer, ApplicationListener<ContextClosedEvent> {
 

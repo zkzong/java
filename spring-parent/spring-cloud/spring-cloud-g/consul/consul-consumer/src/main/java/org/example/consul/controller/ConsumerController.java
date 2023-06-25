@@ -3,6 +3,7 @@ package org.example.consul.controller;
 import org.example.consul.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -23,8 +24,8 @@ public class ConsumerController {
      * 接收前端传来的参数，调用远程接口，并返回调用结果
      */
     @GetMapping("/hello")
-    public String hello(String name) {
-        return helloService.sayHello(null);
+    public String hello(@RequestParam String name) {
+        return helloService.sayHello(name);
     }
 
 }

@@ -27,7 +27,9 @@ public class TestController {
 
     @RequestMapping(value = "/delete")
     public String delete() {
-        userJpaRepository.delete(1L);
+        User user = new User();
+        user.setId(1L);
+        userJpaRepository.delete(user);
         return "success";
     }
 }
