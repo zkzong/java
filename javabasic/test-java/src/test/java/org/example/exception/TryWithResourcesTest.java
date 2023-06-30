@@ -12,7 +12,7 @@ public class TryWithResourcesTest {
 
     @Test
     public void tryResource() throws IOException {
-        String filePath = "file/github.txt";
+        String filePath = "file/test.txt";
         TryWithResources tr = new TryWithResources();
         tr.tryResource(filePath);
     }
