@@ -14,6 +14,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
 /**
  * Created by Zong on 2016/10/11.
  */
@@ -177,7 +179,8 @@ public class SetTest {
     public void setnull() {
         //TreeSet add null 运行报错
         Set set1 = new TreeSet();
-        set1.add(null);
+        //set1.add(null);
+        assertThrows(NullPointerException.class, () -> set1.add(null));
 
         //HashSet add null 不报错
         Set set2 = new HashSet();
