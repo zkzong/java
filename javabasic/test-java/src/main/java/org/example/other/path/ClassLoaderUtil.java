@@ -98,7 +98,7 @@ public class ClassLoaderUtil {
     }
 
     /**
-     * 得到本Class所在的ClassLoader的Classpat的绝对路径。
+     * 得到本Class所在的ClassLoader的Classpath的绝对路径。
      * URL形式的
      *
      * @return
