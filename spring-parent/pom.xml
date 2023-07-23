@@ -17,7 +17,7 @@
     <modules>
         <!--<module>spring</module>-->
         <module>spring-boot-2</module>
-        <module>spring-boot-3</module>
+        <!--<module>spring-boot-3</module>-->
         <module>spring-cloud</module>
         <!--<module>security</module>-->
     </modules>
