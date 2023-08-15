@@ -1,4 +1,4 @@
-package org.example.sb.swagger2;
+package com.example.sb.swagger2;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -22,7 +22,7 @@ public class Swagger2 {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("org.example.sb.swagger2.web"))
+                .apis(RequestHandlerSelectors.basePackage("com.example.sb.swagger2.web"))
                 .paths(PathSelectors.any())
                 .build();
     }

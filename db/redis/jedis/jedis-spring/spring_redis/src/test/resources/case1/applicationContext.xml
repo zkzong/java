@@ -9,7 +9,7 @@
        http://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:annotation-config />
-    <context:component-scan base-package="org.example.springredis" />
+    <context:component-scan base-package="com.example.springredis" />
     <context:property-placeholder location="classpath:case1/redis.properties" />
 
     <bean id="poolConfig" class="redis.clients.jedis.JedisPoolConfig">
@@ -30,5 +30,5 @@
         <property name="defaultSerializer" ref="defaultRedisSerializer"/>
     </bean>
 
-    <bean id="userDao" class="org.example.springredis.case1.dao.impl.UserDao" />
+    <bean id="userDao" class="com.example.springredis.case1.dao.impl.UserDao" />
 </beans>

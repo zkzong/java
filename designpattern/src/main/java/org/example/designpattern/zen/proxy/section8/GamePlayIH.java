@@ -1,4 +1,4 @@
-package org.example.designpattern.zen.proxy.section8;
+package com.example.designpattern.zen.proxy.section8;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

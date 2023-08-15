@@ -1,6 +1,6 @@
-package org.example.csv.read.bigfile;
+package com.example.csv.read.bigfile;
 
-import org.example.csv.read.bigfile.ReadFile.ProcessDataByPostgisListeners;
+import com.example.csv.read.bigfile.ReadFile.ProcessDataByPostgisListeners;
 
 import java.io.File;
 import java.io.FileInputStream;

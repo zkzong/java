@@ -1,4 +1,4 @@
-package org.example.itext.sign;
+package com.example.itext.sign;
 
 import com.google.common.collect.Lists;
 import com.itextpdf.text.pdf.PdfReader;
@@ -6,7 +6,7 @@ import com.itextpdf.text.pdf.parser.ImageRenderInfo;
 import com.itextpdf.text.pdf.parser.PdfReaderContentParser;
 import com.itextpdf.text.pdf.parser.RenderListener;
 import com.itextpdf.text.pdf.parser.TextRenderInfo;
-import org.example.itext.sign.bean.KeyWordBean;
+import com.example.itext.sign.bean.KeyWordBean;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.IOException;

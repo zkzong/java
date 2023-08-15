@@ -1,6 +1,6 @@
-package org.example.thinkinginjava.enumpackage;
+package com.example.thinkinginjava.enumpackage;
 
-import org.example.thinkinginjava.util.Print;
+import com.example.thinkinginjava.util.Print;
 
 /**
  * Created by zong on 2016/8/25.

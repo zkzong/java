@@ -1,4 +1,4 @@
-package org.example.designpattern.zen.singleton.section2;
+package com.example.designpattern.zen.singleton.section2;
 
 import java.util.ArrayList;
 import java.util.Random;

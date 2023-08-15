@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
+    <groupId>com.example</groupId>
     <artifactId>token</artifactId>
     <version>1.0-SNAPSHOT</version>
 

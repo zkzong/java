@@ -1,4 +1,4 @@
-package org.example.share_data.bank;
+package com.example.share_data.bank;
 
 public class TestOne {
     public static void main(String[] args) {

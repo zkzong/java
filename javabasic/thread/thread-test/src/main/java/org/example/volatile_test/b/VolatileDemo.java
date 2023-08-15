@@ -1,4 +1,4 @@
-package org.example.volatile_test.b;
+package com.example.volatile_test.b;
 
 class MyData {
     //int number=0;

@@ -1,4 +1,4 @@
-package org.example.sb2.annotation;
+package com.example.sb2.annotation;
 
 public enum LimitType {
 

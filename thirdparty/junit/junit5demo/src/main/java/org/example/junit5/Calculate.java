@@ -1,4 +1,4 @@
-package org.example.junit5;
+package com.example.junit5;
 
 public class Calculate {
     public int add(int a, int b) {

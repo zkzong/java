@@ -1,4 +1,4 @@
-package org.example.sb.statemachine;
+package com.example.sb.statemachine;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

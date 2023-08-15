@@ -1,4 +1,4 @@
-package org.example.interview.string;
+package com.example.interview.string;
 
 /**
  * Created by Zong on 2016/12/6.

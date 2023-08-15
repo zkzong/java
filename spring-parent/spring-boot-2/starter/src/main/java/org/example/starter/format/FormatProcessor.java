@@ -1,4 +1,4 @@
-package org.example.starter.format;
+package com.example.starter.format;
 
 public interface FormatProcessor {
 

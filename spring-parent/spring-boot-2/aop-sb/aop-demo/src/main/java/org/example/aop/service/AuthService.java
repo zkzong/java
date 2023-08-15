@@ -1,6 +1,6 @@
-package org.example.aop.service;
+package com.example.aop.service;
 
-import org.example.aop.security.CurrentUserHolder;
+import com.example.aop.security.CurrentUserHolder;
 import org.springframework.stereotype.Component;
 
 @Component

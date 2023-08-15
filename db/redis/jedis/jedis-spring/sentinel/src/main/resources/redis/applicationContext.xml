@@ -10,7 +10,7 @@
             http://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:property-placeholder location="classpath:redis/redis.properties" />
-    <context:component-scan base-package="org.example.redis.dao"/>
+    <context:component-scan base-package="com.example.redis.dao"/>
     <bean id="poolConfig" class="redis.clients.jedis.JedisPoolConfig">
         <property name="maxIdle" value="${redis.maxIdle}" />
         <property name="maxWaitMillis" value="${redis.maxWait}" />
@@ -26,5 +26,5 @@
         <property name="connectionFactory"   ref="connectionFactory" />
     </bean>
 
-    <bean id="userDAO" class="org.example.redis.dao.impl.UserDAOImpl" />
+    <bean id="userDAO" class="com.example.redis.dao.impl.UserDAOImpl" />
 </beans>

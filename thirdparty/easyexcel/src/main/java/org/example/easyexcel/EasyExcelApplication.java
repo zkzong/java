@@ -1,4 +1,4 @@
-package org.example.easyexcel;
+package com.example.easyexcel;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

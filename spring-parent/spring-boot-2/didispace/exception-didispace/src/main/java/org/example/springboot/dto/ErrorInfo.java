@@ -1,4 +1,4 @@
-package org.example.springboot.dto;
+package com.example.springboot.dto;
 
 /**
  * Created by Zong on 2017/4/24.

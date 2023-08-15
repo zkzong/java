@@ -1,9 +1,9 @@
-package org.example.aop.datalog;
+package com.example.aop.datalog;
 
-import org.example.aop.domain.Action;
-import org.example.aop.domain.ActionType;
-import org.example.aop.domain.ChangeItem;
-import org.example.aop.util.DiffUtil;
+import com.example.aop.domain.Action;
+import com.example.aop.domain.ActionType;
+import com.example.aop.domain.ChangeItem;
+import com.example.aop.util.DiffUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.beanutils.PropertyUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -23,12 +23,12 @@ public class DatalogAspect {
     @Autowired
     ActionDao actionDao;
 
-    @Pointcut("execution(public * org.example.aop.dao.*.save*(..))")
+    @Pointcut("execution(public * com.example.aop.dao.*.save*(..))")
     public void save() {
 
     }
 
-    @Pointcut("execution(public * org.example.aop.dao.*.delete*(..))")
+    @Pointcut("execution(public * com.example.aop.dao.*.delete*(..))")
     public void delete() {
 
     }

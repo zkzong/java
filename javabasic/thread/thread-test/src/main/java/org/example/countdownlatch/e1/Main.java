@@ -1,4 +1,4 @@
-package org.example.countdownlatch.e1;
+package com.example.countdownlatch.e1;
 
 public class Main {
     public static void main(String[] args) {

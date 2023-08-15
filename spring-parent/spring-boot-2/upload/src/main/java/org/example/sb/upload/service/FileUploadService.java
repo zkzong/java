@@ -1,4 +1,4 @@
-package org.example.sb.upload.service;
+package com.example.sb.upload.service;
 
 import org.springframework.web.multipart.MultipartFile;
 

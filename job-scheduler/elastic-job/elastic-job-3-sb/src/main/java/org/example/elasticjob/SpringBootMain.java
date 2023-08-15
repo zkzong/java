@@ -1,6 +1,6 @@
-package org.example.elasticjob;
+package com.example.elasticjob;
 
-import org.example.elasticjob.zk.EmbedZookeeperServer;
+import com.example.elasticjob.zk.EmbedZookeeperServer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

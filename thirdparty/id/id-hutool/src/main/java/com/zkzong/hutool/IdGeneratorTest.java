@@ -1,4 +1,4 @@
-package org.example.hutool;
+package com.example.hutool;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package org.example.collection.set;
+package com.example.collection.set;
 
 /**
  * Created by Zong on 2017/5/4.

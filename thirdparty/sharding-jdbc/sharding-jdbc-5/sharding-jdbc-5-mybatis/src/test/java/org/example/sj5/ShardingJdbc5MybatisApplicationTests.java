@@ -1,4 +1,4 @@
-package org.example.sj5;
+package com.example.sj5;
 
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;

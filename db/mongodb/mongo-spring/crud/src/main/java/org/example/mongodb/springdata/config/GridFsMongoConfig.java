@@ -1,4 +1,4 @@
-package org.example.mongodb.springdata.config;
+package com.example.mongodb.springdata.config;
 
 import com.mongodb.Mongo;
 import com.mongodb.MongoClient;

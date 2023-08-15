@@ -1,4 +1,4 @@
-package org.example.itext.sign;
+package com.example.itext.sign;
 
 import com.itextpdf.text.Image;
 import com.itextpdf.text.Rectangle;

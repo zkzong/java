@@ -1,4 +1,4 @@
-package org.example.log.bo;
+package com.example.log.bo;
 
 import lombok.Data;
 

@@ -1,4 +1,4 @@
-package org.example.hutool.crypto;
+package com.example.hutool.crypto;
 
 import cn.hutool.core.codec.Base64;
 import cn.hutool.core.util.CharsetUtil;

@@ -1,6 +1,6 @@
-package org.example.springboot.exception;
+package com.example.springboot.exception;
 
-import org.example.springboot.dto.ErrorInfo;
+import com.example.springboot.dto.ErrorInfo;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;

@@ -1,4 +1,4 @@
-package org.example.sb.mybatis.config;
+package com.example.sb.mybatis.config;
 
 import com.github.pagehelper.PageHelper;
 import org.apache.ibatis.plugin.Interceptor;
@@ -29,7 +29,7 @@ public class MyBatisConfig implements TransactionManagementConfigurer {
     public SqlSessionFactory sqlSessionFactoryBean() {
         SqlSessionFactoryBean bean = new SqlSessionFactoryBean();
         bean.setDataSource(dataSource);
-        bean.setTypeAliasesPackage("org.example.sb.mybatis.domain");
+        bean.setTypeAliasesPackage("com.example.sb.mybatis.domain");
 
         // 分页插件
         PageHelper pageHelper = new PageHelper();

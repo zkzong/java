@@ -1,4 +1,4 @@
-package org.example.mq.callback;
+package com.example.mq.callback;
 
 import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;

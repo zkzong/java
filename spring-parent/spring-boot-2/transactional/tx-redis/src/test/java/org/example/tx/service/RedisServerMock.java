@@ -1,4 +1,4 @@
-package org.example.tx.service;
+package com.example.tx.service;
 
 import org.springframework.stereotype.Component;
 import redis.embedded.RedisServer;

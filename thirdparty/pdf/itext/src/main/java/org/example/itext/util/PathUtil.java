@@ -1,4 +1,4 @@
-package org.example.itext.util;
+package com.example.itext.util;
 
 import java.io.File;
 

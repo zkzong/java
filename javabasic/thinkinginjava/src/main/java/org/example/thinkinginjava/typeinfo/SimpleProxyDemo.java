@@ -1,6 +1,6 @@
-package org.example.thinkinginjava.typeinfo;
+package com.example.thinkinginjava.typeinfo;
 
-import static org.example.thinkinginjava.util.Print.print;
+import static com.example.thinkinginjava.util.Print.print;
 
 /**
  * Created by Zong on 2016/9/20.

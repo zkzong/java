@@ -1,6 +1,6 @@
-package org.example.thinkinginjava.annotations;
+package com.example.thinkinginjava.annotations;
 
-import org.example.thinkinginjava.atunit.Test;
+import com.example.thinkinginjava.atunit.Test;
 
 /**
  * Created by Zong on 2016/9/14.

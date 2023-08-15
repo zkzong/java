@@ -1,4 +1,4 @@
-package org.example.test.inner;
+package com.example.test.inner;
 
 /**
  * Created by Zong on 2016/7/27.

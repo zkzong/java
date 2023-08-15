@@ -1,4 +1,4 @@
-package org.example.mapstruct;
+package com.example.mapstruct;
 
 import org.junit.Test;
 import org.mapstruct.factory.Mappers;

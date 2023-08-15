@@ -53,7 +53,7 @@
         <property name="connectionFactory" ref="jedisConnectionFactory"/>
     </bean>
 
-    <bean id="redisUtil" class="org.example.redis.RedisUtil">
+    <bean id="redisUtil" class="com.example.redis.RedisUtil">
         <constructor-arg name="redisTemplate" ref="redisTemplate"/>
     </bean>
 

@@ -1,8 +1,8 @@
-package org.example.sb.dto;
+package com.example.sb.dto;
 
-import org.example.sb.annotation.EnumString;
-import org.example.sb.annotation.IdentityCardNumber;
-import org.example.sb.dto.assist.Update;
+import com.example.sb.annotation.EnumString;
+import com.example.sb.annotation.IdentityCardNumber;
+import com.example.sb.dto.assist.Update;
 import lombok.Data;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.Length;

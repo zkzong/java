@@ -1,4 +1,4 @@
-package org.example.copy;
+package com.example.copy;
 
 public class Person implements Cloneable {
     private Address address;

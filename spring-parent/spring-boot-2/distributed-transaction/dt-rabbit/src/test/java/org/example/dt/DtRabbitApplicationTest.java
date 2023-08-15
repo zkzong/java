@@ -1,4 +1,4 @@
-package org.example.dt;
+package com.example.dt;
 
 public class DtRabbitApplicationTest {
 

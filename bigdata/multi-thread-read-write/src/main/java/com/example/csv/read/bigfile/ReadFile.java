@@ -1,4 +1,4 @@
-package org.example.csv.read.bigfile;
+package com.example.csv.read.bigfile;
 
 import cn.hutool.core.util.StrUtil;
 

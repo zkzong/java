@@ -1,4 +1,4 @@
-package org.example.exception;
+package com.example.exception;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

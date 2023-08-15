@@ -1,7 +1,7 @@
-package org.example.mp.mapper;
+package com.example.mp.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import org.example.mp.entity.TUser;
+import com.example.mp.entity.TUser;
 import org.apache.ibatis.annotations.Select;
 
 /**

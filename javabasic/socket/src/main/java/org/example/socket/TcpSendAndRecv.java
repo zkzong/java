@@ -1,4 +1,4 @@
-package org.example.socket;
+package com.example.socket;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

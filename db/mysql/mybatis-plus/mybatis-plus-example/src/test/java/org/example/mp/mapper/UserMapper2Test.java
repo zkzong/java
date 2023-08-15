@@ -1,6 +1,6 @@
-package org.example.mp.mapper;
+package com.example.mp.mapper;
 
-import org.example.mp.entity.TUser;
+import com.example.mp.entity.TUser;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

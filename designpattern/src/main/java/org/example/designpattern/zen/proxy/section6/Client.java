@@ -1,4 +1,4 @@
-package org.example.designpattern.zen.proxy.section6;
+package com.example.designpattern.zen.proxy.section6;
 
 import org.joda.time.DateTime;
 

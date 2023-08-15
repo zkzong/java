@@ -1,4 +1,4 @@
-package org.example.sb.swagger2.domain;
+package com.example.sb.swagger2.domain;
 
 /**
  * Created by Zong on 2017/4/26.

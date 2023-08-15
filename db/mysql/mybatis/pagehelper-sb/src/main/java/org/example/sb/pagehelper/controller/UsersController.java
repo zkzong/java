@@ -1,9 +1,9 @@
-package org.example.sb.pagehelper.controller;
+package com.example.sb.pagehelper.controller;
 
 import com.github.pagehelper.PageInfo;
-import org.example.sb.pagehelper.domain.Users;
-import org.example.sb.pagehelper.domain.UsersDto;
-import org.example.sb.pagehelper.service.UsersService;
+import com.example.sb.pagehelper.domain.Users;
+import com.example.sb.pagehelper.domain.UsersDto;
+import com.example.sb.pagehelper.service.UsersService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

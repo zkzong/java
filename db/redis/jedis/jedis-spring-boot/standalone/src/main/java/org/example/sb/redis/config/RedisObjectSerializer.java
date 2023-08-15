@@ -1,4 +1,4 @@
-package org.example.sb.redis.config;
+package com.example.sb.redis.config;
 
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.core.serializer.support.DeserializingConverter;

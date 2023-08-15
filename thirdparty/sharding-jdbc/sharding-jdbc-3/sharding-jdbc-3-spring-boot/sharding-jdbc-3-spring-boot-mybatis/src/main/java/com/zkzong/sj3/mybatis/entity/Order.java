@@ -1,4 +1,4 @@
-package org.example.sj3.mybatis.entity;
+package com.example.sj3.mybatis.entity;
 
 import lombok.Data;
 

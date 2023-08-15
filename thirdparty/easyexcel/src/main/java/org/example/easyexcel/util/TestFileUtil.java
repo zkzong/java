@@ -1,4 +1,4 @@
-package org.example.easyexcel.util;
+package com.example.easyexcel.util;
 
 import java.io.File;
 import java.io.InputStream;

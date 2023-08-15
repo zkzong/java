@@ -1,8 +1,8 @@
-package org.example.starter.autoconfiguration;
+package com.example.starter.autoconfiguration;
 
-import org.example.starter.format.FormatProcessor;
-import org.example.starter.format.JsonFormatProcessor;
-import org.example.starter.format.StringFormatProcessor;
+import com.example.starter.format.FormatProcessor;
+import com.example.starter.format.JsonFormatProcessor;
+import com.example.starter.format.StringFormatProcessor;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingClass;
 import org.springframework.context.annotation.Bean;

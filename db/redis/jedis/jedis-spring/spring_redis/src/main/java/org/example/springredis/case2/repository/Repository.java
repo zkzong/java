@@ -1,6 +1,6 @@
-package org.example.springredis.case2.repository;
+package com.example.springredis.case2.repository;
 
-import org.example.springredis.case2.domain.DomainObject;
+import com.example.springredis.case2.domain.DomainObject;
 
 import java.util.List;
 

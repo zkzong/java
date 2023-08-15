@@ -1,6 +1,6 @@
-package org.example.nacos.controller;
+package com.example.nacos.controller;
 
-import org.example.nacos.api.EchoClient;
+import com.example.nacos.api.EchoClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

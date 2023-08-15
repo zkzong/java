@@ -1,6 +1,6 @@
-package org.example.rabbit.controller;
+package com.example.rabbit.controller;
 
-import org.example.rabbit.Producer;
+import com.example.rabbit.Producer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

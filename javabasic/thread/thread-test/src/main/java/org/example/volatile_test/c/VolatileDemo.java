@@ -1,4 +1,4 @@
-package org.example.volatile_test.c;
+package com.example.volatile_test.c;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

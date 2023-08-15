@@ -1,4 +1,4 @@
-package org.example.aop.config;
+package com.example.aop.config;
 
 import org.aspectj.lang.annotation.Aspect;
 import org.springframework.stereotype.Component;
@@ -28,7 +28,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ExecutionAspectConfig {
 
-    //@Pointcut("execution(public * org.example.aop.service..*Service.*(..) throws java.lang.IllegalAccessException)")
+    //@Pointcut("execution(public * com.example.aop.service..*Service.*(..) throws java.lang.IllegalAccessException)")
     //public void matchCondition() {
     //}
     //

@@ -1,4 +1,4 @@
-package org.example.designpattern.zen.factory.simplefactory.section5;
+package com.example.designpattern.zen.factory.simplefactory.section5;
 
 import java.lang.reflect.Constructor;
 

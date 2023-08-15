@@ -1,4 +1,4 @@
-package org.example;
+package com.example;
 
 import org.bouncycastle.util.encoders.Base64;
 import org.bouncycastle.util.encoders.UrlBase64;

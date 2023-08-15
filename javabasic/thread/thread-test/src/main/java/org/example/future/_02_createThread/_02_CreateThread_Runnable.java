@@ -1,4 +1,4 @@
-package org.example.future._02_createThread;
+package com.example.future._02_createThread;
 
 
 public class _02_CreateThread_Runnable {

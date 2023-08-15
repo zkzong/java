@@ -1,4 +1,4 @@
-package org.example.pdf;
+package com.example.pdf;
 
 import org.junit.Test;
 

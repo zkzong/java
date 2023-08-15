@@ -1,4 +1,4 @@
-package org.example.sb.schedule;
+package com.example.sb.schedule;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

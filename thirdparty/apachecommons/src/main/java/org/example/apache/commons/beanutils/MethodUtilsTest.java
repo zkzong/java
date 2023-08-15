@@ -1,4 +1,4 @@
-package org.example.apache.commons.beanutils;
+package com.example.apache.commons.beanutils;
 
 import org.apache.commons.beanutils.MethodUtils;
 
@@ -15,7 +15,7 @@ public class MethodUtilsTest {
 
     void getName() {
         try {
-            Class c = Class.forName("org.example.apache.commons.beanutils.Value");
+            Class c = Class.forName("com.example.apache.commons.beanutils.Value");
             Object o = c.newInstance();
             System.out.println(o);
             String value = (String) MethodUtils.invokeMethod(o, "getValue", null);

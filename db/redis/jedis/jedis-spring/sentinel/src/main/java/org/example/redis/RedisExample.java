@@ -1,7 +1,7 @@
-package org.example.redis;
+package com.example.redis;
 
-import org.example.redis.dao.UserDAO;
-import org.example.redis.pojo.User;
+import com.example.redis.dao.UserDAO;
+import com.example.redis.pojo.User;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

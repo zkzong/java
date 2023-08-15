@@ -1,4 +1,4 @@
-package org.example.retry.example2;
+package com.example.retry.example2;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;

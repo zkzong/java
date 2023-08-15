@@ -1,6 +1,6 @@
-package org.example.sb.service;
+package com.example.sb.service;
 
-import org.example.sb.dto.UserDTO;
+import com.example.sb.dto.UserDTO;
 
 public interface UserService {
 

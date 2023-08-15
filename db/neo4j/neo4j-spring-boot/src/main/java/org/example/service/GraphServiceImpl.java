@@ -1,9 +1,9 @@
-package org.example.service;
+package com.example.service;
 
-import org.example.entity.CustomerNode;
-import org.example.entity.CustomerRelation;
-import org.example.repository.CustomerNodeRepository;
-import org.example.repository.CustomerRelationRepository;
+import com.example.entity.CustomerNode;
+import com.example.entity.CustomerRelation;
+import com.example.repository.CustomerNodeRepository;
+import com.example.repository.CustomerRelationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

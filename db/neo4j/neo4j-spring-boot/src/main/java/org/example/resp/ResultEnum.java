@@ -1,4 +1,4 @@
-package org.example.resp;
+package com.example.resp;
 
 public enum ResultEnum {
 

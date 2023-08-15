@@ -1,4 +1,4 @@
-package org.example.call;
+package com.example.call;
 
 import lombok.Data;
 

@@ -1,4 +1,4 @@
-package org.example.innerclass;
+package com.example.innerclass;
 
 /**
  * Created by Zong on 2016/7/27.

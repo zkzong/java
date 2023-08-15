@@ -1,4 +1,4 @@
-package org.example.proxy.pattern;
+package com.example.proxy.pattern;
 
 public class Client {
     public static void main(String[] args) {

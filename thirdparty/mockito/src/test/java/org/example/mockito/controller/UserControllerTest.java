@@ -1,9 +1,9 @@
-package org.example.mockito.controller;
+package com.example.mockito.controller;
 
-import org.example.mockito.entity.User;
-import org.example.mockito.req.UserReq;
-import org.example.mockito.resp.UserResp;
-import org.example.mockito.service.UserService;
+import com.example.mockito.entity.User;
+import com.example.mockito.req.UserReq;
+import com.example.mockito.resp.UserResp;
+import com.example.mockito.service.UserService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

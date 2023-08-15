@@ -1,6 +1,6 @@
-package org.example.service;
+package com.example.service;
 
-import org.example.baseTest.SpringTestCase;
+import com.example.baseTest.SpringTestCase;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 

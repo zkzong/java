@@ -1,4 +1,4 @@
-package org.example.apache.commons.http;
+package com.example.apache.commons.http;
 
 import org.apache.http.HttpEntityEnclosingRequest;
 import org.apache.http.HttpRequest;

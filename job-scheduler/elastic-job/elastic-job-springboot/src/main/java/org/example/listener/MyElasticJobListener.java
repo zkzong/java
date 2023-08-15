@@ -1,4 +1,4 @@
-package org.example.listener;
+package com.example.listener;
 
 import com.dangdang.ddframe.job.executor.ShardingContexts;
 import com.dangdang.ddframe.job.lite.api.listener.ElasticJobListener;

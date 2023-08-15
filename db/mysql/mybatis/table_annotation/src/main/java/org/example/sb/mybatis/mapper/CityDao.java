@@ -1,6 +1,6 @@
-package org.example.sb.mybatis.mapper;
+package com.example.sb.mybatis.mapper;
 
-import org.example.sb.mybatis.domain.City;
+import com.example.sb.mybatis.domain.City;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Result;

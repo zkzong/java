@@ -1,4 +1,4 @@
-package org.example.sb.runner.applicationrunner;
+package com.example.sb.runner.applicationrunner;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

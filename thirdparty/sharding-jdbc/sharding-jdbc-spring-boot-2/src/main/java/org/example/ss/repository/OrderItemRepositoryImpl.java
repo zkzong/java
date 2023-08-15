@@ -1,6 +1,6 @@
-package org.example.ss.repository;
+package com.example.ss.repository;
 
-import org.example.ss.entity.OrderItem;
+import com.example.ss.entity.OrderItem;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;

@@ -1,4 +1,4 @@
-package org.example.thread.synchronize;
+package com.example.thread.synchronize;
 
 /**
  * 当两个并发线程访问同一个对象object中的这个synchronized(this)同步代码块时，一个时间内只能有一个线程得到执行。

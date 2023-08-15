@@ -1,4 +1,4 @@
-package org.example.thinkinginjava.util;
+package com.example.thinkinginjava.util;
 
 /**
  * Created by zong on 2016/8/25.

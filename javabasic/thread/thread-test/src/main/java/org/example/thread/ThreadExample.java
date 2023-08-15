@@ -1,4 +1,4 @@
-package org.example.thread;
+package com.example.thread;
 
 import org.junit.Test;
 

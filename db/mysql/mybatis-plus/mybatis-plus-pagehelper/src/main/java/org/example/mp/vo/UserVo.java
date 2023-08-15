@@ -1,4 +1,4 @@
-package org.example.mp.vo;
+package com.example.mp.vo;
 
 import lombok.Data;
 

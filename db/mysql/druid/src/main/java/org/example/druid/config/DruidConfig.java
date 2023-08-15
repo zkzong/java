@@ -1,4 +1,4 @@
-package org.example.druid.config;
+package com.example.druid.config;
 
 import com.alibaba.druid.support.http.StatViewServlet;
 import com.alibaba.druid.support.http.WebStatFilter;

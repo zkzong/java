@@ -1,7 +1,7 @@
-package org.example.mongodb.seq.dao;
+package com.example.mongodb.seq.dao;
 
-import org.example.mongodb.seq.exception.SequenceException;
-import org.example.mongodb.seq.model.SequenceId;
+import com.example.mongodb.seq.exception.SequenceException;
+import com.example.mongodb.seq.model.SequenceId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.FindAndModifyOptions;
 import org.springframework.data.mongodb.core.MongoOperations;

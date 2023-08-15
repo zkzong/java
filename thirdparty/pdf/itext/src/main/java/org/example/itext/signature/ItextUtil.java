@@ -1,4 +1,4 @@
-package org.example.itext.signature;
+package com.example.itext.signature;
 
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Image;

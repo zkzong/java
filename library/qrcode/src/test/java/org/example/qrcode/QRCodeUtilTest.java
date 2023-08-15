@@ -1,4 +1,4 @@
-package org.example.qrcode;
+package com.example.qrcode;
 
 public class QRCodeUtilTest {
     //测试

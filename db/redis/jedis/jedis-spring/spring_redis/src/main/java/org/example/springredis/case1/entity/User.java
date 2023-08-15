@@ -1,4 +1,4 @@
-package org.example.springredis.case1.entity;
+package com.example.springredis.case1.entity;
 
 import java.io.Serializable;
 

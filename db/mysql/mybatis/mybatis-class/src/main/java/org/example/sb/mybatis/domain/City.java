@@ -1,4 +1,4 @@
-package org.example.sb.mybatis.domain;
+package com.example.sb.mybatis.domain;
 
 /**
  * Created by Zong on 2017/6/5.

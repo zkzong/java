@@ -1,4 +1,4 @@
-package org.example.thinkinginjava.atunit;
+package com.example.thinkinginjava.atunit;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

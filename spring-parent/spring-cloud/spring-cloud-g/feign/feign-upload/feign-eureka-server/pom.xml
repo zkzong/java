@@ -3,7 +3,7 @@
 
     <parent>
         <artifactId>feign-upload</artifactId>
-        <groupId>org.example</groupId>
+        <groupId>com.example</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 

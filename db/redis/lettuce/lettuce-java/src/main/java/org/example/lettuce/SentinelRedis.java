@@ -1,4 +1,4 @@
-package org.example.lettuce;
+package com.example.lettuce;
 
 import io.lettuce.core.RedisClient;
 import io.lettuce.core.RedisURI;

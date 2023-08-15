@@ -1,7 +1,7 @@
-package org.example.sb.mybatis.controller;
+package com.example.sb.mybatis.controller;
 
 import com.alibaba.fastjson.JSONObject;
-import org.example.sb.mybatis.domain.Users;
+import com.example.sb.mybatis.domain.Users;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Before;
 import org.junit.Test;

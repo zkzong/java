@@ -1,4 +1,4 @@
-package org.example.sb.transaction.domain;
+package com.example.sb.transaction.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

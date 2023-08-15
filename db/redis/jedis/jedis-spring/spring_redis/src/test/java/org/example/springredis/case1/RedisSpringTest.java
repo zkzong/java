@@ -1,7 +1,7 @@
-package org.example.springredis.case1;
+package com.example.springredis.case1;
 
-import org.example.springredis.case1.dao.IUserDao;
-import org.example.springredis.case1.entity.User;
+import com.example.springredis.case1.dao.IUserDao;
+import com.example.springredis.case1.entity.User;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;

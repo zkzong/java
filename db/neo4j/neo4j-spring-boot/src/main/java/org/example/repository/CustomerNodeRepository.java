@@ -1,6 +1,6 @@
-package org.example.repository;
+package com.example.repository;
 
-import org.example.entity.CustomerNode;
+import com.example.entity.CustomerNode;
 import org.springframework.data.neo4j.annotation.Query;
 import org.springframework.data.neo4j.repository.Neo4jRepository;
 

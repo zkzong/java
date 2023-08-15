@@ -1,4 +1,4 @@
-package org.example.proxy.pattern;
+package com.example.proxy.pattern;
 
 public class Proxy implements Subject {
     private RealSubject realSubject;

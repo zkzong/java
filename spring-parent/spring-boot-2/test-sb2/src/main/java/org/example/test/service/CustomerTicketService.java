@@ -1,7 +1,7 @@
-package org.example.test.service;
+package com.example.test.service;
 
-import org.example.test.domain.CustomerTicket;
-import org.example.test.repository.CustomerTicketRepository;
+import com.example.test.domain.CustomerTicket;
+import com.example.test.repository.CustomerTicketRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

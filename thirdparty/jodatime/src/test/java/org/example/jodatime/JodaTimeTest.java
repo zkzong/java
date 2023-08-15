@@ -1,4 +1,4 @@
-package org.example.jodatime;
+package com.example.jodatime;
 
 import org.joda.time.DateTime;
 import org.joda.time.DateTimeConstants;

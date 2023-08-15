@@ -1,4 +1,4 @@
-package org.example.mongodb.config;
+package com.example.mongodb.config;
 
 import com.mongodb.MongoClient;
 import com.mongodb.WriteConcern;

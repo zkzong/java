@@ -1,7 +1,7 @@
-package org.example.proxy.cglib;
+package com.example.proxy.cglib;
 
-import org.example.proxy.pattern.RealSubject;
-import org.example.proxy.pattern.Subject;
+import com.example.proxy.pattern.RealSubject;
+import com.example.proxy.pattern.Subject;
 import net.sf.cglib.proxy.Enhancer;
 
 public class Client {

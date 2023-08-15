@@ -1,4 +1,4 @@
-package org.example.mq.callback;
+package com.example.mq.callback;
 
 import org.springframework.amqp.rabbit.connection.CorrelationData;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;

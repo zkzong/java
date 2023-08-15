@@ -1,8 +1,8 @@
-package org.example.designpattern.zen.DynamicProxy.section2;
+package com.example.designpattern.zen.DynamicProxy.section2;
 
-import org.example.designpattern.zen.DynamicProxy.section1.DynamicProxy;
-import org.example.designpattern.zen.DynamicProxy.section1.MyInvocationHandler;
-import org.example.designpattern.zen.DynamicProxy.section1.Subject;
+import com.example.designpattern.zen.DynamicProxy.section1.DynamicProxy;
+import com.example.designpattern.zen.DynamicProxy.section1.MyInvocationHandler;
+import com.example.designpattern.zen.DynamicProxy.section1.Subject;
 
 import java.lang.reflect.InvocationHandler;
 

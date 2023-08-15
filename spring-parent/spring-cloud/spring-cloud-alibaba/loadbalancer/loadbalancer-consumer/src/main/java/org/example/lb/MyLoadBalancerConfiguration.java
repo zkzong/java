@@ -1,4 +1,4 @@
-package org.example.lb;
+package com.example.lb;
 
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.loadbalancer.core.ReactorLoadBalancer;

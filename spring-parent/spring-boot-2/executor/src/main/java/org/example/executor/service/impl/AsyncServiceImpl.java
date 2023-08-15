@@ -1,6 +1,6 @@
-package org.example.executor.service.impl;
+package com.example.executor.service.impl;
 
-import org.example.executor.service.AsyncService;
+import com.example.executor.service.AsyncService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.Async;

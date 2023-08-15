@@ -1,4 +1,4 @@
-package org.example.pdf;
+package com.example.pdf;
 
 import com.itextpdf.text.pdf.PdfReader;
 import org.apache.pdfbox.pdmodel.PDDocument;

@@ -1,7 +1,7 @@
-package org.example.http.controller;
+package com.example.http.controller;
 
 import com.alibaba.fastjson.JSON;
-import org.example.http.entity.User;
+import com.example.http.entity.User;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

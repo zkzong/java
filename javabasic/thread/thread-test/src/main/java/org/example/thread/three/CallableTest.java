@@ -1,4 +1,4 @@
-package org.example.thread.three;
+package com.example.thread.three;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;

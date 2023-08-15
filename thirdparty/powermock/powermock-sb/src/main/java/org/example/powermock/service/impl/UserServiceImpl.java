@@ -1,11 +1,11 @@
-package org.example.powermock.service.impl;
+package com.example.powermock.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import org.example.powermock.entity.User;
-import org.example.powermock.mapper.UserMapper;
-import org.example.powermock.req.UserReq;
-import org.example.powermock.service.UserService;
+import com.example.powermock.entity.User;
+import com.example.powermock.mapper.UserMapper;
+import com.example.powermock.req.UserReq;
+import com.example.powermock.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

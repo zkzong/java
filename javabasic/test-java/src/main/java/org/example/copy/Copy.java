@@ -1,4 +1,4 @@
-package org.example.copy;
+package com.example.copy;
 
 import lombok.Data;
 import org.junit.Test;

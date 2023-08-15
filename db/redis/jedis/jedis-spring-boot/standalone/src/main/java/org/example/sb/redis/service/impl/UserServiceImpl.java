@@ -1,8 +1,8 @@
-package org.example.sb.redis.service.impl;
+package com.example.sb.redis.service.impl;
 
-import org.example.sb.redis.domain.User;
-import org.example.sb.redis.mapper.UserMapper;
-import org.example.sb.redis.service.UserService;
+import com.example.sb.redis.domain.User;
+import com.example.sb.redis.mapper.UserMapper;
+import com.example.sb.redis.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;

@@ -1,7 +1,7 @@
-package org.example.ss.service;
+package com.example.ss.service;
 
-import org.example.ss.entity.UserNoSharding;
-import org.example.ss.repository.UserNoShardingRepository;
+import com.example.ss.entity.UserNoSharding;
+import com.example.ss.repository.UserNoShardingRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

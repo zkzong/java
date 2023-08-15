@@ -1,4 +1,4 @@
-package org.example.sb2.rabbitmq.ack;
+package com.example.sb2.rabbitmq.ack;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

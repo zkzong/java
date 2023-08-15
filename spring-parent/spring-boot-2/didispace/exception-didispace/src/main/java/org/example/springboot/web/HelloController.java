@@ -1,6 +1,6 @@
-package org.example.springboot.web;
+package com.example.springboot.web;
 
-import org.example.springboot.exception.MyException;
+import com.example.springboot.exception.MyException;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;

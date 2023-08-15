@@ -1,4 +1,4 @@
-package org.example.designpattern.proxy;
+package com.example.designpattern.proxy;
 
 /**
  * Created by zong on 2016/8/9.

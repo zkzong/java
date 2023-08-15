@@ -1,4 +1,4 @@
-package org.example.jdk8.stream;
+package com.example.jdk8.stream;
 
 import lombok.Data;
 

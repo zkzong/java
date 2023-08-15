@@ -1,6 +1,6 @@
-package org.example.reflect.example;
+package com.example.reflect.example;
 
-import org.example.reflect.example.pojo.Son;
+import com.example.reflect.example.pojo.Son;
 import org.junit.Test;
 
 import java.util.Map;

@@ -1,9 +1,9 @@
-package org.example.thinkinginjava.generics;
+package com.example.thinkinginjava.generics;
 
-import org.example.thinkinginjava.util.FiveTuple;
-import org.example.thinkinginjava.util.FourTuple;
-import org.example.thinkinginjava.util.ThreeTuple;
-import org.example.thinkinginjava.util.TwoTuple;
+import com.example.thinkinginjava.util.FiveTuple;
+import com.example.thinkinginjava.util.FourTuple;
+import com.example.thinkinginjava.util.ThreeTuple;
+import com.example.thinkinginjava.util.TwoTuple;
 
 /**
  * Created by Zong on 2016/8/27.

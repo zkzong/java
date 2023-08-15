@@ -1,4 +1,4 @@
-package org.example.lettuce.config.expired.onedb;
+package com.example.lettuce.config.expired.onedb;
 
 import org.springframework.data.redis.connection.Message;
 import org.springframework.data.redis.connection.MessageListener;

@@ -1,4 +1,4 @@
-package org.example.aop.domain;
+package com.example.aop.domain;
 
 public enum ActionType {
 

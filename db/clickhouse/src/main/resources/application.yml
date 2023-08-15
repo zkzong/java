@@ -25,4 +25,4 @@ mybatis-plus:
     use-generated-keys: true
     default-statement-timeout: 60
     default-fetch-size: 100
-  type-aliases-package: org.example.clickhouse.pojo
+  type-aliases-package: com.example.clickhouse.pojo

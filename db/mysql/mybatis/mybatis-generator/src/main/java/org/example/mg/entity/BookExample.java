@@ -1,4 +1,4 @@
-package org.example.mg.entity;
+package com.example.mg.entity;
 
 import java.util.ArrayList;
 import java.util.Date;

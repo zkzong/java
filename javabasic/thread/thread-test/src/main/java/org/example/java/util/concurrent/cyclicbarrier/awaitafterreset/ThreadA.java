@@ -1,4 +1,4 @@
-package org.example.java.util.concurrent.cyclicbarrier.awaitafterreset;
+package com.example.java.util.concurrent.cyclicbarrier.awaitafterreset;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;

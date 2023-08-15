@@ -1,7 +1,7 @@
-package org.example.sb.controller;
+package com.example.sb.controller;
 
-import org.example.sb.pojo.User;
-import org.example.sb.repository.UserJpaRepository;
+import com.example.sb.pojo.User;
+import com.example.sb.repository.UserJpaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

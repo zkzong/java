@@ -1,4 +1,4 @@
-package org.example.rabbit.delay.config;
+package com.example.rabbit.delay.config;
 
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;

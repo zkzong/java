@@ -1,6 +1,6 @@
-package org.example.sb.repository;
+package com.example.sb.repository;
 
-import org.example.sb.pojo.User;
+import com.example.sb.pojo.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

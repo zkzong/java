@@ -1,4 +1,4 @@
-package org.example.powermock.req;
+package com.example.powermock.req;
 
 import lombok.Data;
 

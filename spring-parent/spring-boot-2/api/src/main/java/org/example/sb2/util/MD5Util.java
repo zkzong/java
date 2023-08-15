@@ -1,4 +1,4 @@
-package org.example.sb2.util;
+package com.example.sb2.util;
 
 import java.security.MessageDigest;
 

@@ -1,4 +1,4 @@
-package org.example.sb.dto;
+package com.example.sb.dto;
 
 import lombok.Data;
 import org.apache.http.HttpStatus;

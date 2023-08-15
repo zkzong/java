@@ -1,4 +1,4 @@
-package org.example.sb3;
+package com.example.sb3;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

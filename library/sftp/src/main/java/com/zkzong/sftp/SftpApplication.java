@@ -1,4 +1,4 @@
-package org.example.sftp;
+package com.example.sftp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

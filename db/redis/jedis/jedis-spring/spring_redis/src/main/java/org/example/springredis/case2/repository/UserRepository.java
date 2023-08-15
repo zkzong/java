@@ -1,6 +1,6 @@
-package org.example.springredis.case2.repository;
+package com.example.springredis.case2.repository;
 
-import org.example.springredis.case2.domain.User;
+import com.example.springredis.case2.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 

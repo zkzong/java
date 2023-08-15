@@ -1,4 +1,4 @@
-package org.example.nacos.controller;
+package com.example.nacos.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;

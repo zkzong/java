@@ -16,7 +16,7 @@
             </encoder>
         </appender>
 
-        <logger name="org.example.springboot" level="debug"/>
+        <logger name="com.example.springboot" level="debug"/>
 
         <root level="info">
             <appender-ref ref="CONSOLE" />

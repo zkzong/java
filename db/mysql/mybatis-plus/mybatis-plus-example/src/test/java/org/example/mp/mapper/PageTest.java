@@ -1,9 +1,9 @@
-package org.example.mp.mapper;
+package com.example.mp.mapper;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import org.example.mp.entity.TUser;
+import com.example.mp.entity.TUser;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

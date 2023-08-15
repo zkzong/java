@@ -1,4 +1,4 @@
-package org.example.sb.sentinel.vo;
+package com.example.sb.sentinel.vo;
 
 import lombok.Data;
 import lombok.ToString;

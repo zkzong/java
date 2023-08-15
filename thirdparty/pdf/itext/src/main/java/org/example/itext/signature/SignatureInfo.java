@@ -1,4 +1,4 @@
-package org.example.itext.signature;
+package com.example.itext.signature;
 
 import com.itextpdf.text.pdf.PdfSignatureAppearance;
 import com.itextpdf.text.pdf.security.MakeSignature;

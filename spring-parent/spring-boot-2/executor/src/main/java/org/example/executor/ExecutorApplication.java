@@ -1,4 +1,4 @@
-package org.example.executor;
+package com.example.executor;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

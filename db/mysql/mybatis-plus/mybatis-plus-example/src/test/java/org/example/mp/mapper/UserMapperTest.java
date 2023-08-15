@@ -1,7 +1,7 @@
-package org.example.mp.mapper;
+package com.example.mp.mapper;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import org.example.mp.entity.TUser;
+import com.example.mp.entity.TUser;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

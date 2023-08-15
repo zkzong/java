@@ -1,4 +1,4 @@
-package org.example.hutool.http;
+package com.example.hutool.http;
 
 import cn.hutool.http.ContentType;
 import cn.hutool.http.Header;

@@ -1,4 +1,4 @@
-package org.example.sb2.pojo;
+package com.example.sb2.pojo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

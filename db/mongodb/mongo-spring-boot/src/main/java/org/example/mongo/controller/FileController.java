@@ -1,7 +1,7 @@
-package org.example.mongo.controller;
+package com.example.mongo.controller;
 
-import org.example.mongo.entity.FileVo;
-import org.example.mongo.repository.FileRepository;
+import com.example.mongo.entity.FileVo;
+import com.example.mongo.repository.FileRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

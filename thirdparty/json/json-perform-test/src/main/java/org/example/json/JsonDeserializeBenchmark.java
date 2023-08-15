@@ -1,10 +1,10 @@
-package org.example.json;
+package com.example.json;
 
-import org.example.json.model.Person;
-import org.example.json.util.FastJsonUtil;
-import org.example.json.util.GsonUtil;
-import org.example.json.util.JacksonUtil;
-import org.example.json.util.JsonLibUtil;
+import com.example.json.model.Person;
+import com.example.json.util.FastJsonUtil;
+import com.example.json.util.GsonUtil;
+import com.example.json.util.JacksonUtil;
+import com.example.json.util.JsonLibUtil;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
 import org.openjdk.jmh.annotations.Mode;

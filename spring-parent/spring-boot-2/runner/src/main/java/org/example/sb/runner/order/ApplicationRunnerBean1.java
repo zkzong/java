@@ -1,4 +1,4 @@
-package org.example.sb.runner.order;
+package com.example.sb.runner.order;
 
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;

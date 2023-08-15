@@ -1,4 +1,4 @@
-package org.example.java.util.concurrent.atomic;
+package com.example.java.util.concurrent.atomic;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

@@ -1,4 +1,4 @@
-package org.example.mongodb.seq.exception;
+package com.example.mongodb.seq.exception;
 
 public class SequenceException extends RuntimeException {
 

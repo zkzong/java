@@ -1,4 +1,4 @@
-package org.example.threadlocal;
+package com.example.threadlocal;
 
 public class ThreadLocalTest {
 

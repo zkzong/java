@@ -1,4 +1,4 @@
-package org.example.filetype.e2;
+package com.example.filetype.e2;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

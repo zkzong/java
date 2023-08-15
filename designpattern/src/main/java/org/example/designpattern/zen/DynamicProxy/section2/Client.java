@@ -1,7 +1,7 @@
-package org.example.designpattern.zen.DynamicProxy.section2;
+package com.example.designpattern.zen.DynamicProxy.section2;
 
-import org.example.designpattern.zen.DynamicProxy.section1.RealSubject;
-import org.example.designpattern.zen.DynamicProxy.section1.Subject;
+import com.example.designpattern.zen.DynamicProxy.section1.RealSubject;
+import com.example.designpattern.zen.DynamicProxy.section1.Subject;
 
 /**
  * Created by Zong on 2016/11/9.

@@ -1,7 +1,7 @@
-package org.example.sb.sentinel;
+package com.example.sb.sentinel;
 
-import org.example.sb.sentinel.service.RedisService;
-import org.example.sb.sentinel.vo.Student;
+import com.example.sb.sentinel.service.RedisService;
+import com.example.sb.sentinel.vo.Student;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

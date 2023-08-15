@@ -1,6 +1,6 @@
-package org.example.thinkinginjava.typeinfo;
+package com.example.thinkinginjava.typeinfo;
 
-import org.example.thinkinginjava.util.Null;
+import com.example.thinkinginjava.util.Null;
 
 /**
  * Created by Zong on 2016/9/20.

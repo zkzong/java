@@ -1,9 +1,9 @@
-package org.example.starrocks.mapper;
+package com.example.starrocks.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Param;
-import org.example.starrocks.entity.SrOnMac;
+import com.example.starrocks.entity.SrOnMac;
 
 public interface SrOnMacMapper extends BaseMapper<SrOnMac> {
 

@@ -1,4 +1,4 @@
-package org.example.threadlocal;
+package com.example.threadlocal;
 
 /**
  * Created by Zong on 2017/4/14.

@@ -1,6 +1,6 @@
-package org.example.springboot.controller;
+package com.example.springboot.controller;
 
-import org.example.springboot.bean.User;
+import com.example.springboot.bean.User;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;

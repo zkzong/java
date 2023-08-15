@@ -1,6 +1,6 @@
-package org.example.sb2.util;
+package com.example.sb2.util;
 
-import org.example.sb2.annotation.NotRepeatSubmit;
+import com.example.sb2.annotation.NotRepeatSubmit;
 import org.springframework.web.method.HandlerMethod;
 
 import javax.servlet.http.HttpServletRequest;

@@ -1,4 +1,4 @@
-package org.example.log.anno;
+package com.example.log.anno;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

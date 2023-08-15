@@ -1,6 +1,6 @@
-package org.example.sb.upload.service.impl;
+package com.example.sb.upload.service.impl;
 
-import org.example.sb.upload.service.FileUploadService;
+import com.example.sb.upload.service.FileUploadService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;

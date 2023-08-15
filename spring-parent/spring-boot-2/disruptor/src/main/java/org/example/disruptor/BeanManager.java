@@ -1,4 +1,4 @@
-package org.example.disruptor;
+package com.example.disruptor;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;

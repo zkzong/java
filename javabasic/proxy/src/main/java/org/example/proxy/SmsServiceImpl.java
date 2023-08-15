@@ -1,4 +1,4 @@
-package org.example.proxy;
+package com.example.proxy;
 
 public class SmsServiceImpl implements SmsService {
     public String send(String message) {

@@ -1,4 +1,4 @@
-package org.example.lettuce;
+package com.example.lettuce;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

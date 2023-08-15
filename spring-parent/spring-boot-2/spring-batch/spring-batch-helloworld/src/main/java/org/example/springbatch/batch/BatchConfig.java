@@ -1,4 +1,4 @@
-package org.example.springbatch.batch;
+package com.example.springbatch.batch;
 
 import org.springframework.batch.core.configuration.annotation.DefaultBatchConfigurer;
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;

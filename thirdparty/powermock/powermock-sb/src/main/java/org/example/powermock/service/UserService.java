@@ -1,8 +1,8 @@
-package org.example.powermock.service;
+package com.example.powermock.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import org.example.powermock.entity.User;
-import org.example.powermock.req.UserReq;
+import com.example.powermock.entity.User;
+import com.example.powermock.req.UserReq;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
-package org.example.springbatch;
+package com.example.springbatch;
 
-import org.example.springbatch.batch.BatchConfig;
-import org.example.springbatch.batch.HelloWorldJobConfig;
+import com.example.springbatch.batch.BatchConfig;
+import com.example.springbatch.batch.HelloWorldJobConfig;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.batch.core.Job;

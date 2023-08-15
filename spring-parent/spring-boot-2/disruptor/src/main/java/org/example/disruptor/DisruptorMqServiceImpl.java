@@ -1,8 +1,8 @@
-package org.example.disruptor;
+package com.example.disruptor;
 
 import com.lmax.disruptor.RingBuffer;
 import lombok.extern.slf4j.Slf4j;
-import org.example.disruptor.model.MessageModel;
+import com.example.disruptor.model.MessageModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;

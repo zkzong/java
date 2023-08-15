@@ -1,4 +1,4 @@
-package org.example.itext.sign.bean;
+package com.example.itext.sign.bean;
 
 public class KeyWordBean implements Comparable {
     public KeyWordBean() {

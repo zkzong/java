@@ -1,4 +1,4 @@
-package org.example.sb.pagehelper;
+package com.example.sb.pagehelper;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

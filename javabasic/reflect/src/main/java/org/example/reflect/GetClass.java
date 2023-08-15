@@ -1,4 +1,4 @@
-package org.example.reflect;
+package com.example.reflect;
 
 /**
  * Created by Zong on 2016/11/22.
@@ -7,7 +7,7 @@ public class GetClass {
     public static void main(String[] args) {
         // 第一种方法：forName
         try {
-            Class<?> class1 = Class.forName("org.example.reflect.Person");
+            Class<?> class1 = Class.forName("com.example.reflect.Person");
             System.out.println(class1);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();

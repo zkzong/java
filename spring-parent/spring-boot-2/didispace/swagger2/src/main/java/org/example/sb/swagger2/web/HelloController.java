@@ -1,4 +1,4 @@
-package org.example.sb.swagger2.web;
+package com.example.sb.swagger2.web;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

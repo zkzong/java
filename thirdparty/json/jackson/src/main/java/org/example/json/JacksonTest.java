@@ -1,11 +1,11 @@
-package org.example.json;
+package com.example.json;
 
 import com.fasterxml.jackson.core.JsonEncoding;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
-import org.example.json.entity.AccountBean;
+import com.example.json.entity.AccountBean;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

@@ -1,6 +1,6 @@
-package org.example.sb.sentinel.service;
+package com.example.sb.sentinel.service;
 
-import org.example.sb.sentinel.vo.Student;
+import com.example.sb.sentinel.vo.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;

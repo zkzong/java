@@ -1,9 +1,9 @@
-package org.example.powermock.controller;
+package com.example.powermock.controller;
 
-import org.example.powermock.entity.User;
-import org.example.powermock.req.UserReq;
-import org.example.powermock.resp.UserResp;
-import org.example.powermock.service.UserService;
+import com.example.powermock.entity.User;
+import com.example.powermock.req.UserReq;
+import com.example.powermock.resp.UserResp;
+import com.example.powermock.service.UserService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

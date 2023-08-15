@@ -1,4 +1,4 @@
-package org.example.algorithm.sort;
+package com.example.algorithm.sort;
 
 import org.junit.Test;
 

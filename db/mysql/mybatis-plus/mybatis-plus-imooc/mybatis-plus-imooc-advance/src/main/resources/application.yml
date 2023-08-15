@@ -10,7 +10,7 @@ spring:
 logging:
   level:
     root: warn
-    org.example.mp.dao: trace
+    com.example.mp.dao: trace
   pattern:
     console: '%p%m%n'
 

@@ -1,6 +1,6 @@
-package org.example.sb.annotation.impl;
+package com.example.sb.annotation.impl;
 
-import org.example.sb.annotation.EnumString;
+import com.example.sb.annotation.EnumString;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;

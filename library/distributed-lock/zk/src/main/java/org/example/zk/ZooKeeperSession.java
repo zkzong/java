@@ -1,4 +1,4 @@
-//package org.example.zk;
+//package com.example.zk;
 //
 //import org.apache.zookeeper.CreateMode;
 //import org.apache.zookeeper.WatchedEvent;

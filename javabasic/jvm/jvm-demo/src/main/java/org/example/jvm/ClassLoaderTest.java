@@ -1,4 +1,4 @@
-package org.example.jvm;
+package com.example.jvm;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -46,11 +46,11 @@ public class ClassLoaderTest {
             }
         };
         // 使用ClassLoaderTest的类加载器加载本类
-        Object obj1 = ClassLoaderTest.class.getClassLoader().loadClass("org.example.jvm.ClassLoaderTest").newInstance();
+        Object obj1 = ClassLoaderTest.class.getClassLoader().loadClass("com.example.jvm.ClassLoaderTest").newInstance();
         System.out.println(obj1.getClass());
         System.out.println(obj1 instanceof ClassLoaderTest);
         // 使用自定义类加载器加载本类
-        Object obj2 = myLoader.loadClass("org.example.jvm.ClassLoaderTest").newInstance();
+        Object obj2 = myLoader.loadClass("com.example.jvm.ClassLoaderTest").newInstance();
         System.out.println(obj2.getClass());
         System.out.println(obj2 instanceof ClassLoaderTest);
     }

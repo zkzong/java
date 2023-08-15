@@ -1,7 +1,7 @@
-package org.example.redis.dao.impl;
+package com.example.redis.dao.impl;
 
-import org.example.redis.dao.UserDAO;
-import org.example.redis.pojo.User;
+import com.example.redis.dao.UserDAO;
+import com.example.redis.pojo.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.data.redis.connection.RedisConnection;

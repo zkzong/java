@@ -1,6 +1,6 @@
-package org.example.sb2.controller;
+package com.example.sb2.controller;
 
-import org.example.sb2.annotation.Limit;
+import com.example.sb2.annotation.Limit;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

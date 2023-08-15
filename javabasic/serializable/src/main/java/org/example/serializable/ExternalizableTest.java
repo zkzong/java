@@ -1,4 +1,4 @@
-package org.example.serializable;
+package com.example.serializable;
 
 import java.io.Externalizable;
 import java.io.File;

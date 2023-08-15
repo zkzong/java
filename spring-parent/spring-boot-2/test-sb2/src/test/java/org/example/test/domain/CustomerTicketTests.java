@@ -1,4 +1,4 @@
-package org.example.test.domain;
+package com.example.test.domain;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

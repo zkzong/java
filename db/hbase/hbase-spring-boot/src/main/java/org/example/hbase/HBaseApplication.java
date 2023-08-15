@@ -1,4 +1,4 @@
-package org.example.hbase;
+package com.example.hbase;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

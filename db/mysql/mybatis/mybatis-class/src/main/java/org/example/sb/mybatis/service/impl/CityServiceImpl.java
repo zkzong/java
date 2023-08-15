@@ -1,8 +1,8 @@
-package org.example.sb.mybatis.service.impl;
+package com.example.sb.mybatis.service.impl;
 
-import org.example.sb.mybatis.dao.CityDao;
-import org.example.sb.mybatis.domain.City;
-import org.example.sb.mybatis.service.CityService;
+import com.example.sb.mybatis.dao.CityDao;
+import com.example.sb.mybatis.domain.City;
+import com.example.sb.mybatis.service.CityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

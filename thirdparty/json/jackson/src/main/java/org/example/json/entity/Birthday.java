@@ -1,4 +1,4 @@
-package org.example.json.entity;
+package com.example.json.entity;
 
 /**
  * Created by Zong on 2017/2/25.

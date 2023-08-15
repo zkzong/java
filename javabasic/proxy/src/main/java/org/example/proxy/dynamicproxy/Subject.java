@@ -1,4 +1,4 @@
-package org.example.proxy.dynamicproxy;
+package com.example.proxy.dynamicproxy;
 
 /**
  * Created by Zong on 2016/7/20.

@@ -1,4 +1,4 @@
-package org.example.sb.exception;
+package com.example.sb.exception;
 
 import lombok.Data;
 

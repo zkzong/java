@@ -1,4 +1,4 @@
-package org.example.mockito;
+package com.example.mockito;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

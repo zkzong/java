@@ -1,4 +1,4 @@
-package org.example.sb2.entity;
+package com.example.sb2.entity;
 
 import lombok.Data;
 

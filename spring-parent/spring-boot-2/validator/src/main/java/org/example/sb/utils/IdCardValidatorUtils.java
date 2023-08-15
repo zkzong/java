@@ -1,4 +1,4 @@
-package org.example.sb.utils;
+package com.example.sb.utils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

@@ -1,4 +1,4 @@
-package org.example.designpattern.gof_quanke_name.simplefactory.chart;
+package com.example.designpattern.gof_quanke_name.simplefactory.chart;
 
 /**
  * Created by Zong on 2016/11/25.

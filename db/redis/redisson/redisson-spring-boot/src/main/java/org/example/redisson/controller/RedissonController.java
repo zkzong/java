@@ -1,4 +1,4 @@
-package org.example.redisson.controller;
+package com.example.redisson.controller;
 
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;

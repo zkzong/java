@@ -1,6 +1,6 @@
-package org.example.sb.upload.controller;
+package com.example.sb.upload.controller;
 
-import org.example.sb.upload.service.FileUploadService;
+import com.example.sb.upload.service.FileUploadService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;

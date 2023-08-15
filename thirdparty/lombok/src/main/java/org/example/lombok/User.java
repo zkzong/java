@@ -1,4 +1,4 @@
-package org.example.lombok;
+package com.example.lombok;
 
 import lombok.Data;
 import lombok.ToString;

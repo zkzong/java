@@ -1,4 +1,4 @@
-package org.example.actuator;
+package com.example.actuator;
 
 import org.springframework.boot.actuate.info.Info;
 import org.springframework.boot.actuate.info.InfoContributor;

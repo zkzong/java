@@ -1,4 +1,4 @@
-package org.example.admin;
+package com.example.admin;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

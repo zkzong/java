@@ -1,4 +1,4 @@
-package org.example.disruptor;
+package com.example.disruptor;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

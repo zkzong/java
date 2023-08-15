@@ -1,6 +1,6 @@
-package org.example.sb.mybatis.mapper;
+package com.example.sb.mybatis.mapper;
 
-import org.example.sb.mybatis.domain.Teacher;
+import com.example.sb.mybatis.domain.Teacher;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

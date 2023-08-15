@@ -1,4 +1,4 @@
-package org.example.mq.user;
+package com.example.mq.user;
 
 import lombok.Data;
 

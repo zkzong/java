@@ -1,4 +1,4 @@
-package org.example.java.util.concurrent.countdownlatch.test1;
+package com.example.java.util.concurrent.countdownlatch.test1;
 
 /**
  * @author zkzong

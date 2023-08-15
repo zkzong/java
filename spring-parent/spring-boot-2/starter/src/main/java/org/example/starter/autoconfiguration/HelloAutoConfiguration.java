@@ -1,7 +1,7 @@
-package org.example.starter.autoconfiguration;
+package com.example.starter.autoconfiguration;
 
-import org.example.starter.HelloFormatTemplate;
-import org.example.starter.format.FormatProcessor;
+import com.example.starter.HelloFormatTemplate;
+import com.example.starter.format.FormatProcessor;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

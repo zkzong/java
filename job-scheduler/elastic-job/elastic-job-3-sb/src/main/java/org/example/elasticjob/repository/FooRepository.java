@@ -1,6 +1,6 @@
-package org.example.elasticjob.repository;
+package com.example.elasticjob.repository;
 
-import org.example.elasticjob.entity.Foo;
+import com.example.elasticjob.entity.Foo;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;

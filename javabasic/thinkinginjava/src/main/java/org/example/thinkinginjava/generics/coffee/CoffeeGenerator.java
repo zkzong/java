@@ -1,6 +1,6 @@
-package org.example.thinkinginjava.generics.coffee;
+package com.example.thinkinginjava.generics.coffee;
 
-import org.example.thinkinginjava.util.Generator;
+import com.example.thinkinginjava.util.Generator;
 
 import java.util.Iterator;
 import java.util.Random;

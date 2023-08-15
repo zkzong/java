@@ -1,4 +1,4 @@
-package org.example.collection;
+package com.example.collection;
 
 import org.junit.Test;
 

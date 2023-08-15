@@ -1,4 +1,4 @@
-package org.example.aop.config;
+package com.example.aop.config;
 
 import org.aspectj.lang.annotation.Aspect;
 import org.springframework.stereotype.Component;
@@ -18,7 +18,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ArgsAspectConfig {
 
-    //@Pointcut("args(Long,String) && within(org.example.aop.service.*)")
+    //@Pointcut("args(Long,String) && within(com.example.aop.service.*)")
     //public void matchArgs() {
     //}
     //

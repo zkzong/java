@@ -1,4 +1,4 @@
-package org.example.rabbit.delay;
+package com.example.rabbit.delay;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

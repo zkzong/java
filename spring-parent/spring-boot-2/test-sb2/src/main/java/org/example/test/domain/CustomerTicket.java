@@ -1,4 +1,4 @@
-package org.example.test.domain;
+package com.example.test.domain;
 
 import lombok.Data;
 import org.springframework.util.Assert;

@@ -1,4 +1,4 @@
-package org.example.collection.list.fault.vector;
+package com.example.collection.list.fault.vector;
 
 import java.util.Vector;
 

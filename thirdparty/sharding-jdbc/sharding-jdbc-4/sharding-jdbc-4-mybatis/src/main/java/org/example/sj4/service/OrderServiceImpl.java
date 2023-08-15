@@ -1,12 +1,12 @@
 
-package org.example.sj4.service;
+package com.example.sj4.service;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import org.example.sj4.entity.Order;
-import org.example.sj4.entity.OrderItem;
-import org.example.sj4.repository.OrderItemMapper;
-import org.example.sj4.repository.OrderMapper;
+import com.example.sj4.entity.Order;
+import com.example.sj4.entity.OrderItem;
+import com.example.sj4.repository.OrderItemMapper;
+import com.example.sj4.repository.OrderMapper;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

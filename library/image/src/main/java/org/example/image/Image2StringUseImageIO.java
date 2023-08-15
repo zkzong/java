@@ -1,4 +1,4 @@
-package org.example.image;
+package com.example.image;
 
 import org.apache.commons.codec.binary.Base64;
 import org.apache.http.HttpEntity;

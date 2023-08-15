@@ -1,4 +1,4 @@
-package org.example.apache.commons.codec;
+package com.example.apache.commons.codec;
 
 import org.apache.commons.codec.Charsets;
 import org.junit.Test;

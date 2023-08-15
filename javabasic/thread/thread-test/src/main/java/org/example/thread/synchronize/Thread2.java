@@ -1,4 +1,4 @@
-package org.example.thread.synchronize;
+package com.example.thread.synchronize;
 
 /**
  * 当一个线程访问object的一个synchronized(this)同步代码块时，另一个线程仍然可以访问该object中的非synchronized(this)同步代码块。

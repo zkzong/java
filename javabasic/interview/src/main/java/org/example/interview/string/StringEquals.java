@@ -1,4 +1,4 @@
-package org.example.interview.string;
+package com.example.interview.string;
 
 import org.junit.Test;
 

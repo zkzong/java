@@ -1,4 +1,4 @@
-package org.example.javazhiyin;
+package com.example.javazhiyin;
 
 public class JoinDemo {
     public static void main(String[] args) {

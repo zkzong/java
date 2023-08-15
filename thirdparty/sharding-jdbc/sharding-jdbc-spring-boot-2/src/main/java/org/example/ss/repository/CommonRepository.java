@@ -1,4 +1,4 @@
-package org.example.ss.repository;
+package com.example.ss.repository;
 
 import java.sql.SQLException;
 import java.util.List;

@@ -1,5 +1,5 @@
 // Tuple library using type argument inference.
-package org.example.thinkinginjava.util;
+package com.example.thinkinginjava.util;
 
 /**
  * Created by Zong on 2016/8/30.

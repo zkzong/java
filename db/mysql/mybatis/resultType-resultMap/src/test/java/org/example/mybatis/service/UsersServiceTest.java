@@ -1,7 +1,7 @@
-package org.example.mybatis.service;
+package com.example.mybatis.service;
 
-import org.example.mybatis.domain.Users;
-import org.example.mybatis.mapper.UsersMapper;
+import com.example.mybatis.domain.Users;
+import com.example.mybatis.mapper.UsersMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

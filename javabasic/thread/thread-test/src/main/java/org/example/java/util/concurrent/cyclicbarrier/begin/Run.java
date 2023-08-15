@@ -1,4 +1,4 @@
-package org.example.java.util.concurrent.cyclicbarrier.begin;
+package com.example.java.util.concurrent.cyclicbarrier.begin;
 
 import java.util.concurrent.CyclicBarrier;
 

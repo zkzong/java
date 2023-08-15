@@ -1,8 +1,8 @@
-package org.example.mp.service;
+package com.example.mp.service;
 
 import com.github.pagehelper.PageInfo;
-import org.example.mp.entity.User;
-import org.example.mp.vo.UserVo;
+import com.example.mp.entity.User;
+import com.example.mp.vo.UserVo;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.BeanUtils;

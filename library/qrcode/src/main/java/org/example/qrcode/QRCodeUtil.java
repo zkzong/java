@@ -1,4 +1,4 @@
-package org.example.qrcode;
+package com.example.qrcode;
 
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.BinaryBitmap;

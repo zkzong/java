@@ -1,4 +1,4 @@
-package org.example.sj4.algorithm;
+package com.example.sj4.algorithm;
 
 import com.google.common.collect.Range;
 import org.apache.shardingsphere.api.sharding.standard.RangeShardingAlgorithm;

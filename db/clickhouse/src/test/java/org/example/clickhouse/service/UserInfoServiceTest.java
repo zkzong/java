@@ -1,6 +1,6 @@
-package org.example.clickhouse.service;
+package com.example.clickhouse.service;
 
-import org.example.clickhouse.pojo.UserInfo;
+import com.example.clickhouse.pojo.UserInfo;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package org.example.mp.config;
+package com.example.mp.config;
 
 import com.baomidou.mybatisplus.core.parser.ISqlParser;
 import com.baomidou.mybatisplus.core.parser.ISqlParserFilter;
@@ -90,7 +90,7 @@ public class MybatisPlusConfiguration {
             @Override
             public boolean doFilter(MetaObject metaObject) {
                 MappedStatement ms = SqlParserHelper.getMappedStatement(metaObject);
-                if ("org.example.mp.dao.UserMapper.selectById".equals(ms.getId())) {
+                if ("com.example.mp.dao.UserMapper.selectById".equals(ms.getId())) {
                     return true;
                 }
                 return false;

@@ -1,4 +1,4 @@
-package org.example.future._02_createThread;
+package com.example.future._02_createThread;
 
 import java.util.concurrent.TimeUnit;
 

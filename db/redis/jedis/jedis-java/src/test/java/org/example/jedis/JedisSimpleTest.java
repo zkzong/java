@@ -1,4 +1,4 @@
-package org.example.jedis;
+package com.example.jedis;
 
 import org.junit.Before;
 import org.junit.Test;

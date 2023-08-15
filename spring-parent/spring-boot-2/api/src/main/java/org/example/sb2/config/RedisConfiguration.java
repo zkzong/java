@@ -1,4 +1,4 @@
-package org.example.sb2.config;
+package com.example.sb2.config;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;

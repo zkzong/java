@@ -1,4 +1,4 @@
-package org.example.aop.security;
+package com.example.aop.security;
 
 public class CurrentUserHolder {
     private static final ThreadLocal<String> holder = new ThreadLocal<>();

@@ -1,6 +1,6 @@
-package org.example.sb.mybatis.mapper;
+package com.example.sb.mybatis.mapper;
 
-import org.example.sb.mybatis.domain.Student;
+import com.example.sb.mybatis.domain.Student;
 
 import java.util.List;
 

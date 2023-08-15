@@ -1,4 +1,4 @@
-package org.example.apollo.controller;
+package com.example.apollo.controller;
 
 import com.ctrip.framework.apollo.Config;
 import com.ctrip.framework.apollo.ConfigService;

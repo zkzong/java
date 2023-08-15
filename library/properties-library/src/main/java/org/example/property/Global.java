@@ -1,4 +1,4 @@
-package org.example.property;
+package com.example.property;
 
 /**
  * 全局配置类

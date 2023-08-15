@@ -1,4 +1,4 @@
-package org.example.image;
+package com.example.image;
 
 import org.junit.Test;
 

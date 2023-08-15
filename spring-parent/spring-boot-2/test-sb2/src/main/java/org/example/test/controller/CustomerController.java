@@ -1,7 +1,7 @@
-package org.example.test.controller;
+package com.example.test.controller;
 
-import org.example.test.domain.CustomerTicket;
-import org.example.test.service.CustomerTicketService;
+import com.example.test.domain.CustomerTicket;
+import com.example.test.service.CustomerTicketService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

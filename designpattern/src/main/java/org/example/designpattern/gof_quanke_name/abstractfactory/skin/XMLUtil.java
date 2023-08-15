@@ -1,4 +1,4 @@
-package org.example.designpattern.gof_quanke_name.abstractfactory.skin;
+package com.example.designpattern.gof_quanke_name.abstractfactory.skin;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;

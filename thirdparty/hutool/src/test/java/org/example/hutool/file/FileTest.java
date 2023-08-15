@@ -1,4 +1,4 @@
-package org.example.hutool.file;
+package com.example.hutool.file;
 
 import cn.hutool.core.io.FileTypeUtil;
 import cn.hutool.core.io.FileUtil;

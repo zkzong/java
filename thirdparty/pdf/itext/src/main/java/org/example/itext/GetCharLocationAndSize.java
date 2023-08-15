@@ -1,4 +1,4 @@
-package org.example.itext;
+package com.example.itext;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;

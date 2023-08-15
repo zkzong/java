@@ -1,7 +1,7 @@
-package org.example.test.service;
+package com.example.test.service;
 
-import org.example.test.domain.CustomerTicket;
-import org.example.test.repository.CustomerTicketRepository;
+import com.example.test.domain.CustomerTicket;
+import com.example.test.repository.CustomerTicketRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;

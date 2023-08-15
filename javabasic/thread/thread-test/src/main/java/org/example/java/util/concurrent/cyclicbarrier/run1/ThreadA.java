@@ -1,4 +1,4 @@
-package org.example.java.util.concurrent.cyclicbarrier.run1;
+package com.example.java.util.concurrent.cyclicbarrier.run1;
 
 /**
  * @author zkzong

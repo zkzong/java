@@ -1,7 +1,7 @@
-package org.example.sb.mybatis.service;
+package com.example.sb.mybatis.service;
 
 import com.alibaba.fastjson.JSON;
-import org.example.sb.mybatis.domain.Teacher;
+import com.example.sb.mybatis.domain.Teacher;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

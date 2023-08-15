@@ -1,4 +1,4 @@
-package org.example.reflect.example;
+package com.example.reflect.example;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;

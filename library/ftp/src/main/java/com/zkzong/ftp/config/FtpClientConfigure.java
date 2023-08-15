@@ -1,7 +1,7 @@
-package org.example.ftp.config;
+package com.example.ftp.config;
 
-import org.example.ftp.core.FtpClientFactory;
-import org.example.ftp.core.FtpClientTemplate;
+import com.example.ftp.core.FtpClientFactory;
+import com.example.ftp.core.FtpClientTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;

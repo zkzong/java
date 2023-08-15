@@ -1,7 +1,7 @@
-package org.example.mp.mapper.test;
+package com.example.mp.mapper.test;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import org.example.mp.entity.Temp;
+import com.example.mp.entity.Temp;
 
 /**
  * @Author: zkzong

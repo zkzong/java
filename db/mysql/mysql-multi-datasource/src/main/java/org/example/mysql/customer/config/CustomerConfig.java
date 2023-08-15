@@ -1,4 +1,4 @@
-package org.example.mysql.customer.config;
+package com.example.mysql.customer.config;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -21,7 +21,7 @@ import javax.sql.DataSource;
 @EnableJpaRepositories(
         entityManagerFactoryRef = "customerEntityManagerFactory",
         transactionManagerRef = "customerTransactionManager",
-        basePackages = {"org.example.mysql.customer.repo"}
+        basePackages = {"com.example.mysql.customer.repo"}
 )
 public class CustomerConfig {
 
@@ -39,7 +39,7 @@ public class CustomerConfig {
             @Qualifier("customerDataSource") DataSource dataSource) {
         return builder
                 .dataSource(dataSource)
-                .packages("org.example.mysql.customer.data")
+                .packages("com.example.mysql.customer.data")
                 .persistenceUnit("db1")
                 .build();
     }

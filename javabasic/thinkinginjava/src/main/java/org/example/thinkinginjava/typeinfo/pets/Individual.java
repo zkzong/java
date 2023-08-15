@@ -1,4 +1,4 @@
-package org.example.thinkinginjava.typeinfo.pets;
+package com.example.thinkinginjava.typeinfo.pets;
 
 /**
  * Created by Zong on 2016/8/28.

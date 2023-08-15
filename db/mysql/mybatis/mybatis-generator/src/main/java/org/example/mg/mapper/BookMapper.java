@@ -1,7 +1,7 @@
-package org.example.mg.mapper;
+package com.example.mg.mapper;
 
-import org.example.mg.entity.Book;
-import org.example.mg.entity.BookExample;
+import com.example.mg.entity.Book;
+import com.example.mg.entity.BookExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 

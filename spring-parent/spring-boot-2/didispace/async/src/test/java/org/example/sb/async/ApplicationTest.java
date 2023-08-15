@@ -1,8 +1,8 @@
-package org.example.sb.async;
+package com.example.sb.async;
 
-import org.example.sb.async.task.AsyncFutureTask;
-import org.example.sb.async.task.AsyncTask;
-import org.example.sb.async.task.SyncTask;
+import com.example.sb.async.task.AsyncFutureTask;
+import com.example.sb.async.task.AsyncTask;
+import com.example.sb.async.task.SyncTask;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

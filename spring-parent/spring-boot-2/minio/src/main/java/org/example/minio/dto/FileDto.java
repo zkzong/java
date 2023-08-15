@@ -1,4 +1,4 @@
-package org.example.minio.dto;
+package com.example.minio.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;

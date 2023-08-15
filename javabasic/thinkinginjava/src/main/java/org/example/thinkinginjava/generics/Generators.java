@@ -1,8 +1,8 @@
-package org.example.thinkinginjava.generics;
+package com.example.thinkinginjava.generics;
 
-import org.example.thinkinginjava.generics.coffee.Coffee;
-import org.example.thinkinginjava.generics.coffee.CoffeeGenerator;
-import org.example.thinkinginjava.util.Generator;
+import com.example.thinkinginjava.generics.coffee.Coffee;
+import com.example.thinkinginjava.generics.coffee.CoffeeGenerator;
+import com.example.thinkinginjava.util.Generator;
 
 import java.util.ArrayList;
 import java.util.Collection;

@@ -1,4 +1,4 @@
-package org.example.propertysource;
+package com.example.propertysource;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

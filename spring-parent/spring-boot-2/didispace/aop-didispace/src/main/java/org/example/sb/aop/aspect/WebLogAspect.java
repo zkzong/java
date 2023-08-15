@@ -1,4 +1,4 @@
-package org.example.sb.aop.aspect;
+package com.example.sb.aop.aspect;
 
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
@@ -26,7 +26,7 @@ public class WebLogAspect {
 
     ThreadLocal<Long> startTime = new ThreadLocal<Long>();
 
-    @Pointcut("execution(public * org.example.sb.aop.web..*.*(..))")
+    @Pointcut("execution(public * com.example.sb.aop.web..*.*(..))")
     public void webLog() {
     }
 

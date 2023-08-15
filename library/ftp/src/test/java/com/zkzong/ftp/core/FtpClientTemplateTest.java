@@ -1,4 +1,4 @@
-package org.example.ftp.core;
+package com.example.ftp.core;
 
 import org.junit.Assert;
 import org.junit.Test;

@@ -1,6 +1,6 @@
-package org.example.sb.redis.dao;
+package com.example.sb.redis.dao;
 
-import org.example.sb.redis.domain.City;
+import com.example.sb.redis.domain.City;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;

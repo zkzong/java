@@ -1,4 +1,4 @@
-package org.example.exception;
+package com.example.exception;
 
 /**
  * Created by Zong on 2016/12/10.

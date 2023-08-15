@@ -1,7 +1,7 @@
-package org.example.mongodb.springdata.core;
+package com.example.mongodb.springdata.core;
 
-import org.example.mongodb.springdata.config.SpringMongoConfig;
-import org.example.mongodb.springdata.user.User;
+import com.example.mongodb.springdata.config.SpringMongoConfig;
+import com.example.mongodb.springdata.user.User;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.data.domain.Sort;

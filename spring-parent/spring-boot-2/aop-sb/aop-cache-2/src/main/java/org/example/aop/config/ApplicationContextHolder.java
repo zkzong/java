@@ -1,4 +1,4 @@
-package org.example.aop.config;
+package com.example.aop.config;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;

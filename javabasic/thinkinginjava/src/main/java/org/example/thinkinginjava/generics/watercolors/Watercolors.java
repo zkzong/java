@@ -1,4 +1,4 @@
-package org.example.thinkinginjava.generics.watercolors;
+package com.example.thinkinginjava.generics.watercolors;
 
 /**
  * Created by Zong on 2016/8/31.

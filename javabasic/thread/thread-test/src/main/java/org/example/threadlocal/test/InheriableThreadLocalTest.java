@@ -1,4 +1,4 @@
-package org.example.threadlocal.test;
+package com.example.threadlocal.test;
 
 public class InheriableThreadLocalTest {
 

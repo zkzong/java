@@ -1,9 +1,9 @@
-package org.example.mongodb.hosting.bo;
+package com.example.mongodb.hosting.bo;
 
-import org.example.mongodb.hosting.dao.HostingDao;
-import org.example.mongodb.hosting.model.Hosting;
-import org.example.mongodb.seq.dao.SequenceDao;
-import org.example.mongodb.seq.exception.SequenceException;
+import com.example.mongodb.hosting.dao.HostingDao;
+import com.example.mongodb.hosting.model.Hosting;
+import com.example.mongodb.seq.dao.SequenceDao;
+import com.example.mongodb.seq.exception.SequenceException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-//package org.example.apollo.config;
+//package com.example.apollo.config;
 //
 //import com.ctrip.framework.apollo.spring.annotation.EnableApolloConfig;
 //import org.springframework.context.annotation.Configuration;

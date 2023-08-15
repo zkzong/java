@@ -1,4 +1,4 @@
-package org.example.annotation.imooc;
+package com.example.annotation.imooc;
 
 //@Description("I am class annotation")
 public class Child implements Person {

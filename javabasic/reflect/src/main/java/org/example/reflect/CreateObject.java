@@ -1,4 +1,4 @@
-package org.example.reflect;
+package com.example.reflect;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -10,7 +10,7 @@ public class CreateObject {
     public static void main(String[] args) {
         try {
             // 创建类
-            Class<?> peopleClass = Class.forName("org.example.reflect.People");
+            Class<?> peopleClass = Class.forName("com.example.reflect.People");
 
             // 无参构造函数
             Object object = peopleClass.newInstance();

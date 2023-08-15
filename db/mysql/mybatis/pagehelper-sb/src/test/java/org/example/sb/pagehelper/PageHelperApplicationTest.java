@@ -1,9 +1,9 @@
-package org.example.sb.pagehelper;
+package com.example.sb.pagehelper;
 
 import com.github.pagehelper.PageInfo;
-import org.example.sb.pagehelper.domain.Users;
-import org.example.sb.pagehelper.domain.UsersDto;
-import org.example.sb.pagehelper.service.UsersService;
+import com.example.sb.pagehelper.domain.Users;
+import com.example.sb.pagehelper.domain.UsersDto;
+import com.example.sb.pagehelper.service.UsersService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

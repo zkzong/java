@@ -1,4 +1,4 @@
-package org.example.springboot.jdbc.service;
+package com.example.springboot.jdbc.service;
 
 import org.junit.Assert;
 import org.junit.Before;

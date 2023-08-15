@@ -1,6 +1,6 @@
-package org.example.thinkinginjava.enumpackage.cartoons;
+package com.example.thinkinginjava.enumpackage.cartoons;
 
-import org.example.thinkinginjava.util.Generator;
+import com.example.thinkinginjava.util.Generator;
 
 import java.util.Random;
 

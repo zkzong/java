@@ -1,4 +1,4 @@
-package org.example.spring.data.redis.p_51cto;
+package com.example.spring.data.redis.p_51cto;
 
 /**
  * Created by Zong on 2017/5/18.

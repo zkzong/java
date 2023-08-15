@@ -1,4 +1,4 @@
-package org.example.mq.fanout;
+package com.example.mq.fanout;
 
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,6 @@
-package org.example.executor.controller;
+package com.example.executor.controller;
 
-import org.example.executor.service.AsyncService;
+import com.example.executor.service.AsyncService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

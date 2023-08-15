@@ -1,4 +1,4 @@
-package org.example.mongo.entity;
+package com.example.mongo.entity;
 
 import lombok.Getter;
 import lombok.Setter;

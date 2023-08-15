@@ -1,8 +1,8 @@
-package org.example.itext.sign;
+package com.example.itext.sign;
 
-import org.example.itext.sign.bean.KeyWordBean;
-import org.example.itext.sign.bean.SignPDFBean;
-import org.example.itext.sign.bean.SignPDFRequestBean;
+import com.example.itext.sign.bean.KeyWordBean;
+import com.example.itext.sign.bean.SignPDFBean;
+import com.example.itext.sign.bean.SignPDFRequestBean;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;

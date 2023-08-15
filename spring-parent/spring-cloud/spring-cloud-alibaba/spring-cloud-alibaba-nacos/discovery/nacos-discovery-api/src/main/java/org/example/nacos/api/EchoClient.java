@@ -1,4 +1,4 @@
-package org.example.nacos.api;
+package com.example.nacos.api;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;

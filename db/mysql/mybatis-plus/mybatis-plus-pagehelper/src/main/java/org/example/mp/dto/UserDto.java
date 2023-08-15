@@ -1,4 +1,4 @@
-package org.example.mp.dto;
+package com.example.mp.dto;
 
 import lombok.Getter;
 import lombok.Setter;

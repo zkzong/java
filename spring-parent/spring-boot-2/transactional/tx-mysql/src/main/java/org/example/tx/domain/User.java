@@ -1,4 +1,4 @@
-package org.example.tx.domain;
+package com.example.tx.domain;
 
 import lombok.Data;
 

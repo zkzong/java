@@ -1,4 +1,4 @@
-package org.example.thinkinginjava.typeinfo;
+package com.example.thinkinginjava.typeinfo;
 
 import java.util.Arrays;
 import java.util.List;

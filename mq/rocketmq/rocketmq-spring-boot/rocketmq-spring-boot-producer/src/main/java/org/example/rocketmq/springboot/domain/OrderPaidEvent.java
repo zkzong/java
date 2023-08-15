@@ -1,4 +1,4 @@
-package org.example.rocketmq.springboot.domain;
+package com.example.rocketmq.springboot.domain;
 
 import java.io.Serializable;
 import java.math.BigDecimal;

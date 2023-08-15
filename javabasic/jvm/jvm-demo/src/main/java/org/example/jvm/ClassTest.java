@@ -1,4 +1,4 @@
-package org.example.jvm;
+package com.example.jvm;
 
 import org.junit.Test;
 
@@ -9,7 +9,7 @@ import java.net.URL;
  */
 public class ClassTest {
     public static void main(String[] args) throws ClassNotFoundException {
-        Class clazz = Class.forName("org.example.jvm.ClassTest");
+        Class clazz = Class.forName("com.example.jvm.ClassTest");
         System.out.println(clazz);
 
         URL systemResource = ClassLoader.getSystemResource("");
@@ -29,7 +29,7 @@ public class ClassTest {
 
         // 2.通过类Class的静态方法forName()
         try {
-            Class dog1 = Class.forName("org.example.jvm.Dog");
+            Class dog1 = Class.forName("com.example.jvm.Dog");
             System.out.println(dog1);
         } catch (Exception e) {
             e.printStackTrace();

@@ -1,4 +1,4 @@
-package org.example.rabbitmq.workqueue.ackandpersistence;
+package com.example.rabbitmq.workqueue.ackandpersistence;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;

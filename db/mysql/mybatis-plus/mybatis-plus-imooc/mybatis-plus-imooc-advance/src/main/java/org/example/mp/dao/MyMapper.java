@@ -1,4 +1,4 @@
-package org.example.mp.dao;
+package com.example.mp.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.toolkit.Constants;

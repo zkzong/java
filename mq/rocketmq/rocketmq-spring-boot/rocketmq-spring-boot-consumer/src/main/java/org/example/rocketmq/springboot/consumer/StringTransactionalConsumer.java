@@ -1,4 +1,4 @@
-package org.example.rocketmq.springboot.consumer;
+package com.example.rocketmq.springboot.consumer;
 
 import org.apache.rocketmq.spring.annotation.RocketMQMessageListener;
 import org.apache.rocketmq.spring.core.RocketMQListener;

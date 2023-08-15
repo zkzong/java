@@ -1,4 +1,4 @@
-package org.example.aop.log;
+package com.example.aop.log;
 
 public interface Loggable {
     void log();

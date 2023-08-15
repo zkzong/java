@@ -1,6 +1,6 @@
-package org.example.proxy.dynamic;
+package com.example.proxy.dynamic;
 
-import org.example.proxy.pattern.RealSubject;
+import com.example.proxy.pattern.RealSubject;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

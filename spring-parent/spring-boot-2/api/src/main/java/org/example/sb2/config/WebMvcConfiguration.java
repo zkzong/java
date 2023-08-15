@@ -1,6 +1,6 @@
-package org.example.sb2.config;
+package com.example.sb2.config;
 
-import org.example.sb2.interceptor.TokenInterceptor;
+import com.example.sb2.interceptor.TokenInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;

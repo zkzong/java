@@ -1,8 +1,8 @@
-package org.example.sb.pagehelper.service;
+package com.example.sb.pagehelper.service;
 
 import com.github.pagehelper.PageInfo;
-import org.example.sb.pagehelper.domain.Users;
-import org.example.sb.pagehelper.domain.UsersDto;
+import com.example.sb.pagehelper.domain.Users;
+import com.example.sb.pagehelper.domain.UsersDto;
 
 import java.util.List;
 

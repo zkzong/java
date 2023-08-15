@@ -1,4 +1,4 @@
-package org.example.spring.data.redis.ibm;
+package com.example.spring.data.redis.ibm;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -12,7 +12,7 @@ import redis.clients.jedis.JedisPoolConfig;
  * Created by Zong on 2017/2/9.
  */
 @Configuration
-@ComponentScan(basePackages = "org.example.spring.data.redis")
+@ComponentScan(basePackages = "com.example.spring.data.redis")
 public class LocalRedisConfig {
 
     @Bean

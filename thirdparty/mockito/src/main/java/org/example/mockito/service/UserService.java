@@ -1,8 +1,8 @@
-package org.example.mockito.service;
+package com.example.mockito.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import org.example.mockito.entity.User;
-import org.example.mockito.req.UserReq;
+import com.example.mockito.entity.User;
+import com.example.mockito.req.UserReq;
 
 import java.util.List;
 

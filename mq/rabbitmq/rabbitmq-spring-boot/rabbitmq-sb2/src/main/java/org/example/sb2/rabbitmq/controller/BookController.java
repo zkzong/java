@@ -1,7 +1,7 @@
-package org.example.sb2.rabbitmq.controller;
+package com.example.sb2.rabbitmq.controller;
 
-import org.example.sb2.rabbitmq.config.RabbitConfig;
-import org.example.sb2.rabbitmq.pojo.Book;
+import com.example.sb2.rabbitmq.config.RabbitConfig;
+import com.example.sb2.rabbitmq.pojo.Book;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;

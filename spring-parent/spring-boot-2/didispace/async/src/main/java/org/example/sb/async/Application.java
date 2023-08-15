@@ -1,4 +1,4 @@
-package org.example.sb.async;
+package com.example.sb.async;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

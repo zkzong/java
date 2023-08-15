@@ -1,6 +1,6 @@
-package org.example.operate;
+package com.example.operate;
 
-import org.example.config.ElasticJobConfig;
+import com.example.config.ElasticJobConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 

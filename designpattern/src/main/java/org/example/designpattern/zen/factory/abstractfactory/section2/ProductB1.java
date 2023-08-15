@@ -1,4 +1,4 @@
-package org.example.designpattern.zen.factory.abstractfactory.section2;
+package com.example.designpattern.zen.factory.abstractfactory.section2;
 
 /**
  * Created by Zong on 2016/10/16.

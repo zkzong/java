@@ -1,5 +1,5 @@
 
-package org.example.sj4.entity;
+package com.example.sj4.entity;
 
 import lombok.Data;
 

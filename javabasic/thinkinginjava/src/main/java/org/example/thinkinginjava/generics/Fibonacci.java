@@ -1,6 +1,6 @@
-package org.example.thinkinginjava.generics;
+package com.example.thinkinginjava.generics;
 
-import org.example.thinkinginjava.util.Generator;
+import com.example.thinkinginjava.util.Generator;
 
 /**
  * Created by Zong on 2016/8/27.

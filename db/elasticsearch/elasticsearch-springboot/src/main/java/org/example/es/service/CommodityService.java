@@ -1,6 +1,6 @@
-package org.example.es.service;
+package com.example.es.service;
 
-import org.example.es.entity.Commodity;
+import com.example.es.entity.Commodity;
 import org.springframework.data.domain.Page;
 
 import java.util.List;

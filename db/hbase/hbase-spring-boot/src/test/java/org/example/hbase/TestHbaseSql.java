@@ -1,6 +1,6 @@
-package org.example.hbase;
+package com.example.hbase;
 
-import org.example.hbase.service.HBaseService;
+import com.example.hbase.service.HBaseService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

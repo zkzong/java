@@ -1,4 +1,4 @@
-package org.example.serializable.single;
+package com.example.serializable.single;
 
 import java.io.File;
 import java.io.FileInputStream;

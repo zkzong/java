@@ -1,4 +1,4 @@
-package org.example.springredis.case2.domain;
+package com.example.springredis.case2.domain;
 
 /**
  * Created by Zong on 2017/3/4.

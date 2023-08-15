@@ -1,7 +1,7 @@
 
-package org.example.sj4.repository;
+package com.example.sj4.repository;
 
-import org.example.sj4.entity.OrderItem;
+import com.example.sj4.entity.OrderItem;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

@@ -1,6 +1,6 @@
-package org.example.scd.user.controller;
+package com.example.scd.user.controller;
 
-import org.example.scd.user.entity.User;
+import com.example.scd.user.entity.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

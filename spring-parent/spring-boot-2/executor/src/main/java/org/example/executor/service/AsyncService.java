@@ -1,4 +1,4 @@
-package org.example.executor.service;
+package com.example.executor.service;
 
 public interface AsyncService {
     /**

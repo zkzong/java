@@ -1,4 +1,4 @@
-package org.example.json.util;
+package com.example.json.util;
 
 import net.sf.json.JSONObject;
 

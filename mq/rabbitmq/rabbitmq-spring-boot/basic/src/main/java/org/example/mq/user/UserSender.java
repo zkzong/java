@@ -1,4 +1,4 @@
-package org.example.mq.user;
+package com.example.mq.user;
 
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;

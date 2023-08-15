@@ -1,4 +1,4 @@
-package org.example.itext;
+package com.example.itext;
 
 import com.itextpdf.text.Chunk;
 import com.itextpdf.text.Element;

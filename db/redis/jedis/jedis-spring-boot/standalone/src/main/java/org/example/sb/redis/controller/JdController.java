@@ -1,4 +1,4 @@
-package org.example.sb.redis.controller;
+package com.example.sb.redis.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

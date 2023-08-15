@@ -1,6 +1,6 @@
-package org.example.mongodb.hosting.bo;
+package com.example.mongodb.hosting.bo;
 
-import org.example.mongodb.seq.exception.SequenceException;
+import com.example.mongodb.seq.exception.SequenceException;
 
 public interface HostingBo {
 

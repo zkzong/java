@@ -1,4 +1,4 @@
-package org.example.executor.config;
+package com.example.executor.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

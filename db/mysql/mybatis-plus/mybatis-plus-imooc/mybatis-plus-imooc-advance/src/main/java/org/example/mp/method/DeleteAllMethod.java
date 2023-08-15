@@ -1,4 +1,4 @@
-package org.example.mp.method;
+package com.example.mp.method;
 
 import com.baomidou.mybatisplus.core.injector.AbstractMethod;
 import com.baomidou.mybatisplus.core.metadata.TableInfo;

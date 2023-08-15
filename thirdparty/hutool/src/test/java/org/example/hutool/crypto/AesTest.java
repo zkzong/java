@@ -1,4 +1,4 @@
-package org.example.hutool.crypto;
+package com.example.hutool.crypto;
 
 import cn.hutool.crypto.SecureUtil;
 import cn.hutool.crypto.symmetric.AES;

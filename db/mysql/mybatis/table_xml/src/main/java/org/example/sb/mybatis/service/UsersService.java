@@ -1,6 +1,6 @@
-package org.example.sb.mybatis.service;
+package com.example.sb.mybatis.service;
 
-import org.example.sb.mybatis.domain.Users;
+import com.example.sb.mybatis.domain.Users;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

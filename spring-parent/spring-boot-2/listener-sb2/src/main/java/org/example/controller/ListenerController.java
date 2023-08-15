@@ -1,6 +1,6 @@
-package org.example.controller;
+package com.example.controller;
 
-import org.example.listener.MyEvent;
+import com.example.listener.MyEvent;
 import org.springframework.context.ApplicationContext;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

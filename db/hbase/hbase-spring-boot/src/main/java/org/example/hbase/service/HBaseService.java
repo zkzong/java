@@ -1,4 +1,4 @@
-package org.example.hbase.service;
+package com.example.hbase.service;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.hadoop.conf.Configuration;

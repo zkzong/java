@@ -1,4 +1,4 @@
-package org.example.thinkinginjava.concurrency;
+package com.example.thinkinginjava.concurrency;
 
 /**
  * Created by Zong on 2016/12/5.

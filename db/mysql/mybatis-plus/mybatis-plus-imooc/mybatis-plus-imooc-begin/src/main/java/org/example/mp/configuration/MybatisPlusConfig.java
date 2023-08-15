@@ -1,4 +1,4 @@
-package org.example.mp.configuration;
+package com.example.mp.configuration;
 
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
 import org.springframework.context.annotation.Bean;

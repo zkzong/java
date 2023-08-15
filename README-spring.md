@@ -85,7 +85,7 @@ studId是自增主键，以上三种方式都可以插入成功。
 
 ### 使用XML配置SQL映射器
 
-1. 通过字符串（字符串形式为：映射器配置文件所在的包名namespace + 在文件内定义的语句id，如 org.example.mybatis.mapper.StudentMapper 和语句 id findStudentById 组成）调用映射的SQL语句。
+1. 通过字符串（字符串形式为：映射器配置文件所在的包名namespace + 在文件内定义的语句id，如 com.example.mybatis.mapper.StudentMapper 和语句 id findStudentById 组成）调用映射的SQL语句。
 2. MyBatis通过使用映射器Mapper接口提供了更好的调用映射语句。一旦通过映射器配置文件配置了映射语句，可以创建一个完全对应的一个映射器接口，接口名跟配置文件名相同，接口所在包名也跟配置文件所在包名完全一样。映射器接口中的方法签名也跟映射器配置文件中完全对应：方法名为配置文件中id值；方法参数类型为parameterType对应值；方法返回值类型为returnType对应值。
 
 **自动生成主键**

@@ -1,4 +1,4 @@
-package org.example.springboot.exception;
+package com.example.springboot.exception;
 
 /**
  * Created by Zong on 2017/4/24.

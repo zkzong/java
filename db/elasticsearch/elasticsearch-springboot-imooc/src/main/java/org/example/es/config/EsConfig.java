@@ -1,4 +1,4 @@
-package org.example.es.config;
+package com.example.es.config;
 
 import org.elasticsearch.client.transport.TransportClient;
 import org.elasticsearch.common.settings.Settings;

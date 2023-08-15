@@ -1,4 +1,4 @@
-package org.example.clickhouse.pojo;
+package com.example.clickhouse.pojo;
 
 import lombok.Data;
 

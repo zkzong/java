@@ -1,4 +1,4 @@
-package org.example.interview.parameter;
+package com.example.interview.parameter;
 
 /**
  * Created by Zong on 2016/12/4.

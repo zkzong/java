@@ -1,4 +1,4 @@
-package org.example.propertysource;
+package com.example.propertysource;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

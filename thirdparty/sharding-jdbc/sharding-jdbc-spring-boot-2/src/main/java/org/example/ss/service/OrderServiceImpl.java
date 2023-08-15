@@ -1,11 +1,11 @@
-package org.example.ss.service;
+package com.example.ss.service;
 
-import org.example.ss.entity.AddressEntity;
-import org.example.ss.entity.OrderEntity;
-import org.example.ss.entity.OrderItemEntity;
-import org.example.ss.repository.AddressRepository;
-import org.example.ss.repository.OrderItemRepository;
-import org.example.ss.repository.OrderRepository;
+import com.example.ss.entity.AddressEntity;
+import com.example.ss.entity.OrderEntity;
+import com.example.ss.entity.OrderItemEntity;
+import com.example.ss.repository.AddressRepository;
+import com.example.ss.repository.OrderItemRepository;
+import com.example.ss.repository.OrderRepository;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

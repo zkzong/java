@@ -1,8 +1,8 @@
-package org.example.mp.dao;
+package com.example.mp.dao;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
-import org.example.mp.entity.User;
+import com.example.mp.entity.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package org.example.threadlocal.demo;
+package com.example.threadlocal.demo;
 
 import org.junit.Test;
 

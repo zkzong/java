@@ -1,4 +1,4 @@
-package org.example.proxy.pattern;
+package com.example.proxy.pattern;
 
 public class RealSubject implements Subject {
     @Override

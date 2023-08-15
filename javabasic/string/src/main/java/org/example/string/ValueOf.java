@@ -1,4 +1,4 @@
-package org.example.string;
+package com.example.string;
 
 /**
  * Created by Zong on 2016/7/13.

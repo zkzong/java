@@ -1,6 +1,6 @@
-package org.example.sb.runner;
+package com.example.sb.runner;
 
-import org.example.sb.runner.commandlinerunner.HelloService;
+import com.example.sb.runner.commandlinerunner.HelloService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;

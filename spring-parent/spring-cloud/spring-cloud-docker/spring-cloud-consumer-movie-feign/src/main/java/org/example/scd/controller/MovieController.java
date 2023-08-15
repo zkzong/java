@@ -1,7 +1,7 @@
-package org.example.scd.controller;
+package com.example.scd.controller;
 
-import org.example.scd.entity.User;
-import org.example.scd.feign.UserFeignClient;
+import com.example.scd.entity.User;
+import com.example.scd.feign.UserFeignClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

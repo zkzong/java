@@ -1,4 +1,4 @@
-package org.example.reflect;
+package com.example.reflect;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -11,7 +11,7 @@ public class StaticFieldAndMethod {
     public static void main(String[] args) {
         try {
             // 创建类
-            Class<?> utilClass = Class.forName("org.example.reflect.Util");
+            Class<?> utilClass = Class.forName("com.example.reflect.Util");
             // 获取name属性
             Field name = utilClass.getDeclaredField("name");
             // 获取name的值

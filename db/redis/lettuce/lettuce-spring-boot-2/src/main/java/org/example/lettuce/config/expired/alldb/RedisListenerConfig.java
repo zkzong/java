@@ -1,4 +1,4 @@
-package org.example.lettuce.config.expired.alldb;
+package com.example.lettuce.config.expired.alldb;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

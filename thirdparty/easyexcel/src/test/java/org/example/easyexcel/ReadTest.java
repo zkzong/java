@@ -1,4 +1,4 @@
-package org.example.easyexcel;
+package com.example.easyexcel;
 
 import com.alibaba.excel.EasyExcel;
 import com.alibaba.excel.ExcelReader;
@@ -8,7 +8,7 @@ import com.alibaba.excel.read.listener.ReadListener;
 import com.alibaba.excel.read.metadata.ReadSheet;
 import com.alibaba.excel.util.ListUtils;
 import com.alibaba.fastjson.JSON;
-import org.example.easyexcel.util.TestFileUtil;
+import com.example.easyexcel.util.TestFileUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package org.example.rabbit.delay;
+package com.example.rabbit.delay;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

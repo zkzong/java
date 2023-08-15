@@ -1,4 +1,4 @@
-package org.example.sftp.util;
+package com.example.sftp.util;
 
 import com.jcraft.jsch.SftpException;
 import org.junit.After;

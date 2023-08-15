@@ -1,6 +1,6 @@
-package org.example.sb.mybatis.ms.bean;
+package com.example.sb.mybatis.ms.bean;
 
-import org.example.sb.mybatis.ms.enums.DBTypeEnum;
+import com.example.sb.mybatis.ms.enums.DBTypeEnum;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

@@ -1,4 +1,4 @@
-package org.example.job;
+package com.example.job;
 
 import com.dangdang.ddframe.job.api.ShardingContext;
 import com.dangdang.ddframe.job.api.simple.SimpleJob;

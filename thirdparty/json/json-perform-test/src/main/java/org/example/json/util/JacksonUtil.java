@@ -1,4 +1,4 @@
-package org.example.json.util;
+package com.example.json.util;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

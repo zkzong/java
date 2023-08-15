@@ -1,4 +1,4 @@
-package org.example.sb.configurationproperties;
+package com.example.sb.configurationproperties;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

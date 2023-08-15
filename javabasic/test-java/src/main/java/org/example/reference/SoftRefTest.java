@@ -1,4 +1,4 @@
-package org.example.reference;
+package com.example.reference;
 
 import java.lang.ref.Reference;
 import java.lang.ref.ReferenceQueue;

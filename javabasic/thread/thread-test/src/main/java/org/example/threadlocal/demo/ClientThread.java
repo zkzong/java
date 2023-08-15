@@ -1,4 +1,4 @@
-package org.example.threadlocal.demo;
+package com.example.threadlocal.demo;
 
 public class ClientThread extends Thread {
     private ProductService productService;

@@ -1,4 +1,4 @@
-package org.example.itext.keyword;
+package com.example.itext.keyword;
 
 import com.itextpdf.awt.geom.Rectangle2D;
 import com.itextpdf.text.pdf.PdfDictionary;

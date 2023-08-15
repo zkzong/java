@@ -1,8 +1,8 @@
-package org.example.sb2.service.impl;
+package com.example.sb2.service.impl;
 
-import org.example.sb2.entity.User;
-import org.example.sb2.repository.UserRepository;
-import org.example.sb2.service.UserService;
+import com.example.sb2.entity.User;
+import com.example.sb2.repository.UserRepository;
+import com.example.sb2.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

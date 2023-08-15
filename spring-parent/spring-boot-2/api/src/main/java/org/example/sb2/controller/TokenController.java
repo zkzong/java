@@ -1,12 +1,12 @@
-package org.example.sb2.controller;
+package com.example.sb2.controller;
 
-import org.example.sb2.pojo.AccessToken;
-import org.example.sb2.pojo.ApiResponse;
-import org.example.sb2.pojo.AppInfo;
-import org.example.sb2.pojo.TokenInfo;
-import org.example.sb2.pojo.UserInfo;
-import org.example.sb2.annotation.NotRepeatSubmit;
-import org.example.sb2.util.MD5Util;
+import com.example.sb2.pojo.AccessToken;
+import com.example.sb2.pojo.ApiResponse;
+import com.example.sb2.pojo.AppInfo;
+import com.example.sb2.pojo.TokenInfo;
+import com.example.sb2.pojo.UserInfo;
+import com.example.sb2.annotation.NotRepeatSubmit;
+import com.example.sb2.util.MD5Util;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;

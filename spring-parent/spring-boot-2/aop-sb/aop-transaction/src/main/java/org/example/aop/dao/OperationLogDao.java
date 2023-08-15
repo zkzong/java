@@ -1,6 +1,6 @@
-package org.example.aop.dao;
+package com.example.aop.dao;
 
-import org.example.aop.domain.OperationLog;
+import com.example.aop.domain.OperationLog;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface OperationLogDao extends JpaRepository<OperationLog, Long> {

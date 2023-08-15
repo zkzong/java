@@ -1,6 +1,6 @@
-package org.example.mockito.service;
+package com.example.mockito.service;
 
-import org.example.mockito.entity.User;
+import com.example.mockito.entity.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;

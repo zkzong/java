@@ -1,7 +1,7 @@
-package org.example.thinkinginjava.atunit;
+package com.example.thinkinginjava.atunit;
 
-import org.example.thinkinginjava.util.BinaryFile;
-import org.example.thinkinginjava.util.ProcessFiles;
+import com.example.thinkinginjava.util.BinaryFile;
+import com.example.thinkinginjava.util.ProcessFiles;
 
 import java.io.File;
 import java.lang.reflect.InvocationTargetException;
@@ -10,8 +10,8 @@ import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.example.thinkinginjava.util.Print.print;
-import static org.example.thinkinginjava.util.Print.printnb;
+import static com.example.thinkinginjava.util.Print.print;
+import static com.example.thinkinginjava.util.Print.printnb;
 
 /**
  * Created by Zong on 2016/9/19.

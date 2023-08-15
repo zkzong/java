@@ -1,4 +1,4 @@
-package org.example.sj5.algorithm;
+package com.example.sj5.algorithm;
 
 import com.google.common.collect.Range;
 import org.apache.shardingsphere.sharding.api.sharding.standard.PreciseShardingValue;

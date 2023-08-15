@@ -11,7 +11,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example.sb</groupId>
+    <groupId>com.example.sb</groupId>
     <artifactId>spring-boot-admin-sb</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>

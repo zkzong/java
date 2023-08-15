@@ -1,11 +1,11 @@
-package org.example.sb.controller;
+package com.example.sb.controller;
 
-import org.example.sb.dto.RspDTO;
-import org.example.sb.dto.UserDTO;
-import org.example.sb.dto.UserReq;
-import org.example.sb.dto.assist.Create;
-import org.example.sb.dto.assist.Update;
-import org.example.sb.service.UserService;
+import com.example.sb.dto.RspDTO;
+import com.example.sb.dto.UserDTO;
+import com.example.sb.dto.UserReq;
+import com.example.sb.dto.assist.Create;
+import com.example.sb.dto.assist.Update;
+import com.example.sb.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;

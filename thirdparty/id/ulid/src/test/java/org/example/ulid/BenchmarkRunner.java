@@ -1,4 +1,4 @@
-package org.example.ulid;
+package com.example.ulid;
 
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.runner.Runner;

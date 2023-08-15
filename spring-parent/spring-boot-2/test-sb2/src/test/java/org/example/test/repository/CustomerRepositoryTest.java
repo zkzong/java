@@ -1,6 +1,6 @@
-package org.example.test.repository;
+package com.example.test.repository;
 
-import org.example.test.domain.CustomerTicket;
+import com.example.test.domain.CustomerTicket;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

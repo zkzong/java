@@ -1,4 +1,4 @@
-package org.example.spring.data.redis.ibm;
+package com.example.spring.data.redis.ibm;
 
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Repository;

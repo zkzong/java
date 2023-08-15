@@ -1,4 +1,4 @@
-package org.example.itext;
+package com.example.itext;
 
 import com.itextpdf.awt.geom.Rectangle2D;
 import com.itextpdf.awt.geom.RectangularShape;

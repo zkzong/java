@@ -1,4 +1,4 @@
-package org.example.aop.service;
+package com.example.aop.service;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

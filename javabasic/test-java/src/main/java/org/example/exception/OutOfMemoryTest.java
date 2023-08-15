@@ -1,4 +1,4 @@
-package org.example.exception;
+package com.example.exception;
 
 import java.util.ArrayList;
 import java.util.List;

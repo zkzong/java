@@ -1,4 +1,4 @@
-package org.example.mp;
+package com.example.mp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

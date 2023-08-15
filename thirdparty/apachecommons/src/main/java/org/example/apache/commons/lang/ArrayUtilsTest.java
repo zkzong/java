@@ -1,4 +1,4 @@
-package org.example.apache.commons.lang;
+package com.example.apache.commons.lang;
 
 import org.apache.commons.lang.ArrayUtils;
 import org.junit.Test;

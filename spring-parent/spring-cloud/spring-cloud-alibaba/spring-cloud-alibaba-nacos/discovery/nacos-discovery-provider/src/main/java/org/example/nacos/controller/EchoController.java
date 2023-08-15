@@ -1,4 +1,4 @@
-package org.example.nacos.controller;
+package com.example.nacos.controller;
 
 import com.alibaba.nacos.api.annotation.NacosInjected;
 import com.alibaba.nacos.api.exception.NacosException;

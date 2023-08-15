@@ -1,7 +1,7 @@
 
-package org.example.sj5.mapper;
+package com.example.sj5.mapper;
 
-import org.example.sj5.entity.User;
+import com.example.sj5.entity.User;
 
 import java.util.List;
 

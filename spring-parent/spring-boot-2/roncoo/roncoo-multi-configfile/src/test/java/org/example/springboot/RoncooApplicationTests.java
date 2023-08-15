@@ -1,6 +1,6 @@
-package org.example.springboot;
+package com.example.springboot;
 
-import org.example.springboot.controller.IndexController;
+import com.example.springboot.controller.IndexController;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

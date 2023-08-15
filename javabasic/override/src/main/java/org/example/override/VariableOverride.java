@@ -1,4 +1,4 @@
-package org.example.override;
+package com.example.override;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package org.example.sb.jpa;
+package com.example.sb.jpa;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -25,7 +25,7 @@ import java.util.Map;
 @EnableJpaRepositories(
         entityManagerFactoryRef = "entityManagerFactoryPrimary",
         transactionManagerRef = "transactionManagerPrimary",
-        basePackages = {"org.example.sb.jpa.domain.p"} //设置Repository所在位置
+        basePackages = {"com.example.sb.jpa.domain.p"} //设置Repository所在位置
 )
 public class PrimaryConfig {
     @Autowired
@@ -47,7 +47,7 @@ public class PrimaryConfig {
         return builder
                 .dataSource(primaryDataSource)
                 .properties(getVendorProperties(primaryDataSource))
-                .packages("org.example.sb.jpa.domain.p") //设置实体类所在位置
+                .packages("com.example.sb.jpa.domain.p") //设置实体类所在位置
                 .persistenceUnit("primaryPersistenceUnit")
                 .build();
     }

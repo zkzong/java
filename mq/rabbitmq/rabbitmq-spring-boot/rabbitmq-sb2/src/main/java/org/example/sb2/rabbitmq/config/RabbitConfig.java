@@ -1,4 +1,4 @@
-package org.example.sb2.rabbitmq.config;
+package com.example.sb2.rabbitmq.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

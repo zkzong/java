@@ -1,4 +1,4 @@
-package org.example.starrocks.dto;
+package com.example.starrocks.dto;
 
 import lombok.Getter;
 import lombok.Setter;

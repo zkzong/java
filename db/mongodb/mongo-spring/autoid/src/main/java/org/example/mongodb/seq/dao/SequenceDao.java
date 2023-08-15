@@ -1,6 +1,6 @@
-package org.example.mongodb.seq.dao;
+package com.example.mongodb.seq.dao;
 
-import org.example.mongodb.seq.exception.SequenceException;
+import com.example.mongodb.seq.exception.SequenceException;
 
 public interface SequenceDao {
 

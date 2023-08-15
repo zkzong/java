@@ -1,4 +1,4 @@
-package org.example.json;
+package com.example.json;
 
 /**
  * Created by Zong on 2016/8/6.

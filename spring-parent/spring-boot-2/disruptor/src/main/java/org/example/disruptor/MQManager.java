@@ -1,10 +1,10 @@
-package org.example.disruptor;
+package com.example.disruptor;
 
 import com.lmax.disruptor.BlockingWaitStrategy;
 import com.lmax.disruptor.RingBuffer;
 import com.lmax.disruptor.dsl.Disruptor;
 import com.lmax.disruptor.dsl.ProducerType;
-import org.example.disruptor.model.MessageModel;
+import com.example.disruptor.model.MessageModel;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

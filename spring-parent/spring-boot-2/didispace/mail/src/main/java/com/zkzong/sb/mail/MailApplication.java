@@ -1,4 +1,4 @@
-package org.example.sb.mail;
+package com.example.sb.mail;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

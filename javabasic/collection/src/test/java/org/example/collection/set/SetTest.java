@@ -1,4 +1,4 @@
-package org.example.collection.set;
+package com.example.collection.set;
 
 import com.google.common.collect.Sets;
 import org.junit.Test;

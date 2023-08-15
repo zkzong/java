@@ -1,4 +1,4 @@
-package org.example.retry.example2;
+package com.example.retry.example2;
 
 import org.springframework.retry.RecoveryCallback;
 import org.springframework.retry.RetryCallback;

@@ -1,4 +1,4 @@
-package org.example.propertysource;
+package com.example.propertysource;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;

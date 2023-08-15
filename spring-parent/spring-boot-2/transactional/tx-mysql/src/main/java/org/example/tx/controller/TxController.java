@@ -1,6 +1,6 @@
-package org.example.tx.controller;
+package com.example.tx.controller;
 
-import org.example.tx.service.TxService;
+import com.example.tx.service.TxService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

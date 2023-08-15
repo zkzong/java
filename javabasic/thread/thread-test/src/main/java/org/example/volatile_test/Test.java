@@ -1,4 +1,4 @@
-package org.example.volatile_test;
+package com.example.volatile_test;
 
 public class Test {
     public volatile int inc = 0;

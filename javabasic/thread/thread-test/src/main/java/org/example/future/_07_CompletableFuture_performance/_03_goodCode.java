@@ -1,6 +1,6 @@
-package org.example.future._07_CompletableFuture_performance;
+package com.example.future._07_CompletableFuture_performance;
 
-import org.example.future.SmallTool;
+import com.example.future.SmallTool;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.IntStream;

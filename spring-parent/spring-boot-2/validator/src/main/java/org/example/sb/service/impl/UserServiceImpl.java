@@ -1,7 +1,7 @@
-package org.example.sb.service.impl;
+package com.example.sb.service.impl;
 
-import org.example.sb.dto.UserDTO;
-import org.example.sb.service.UserService;
+import com.example.sb.dto.UserDTO;
+import com.example.sb.service.UserService;
 import org.springframework.stereotype.Service;
 
 @Service

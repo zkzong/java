@@ -1,4 +1,4 @@
-package org.example.jmh;
+package com.example.jmh;
 
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;

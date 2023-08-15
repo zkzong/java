@@ -1,11 +1,11 @@
-package org.example.easyexcel;
+package com.example.easyexcel;
 
 import com.alibaba.excel.EasyExcel;
 import com.alibaba.excel.ExcelWriter;
 import com.alibaba.excel.annotation.ExcelProperty;
 import com.alibaba.excel.util.ListUtils;
 import com.alibaba.excel.write.metadata.WriteSheet;
-import org.example.easyexcel.util.TestFileUtil;
+import com.example.easyexcel.util.TestFileUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 

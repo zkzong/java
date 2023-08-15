@@ -1,4 +1,4 @@
-package org.example.sb2.shutdown.config;
+package com.example.sb2.shutdown.config;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.catalina.connector.Connector;

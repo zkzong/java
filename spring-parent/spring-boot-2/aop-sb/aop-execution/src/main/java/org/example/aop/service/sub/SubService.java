@@ -1,6 +1,6 @@
-package org.example.aop.service.sub;
+package com.example.aop.service.sub;
 
-import org.example.aop.service.ProductService;
+import com.example.aop.service.ProductService;
 import org.springframework.stereotype.Component;
 
 @Component

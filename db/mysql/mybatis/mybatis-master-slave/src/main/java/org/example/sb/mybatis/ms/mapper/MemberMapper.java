@@ -1,6 +1,6 @@
-package org.example.sb.mybatis.ms.mapper;
+package com.example.sb.mybatis.ms.mapper;
 
-import org.example.sb.mybatis.ms.entity.Member;
+import com.example.sb.mybatis.ms.entity.Member;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

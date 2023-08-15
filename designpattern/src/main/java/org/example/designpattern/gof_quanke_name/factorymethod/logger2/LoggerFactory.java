@@ -1,6 +1,6 @@
-package org.example.designpattern.gof_quanke_name.factorymethod.logger2;
+package com.example.designpattern.gof_quanke_name.factorymethod.logger2;
 
-import org.example.designpattern.gof_quanke_name.factorymethod.logger.Logger;
+import com.example.designpattern.gof_quanke_name.factorymethod.logger.Logger;
 
 /**
  * Created by Zong on 2016/11/25.

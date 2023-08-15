@@ -1,4 +1,4 @@
-package org.example.rabbitmq.bindings_exchanges;
+package com.example.rabbitmq.bindings_exchanges;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;

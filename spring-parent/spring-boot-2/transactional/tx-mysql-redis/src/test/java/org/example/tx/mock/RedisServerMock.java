@@ -1,4 +1,4 @@
-package org.example.tx.mock;
+package com.example.tx.mock;
 
 import org.springframework.stereotype.Component;
 import redis.embedded.RedisServer;

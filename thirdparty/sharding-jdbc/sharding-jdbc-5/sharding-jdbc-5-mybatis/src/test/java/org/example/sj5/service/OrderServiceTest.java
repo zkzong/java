@@ -1,7 +1,7 @@
-package org.example.sj5.service;
+package com.example.sj5.service;
 
 import com.github.pagehelper.PageInfo;
-import org.example.sj5.entity.Order;
+import com.example.sj5.entity.Order;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

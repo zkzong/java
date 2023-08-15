@@ -1,6 +1,6 @@
-package org.example.controller;
+package com.example.controller;
 
-import org.example.EmployeeBinding;
+import com.example.EmployeeBinding;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.MessageChannel;
 import org.springframework.messaging.support.MessageBuilder;

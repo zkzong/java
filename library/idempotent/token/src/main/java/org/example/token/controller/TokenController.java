@@ -1,6 +1,6 @@
-package org.example.token.controller;
+package com.example.token.controller;
 
-import org.example.token.service.TokenUtilService;
+import com.example.token.service.TokenUtilService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

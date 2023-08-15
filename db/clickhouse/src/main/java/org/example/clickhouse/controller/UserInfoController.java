@@ -1,7 +1,7 @@
-package org.example.clickhouse.controller;
+package com.example.clickhouse.controller;
 
-import org.example.clickhouse.pojo.UserInfo;
-import org.example.clickhouse.service.UserInfoService;
+import com.example.clickhouse.pojo.UserInfo;
+import com.example.clickhouse.service.UserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

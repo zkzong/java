@@ -1,10 +1,10 @@
-package org.example.starrocks.service.impl;
+package com.example.starrocks.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import org.example.starrocks.dto.SrOnMacDto;
-import org.example.starrocks.entity.SrOnMac;
-import org.example.starrocks.mapper.SrOnMacMapper;
-import org.example.starrocks.service.SrOnMacService;
+import com.example.starrocks.dto.SrOnMacDto;
+import com.example.starrocks.entity.SrOnMac;
+import com.example.starrocks.mapper.SrOnMacMapper;
+import com.example.starrocks.service.SrOnMacService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package org.example.consul.service;
+package com.example.consul.service;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;

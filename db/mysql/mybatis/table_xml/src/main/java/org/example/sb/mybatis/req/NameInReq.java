@@ -1,4 +1,4 @@
-package org.example.sb.mybatis.req;
+package com.example.sb.mybatis.req;
 
 import lombok.Data;
 

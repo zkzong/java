@@ -1,4 +1,4 @@
-package org.example.sj4.algorithm;
+package com.example.sj4.algorithm;
 
 import org.apache.shardingsphere.api.sharding.standard.PreciseShardingAlgorithm;
 import org.apache.shardingsphere.api.sharding.standard.PreciseShardingValue;

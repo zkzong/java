@@ -1,4 +1,4 @@
-package org.example.thread.synchronizedpackage;
+package com.example.thread.synchronizedpackage;
 
 /**
  * 当synchronized作用于静态方法和非静态方法，这两个方法不是同步的，因为一个同步的是类，一个同步的是对象

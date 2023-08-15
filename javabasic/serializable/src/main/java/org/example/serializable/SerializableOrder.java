@@ -1,4 +1,4 @@
-package org.example.serializable;
+package com.example.serializable;
 
 import java.awt.geom.Point2D;
 import java.io.FileInputStream;

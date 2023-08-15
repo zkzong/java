@@ -1,4 +1,4 @@
-package org.example.apollo;
+package com.example.apollo;
 
 import org.jasypt.encryption.StringEncryptor;
 import org.junit.Test;

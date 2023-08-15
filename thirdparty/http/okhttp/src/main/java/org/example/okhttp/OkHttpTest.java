@@ -1,4 +1,4 @@
-package org.example.okhttp;
+package com.example.okhttp;
 
 import okhttp3.Call;
 import okhttp3.Callback;

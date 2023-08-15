@@ -1,15 +1,15 @@
-package org.example.thinkinginjava.generics;
+package com.example.thinkinginjava.generics;
 
-import org.example.thinkinginjava.generics.watercolors.Watercolors;
+import com.example.thinkinginjava.generics.watercolors.Watercolors;
 
 import java.util.EnumSet;
 import java.util.Set;
 
-import static org.example.thinkinginjava.util.Print.print;
-import static org.example.thinkinginjava.util.Sets.complement;
-import static org.example.thinkinginjava.util.Sets.difference;
-import static org.example.thinkinginjava.util.Sets.intersection;
-import static org.example.thinkinginjava.util.Sets.union;
+import static com.example.thinkinginjava.util.Print.print;
+import static com.example.thinkinginjava.util.Sets.complement;
+import static com.example.thinkinginjava.util.Sets.difference;
+import static com.example.thinkinginjava.util.Sets.intersection;
+import static com.example.thinkinginjava.util.Sets.union;
 
 /**
  * Created by Zong on 2016/8/31.

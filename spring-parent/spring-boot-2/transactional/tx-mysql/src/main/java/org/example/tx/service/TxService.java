@@ -1,4 +1,4 @@
-package org.example.tx.service;
+package com.example.tx.service;
 
 /**
  * @Author: Zong

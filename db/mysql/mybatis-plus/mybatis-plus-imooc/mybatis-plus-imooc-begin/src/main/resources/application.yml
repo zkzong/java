@@ -8,7 +8,7 @@ spring:
 logging:
   level:
     root: warn
-    org.example.mp.dao: trace
+    com.example.mp.dao: trace
   pattern:
     console: '%p%m%n'
 
@@ -19,4 +19,4 @@ mybatis-plus:
     db-config:
       id-type: id_worker
       field-strategy: default
-  type-aliases-package: org.example.mp.entity
+  type-aliases-package: com.example.mp.entity

@@ -1,11 +1,11 @@
-package org.example.mq.controller;
+package com.example.mq.controller;
 
-import org.example.mq.callback.CallBackSender;
-import org.example.mq.fanout.FanoutSender;
-import org.example.mq.hello.HelloSender1;
-import org.example.mq.hello.HelloSender2;
-import org.example.mq.topic.TopicSender;
-import org.example.mq.user.UserSender;
+import com.example.mq.callback.CallBackSender;
+import com.example.mq.fanout.FanoutSender;
+import com.example.mq.hello.HelloSender1;
+import com.example.mq.hello.HelloSender2;
+import com.example.mq.topic.TopicSender;
+import com.example.mq.user.UserSender;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

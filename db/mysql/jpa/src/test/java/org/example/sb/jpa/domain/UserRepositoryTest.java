@@ -1,4 +1,4 @@
-package org.example.sb.jpa.domain;
+package com.example.sb.jpa.domain;
 
 import org.junit.Assert;
 import org.junit.Test;

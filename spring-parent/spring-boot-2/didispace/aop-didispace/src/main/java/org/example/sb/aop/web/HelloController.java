@@ -1,4 +1,4 @@
-package org.example.sb.aop.web;
+package com.example.sb.aop.web;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

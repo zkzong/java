@@ -1,4 +1,4 @@
-package org.example.mp;
+package com.example.mp;
 
 import com.baomidou.mybatisplus.core.exceptions.MybatisPlusException;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
@@ -64,7 +64,7 @@ public class CodeGenerator {
         // 包配置
         PackageConfig pc = new PackageConfig();
         //pc.setModuleName(scanner("模块名"));
-        pc.setParent("org.example.mp");
+        pc.setParent("com.example.mp");
         mpg.setPackageInfo(pc);
 
         // 自定义配置

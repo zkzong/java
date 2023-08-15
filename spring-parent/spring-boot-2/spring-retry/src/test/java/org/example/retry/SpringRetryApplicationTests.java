@@ -1,7 +1,7 @@
-package org.example.retry;
+package com.example.retry;
 
-import org.example.retry.pojo.User;
-import org.example.retry.service.RemoteService;
+import com.example.retry.pojo.User;
+import com.example.retry.service.RemoteService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package org.example.sb2.enums;
+package com.example.sb2.enums;
 
 /**
  * 错误码code可以使用纯数字,使用不同区间标识一类错误，也可以使用纯字符，也可以使用前缀+编号

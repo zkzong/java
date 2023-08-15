@@ -1,6 +1,6 @@
-package org.example.sb.annotation;
+package com.example.sb.annotation;
 
-import org.example.sb.annotation.impl.IdentityCardNumberValidator;
+import com.example.sb.annotation.impl.IdentityCardNumberValidator;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;

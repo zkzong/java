@@ -1,4 +1,4 @@
-package org.example.both;
+package com.example.both;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

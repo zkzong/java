@@ -1,4 +1,4 @@
-package org.example.sb.async.task;
+package com.example.sb.async.task;
 
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.AsyncResult;

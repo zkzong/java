@@ -1,11 +1,11 @@
-package org.example.mockito.service.impl;
+package com.example.mockito.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import org.example.mockito.entity.User;
-import org.example.mockito.mapper.UserMapper;
-import org.example.mockito.req.UserReq;
-import org.example.mockito.service.UserService;
+import com.example.mockito.entity.User;
+import com.example.mockito.mapper.UserMapper;
+import com.example.mockito.req.UserReq;
+import com.example.mockito.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

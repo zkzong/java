@@ -1,4 +1,4 @@
-package org.example.designpattern.zen.factory.simplefactory.section6;
+package com.example.designpattern.zen.factory.simplefactory.section6;
 
 import java.util.HashMap;
 import java.util.Map;

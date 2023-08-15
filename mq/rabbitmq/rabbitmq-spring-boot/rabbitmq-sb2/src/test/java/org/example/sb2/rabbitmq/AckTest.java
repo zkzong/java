@@ -1,7 +1,7 @@
-package org.example.sb2.rabbitmq;
+package com.example.sb2.rabbitmq;
 
-import org.example.sb2.rabbitmq.ack.CallBackProducer;
-import org.example.sb2.rabbitmq.ack.Producer;
+import com.example.sb2.rabbitmq.ack.CallBackProducer;
+import com.example.sb2.rabbitmq.ack.Producer;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

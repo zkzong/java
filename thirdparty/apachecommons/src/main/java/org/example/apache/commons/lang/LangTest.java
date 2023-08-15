@@ -1,4 +1,4 @@
-package org.example.apache.commons.lang;
+package com.example.apache.commons.lang;
 
 import org.apache.commons.lang.ClassUtils;
 import org.apache.commons.lang.StringEscapeUtils;
@@ -16,7 +16,7 @@ public class LangTest {
         System.out.println(ClassUtils.getShortClassName(LangTest.class)); // LangTest
 
         // 取得包名
-        System.out.println(ClassUtils.getPackageName(LangTest.class)); // org.example.apache.commons.lang
+        System.out.println(ClassUtils.getPackageName(LangTest.class)); // com.example.apache.commons.lang
 
         // 字符串转数字
         System.out.println(NumberUtils.toInt("6")); // 6

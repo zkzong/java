@@ -1,4 +1,4 @@
-package org.example.lettuce;
+package com.example.lettuce;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

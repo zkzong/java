@@ -1,4 +1,4 @@
-package org.example.thread.synchronizedpackage;
+package com.example.thread.synchronizedpackage;
 
 /**
  * 一个对象有一把锁！多个线程多个锁！

@@ -1,6 +1,6 @@
-package org.example.aop.service;
+package com.example.aop.service;
 
-import org.example.aop.config.ApplicationContextHolder;
+import com.example.aop.config.ApplicationContextHolder;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 

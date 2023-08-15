@@ -1,4 +1,4 @@
-package org.example.thinkinginjava.annotations.database;
+package com.example.thinkinginjava.annotations.database;
 
 /**
  * Created by Zong on 2016/9/18.

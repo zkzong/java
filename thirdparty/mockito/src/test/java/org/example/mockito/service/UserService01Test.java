@@ -1,6 +1,6 @@
-package org.example.mockito.service;
+package com.example.mockito.service;
 
-import org.example.mockito.entity.User;
+import com.example.mockito.entity.User;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

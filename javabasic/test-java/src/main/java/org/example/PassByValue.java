@@ -1,4 +1,4 @@
-package org.example;
+package com.example;
 
 class Person {
     private String name;

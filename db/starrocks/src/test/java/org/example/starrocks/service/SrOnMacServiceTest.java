@@ -1,6 +1,6 @@
-package org.example.starrocks.service;
+package com.example.starrocks.service;
 
-import org.example.starrocks.entity.SrOnMac;
+import com.example.starrocks.entity.SrOnMac;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;

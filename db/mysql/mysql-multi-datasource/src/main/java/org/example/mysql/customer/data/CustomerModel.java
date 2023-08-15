@@ -1,4 +1,4 @@
-package org.example.mysql.customer.data;
+package com.example.mysql.customer.data;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

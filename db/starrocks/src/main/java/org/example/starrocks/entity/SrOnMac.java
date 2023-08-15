@@ -1,4 +1,4 @@
-package org.example.starrocks.entity;
+package com.example.starrocks.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Getter;

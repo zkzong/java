@@ -1,4 +1,4 @@
-package org.example.rabbitmq.topic_exchange;
+package com.example.rabbitmq.topic_exchange;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;

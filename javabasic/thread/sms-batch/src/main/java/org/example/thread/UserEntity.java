@@ -1,4 +1,4 @@
-package org.example.thread;
+package com.example.thread;
 
 public class UserEntity {
     private String userId;

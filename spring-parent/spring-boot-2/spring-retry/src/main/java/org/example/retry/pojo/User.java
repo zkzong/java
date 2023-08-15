@@ -1,4 +1,4 @@
-package org.example.retry.pojo;
+package com.example.retry.pojo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

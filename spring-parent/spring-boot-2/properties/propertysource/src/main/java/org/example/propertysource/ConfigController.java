@@ -1,4 +1,4 @@
-package org.example.propertysource;
+package com.example.propertysource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

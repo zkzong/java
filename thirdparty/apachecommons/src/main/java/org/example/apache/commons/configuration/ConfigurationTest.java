@@ -1,4 +1,4 @@
-package org.example.apache.commons.configuration;
+package com.example.apache.commons.configuration;
 
 import org.apache.commons.configuration.Configuration;
 import org.apache.commons.configuration.ConfigurationException;

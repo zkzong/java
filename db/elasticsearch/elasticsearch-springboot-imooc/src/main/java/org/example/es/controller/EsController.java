@@ -1,4 +1,4 @@
-package org.example.es.controller;
+package com.example.es.controller;
 
 import org.elasticsearch.action.delete.DeleteResponse;
 import org.elasticsearch.action.get.GetResponse;

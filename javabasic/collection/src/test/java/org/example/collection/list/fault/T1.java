@@ -1,4 +1,4 @@
-package org.example.collection.list.fault;
+package com.example.collection.list.fault;
 
 import java.util.List;
 

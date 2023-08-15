@@ -1,7 +1,7 @@
-package org.example.sb.redis.controller;
+package com.example.sb.redis.controller;
 
-import org.example.sb.redis.domain.User;
-import org.example.sb.redis.service.UserService;
+import com.example.sb.redis.domain.User;
+import com.example.sb.redis.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;

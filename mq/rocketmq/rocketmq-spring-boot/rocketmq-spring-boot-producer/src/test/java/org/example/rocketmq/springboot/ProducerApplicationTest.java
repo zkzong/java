@@ -1,4 +1,4 @@
-package org.example.rocketmq.springboot;
+package com.example.rocketmq.springboot;
 
 import org.apache.rocketmq.spring.core.RocketMQTemplate;
 import org.junit.Test;

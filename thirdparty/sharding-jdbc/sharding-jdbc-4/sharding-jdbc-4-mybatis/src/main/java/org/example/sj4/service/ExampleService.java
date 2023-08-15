@@ -1,8 +1,8 @@
 
-package org.example.sj4.service;
+package com.example.sj4.service;
 
 import com.github.pagehelper.PageInfo;
-import org.example.sj4.entity.Order;
+import com.example.sj4.entity.Order;
 
 import java.sql.SQLException;
 import java.util.List;

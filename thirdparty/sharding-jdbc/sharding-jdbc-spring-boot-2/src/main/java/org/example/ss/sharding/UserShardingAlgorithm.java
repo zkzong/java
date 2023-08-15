@@ -1,4 +1,4 @@
-package org.example.ss.sharding;
+package com.example.ss.sharding;
 
 import org.apache.shardingsphere.api.sharding.complex.ComplexKeysShardingAlgorithm;
 import org.apache.shardingsphere.api.sharding.complex.ComplexKeysShardingValue;

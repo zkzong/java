@@ -1,4 +1,4 @@
-package org.example.spring.beans;
+package com.example.spring.beans;
 
 import org.junit.Test;
 import org.springframework.beans.BeanUtils;

@@ -1,4 +1,4 @@
-package org.example.delay;
+package com.example.delay;
 
 import java.time.Instant;
 import java.time.LocalDateTime;

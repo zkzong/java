@@ -1,4 +1,4 @@
-package org.example.algorithm.search;
+package com.example.algorithm.search;
 
 /**
  * Created by Zong on 2016/12/2.

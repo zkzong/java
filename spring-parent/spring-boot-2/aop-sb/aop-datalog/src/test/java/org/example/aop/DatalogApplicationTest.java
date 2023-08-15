@@ -1,10 +1,10 @@
-package org.example.aop;
+package com.example.aop;
 
-import org.example.aop.dao.ProductDao;
-import org.example.aop.datalog.ActionDao;
-import org.example.aop.domain.Action;
-import org.example.aop.domain.ActionType;
-import org.example.aop.domain.Product;
+import com.example.aop.dao.ProductDao;
+import com.example.aop.datalog.ActionDao;
+import com.example.aop.domain.Action;
+import com.example.aop.domain.ActionType;
+import com.example.aop.domain.Product;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

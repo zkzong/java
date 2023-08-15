@@ -1,4 +1,4 @@
-package org.example.apache.commons.beanutils;
+package com.example.apache.commons.beanutils;
 
 import lombok.Data;
 

@@ -1,4 +1,4 @@
-package org.example.mockito.resp;
+package com.example.mockito.resp;
 
 import lombok.Data;
 

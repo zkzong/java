@@ -1,4 +1,4 @@
-package org.example.sb.mail;
+package com.example.sb.mail;
 
 import org.apache.commons.collections.map.HashedMap;
 import org.apache.velocity.app.VelocityEngine;

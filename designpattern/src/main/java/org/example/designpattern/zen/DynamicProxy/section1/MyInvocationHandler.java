@@ -1,4 +1,4 @@
-package org.example.designpattern.zen.DynamicProxy.section1;
+package com.example.designpattern.zen.DynamicProxy.section1;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

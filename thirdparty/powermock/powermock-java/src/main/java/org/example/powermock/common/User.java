@@ -1,4 +1,4 @@
-package org.example.powermock.common;
+package com.example.powermock.common;
 
 public class User {
 }

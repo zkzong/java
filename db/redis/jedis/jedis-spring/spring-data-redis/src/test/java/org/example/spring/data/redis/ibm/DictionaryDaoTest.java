@@ -1,4 +1,4 @@
-package org.example.spring.data.redis.ibm;
+package com.example.spring.data.redis.ibm;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

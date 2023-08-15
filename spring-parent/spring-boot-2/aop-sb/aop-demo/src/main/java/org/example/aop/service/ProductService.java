@@ -1,7 +1,7 @@
-package org.example.aop.service;
+package com.example.aop.service;
 
-import org.example.aop.domain.Product;
-import org.example.aop.security.AdminOnly;
+import com.example.aop.domain.Product;
+import com.example.aop.security.AdminOnly;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

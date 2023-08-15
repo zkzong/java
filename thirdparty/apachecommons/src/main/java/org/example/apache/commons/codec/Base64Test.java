@@ -1,4 +1,4 @@
-package org.example.apache.commons.codec;
+package com.example.apache.commons.codec;
 
 import org.apache.commons.codec.binary.Base64;
 import org.junit.Test;

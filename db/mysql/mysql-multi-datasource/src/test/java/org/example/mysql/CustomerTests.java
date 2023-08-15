@@ -1,7 +1,7 @@
-package org.example.mysql;
+package com.example.mysql;
 
-import org.example.mysql.customer.data.CustomerModel;
-import org.example.mysql.customer.repo.CustomerRepository;
+import com.example.mysql.customer.data.CustomerModel;
+import com.example.mysql.customer.repo.CustomerRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

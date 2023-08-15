@@ -1,8 +1,8 @@
-package org.example.sb2.config;
+package com.example.sb2.config;
 
 import com.google.common.collect.ImmutableList;
-import org.example.sb2.annotation.Limit;
-import org.example.sb2.annotation.LimitType;
+import com.example.sb2.annotation.Limit;
+import com.example.sb2.annotation.LimitType;
 import org.apache.commons.lang3.StringUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -37,7 +37,7 @@ public class LimitInterceptor {
         this.limitRedisTemplate = limitRedisTemplate;
     }
 
-    @Around("execution(public * *(..)) && @annotation(org.example.sb2.annotation.Limit)")
+    @Around("execution(public * *(..)) && @annotation(com.example.sb2.annotation.Limit)")
     public Object interceptor(ProceedingJoinPoint pjp) {
         MethodSignature signature = (MethodSignature) pjp.getSignature();
         Method method = signature.getMethod();

@@ -1,4 +1,4 @@
-package org.example.guava;
+package com.example.guava;
 
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.BiMap;

@@ -1,4 +1,4 @@
-package org.example;
+package com.example;
 
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.StaxDriver;

@@ -1,4 +1,4 @@
-package org.example.map.service;
+package com.example.map.service;
 
 import java.math.BigDecimal;
 

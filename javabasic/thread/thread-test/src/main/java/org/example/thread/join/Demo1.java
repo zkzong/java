@@ -1,4 +1,4 @@
-package org.example.thread.join;
+package com.example.thread.join;
 
 import java.util.concurrent.TimeUnit;
 

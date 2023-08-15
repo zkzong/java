@@ -1,6 +1,6 @@
-package org.example.scd.feign;
+package com.example.scd.feign;
 
-import org.example.scd.entity.User;
+import com.example.scd.entity.User;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

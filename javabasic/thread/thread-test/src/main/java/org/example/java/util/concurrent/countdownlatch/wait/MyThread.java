@@ -1,4 +1,4 @@
-package org.example.java.util.concurrent.countdownlatch.wait;
+package com.example.java.util.concurrent.countdownlatch.wait;
 
 /**
  * @author zkzong

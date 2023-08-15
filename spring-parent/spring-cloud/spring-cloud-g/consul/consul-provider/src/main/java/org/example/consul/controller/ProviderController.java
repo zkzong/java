@@ -1,4 +1,4 @@
-package org.example.consul.controller;
+package com.example.consul.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

@@ -1,6 +1,6 @@
-package org.example.hbase.controller;
+package com.example.hbase.controller;
 
-import org.example.hbase.service.HBaseService;
+import com.example.hbase.service.HBaseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

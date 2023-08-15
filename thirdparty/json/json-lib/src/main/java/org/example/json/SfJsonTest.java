@@ -1,4 +1,4 @@
-package org.example.json;
+package com.example.json;
 
 import net.sf.json.JSONArray;
 

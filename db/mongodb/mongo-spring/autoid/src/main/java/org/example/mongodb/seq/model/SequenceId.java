@@ -1,4 +1,4 @@
-package org.example.mongodb.seq.model;
+package com.example.mongodb.seq.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

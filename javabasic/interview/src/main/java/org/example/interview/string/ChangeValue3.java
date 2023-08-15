@@ -1,4 +1,4 @@
-package org.example.interview.string;
+package com.example.interview.string;
 
 public class ChangeValue3 {
     private static String a;

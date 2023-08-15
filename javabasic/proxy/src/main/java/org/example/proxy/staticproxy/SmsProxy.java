@@ -1,6 +1,6 @@
-package org.example.proxy.staticproxy;
+package com.example.proxy.staticproxy;
 
-import org.example.proxy.SmsService;
+import com.example.proxy.SmsService;
 
 public class SmsProxy implements SmsService {
 

@@ -1,4 +1,4 @@
-package org.example.simple;
+package com.example.simple;
 
 import com.dangdang.ddframe.job.config.JobCoreConfiguration;
 import com.dangdang.ddframe.job.config.simple.SimpleJobConfiguration;

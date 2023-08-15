@@ -1,9 +1,9 @@
-package org.example.log.aspect;
+package com.example.log.aspect;
 
 import com.google.gson.Gson;
-import org.example.log.anno.SysLog;
-import org.example.log.bo.SysLogBO;
-import org.example.log.service.SysLogService;
+import com.example.log.anno.SysLog;
+import com.example.log.bo.SysLogBO;
+import com.example.log.service.SysLogService;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -35,7 +35,7 @@ public class SysLogAspect {
      * 当然，我们也可以通过切点表达式直接指定需要拦截的package,需要拦截的class 以及 method
      * 切点表达式:   execution(...)
      */
-    @Pointcut("@annotation(org.example.log.anno.SysLog)")
+    @Pointcut("@annotation(com.example.log.anno.SysLog)")
     public void logPointCut() {
     }
 

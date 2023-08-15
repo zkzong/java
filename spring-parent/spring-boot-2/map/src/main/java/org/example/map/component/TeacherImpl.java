@@ -1,4 +1,4 @@
-package org.example.map.component;
+package com.example.map.component;
 
 import org.springframework.stereotype.Component;
 

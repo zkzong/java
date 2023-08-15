@@ -1,4 +1,4 @@
-package org.example.json.model;
+package com.example.json.model;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,6 +1,6 @@
-package org.example.mysql.product.repo;
+package com.example.mysql.product.repo;
 
-import org.example.mysql.product.data.ProductModel;
+import com.example.mysql.product.data.ProductModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,7 +1,7 @@
-package org.example.tx.service.impl;
+package com.example.tx.service.impl;
 
-import org.example.tx.mapper.PersonMapper;
-import org.example.tx.service.PersonService;
+import com.example.tx.mapper.PersonMapper;
+import com.example.tx.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

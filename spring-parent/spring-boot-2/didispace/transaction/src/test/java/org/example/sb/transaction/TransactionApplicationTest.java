@@ -1,7 +1,7 @@
-package org.example.sb.transaction;
+package com.example.sb.transaction;
 
-import org.example.sb.transaction.domain.User;
-import org.example.sb.transaction.domain.UserRepository;
+import com.example.sb.transaction.domain.User;
+import com.example.sb.transaction.domain.UserRepository;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

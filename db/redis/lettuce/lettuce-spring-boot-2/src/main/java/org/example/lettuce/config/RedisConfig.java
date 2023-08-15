@@ -1,4 +1,4 @@
-package org.example.lettuce.config;
+package com.example.lettuce.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

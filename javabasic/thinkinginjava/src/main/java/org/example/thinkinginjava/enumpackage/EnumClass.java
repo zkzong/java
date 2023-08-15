@@ -1,7 +1,7 @@
-package org.example.thinkinginjava.enumpackage;
+package com.example.thinkinginjava.enumpackage;
 
-import static org.example.thinkinginjava.util.Print.print;
-import static org.example.thinkinginjava.util.Print.printnb;
+import static com.example.thinkinginjava.util.Print.print;
+import static com.example.thinkinginjava.util.Print.printnb;
 
 /**
  * Created by zong on 2016/8/25.

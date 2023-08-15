@@ -1,7 +1,7 @@
-package org.example.ss.service;
+package com.example.ss.service;
 
-import org.example.ss.entity.UserEntity;
-import org.example.ss.repository.UserRepository;
+import com.example.ss.entity.UserEntity;
+import com.example.ss.repository.UserRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

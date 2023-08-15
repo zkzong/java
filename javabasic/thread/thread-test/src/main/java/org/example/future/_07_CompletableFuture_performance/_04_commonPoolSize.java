@@ -1,4 +1,4 @@
-package org.example.future._07_CompletableFuture_performance;
+package com.example.future._07_CompletableFuture_performance;
 
 import java.util.concurrent.ForkJoinPool;
 

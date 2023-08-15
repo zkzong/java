@@ -1,4 +1,4 @@
-package org.example.sb2.webflux;
+package com.example.sb2.webflux;
 
 import static org.junit.Assert.*;
 

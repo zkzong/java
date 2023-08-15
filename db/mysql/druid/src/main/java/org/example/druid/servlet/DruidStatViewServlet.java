@@ -1,4 +1,4 @@
-package org.example.druid.servlet;
+package com.example.druid.servlet;
 
 import com.alibaba.druid.support.http.StatViewServlet;
 

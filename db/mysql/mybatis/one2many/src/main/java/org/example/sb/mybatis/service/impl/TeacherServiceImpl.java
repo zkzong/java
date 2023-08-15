@@ -1,8 +1,8 @@
-package org.example.sb.mybatis.service.impl;
+package com.example.sb.mybatis.service.impl;
 
-import org.example.sb.mybatis.domain.Teacher;
-import org.example.sb.mybatis.mapper.TeacherMapper;
-import org.example.sb.mybatis.service.TeacherService;
+import com.example.sb.mybatis.domain.Teacher;
+import com.example.sb.mybatis.mapper.TeacherMapper;
+import com.example.sb.mybatis.service.TeacherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

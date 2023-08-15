@@ -1,4 +1,4 @@
-package org.example.designpattern.proxy;
+package com.example.designpattern.proxy;
 
 
 /**

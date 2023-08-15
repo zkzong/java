@@ -1,4 +1,4 @@
-package org.example.system;
+package com.example.system;
 
 /**
  * Created by Zong on 2017/5/9.

@@ -1,4 +1,4 @@
-package org.example.interview.thread;
+package com.example.interview.thread;
 
 /**
  * Created by Zong on 2016/12/6.

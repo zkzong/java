@@ -1,6 +1,6 @@
-package org.example.sb.mybatis.service;
+package com.example.sb.mybatis.service;
 
-import org.example.sb.mybatis.domain.Teacher;
+import com.example.sb.mybatis.domain.Teacher;
 
 import java.util.List;
 

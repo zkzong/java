@@ -1,4 +1,4 @@
-package org.example.rocketmq.schedule;
+package com.example.rocketmq.schedule;
 
 import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
 import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyContext;

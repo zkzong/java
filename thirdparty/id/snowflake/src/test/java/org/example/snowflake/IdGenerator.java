@@ -1,4 +1,4 @@
-package org.example.snowflake;
+package com.example.snowflake;
 
 import struqt.util.UniqueIdGenerator;
 

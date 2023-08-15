@@ -9,7 +9,7 @@
            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
     <!-- 自动扫描注解的bean -->
-    <context:component-scan base-package="org.example.service"/>
+    <context:component-scan base-package="com.example.service"/>
 
     <!-- 引入properties配置文件 -->
     <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
@@ -47,7 +47,7 @@
     </bean>
 
     <!-- cache配置 -->
-    <bean id="methodCacheInterceptor" class="org.example.redis.cache.MethodCacheInterceptor">
+    <bean id="methodCacheInterceptor" class="com.example.redis.cache.MethodCacheInterceptor">
         <property name="redisTemplate" ref="redisTemplate"/>
     </bean>
 
@@ -56,7 +56,7 @@
         <property name="advice" ref="methodCacheInterceptor"/>
         <property name="pattern" value=".*ServiceImpl.*getTimestamp"/>
     </bean>
-    <bean id="redisTestService" class="org.example.service.impl.RedisTestServiceImpl">
+    <bean id="redisTestService" class="com.example.service.impl.RedisTestServiceImpl">
     </bean>
     <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"/>
 

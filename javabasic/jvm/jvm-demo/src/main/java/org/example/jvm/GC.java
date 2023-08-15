@@ -1,4 +1,4 @@
-package org.example.jvm;
+package com.example.jvm;
 
 import java.util.LinkedList;
 import java.util.List;

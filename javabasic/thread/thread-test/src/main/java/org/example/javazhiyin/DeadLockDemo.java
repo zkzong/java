@@ -1,4 +1,4 @@
-package org.example.javazhiyin;
+package com.example.javazhiyin;
 
 public class DeadLockDemo {
     private static String resource_a = "A";

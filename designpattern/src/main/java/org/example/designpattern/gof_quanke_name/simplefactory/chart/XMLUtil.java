@@ -1,4 +1,4 @@
-package org.example.designpattern.gof_quanke_name.simplefactory.chart;
+package com.example.designpattern.gof_quanke_name.simplefactory.chart;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;

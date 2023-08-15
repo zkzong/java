@@ -1,4 +1,4 @@
-package org.example.mp.entity;
+package com.example.mp.entity;
 
 import com.baomidou.mybatisplus.annotation.FieldStrategy;
 import com.baomidou.mybatisplus.annotation.TableField;

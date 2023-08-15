@@ -1,4 +1,4 @@
-package org.example.mongodb.springdata.core;
+package com.example.mongodb.springdata.core;
 
 import com.mongodb.gridfs.GridFSDBFile;
 import org.springframework.context.ApplicationContext;

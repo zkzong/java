@@ -1,7 +1,7 @@
-package org.example.sb.redis.controller;
+package com.example.sb.redis.controller;
 
-import org.example.sb.redis.domain.City;
-import org.example.sb.redis.service.CityService;
+import com.example.sb.redis.domain.City;
+import com.example.sb.redis.service.CityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;

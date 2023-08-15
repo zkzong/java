@@ -1,14 +1,14 @@
-package org.example.thinkinginjava.enumpackage;
+package com.example.thinkinginjava.enumpackage;
 
-import org.example.thinkinginjava.util.OSExecute;
+import com.example.thinkinginjava.util.OSExecute;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Type;
 import java.util.Set;
 import java.util.TreeSet;
 
-import static org.example.thinkinginjava.util.Print.print;
-import static org.example.thinkinginjava.util.Print.printnb;
+import static com.example.thinkinginjava.util.Print.print;
+import static com.example.thinkinginjava.util.Print.printnb;
 
 /**
  * Created by zong on 2016/8/25.

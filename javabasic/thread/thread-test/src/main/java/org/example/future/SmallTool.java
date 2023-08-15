@@ -1,4 +1,4 @@
-package org.example.future;
+package com.example.future;
 
 import java.util.StringJoiner;
 

@@ -1,4 +1,4 @@
-package org.example.mongodb;
+package com.example.mongodb;
 
 import com.mongodb.DB;
 import com.mongodb.DBCollection;

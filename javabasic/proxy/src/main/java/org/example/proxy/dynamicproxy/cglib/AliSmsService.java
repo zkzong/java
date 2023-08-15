@@ -1,4 +1,4 @@
-package org.example.proxy.dynamicproxy.cglib;
+package com.example.proxy.dynamicproxy.cglib;
 
 public class AliSmsService {
     public String send(String message) {

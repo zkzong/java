@@ -1,4 +1,4 @@
-package org.example.eureka;
+package com.example.eureka;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;

@@ -1,4 +1,4 @@
-package org.example.thread.threadpool.countdownlatch;
+package com.example.thread.threadpool.countdownlatch;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.LinkedBlockingDeque;

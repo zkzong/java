@@ -1,4 +1,4 @@
-package org.example.token;
+package com.example.token;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;

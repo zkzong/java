@@ -1,4 +1,4 @@
-package org.example.collection.map;
+package com.example.collection.map;
 
 import java.io.Serializable;
 import java.util.Map;

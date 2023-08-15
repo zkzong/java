@@ -1,6 +1,6 @@
-package org.example.sj3.mybatis.mapper;
+package com.example.sj3.mybatis.mapper;
 
-import org.example.sj3.mybatis.entity.OrderItem;
+import com.example.sj3.mybatis.entity.OrderItem;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

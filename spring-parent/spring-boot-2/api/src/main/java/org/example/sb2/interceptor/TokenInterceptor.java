@@ -1,9 +1,9 @@
-package org.example.sb2.interceptor;
+package com.example.sb2.interceptor;
 
-import org.example.sb2.pojo.TokenInfo;
-import org.example.sb2.annotation.NotRepeatSubmit;
-import org.example.sb2.util.ApiUtil;
-import org.example.sb2.util.MD5Util;
+import com.example.sb2.pojo.TokenInfo;
+import com.example.sb2.annotation.NotRepeatSubmit;
+import com.example.sb2.util.ApiUtil;
+import com.example.sb2.util.MD5Util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;

@@ -1,4 +1,4 @@
-package org.example.segmentfault.pool;
+package com.example.segmentfault.pool;
 
 import org.junit.Test;
 

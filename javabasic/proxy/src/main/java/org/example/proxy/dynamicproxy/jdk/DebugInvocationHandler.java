@@ -1,4 +1,4 @@
-package org.example.proxy.dynamicproxy.jdk;
+package com.example.proxy.dynamicproxy.jdk;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.InvocationTargetException;

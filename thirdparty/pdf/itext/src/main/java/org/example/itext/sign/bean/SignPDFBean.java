@@ -1,4 +1,4 @@
-package org.example.itext.sign.bean;
+package com.example.itext.sign.bean;
 
 public class SignPDFBean {
     private String keyWord; // 签章关键字

@@ -1,4 +1,4 @@
-package org.example.designpattern.gof_quanke_name.factorymethod.logger3;
+package com.example.designpattern.gof_quanke_name.factorymethod.logger3;
 
 /**
  * Created by Zong on 2016/11/25.

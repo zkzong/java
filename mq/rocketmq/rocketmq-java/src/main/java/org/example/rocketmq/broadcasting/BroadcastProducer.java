@@ -1,4 +1,4 @@
-package org.example.rocketmq.broadcasting;
+package com.example.rocketmq.broadcasting;
 
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
 import org.apache.rocketmq.client.producer.SendResult;

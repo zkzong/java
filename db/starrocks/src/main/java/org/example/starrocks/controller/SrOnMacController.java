@@ -1,7 +1,7 @@
-package org.example.starrocks.controller;
+package com.example.starrocks.controller;
 
-import org.example.starrocks.entity.SrOnMac;
-import org.example.starrocks.service.SrOnMacService;
+import com.example.starrocks.entity.SrOnMac;
+import com.example.starrocks.service.SrOnMacService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

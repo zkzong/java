@@ -1,4 +1,4 @@
-package org.example.swagger;
+package com.example.swagger;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;

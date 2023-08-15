@@ -1,4 +1,4 @@
-package org.example.sb2.annotation;
+package com.example.sb2.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

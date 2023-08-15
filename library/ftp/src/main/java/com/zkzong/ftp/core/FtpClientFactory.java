@@ -1,6 +1,6 @@
-package org.example.ftp.core;
+package com.example.ftp.core;
 
-import org.example.ftp.config.FtpClientProperties;
+import com.example.ftp.config.FtpClientProperties;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.net.ftp.FTPClient;
 import org.apache.commons.net.ftp.FTPReply;

@@ -1,4 +1,4 @@
-package org.example.annotation.imooc.demo;
+package com.example.annotation.imooc.demo;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

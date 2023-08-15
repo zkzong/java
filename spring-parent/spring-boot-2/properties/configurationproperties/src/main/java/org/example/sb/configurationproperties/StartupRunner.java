@@ -1,4 +1,4 @@
-package org.example.sb.configurationproperties;
+package com.example.sb.configurationproperties;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;

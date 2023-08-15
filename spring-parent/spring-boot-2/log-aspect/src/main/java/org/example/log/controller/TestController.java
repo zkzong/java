@@ -1,6 +1,6 @@
-package org.example.log.controller;
+package com.example.log.controller;
 
-import org.example.log.anno.SysLog;
+import com.example.log.anno.SysLog;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;

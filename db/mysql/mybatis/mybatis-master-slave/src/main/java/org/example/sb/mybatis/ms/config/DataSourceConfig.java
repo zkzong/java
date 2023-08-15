@@ -1,7 +1,7 @@
-package org.example.sb.mybatis.ms.config;
+package com.example.sb.mybatis.ms.config;
 
-import org.example.sb.mybatis.ms.bean.MyRoutingDataSource;
-import org.example.sb.mybatis.ms.enums.DBTypeEnum;
+import com.example.sb.mybatis.ms.bean.MyRoutingDataSource;
+import com.example.sb.mybatis.ms.enums.DBTypeEnum;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;

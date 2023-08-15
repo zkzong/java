@@ -1,4 +1,4 @@
-package org.example.minio.service;
+package com.example.minio.service;
 
 import cn.hutool.core.io.FileUtil;
 import io.minio.ObjectWriteResponse;

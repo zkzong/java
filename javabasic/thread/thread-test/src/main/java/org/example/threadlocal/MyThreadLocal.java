@@ -1,4 +1,4 @@
-package org.example.threadlocal;
+package com.example.threadlocal;
 
 import java.util.Collections;
 import java.util.HashMap;

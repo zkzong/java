@@ -1,6 +1,6 @@
-package org.example.ss.repository;
+package com.example.ss.repository;
 
-import org.example.ss.entity.Address;
+import com.example.ss.entity.Address;
 
 public interface AddressRepository extends CommonRepository<Address, Long> {
 }

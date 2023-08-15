@@ -1,4 +1,4 @@
-package org.example.thread.yield;
+package com.example.thread.yield;
 
 public class Run {
     public static void main(String[] args) {

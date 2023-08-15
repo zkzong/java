@@ -1,6 +1,6 @@
-package org.example.sb.swagger2.web;
+package com.example.sb.swagger2.web;
 
-import org.example.sb.swagger2.domain.Person;
+import com.example.sb.swagger2.domain.Person;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.RequestBody;

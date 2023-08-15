@@ -1,6 +1,6 @@
-package org.example.mp.dao;
+package com.example.mp.dao;
 
-import org.example.mp.entity.User;
+import com.example.mp.entity.User;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

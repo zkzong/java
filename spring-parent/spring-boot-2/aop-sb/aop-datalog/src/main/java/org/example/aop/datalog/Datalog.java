@@ -1,4 +1,4 @@
-package org.example.aop.datalog;
+package com.example.aop.datalog;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

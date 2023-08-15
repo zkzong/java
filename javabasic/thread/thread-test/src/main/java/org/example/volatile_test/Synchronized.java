@@ -1,4 +1,4 @@
-package org.example.volatile_test;
+package com.example.volatile_test;
 
 public class Synchronized {
     public int inc = 0;

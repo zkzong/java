@@ -1,6 +1,6 @@
-package org.example.sj3.mybatis.service;
+package com.example.sj3.mybatis.service;
 
-import org.example.sj3.mybatis.entity.Order;
+import com.example.sj3.mybatis.entity.Order;
 
 import java.util.List;
 

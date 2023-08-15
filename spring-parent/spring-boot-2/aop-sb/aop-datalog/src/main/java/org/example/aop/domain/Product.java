@@ -1,6 +1,6 @@
-package org.example.aop.domain;
+package com.example.aop.domain;
 
-import org.example.aop.datalog.Datalog;
+import com.example.aop.datalog.Datalog;
 import lombok.Getter;
 import lombok.Setter;
 

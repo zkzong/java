@@ -1,4 +1,4 @@
-package org.example.map.component;
+package com.example.map.component;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,6 @@
-package org.example.thinkinginjava.typeinfo.toys;
+package com.example.thinkinginjava.typeinfo.toys;
 
-import static org.example.thinkinginjava.util.Print.print;
+import static com.example.thinkinginjava.util.Print.print;
 
 /**
  * Created by Zong on 2016/9/19.
@@ -38,7 +38,7 @@ public class ToyTest {
     public static void main(String[] args) {
         Class c = null;
         try {
-            c = Class.forName("org.example.thinkinginjava.typeinfo.toys.FancyToy");
+            c = Class.forName("com.example.thinkinginjava.typeinfo.toys.FancyToy");
         } catch (ClassNotFoundException e) {
             print("Can't find FancyToy");
             System.exit(1);

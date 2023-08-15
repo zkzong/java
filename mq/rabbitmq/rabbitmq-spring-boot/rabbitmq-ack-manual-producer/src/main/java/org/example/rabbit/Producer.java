@@ -1,6 +1,6 @@
-package org.example.rabbit;
+package com.example.rabbit;
 
-import org.example.rabbit.config.RabbitConfig;
+import com.example.rabbit.config.RabbitConfig;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

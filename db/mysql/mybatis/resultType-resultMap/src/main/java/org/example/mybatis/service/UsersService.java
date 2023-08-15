@@ -1,7 +1,7 @@
-package org.example.mybatis.service;
+package com.example.mybatis.service;
 
 
-import org.example.mybatis.domain.Users;
+import com.example.mybatis.domain.Users;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package org.example.sj3.jpa.service;
+package com.example.sj3.jpa.service;
 
 public interface OrderItemService {
 

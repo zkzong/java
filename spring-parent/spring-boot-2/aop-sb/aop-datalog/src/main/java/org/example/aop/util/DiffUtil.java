@@ -1,8 +1,8 @@
-package org.example.aop.util;
+package com.example.aop.util;
 
 import com.alibaba.fastjson.JSON;
-import org.example.aop.datalog.Datalog;
-import org.example.aop.domain.ChangeItem;
+import com.example.aop.datalog.Datalog;
+import com.example.aop.domain.ChangeItem;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.beanutils.PropertyUtils;
 import org.springframework.util.StringUtils;

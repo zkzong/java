@@ -1,9 +1,9 @@
-package org.example.aop;
+package com.example.aop;
 
-import org.example.aop.bean.Product;
-import org.example.aop.log.LogService;
-import org.example.aop.service.ProductService;
-import org.example.aop.service.sub.SubService;
+import com.example.aop.bean.Product;
+import com.example.aop.log.LogService;
+import com.example.aop.service.ProductService;
+import com.example.aop.service.sub.SubService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

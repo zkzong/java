@@ -1,7 +1,7 @@
-package org.example.sb.mybatis.controller;
+package com.example.sb.mybatis.controller;
 
-import org.example.sb.mybatis.domain.City;
-import org.example.sb.mybatis.service.CityService;
+import com.example.sb.mybatis.domain.City;
+import com.example.sb.mybatis.service.CityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

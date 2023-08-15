@@ -1,4 +1,4 @@
-package org.example.disruptor;
+package com.example.disruptor;
 
 public interface DisruptorMqService {
 

@@ -1,4 +1,4 @@
-package org.example.designpattern.headfirst.singleton.classic;
+package com.example.designpattern.headfirst.singleton.classic;
 
 /**
  * Created by Zong on 2016/10/15.

@@ -1,4 +1,4 @@
-package org.example.designpattern.zen.proxy.section7;
+package com.example.designpattern.zen.proxy.section7;
 
 /**
  * Created by Zong on 2016/11/7.

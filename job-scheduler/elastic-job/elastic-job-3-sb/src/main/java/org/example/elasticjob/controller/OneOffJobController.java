@@ -1,4 +1,4 @@
-package org.example.elasticjob.controller;
+package com.example.elasticjob.controller;
 
 import org.apache.shardingsphere.elasticjob.lite.api.bootstrap.impl.OneOffJobBootstrap;
 import org.springframework.web.bind.annotation.GetMapping;

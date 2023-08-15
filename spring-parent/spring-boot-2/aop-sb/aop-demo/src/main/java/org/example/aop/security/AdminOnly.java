@@ -1,4 +1,4 @@
-package org.example.aop.security;
+package com.example.aop.security;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

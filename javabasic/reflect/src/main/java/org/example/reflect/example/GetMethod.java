@@ -1,6 +1,6 @@
-package org.example.reflect.example;
+package com.example.reflect.example;
 
-import org.example.reflect.People;
+import com.example.reflect.People;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;

@@ -1,4 +1,4 @@
-package org.example.dataflow;
+package com.example.dataflow;
 
 import com.dangdang.ddframe.job.config.JobCoreConfiguration;
 import com.dangdang.ddframe.job.config.dataflow.DataflowJobConfiguration;

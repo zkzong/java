@@ -1,6 +1,6 @@
-package org.example.es.dao;
+package com.example.es.dao;
 
-import org.example.es.entity.Commodity;
+import com.example.es.entity.Commodity;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 import org.springframework.stereotype.Repository;
 

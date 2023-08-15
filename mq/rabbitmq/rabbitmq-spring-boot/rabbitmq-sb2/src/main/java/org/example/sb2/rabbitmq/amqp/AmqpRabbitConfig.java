@@ -1,4 +1,4 @@
-package org.example.sb2.rabbitmq.amqp;
+package com.example.sb2.rabbitmq.amqp;
 
 import org.springframework.amqp.core.Queue;
 import org.springframework.context.annotation.Bean;

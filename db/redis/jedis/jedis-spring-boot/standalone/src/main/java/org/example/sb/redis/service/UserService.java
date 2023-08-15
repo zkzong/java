@@ -1,6 +1,6 @@
-package org.example.sb.redis.service;
+package com.example.sb.redis.service;
 
-import org.example.sb.redis.domain.User;
+import com.example.sb.redis.domain.User;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;

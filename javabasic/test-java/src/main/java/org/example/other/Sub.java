@@ -1,4 +1,4 @@
-package org.example.other;
+package com.example.other;
 
 /**
  * Created by Zong on 2016/11/17.

@@ -1,4 +1,4 @@
-package org.example.netty.server;
+package com.example.netty.server;
 
 /**
  * @Author: zong

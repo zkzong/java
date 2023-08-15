@@ -1,4 +1,4 @@
-package org.example.countdownlatch.e1;
+package com.example.countdownlatch.e1;
 
 import java.util.ArrayList;
 import java.util.List;

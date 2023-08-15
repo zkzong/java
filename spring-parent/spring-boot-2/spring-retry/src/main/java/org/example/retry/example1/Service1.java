@@ -1,4 +1,4 @@
-package org.example.retry.example1;
+package com.example.retry.example1;
 
 import org.springframework.remoting.RemoteAccessException;
 import org.springframework.retry.annotation.Backoff;

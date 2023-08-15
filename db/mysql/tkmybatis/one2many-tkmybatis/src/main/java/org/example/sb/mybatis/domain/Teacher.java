@@ -1,4 +1,4 @@
-package org.example.sb.mybatis.domain;
+package com.example.sb.mybatis.domain;
 
 import lombok.Data;
 

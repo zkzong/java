@@ -1,4 +1,4 @@
-package org.example.sb2.common;
+package com.example.sb2.common;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

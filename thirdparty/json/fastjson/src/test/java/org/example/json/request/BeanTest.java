@@ -1,4 +1,4 @@
-package org.example.json.request;
+package com.example.json.request;
 
 import com.alibaba.fastjson.JSON;
 import org.junit.Test;

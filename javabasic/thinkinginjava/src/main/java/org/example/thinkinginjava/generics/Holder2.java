@@ -1,4 +1,4 @@
-package org.example.thinkinginjava.generics;
+package com.example.thinkinginjava.generics;
 
 /**
  * Created by Zong on 2016/8/26.

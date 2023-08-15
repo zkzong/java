@@ -1,4 +1,4 @@
-package org.example.redis;
+package com.example.redis;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

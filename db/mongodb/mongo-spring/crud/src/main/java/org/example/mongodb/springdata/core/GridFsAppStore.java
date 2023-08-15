@@ -1,8 +1,8 @@
-package org.example.mongodb.springdata.core;
+package com.example.mongodb.springdata.core;
 
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBObject;
-import org.example.mongodb.springdata.config.GridFsMongoConfig;
+import com.example.mongodb.springdata.config.GridFsMongoConfig;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.data.mongodb.gridfs.GridFsOperations;

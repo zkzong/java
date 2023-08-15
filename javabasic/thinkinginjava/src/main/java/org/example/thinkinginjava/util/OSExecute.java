@@ -1,4 +1,4 @@
-package org.example.thinkinginjava.util;
+package com.example.thinkinginjava.util;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

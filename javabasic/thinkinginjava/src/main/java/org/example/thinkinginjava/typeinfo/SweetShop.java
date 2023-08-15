@@ -1,6 +1,6 @@
-package org.example.thinkinginjava.typeinfo;
+package com.example.thinkinginjava.typeinfo;
 
-import static org.example.thinkinginjava.util.Print.print;
+import static com.example.thinkinginjava.util.Print.print;
 
 /**
  * Created by Zong on 2016/9/19.
@@ -29,7 +29,7 @@ public class SweetShop {
         new Candy();
         print("After creating Candy");
         try {
-            Class.forName("org.example.thinkinginjava.typeinfo.Gum");
+            Class.forName("com.example.thinkinginjava.typeinfo.Gum");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
             print("Couldn't find Gum");

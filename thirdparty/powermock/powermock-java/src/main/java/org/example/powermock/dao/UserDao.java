@@ -1,6 +1,6 @@
-package org.example.powermock.dao;
+package com.example.powermock.dao;
 
-import org.example.powermock.common.User;
+import com.example.powermock.common.User;
 
 public class UserDao {
 

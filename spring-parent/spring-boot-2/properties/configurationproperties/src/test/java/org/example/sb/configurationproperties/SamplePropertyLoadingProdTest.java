@@ -1,4 +1,4 @@
-package org.example.sb.configurationproperties;
+package com.example.sb.configurationproperties;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

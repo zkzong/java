@@ -12,7 +12,7 @@
     <bean id="redisTemplate" class="org.springframework.data.redis.core.RedisTemplate"
           p:connectionFactory-ref="connectionFactory" />
 
-    <bean id="userRepository" class="org.example.springredis.case2.repository.UserRepository">
+    <bean id="userRepository" class="com.example.springredis.case2.repository.UserRepository">
         <property name="redisTemplate" ref="redisTemplate" />
     </bean>
 

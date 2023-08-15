@@ -1,4 +1,4 @@
-package org.example.sb.pagehelper.domain;
+package com.example.sb.pagehelper.domain;
 
 import lombok.Data;
 

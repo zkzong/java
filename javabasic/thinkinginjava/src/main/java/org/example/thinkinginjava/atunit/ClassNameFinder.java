@@ -1,7 +1,7 @@
-package org.example.thinkinginjava.atunit;
+package com.example.thinkinginjava.atunit;
 
-import org.example.thinkinginjava.util.BinaryFile;
-import org.example.thinkinginjava.util.Directory;
+import com.example.thinkinginjava.util.BinaryFile;
+import com.example.thinkinginjava.util.Directory;
 
 import java.io.ByteArrayInputStream;
 import java.io.DataInputStream;
@@ -9,7 +9,7 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.example.thinkinginjava.util.Print.print;
+import static com.example.thinkinginjava.util.Print.print;
 
 /**
  * Created by Zong on 2016/9/19.

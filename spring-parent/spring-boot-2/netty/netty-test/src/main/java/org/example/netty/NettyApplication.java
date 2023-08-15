@@ -1,6 +1,6 @@
-package org.example.netty;
+package com.example.netty;
 
-import org.example.netty.server.EchoServer;
+import com.example.netty.server.EchoServer;
 import io.netty.channel.ChannelFuture;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

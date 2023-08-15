@@ -1,4 +1,4 @@
-package org.example.mp.config;
+package com.example.mp.config;
 
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
 import org.mybatis.spring.annotation.MapperScan;
@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
  * @since 2018-08-10
  */
 @Configuration
-@MapperScan("org.example.mp.mapper")
+@MapperScan("com.example.mp.mapper")
 public class MybatisPlusConfig {
 
     /**

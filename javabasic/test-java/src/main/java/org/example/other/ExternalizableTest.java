@@ -1,4 +1,4 @@
-package org.example.other;
+package com.example.other;
 
 import java.io.Externalizable;
 import java.io.File;

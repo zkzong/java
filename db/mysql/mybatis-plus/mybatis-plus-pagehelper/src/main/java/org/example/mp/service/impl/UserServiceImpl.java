@@ -1,12 +1,12 @@
-package org.example.mp.service.impl;
+package com.example.mp.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import org.example.mp.dto.UserDto;
-import org.example.mp.entity.User;
-import org.example.mp.mapper.UserMapper;
-import org.example.mp.service.UserService;
+import com.example.mp.dto.UserDto;
+import com.example.mp.entity.User;
+import com.example.mp.mapper.UserMapper;
+import com.example.mp.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

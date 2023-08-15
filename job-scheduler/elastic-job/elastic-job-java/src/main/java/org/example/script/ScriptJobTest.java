@@ -1,4 +1,4 @@
-package org.example.script;
+package com.example.script;
 
 import com.dangdang.ddframe.job.config.JobCoreConfiguration;
 import com.dangdang.ddframe.job.config.script.ScriptJobConfiguration;

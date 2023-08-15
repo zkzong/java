@@ -1,6 +1,6 @@
-package org.example.redis.dao;
+package com.example.redis.dao;
 
-import org.example.redis.pojo.User;
+import com.example.redis.pojo.User;
 
 /**
  * Created by Zong on 2017/2/17.

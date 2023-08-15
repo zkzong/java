@@ -1,4 +1,4 @@
-package org.example.lettuce.config.expired.alldb;
+package com.example.lettuce.config.expired.alldb;
 
 import org.springframework.data.redis.connection.Message;
 import org.springframework.data.redis.listener.KeyExpirationEventMessageListener;

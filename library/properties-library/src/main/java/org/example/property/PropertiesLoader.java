@@ -1,4 +1,4 @@
-package org.example.property;
+package com.example.property;
 
 import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;

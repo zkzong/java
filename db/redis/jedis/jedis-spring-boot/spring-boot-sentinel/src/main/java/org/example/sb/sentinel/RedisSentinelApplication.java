@@ -1,4 +1,4 @@
-package org.example.sb.sentinel;
+package com.example.sb.sentinel;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

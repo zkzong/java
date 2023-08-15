@@ -1,4 +1,4 @@
-package org.example.sb2.rabbitmq;
+package com.example.sb2.rabbitmq;
 
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;

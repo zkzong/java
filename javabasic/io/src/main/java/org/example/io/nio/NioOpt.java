@@ -1,4 +1,4 @@
-package org.example.io.nio;
+package com.example.io.nio;
 
 import java.io.FileInputStream;
 import java.io.IOException;

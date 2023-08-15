@@ -1,4 +1,4 @@
-package org.example.rocketmq.batch;
+package com.example.rocketmq.batch;
 
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
 import org.apache.rocketmq.common.message.Message;

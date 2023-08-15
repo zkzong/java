@@ -1,4 +1,4 @@
-package org.example.scd.entity;
+package com.example.scd.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

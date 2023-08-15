@@ -1,4 +1,4 @@
-package org.example.csv.read.smallfile;
+package com.example.csv.read.smallfile;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

@@ -1,4 +1,4 @@
-package org.example.springredis.case1.dao;
+package com.example.springredis.case1.dao;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;

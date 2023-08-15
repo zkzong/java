@@ -1,4 +1,4 @@
-package org.example.sb.mybatis.config;
+package com.example.sb.mybatis.config;
 
 import org.mybatis.spring.mapper.MapperScannerConfigurer;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
@@ -15,7 +15,7 @@ public class MyBatisMapperScannerConfig {
     public MapperScannerConfigurer mapperScannerConfigurer() {
         MapperScannerConfigurer mapperScannerConfigurer = new MapperScannerConfigurer();
         mapperScannerConfigurer.setSqlSessionFactoryBeanName("sqlSessionFactory");
-        mapperScannerConfigurer.setBasePackage("org.example.sb.mybatis.dao");
+        mapperScannerConfigurer.setBasePackage("com.example.sb.mybatis.dao");
 //        mapperScannerConfigurer.setAnnotationClass(Mapper.class);
         return mapperScannerConfigurer;
     }

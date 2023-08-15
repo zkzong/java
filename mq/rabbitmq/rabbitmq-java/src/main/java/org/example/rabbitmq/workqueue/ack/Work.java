@@ -1,4 +1,4 @@
-package org.example.rabbitmq.workqueue.ack;
+package com.example.rabbitmq.workqueue.ack;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;

@@ -1,4 +1,4 @@
-package org.example.designpattern.zen.factory.simplefactory.section4;
+package com.example.designpattern.zen.factory.simplefactory.section4;
 
 import java.io.File;
 import java.io.IOException;

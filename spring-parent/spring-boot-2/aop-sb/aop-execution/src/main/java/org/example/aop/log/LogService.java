@@ -1,7 +1,7 @@
-package org.example.aop.log;
+package com.example.aop.log;
 
-import org.example.aop.anno.AdminOnly;
-import org.example.aop.bean.Product;
+import com.example.aop.anno.AdminOnly;
+import com.example.aop.bean.Product;
 import org.springframework.stereotype.Component;
 
 @Component

@@ -1,4 +1,4 @@
-package org.example.share_data.bank;
+package com.example.share_data.bank;
 
 public class TestThread {
     public static void main(String[] args) {

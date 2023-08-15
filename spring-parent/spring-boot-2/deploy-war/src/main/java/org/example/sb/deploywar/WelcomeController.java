@@ -1,4 +1,4 @@
-package org.example.sb.deploywar;
+package com.example.sb.deploywar;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;

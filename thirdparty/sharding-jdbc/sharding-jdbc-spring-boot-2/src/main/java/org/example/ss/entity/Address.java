@@ -1,4 +1,4 @@
-package org.example.ss.entity;
+package com.example.ss.entity;
 
 public class Address {
 

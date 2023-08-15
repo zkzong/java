@@ -1,4 +1,4 @@
-package org.example.sb.redis.service;
+package com.example.sb.redis.service;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

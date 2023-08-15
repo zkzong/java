@@ -1,4 +1,4 @@
-package org.example.sb.mybatis.ms.entity;
+package com.example.sb.mybatis.ms.entity;
 
 import lombok.Getter;
 import lombok.Setter;

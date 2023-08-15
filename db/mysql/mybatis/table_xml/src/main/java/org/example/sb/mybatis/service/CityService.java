@@ -1,6 +1,6 @@
-package org.example.sb.mybatis.service;
+package com.example.sb.mybatis.service;
 
-import org.example.sb.mybatis.domain.City;
+import com.example.sb.mybatis.domain.City;
 import org.apache.ibatis.cursor.Cursor;
 
 /**

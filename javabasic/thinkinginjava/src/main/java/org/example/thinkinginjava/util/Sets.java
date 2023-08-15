@@ -1,4 +1,4 @@
-package org.example.thinkinginjava.util;
+package com.example.thinkinginjava.util;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,7 +1,7 @@
-package org.example.ex.exception;
+package com.example.ex.exception;
 
-import org.example.ex.dto.ErrorResponse;
-import org.example.ex.web.ExceptionController;
+import com.example.ex.dto.ErrorResponse;
+import com.example.ex.web.ExceptionController;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;

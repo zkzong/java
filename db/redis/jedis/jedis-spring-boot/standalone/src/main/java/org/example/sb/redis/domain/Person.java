@@ -1,4 +1,4 @@
-package org.example.sb.redis.domain;
+package com.example.sb.redis.domain;
 
 import lombok.Data;
 

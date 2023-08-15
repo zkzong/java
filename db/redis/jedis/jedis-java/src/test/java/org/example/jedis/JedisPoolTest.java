@@ -1,4 +1,4 @@
-package org.example.jedis;
+package com.example.jedis;
 
 import org.junit.Assert;
 import org.junit.BeforeClass;

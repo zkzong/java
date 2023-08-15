@@ -1,9 +1,9 @@
-package org.example.sb.mybatis.ms.service.impl;
+package com.example.sb.mybatis.ms.service.impl;
 
-import org.example.sb.mybatis.ms.annotation.Master;
-import org.example.sb.mybatis.ms.entity.Member;
-import org.example.sb.mybatis.ms.mapper.MemberMapper;
-import org.example.sb.mybatis.ms.service.MemberService;
+import com.example.sb.mybatis.ms.annotation.Master;
+import com.example.sb.mybatis.ms.entity.Member;
+import com.example.sb.mybatis.ms.mapper.MemberMapper;
+import com.example.sb.mybatis.ms.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

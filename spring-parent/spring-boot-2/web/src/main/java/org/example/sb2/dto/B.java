@@ -1,4 +1,4 @@
-package org.example.sb2.dto;
+package com.example.sb2.dto;
 
 import lombok.Data;
 

@@ -1,9 +1,9 @@
-package org.example.sb.jpa;
+package com.example.sb.jpa;
 
-import org.example.sb.jpa.domain.p.User;
-import org.example.sb.jpa.domain.p.UserRepository;
-import org.example.sb.jpa.domain.s.Message;
-import org.example.sb.jpa.domain.s.MessageRepository;
+import com.example.sb.jpa.domain.p.User;
+import com.example.sb.jpa.domain.p.UserRepository;
+import com.example.sb.jpa.domain.s.Message;
+import com.example.sb.jpa.domain.s.MessageRepository;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

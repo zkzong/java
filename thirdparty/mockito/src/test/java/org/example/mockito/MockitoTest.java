@@ -1,4 +1,4 @@
-package org.example.mockito;
+package com.example.mockito;
 
 import org.junit.Test;
 import org.mockito.InOrder;

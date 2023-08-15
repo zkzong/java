@@ -1,6 +1,6 @@
-package org.example.sb.exception;
+package com.example.sb.exception;
 
-import org.example.sb.dto.RspDTO;
+import com.example.sb.dto.RspDTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.validation.BindException;

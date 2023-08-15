@@ -1,4 +1,4 @@
-package org.example.thread.join;
+package com.example.thread.join;
 
 /**
  * Created by Zong on 2016/11/18.

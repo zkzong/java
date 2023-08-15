@@ -1,4 +1,4 @@
-package org.example.http.cm;
+package com.example.http.cm;
 
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;

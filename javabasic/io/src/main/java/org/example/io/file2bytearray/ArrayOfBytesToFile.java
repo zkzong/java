@@ -1,4 +1,4 @@
-package org.example.io.file2bytearray;
+package com.example.io.file2bytearray;
 
 import java.io.File;
 import java.io.FileInputStream;

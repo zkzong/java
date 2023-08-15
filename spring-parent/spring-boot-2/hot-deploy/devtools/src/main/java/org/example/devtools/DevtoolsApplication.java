@@ -1,4 +1,4 @@
-package org.example.devtools;
+package com.example.devtools;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

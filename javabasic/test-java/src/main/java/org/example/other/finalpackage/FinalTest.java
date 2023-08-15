@@ -1,4 +1,4 @@
-package org.example.other.finalpackage;
+package com.example.other.finalpackage;
 
 import java.util.Random;
 

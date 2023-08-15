@@ -1,4 +1,4 @@
-package org.example.thread.synchronize;
+package com.example.thread.synchronize;
 
 /**
  * 第三个例子同样适用其它同步代码块。

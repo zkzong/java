@@ -1,4 +1,4 @@
-package org.example.mysql.product.config;
+package com.example.mysql.product.config;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -21,7 +21,7 @@ import javax.sql.DataSource;
         entityManagerFactoryRef = "productEntityManagerFactory",
         transactionManagerRef = "productTransactionManager",
         basePackages = {
-                "org.example.mysql.product.repo"
+                "com.example.mysql.product.repo"
         }
 )
 public class ProductConfig {
@@ -39,7 +39,7 @@ public class ProductConfig {
             @Qualifier("productDataSource") DataSource dataSource) {
         return builder
                 .dataSource(dataSource)
-                .packages("org.example.mysql.product.data")
+                .packages("com.example.mysql.product.data")
                 .persistenceUnit("db2")
                 .build();
     }

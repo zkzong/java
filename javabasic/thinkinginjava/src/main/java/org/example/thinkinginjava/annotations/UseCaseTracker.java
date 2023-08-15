@@ -1,4 +1,4 @@
-package org.example.thinkinginjava.annotations;
+package com.example.thinkinginjava.annotations;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;

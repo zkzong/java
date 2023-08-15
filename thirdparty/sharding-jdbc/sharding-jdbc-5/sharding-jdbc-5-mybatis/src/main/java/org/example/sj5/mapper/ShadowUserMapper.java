@@ -1,7 +1,7 @@
 
-package org.example.sj5.mapper;
+package com.example.sj5.mapper;
 
-import org.example.sj5.entity.ShadowUser;
+import com.example.sj5.entity.ShadowUser;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.sql.SQLException;

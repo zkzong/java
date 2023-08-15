@@ -1,6 +1,6 @@
-package org.example.service.impl;
+package com.example.service.impl;
 
-import org.example.service.RedisTestService;
+import com.example.service.RedisTestService;
 import org.springframework.stereotype.Service;
 
 @Service

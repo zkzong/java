@@ -1,4 +1,4 @@
-package org.example.string;
+package com.example.string;
 
 import org.junit.Test;
 

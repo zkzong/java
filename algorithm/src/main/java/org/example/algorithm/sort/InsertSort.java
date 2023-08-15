@@ -1,4 +1,4 @@
-package org.example.algorithm.sort;
+package com.example.algorithm.sort;
 
 /**
  * Created by Zong on 2016/12/2.

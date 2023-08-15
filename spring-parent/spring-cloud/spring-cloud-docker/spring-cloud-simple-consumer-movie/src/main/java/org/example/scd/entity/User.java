@@ -1,4 +1,4 @@
-package org.example.scd.entity;
+package com.example.scd.entity;
 
 import java.math.BigDecimal;
 

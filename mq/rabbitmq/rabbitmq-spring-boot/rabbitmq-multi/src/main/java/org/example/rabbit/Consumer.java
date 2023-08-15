@@ -1,4 +1,4 @@
-package org.example.rabbit;
+package com.example.rabbit;
 
 import com.rabbitmq.client.Channel;
 import org.springframework.amqp.core.Message;

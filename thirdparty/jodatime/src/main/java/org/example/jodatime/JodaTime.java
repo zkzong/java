@@ -1,4 +1,4 @@
-package org.example.jodatime;
+package com.example.jodatime;
 
 /**
  * Created by Zong on 2016/6/23.

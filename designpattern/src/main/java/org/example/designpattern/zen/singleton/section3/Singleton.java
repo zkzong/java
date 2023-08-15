@@ -1,4 +1,4 @@
-package org.example.designpattern.zen.singleton.section3;
+package com.example.designpattern.zen.singleton.section3;
 
 /**
  * Created by Zong on 2016/10/13.

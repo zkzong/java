@@ -1,4 +1,4 @@
-package org.example.thinkinginjava.typeinfo;
+package com.example.thinkinginjava.typeinfo;
 
 /**
  * Created by Zong on 2016/9/20.

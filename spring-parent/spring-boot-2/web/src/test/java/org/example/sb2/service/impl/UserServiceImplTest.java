@@ -1,10 +1,10 @@
-package org.example.sb2.service.impl;
+package com.example.sb2.service.impl;
 
 import com.alibaba.fastjson.JSON;
-import org.example.sb2.dto.A;
-import org.example.sb2.dto.B;
-import org.example.sb2.entity.User;
-import org.example.sb2.service.UserService;
+import com.example.sb2.dto.A;
+import com.example.sb2.dto.B;
+import com.example.sb2.entity.User;
+import com.example.sb2.service.UserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

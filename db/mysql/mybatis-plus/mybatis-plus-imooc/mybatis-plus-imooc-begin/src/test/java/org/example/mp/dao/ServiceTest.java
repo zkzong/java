@@ -1,10 +1,10 @@
-package org.example.mp.dao;
+package com.example.mp.dao;
 
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import org.example.mp.entity.User;
-import org.example.mp.service.UserService;
+import com.example.mp.entity.User;
+import com.example.mp.service.UserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

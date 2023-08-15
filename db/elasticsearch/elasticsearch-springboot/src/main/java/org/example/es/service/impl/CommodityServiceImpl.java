@@ -1,8 +1,8 @@
-package org.example.es.service.impl;
+package com.example.es.service.impl;
 
-import org.example.es.dao.CommodityRepository;
-import org.example.es.entity.Commodity;
-import org.example.es.service.CommodityService;
+import com.example.es.dao.CommodityRepository;
+import com.example.es.entity.Commodity;
+import com.example.es.service.CommodityService;
 import org.elasticsearch.index.query.MatchQueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.springframework.beans.factory.annotation.Autowired;

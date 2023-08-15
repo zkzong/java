@@ -15,7 +15,7 @@
  * </p>
  */
 
-package org.example.sj3.jpa.entity;
+package com.example.sj3.jpa.entity;
 
 import lombok.Data;
 

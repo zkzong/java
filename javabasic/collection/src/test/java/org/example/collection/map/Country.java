@@ -1,4 +1,4 @@
-package org.example.collection.map;
+package com.example.collection.map;
 
 /**
  * Created by Zong on 2016/7/16.

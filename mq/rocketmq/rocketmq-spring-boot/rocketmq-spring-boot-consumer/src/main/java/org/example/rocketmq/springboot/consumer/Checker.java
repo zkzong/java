@@ -1,4 +1,4 @@
-package org.example.rocketmq.springboot.consumer;
+package com.example.rocketmq.springboot.consumer;
 
 import org.apache.rocketmq.client.producer.LocalTransactionState;
 import org.apache.rocketmq.client.producer.TransactionListener;

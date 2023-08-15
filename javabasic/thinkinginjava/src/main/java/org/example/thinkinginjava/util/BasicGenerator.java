@@ -1,6 +1,6 @@
 // Automatically create a Generator, given a class
 // with a default (no-arg) constructor.
-package org.example.thinkinginjava.util;
+package com.example.thinkinginjava.util;
 
 /**
  * Created by Zong on 2016/8/30.

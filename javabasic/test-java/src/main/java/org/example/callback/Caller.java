@@ -1,4 +1,4 @@
-package org.example.callback;
+package com.example.callback;
 
 interface CallBack {
     void methodToCallBack();

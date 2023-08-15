@@ -1,6 +1,6 @@
-package org.example.aop.bean;
+package com.example.aop.bean;
 
-import org.example.aop.anno.NeedSecured;
+import com.example.aop.anno.NeedSecured;
 
 @NeedSecured
 public class Product {

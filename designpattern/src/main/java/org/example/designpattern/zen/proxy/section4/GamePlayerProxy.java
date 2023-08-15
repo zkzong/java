@@ -1,6 +1,6 @@
-package org.example.designpattern.zen.proxy.section4;
+package com.example.designpattern.zen.proxy.section4;
 
-import org.example.designpattern.zen.proxy.section1.IGamePlayer;
+import com.example.designpattern.zen.proxy.section1.IGamePlayer;
 
 /**
  * Created by Zong on 2016/11/4.

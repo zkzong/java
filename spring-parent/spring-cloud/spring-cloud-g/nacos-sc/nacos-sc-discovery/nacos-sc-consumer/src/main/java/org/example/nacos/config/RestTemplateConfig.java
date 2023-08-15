@@ -1,4 +1,4 @@
-package org.example.nacos.config;
+package com.example.nacos.config;
 
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.HttpRequestRetryHandler;

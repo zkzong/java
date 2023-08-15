@@ -1,4 +1,4 @@
-package org.example.tx.mapper;
+package com.example.tx.mapper;
 
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;

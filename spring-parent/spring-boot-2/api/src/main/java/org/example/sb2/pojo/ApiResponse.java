@@ -1,10 +1,10 @@
-package org.example.sb2.pojo;
+package com.example.sb2.pojo;
 
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
-import org.example.sb2.enums.ApiCodeEnum;
-import org.example.sb2.util.ApiUtil;
-import org.example.sb2.util.MD5Util;
+import com.example.sb2.enums.ApiCodeEnum;
+import com.example.sb2.util.ApiUtil;
+import com.example.sb2.util.MD5Util;
 
 import java.lang.reflect.Field;
 import java.util.HashMap;

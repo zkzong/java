@@ -1,4 +1,4 @@
-package org.example.minio.config;
+package com.example.minio.config;
 
 import io.minio.MinioClient;
 import org.springframework.beans.factory.annotation.Value;

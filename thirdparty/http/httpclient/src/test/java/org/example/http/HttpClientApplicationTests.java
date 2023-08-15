@@ -1,4 +1,4 @@
-package org.example.http;
+package com.example.http;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

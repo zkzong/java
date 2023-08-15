@@ -1,4 +1,4 @@
-package org.example.kafka.controller;
+package com.example.kafka.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;

@@ -1,4 +1,4 @@
-package org.example.collection.set;
+package com.example.collection.set;
 
 import org.junit.Test;
 

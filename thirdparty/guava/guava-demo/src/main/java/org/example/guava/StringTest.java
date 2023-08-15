@@ -1,4 +1,4 @@
-package org.example.guava;
+package com.example.guava;
 
 import com.google.common.base.CaseFormat;
 import com.google.common.base.CharMatcher;

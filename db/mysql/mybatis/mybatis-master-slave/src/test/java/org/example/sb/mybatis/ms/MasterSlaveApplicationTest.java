@@ -1,7 +1,7 @@
-package org.example.sb.mybatis.ms;
+package com.example.sb.mybatis.ms;
 
-import org.example.sb.mybatis.ms.entity.Member;
-import org.example.sb.mybatis.ms.service.MemberService;
+import com.example.sb.mybatis.ms.entity.Member;
+import com.example.sb.mybatis.ms.service.MemberService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

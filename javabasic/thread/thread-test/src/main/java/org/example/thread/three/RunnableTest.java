@@ -1,4 +1,4 @@
-package org.example.thread.three;
+package com.example.thread.three;
 
 /**
  * Created by Zong on 2016/12/5.

@@ -1,7 +1,7 @@
-package org.example.sca.controller;
+package com.example.sca.controller;
 
 import com.google.gson.Gson;
-import org.example.sca.dto.User;
+import com.example.sca.dto.User;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

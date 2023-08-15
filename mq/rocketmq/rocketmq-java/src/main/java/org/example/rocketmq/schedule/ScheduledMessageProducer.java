@@ -1,4 +1,4 @@
-package org.example.rocketmq.schedule;
+package com.example.rocketmq.schedule;
 
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
 import org.apache.rocketmq.common.message.Message;

@@ -1,4 +1,4 @@
-package org.example.proxy.dynamicproxy.cglib;
+package com.example.proxy.dynamicproxy.cglib;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package org.example.sb.upload;
+package com.example.sb.upload;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

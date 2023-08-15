@@ -1,4 +1,4 @@
-package org.example.annotation.imooc;
+package com.example.annotation.imooc;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
@@ -7,7 +7,7 @@ public class ParseAnno {
     public static void main(String[] args) {
         // 1. 使用类加载器加载类
         try {
-            Class c = Class.forName("org.example.annotation.imooc.Child");
+            Class c = Class.forName("com.example.annotation.imooc.Child");
             // 2. 找到类上面的注解
             boolean isExist = c.isAnnotationPresent(Description.class);
             if (isExist) {

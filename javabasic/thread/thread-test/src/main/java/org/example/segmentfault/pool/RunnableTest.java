@@ -1,4 +1,4 @@
-package org.example.segmentfault.pool;
+package com.example.segmentfault.pool;
 
 import java.util.ArrayList;
 import java.util.List;

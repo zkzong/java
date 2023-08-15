@@ -1,6 +1,6 @@
-package org.example.mongo.repository;
+package com.example.mongo.repository;
 
-import org.example.mongo.entity.FileVo;
+import com.example.mongo.entity.FileVo;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 /**

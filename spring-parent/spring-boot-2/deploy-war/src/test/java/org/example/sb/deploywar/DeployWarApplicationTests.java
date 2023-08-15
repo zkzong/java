@@ -1,4 +1,4 @@
-package org.example.sb.deploywar;
+package com.example.sb.deploywar;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

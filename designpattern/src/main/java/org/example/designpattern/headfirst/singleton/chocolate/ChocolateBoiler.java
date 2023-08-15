@@ -1,4 +1,4 @@
-package org.example.designpattern.headfirst.singleton.chocolate;
+package com.example.designpattern.headfirst.singleton.chocolate;
 
 /**
  * Created by Zong on 2016/10/16.

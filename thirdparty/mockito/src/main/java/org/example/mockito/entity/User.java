@@ -1,4 +1,4 @@
-package org.example.mockito.entity;
+package com.example.mockito.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;

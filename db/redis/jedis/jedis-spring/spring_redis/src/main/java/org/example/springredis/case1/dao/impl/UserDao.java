@@ -1,8 +1,8 @@
-package org.example.springredis.case1.dao.impl;
+package com.example.springredis.case1.dao.impl;
 
-import org.example.springredis.case1.dao.AbstractBaseRedisDao;
-import org.example.springredis.case1.dao.IUserDao;
-import org.example.springredis.case1.entity.User;
+import com.example.springredis.case1.dao.AbstractBaseRedisDao;
+import com.example.springredis.case1.dao.IUserDao;
+import com.example.springredis.case1.entity.User;
 import org.springframework.dao.DataAccessException;
 import org.springframework.data.redis.connection.RedisConnection;
 import org.springframework.data.redis.core.RedisCallback;

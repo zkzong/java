@@ -1,4 +1,4 @@
-package org.example.rabbit.config;
+package com.example.rabbit.config;
 
 public class RabbitConfig {
 

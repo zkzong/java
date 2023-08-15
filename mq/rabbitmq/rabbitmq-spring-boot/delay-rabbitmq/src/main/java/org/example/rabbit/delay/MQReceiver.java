@@ -1,4 +1,4 @@
-package org.example.rabbit.delay;
+package com.example.rabbit.delay;
 
 import com.rabbitmq.client.Channel;
 import org.springframework.amqp.core.Message;

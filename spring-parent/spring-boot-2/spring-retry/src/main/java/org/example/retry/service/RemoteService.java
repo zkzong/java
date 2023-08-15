@@ -1,6 +1,6 @@
-package org.example.retry.service;
+package com.example.retry.service;
 
-import org.example.retry.pojo.User;
+import com.example.retry.pojo.User;
 import org.springframework.remoting.RemoteAccessException;
 import org.springframework.retry.annotation.Backoff;
 import org.springframework.retry.annotation.Recover;

@@ -1,4 +1,4 @@
-package org.example.apollo.controller;
+package com.example.apollo.controller;
 
 import com.ctrip.framework.apollo.model.ConfigChange;
 import com.ctrip.framework.apollo.model.ConfigChangeEvent;

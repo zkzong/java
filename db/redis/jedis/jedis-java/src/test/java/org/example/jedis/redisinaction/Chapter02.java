@@ -1,4 +1,4 @@
-package org.example.jedis.redisinaction;
+package com.example.jedis.redisinaction;
 
 import redis.clients.jedis.Jedis;
 

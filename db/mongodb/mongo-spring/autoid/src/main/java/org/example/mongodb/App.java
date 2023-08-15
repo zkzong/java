@@ -1,8 +1,8 @@
-package org.example.mongodb;
+package com.example.mongodb;
 
-import org.example.mongodb.config.AppConfig;
-import org.example.mongodb.hosting.bo.HostingBo;
-import org.example.mongodb.seq.exception.SequenceException;
+import com.example.mongodb.config.AppConfig;
+import com.example.mongodb.hosting.bo.HostingBo;
+import com.example.mongodb.seq.exception.SequenceException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

@@ -1,4 +1,4 @@
-package org.example.sb2.controller;
+package com.example.sb2.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

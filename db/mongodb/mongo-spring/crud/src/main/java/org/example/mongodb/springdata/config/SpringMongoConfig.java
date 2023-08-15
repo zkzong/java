@@ -1,4 +1,4 @@
-package org.example.mongodb.springdata.config;
+package com.example.mongodb.springdata.config;
 
 import com.mongodb.MongoClient;
 import org.springframework.context.annotation.Bean;

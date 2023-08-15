@@ -1,4 +1,4 @@
-package org.example.itext;
+package com.example.itext;
 
 import com.itextpdf.text.DocumentException;
 import org.junit.Before;

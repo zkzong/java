@@ -1,4 +1,4 @@
-package org.example.sb2.rabbitmq.pojo;
+package com.example.sb2.rabbitmq.pojo;
 
 import lombok.Data;
 

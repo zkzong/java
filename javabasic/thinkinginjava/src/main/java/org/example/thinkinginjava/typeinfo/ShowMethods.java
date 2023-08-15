@@ -1,17 +1,17 @@
-package org.example.thinkinginjava.typeinfo;
+package com.example.thinkinginjava.typeinfo;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.util.regex.Pattern;
 
-import static org.example.thinkinginjava.util.Print.print;
+import static com.example.thinkinginjava.util.Print.print;
 
 /**
  * Created by Zong on 2016/9/20.
  * Using reflection to show all the methods of a class,
  * even if the methods are defined in the base class.
  * <p>
- * args : org.example.thinkinginjava.typeinfo.ShowMethods
+ * args : com.example.thinkinginjava.typeinfo.ShowMethods
  */
 public class ShowMethods {
     private static String usage =

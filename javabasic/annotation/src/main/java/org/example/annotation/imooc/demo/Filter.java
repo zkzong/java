@@ -1,4 +1,4 @@
-package org.example.annotation.imooc.demo;
+package com.example.annotation.imooc.demo;
 
 @Table("user")
 public class Filter {

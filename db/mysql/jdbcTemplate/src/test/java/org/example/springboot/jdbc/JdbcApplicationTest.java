@@ -1,4 +1,4 @@
-package org.example.springboot.jdbc;
+package com.example.springboot.jdbc;
 
 import cn.hutool.core.util.IdUtil;
 import cn.hutool.core.util.RandomUtil;

@@ -1,4 +1,4 @@
-package org.example.sb2.webflux;
+package com.example.sb2.webflux;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

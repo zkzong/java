@@ -1,6 +1,6 @@
-package org.example.mongodb.hosting.dao;
+package com.example.mongodb.hosting.dao;
 
-import org.example.mongodb.hosting.model.Hosting;
+import com.example.mongodb.hosting.model.Hosting;
 
 public interface HostingDao {
 

@@ -1,4 +1,4 @@
-package org.example.itext;
+package com.example.itext;
 
 import java.math.BigDecimal;
 import java.util.Date;

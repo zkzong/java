@@ -1,4 +1,4 @@
-package org.example.proxy.chain;
+package com.example.proxy.chain;
 
 public class Client {
     static class HandlerA extends Handler {

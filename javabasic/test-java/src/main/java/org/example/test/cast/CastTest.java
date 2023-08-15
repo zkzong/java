@@ -1,4 +1,4 @@
-package org.example.test.cast;
+package com.example.test.cast;
 
 import org.junit.Test;
 

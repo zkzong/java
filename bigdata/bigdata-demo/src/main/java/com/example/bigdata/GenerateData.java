@@ -1,4 +1,4 @@
-package org.example.bigdata;
+package com.example.bigdata;
 
 import java.io.BufferedWriter;
 import java.io.File;

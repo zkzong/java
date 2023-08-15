@@ -1,4 +1,4 @@
-package org.example.sb2.common;
+package com.example.sb2.common;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

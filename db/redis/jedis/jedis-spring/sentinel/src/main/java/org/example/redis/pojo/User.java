@@ -1,4 +1,4 @@
-package org.example.redis.pojo;
+package com.example.redis.pojo;
 
 /**
  * Created by Zong on 2017/2/17.

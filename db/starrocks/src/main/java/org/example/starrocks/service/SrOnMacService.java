@@ -1,8 +1,8 @@
-package org.example.starrocks.service;
+package com.example.starrocks.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import org.example.starrocks.dto.SrOnMacDto;
-import org.example.starrocks.entity.SrOnMac;
+import com.example.starrocks.dto.SrOnMacDto;
+import com.example.starrocks.entity.SrOnMac;
 
 import java.util.List;
 

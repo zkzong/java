@@ -1,4 +1,4 @@
-package org.example.designpattern.singleton;
+package com.example.designpattern.singleton;
 
 /**
  * Created by zong on 2016/8/25.

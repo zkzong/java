@@ -1,4 +1,4 @@
-package org.example.hutool.date;
+package com.example.hutool.date;
 
 import cn.hutool.core.date.DatePattern;
 import cn.hutool.core.date.DateTime;

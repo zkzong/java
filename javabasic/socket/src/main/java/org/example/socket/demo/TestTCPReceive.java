@@ -1,4 +1,4 @@
-package org.example.socket.demo;
+package com.example.socket.demo;
 
 /**
  * @Author: zong

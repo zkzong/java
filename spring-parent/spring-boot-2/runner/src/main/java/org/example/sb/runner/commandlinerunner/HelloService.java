@@ -1,4 +1,4 @@
-package org.example.sb.runner.commandlinerunner;
+package com.example.sb.runner.commandlinerunner;
 
 import org.springframework.stereotype.Service;
 

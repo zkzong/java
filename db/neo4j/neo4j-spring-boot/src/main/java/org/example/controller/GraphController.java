@@ -1,10 +1,10 @@
-package org.example.controller;
+package com.example.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.http.HttpResponse;
-import org.example.entity.CustomerNode;
-import org.example.resp.Result;
-import org.example.service.GraphService;
+import com.example.entity.CustomerNode;
+import com.example.resp.Result;
+import com.example.service.GraphService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

@@ -1,4 +1,4 @@
-package org.example.ss.service;
+package com.example.ss.service;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

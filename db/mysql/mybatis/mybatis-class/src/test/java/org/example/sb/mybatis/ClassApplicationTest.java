@@ -1,4 +1,4 @@
-package org.example.sb.mybatis;
+package com.example.sb.mybatis;
 
 /**
  * Created by zong on 17-6-8.

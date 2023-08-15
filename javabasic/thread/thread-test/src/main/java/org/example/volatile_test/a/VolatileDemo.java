@@ -1,4 +1,4 @@
-package org.example.volatile_test.a;
+package com.example.volatile_test.a;
 
 import java.util.concurrent.TimeUnit;
 

@@ -1,6 +1,6 @@
-package org.example.mongo.repository;
+package com.example.mongo.repository;
 
-import org.example.mongo.entity.Person;
+import com.example.mongo.entity.Person;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

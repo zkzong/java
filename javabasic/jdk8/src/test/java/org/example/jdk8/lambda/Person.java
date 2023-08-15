@@ -1,4 +1,4 @@
-package org.example.jdk8.lambda;
+package com.example.jdk8.lambda;
 
 import java.util.ArrayList;
 import java.util.List;

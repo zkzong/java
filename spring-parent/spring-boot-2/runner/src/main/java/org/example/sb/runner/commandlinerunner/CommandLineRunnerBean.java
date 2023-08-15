@@ -1,4 +1,4 @@
-package org.example.sb.runner.commandlinerunner;
+package com.example.sb.runner.commandlinerunner;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

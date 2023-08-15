@@ -1,4 +1,4 @@
-package org.example.map.service;
+package com.example.map.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;

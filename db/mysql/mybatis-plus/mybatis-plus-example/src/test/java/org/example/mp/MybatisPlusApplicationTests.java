@@ -1,4 +1,4 @@
-package org.example.mp;
+package com.example.mp;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

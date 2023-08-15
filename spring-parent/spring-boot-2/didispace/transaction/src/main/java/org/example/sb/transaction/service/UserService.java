@@ -1,6 +1,6 @@
-package org.example.sb.transaction.service;
+package com.example.sb.transaction.service;
 
-import org.example.sb.transaction.domain.User;
+import com.example.sb.transaction.domain.User;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;

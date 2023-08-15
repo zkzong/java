@@ -1,4 +1,4 @@
-package org.example.sb.shutdown;
+package com.example.sb.shutdown;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package org.example.elasticjob.entity;
+package com.example.elasticjob.entity;
 
 import java.io.Serializable;
 

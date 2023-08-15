@@ -1,7 +1,7 @@
-package org.example.designpattern.zen.proxy.section8;
+package com.example.designpattern.zen.proxy.section8;
 
-import org.example.designpattern.zen.proxy.section7.GamePlayer;
-import org.example.designpattern.zen.proxy.section7.IGamePlayer;
+import com.example.designpattern.zen.proxy.section7.GamePlayer;
+import com.example.designpattern.zen.proxy.section7.IGamePlayer;
 import org.joda.time.DateTime;
 
 import java.lang.reflect.InvocationHandler;

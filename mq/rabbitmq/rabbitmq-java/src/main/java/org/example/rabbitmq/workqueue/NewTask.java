@@ -1,4 +1,4 @@
-package org.example.rabbitmq.workqueue;
+package com.example.rabbitmq.workqueue;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;

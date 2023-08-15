@@ -1,7 +1,7 @@
-package org.example.thinkinginjava.generics;
+package com.example.thinkinginjava.generics;
 
-import org.example.thinkinginjava.typeinfo.pets.Person;
-import org.example.thinkinginjava.typeinfo.pets.Pet;
+import com.example.thinkinginjava.typeinfo.pets.Person;
+import com.example.thinkinginjava.typeinfo.pets.Pet;
 
 import java.util.List;
 import java.util.Map;

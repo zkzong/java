@@ -1,4 +1,4 @@
-package org.example.apache.commons.beanutils;
+package com.example.apache.commons.beanutils;
 
 import org.apache.commons.beanutils.MethodUtils;
 import org.apache.commons.beanutils.PropertyUtils;

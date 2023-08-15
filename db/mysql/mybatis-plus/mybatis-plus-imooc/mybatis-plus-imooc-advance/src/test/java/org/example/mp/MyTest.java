@@ -1,8 +1,8 @@
-package org.example.mp;
+package com.example.mp;
 
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
-import org.example.mp.dao.UserMapper;
-import org.example.mp.entity.User;
+import com.example.mp.dao.UserMapper;
+import com.example.mp.entity.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

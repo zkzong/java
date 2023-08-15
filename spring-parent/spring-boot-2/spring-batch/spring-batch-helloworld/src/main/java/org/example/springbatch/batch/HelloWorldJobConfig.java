@@ -1,6 +1,6 @@
-package org.example.springbatch.batch;
+package com.example.springbatch.batch;
 
-import org.example.springbatch.model.Person;
+import com.example.springbatch.model.Person;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.JobBuilderFactory;

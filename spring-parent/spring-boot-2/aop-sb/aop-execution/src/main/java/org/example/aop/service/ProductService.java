@@ -1,9 +1,9 @@
-package org.example.aop.service;
+package com.example.aop.service;
 
-import org.example.aop.anno.NeedSecured;
-import org.example.aop.anno.NeedSecuredClass;
-import org.example.aop.anno.NeedSecuredSource;
-import org.example.aop.log.Loggable;
+import com.example.aop.anno.NeedSecured;
+import com.example.aop.anno.NeedSecuredClass;
+import com.example.aop.anno.NeedSecuredSource;
+import com.example.aop.log.Loggable;
 import org.springframework.stereotype.Component;
 
 @Component

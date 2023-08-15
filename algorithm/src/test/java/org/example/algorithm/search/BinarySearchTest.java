@@ -1,4 +1,4 @@
-package org.example.algorithm.search;
+package com.example.algorithm.search;
 
 import org.junit.Test;
 

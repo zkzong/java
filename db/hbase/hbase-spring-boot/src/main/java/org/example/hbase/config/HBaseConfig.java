@@ -1,6 +1,6 @@
-package org.example.hbase.config;
+package com.example.hbase.config;
 
-import org.example.hbase.service.HBaseService;
+import com.example.hbase.service.HBaseService;
 import org.apache.hadoop.hbase.HBaseConfiguration;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

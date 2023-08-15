@@ -1,4 +1,4 @@
-package org.example.hutool.util;
+package com.example.hutool.util;
 
 import cn.hutool.core.bean.BeanUtil;
 import org.junit.Test;

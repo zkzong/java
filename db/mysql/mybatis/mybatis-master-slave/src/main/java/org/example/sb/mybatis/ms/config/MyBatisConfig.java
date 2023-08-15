@@ -1,4 +1,4 @@
-package org.example.sb.mybatis.ms.config;
+package com.example.sb.mybatis.ms.config;
 
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;

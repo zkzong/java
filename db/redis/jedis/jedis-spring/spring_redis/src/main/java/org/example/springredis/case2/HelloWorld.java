@@ -1,7 +1,7 @@
-package org.example.springredis.case2;
+package com.example.springredis.case2;
 
-import org.example.springredis.case2.domain.User;
-import org.example.springredis.case2.repository.UserRepository;
+import com.example.springredis.case2.domain.User;
+import com.example.springredis.case2.repository.UserRepository;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

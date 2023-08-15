@@ -1,4 +1,4 @@
-package org.example.thinkinginjava.enumpackage;
+package com.example.thinkinginjava.enumpackage;
 
 /**
  * Created by zong on 2016/8/25.

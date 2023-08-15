@@ -1,4 +1,4 @@
-package org.example.rocketmq.springboot;
+package com.example.rocketmq.springboot;
 
 import org.apache.rocketmq.client.producer.SendResult;
 import org.apache.rocketmq.spring.annotation.RocketMQTransactionListener;

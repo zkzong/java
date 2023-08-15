@@ -1,4 +1,4 @@
-package org.example.powermock.entity;
+package com.example.powermock.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;

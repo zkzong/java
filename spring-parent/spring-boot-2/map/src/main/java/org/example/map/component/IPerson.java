@@ -1,4 +1,4 @@
-package org.example.map.component;
+package com.example.map.component;
 
 public interface IPerson {
     void doWork();

@@ -1,4 +1,4 @@
-package org.example.rxjava;
+package com.example.rxjava;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;

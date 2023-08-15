@@ -1,6 +1,6 @@
-package org.example.aop.security;
+package com.example.aop.security;
 
-import org.example.aop.service.AuthService;
+import com.example.aop.service.AuthService;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
@@ -14,7 +14,7 @@ public class SecurityAspect {
     @Autowired
     private AuthService authService;
 
-    @Pointcut("@annotation(org.example.aop.security.AdminOnly)")
+    @Pointcut("@annotation(com.example.aop.security.AdminOnly)")
     public void adminOnly() {
 
     }

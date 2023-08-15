@@ -1,4 +1,4 @@
-package org.example.share_data.ticket;
+package com.example.share_data.ticket;
 
 public class Ticket implements Runnable {
     private int ticket = 10;

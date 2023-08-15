@@ -1,7 +1,7 @@
-package org.example.elasticjob.job;
+package com.example.elasticjob.job;
 
-import org.example.elasticjob.entity.Foo;
-import org.example.elasticjob.repository.FooRepository;
+import com.example.elasticjob.entity.Foo;
+import com.example.elasticjob.repository.FooRepository;
 import org.apache.shardingsphere.elasticjob.api.ShardingContext;
 import org.apache.shardingsphere.elasticjob.dataflow.job.DataflowJob;
 import org.slf4j.Logger;

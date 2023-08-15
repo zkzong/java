@@ -1,7 +1,7 @@
-package org.example.retry;
+package com.example.retry;
 
-import org.example.retry.pojo.User;
-import org.example.retry.service.RemoteService;
+import com.example.retry.pojo.User;
+import com.example.retry.service.RemoteService;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

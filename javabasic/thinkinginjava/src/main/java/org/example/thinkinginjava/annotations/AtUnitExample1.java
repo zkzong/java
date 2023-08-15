@@ -1,7 +1,7 @@
-package org.example.thinkinginjava.annotations;
+package com.example.thinkinginjava.annotations;
 
-import org.example.thinkinginjava.atunit.Test;
-import org.example.thinkinginjava.util.OSExecute;
+import com.example.thinkinginjava.atunit.Test;
+import com.example.thinkinginjava.util.OSExecute;
 
 /**
  * Created by Zong on 2016/9/19.
@@ -42,6 +42,6 @@ public class AtUnitExample1 {
     }
 
     public static void main(String[] args) {
-        OSExecute.command("java org.example.thinkinginjava.atunit.AtUnit AtUnitExample1");
+        OSExecute.command("java com.example.thinkinginjava.atunit.AtUnit AtUnitExample1");
     }
 }

@@ -1,4 +1,4 @@
-package org.example.json.importnew;
+package com.example.json.importnew;
 
 /**
  * Created by zong on 2017/3/23.

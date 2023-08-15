@@ -1,4 +1,4 @@
-package org.example.elasticjob.zk;
+package com.example.elasticjob.zk;
 
 import org.apache.curator.test.TestingServer;
 

@@ -1,4 +1,4 @@
-package org.example.share_data.bank;
+package com.example.share_data.bank;
 
 public class MyData {
     private int j = 0;

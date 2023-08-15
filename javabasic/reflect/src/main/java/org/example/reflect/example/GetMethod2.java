@@ -1,7 +1,7 @@
-package org.example.reflect.example;
+package com.example.reflect.example;
 
-import org.example.reflect.People;
-import org.example.reflect.Person;
+import com.example.reflect.People;
+import com.example.reflect.Person;
 
 import java.lang.reflect.Method;
 import java.math.BigDecimal;

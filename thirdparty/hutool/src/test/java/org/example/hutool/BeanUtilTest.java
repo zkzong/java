@@ -1,9 +1,9 @@
-package org.example.hutool;
+package com.example.hutool;
 
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.bean.copier.CopyOptions;
-import org.example.common.entity.Less;
-import org.example.common.entity.More;
+import com.example.common.entity.Less;
+import com.example.common.entity.More;
 import org.junit.Test;
 
 public class BeanUtilTest {

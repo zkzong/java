@@ -1,6 +1,6 @@
-package org.example.consul.controller;
+package com.example.consul.controller;
 
-import org.example.consul.service.HelloService;
+import com.example.consul.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;

@@ -1,6 +1,6 @@
-package org.example.sb2.repository;
+package com.example.sb2.repository;
 
-import org.example.sb2.entity.User;
+import com.example.sb2.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

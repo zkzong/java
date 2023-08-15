@@ -1,4 +1,4 @@
-package org.example.sb2.common;
+package com.example.sb2.common;
 
 import lombok.Data;
 

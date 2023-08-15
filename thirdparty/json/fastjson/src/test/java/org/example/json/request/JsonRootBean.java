@@ -1,4 +1,4 @@
-package org.example.json.request;
+package com.example.json.request;
 
 /**
  * @Author: zong

@@ -1,4 +1,4 @@
-package org.example.dataflow;
+package com.example.dataflow;
 
 import com.dangdang.ddframe.job.api.ShardingContext;
 import com.dangdang.ddframe.job.api.dataflow.DataflowJob;

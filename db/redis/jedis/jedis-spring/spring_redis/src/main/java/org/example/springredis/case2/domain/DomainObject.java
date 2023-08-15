@@ -1,4 +1,4 @@
-package org.example.springredis.case2.domain;
+package com.example.springredis.case2.domain;
 
 import java.io.Serializable;
 

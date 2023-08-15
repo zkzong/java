@@ -1,4 +1,4 @@
-package org.example.apache.commons.logging;
+package com.example.apache.commons.logging;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;

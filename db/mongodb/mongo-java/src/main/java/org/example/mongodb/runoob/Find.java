@@ -1,4 +1,4 @@
-package org.example.mongodb.runoob;
+package com.example.mongodb.runoob;
 
 import com.mongodb.MongoClient;
 import com.mongodb.client.FindIterable;

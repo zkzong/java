@@ -1,4 +1,4 @@
-package org.example.rabbitmq.binding_key;
+package com.example.rabbitmq.binding_key;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;

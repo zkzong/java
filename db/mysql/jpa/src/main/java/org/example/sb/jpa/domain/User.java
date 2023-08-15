@@ -1,4 +1,4 @@
-package org.example.sb.jpa.domain;
+package com.example.sb.jpa.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

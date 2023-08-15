@@ -1,8 +1,8 @@
-package org.example.sb.redis.service.impl;
+package com.example.sb.redis.service.impl;
 
-import org.example.sb.redis.dao.CityDao;
-import org.example.sb.redis.domain.City;
-import org.example.sb.redis.service.CityService;
+import com.example.sb.redis.dao.CityDao;
+import com.example.sb.redis.domain.City;
+import com.example.sb.redis.service.CityService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

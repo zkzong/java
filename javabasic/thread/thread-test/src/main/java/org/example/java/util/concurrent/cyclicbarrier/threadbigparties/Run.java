@@ -1,4 +1,4 @@
-package org.example.java.util.concurrent.cyclicbarrier.threadbigparties;
+package com.example.java.util.concurrent.cyclicbarrier.threadbigparties;
 
 import java.util.concurrent.CyclicBarrier;
 

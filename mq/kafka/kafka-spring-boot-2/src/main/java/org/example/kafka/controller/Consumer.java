@@ -1,4 +1,4 @@
-package org.example.kafka.controller;
+package com.example.kafka.controller;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.slf4j.Logger;

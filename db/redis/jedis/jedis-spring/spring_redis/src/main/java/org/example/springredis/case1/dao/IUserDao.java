@@ -1,6 +1,6 @@
-package org.example.springredis.case1.dao;
+package com.example.springredis.case1.dao;
 
-import org.example.springredis.case1.entity.User;
+import com.example.springredis.case1.entity.User;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package org.example.thread.synchronizedpackage;
+package com.example.thread.synchronizedpackage;
 
 /**
  * Created by zong on 16-10-7.

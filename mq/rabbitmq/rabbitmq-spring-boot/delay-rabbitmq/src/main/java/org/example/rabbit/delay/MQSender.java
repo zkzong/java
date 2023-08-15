@@ -1,6 +1,6 @@
-package org.example.rabbit.delay;
+package com.example.rabbit.delay;
 
-import org.example.rabbit.delay.config.MQConfig;
+import com.example.rabbit.delay.config.MQConfig;
 import org.springframework.amqp.AmqpException;
 import org.springframework.amqp.core.Message;
 import org.springframework.amqp.core.MessageDeliveryMode;

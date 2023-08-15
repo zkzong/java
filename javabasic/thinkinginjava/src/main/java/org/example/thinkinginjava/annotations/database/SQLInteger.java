@@ -1,4 +1,4 @@
-package org.example.thinkinginjava.annotations.database;
+package com.example.thinkinginjava.annotations.database;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

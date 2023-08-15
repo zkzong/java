@@ -1,4 +1,4 @@
-package org.example.reflect;
+package com.example.reflect;
 
 import java.lang.reflect.Field;
 
@@ -9,7 +9,7 @@ public class GetDeclaredFields {
     public static void main(String[] args) {
         try {
             // 创建类
-            Class<?> personClass = Class.forName("org.example.reflect.Person");
+            Class<?> personClass = Class.forName("com.example.reflect.Person");
 
             // 获取本类的全部属性
             Field[] declaredFields = personClass.getDeclaredFields();

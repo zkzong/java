@@ -1,7 +1,7 @@
-package org.example.powermock.service;
+package com.example.powermock.service;
 
-import org.example.powermock.common.User;
-import org.example.powermock.dao.UserDao;
+import com.example.powermock.common.User;
+import com.example.powermock.dao.UserDao;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;

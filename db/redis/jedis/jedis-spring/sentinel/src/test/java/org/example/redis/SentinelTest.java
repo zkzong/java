@@ -1,4 +1,4 @@
-package org.example.redis;
+package com.example.redis;
 
 import redis.clients.jedis.HostAndPort;
 import redis.clients.jedis.Jedis;

@@ -1,4 +1,4 @@
-package org.example.springbatch.model;
+package com.example.springbatch.model;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

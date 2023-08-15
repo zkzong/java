@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example.sb</groupId>
+    <groupId>com.example.sb</groupId>
     <artifactId>deploy-war</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>

@@ -1,4 +1,4 @@
-package org.example.mongodb.springdata.model;
+package com.example.mongodb.springdata.model;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;

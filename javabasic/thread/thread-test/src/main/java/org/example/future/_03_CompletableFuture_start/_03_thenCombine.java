@@ -1,6 +1,6 @@
-package org.example.future._03_CompletableFuture_start;
+package com.example.future._03_CompletableFuture_start;
 
-import org.example.future.SmallTool;
+import com.example.future.SmallTool;
 
 import java.util.concurrent.CompletableFuture;
 

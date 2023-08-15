@@ -1,7 +1,7 @@
-package org.example.starter;
+package com.example.starter;
 
-import org.example.starter.autoconfiguration.HelloProperties;
-import org.example.starter.format.FormatProcessor;
+import com.example.starter.autoconfiguration.HelloProperties;
+import com.example.starter.format.FormatProcessor;
 
 public class HelloFormatTemplate {
 

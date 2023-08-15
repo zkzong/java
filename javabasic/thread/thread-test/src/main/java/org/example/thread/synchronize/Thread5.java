@@ -1,4 +1,4 @@
-package org.example.thread.synchronize;
+package com.example.thread.synchronize;
 
 /**
  * 以上规则对其它对象锁同样适用

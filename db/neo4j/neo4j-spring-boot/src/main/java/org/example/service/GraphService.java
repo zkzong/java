@@ -1,6 +1,6 @@
-package org.example.service;
+package com.example.service;
 
-import org.example.entity.CustomerNode;
+import com.example.entity.CustomerNode;
 
 import java.util.List;
 

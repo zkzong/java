@@ -1,4 +1,4 @@
-package org.example.concurrent;
+package com.example.concurrent;
 
 import org.junit.Test;
 

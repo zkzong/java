@@ -1,4 +1,4 @@
-package org.example.aop.config;//package com.imooc.config;
+package com.example.aop.config;//package com.imooc.config;
 
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
@@ -22,19 +22,19 @@ public class AdviceAspectConfig {
 
     /******pointcut********/
 
-    @Pointcut("@annotation(org.example.aop.anno.AdminOnly) && within(org.example.aop..*)")
+    @Pointcut("@annotation(com.example.aop.anno.AdminOnly) && within(com.example.aop..*)")
     public void matchAnno() {
     }
 
-    @Pointcut("execution(* *..find*(Long)) && within(org.example.aop..*) ")
+    @Pointcut("execution(* *..find*(Long)) && within(com.example.aop..*) ")
     public void matchLongArg() {
     }
 
-    @Pointcut("execution(public * org.example.aop.service..*Service.*(..) throws java.lang.IllegalAccessException) && within(org.example.aop..*)")
+    @Pointcut("execution(public * com.example.aop.service..*Service.*(..) throws java.lang.IllegalAccessException) && within(com.example.aop..*)")
     public void matchException() {
     }
 
-    @Pointcut("execution(String org.example.aop..*.*(..)) && within(org.example.aop..*)")
+    @Pointcut("execution(String com.example.aop..*.*(..)) && within(com.example.aop..*)")
     public void matchReturn() {
     }
 

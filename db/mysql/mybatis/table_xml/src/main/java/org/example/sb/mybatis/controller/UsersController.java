@@ -1,8 +1,8 @@
-package org.example.sb.mybatis.controller;
+package com.example.sb.mybatis.controller;
 
-import org.example.sb.mybatis.domain.Users;
-import org.example.sb.mybatis.req.NameInReq;
-import org.example.sb.mybatis.service.UsersService;
+import com.example.sb.mybatis.domain.Users;
+import com.example.sb.mybatis.req.NameInReq;
+import com.example.sb.mybatis.service.UsersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

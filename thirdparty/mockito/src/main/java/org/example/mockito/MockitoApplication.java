@@ -1,11 +1,11 @@
-package org.example.mockito;
+package com.example.mockito;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("org.example.mockito.mapper")
+@MapperScan("com.example.mockito.mapper")
 public class MockitoApplication {
 
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package org.example.designpattern.gof_quanke_name.factorymethod.logger3;
+package com.example.designpattern.gof_quanke_name.factorymethod.logger3;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;

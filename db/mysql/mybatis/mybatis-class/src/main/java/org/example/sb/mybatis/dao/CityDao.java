@@ -1,6 +1,6 @@
-package org.example.sb.mybatis.dao;
+package com.example.sb.mybatis.dao;
 
-import org.example.sb.mybatis.domain.City;
+import com.example.sb.mybatis.domain.City;
 import org.apache.ibatis.annotations.Param;
 
 /**

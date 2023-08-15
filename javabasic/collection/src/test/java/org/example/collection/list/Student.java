@@ -1,4 +1,4 @@
-package org.example.collection.list;
+package com.example.collection.list;
 
 /**
  * Created by Zong on 2016/11/28.

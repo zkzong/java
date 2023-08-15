@@ -1,7 +1,7 @@
-package org.example.sb.redis;
+package com.example.sb.redis;
 
-import org.example.sb.redis.domain.Person;
-import org.example.sb.redis.domain.User;
+import com.example.sb.redis.domain.Person;
+import com.example.sb.redis.domain.User;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

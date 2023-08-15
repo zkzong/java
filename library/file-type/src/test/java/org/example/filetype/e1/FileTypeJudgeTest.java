@@ -1,4 +1,4 @@
-package org.example.filetype.e1;
+package com.example.filetype.e1;
 
 import org.junit.Test;
 

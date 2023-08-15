@@ -1,4 +1,4 @@
-package org.example.clickhouse.config;
+package com.example.clickhouse.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import org.springframework.context.annotation.Bean;

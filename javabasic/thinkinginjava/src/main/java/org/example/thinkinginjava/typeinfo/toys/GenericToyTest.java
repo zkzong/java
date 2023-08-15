@@ -1,4 +1,4 @@
-package org.example.thinkinginjava.typeinfo.toys;
+package com.example.thinkinginjava.typeinfo.toys;
 
 /**
  * Created by Zong on 2016/9/20.

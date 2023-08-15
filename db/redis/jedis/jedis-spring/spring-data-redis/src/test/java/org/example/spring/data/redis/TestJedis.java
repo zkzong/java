@@ -1,4 +1,4 @@
-package org.example.spring.data.redis;
+package com.example.spring.data.redis;
 
 import org.junit.After;
 import org.junit.Before;

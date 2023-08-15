@@ -1,4 +1,4 @@
-package org.example.reflect;
+package com.example.reflect;
 
 import java.lang.reflect.Constructor;
 
@@ -9,7 +9,7 @@ public class GetConstructors {
     public static void main(String[] args) {
         try {
             // 创建类
-            Class<?> personClass = Class.forName("org.example.reflect.Person");
+            Class<?> personClass = Class.forName("com.example.reflect.Person");
 
             // 获取所有的构造方法
             Constructor<?>[] constructors = personClass.getConstructors();

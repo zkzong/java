@@ -1,4 +1,4 @@
-package org.example.thread.synchronize;
+package com.example.thread.synchronize;
 
 public class TextThread {
 

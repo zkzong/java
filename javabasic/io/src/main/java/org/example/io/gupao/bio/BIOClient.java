@@ -1,4 +1,4 @@
-package org.example.io.gupao.bio;
+package com.example.io.gupao.bio;
 
 import java.io.IOException;
 import java.io.OutputStream;

@@ -1,7 +1,7 @@
-package org.example;
+package com.example;
 
-import org.example.listener.MyEvent;
-import org.example.listener.MyListener1;
+import com.example.listener.MyEvent;
+import com.example.listener.MyListener1;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;

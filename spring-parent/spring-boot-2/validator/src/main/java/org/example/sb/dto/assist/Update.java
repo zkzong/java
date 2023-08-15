@@ -1,4 +1,4 @@
-package org.example.sb.dto.assist;
+package com.example.sb.dto.assist;
 
 import javax.validation.groups.Default;
 

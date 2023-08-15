@@ -1,4 +1,4 @@
-package org.example.sb.jdbc;
+package com.example.sb.jdbc;
 
 import org.junit.Assert;
 import org.junit.Before;

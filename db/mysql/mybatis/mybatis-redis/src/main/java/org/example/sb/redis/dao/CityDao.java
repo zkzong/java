@@ -1,6 +1,6 @@
-package org.example.sb.redis.dao;
+package com.example.sb.redis.dao;
 
-import org.example.sb.redis.domain.City;
+import com.example.sb.redis.domain.City;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

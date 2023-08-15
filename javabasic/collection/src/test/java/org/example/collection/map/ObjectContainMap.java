@@ -1,4 +1,4 @@
-package org.example.collection.map;
+package com.example.collection.map;
 
 import com.alibaba.fastjson.JSON;
 import org.junit.Test;

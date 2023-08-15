@@ -1,12 +1,12 @@
-package org.example.sb.pagehelper.service.impl;
+package com.example.sb.pagehelper.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import org.example.sb.pagehelper.domain.Users;
-import org.example.sb.pagehelper.domain.UsersDto;
-import org.example.sb.pagehelper.mapper.UsersMapper;
-import org.example.sb.pagehelper.service.UsersService;
+import com.example.sb.pagehelper.domain.Users;
+import com.example.sb.pagehelper.domain.UsersDto;
+import com.example.sb.pagehelper.mapper.UsersMapper;
+import com.example.sb.pagehelper.service.UsersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

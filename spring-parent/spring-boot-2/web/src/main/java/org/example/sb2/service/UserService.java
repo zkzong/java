@@ -1,6 +1,6 @@
-package org.example.sb2.service;
+package com.example.sb2.service;
 
-import org.example.sb2.entity.User;
+import com.example.sb2.entity.User;
 
 import java.util.List;
 

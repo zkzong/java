@@ -1,4 +1,4 @@
-package org.example.thinkinginjava.concurrency;
+package com.example.thinkinginjava.concurrency;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

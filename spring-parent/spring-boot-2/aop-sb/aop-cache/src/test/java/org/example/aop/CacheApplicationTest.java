@@ -1,6 +1,6 @@
-package org.example.aop;
+package com.example.aop;
 
-import org.example.aop.service.MenuService;
+import com.example.aop.service.MenuService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

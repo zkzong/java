@@ -1,4 +1,4 @@
-package org.example.thinkinginjava.typeinfo;
+package com.example.thinkinginjava.typeinfo;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

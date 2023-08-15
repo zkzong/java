@@ -1,4 +1,4 @@
-package org.example.springboot.jdbc.service;
+package com.example.springboot.jdbc.service;
 
 /**
  * Created by Zong on 2017/4/25.

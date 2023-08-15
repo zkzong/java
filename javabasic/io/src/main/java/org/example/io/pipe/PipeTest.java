@@ -1,4 +1,4 @@
-package org.example.io.pipe;
+package com.example.io.pipe;
 
 import java.io.IOException;
 import java.io.PipedInputStream;

@@ -1,4 +1,4 @@
-package org.example.ulid;
+package com.example.ulid;
 
 import java.io.Serializable;
 import java.nio.charset.StandardCharsets;

@@ -1,6 +1,6 @@
-package org.example.sb.redis.service;
+package com.example.sb.redis.service;
 
-import org.example.sb.redis.domain.City;
+import com.example.sb.redis.domain.City;
 
 /**
  * Created by Zong on 2017/6/6.

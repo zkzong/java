@@ -1,6 +1,6 @@
-package org.example.ex.web;
+package com.example.ex.web;
 
-import org.example.ex.exception.ResourceNotFoundException;
+import com.example.ex.exception.ResourceNotFoundException;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

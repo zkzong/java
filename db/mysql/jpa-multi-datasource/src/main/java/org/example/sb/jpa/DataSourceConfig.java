@@ -1,4 +1,4 @@
-package org.example.sb.jpa;
+package com.example.sb.jpa;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.ConfigurationProperties;

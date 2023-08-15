@@ -1,4 +1,4 @@
-package org.example.redis.cache;
+package com.example.redis.cache;
 
 import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;

@@ -1,4 +1,4 @@
-package org.example.controller;
+package com.example.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.stream.annotation.EnableBinding;

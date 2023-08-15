@@ -1,4 +1,4 @@
-package org.example.redisson.controller;
+package com.example.redisson.controller;
 
 import jodd.util.MathUtil;
 import org.redisson.api.RAtomicLong;

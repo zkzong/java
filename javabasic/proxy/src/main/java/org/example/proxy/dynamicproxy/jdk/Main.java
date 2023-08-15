@@ -1,7 +1,7 @@
-package org.example.proxy.dynamicproxy.jdk;
+package com.example.proxy.dynamicproxy.jdk;
 
-import org.example.proxy.SmsService;
-import org.example.proxy.SmsServiceImpl;
+import com.example.proxy.SmsService;
+import com.example.proxy.SmsServiceImpl;
 
 public class Main {
     public static void main(String[] args) {

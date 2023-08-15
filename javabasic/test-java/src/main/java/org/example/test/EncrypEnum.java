@@ -1,4 +1,4 @@
-package org.example.test;
+package com.example.test;
 
 /**
  * Created by zzk on 17/1/4.

@@ -1,4 +1,4 @@
-package org.example.easyexcel;
+package com.example.easyexcel;
 
 import lombok.Data;
 

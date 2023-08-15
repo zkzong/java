@@ -1,4 +1,4 @@
-package org.example.springboot.bean;
+package com.example.springboot.bean;
 
 import java.util.Date;
 

@@ -1,4 +1,4 @@
-package org.example.thinkinginjava.generics;
+package com.example.thinkinginjava.generics;
 
 import java.util.ArrayList;
 import java.util.List;

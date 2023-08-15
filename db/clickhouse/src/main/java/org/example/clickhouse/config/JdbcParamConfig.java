@@ -1,4 +1,4 @@
-package org.example.clickhouse.config;
+package com.example.clickhouse.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

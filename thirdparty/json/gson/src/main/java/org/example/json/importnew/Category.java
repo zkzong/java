@@ -1,4 +1,4 @@
-package org.example.json.importnew;
+package com.example.json.importnew;
 
 import com.google.gson.annotations.Expose;
 

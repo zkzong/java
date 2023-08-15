@@ -1,4 +1,4 @@
-package org.example.aop.anno;
+package com.example.aop.anno;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

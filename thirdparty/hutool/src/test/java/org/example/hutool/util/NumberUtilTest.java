@@ -1,4 +1,4 @@
-package org.example.hutool.util;
+package com.example.hutool.util;
 
 import cn.hutool.core.util.NumberUtil;
 import org.junit.Test;

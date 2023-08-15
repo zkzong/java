@@ -1,4 +1,4 @@
-package org.example.disruptor.model;
+package com.example.disruptor.model;
 
 import lombok.Data;
 

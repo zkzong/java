@@ -1,4 +1,4 @@
-package org.example.sca.dto;
+package com.example.sca.dto;
 
 import lombok.Data;
 
