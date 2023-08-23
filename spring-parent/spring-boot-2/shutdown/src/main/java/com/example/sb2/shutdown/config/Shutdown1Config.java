@@ -1,4 +1,4 @@
-package com.example.sb.shutdown.config;
+package com.example.sb2.shutdown.config;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.catalina.connector.Connector;
@@ -17,7 +17,7 @@ import java.util.concurrent.TimeUnit;
  */
 @Configuration
 @Slf4j
-public class ShutdownConfig {
+public class Shutdown1Config {
 
     /**
      * 用于接受shutdown事件

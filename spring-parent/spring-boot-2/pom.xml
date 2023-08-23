@@ -38,7 +38,6 @@
         <module>upload</module>
         <module>transactional</module>
         <module>apollo-jasypt</module>
-        <module>shutdown-sb</module>
         <module>aop-sb</module>
         <module>hot-deploy</module>
         <module>exception-sb</module>
