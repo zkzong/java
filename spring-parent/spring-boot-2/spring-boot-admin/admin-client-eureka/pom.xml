@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>admin-client</artifactId>
+    <artifactId>admin-client-eureka</artifactId>
 
     <properties>
     </properties>

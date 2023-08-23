@@ -19,8 +19,8 @@
         <module>spring-boot-admin-server</module>
         <module>spring-boot-admin-client</module>
         <module>admin-eureka-server</module>
-        <module>admin-server</module>
-        <module>admin-client</module>
+        <module>admin-server-eureka</module>
+        <module>admin-client-eureka</module>
     </modules>
 
     <build>
