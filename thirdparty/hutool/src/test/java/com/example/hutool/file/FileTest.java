@@ -68,4 +68,19 @@ public class FileTest {
         }
     }
 
+    /**
+     * 判断是否是目录，并遍历目录内文件
+     */
+    @Test
+    public void directory() {
+        String path = "/Users/admin/Desktop/jiekou";
+        boolean directory = FileUtil.isDirectory(path);
+        if (directory) {
+            List<String> files = FileUtil.listFileNames(path);
+            for (String file : files) {
+                System.out.println(file);
+            }
+        }
+    }
+
 }
