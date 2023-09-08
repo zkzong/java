@@ -32,7 +32,6 @@
         <module>properties</module>
         <module>repository</module>
         <module>roncoo</module>
-        <module>spring-boot-admin-sb</module>
         <module>spring-retry</module>
         <module>runner</module>
         <module>upload</module>
