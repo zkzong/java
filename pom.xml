@@ -10,15 +10,15 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>javabasic</module>
-        <module>designpattern</module>
-        <module>algorithm</module>
+        <!--<module>designpattern</module>-->
+        <!--<module>algorithm</module>-->
         <module>library</module>
         <module>thirdparty</module>
         <module>spring-parent</module>
         <module>db</module>
-        <module>mq</module>
-        <module>job-scheduler</module>
-        <module>bigdata</module>
+        <!--<module>mq</module>-->
+        <!--<module>job-scheduler</module>-->
+        <!--<module>bigdata</module>-->
         <!--<module>log</module>-->
         <!--<module>dubbo</module>-->
         <!--<module>skywalking</module>-->
