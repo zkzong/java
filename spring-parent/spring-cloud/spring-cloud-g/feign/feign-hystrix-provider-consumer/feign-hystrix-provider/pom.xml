@@ -5,23 +5,16 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.example</groupId>
-        <artifactId>feign-provider-consumer</artifactId>
+        <artifactId>feign-hystrix-provider-consumer</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>feign-consumer</artifactId>
+    <artifactId>feign-hystrix-provider</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
-        </dependency>
-    </dependencies>
 
 </project>

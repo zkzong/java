@@ -18,7 +18,7 @@
         <module>feign-okhttp</module>
         <module>feign-upload</module>
         <module>feign-multi-params</module>
-        <module>feign-provider-consumer</module>
+        <module>feign-hystrix-provider-consumer</module>
     </modules>
 
 </project>

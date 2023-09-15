@@ -10,11 +10,11 @@
     </parent>
 
     <groupId>org.example</groupId>
-    <artifactId>feign-provider-consumer</artifactId>
+    <artifactId>feign-hystrix-provider-consumer</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>feign-provider</module>
-        <module>feign-consumer</module>
+        <module>feign-hystrix-provider</module>
+        <module>feign-hystrix-consumer</module>
     </modules>
 
     <properties>
