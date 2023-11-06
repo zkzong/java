@@ -73,8 +73,8 @@ public class WebController {
      * @param ab
      * @return
      */
-    @RequestMapping(value = "ab")
-    public String ab(@RequestBody A<B> ab) {
+    @RequestMapping(value = "genericsparam")
+    public String genericsparam(@RequestBody A<B> ab) {
         System.out.println(ab);
         return "success";
     }
@@ -85,8 +85,8 @@ public class WebController {
      * @param b
      * @return
      */
-    @PostMapping(value = "b")
-    public String b(@RequestBody B b) {
+    @PostMapping(value = "jsonparam")
+    public String jsonparam(@RequestBody B b) {
         System.out.println(b);
         return "success";
     }
@@ -97,21 +97,23 @@ public class WebController {
      * @param name
      * @return
      */
-    @PostMapping(value = "bb")
-    public String bb(@RequestParam String name) {
+    @PostMapping(value = "strparam")
+    public String strparam(@RequestParam String name) {
         System.out.println(name);
         return "success";
     }
 
     /**
      * 使用@JSONField注解修改字段名称
+     * JsonProperty指定入参，原参数名和指定参数名都可以
+     * JSONField指定出参
      *
      * @return
      */
     @PostMapping("/jsonfield")
-    public String jsonField() {
-        JsonFieldClass jsonFieldClass = JsonFieldClass.builder().name("zong")
-                .age(10).sex(1).build();
+    public String jsonField(@RequestBody JsonFieldClass jsonFieldClass) {
+        //JsonFieldClass jsonFieldClass = JsonFieldClass.builder().name("zong")
+        //        .age(10).sex(1).build();
         //使用JSON.toJSONString时@JSONField起作用
         System.out.println(JSON.toJSONString(jsonFieldClass));
         return JSON.toJSONString(jsonFieldClass);
