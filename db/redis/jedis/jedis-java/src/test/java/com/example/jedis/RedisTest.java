@@ -31,7 +31,7 @@ public class RedisTest {
         // 无密码
         //JedisPool pool = new JedisPool(config, "127.0.0.1", 6379);
         // 有密码
-        JedisPool pool = new JedisPool(config, "127.0.0.1", 6379, 60000, "zong");
+        JedisPool pool = new JedisPool(config, "127.0.0.1", 6379, 60000, "redis");
         jedis = pool.getResource();
         jedis.select(0);
     }
@@ -49,6 +49,7 @@ public class RedisTest {
         jedis.lpush("tlist", "Redis");
         jedis.lpush("tlist", "MongoDB");
         jedis.lpush("tlist", "Mysql");
+        jedis.expire("tlist", 1000);
         List<String> list = jedis.lrange("tlist", 0, 5);
         for (int i = 0; i < list.size(); i++) {
             System.out.println("Stored string in redis: " + list.get(i));
