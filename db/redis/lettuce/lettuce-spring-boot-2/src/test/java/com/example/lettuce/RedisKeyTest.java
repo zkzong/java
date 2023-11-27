@@ -5,6 +5,7 @@ import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.ConvertingCursor;
 import org.springframework.data.redis.core.Cursor;
+import org.springframework.data.redis.core.ListOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ScanOptions;
 import org.springframework.data.redis.serializer.RedisSerializer;
@@ -12,6 +13,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.Resource;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 /**
  * 获取key的两种方式
@@ -25,6 +27,17 @@ public class RedisKeyTest {
 
     @Resource
     private RedisTemplate<String, String> redisTemplate;
+
+    @Test
+    public void lpush() {
+        ListOperations<String, String> opsForList = redisTemplate.opsForList();
+        opsForList.leftPush("list", "a");
+        opsForList.leftPush("list", "b");
+        opsForList.leftPush("list", "c");
+        opsForList.leftPush("list", "d");
+        System.out.println(opsForList);
+        redisTemplate.expire("list", 1, TimeUnit.MINUTES);
+    }
 
     /**
      * 使用keys获取所有key
