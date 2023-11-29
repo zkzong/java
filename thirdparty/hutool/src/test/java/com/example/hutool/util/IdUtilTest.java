@@ -34,7 +34,7 @@ public class IdUtilTest {
      */
     @Test
     public void Snowflake() {
-        // 参数1为终端ID
+        // 参数1为终端ID，范围为0~31
         // 参数2为数据中心ID
         Snowflake snowflake = IdUtil.getSnowflake(1, 1);
         long id = snowflake.nextId();
