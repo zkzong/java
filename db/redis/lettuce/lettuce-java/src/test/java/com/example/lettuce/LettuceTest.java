@@ -3,6 +3,7 @@ package com.example.lettuce;
 import io.lettuce.core.LettuceFutures;
 import io.lettuce.core.RedisClient;
 import io.lettuce.core.RedisFuture;
+import io.lettuce.core.RedisURI;
 import io.lettuce.core.TransactionResult;
 import io.lettuce.core.api.StatefulRedisConnection;
 import io.lettuce.core.api.async.RedisAsyncCommands;
@@ -28,7 +29,13 @@ public class LettuceTest {
 
     @Before
     public void before() {
-        RedisClient redisClient = RedisClient.create("redis://localhost:6379/");
+        RedisURI redisURI = new RedisURI();
+        redisURI.setHost("127.0.0.1");
+        redisURI.setPort(6379);
+        redisURI.setDatabase(0);
+        redisURI.setPassword("redis");
+        RedisClient redisClient = RedisClient.create(redisURI);
+        //RedisClient redisClient = RedisClient.create("redis://localhost:6379/");
         connection = redisClient.connect();
     }
 
