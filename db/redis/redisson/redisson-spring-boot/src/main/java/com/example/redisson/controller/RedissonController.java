@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 @RestController
 @RequestMapping("/redisson")
@@ -38,6 +39,31 @@ public class RedissonController {
             //3、解锁将设解锁代码没有运行，redisson会不会出现死锁
             log.info("释放锁..." + Thread.currentThread().getId());
             lock.unlock();
+        }
+        return "hello";
+    }
+
+    @GetMapping("/trylock")
+    public String trylock() throws InterruptedException {
+
+        RLock lock = redisson.getLock("my-lock");
+        //if (lock.tryLock(5, 30, TimeUnit.SECONDS)) {
+        if (lock.tryLock(30, TimeUnit.SECONDS)) {
+            log.info("开始时间：{}", new Date());
+            try {
+                log.info("加锁成功，执行业务..." + Thread.currentThread().getId());
+                Thread.sleep(60000);
+            } catch (Exception e) {
+
+            } finally {
+                log.info("结束时间：{}", new Date());
+                //3、解锁将设解锁代码没有运行，redisson会不会出现死锁
+                log.info("释放锁..." + Thread.currentThread().getId());
+                if (lock.isLocked()) {
+                    lock.unlock();
+                }
+
+            }
         }
         return "hello";
     }
