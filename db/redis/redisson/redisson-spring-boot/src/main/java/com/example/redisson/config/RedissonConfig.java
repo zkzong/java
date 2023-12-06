@@ -17,7 +17,7 @@ public class RedissonConfig {
         config.useSingleServer()
                 //可以用"rediss://"来启用SSL连接
                 .setAddress("redis://127.0.0.1:6379")
-                .setPassword("zong");
+                .setPassword("redis");
         //2.创建客户端
         RedissonClient redissonClient = Redisson.create(config);
         return redissonClient;
