@@ -1,5 +1,6 @@
 package com.example.redisson.controller;
 
+import com.example.redisson.entity.Ur;
 import jodd.util.MathUtil;
 import org.redisson.api.RAtomicLong;
 import org.redisson.api.RBucket;
@@ -15,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.concurrent.TimeUnit;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("/redisson")
 public class TeController {
 
     @Autowired

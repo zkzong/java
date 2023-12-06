@@ -1,4 +1,4 @@
-package com.example.redisson.controller;
+package com.example.redisson.entity;
 
 import lombok.Data;
 
