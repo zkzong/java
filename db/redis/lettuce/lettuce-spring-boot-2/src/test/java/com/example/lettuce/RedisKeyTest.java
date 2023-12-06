@@ -12,6 +12,7 @@ import org.springframework.data.redis.serializer.RedisSerializer;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.Resource;
+import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
@@ -37,6 +38,13 @@ public class RedisKeyTest {
         opsForList.leftPush("list", "d");
         System.out.println(opsForList);
         redisTemplate.expire("list", 1, TimeUnit.MINUTES);
+    }
+
+    @Test
+    public void range() {
+        // 当没有这个key时，返回的时size=0的空对象，不是null
+        List<String> list = redisTemplate.opsForList().range("list", 0, -1);
+        System.out.println(list.size());
     }
 
     /**
