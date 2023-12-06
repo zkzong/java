@@ -26,7 +26,7 @@ public class TeController {
 
     //    ========================== String =======================
     @GetMapping("/set/{key}")
-    public String s1(@PathVariable String key) {
+    public String set(@PathVariable String key) {
         // 设置字符串
         RBucket<String> keyObj = redissonClient.getBucket(key);
         keyObj.set(key + "1-v1");
@@ -34,7 +34,7 @@ public class TeController {
     }
 
     @GetMapping("/get/{key}")
-    public String g1(@PathVariable String key) {
+    public String get(@PathVariable String key) {
         // 设置字符串
         RBucket<String> keyObj = redissonClient.getBucket(key);
         String s = keyObj.get();
@@ -44,7 +44,7 @@ public class TeController {
     //    ========================== hash =======================-=
 
     @GetMapping("/hset/{key}")
-    public String h1(@PathVariable String key) {
+    public String hset(@PathVariable String key) {
 
         Ur ur = new Ur();
         ur.setId(MathUtil.randomLong(1, 20));
@@ -56,7 +56,7 @@ public class TeController {
     }
 
     @GetMapping("/hget/{id}")
-    public String h2(@PathVariable String id) {
+    public String hget(@PathVariable String id) {
         // hash 查询
         RMap<String, Ur> ss = redissonClient.getMap("UR");
         Ur ur = ss.get(id);
