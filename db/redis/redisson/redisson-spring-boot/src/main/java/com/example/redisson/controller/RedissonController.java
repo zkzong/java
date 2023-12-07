@@ -17,13 +17,13 @@ import java.util.concurrent.TimeUnit;
 public class RedissonController {
 
     @Autowired
-    private RedissonClient redisson;
+    private RedissonClient redissonClient;
 
     @GetMapping("/lock")
     public long lock() {
 
         //1、获取一把锁，只要锁的名字一样，就是同一把锁
-        RLock lock = redisson.getLock("my-lock");
+        RLock lock = redissonClient.getLock("my-lock");
         //2、加锁
         lock.lock();//阻塞式等待。默认加的锁都是30s时间。
         //1)、锁的自动续期，如果业务超长，运行期间自动给锁续上新的30s。不用担心业务时间长，锁自动过期被删除
@@ -46,7 +46,7 @@ public class RedissonController {
     @GetMapping("/trylock")
     public long trylock() throws InterruptedException {
 
-        RLock lock = redisson.getLock("my-lock");
+        RLock lock = redissonClient.getLock("my-lock");
         //if (lock.tryLock(5, 30, TimeUnit.SECONDS)) {
         if (lock.tryLock(30, TimeUnit.SECONDS)) {
             log.info("开始时间：{}", new Date());
