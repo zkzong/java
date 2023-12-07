@@ -20,7 +20,7 @@ public class RedissonController {
     private RedissonClient redisson;
 
     @GetMapping("/lock")
-    public String lock() {
+    public long lock() {
 
         //1、获取一把锁，只要锁的名字一样，就是同一把锁
         RLock lock = redisson.getLock("my-lock");
@@ -40,11 +40,11 @@ public class RedissonController {
             log.info("释放锁..." + Thread.currentThread().getId());
             lock.unlock();
         }
-        return "hello";
+        return Thread.currentThread().getId();
     }
 
     @GetMapping("/trylock")
-    public String trylock() throws InterruptedException {
+    public long trylock() throws InterruptedException {
 
         RLock lock = redisson.getLock("my-lock");
         //if (lock.tryLock(5, 30, TimeUnit.SECONDS)) {
@@ -65,6 +65,6 @@ public class RedissonController {
 
             }
         }
-        return "hello";
+        return Thread.currentThread().getId();
     }
 }
