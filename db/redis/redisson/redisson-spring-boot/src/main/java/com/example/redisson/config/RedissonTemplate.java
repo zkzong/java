@@ -95,6 +95,33 @@ public class RedissonTemplate {
             throw new RuntimeException("Redisson instance has been shut down !!!");
         }
     }
+
+    /**
+     * 可中断锁
+     *
+     * @param lockName    锁名称
+     * @param waitTimeout 等待时长
+     * @param unit        时间单位
+     * @return
+     */
+    public boolean tryLock(String lockName, long waitTimeout, TimeUnit unit) {
+        checkRedissonClient();
+        RLock lock = getLock(lockName);
+        try {
+            boolean res = lock.tryLock(waitTimeout, unit);
+            if (!res) {
+                log.debug(" get lock fail ,lockKey:{}", lockName);
+                return false;
+            }
+            log.debug(" get lock success ,lockKey:{}", lockName);
+            return true;
+        } catch (Exception e) {
+            log.error(" get lock fail,lockKey:{}, cause:{} ",
+                    lockName, e.getMessage());
+            return false;
+        }
+    }
+
 }
 
 
