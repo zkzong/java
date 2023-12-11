@@ -22,7 +22,7 @@ public class TryLockTest {
     private CountDownLatch count = new CountDownLatch(2);
 
     @Test
-    void contextLoads() {
+    public void tryLock() {
         String lockName = "hello-test";
         new Thread(() -> {
 
