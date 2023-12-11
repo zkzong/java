@@ -17,7 +17,7 @@ import java.util.concurrent.TimeUnit;
 
 @RestController
 @RequestMapping("/redisson")
-public class TeController {
+public class OptController {
 
     @Autowired
     private RedissonClient redissonClient;
@@ -123,7 +123,7 @@ public class TeController {
             public void run() {
                 RAtomicLong atomicLong = redissonClient.getAtomicLong(key);
                 if (!atomicLong.isExists()) {
-                    atomicLong.set(300l);
+                    atomicLong.set(300L);
                 }
                 if (atomicLong.get() > 0) {
                     long l = atomicLong.getAndDecrement();
