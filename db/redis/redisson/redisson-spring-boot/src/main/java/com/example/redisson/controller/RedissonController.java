@@ -47,8 +47,10 @@ public class RedissonController {
     public long trylock() throws InterruptedException {
 
         RLock lock = redissonClient.getLock("my-lock");
+        boolean b = lock.tryLock(30, TimeUnit.SECONDS);
+        log.info("tryLock获取锁：{}", b);
         //if (lock.tryLock(5, 30, TimeUnit.SECONDS)) {
-        if (lock.tryLock(30, TimeUnit.SECONDS)) {
+        if (b) {
             log.info("开始时间：{}", new Date());
             try {
                 log.info("加锁成功，执行业务..." + Thread.currentThread().getId());
