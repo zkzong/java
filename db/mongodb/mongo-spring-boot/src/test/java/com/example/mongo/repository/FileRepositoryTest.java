@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Optional;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -29,8 +30,8 @@ public class FileRepositoryTest {
         fileVo.setContent(bFile);
         fileRepository.save(fileVo);
 
-        FileVo fileVo1 = fileRepository.findById(2L);
-        byte[] content = fileVo1.getContent();
+        Optional<FileVo> optionalFileVo = fileRepository.findById(2L);
+        byte[] content = optionalFileVo.get().getContent();
         Path path = Paths.get("a.pdf");
         Files.write(path, content);
     }
