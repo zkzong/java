@@ -14,19 +14,19 @@ spring:
 #      port: 8500
 
 #  cloud:
-    gateway:
-      # 开始配置路径
-      routes:
-        # 路径匹配
-        - id: fund
-          # 转发URI
-          uri: http://localhost:7001
-          # 断言配置
-          predicates:
-            - Path=/r4j/**
-          filters:
-            - DecryptRequestBody
-            - EncryptResponseBody
+#    gateway:
+#      # 开始配置路径
+#      routes:
+#        # 路径匹配
+#        - id: fund
+#          # 转发URI
+#          uri: http://localhost:7001
+#          # 断言配置
+#          predicates:
+#            - Path=/r4j/**
+#          filters:
+#            - DecryptRequestBody
+#            - EncryptResponseBody
 
 #  cloud:
 #    gateway:
@@ -312,14 +312,20 @@ spring:
 #        timeoutInMillis: 10
 
 #  cloud:
-#    gateway:
-#      routes:
-#        - id: user-service
-#          # 客户端负载均衡路由
-#          uri: lb://gateway-user
-#          # 匹配路径
-#          predicates:
-#            - Path=/user/**
+    gateway:
+      routes:
+        - id: user-service
+          # 客户端负载均衡路由
+          uri: lb://gateway-user
+          # 匹配路径
+          predicates:
+            - Path=/user/**
+        - id: fund-service
+          # 客户端负载均衡路由
+          uri: lb://gateway-fund
+          # 匹配路径
+          predicates:
+            - Path=/r4j/**
 
 #management:
 #  endpoints:
