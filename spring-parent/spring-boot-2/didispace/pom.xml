@@ -17,7 +17,6 @@
     <modules>
         <module>exception-didispace</module>
         <module>swagger2</module>
-        <module>aop-didispace</module>
         <module>banner</module>
         <module>actuator</module>
         <module>scheduled</module>

@@ -21,7 +21,7 @@
         <module>actuator-sb2</module>
         <module>test-sb2</module>
         <module>listener-sb2</module>
-        <module>log-aspect</module>
+
         <module>api</module>
         <module>apollo</module>
         <module>minio</module>

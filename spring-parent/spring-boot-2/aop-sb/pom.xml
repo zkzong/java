@@ -28,6 +28,8 @@
         <module>aop-cache</module>
         <module>aop-datalog</module>
         <module>aop-cache-2</module>
+        <module>log-aspect</module>
+        <module>aop-didispace</module>
     </modules>
 
     <dependencies>
