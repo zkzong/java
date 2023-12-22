@@ -44,7 +44,7 @@ public class DatalogApplicationTest {
         product.setName("宗");
         productDao.save(product);
 
-        product = productDao.findOne(1L);
+        product = productDao.findById(1L).get();
         product.setName("马");
         product.setBuyPrice(new BigDecimal("23.5"));
         product.setOnlineTime(new Date());
@@ -53,7 +53,9 @@ public class DatalogApplicationTest {
 
     @Test
     public void testDelete() {
-        productDao.delete(1L);
+        Product product = new Product();
+        product.setId(1L);
+        productDao.delete(product);
     }
 
     @Test
