@@ -41,6 +41,10 @@ public class CustomerServiceTests {
         Long accountId = 100L;
         String orderNumber = "Order00001";
 
+        CustomerTicket customerTicket = new CustomerTicket();
+        customerTicket.setOrderNumber(orderNumber);
+        Mockito.when(customerTicketRepository.save(customerTicket)).thenReturn(new CustomerTicket(1L, accountId, orderNumber, "DemoCustomerTicket1", new Date()));
+
         CustomerTicket actual = customerTicketService.generateCustomerTicket(accountId, orderNumber);
 
         assertThat(actual.getOrderNumber()).isEqualTo(orderNumber);

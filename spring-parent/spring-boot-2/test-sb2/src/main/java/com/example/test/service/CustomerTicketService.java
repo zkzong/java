@@ -31,6 +31,7 @@ public class CustomerTicketService {
 
         // 创建并保存CustomerTicket信息
         customerTicket.setAccountId(accountId);
+        customerTicket.setOrderNumber(orderNumber);
         customerTicket.setCreateTime(new Date());
         customerTicket.setDescription("TestCustomerTicket");
         customerTicketRepository.save(customerTicket);
