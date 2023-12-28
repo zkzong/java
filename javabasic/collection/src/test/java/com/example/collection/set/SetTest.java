@@ -90,7 +90,7 @@ public class SetTest {
 
     }
 
-    @Test
+    @Test(expected = NullPointerException.class)
     public void iterSetWithNull() {
         Set<Integer> hashSet = new HashSet<>();
 

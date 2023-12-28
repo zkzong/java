@@ -98,7 +98,7 @@ public class CollectionsTest {
     /**
      * 转换成不可修改集合
      */
-    @Test
+    @Test(expected = UnsupportedOperationException.class)
     public void unmodify() {
         List<Integer> list = new ArrayList<>();
         list.add(2);
