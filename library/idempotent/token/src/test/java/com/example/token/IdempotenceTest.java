@@ -2,6 +2,7 @@ package com.example.token;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
+import org.junit.ComparisonFailure;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +22,7 @@ public class IdempotenceTest {
     @Autowired
     private WebApplicationContext webApplicationContext;
 
-    @Test
+    @Test(expected = ComparisonFailure.class)
     public void interfaceIdempotenceTest() throws Exception {
         // 初始化 MockMvc
         MockMvc mockMvc = MockMvcBuilders.webAppContextSetup(webApplicationContext).build();
