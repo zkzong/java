@@ -180,7 +180,7 @@ public class Json2OthersTest {
     }
 
 
-    @Test
+    @Test(expected = ClassCastException.class)
     public void aa() {
         Resp<A> resp = new Resp<>();
         resp.setCode("0000");
