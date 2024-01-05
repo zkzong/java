@@ -140,4 +140,10 @@ public class StreamTest {
                 .map(User::getSalary).reduce(BigDecimal.ZERO, BigDecimal::add);
         System.out.println(sum);
     }
+
+    @Test
+    public void map() {
+        List<String> list = users.stream().map(e -> e.getName()).collect(Collectors.toList());
+        System.out.println(list);
+    }
 }
