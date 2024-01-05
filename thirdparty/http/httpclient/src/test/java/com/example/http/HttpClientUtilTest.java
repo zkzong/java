@@ -31,7 +31,7 @@ public class HttpClientUtilTest {
         HttpClientUtil.get(url, params);
     }
 
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void getUser() {
         url += "/http/getUser";
         String params = "params={\"username\":\"zong\",\"age\":30}";
