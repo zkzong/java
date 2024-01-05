@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS t_order_0 (
     status     VARCHAR(50),
     PRIMARY KEY (order_id)
 );
-CREATE TABLE IF NOT EXISTS t_order_0 (
+CREATE TABLE IF NOT EXISTS t_order_1 (
     order_id   BIGINT AUTO_INCREMENT,
     user_id    INT    NOT NULL,
     address_id BIGINT NOT NULL,

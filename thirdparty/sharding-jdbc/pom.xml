@@ -12,7 +12,7 @@
         <!--<module>sharding-jdbc-3</module>-->
         <module>sharding-jdbc-spring-boot-2</module>
         <module>sharding-jdbc-5</module>
-        <module>sharding-jdbc-4</module>
+        <!--<module>sharding-jdbc-4</module>-->
     </modules>
 
     <dependencies>
