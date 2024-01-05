@@ -59,7 +59,8 @@ public class FileTest {
 
     @Test
     public void read() {
-        List<String> strings = FileUtil.readLines("example.csv", StandardCharsets.UTF_8);
+        String path = this.getClass().getClassLoader().getResource("").getPath();
+        List<String> strings = FileUtil.readLines(path + "/example.csv", StandardCharsets.UTF_8);
         int size = strings.size();
         for (int i = 0; i < size; i++) {
             if (i % 100000 == 0) {

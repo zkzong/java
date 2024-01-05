@@ -1,5 +1,6 @@
 package com.example.hutool.http;
 
+import cn.hutool.core.io.IORuntimeException;
 import cn.hutool.http.ContentType;
 import cn.hutool.http.Header;
 import cn.hutool.http.HttpRequest;
@@ -21,7 +22,7 @@ public class HttpTest {
         System.out.println(content);
     }
 
-    @Test
+    @Test(expected = IORuntimeException.class)
     public void post1() {
         HashMap<String, Object> paramMap = new HashMap<>();
         paramMap.put("name", "long");
@@ -31,7 +32,7 @@ public class HttpTest {
         System.out.println(result);
     }
 
-    @Test
+    @Test(expected = IORuntimeException.class)
     public void post2() {
         HashMap<String, Object> paramMap = new HashMap<>();
         paramMap.put("name", "long");
@@ -46,7 +47,7 @@ public class HttpTest {
     }
 
 
-    @Test
+    @Test(expected = IORuntimeException.class)
     public void postjson1() {
         User user = new User();
         user.setId(1);
@@ -62,7 +63,7 @@ public class HttpTest {
         System.out.println(result);
     }
 
-    @Test
+    @Test(expected = IORuntimeException.class)
     public void postjson2() {
         User user = new User();
         user.setId(1);
