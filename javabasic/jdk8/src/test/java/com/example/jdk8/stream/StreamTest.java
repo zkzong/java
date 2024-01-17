@@ -143,7 +143,21 @@ public class StreamTest {
 
     @Test
     public void map() {
+        System.out.println(users);
+        // 一个字段
         List<String> list = users.stream().map(e -> e.getName()).collect(Collectors.toList());
         System.out.println(list);
+        // 多个字段
+        List<User> userList = users.stream().map(e -> new User(e.getName(), e.getAge())).collect(Collectors.toList());
+        System.out.println(userList);
+
+        // 当key重复时，该方法默认会抛出IllegalStateException: Duplicate key异常
+        // 可以设置为重复key时，覆盖
+        Map<BigDecimal, Integer> collect1 = users.stream().collect(Collectors.toMap(User::getSalary, User::getAge));
+        System.out.println(collect1);
+        // (key1, key2) -> key1 前面覆盖后面
+        // (key1, key2) -> key2 后面覆盖前面
+        Map<String, Integer> collect2 = users.stream().collect(Collectors.toMap(User::getName, User::getAge, (key1, key2) -> key1));
+        System.out.println(collect2);
     }
 }
