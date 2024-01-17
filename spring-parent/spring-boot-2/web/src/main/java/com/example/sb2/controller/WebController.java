@@ -31,7 +31,7 @@ public class WebController {
      *
      * @return
      */
-    @RequestMapping(value = "findAll")
+    @RequestMapping(value = "/findAll")
     public String findAll() {
         List<User> userList = userService.findAll();
         String userStr = JSON.toJSONString(userList);
@@ -61,7 +61,7 @@ public class WebController {
      * @param bean
      * @return
      */
-    @RequestMapping(value = "request")
+    @RequestMapping(value = "/request")
     public String request(@RequestBody JsonRootBean bean) {
         System.out.println(bean);
         return "success";
@@ -73,7 +73,7 @@ public class WebController {
      * @param ab
      * @return
      */
-    @RequestMapping(value = "genericsparam")
+    @RequestMapping(value = "/genericsparam")
     public String genericsparam(@RequestBody A<B> ab) {
         System.out.println(ab);
         return "success";
@@ -85,7 +85,7 @@ public class WebController {
      * @param b
      * @return
      */
-    @PostMapping(value = "jsonparam")
+    @PostMapping(value = "/jsonparam")
     public String jsonparam(@RequestBody B b) {
         System.out.println(b);
         return "success";
@@ -97,7 +97,7 @@ public class WebController {
      * @param name
      * @return
      */
-    @PostMapping(value = "strparam")
+    @PostMapping(value = "/strparam")
     public String strparam(@RequestParam String name) {
         System.out.println(name);
         return "success";
