@@ -16,7 +16,7 @@
         <module>thirdparty</module>
         <module>spring-parent</module>
         <module>db</module>
-        <!--<module>mq</module>-->
+        <module>mq</module>
         <!--<module>job-scheduler</module>-->
         <!--<module>bigdata</module>-->
         <!--<module>log</module>-->
