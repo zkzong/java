@@ -76,34 +76,33 @@ public class StreamTest {
      */
     @Test
     public void parentsub() {
-        List<ParentSub> parentSubs = intData();
-        List<ParentSub> collect = parentSubs.stream().filter(p -> p.getParentId() == 0).collect(Collectors.toList());
-        System.out.println("父类集合：" + collect);
+        List<ParentSub> allList = intData();
+        List<ParentSub> parentList = allList.stream().filter(p -> p.getParentId() == 0).collect(Collectors.toList());
+        System.out.println("父类集合：" + parentList);
         // 两种方式实现
         // 1、双层循环
-        //for (ParentSub parentSub : collect) {
-        //    List<ParentSub> list = new ArrayList<>();
-        //    for (ParentSub sub : parentSubs) {
-        //        if (sub.parentId == parentSub.getId()) {
-        //            list.add(sub);
-        //        }
-        //        parentSub.setSubList(list);
-        //    }
-        //}
-        //System.out.println("父子类集合：" + collect);
-        // 2、stream
-        // todo
-        //List<ParentSub> collect2 = parentSubs.stream().filter(p -> p.getParentId() == 0).collect(Collectors.toList());
-        parentSubs.stream().forEach(p -> {
+        for (ParentSub parentSub : parentList) {
             List<ParentSub> list = new ArrayList<>();
-            for (ParentSub parentSub : collect) {
-                if (p.getParentId() == parentSub.getId()) {
-                    list.add(p);
+            for (ParentSub sub : allList) {
+                if (sub.parentId == parentSub.getId()) {
+                    list.add(sub);
                 }
                 parentSub.setSubList(list);
             }
+        }
+        System.out.println("父子类集合：" + parentList);
+        // 2、stream
+        List<ParentSub> pList = allList.stream().filter(p -> p.getParentId() == 0).collect(Collectors.toList());
+        pList.stream().forEach(p -> {
+            List<ParentSub> list = new ArrayList<>();
+            for (ParentSub sub : allList) {
+                if (p.getId().equals(sub.getParentId())) {
+                    list.add(sub);
+                }
+            }
+            p.setSubList(list);
         });
-        System.out.println("父子类集合：" + collect);
+        System.out.println("父子类集合：" + pList);
     }
 
     @Test
