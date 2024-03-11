@@ -1,5 +1,6 @@
 package com.example.jdk8.stream;
 
+import lombok.Data;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -68,6 +69,91 @@ public class StreamTest {
             System.out.println("分组后key：" + key);
             System.out.println("分组后value：" + value);
         }
+    }
+
+    /**
+     * 父子层级
+     */
+    @Test
+    public void parentsub() {
+        List<ParentSub> parentSubs = intData();
+        List<ParentSub> collect = parentSubs.stream().filter(p -> p.getParentId() == 0).collect(Collectors.toList());
+        System.out.println("父类集合：" + collect);
+        // 两种方式实现
+        // 1、双层循环
+        //for (ParentSub parentSub : collect) {
+        //    List<ParentSub> list = new ArrayList<>();
+        //    for (ParentSub sub : parentSubs) {
+        //        if (sub.parentId == parentSub.getId()) {
+        //            list.add(sub);
+        //        }
+        //        parentSub.setSubList(list);
+        //    }
+        //}
+        //System.out.println("父子类集合：" + collect);
+        // 2、stream
+        // todo
+        //List<ParentSub> collect2 = parentSubs.stream().filter(p -> p.getParentId() == 0).collect(Collectors.toList());
+        parentSubs.stream().forEach(p -> {
+            List<ParentSub> list = new ArrayList<>();
+            for (ParentSub parentSub : collect) {
+                if (p.getParentId() == parentSub.getId()) {
+                    list.add(p);
+                }
+                parentSub.setSubList(list);
+            }
+        });
+        System.out.println("父子类集合：" + collect);
+    }
+
+    @Test
+    public void flatMap() {
+        List<ParentSub> parentSubs = intData();
+        List<ParentSub> collect = parentSubs.stream().filter(p -> p.getParentId() == 0).flatMap(p -> p.getSubList().stream()).collect(Collectors.toList());
+        System.out.println("扁平化后：" + collect);
+    }
+
+    private List<ParentSub> intData() {
+
+        ParentSub u1 = new ParentSub();
+        u1.setId(1);
+        u1.setName("a");
+        u1.setAge(30);
+        u1.setParentId(0);
+        ParentSub u11 = new ParentSub();
+        u11.setId(2);
+        u11.setName("aa");
+        u11.setAge(10);
+        u11.setParentId(1);
+        ParentSub u12 = new ParentSub();
+        u12.setId(3);
+        u12.setName("ab");
+        u12.setAge(8);
+        u12.setParentId(1);
+
+
+        ParentSub u2 = new ParentSub();
+        u2.setId(4);
+        u2.setName("b");
+        u2.setAge(40);
+        u2.setParentId(0);
+        ParentSub u21 = new ParentSub();
+        u21.setId(5);
+        u21.setName("bb");
+        u21.setAge(18);
+        u21.setParentId(4);
+
+        return Arrays.asList(u1, u11, u12, u2, u21);
+
+    }
+
+    @Data
+    class ParentSub {
+        private Integer id;
+        private Integer parentId;
+        private String name;
+        private Integer age;
+        private List<ParentSub> subList;
     }
 
     @Test
@@ -160,4 +246,5 @@ public class StreamTest {
         Map<String, Integer> collect2 = users.stream().collect(Collectors.toMap(User::getName, User::getAge, (key1, key2) -> key1));
         System.out.println(collect2);
     }
+
 }
