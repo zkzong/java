@@ -26,4 +26,14 @@ public class DateTest {
         Date date = dateFormat.parse("2018-10-10");
         System.out.println(date);
     }
+
+    @Test
+    public void compare() throws ParseException {
+        String strDateFormat = "yyyy-MM-dd HH:mm:ss";
+        SimpleDateFormat sdf = new SimpleDateFormat(strDateFormat);
+
+        Date d1 = sdf.parse("2020-10-10 00:00:00");
+        Date d2 = sdf.parse("2020-10-11 00:00:00");
+        System.out.println(d1.compareTo(d2));
+    }
 }
