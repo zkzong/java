@@ -3,6 +3,7 @@ package com.example.collection.list;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -38,7 +39,7 @@ public class ListTest {
     }
 
     @Test
-    public void c() {
+    public void add() {
         List<String> strings = new ArrayList<>();
         strings.add("135");
         System.out.println(strings);
@@ -64,6 +65,24 @@ public class ListTest {
 
         list.set(1, "1111");
         System.out.println(list);
+    }
+
+    @Test
+    public void isEmpty() {
+        List list = Collections.emptyList();
+        System.out.println(list.isEmpty());
+    }
+
+    @Test
+    public void contains() {
+        List<Integer> list1 = Collections.emptyList();
+        List<Integer> list2 = new ArrayList<>();
+        list2.add(1);
+        list2.add(2);
+
+        boolean b = list2.containsAll(list1);
+        System.out.println(b);
+
     }
 
 }
