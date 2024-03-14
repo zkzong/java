@@ -5,7 +5,9 @@ import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class FastJsonTest {
@@ -53,6 +55,21 @@ public class FastJsonTest {
         jsonObject = JSONObject.parseObject(s);
         String balance = jsonObject.getJSONObject("data").get("balance").toString();
         System.out.println(balance);
+    }
+
+    @Test
+    public void list() {
+        ListInfo listInfo = new ListInfo();
+        listInfo.setName("java");
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        listInfo.setList(list);
+        System.out.println(listInfo);
+
+        String s = "{\"list\":[],\"name\":\"java\"}";
+        ListInfo info = JSON.parseObject(s, ListInfo.class);
+        System.out.println(info.getList().size());
     }
 
 }
