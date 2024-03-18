@@ -160,6 +160,8 @@ public class StreamTest {
         // 对某个字段求和
         int ageSum = users.stream().mapToInt(x -> x.getAge()).sum();
         System.out.println(ageSum);
+        ageSum = users.stream().map(User::getAge).reduce(Integer.valueOf(0), Integer::sum);
+        System.out.println(ageSum);
         BigDecimal salarySum = users.stream().map(User::getSalary).reduce(BigDecimal.ZERO, BigDecimal::add);
         System.out.println(salarySum);
     }
