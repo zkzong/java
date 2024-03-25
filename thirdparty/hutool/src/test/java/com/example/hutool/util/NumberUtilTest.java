@@ -10,4 +10,13 @@ public class NumberUtilTest {
         boolean b = NumberUtil.isLong("123456");
         System.out.println(b);
     }
+
+    @Test
+    public void intTest() {
+        boolean b = NumberUtil.isInteger("1");
+        System.out.println(b);
+
+        Integer i = NumberUtil.toBigInteger("-10").intValue();
+        System.out.println(i);
+    }
 }
