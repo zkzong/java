@@ -1,5 +1,11 @@
 package com.example.jdk8.optional;
 
+import com.example.jdk8.stream.User;
+import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -34,4 +40,18 @@ public class OptionalTest {
         Integer value2 = b.get();
         return value1 + value2;
     }
+
+    @Test
+    public void nullelse() {
+        List<User> list = null;
+        List<User> listResult = Optional.ofNullable(list).orElse(Collections.emptyList());
+        System.out.println(listResult);
+
+        List<String> nameList = new ArrayList<>();
+        listResult.forEach(user -> {
+            nameList.add(user.getName());
+        });
+        System.out.println(nameList);
+    }
+
 }
