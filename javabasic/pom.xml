@@ -38,6 +38,7 @@
         <module>enum</module>
         <module>reg</module>
         <module>proxy</module>
+        <module>spi</module>
     </modules>
 
     <dependencies>
