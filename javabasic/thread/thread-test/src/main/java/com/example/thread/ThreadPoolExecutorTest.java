@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 public class ThreadPoolExecutorTest {
     public static void main(String[] args) {
 
-        List<String> strList = new ArrayList<String>();
+        List<String> strList = new ArrayList<>();
         for (int i = 0; i < 100; i++) {
             strList.add("String" + i);
         }
