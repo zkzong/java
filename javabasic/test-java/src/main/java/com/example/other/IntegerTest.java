@@ -10,7 +10,7 @@ public class IntegerTest {
     @Test
     public void integerCompare() {
         // http://www.importnew.com/6997.html
-        // int的值在-128到127这个范围内JVM会将值缓存起来，因此i1和i2，虚拟机确确实实使用了相同的对象实例（内存地址相同），所以“==”会返回true的结果。
+        // Integer的值在-128到127这个范围内JVM会将值缓存起来，因此i1和i2，虚拟机确确实实使用了相同的对象实例（内存地址相同），所以“==”会返回true的结果。
         // 但是在这个范围之外就不行了
         Integer i1 = 260;
         Integer i2 = 260;
