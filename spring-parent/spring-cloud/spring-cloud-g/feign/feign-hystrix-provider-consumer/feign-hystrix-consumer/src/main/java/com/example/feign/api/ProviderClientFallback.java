@@ -9,7 +9,7 @@ public class ProviderClientFallback implements ProviderClient {
     @RequestMapping("/provider/call")
     @Override
     public String call() {
-        return "fail";
+        return "fallback fail";
     }
 
 }
