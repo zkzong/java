@@ -14,6 +14,7 @@ public class Main {
     /**
      * 1. 两数之和
      */
+    // 方法一：暴力枚举
     class Solution1 {
         public int[] twoSum(int[] nums, int target) {
             int n = nums.length;
@@ -28,6 +29,7 @@ public class Main {
         }
     }
 
+    // 方法二：哈希表
     class Solution2 {
         public int[] twoSum(int[] nums, int target) {
             Map<Integer, Integer> hashtable = new HashMap<Integer, Integer>();
