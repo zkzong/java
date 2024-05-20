@@ -17,7 +17,7 @@ public class JedisSimpleTest {
     @Before
     public void beforeClass() {
         jedis = new Jedis("127.0.0.1");
-        jedis.auth("zong");
+        jedis.auth("redis");
     }
 
     /**

@@ -15,6 +15,7 @@
         <module>jedis-java</module>
         <module>jedis-spring</module>
         <module>jedis-spring-boot</module>
+        <module>jedis-ratelimiter</module>
     </modules>
 
     <properties>
