@@ -27,10 +27,10 @@ public class CallBackProducer implements RabbitTemplate.ConfirmCallback, RabbitT
         rabbitTemplate.setReturnCallback(this);
     }
 
-    public CallBackProducer(RabbitTemplate rabbitTemplate) {
-        this.rabbitTemplate = rabbitTemplate;
-        rabbitTemplate.setConfirmCallback(this);
-    }
+    //public CallBackProducer(RabbitTemplate rabbitTemplate) {
+    //    this.rabbitTemplate = rabbitTemplate;
+    //    rabbitTemplate.setConfirmCallback(this);
+    //}
 
     /**
      * 给hello队列发送消息
@@ -38,7 +38,7 @@ public class CallBackProducer implements RabbitTemplate.ConfirmCallback, RabbitT
     public void send() {
         String msg = "hello callback";
         log.info("Producer, " + msg);
-        rabbitTemplate.convertAndSend("queue-test-callback", msg);
+        rabbitTemplate.convertAndSend("exchange-test-callback", "routingkey-test-callback", msg);
     }
 
     @Override
