@@ -18,6 +18,8 @@ public class ConsumerController {
     @Autowired
     private ProviderClient2 providerClient2;
 
+    int count = 0;
+
     @RequestMapping("/call")
     public String call() {
         return providerClient.call();
@@ -47,7 +49,10 @@ public class ConsumerController {
     })
     @RequestMapping("/circuitbreaker")
     public String circuitbreaker() {
-        int i = 1 / 0;
+        count++;
+        if (count > 8) {
+            int i = 1 / 0;
+        }
         return "ratelimit";
     }
 
