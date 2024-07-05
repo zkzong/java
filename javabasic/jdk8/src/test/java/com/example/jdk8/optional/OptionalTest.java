@@ -54,4 +54,19 @@ public class OptionalTest {
         System.out.println(nameList);
     }
 
+    @Test
+    public void a() {
+        String s = "A";
+        int i = 1;
+        Integer result = Optional.ofNullable(s)
+                .filter("A"::equals)
+                .map(o -> i).orElse(null);
+        System.out.println(result);
+        // 等同于
+        //if ("A".equals(s)) {
+        //    return i;
+        //}
+        //result null;
+    }
+
 }
