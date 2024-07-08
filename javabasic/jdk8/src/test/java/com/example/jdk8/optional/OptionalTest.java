@@ -55,7 +55,7 @@ public class OptionalTest {
     }
 
     @Test
-    public void a() {
+    public void optional() {
         String s = "A";
         int i = 1;
         Integer result = Optional.ofNullable(s)
