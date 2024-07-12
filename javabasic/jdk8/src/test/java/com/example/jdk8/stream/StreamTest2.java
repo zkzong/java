@@ -5,6 +5,8 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * @Author: zongz
@@ -45,7 +47,7 @@ public class StreamTest2 {
     }
 
     @Test
-    public void flatMap2() {
+    public void flatMap() {
         // 打印现有数据的所有分类。要求对分类进行去重。不能出现这种格式：哲学,爱情     爱情
         List<Author> authors = getAuthors();
         authors.stream()
@@ -55,6 +57,18 @@ public class StreamTest2 {
                 //.map(book -> Arrays.stream(book.getCategory().split(",")))
                 .distinct()
                 .forEach(category -> System.out.println(category));
+    }
+
+    @Test
+    public void toMap() {
+        // 获取一个Map集合，map的key为作者名，value为List<Book>
+        List<Author> authors = getAuthors();
+
+        Map<String, List<Book>> map = authors.stream()
+                .distinct()
+                .collect(Collectors.toMap(author -> author.getName(), author -> author.getBooks()));
+
+        System.out.println(map);
     }
 
 }
