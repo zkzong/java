@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 /**
@@ -71,4 +72,96 @@ public class StreamTest2 {
         System.out.println(map);
     }
 
+    @Test
+    public void anyMatch() {
+        // 判断是否有年龄在29以上的作家
+        List<Author> authors = getAuthors();
+        boolean flag = authors.stream()
+                .anyMatch(author -> author.getAge() > 29);
+        System.out.println(flag);
+    }
+
+    @Test
+    public void allMatch() {
+        // 判断是否所有的作家都是成年人
+        List<Author> authors = getAuthors();
+        boolean flag = authors.stream()
+                .allMatch(author -> author.getAge() >= 18);
+        System.out.println(flag);
+    }
+
+    @Test
+    public void noneMatch() {
+        // 判断作家是否都没有超过100岁的。
+        List<Author> authors = getAuthors();
+
+        boolean b = authors.stream()
+                .noneMatch(author -> author.getAge() > 100);
+
+        System.out.println(b);
+    }
+
+    @Test
+    public void findAny() {
+        // 获取任意一个年龄大于18的作家，如果存在就输出他的名字
+        List<Author> authors = getAuthors();
+        Optional<Author> optionalAuthor = authors.stream()
+                .filter(author -> author.getAge() > 18)
+                .findAny();
+
+        optionalAuthor.ifPresent(author -> System.out.println(author.getName()));
+    }
+
+    @Test
+    public void findFirst() {
+        // 获取一个年龄最小的作家，并输出他的姓名。
+        List<Author> authors = getAuthors();
+        Optional<Author> first = authors.stream()
+                .sorted((o1, o2) -> o1.getAge() - o2.getAge())
+                .findFirst();
+
+        first.ifPresent(author -> System.out.println(author.getName()));
+    }
+
+    @Test
+    public void reduce1() {
+        // 使用reduce求所有作者年龄的和
+        List<Author> authors = getAuthors();
+        Integer sum = authors.stream()
+                .distinct()
+                .map(author -> author.getAge())
+                .reduce(0, (result, element) -> result + element);
+        System.out.println(sum);
+    }
+
+    @Test
+    public void reduce2() {
+        // 使用reduce求所有作者中年龄的最大值
+        List<Author> authors = getAuthors();
+        Integer max = authors.stream()
+                .map(author -> author.getAge())
+                .reduce(Integer.MIN_VALUE, (result, element) -> result < element ? element : result);
+
+        System.out.println(max);
+    }
+
+    @Test
+    public void reduce3() {
+        // 使用reduce求所有作者中年龄的最小值
+        List<Author> authors = getAuthors();
+        Integer min = authors.stream()
+                .map(author -> author.getAge())
+                .reduce(Integer.MAX_VALUE, (result, element) -> result > element ? element : result);
+        System.out.println(min);
+    }
+
+    @Test
+    public void reduce4() {
+        // 使用reduce求所有作者中年龄的最小值
+        List<Author> authors = getAuthors();
+        Optional<Integer> minOptional = authors.stream()
+                .map(author -> author.getAge())
+                .reduce((result, element) -> result > element ? element : result);
+        minOptional.ifPresent(age -> System.out.println(age));
+    }
 }
