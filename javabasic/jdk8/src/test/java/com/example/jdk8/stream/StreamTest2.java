@@ -7,7 +7,10 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.function.Consumer;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * @Author: zongz
@@ -163,5 +166,45 @@ public class StreamTest2 {
                 .map(author -> author.getAge())
                 .reduce((result, element) -> result > element ? element : result);
         minOptional.ifPresent(age -> System.out.println(age));
+    }
+
+    @Test
+    public void negate() {
+        // 打印作家中年龄不大于17的作家。
+        List<Author> authors = getAuthors();
+        authors.stream()
+                .filter(new Predicate<Author>() {
+                    @Override
+                    public boolean test(Author author) {
+                        return author.getAge() > 17;
+                    }
+                }.negate()).forEach(author -> System.out.println(author.getAge()));
+    }
+
+    @Test
+    public void parallel() {
+        Stream<Integer> stream = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+        Integer sum = stream.parallel()
+                .peek(new Consumer<Integer>() {
+                    @Override
+                    public void accept(Integer num) {
+                        System.out.println(num + Thread.currentThread().getName());
+                    }
+                })
+                .filter(num -> num > 5)
+                .reduce((result, ele) -> result + ele)
+                .get();
+        System.out.println(sum);
+    }
+
+    @Test
+    public void parallelStream() {
+        List<Author> authors = getAuthors();
+        authors.parallelStream()
+                .map(author -> author.getAge())
+                .map(age -> age + 10)
+                .filter(age -> age > 18)
+                .map(age -> age + 2)
+                .forEach(System.out::println);
     }
 }
