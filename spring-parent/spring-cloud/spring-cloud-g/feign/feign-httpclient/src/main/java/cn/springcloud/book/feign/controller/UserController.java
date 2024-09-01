@@ -16,7 +16,7 @@ public class UserController {
 
     @GetMapping("/get")
     public String getUser(@SpringQueryMap UserRequest userRequest) {
-        return userRequest.getUsername() + " " + userRequest.getPassword();
+        return userRequest.toString();
     }
 
 }
