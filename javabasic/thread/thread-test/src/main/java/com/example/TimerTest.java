@@ -38,7 +38,7 @@ public class TimerTest {
 
     @Test
     public void timer() {
-        new Timer(true).schedule(new TimerTask() {
+        new Timer().schedule(new TimerTask() {
             @Override
             public void run() {
                 System.out.println("Hello World");
