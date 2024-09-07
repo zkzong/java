@@ -1,5 +1,7 @@
 package com.example;
 
+import org.junit.Test;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -22,8 +24,7 @@ public class TimerTest {
                 i++;
                 Timer timer = new Timer();
                 MyTask task = new MyTask();
-                SimpleDateFormat sdf = new SimpleDateFormat(
-                        "yyyy-MM-dd HH:mm:ss");
+                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                 String dateString = "2014-10-12 09:08:00";
 
                 Date dateRef = sdf.parse(dateString);
@@ -33,5 +34,15 @@ public class TimerTest {
                 e.printStackTrace();
             }
         }
+    }
+
+    @Test
+    public void timer() {
+        new Timer(true).schedule(new TimerTask() {
+            @Override
+            public void run() {
+                System.out.println("Hello World");
+            }
+        }, 0, 1000);
     }
 }
