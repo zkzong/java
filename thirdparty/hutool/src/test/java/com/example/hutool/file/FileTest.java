@@ -8,6 +8,8 @@ import org.junit.Test;
 import java.io.File;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.locks.ReentrantLock;
@@ -82,6 +84,15 @@ public class FileTest {
                 System.out.println(file);
             }
         }
+    }
+
+    /**
+     * 删除文件或者文件夹
+     */
+    @Test
+    public void del() {
+        Path path = Paths.get("D:/Example.txt");
+        FileUtil.del(path);
     }
 
 }
