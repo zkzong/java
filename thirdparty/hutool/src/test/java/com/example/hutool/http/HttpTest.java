@@ -8,6 +8,7 @@ import cn.hutool.http.HttpUtil;
 import com.google.gson.Gson;
 import org.junit.Test;
 
+import java.io.File;
 import java.util.HashMap;
 
 public class HttpTest {
@@ -80,5 +81,19 @@ public class HttpTest {
                 .body(json)
                 .execute().body();
         System.out.println(result);
+    }
+
+    @Test
+    public void download() {
+        // 下载文件，不需要鉴权
+        long size = HttpUtil.downloadFile("https://img3.doubanio.com/view/subject/l/public/s33974633.jpg", new File("活着.jpg"));
+        System.out.println(size);
+
+        // 下载文件，需要鉴权
+        size = HttpRequest.get("https://img3.doubanio.com/view/subject/l/public/s33974633.jpg")
+                .basicAuth("username", "password")
+                .timeout(1000)
+                .execute().writeBody(new File("活着.jpg"));
+        System.out.println(size);
     }
 }
