@@ -82,6 +82,12 @@ public class StreamTest2 {
         boolean flag = authors.stream()
                 .anyMatch(author -> author.getAge() > 29);
         System.out.println(flag);
+
+        // 判断list1中是否包含list2中的任一元素
+        List<Integer> list1 = Arrays.asList(1, 2, 3, 4, 5);
+        List<Integer> list2 = Arrays.asList(4, 5, 6);
+        boolean contain = list1.stream().anyMatch(list2::contains);
+        System.out.println(contain);
     }
 
     @Test
