@@ -2,6 +2,12 @@
 
 ## 1. mysql
 
+### mybatis
+
+#### table_xml
+
+动态sql
+
 ## 2. redis
 
 【注意】和spring集成时注意jedis、spring和spring-data-redis的版本问题

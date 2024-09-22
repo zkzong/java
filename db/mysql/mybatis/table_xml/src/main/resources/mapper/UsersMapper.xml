@@ -49,14 +49,14 @@
         select id, user_name userName, age from t_users
         <where>
             <if test="names != null and names.size > 0">
-                 and user_name in
+                and user_name in
                 <foreach collection="names" item="name" open="(" separator="," close=")">
                     #{name}
                 </foreach>
             </if>
-        <if test="name != null and name != ''">
-            and user_name != #{name}
-        </if>
+            <if test="name != null and name != ''">
+                and user_name != #{name}
+            </if>
         </where>
     </select>
 </mapper>

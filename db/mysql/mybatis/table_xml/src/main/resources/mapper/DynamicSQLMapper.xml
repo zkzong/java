@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.sb.mybatis.mapper.DynamicSQLMapper">
+
+    <select id="foreach" resultType="com.example.sb.mybatis.domain.Users">
+        SELECT * FROM t_users
+        <where>
+            <foreach item="id" index="index" collection="ids"
+                     open="id in (" separator="," close=")">
+                #{id}
+            </foreach>
+        </where>
+    </select>
+
+    <select id="where" resultType="com.example.sb.mybatis.domain.Users">
+        SELECT * FROM t_users
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="userName != null">
+                and user_name = #{userName}
+            </if>
+            <if test="age != null">
+                and age = #{age}
+            </if>
+        </where>
+    </select>
+
+    <select id="trim" resultType="com.example.sb.mybatis.domain.Users">
+        SELECT * FROM t_users
+        <trim prefix="where" prefixOverrides="and" suffix=";">
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="userName != null">
+                and user_name = #{userName}
+            </if>
+            <if test="age != null">
+                and age = #{age}
+            </if>
+        </trim>
+    </select>
+
+    <insert id="triminsert">
+        INSERT INTO t_users
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="userName != null">
+                user_name,
+            </if>
+            <if test="age != null">
+                age,
+            </if>
+        </trim>
+        <trim prefix="VALUES (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id},
+            </if>
+            <if test="userName != null">
+                #{userName},
+            </if>
+            <if test="age != null">
+                #{age},
+            </if>
+        </trim>
+    </insert>
+
+    <select id="bind" resultType="com.example.sb.mybatis.domain.Users">
+        <bind name="myid" value="id"/>
+        SELECT * FROM t_users WHERE id = #{myid}
+    </select>
+
+</mapper>
