@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.sb.mybatis.mapper.IdMapper">
+
+    <insert id="useGeneratedKeys" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+        INSERT INTO t_users
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="userName != null">
+                user_name,
+            </if>
+            <if test="age != null">
+                age,
+            </if>
+        </trim>
+        <trim prefix="VALUES (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id},
+            </if>
+            <if test="userName != null">
+                #{userName},
+            </if>
+            <if test="age != null">
+                #{age},
+            </if>
+        </trim>
+    </insert>
+
+    <insert id="selectkey" parameterType="com.example.sb.mybatis.domain.Users">
+        <selectKey keyProperty="id" resultType="long" order="AFTER">
+            select last_insert_id()
+        </selectKey>
+        INSERT INTO t_users
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="userName != null">
+                user_name,
+            </if>
+            <if test="age != null">
+                age,
+            </if>
+        </trim>
+        <trim prefix="VALUES (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id},
+            </if>
+            <if test="userName != null">
+                #{userName},
+            </if>
+            <if test="age != null">
+                #{age},
+            </if>
+        </trim>
+    </insert>
+
+</mapper>
