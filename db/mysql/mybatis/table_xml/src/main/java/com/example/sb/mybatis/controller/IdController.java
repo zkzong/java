@@ -13,20 +13,30 @@ import org.springframework.web.bind.annotation.RestController;
  * @Date: 2024/9/24
  */
 @RestController
-@RequestMapping("/id")
+@RequestMapping("/id/insert")
 public class IdController {
 
     @Autowired
     private IdService idService;
 
     @RequestMapping("/useGeneratedKeys")
-    public int useGeneratedKeys(Users users) {
+    public int insertUseGeneratedKeys(Users users) {
         return idService.useGeneratedKeys(users);
     }
 
     @RequestMapping("/selectkey")
-    public int selectkey(Users users) {
-        return idService.selectkey(users);
+    public int insertselectkey(Users users) {
+        return idService.insertselectkey(users);
+    }
+
+    @RequestMapping("/selectKey")
+    public int insertSelectKey(Users users) {
+        return idService.insertSelectKey(users);
+    }
+
+    @RequestMapping("/options")
+    public int insertOptions(Users users) {
+        return idService.insertOptions(users);
     }
 
 }

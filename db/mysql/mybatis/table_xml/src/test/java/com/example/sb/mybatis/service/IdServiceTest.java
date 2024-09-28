@@ -33,8 +33,28 @@ public class IdServiceTest {
         Users users = new Users();
         users.setUserName("1");
         users.setAge(1);
-        int selectkey = idService.selectkey(users);
+        int selectkey = idService.insertselectkey(users);
         System.out.println(selectkey);
+        System.out.println(users.getId());
+    }
+
+    @Test
+    public void insertSelectKey() {
+        Users users = new Users();
+        users.setUserName("1");
+        users.setAge(1);
+        int insert = idService.insertSelectKey(users);
+        System.out.println(insert);
+        System.out.println(users.getId());
+    }
+
+    @Test
+    public void insertOptions() {
+        Users users = new Users();
+        users.setUserName("1");
+        users.setAge(1);
+        int insert = idService.insertOptions(users);
+        System.out.println(insert);
         System.out.println(users.getId());
     }
 

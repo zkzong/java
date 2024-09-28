@@ -18,11 +18,21 @@ public class IdServiceImpl implements IdService {
 
     @Override
     public int useGeneratedKeys(Users users) {
-        return idMapper.useGeneratedKeys(users);
+        return idMapper.insertUseGeneratedKeys(users);
     }
 
     @Override
-    public int selectkey(Users users) {
-        return idMapper.selectkey(users);
+    public int insertselectkey(Users users) {
+        return idMapper.insertselectkey(users);
+    }
+
+    @Override
+    public int insertSelectKey(Users users) {
+        return idMapper.insertSelectKey(users);
+    }
+
+    @Override
+    public int insertOptions(Users users) {
+        return idMapper.insertOptions(users);
     }
 }

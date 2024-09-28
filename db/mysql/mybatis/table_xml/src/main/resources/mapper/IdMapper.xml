@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.example.sb.mybatis.mapper.IdMapper">
 
-    <insert id="useGeneratedKeys" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+    <insert id="insertUseGeneratedKeys" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
         INSERT INTO t_users
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="id != null">
@@ -28,7 +28,7 @@
         </trim>
     </insert>
 
-    <insert id="selectkey" parameterType="com.example.sb.mybatis.domain.Users">
+    <insert id="insertselectkey" parameterType="com.example.sb.mybatis.domain.Users">
         <selectKey keyProperty="id" resultType="long" order="AFTER">
             select last_insert_id()
         </selectKey>

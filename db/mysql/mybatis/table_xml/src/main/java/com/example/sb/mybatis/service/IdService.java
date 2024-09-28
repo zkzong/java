@@ -10,6 +10,10 @@ public interface IdService {
 
     int useGeneratedKeys(Users users);
 
-    int selectkey(Users users);
+    int insertselectkey(Users users);
+
+    int insertSelectKey(Users users);
+
+    int insertOptions(Users users);
 
 }
