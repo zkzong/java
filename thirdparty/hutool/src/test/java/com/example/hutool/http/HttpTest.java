@@ -10,6 +10,7 @@ import org.junit.Test;
 
 import java.io.File;
 import java.util.HashMap;
+import java.util.Map;
 
 public class HttpTest {
 
@@ -95,5 +96,22 @@ public class HttpTest {
                 .timeout(1000)
                 .execute().writeBody(new File("活着.jpg"));
         System.out.println(size);
+    }
+
+    @Test
+    public void upload() {
+        Map<String, Object> map = new HashMap<>();
+        String path = this.getClass().getClassLoader().getResource("").getPath();
+        File file = new File(path + "/aaa.pdf");
+        map.put("file", file);
+        String body = HttpRequest.post("http://localhost:8080/http/upload")
+                .form(map)
+                .execute().body();
+        System.out.println(body);
+
+        body = HttpRequest.post("http://localhost:8080/http/upload")
+                .form("file", file)
+                .execute().body();
+        System.out.println(body);
     }
 }
