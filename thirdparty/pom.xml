@@ -31,6 +31,7 @@
         <module>easyexcel</module>
         <module>http</module>
         <module>jmh</module>
+        <module>jira</module>
     </modules>
 
     <properties>
