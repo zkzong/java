@@ -22,7 +22,7 @@ public interface IdMapper {
     int insertSelectKey(Users users);
 
     @Insert("insert into t_users(user_name,age) values(#{userName},#{age})")
-    @Options(useGeneratedKeys = true, keyProperty = "id")
+    @Options(useGeneratedKeys = true, keyProperty = "id", keyColumn = "id")
     int insertOptions(Users users);
 
 }
