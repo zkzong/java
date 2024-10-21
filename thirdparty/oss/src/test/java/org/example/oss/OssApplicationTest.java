@@ -44,7 +44,8 @@ public class OssApplicationTest {
 
     @Test
     public void putObject() {
-        ossClient.putObject(ossProperties.getBucketName(), key, file);
+        PutObjectResult putObjectResult = ossClient.putObject(ossProperties.getBucketName(), key, file);
+        System.out.println(putObjectResult);
     }
 
     @Test
@@ -52,6 +53,13 @@ public class OssApplicationTest {
         UploadFileRequest uploadFileRequest = new UploadFileRequest(ossProperties.getBucketName(), key);
         uploadFileRequest.setUploadFile(file.getAbsolutePath());
         UploadFileResult uploadFileResult = ossClient.uploadFile(uploadFileRequest);
+        System.out.println(uploadFileResult);
+    }
+
+    @Test
+    public void getObject() {
+        OSSObject object = ossClient.getObject(ossProperties.getBucketName(), key);
+        System.out.println(object);
     }
 
     @Test
@@ -59,6 +67,7 @@ public class OssApplicationTest {
         DownloadFileRequest downloadFileRequest = new DownloadFileRequest(ossProperties.getBucketName(), key);
         downloadFileRequest.setDownloadFile("a.txt");
         DownloadFileResult downloadFileResult = ossClient.downloadFile(downloadFileRequest);
+        System.out.println(downloadFileResult);
     }
 
     private Date date;
@@ -74,6 +83,7 @@ public class OssApplicationTest {
     @Test
     public void generatePresignedUrl() {
         URL url = ossClient.generatePresignedUrl(ossProperties.getBucketName(), key, date);
+        System.out.println(url);
     }
 
     @Test
@@ -86,6 +96,7 @@ public class OssApplicationTest {
         responseHeaderOverrides.setContentType(contentType.toUpperCase());
         generatePresignedUrlRequest.setResponseHeaders(responseHeaderOverrides);
         URL url = ossClient.generatePresignedUrl(generatePresignedUrlRequest);
+        System.out.println(url);
     }
 
 }
