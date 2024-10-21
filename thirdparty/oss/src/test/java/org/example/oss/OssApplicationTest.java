@@ -87,7 +87,7 @@ public class OssApplicationTest {
     }
 
     @Test
-    public void aVoid() {
+    public void generatePresignedUrlcontentType() {
         GeneratePresignedUrlRequest generatePresignedUrlRequest = new GeneratePresignedUrlRequest(ossProperties.getBucketName(), key);
         generatePresignedUrlRequest.setExpiration(date);
         ResponseHeaderOverrides responseHeaderOverrides = new ResponseHeaderOverrides();
