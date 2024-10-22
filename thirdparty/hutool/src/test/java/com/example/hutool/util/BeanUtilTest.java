@@ -7,7 +7,9 @@ import com.example.common.entity.More;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class BeanUtilTest {
 
@@ -65,6 +67,15 @@ public class BeanUtilTest {
         Man man = new Man();
         // false
         System.out.println(BeanUtil.isEmpty(man));
+    }
+
+    @Test
+    public void beanToMap() {
+        Man man = new Man();
+        man.setUserName("zong");
+        man.setAge(10);
+        Map<String, Object> map = BeanUtil.beanToMap(man, new HashMap<>(), false, false);
+        System.out.println(map);
     }
 
 }
