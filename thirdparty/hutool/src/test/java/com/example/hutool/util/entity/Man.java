@@ -1,4 +1,4 @@
-package com.example.hutool.util;
+package com.example.hutool.util.entity;
 
 import lombok.Data;
 

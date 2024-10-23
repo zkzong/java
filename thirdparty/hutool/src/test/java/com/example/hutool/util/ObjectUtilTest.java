@@ -1,6 +1,7 @@
 package com.example.hutool.util;
 
 import cn.hutool.core.util.ObjectUtil;
+import com.example.hutool.util.entity.Person;
 import org.junit.Test;
 
 public class ObjectUtilTest {
