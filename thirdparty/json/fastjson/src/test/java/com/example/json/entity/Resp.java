@@ -1,4 +1,4 @@
-package com.example.json;
+package com.example.json.entity;
 
 import lombok.Data;
 

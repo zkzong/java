@@ -3,6 +3,8 @@ package com.example.json;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.SerializerFeature;
+import com.example.json.entity.ListInfo;
+import com.example.json.entity.User;
 import org.junit.Test;
 
 import java.util.ArrayList;

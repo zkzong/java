@@ -6,6 +6,8 @@ import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.NameFilter;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.alibaba.fastjson.serializer.ValueFilter;
+import com.example.json.entity.MapObj;
+import com.example.json.entity.User;
 import org.junit.Test;
 
 import java.util.ArrayList;
