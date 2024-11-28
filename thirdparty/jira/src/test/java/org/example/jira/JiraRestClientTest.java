@@ -27,7 +27,7 @@ import java.util.concurrent.TimeoutException;
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest
-class JiraApplicationTest {
+public class JiraRestClientTest {
 
     private String serverUri;
     private String username;
@@ -37,9 +37,9 @@ class JiraApplicationTest {
 
     @Before
     public void setUp() throws Exception {
-        serverUri = "http://localhost:8081/rest/api/2";
-        username = "admin";
-        password = "admin";
+        serverUri = "http://jiraserver:port";
+        username = "username";
+        password = "password";
 
         AsynchronousJiraRestClientFactory factory = new AsynchronousJiraRestClientFactory();
         jiraRestClient = factory.createWithBasicHttpAuthentication(new URI(serverUri), username, password);
