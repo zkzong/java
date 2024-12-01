@@ -17,8 +17,18 @@ import java.io.File;
 public class JiraRestApiTest {
 
     @Test
+    public void issue() {
+        String body = HttpRequest.get("http://jira.com/rest/api/2/issue/SWIM-499793")
+                .basicAuth("username", "password")
+                //.header(Header.CONTENT_TYPE, ContentType.OCTET_STREAM.toString())
+                .timeout(1000)
+                .execute().body();
+        System.out.println(body);
+    }
+
+    @Test
     public void insight() {
-        String body = HttpRequest.get("https://jira.com/rest/insight/1.0/iql/objects?iql=ObjectType=Serie")
+        String body = HttpRequest.get("http://jira.com/rest/insight/1.0/iql/objects?iql=ObjectType=Serie")
                 .basicAuth("username", "password")
                 //.header(Header.CONTENT_TYPE, ContentType.OCTET_STREAM.toString())
                 .timeout(1000)
@@ -28,7 +38,7 @@ public class JiraRestApiTest {
 
     @Test
     public void file() {
-        long body = HttpRequest.get("https://jira.com/secure/attachment/1635409/AccessClient.exe")
+        long body = HttpRequest.get("http://jira.com/secure/attachment/1635409/AccessClient.exe")
                 .basicAuth("username", "password")
                 //.header(Header.CONTENT_TYPE, ContentType.OCTET_STREAM.toString())
                 .timeout(1000)
