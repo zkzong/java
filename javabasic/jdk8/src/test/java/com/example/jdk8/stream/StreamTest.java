@@ -6,6 +6,8 @@ import org.junit.Test;
 
 import java.math.BigDecimal;
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.function.Function;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
@@ -246,6 +248,18 @@ public class StreamTest {
         // (key1, key2) -> key2 后面覆盖前面
         Map<String, Integer> collect2 = users.stream().collect(Collectors.toMap(User::getName, User::getAge, (key1, key2) -> key1));
         System.out.println(collect2);
+    }
+
+    @Test
+    public void identity() {
+        // name相同时报错
+        Map<String, User> collect1 = users.stream().collect(Collectors.toMap(user -> user.getName(), t -> t));
+        System.out.println(collect1);
+        // collect = users.stream().collect(Collectors.toMap(User::getName, Function.identity()));
+        // System.out.println(collect);
+        // 不报错
+        Map<String, User> collect3 = users.stream().collect(Collectors.toMap(User::getName, Function.identity(), (o1, o2) -> o1, ConcurrentHashMap::new));
+        System.out.println(collect3);
     }
 
 }
