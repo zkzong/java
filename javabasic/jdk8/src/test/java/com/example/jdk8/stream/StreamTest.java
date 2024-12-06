@@ -258,8 +258,10 @@ public class StreamTest {
         Map<String, User> collect2 = users.stream().collect(Collectors.toMap(User::getName, Function.identity()));
         System.out.println(collect2);
         // 不报错
+        // 正序
         Map<String, User> collect3 = users.stream().collect(Collectors.toMap(User::getName, Function.identity(), (o1, o2) -> o1, ConcurrentHashMap::new));
         System.out.println(collect3);
+        // 倒序
         collect3 = users.stream().collect(Collectors.toMap(User::getName, Function.identity(), (o1, o2) -> o2, ConcurrentHashMap::new));
         System.out.println(collect3);
     }
