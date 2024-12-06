@@ -255,10 +255,12 @@ public class StreamTest {
         // name相同时报错
         Map<String, User> collect1 = users.stream().collect(Collectors.toMap(user -> user.getName(), t -> t));
         System.out.println(collect1);
-        // collect = users.stream().collect(Collectors.toMap(User::getName, Function.identity()));
-        // System.out.println(collect);
+        Map<String, User> collect2 = users.stream().collect(Collectors.toMap(User::getName, Function.identity()));
+        System.out.println(collect2);
         // 不报错
         Map<String, User> collect3 = users.stream().collect(Collectors.toMap(User::getName, Function.identity(), (o1, o2) -> o1, ConcurrentHashMap::new));
+        System.out.println(collect3);
+        collect3 = users.stream().collect(Collectors.toMap(User::getName, Function.identity(), (o1, o2) -> o2, ConcurrentHashMap::new));
         System.out.println(collect3);
     }
 
