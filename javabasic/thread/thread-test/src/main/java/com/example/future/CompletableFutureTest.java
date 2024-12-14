@@ -19,7 +19,7 @@ public class CompletableFutureTest {
     }
 
     @Test
-    public void a() throws ExecutionException, InterruptedException {
+    public void complete() throws ExecutionException, InterruptedException {
         CompletableFuture<String> completableFuture = new CompletableFuture<>();
         completableFuture.complete("三友");
         System.out.println(completableFuture.get());
