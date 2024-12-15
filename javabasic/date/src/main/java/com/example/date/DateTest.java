@@ -2,9 +2,13 @@ package com.example.date;
 
 import org.junit.Test;
 
+import java.math.BigDecimal;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 public class DateTest {
@@ -35,5 +39,21 @@ public class DateTest {
         Date d1 = sdf.parse("2020-10-10 00:00:00");
         Date d2 = sdf.parse("2020-10-11 00:00:00");
         System.out.println(d1.compareTo(d2));
+    }
+
+    /***
+     * 两个时间相隔几小时，保留两位小数
+     *
+     */
+    @Test
+    public void waitTime() {
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        Date startTime = Date.from(LocalDateTime.parse("2024-10-10 10:00:00", dateTimeFormatter).atZone(ZoneId.systemDefault()).toInstant());
+        Date endTime = Date.from(LocalDateTime.parse("2024-10-11 10:30:00", dateTimeFormatter).atZone(ZoneId.systemDefault()).toInstant());
+        long times = endTime.getTime() - startTime.getTime();
+        double hours = (double) times / (60 * 60 * 1000);
+        BigDecimal hourbd = BigDecimal.valueOf(hours);
+        BigDecimal waitTime = hourbd.setScale(2, BigDecimal.ROUND_HALF_UP);
+        System.out.println(waitTime);
     }
 }
