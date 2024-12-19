@@ -20,7 +20,6 @@
         <module>lombok</module>
         <module>mockito</module>
         <module>powermock</module>
-        <module>spring-tools</module>
         <module>rxjava</module>
         <module>pdf</module>
         <module>junit</module>
@@ -32,7 +31,6 @@
         <module>http</module>
         <module>jmh</module>
         <module>jira</module>
-        <module>oss</module>
     </modules>
 
     <properties>
