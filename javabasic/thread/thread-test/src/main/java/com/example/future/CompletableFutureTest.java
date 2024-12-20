@@ -61,4 +61,36 @@ public class CompletableFutureTest {
             e.printStackTrace();
         }
     }
+
+    @Test
+    public void allOf() {
+        CompletableFuture<String> future1 = CompletableFuture.supplyAsync(() -> {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            return "Result from future1";
+        });
+
+        CompletableFuture<String> future2 = CompletableFuture.supplyAsync(() -> {
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            return "Result from future2";
+        });
+
+        CompletableFuture<Void> allOfFuture = CompletableFuture.allOf(future1, future2);
+
+        try {
+            allOfFuture.get(); // 等待所有任务完成
+            System.out.println("All futures completed");
+            System.out.println("Result from future1: " + future1.get());
+            System.out.println("Result from future2: " + future2.get());
+        } catch (InterruptedException | ExecutionException e) {
+            e.printStackTrace();
+        }
+    }
 }
