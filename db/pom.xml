@@ -17,7 +17,7 @@
     <modules>
         <module>redis</module>
         <module>mongodb</module>
-        <module>elasticsearch</module>
+<!--        <module>elasticsearch</module>-->
         <module>hbase</module>
         <module>mysql</module>
         <module>neo4j</module>
