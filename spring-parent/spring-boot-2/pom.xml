@@ -23,7 +23,6 @@
         <module>listener-sb2</module>
 
         <module>api</module>
-        <module>apollo</module>
         <module>minio</module>
         <module>disruptor</module>
 
