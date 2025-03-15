@@ -1,9 +1,9 @@
 package com.javapatterns.simplefactory.dateformat;
 
-import java.util.Locale;
-import java.util.Date;
 import java.text.DateFormat;
 import java.text.ParseException;
+import java.util.Date;
+import java.util.Locale;
 
 public class DateTester {
     public static void main(String[] args) {

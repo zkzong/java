@@ -1,6 +1,7 @@
 package headfirst.adapter.iterenum;
 
-import java.util.*;
+import java.util.Enumeration;
+import java.util.Iterator;
 
 public class IteratorEnumeration implements Enumeration {
 	Iterator iterator;

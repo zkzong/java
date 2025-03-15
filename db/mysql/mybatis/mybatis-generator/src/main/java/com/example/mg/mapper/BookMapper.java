@@ -2,8 +2,9 @@ package com.example.mg.mapper;
 
 import com.example.mg.entity.Book;
 import com.example.mg.entity.BookExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface BookMapper {
     /**

@@ -1,10 +1,10 @@
 package com.example.http;
 
 import com.alibaba.fastjson.JSON;
-import org.apache.http.NameValuePair;
-import org.apache.http.message.BasicNameValuePair;
 import com.example.http.entity.User;
 import com.example.http.util.HttpClientUtil;
+import org.apache.http.NameValuePair;
+import org.apache.http.message.BasicNameValuePair;
 import org.junit.Test;
 
 import java.util.ArrayList;

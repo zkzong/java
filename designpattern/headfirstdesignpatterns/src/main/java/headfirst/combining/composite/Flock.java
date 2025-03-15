@@ -1,7 +1,7 @@
 package headfirst.combining.composite;
 
-import java.util.Iterator;
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Flock implements Quackable {
 	ArrayList quackers = new ArrayList();

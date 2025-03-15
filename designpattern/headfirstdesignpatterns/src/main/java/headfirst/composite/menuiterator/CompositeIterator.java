@@ -1,7 +1,8 @@
 package headfirst.composite.menuiterator;
 
- 
-import java.util.*;
+
+import java.util.Iterator;
+import java.util.Stack;
   
 public class CompositeIterator implements Iterator {
 	Stack stack = new Stack();

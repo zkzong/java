@@ -1,6 +1,6 @@
 package headfirst.proxy.gumball;
 
-import java.rmi.*;
+import java.rmi.RemoteException;
  
 public class GumballMonitor {
 	GumballMachineRemote machine;

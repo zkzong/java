@@ -1,7 +1,5 @@
 package headfirst.command.undo;
 
-import java.util.*;
-
 //
 // This is the invoker
 //

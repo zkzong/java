@@ -1,9 +1,8 @@
 package headfirst.proxy.virtualproxy;
 
-import java.net.*;
-import java.awt.*;
-import java.awt.event.*;
 import javax.swing.*;
+import java.awt.*;
+import java.net.URL;
 
 class ImageProxy implements Icon {
 	ImageIcon imageIcon;

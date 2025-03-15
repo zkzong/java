@@ -1,8 +1,8 @@
 package com.example.sb2.rabbitmq.handler;
 
-import com.rabbitmq.client.Channel;
 import com.example.sb2.rabbitmq.config.RabbitConfig;
 import com.example.sb2.rabbitmq.pojo.Book;
+import com.rabbitmq.client.Channel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.core.Message;

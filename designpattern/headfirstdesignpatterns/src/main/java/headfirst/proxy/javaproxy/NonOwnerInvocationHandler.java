@@ -1,6 +1,8 @@
 package headfirst.proxy.javaproxy;
- 
-import java.lang.reflect.*;
+
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
  
 public class NonOwnerInvocationHandler implements InvocationHandler { 
 	PersonBean person;

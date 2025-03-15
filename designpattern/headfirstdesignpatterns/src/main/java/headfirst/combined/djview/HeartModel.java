@@ -1,6 +1,7 @@
 package headfirst.combined.djview;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Random;
 
 public class HeartModel implements HeartModelInterface, Runnable {
 	ArrayList beatObservers = new ArrayList();

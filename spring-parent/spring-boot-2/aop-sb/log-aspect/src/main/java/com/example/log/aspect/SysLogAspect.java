@@ -1,9 +1,9 @@
 package com.example.log.aspect;
 
-import com.google.gson.Gson;
 import com.example.log.anno.SysLog;
 import com.example.log.bo.SysLogBO;
 import com.example.log.service.SysLogService;
+import com.google.gson.Gson;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;

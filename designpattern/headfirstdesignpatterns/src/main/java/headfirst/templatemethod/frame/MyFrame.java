@@ -1,7 +1,7 @@
 package headfirst.templatemethod.frame;
 
-import java.awt.*;
 import javax.swing.*;
+import java.awt.*;
 
 public class MyFrame extends JFrame {
 

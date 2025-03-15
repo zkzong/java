@@ -1,7 +1,6 @@
 package com.example.lombok;
 
 import lombok.Data;
-import lombok.ToString;
 
 /**
  * Created by zong on 2017/3/27.

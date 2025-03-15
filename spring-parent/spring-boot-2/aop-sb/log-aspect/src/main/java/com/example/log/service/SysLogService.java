@@ -1,7 +1,7 @@
 package com.example.log.service;
 
-import com.google.gson.Gson;
 import com.example.log.bo.SysLogBO;
+import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

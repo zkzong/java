@@ -1,8 +1,8 @@
 package com.example.itext;
 
+import com.example.itext.util.PathUtil;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.pdf.BaseFont;
-import com.example.itext.util.PathUtil;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import org.xhtmlrenderer.pdf.ITextFontResolver;

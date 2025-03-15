@@ -1,8 +1,9 @@
 package com.javapatterns.factorymethod.instantiate;
 
 import java.awt.*;
-import java.awt.event.*;
-import java.beans.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.beans.Beans;
 
 /**
  * The purpose of this class is to display a set of buttons

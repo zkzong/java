@@ -1,8 +1,10 @@
 package com.javapatterns.factorymethod.instantiate;
 
 import java.awt.*;
-import java.awt.event.*;
-import java.io.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
 
 
 /**

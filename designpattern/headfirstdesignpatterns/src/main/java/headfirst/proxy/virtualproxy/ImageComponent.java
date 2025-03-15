@@ -1,7 +1,7 @@
 package headfirst.proxy.virtualproxy;
 
-import java.awt.*;
 import javax.swing.*;
+import java.awt.*;
 
 class ImageComponent extends JComponent {
 	private Icon icon;

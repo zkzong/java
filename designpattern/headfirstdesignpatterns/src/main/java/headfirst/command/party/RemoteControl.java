@@ -1,7 +1,5 @@
 package headfirst.command.party;
 
-import java.util.*;
-
 //
 // This is the invoker
 //

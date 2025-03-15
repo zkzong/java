@@ -1,6 +1,7 @@
 package headfirst.iterator.dinermergercafe;
 
-import java.util.*;
+import java.util.Hashtable;
+import java.util.Iterator;
 
 public class CafeMenu implements Menu {
 	Hashtable menuItems = new Hashtable();

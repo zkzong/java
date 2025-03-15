@@ -1,6 +1,7 @@
 package com.example.sb2.rabbitmq.controller;
 
 import com.example.sb2.rabbitmq.config.RabbitConfig;
+import com.example.sb2.rabbitmq.handler.BookHandler;
 import com.example.sb2.rabbitmq.pojo.Book;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

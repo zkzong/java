@@ -1,7 +1,5 @@
 package headfirst.command.remote;
 
-import java.util.*;
-
 //
 // This is the invoker
 //

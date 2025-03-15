@@ -1,8 +1,5 @@
 package headfirst.composite.menu;
 
-import java.util.Iterator;
-import java.util.ArrayList;
-
 public class MenuItem extends MenuComponent {
 	String name;
 	String description;

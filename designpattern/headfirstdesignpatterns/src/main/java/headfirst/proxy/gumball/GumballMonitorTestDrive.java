@@ -1,6 +1,6 @@
 package headfirst.proxy.gumball;
 
-import java.rmi.*;
+import java.rmi.Naming;
  
 public class GumballMonitorTestDrive {
  

@@ -1,6 +1,6 @@
 package headfirst.composite.menuiterator;
 
-import java.util.*;
+import java.util.Iterator;
 
 public abstract class MenuComponent {
    

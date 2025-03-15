@@ -1,6 +1,6 @@
 package headfirst.proxy.gumball;
 
-import java.io.*;
+import java.io.Serializable;
   
 public interface State extends Serializable {
 	public void insertQuarter();

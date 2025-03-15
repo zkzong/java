@@ -1,7 +1,7 @@
 package headfirst.iterator.dinermergeri;
 
-import java.util.Iterator;
 import java.util.Calendar;
+import java.util.Iterator;
 
 public class AlternatingDinerMenuIterator implements Iterator {
 	MenuItem[] items;

@@ -1,8 +1,8 @@
 package com.example.sb.pagehelper.mapper;
 
+import com.example.sb.pagehelper.domain.Users;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
-import com.example.sb.pagehelper.domain.Users;
 
 import java.util.List;
 

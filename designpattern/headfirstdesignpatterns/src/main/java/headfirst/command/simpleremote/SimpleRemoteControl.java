@@ -1,7 +1,5 @@
 package headfirst.command.simpleremote;
 
-import java.util.*;
-
 //
 // This is the invoker
 //

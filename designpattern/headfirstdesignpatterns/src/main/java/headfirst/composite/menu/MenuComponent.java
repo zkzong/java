@@ -1,7 +1,5 @@
 package headfirst.composite.menu;
 
-import java.util.*;
-
 public abstract class MenuComponent {
    
 	public void add(MenuComponent menuComponent) {

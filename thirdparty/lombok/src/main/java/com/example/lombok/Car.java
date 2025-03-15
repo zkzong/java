@@ -1,7 +1,6 @@
 package com.example.lombok;
 
 
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Singular;
 import lombok.ToString;

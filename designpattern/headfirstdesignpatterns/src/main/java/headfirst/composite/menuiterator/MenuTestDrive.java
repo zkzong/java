@@ -1,7 +1,5 @@
 package headfirst.composite.menuiterator;
 
-import java.util.*;
-
 public class MenuTestDrive {
 	public static void main(String args[]) {
 

@@ -1,11 +1,11 @@
 package com.example.itext;
 
+import com.example.itext.util.PathUtil;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.pdf.PdfWriter;
 import com.itextpdf.tool.xml.XMLWorkerFontProvider;
 import com.itextpdf.tool.xml.XMLWorkerHelper;
-import com.example.itext.util.PathUtil;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 

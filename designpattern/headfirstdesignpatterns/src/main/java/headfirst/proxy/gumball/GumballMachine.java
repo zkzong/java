@@ -1,7 +1,7 @@
 package headfirst.proxy.gumball;
 
-import java.rmi.*;
-import java.rmi.server.*;
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
  
 public class GumballMachine
 		extends UnicastRemoteObject implements GumballMachineRemote 

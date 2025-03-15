@@ -1,9 +1,9 @@
 package com.example.apache.commons.beanutils;
 
-import org.apache.commons.beanutils.BeanUtils;
 import com.example.common.entity.Less;
 import com.example.common.entity.More;
 import com.example.common.entity.Person;
+import org.apache.commons.beanutils.BeanUtils;
 import org.junit.Test;
 
 import java.lang.reflect.InvocationTargetException;

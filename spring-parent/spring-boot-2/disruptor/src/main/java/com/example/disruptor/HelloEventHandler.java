@@ -1,8 +1,8 @@
 package com.example.disruptor;
 
+import com.example.disruptor.model.MessageModel;
 import com.lmax.disruptor.EventHandler;
 import lombok.extern.slf4j.Slf4j;
-import com.example.disruptor.model.MessageModel;
 
 @Slf4j
 public class HelloEventHandler implements EventHandler<MessageModel> {

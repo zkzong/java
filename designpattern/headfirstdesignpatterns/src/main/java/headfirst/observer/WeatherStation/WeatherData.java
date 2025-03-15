@@ -1,6 +1,6 @@
 package headfirst.observer.WeatherStation;
 
-import java.util.*;
+import java.util.ArrayList;
 
 public class WeatherData implements Subject {
 	private ArrayList observers;

@@ -1,7 +1,5 @@
 package headfirst.iterator.dinermergeri;
 
-import java.util.*;
-
 public class MenuTestDrive {
 	public static void main(String args[]) {
 		PancakeHouseMenu pancakeHouseMenu = new PancakeHouseMenu();

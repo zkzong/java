@@ -1,7 +1,7 @@
 package com.example.disruptor;
 
-import com.lmax.disruptor.EventFactory;
 import com.example.disruptor.model.MessageModel;
+import com.lmax.disruptor.EventFactory;
 
 public class HelloEventFactory implements EventFactory<MessageModel> {
     @Override

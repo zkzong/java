@@ -1,7 +1,7 @@
 package com.example.sb2.interceptor;
 
-import com.example.sb2.pojo.TokenInfo;
 import com.example.sb2.annotation.NotRepeatSubmit;
+import com.example.sb2.pojo.TokenInfo;
 import com.example.sb2.util.ApiUtil;
 import com.example.sb2.util.MD5Util;
 import org.springframework.beans.factory.annotation.Autowired;
