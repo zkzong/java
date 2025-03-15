@@ -6,17 +6,17 @@ package com.company.section4;
  */
 public abstract class State {
 
-	//¶¨ÒåÒ»¸ö»·¾³½ÇÉ«£¬Ìá¹©×ÓÀà·ÃÎÊ
-	protected Context context;
-	
-	//ÉèÖÃ»·¾³½ÇÉ«
-	public void setContext(Context _context){
-		this.context = _context;
-	}
-	
-	//ÐÐÎª1
-	public abstract void handle1();
-	
-	//ÐÐÎª2
-	public abstract void handle2();
+    //ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«ï¿½ï¿½ï¿½á¹©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    protected Context context;
+
+    //ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½É«
+    public void setContext(Context _context) {
+        this.context = _context;
+    }
+
+    //ï¿½ï¿½Îª1
+    public abstract void handle1();
+
+    //ï¿½ï¿½Îª2
+    public abstract void handle2();
 }

@@ -7,6 +7,6 @@ import java.util.Map;
  * I'm glad to share my knowledge with you all.
  */
 public interface IOuterUserHomeInfo {
-	//用户的家庭信息
-	public Map getUserHomeInfo();
+    //用户的家庭信息
+    public Map getUserHomeInfo();
 }

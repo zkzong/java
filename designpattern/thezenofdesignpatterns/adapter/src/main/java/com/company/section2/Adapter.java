@@ -6,9 +6,9 @@ package com.company.section2;
  * 适配器
  */
 public class Adapter extends Adaptee implements Target {
-	
-	public void request() {
-		super.doSomething();
-	}
+
+    public void request() {
+        super.doSomething();
+    }
 
 }

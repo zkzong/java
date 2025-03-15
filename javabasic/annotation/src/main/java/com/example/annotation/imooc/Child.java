@@ -2,7 +2,7 @@ package com.example.annotation.imooc;
 
 //@Description("I am class annotation")
 public class Child implements Person {
-//    @Description("I am method annotation")
+    //    @Description("I am method annotation")
     @Override
     public String name() {
         return null;

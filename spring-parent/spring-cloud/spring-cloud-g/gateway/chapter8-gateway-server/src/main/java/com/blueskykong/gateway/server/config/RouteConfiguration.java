@@ -24,7 +24,7 @@ public class RouteConfiguration {
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder, ThrottleGatewayFilterFactory throttle) {
         return builder.routes()
                 .route(r -> r.path("/image/webp")
-                        .filters(f-> f.addResponseHeader("X-AnotherHeader", "baz")).uri("http://httpbin.org"))
+                        .filters(f -> f.addResponseHeader("X-AnotherHeader", "baz")).uri("http://httpbin.org"))
                 .build();
     }
 

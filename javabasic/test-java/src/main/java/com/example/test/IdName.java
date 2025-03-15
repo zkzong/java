@@ -32,7 +32,7 @@ class Person {
         if (sex == 1) {
             this.sexName = "男";
         } else {
-            this.sexName =  "女";
+            this.sexName = "女";
         }
 //        this.sexName = sexName;
     }

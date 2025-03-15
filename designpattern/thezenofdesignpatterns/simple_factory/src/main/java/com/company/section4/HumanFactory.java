@@ -1,7 +1,6 @@
 package com.company.section4;
 
 
-
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
@@ -12,16 +11,16 @@ package com.company.section4;
  * 我们把这个生产人的过程用Java程序表现出来：
  */
 public class HumanFactory {
-	
-	public static Human createHuman(Class<? extends Human> c){
-		//定义一个生产的人种
-		Human human=null;  	
-		try {
-			 //产生一个人种
-			human = (Human)Class.forName(c.getName()).newInstance();  			
-		} catch (Exception e) {
-			System.out.println("人种生成错误！");
-		}
-		return human;
-	}
+
+    public static Human createHuman(Class<? extends Human> c) {
+        //定义一个生产的人种
+        Human human = null;
+        try {
+            //产生一个人种
+            human = (Human) Class.forName(c.getName()).newInstance();
+        } catch (Exception e) {
+            System.out.println("人种生成错误！");
+        }
+        return human;
+    }
 }

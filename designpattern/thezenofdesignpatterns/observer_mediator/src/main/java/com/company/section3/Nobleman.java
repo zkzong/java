@@ -5,25 +5,25 @@ package com.company.section3;
  * I'm glad to share my knowledge with you all.
  */
 public class Nobleman extends EventCustomer {
-	
-	//¶¨Òå¹ó×åÄÜ¹»´¦ÀíÊÂ¼þµÄ¼¶±ð
-	public Nobleman() {
-		super(EventCustomType.EDIT);	
-		super.addCustomType(EventCustomType.CLONE);
-	}
 
-	@Override
-	public void exec(ProductEvent event) {
-		//ÊÂ¼þµÄÔ´Í·
-		Product p = event.getSource();
-		//ÊÂ¼þÀàÐÍ
-		ProductEventType type = event.getEventType();
-		if(type.getValue() == EventCustomType.CLONE.getValue()){
-			System.out.println("¹ó×å´¦ÀíÊÂ¼þ:"+p.getName() +"¿ËÂ¡,ÊÂ¼þÀàÐÍ="+type);
-		}else{
-			System.out.println("¹ó×å´¦ÀíÊÂ¼þ:"+p.getName() +"ÐÞ¸Ä,ÊÂ¼þÀàÐÍ="+type);
-		}
-				
-	}
-	
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½
+    public Nobleman() {
+        super(EventCustomType.EDIT);
+        super.addCustomType(EventCustomType.CLONE);
+    }
+
+    @Override
+    public void exec(ProductEvent event) {
+        //ï¿½Â¼ï¿½ï¿½ï¿½Ô´Í·
+        Product p = event.getSource();
+        //ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½
+        ProductEventType type = event.getEventType();
+        if (type.getValue() == EventCustomType.CLONE.getValue()) {
+            System.out.println("ï¿½ï¿½ï¿½å´¦ï¿½ï¿½ï¿½Â¼ï¿½:" + p.getName() + "ï¿½ï¿½Â¡,ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½=" + type);
+        } else {
+            System.out.println("ï¿½ï¿½ï¿½å´¦ï¿½ï¿½ï¿½Â¼ï¿½:" + p.getName() + "ï¿½Þ¸ï¿½,ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½=" + type);
+        }
+
+    }
+
 }

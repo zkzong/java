@@ -6,6 +6,6 @@ package com.company.section5;
  * 负责统计报表的产生
  */
 public interface ITotalVisitor extends IVisitor {
-	//统计所有员工工资总和
-	public void totalSalary();
+    //统计所有员工工资总和
+    public void totalSalary();
 }

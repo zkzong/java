@@ -10,8 +10,8 @@ public class FanoutSender {
     private AmqpTemplate rabbitTemplate;
 
     public void send() {
-        String msgString="fanoutSender :hello i am hzb";
+        String msgString = "fanoutSender :hello i am hzb";
         System.out.println(msgString);
-        this.rabbitTemplate.convertAndSend("fanoutExchange","abcd.ee", msgString);
+        this.rabbitTemplate.convertAndSend("fanoutExchange", "abcd.ee", msgString);
     }
 }

@@ -18,7 +18,7 @@ public class LambdaTest {
 
     @Test
     public void run() {
-        new Thread(()-> System.out.println("这是个线程，我是匿名内部类")).start();
+        new Thread(() -> System.out.println("这是个线程，我是匿名内部类")).start();
     }
 
     @Test

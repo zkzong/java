@@ -4,6 +4,6 @@ import com.example.mongodb.seq.exception.SequenceException;
 
 public interface SequenceDao {
 
-	long getNextSequenceId(String key) throws SequenceException;
+    long getNextSequenceId(String key) throws SequenceException;
 
 }

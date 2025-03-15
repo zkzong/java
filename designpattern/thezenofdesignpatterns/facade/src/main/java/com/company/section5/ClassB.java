@@ -5,8 +5,8 @@ package com.company.section5;
  * I'm glad to share my knowledge with you all.
  */
 public class ClassB {
-	
-	public void doSomethingB(){
-		//业务逻辑
-	}
+
+    public void doSomethingB() {
+        //业务逻辑
+    }
 }

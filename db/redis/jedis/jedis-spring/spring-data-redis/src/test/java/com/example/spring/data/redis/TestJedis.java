@@ -45,7 +45,7 @@ public class TestJedis {
 
     private void print(Collection<RedisServer> c) {
         for (Iterator<RedisServer> iter = c.iterator(); iter.hasNext(); ) {
-            RedisServer rs =  iter.next();
+            RedisServer rs = iter.next();
             System.out.println(rs.getHost() + ":" + rs.getPort());
         }
     }

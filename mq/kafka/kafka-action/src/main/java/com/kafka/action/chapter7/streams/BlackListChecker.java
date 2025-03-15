@@ -69,12 +69,12 @@ public class BlackListChecker {
         KStreamBuilder builder = new KStreamBuilder();
         KStream<String, String> accessLog = builder.stream("access-log");
         accessLog.map(new KeyValueMapper<String, String, KeyValue<String, String>>() {//由于我们在写入数据时并没有设置Key，所以这里对每个数据集设置与Value相同的key
-            @Override
-            public KeyValue<String, String> apply(String key,
-                                                  String value) {
-                return new KeyValue<String, String>(value, value);
-            }
-        }).groupByKey().count(TimeWindows.of(60 * 1000L).advanceBy(60 * 1000), "access-count")//指定时间窗口为1分钟
+                    @Override
+                    public KeyValue<String, String> apply(String key,
+                                                          String value) {
+                        return new KeyValue<String, String>(value, value);
+                    }
+                }).groupByKey().count(TimeWindows.of(60 * 1000L).advanceBy(60 * 1000), "access-count")//指定时间窗口为1分钟
                 .toStream() //转为KStream
                 .filter(new Predicate<Windowed<String>, Long>() {//从KStream中提取满足规则数据
 
@@ -87,11 +87,11 @@ public class BlackListChecker {
                         return false;
                     }
                 }).process(new ProcessorSupplier<Windowed<String>, Long>() {//处理命中的记录
-            @Override
-            public Processor<Windowed<String>, Long> get() {
-                return new IpBlackListProcessor();//实例化自定义的Process对命中的记录进行处理
-            }
-        }, "access-count");
+                    @Override
+                    public Processor<Windowed<String>, Long> get() {
+                        return new IpBlackListProcessor();//实例化自定义的Process对命中的记录进行处理
+                    }
+                }, "access-count");
 
         KafkaStreams streams = new KafkaStreams(builder, props);
         streams.start();

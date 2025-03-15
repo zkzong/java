@@ -4,6 +4,6 @@ import com.example.mongodb.hosting.model.Hosting;
 
 public interface HostingDao {
 
-	void save(Hosting hosting);
+    void save(Hosting hosting);
 
 }

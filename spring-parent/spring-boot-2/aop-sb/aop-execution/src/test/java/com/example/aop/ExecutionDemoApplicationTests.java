@@ -21,7 +21,7 @@ public class ExecutionDemoApplicationTests {
     SubService subService;
 
     @Autowired
-	LogService logService;
+    LogService logService;
 
     @Test
     public void test() {

@@ -8,14 +8,14 @@ import org.springframework.stereotype.Service;
 @Service
 public class HostingDaoImpl implements HostingDao {
 
-	@Autowired
-	private MongoOperations mongoOperation;
+    @Autowired
+    private MongoOperations mongoOperation;
 
-	@Override
-	public void save(Hosting hosting) {
+    @Override
+    public void save(Hosting hosting) {
 
-		mongoOperation.save(hosting);
+        mongoOperation.save(hosting);
 
-	}
+    }
 
 }

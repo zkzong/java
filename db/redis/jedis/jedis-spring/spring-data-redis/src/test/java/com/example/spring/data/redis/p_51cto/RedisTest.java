@@ -43,7 +43,7 @@ public class RedisTest {
     }
 
     private void print(Collection<RedisServer> c) {
-        for (Iterator<RedisServer> iter = c.iterator(); iter.hasNext();) {
+        for (Iterator<RedisServer> iter = c.iterator(); iter.hasNext(); ) {
             RedisServer rs = iter.next();
             System.out.println(rs.getHost() + ":" + rs.getPort());
         }
@@ -61,7 +61,7 @@ public class RedisTest {
     @Test
     public void test2() {
         Set<byte[]> keys = jedisConnection.keys(new String("*").getBytes());
-        for (Iterator<byte[]> iter = keys.iterator(); iter.hasNext();) {
+        for (Iterator<byte[]> iter = keys.iterator(); iter.hasNext(); ) {
             System.out.println(new String(iter.next()));
         }
     }

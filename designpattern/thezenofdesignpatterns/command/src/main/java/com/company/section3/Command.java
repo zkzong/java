@@ -5,7 +5,7 @@ package com.company.section3;
  * I'm glad to share my knowledge with you all.
  */
 public abstract class Command {
-	
-	//每个命令类都必须有一个执行命令的方法
-	public abstract void execute();
+
+    //每个命令类都必须有一个执行命令的方法
+    public abstract void execute();
 }

@@ -181,16 +181,16 @@ public class Others2JsonTest {
             statusCode = statusCodeObj.toString();
         }
         //if (ChannelResultEnum.CLOOPEN_SUBMIT_RESULT.getCode().equals(statusCode)) {
-            Object templateSMSObj = jsonObject.get("templateSMS");
-            if (statusCodeObj != null) {
-                JSONObject template = JSON.parseObject(templateSMSObj.toString());
-                Object smsMessageSidObj = template.get("smsMessageSid");
-                if (smsMessageSidObj != null) {
-                    String smsMessageSid = smsMessageSidObj.toString();
-                    //sms.setBatchNo(smsMessageSid);
-                    // 保存批次号
-                    //smsMapper.updateByPrimaryKey(sms);
-                }
+        Object templateSMSObj = jsonObject.get("templateSMS");
+        if (statusCodeObj != null) {
+            JSONObject template = JSON.parseObject(templateSMSObj.toString());
+            Object smsMessageSidObj = template.get("smsMessageSid");
+            if (smsMessageSidObj != null) {
+                String smsMessageSid = smsMessageSidObj.toString();
+                //sms.setBatchNo(smsMessageSid);
+                // 保存批次号
+                //smsMapper.updateByPrimaryKey(sms);
+            }
             //}
         }
 

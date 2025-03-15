@@ -54,7 +54,7 @@ public class TransientTest {
  * username: zong
  * password: 123456
  * age: 20
- *
+ * <p>
  * read after Serializable:
  * username: zong
  * password: null

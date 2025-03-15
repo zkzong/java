@@ -29,7 +29,7 @@ public class ServiceTest {
 
     @Test
     public void page() {
-        PageHelper.startPage(10,1);
+        PageHelper.startPage(10, 1);
         List<User> list = userService.list();
         PageInfo pageInfo = new PageInfo(list);
         System.out.println(pageInfo);

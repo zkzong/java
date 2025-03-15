@@ -5,6 +5,6 @@ package com.company.section3;
  * I'm glad to share my knowledge with you all.
  */
 public abstract class Component {
-	//抽象的方法
-	public abstract void operate();
+    //抽象的方法
+    public abstract void operate();
 }

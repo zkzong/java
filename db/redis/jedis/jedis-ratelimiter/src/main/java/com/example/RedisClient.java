@@ -17,7 +17,7 @@ public class RedisClient {
 
     // 关闭连接
     public void close() {
-        if(jedis != null) {
+        if (jedis != null) {
             jedis.close();
         }
     }

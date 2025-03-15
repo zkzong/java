@@ -9,6 +9,6 @@ import org.springframework.stereotype.Component;
 public class topicMessageReceiver {
     @RabbitHandler
     public void process(String msg) {
-        System.out.println("topicMessageReceiver  : " +msg);
+        System.out.println("topicMessageReceiver  : " + msg);
     }
 }

@@ -11,7 +11,7 @@ public class EnumTest {
     public void test() {
         ResultEnum[] values = ResultEnum.values();
         for (ResultEnum value : values) {
-            if (value.getCode().equals("0000")){
+            if (value.getCode().equals("0000")) {
                 System.out.println(value);
             }
         }

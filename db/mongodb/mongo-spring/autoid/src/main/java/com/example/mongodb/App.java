@@ -8,21 +8,21 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class App {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		ApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
-		HostingBo hostingBo = (HostingBo) ctx.getBean("hostingBoImpl");
+        ApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
+        HostingBo hostingBo = (HostingBo) ctx.getBean("hostingBoImpl");
 
-		try {
+        try {
 
-			hostingBo.save("cloud.google.com");
-			hostingBo.save("heroku.com");
-			hostingBo.save("cloudbees.com");
+            hostingBo.save("cloud.google.com");
+            hostingBo.save("heroku.com");
+            hostingBo.save("cloudbees.com");
 
-		} catch (SequenceException e) {
-			System.out.println(e.getErrMsg());
-		}
+        } catch (SequenceException e) {
+            System.out.println(e.getErrMsg());
+        }
 
-	}
+    }
 
 }

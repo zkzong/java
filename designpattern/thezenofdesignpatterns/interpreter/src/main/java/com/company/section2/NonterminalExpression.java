@@ -5,15 +5,15 @@ package com.company.section2;
  * I'm glad to share my knowledge with you all.
  */
 public class NonterminalExpression extends Expression {
-	
-	//每个非终结符表达式都会对其他表达式产生依赖
-	public NonterminalExpression(Expression... expression){
-		
-	}
-	
-	public Object interpreter(Context ctx) {
-		//进行文法处理
-		return null;
-	}
+
+    //每个非终结符表达式都会对其他表达式产生依赖
+    public NonterminalExpression(Expression... expression) {
+
+    }
+
+    public Object interpreter(Context ctx) {
+        //进行文法处理
+        return null;
+    }
 
 }

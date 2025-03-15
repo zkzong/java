@@ -11,6 +11,7 @@ public class OuterClass<T> {
         public void a() {
 
         }
+
         public abstract void absMethod();
     }
 
@@ -25,7 +26,7 @@ public class OuterClass<T> {
 
     public static void main(String[] args) {
 
-        new OuterClass().new InnerAbstractClass(){
+        new OuterClass().new InnerAbstractClass() {
             @Override
             public void absMethod() {
                 System.out.println("out");

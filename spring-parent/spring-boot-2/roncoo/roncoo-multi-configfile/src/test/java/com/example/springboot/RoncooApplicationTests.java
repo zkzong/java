@@ -18,17 +18,17 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest
 public class RoncooApplicationTests {
 
-	private MockMvc mvc;
+    private MockMvc mvc;
 
-	@Before
-	public void before() {
-		this.mvc = MockMvcBuilders.standaloneSetup(new IndexController()).build();
-	}
+    @Before
+    public void before() {
+        this.mvc = MockMvcBuilders.standaloneSetup(new IndexController()).build();
+    }
 
-	@Test
-	public void contextLoads() throws Exception {
-		RequestBuilder req = get("/index");
-		mvc.perform(req).andExpect(status().isOk()).andExpect(content().string("hello world"));
-	}
+    @Test
+    public void contextLoads() throws Exception {
+        RequestBuilder req = get("/index");
+        mvc.perform(req).andExpect(status().isOk()).andExpect(content().string("hello world"));
+    }
 
 }

@@ -12,17 +12,17 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class SpringRetryApplicationTests {
 
-	@Autowired
-	private RemoteService remoteService;
+    @Autowired
+    private RemoteService remoteService;
 
-	@Test
-	public void contextLoads() {
-	}
+    @Test
+    public void contextLoads() {
+    }
 
-	@Test
-	public void call() {
-		User user = new User("zong", 30);
-		remoteService.call(user);
-	}
+    @Test
+    public void call() {
+        User user = new User("zong", 30);
+        remoteService.call(user);
+    }
 
 }

@@ -101,8 +101,8 @@ public class AggregateDemo {
         KTable<String, Integer> ktable = builder.table("ktable-aggregate",
                 "ktable-aggregate-store");//指定值的类型为Integer
         ktable.groupBy((String key, Integer value) -> {
-            return new KeyValue<String, Integer>(key, value);
-        }, Serdes.String(), Serdes.Integer())
+                    return new KeyValue<String, Integer>(key, value);
+                }, Serdes.String(), Serdes.Integer())
                 .aggregate(
                         () -> Integer.MIN_VALUE,
                         (key, value, aggregate) -> value > aggregate ? value

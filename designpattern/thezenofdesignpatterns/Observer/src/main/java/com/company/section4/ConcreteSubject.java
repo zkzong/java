@@ -5,12 +5,12 @@ package com.company.section4;
  * I'm glad to share my knowledge with you all.
  */
 public class ConcreteSubject extends Subject {
-	
-	//具体的业务
-	public void doSomething(){
-		/*
-		 * do something
-		 */
-		super.notifyObserver();
-	}
+
+    //具体的业务
+    public void doSomething() {
+        /*
+         * do something
+         */
+        super.notifyObserver();
+    }
 }

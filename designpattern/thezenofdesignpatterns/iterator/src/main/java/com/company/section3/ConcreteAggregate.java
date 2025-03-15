@@ -7,22 +7,22 @@ import java.util.Vector;
  * I'm glad to share my knowledge with you all.
  */
 public class ConcreteAggregate implements Aggregate {
-	//容纳对象的容器
-	private Vector vector = new Vector();
-	
-	//增加一个元素
-	public void add(Object object) {
-		this.vector.add(object);
-	}
+    //容纳对象的容器
+    private Vector vector = new Vector();
 
-	//返回迭代器对象
-	public Iterator iterator() {
-		return new ConcreteIterator(this.vector);
-	}
+    //增加一个元素
+    public void add(Object object) {
+        this.vector.add(object);
+    }
 
-	//删除一个元素
-	public void remove(Object object) {
-		this.remove(object);
-	}
+    //返回迭代器对象
+    public Iterator iterator() {
+        return new ConcreteIterator(this.vector);
+    }
+
+    //删除一个元素
+    public void remove(Object object) {
+        this.remove(object);
+    }
 
 }

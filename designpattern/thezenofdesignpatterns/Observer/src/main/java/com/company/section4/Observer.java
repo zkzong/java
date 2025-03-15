@@ -6,7 +6,7 @@ package com.company.section4;
  * I'm glad to share my knowledge with you all.
  */
 public interface Observer {
-	
-	//更新方法
-	public void update();
+
+    //更新方法
+    public void update();
 }

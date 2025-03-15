@@ -5,7 +5,7 @@ package com.company.section7;
  * I'm glad to share my knowledge with you all.
  */
 public interface Role {
-	//演员要扮演的角色
-	public void accept(AbsActor actor);
+    //演员要扮演的角色
+    public void accept(AbsActor actor);
 }
 

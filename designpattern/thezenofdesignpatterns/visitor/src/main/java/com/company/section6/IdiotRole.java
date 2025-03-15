@@ -5,5 +5,5 @@ package com.company.section6;
  * I'm glad to share my knowledge with you all.
  */
 public class IdiotRole implements Role {
-	//Ò»¸öÈõÖÇ½ÇÉ«	
+    //Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ç½ï¿½É«
 }

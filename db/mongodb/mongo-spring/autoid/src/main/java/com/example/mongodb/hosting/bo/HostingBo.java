@@ -4,6 +4,6 @@ import com.example.mongodb.seq.exception.SequenceException;
 
 public interface HostingBo {
 
-	void save(String name) throws SequenceException;
+    void save(String name) throws SequenceException;
 
 }

@@ -11,25 +11,25 @@ import org.springframework.data.mongodb.core.SimpleMongoDbFactory;
 @Configuration
 public class MongoConfig {
 
-	@Bean
-	public MongoDbFactory mongoDbFactory() throws Exception {
+    @Bean
+    public MongoDbFactory mongoDbFactory() throws Exception {
 
-		MongoClient mongo = new MongoClient("127.0.0.1");
-		SimpleMongoDbFactory simpleMongoDbFactory = new SimpleMongoDbFactory(mongo, "test");
-		return simpleMongoDbFactory;
+        MongoClient mongo = new MongoClient("127.0.0.1");
+        SimpleMongoDbFactory simpleMongoDbFactory = new SimpleMongoDbFactory(mongo, "test");
+        return simpleMongoDbFactory;
 
-	}
+    }
 
-	@Bean
-	public MongoTemplate mongoTemplate() throws Exception {
+    @Bean
+    public MongoTemplate mongoTemplate() throws Exception {
 
-		MongoTemplate mongoTemplate = new MongoTemplate(mongoDbFactory());
+        MongoTemplate mongoTemplate = new MongoTemplate(mongoDbFactory());
 
-		// show error, should off on production to speed up performance
-		mongoTemplate.setWriteConcern(WriteConcern.SAFE);
+        // show error, should off on production to speed up performance
+        mongoTemplate.setWriteConcern(WriteConcern.SAFE);
 
-		return mongoTemplate;
+        return mongoTemplate;
 
-	}
+    }
 
 }

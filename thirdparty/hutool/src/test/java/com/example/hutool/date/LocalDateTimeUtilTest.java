@@ -26,7 +26,6 @@ public class LocalDateTimeUtilTest {
         of = LocalDateTimeUtil.ofUTC(dt.getTime());
 
 
-
         // 日期字符串解析
         // 解析ISO时间
         LocalDateTime localDateTime = LocalDateTimeUtil.parse("2020-01-23T12:23:56");
@@ -38,7 +37,6 @@ public class LocalDateTimeUtilTest {
 
         // 解析日期时间为LocalDate，时间部分舍弃
         localDate = LocalDateTimeUtil.parseDate("2020-01-23T12:23:56", DateTimeFormatter.ISO_DATE_TIME);
-
 
 
         // 日期格式化
@@ -58,7 +56,6 @@ public class LocalDateTimeUtilTest {
         offset = LocalDateTimeUtil.offset(localDateTime, -1, ChronoUnit.DAYS);
 
 
-
         // 计算时间间隔
         LocalDateTime start = LocalDateTimeUtil.parse("2019-02-02T00:00:00");
         LocalDateTime end = LocalDateTimeUtil.parse("2020-02-02T00:00:00");
@@ -67,7 +64,6 @@ public class LocalDateTimeUtilTest {
 
         // 365
         between.toDays();
-
 
 
         // 一天的开始和结束

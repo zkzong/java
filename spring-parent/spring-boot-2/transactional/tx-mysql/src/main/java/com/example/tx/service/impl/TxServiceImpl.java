@@ -28,7 +28,7 @@ public class TxServiceImpl implements TxService {
         //} catch (Exception e) {
         //    e.printStackTrace();
         //}
-        int i = 1/0;
+        int i = 1 / 0;
         personMapper.insertPerson(name, age);
     }
 }

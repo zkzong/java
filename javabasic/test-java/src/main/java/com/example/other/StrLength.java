@@ -15,12 +15,12 @@ public class StrLength {
     }
 
     public static int count(String str) {
-        if(str == null || str.length() == 0) {
+        if (str == null || str.length() == 0) {
             return 0;
         }
         int count = 0;
         char[] chs = str.toCharArray();
-        for(int i = 0; i < chs.length; i++) {
+        for (int i = 0; i < chs.length; i++) {
             count += (chs[i] > 0xff) ? 2 : 1;
         }
         return count;

@@ -10,25 +10,25 @@ import org.springframework.stereotype.Service;
 @Service
 public class HostingBoImpl implements HostingBo {
 
-	private static final String HOSTING_SEQ_KEY = "hosting";
+    private static final String HOSTING_SEQ_KEY = "hosting";
 
-	@Autowired
-	private SequenceDao sequenceDao;
+    @Autowired
+    private SequenceDao sequenceDao;
 
-	@Autowired
-	private HostingDao hostingDao;
+    @Autowired
+    private HostingDao hostingDao;
 
-	@Override
-	public void save(String name) throws SequenceException {
+    @Override
+    public void save(String name) throws SequenceException {
 
-		Hosting hosting = new Hosting();
+        Hosting hosting = new Hosting();
 
-		hosting.setId(sequenceDao.getNextSequenceId(HOSTING_SEQ_KEY));
-		hosting.setName(name);
-		hostingDao.save(hosting);
+        hosting.setId(sequenceDao.getNextSequenceId(HOSTING_SEQ_KEY));
+        hosting.setName(name);
+        hostingDao.save(hosting);
 
-		System.out.println(hosting);
+        System.out.println(hosting);
 
-	}
+    }
 
 }

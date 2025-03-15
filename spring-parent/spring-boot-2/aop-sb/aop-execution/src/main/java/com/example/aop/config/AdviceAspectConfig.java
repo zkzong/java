@@ -67,7 +67,6 @@ public class AdviceAspectConfig {
     //public void afterException(Object result) {
     //    System.out.println("###after returnning : " + result);
     //}
-
     @Before("matchLongArg() && args(productId)")
     public void before(Long productId) {
         System.out.println("###before,get args:" + productId);

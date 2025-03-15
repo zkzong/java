@@ -5,9 +5,9 @@ package com.company.section5;
  * I'm glad to share my knowledge with you all.
  */
 public interface Implementor {
-	
-	//基本方法
-	public void doSomething();
-	
-	public void doAnything();
+
+    //基本方法
+    public void doSomething();
+
+    public void doAnything();
 }

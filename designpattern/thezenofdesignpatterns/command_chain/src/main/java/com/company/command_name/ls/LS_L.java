@@ -10,13 +10,13 @@ import com.company.command_name.os.FileManager;
  */
 public class LS_L extends AbstractLS {
 
-	protected String echo(CommandVO vo) {
-		return FileManager.ls_l(vo.formatData());
-	}
+    protected String echo(CommandVO vo) {
+        return FileManager.ls_l(vo.formatData());
+    }
 
-	//l参数
-	protected String getOperateParam() {
-		return super.L_PARAM;
-	}
+    //l参数
+    protected String getOperateParam() {
+        return super.L_PARAM;
+    }
 
 }

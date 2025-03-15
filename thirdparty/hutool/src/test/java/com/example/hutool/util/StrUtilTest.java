@@ -18,7 +18,7 @@ public class StrUtilTest {
 
         String ss = "= service.add(user);";
         // 查找 service 第1次出现的位置
-         i = StrUtil.ordinalIndexOf(ss, "service", 1);
+        i = StrUtil.ordinalIndexOf(ss, "service", 1);
         System.out.println(i);
         // 从指定起始位置开始查找
         int j = StrUtil.indexOf(ss, '(', i);

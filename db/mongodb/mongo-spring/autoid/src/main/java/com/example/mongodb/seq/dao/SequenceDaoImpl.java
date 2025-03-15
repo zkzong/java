@@ -13,28 +13,28 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class SequenceDaoImpl implements SequenceDao {
 
-	@Autowired
-	private MongoOperations mongoOperation;
+    @Autowired
+    private MongoOperations mongoOperation;
 
-	@Override
-	public long getNextSequenceId(String key) throws SequenceException {
+    @Override
+    public long getNextSequenceId(String key) throws SequenceException {
 
-		Query query = new Query(Criteria.where("_id").is(key));
+        Query query = new Query(Criteria.where("_id").is(key));
 
-		Update update = new Update();
-		update.inc("seq", 1);
+        Update update = new Update();
+        update.inc("seq", 1);
 
-		FindAndModifyOptions options = new FindAndModifyOptions();
-		options.returnNew(true);
+        FindAndModifyOptions options = new FindAndModifyOptions();
+        options.returnNew(true);
 
-		SequenceId seqId = mongoOperation.findAndModify(query, update, options, SequenceId.class);
+        SequenceId seqId = mongoOperation.findAndModify(query, update, options, SequenceId.class);
 
-		if (seqId == null) {
-			throw new SequenceException("Unable to get sequence id for key : " + key);
-		}
+        if (seqId == null) {
+            throw new SequenceException("Unable to get sequence id for key : " + key);
+        }
 
-		return seqId.getSeq();
+        return seqId.getSeq();
 
-	}
+    }
 
 }

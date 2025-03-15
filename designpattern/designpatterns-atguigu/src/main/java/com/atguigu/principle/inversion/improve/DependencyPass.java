@@ -15,8 +15,8 @@ public class DependencyPass {
     }
 }
 
-//// 方式1：通过接口传递实现依赖
-//// 开关的接口
+/// / 方式1：通过接口传递实现依赖
+/// / 开关的接口
 //interface IOpenAndClose {
 //    // 抽象方法，接收接口
 //    public void open(ITV tv);
@@ -63,6 +63,7 @@ public class DependencyPass {
 //    }
 //}
 //
+
 //// 实现接口
 //class OpenAndClose implements IOpenAndClose {
 //

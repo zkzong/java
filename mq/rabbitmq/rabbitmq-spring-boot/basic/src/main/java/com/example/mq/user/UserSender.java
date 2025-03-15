@@ -10,10 +10,10 @@ public class UserSender {
     private AmqpTemplate rabbitTemplate;
 
     public void send() {
-        User user=new User();
+        User user = new User();
         user.setName("hzb");
         user.setPass("123456789");
-        System.out.println("user send : " + user.getName()+"/"+user.getPass());
+        System.out.println("user send : " + user.getName() + "/" + user.getPass());
         this.rabbitTemplate.convertAndSend("userQueue", user);
     }
 }

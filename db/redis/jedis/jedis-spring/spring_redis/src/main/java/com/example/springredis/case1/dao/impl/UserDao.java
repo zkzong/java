@@ -34,6 +34,7 @@ public class UserDao extends AbstractBaseRedisDao<String, User> implements IUser
 
     /**
      * 批量新增 使用pipeline方式
+     *
      * @param list
      * @return
      */

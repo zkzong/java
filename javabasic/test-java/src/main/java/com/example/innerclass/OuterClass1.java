@@ -25,11 +25,13 @@ public class OuterClass1<T> {
         public void a() {
 
         }
+
         public abstract void absMethod();
     }
 
     public abstract class TT {
-        public void t(){}
+        public void t() {
+        }
     }
 
     public static void main(String[] args) {

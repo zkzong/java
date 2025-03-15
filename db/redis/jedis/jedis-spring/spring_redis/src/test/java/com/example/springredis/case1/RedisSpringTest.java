@@ -70,7 +70,8 @@ public class RedisSpringTest extends AbstractJUnit4SpringContextTests {
     @Test
     public void testUpdate() {
         User user = new User();
-        user.setId("user1");;
+        user.setId("user1");
+        ;
         user.setName("zzzzzz");
         boolean result = userDao.update(user);
         Assert.assertTrue(result);

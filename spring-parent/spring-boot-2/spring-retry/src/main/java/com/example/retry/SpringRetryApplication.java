@@ -11,11 +11,11 @@ import org.springframework.retry.annotation.EnableRetry;
 @EnableRetry
 public class SpringRetryApplication {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 //		SpringApplication.run(SpringRetryApplication.class, args);
-		ApplicationContext annotationContext = new AnnotationConfigApplicationContext(SpringRetryApplication.class);
-		RemoteService remoteService = annotationContext.getBean(RemoteService.class);
-		User user = new User("zong", 30);
-		remoteService.call(user);
-	}
+        ApplicationContext annotationContext = new AnnotationConfigApplicationContext(SpringRetryApplication.class);
+        RemoteService remoteService = annotationContext.getBean(RemoteService.class);
+        User user = new User("zong", 30);
+        remoteService.call(user);
+    }
 }

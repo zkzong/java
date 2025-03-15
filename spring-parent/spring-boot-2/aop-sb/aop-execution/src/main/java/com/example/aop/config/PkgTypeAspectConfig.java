@@ -2,8 +2,8 @@ package com.example.aop.config;
 
 /**
  * //匹配ProductService类里头的所有方法
- * @Pointcut("within(com.example.aop.service.ProductService)")
- * //匹配com.imooc包及子包下所有类的方法
+ *
+ * @Pointcut("within(com.example.aop.service.ProductService)") //匹配com.imooc包及子包下所有类的方法
  * @Pointcut("within(com.example.aop..*)")
  */
 

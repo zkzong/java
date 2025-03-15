@@ -27,6 +27,7 @@ public class CityServiceImpl implements CityService {
      * 获取城市逻辑：
      * 如果缓存存在，从缓存中获取城市信息
      * 如果缓存不存在，从 DB 中获取城市信息，然后插入缓存
+     *
      * @param id
      * @return
      */
@@ -62,6 +63,7 @@ public class CityServiceImpl implements CityService {
      * 更新城市逻辑：
      * 如果缓存存在，删除
      * 如果缓存不存在，不操作
+     *
      * @param city
      * @return
      */

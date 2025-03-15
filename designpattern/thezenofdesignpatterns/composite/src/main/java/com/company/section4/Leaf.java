@@ -5,10 +5,10 @@ package com.company.section4;
  * I'm glad to share my knowledge with you all.
  */
 public class Leaf extends Component {
-	/*
-	 * 可以覆写父类方法
-	 * public void doSomething(){
-	 * 
-	 * }
-	 */
+    /*
+     * 可以覆写父类方法
+     * public void doSomething(){
+     *
+     * }
+     */
 }

@@ -5,11 +5,11 @@ package com.company.section5;
  * I'm glad to share my knowledge with you all.
  */
 public class Facade2 {
-	//引用原有的门面
-	private Facade facade = new Facade();
-	
-	//对外提供唯一的访问子系统的方法
-	public void methodB(){
-		this.facade.methodB();
-	}
+    //引用原有的门面
+    private Facade facade = new Facade();
+
+    //对外提供唯一的访问子系统的方法
+    public void methodB() {
+        this.facade.methodB();
+    }
 }

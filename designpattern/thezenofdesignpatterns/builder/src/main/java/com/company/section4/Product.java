@@ -5,8 +5,8 @@ package com.company.section4;
  * I'm glad to share my knowledge with you all.
  */
 public class Product {
-	
-	public void doSomething(){
-		//独立业务处理
-	}
+
+    public void doSomething() {
+        //独立业务处理
+    }
 }

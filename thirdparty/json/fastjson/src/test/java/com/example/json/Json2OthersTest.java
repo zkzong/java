@@ -181,7 +181,8 @@ public class Json2OthersTest {
 
         Resp r = JSON.parseObject(s, Resp.class);
         System.out.println(r);
-        Resp<User> rr = JSON.parseObject(s, new TypeReference<Resp<User>>() {});
+        Resp<User> rr = JSON.parseObject(s, new TypeReference<Resp<User>>() {
+        });
         System.out.println(rr);
 
     }

@@ -5,9 +5,9 @@ package com.company.section3;
  * I'm glad to share my knowledge with you all.
  */
 public class Request {
-	
-	//请求的等级
-	public Level getRequestLevel(){
-		return null;
-	}
+
+    //请求的等级
+    public Level getRequestLevel() {
+        return null;
+    }
 }

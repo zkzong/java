@@ -46,7 +46,7 @@ public class CommonConsumer {
         for (final KafkaStream<byte[], byte[]> stream : streams) {
             executor.submit(new Runnable() {
                 @Override
-				public void run() {
+                public void run() {
                     for (MessageAndMetadata<byte[], byte[]> msgAndMetadata : stream) {
                         // process message (msgAndMetadata.message())
                         System.out.println("线程：" + Thread.currentThread().getName() + ",offset:" + msgAndMetadata.offset() + ",partition:" + msgAndMetadata.partition());

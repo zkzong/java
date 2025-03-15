@@ -5,19 +5,19 @@ package com.company.section3;
  * I'm glad to share my knowledge with you all.
  */
 public class Commoner extends EventCustomer {
-	
-	//定义平民能够处理事件的级别
-	public Commoner() {
-		super(EventCustomType.NEW);
-	}
 
-	@Override
-	public void exec(ProductEvent event) {
-		//事件的源头
-		Product p = event.getSource();
-		//事件类型
-		ProductEventType type = event.getEventType();
-		System.out.println("平民处理事件:"+p.getName() +"诞生记,事件类型="+type);
-	}
+    //锟斤拷锟斤拷平锟斤拷锟杰癸拷锟斤拷锟斤拷锟铰硷拷锟侥硷拷锟斤拷
+    public Commoner() {
+        super(EventCustomType.NEW);
+    }
+
+    @Override
+    public void exec(ProductEvent event) {
+        //锟铰硷拷锟斤拷源头
+        Product p = event.getSource();
+        //锟铰硷拷锟斤拷锟斤拷
+        ProductEventType type = event.getEventType();
+        System.out.println("平锟斤拷锟斤拷锟铰硷拷:" + p.getName() + "锟斤拷锟斤拷锟斤拷,锟铰硷拷锟斤拷锟斤拷=" + type);
+    }
 
 }

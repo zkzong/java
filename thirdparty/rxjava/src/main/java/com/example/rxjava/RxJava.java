@@ -10,7 +10,7 @@ import org.junit.Test;
 
 /**
  * 参考：http://www.jianshu.com/p/464fa025229e
- *
+ * <p>
  * Created by Zong on 2017/7/8.
  */
 public class RxJava {

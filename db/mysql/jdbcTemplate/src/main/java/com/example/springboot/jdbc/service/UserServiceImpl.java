@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
  * Created by Zong on 2017/4/25.
  */
 @Service
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
