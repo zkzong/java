@@ -5,7 +5,7 @@ package com.company.section7;
  * I'm glad to share my knowledge with you all.
  */
 public class KungFuRole implements Role {
-	//�书���ӵ�һ�Ľ�ɫ
+	//武功天子第一的角色
 	public void accept(AbsActor actor){
 		actor.act(this);
 	}

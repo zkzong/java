@@ -10,9 +10,9 @@ public class Client {
 	
 	public static void main(String[] args) {
 		for(int i=0;i<10;i++){
-			//»ñµÃÔªËØ¶ÔÏó
+			//èŽ·å¾—å…ƒç´ å¯¹è±¡
 			Element el = ObjectStruture.createElement();
-			//½ÓÊÜ·ÃÎÊÕß·ÃÎÊ
+			//æŽ¥å—è®¿é—®è€…è®¿é—®
 			el.accept(new Visitor());
 		}		
 	}

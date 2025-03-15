@@ -5,67 +5,67 @@ package com.company.section4;
  * I'm glad to share my knowledge with you all.
  */
 public class Visitor implements IVisitor {
-	//²¿ÃÅ¾­ÀíµÄ¹¤×ÊÏµÊıÊÇ5
+	//éƒ¨é—¨ç»ç†çš„å·¥èµ„ç³»æ•°æ˜¯5
 	private final static int MANAGER_COEFFICIENT = 5;
 	
-	//Ô±¹¤µÄ¹¤×ÊÏµÊıÊÇ2
+	//å‘˜å·¥çš„å·¥èµ„ç³»æ•°æ˜¯2
 	private final static int COMMONEMPLOYEE_COEFFICIENT = 2;
 	
-	//ÆÕÍ¨Ô±¹¤µÄ¹¤×Ê×ÜºÍ
+	//æ™®é€šå‘˜å·¥çš„å·¥èµ„æ€»å’Œ
 	private int commonTotalSalary = 0;
 	
-	//²¿ÃÅ¾­ÀíµÄ¹¤×Ê×ÜºÍ
+	//éƒ¨é—¨ç»ç†çš„å·¥èµ„æ€»å’Œ
 	private int managerTotalSalary =0;
 	
-	//·ÃÎÊÆÕÍ¨Ô±¹¤£¬´òÓ¡³ö±¨±í
+	//è®¿é—®æ™®é€šå‘˜å·¥ï¼Œæ‰“å°å‡ºæŠ¥è¡¨
 	public void visit(CommonEmployee commonEmployee) {
 		System.out.println(this.getCommonEmployee(commonEmployee));
-		//¼ÆËãÆÕÍ¨Ô±¹¤µÄĞ½Ë®×ÜºÍ
+		//è®¡ç®—æ™®é€šå‘˜å·¥çš„è–ªæ°´æ€»å’Œ
 		this.calCommonSlary(commonEmployee.getSalary());
 	}
 
-	//·ÃÎÊ²¿ÃÅ¾­Àí£¬´òÓ¡³ö±¨±í
+	//è®¿é—®éƒ¨é—¨ç»ç†ï¼Œæ‰“å°å‡ºæŠ¥è¡¨
 	public void visit(Manager manager) {
 		System.out.println(this.getManagerInfo(manager));
-		//¼ÆËã²¿ÃÅ¾­ÀíµÄ¹¤×Ê×ÜºÍ
+		//è®¡ç®—éƒ¨é—¨ç»ç†çš„å·¥èµ„æ€»å’Œ
 		this.calManagerSalary(manager.getSalary());
 	}
 	
-	//×é×°³ö»ù±¾ĞÅÏ¢
+	//ç»„è£…å‡ºåŸºæœ¬ä¿¡æ¯
 	private String getBasicInfo(Employee employee){
-		String info = "ĞÕÃû£º" + employee.getName() + "\t";
-		info = info + "ĞÔ±ğ£º" + (employee.getSex() == Employee.FEMALE?"Å®":"ÄĞ") + "\t";
-		info = info + "Ğ½Ë®£º" + employee.getSalary()  + "\t";
+		String info = "å§“åï¼š" + employee.getName() + "\t";
+		info = info + "æ€§åˆ«ï¼š" + (employee.getSex() == Employee.FEMALE?"å¥³":"ç”·") + "\t";
+		info = info + "è–ªæ°´ï¼š" + employee.getSalary()  + "\t";
 		
 		return info;
 	}
 	
-	//×é×°³ö²¿ÃÅ¾­ÀíµÄĞÅÏ¢
+	//ç»„è£…å‡ºéƒ¨é—¨ç»ç†çš„ä¿¡æ¯
 	private String getManagerInfo(Manager manager){
 		String basicInfo = this.getBasicInfo(manager);
-		String otherInfo = "Òµ¼¨£º"+manager.getPerformance() + "\t";
+		String otherInfo = "ä¸šç»©ï¼š"+manager.getPerformance() + "\t";
 		return basicInfo + otherInfo;
 	}
 	
-	//×é×°³öÆÕÍ¨Ô±¹¤ĞÅÏ¢
+	//ç»„è£…å‡ºæ™®é€šå‘˜å·¥ä¿¡æ¯
 	private String getCommonEmployee(CommonEmployee commonEmployee){
 		String basicInfo = this.getBasicInfo(commonEmployee);
-		String otherInfo = "¹¤×÷£º"+commonEmployee.getJob()+"\t";
+		String otherInfo = "å·¥ä½œï¼š"+commonEmployee.getJob()+"\t";
 		return basicInfo + otherInfo;
 	}
 	
 	
-	//¼ÆËã²¿ÃÅ¾­ÀíµÄ¹¤×Ê×ÜºÍ
+	//è®¡ç®—éƒ¨é—¨ç»ç†çš„å·¥èµ„æ€»å’Œ
 	private void calManagerSalary(int salary){
 		this.managerTotalSalary = this.managerTotalSalary + salary *MANAGER_COEFFICIENT ;
 	}
 	
-	//¼ÆËãÆÕÍ¨Ô±¹¤µÄ¹¤×Ê×ÜºÍ
+	//è®¡ç®—æ™®é€šå‘˜å·¥çš„å·¥èµ„æ€»å’Œ
 	private void calCommonSlary(int salary){
 		this.commonTotalSalary = this.commonTotalSalary + salary*COMMONEMPLOYEE_COEFFICIENT;
 	}
 	
-	//»ñµÃËùÓĞÔ±¹¤µÄ¹¤×Ê×ÜºÍ
+	//è·å¾—æ‰€æœ‰å‘˜å·¥çš„å·¥èµ„æ€»å’Œ
 	public int getTotalSalary(){
 		return this.commonTotalSalary + this.managerTotalSalary;
 	}

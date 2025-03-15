@@ -5,8 +5,8 @@ package com.company.section6;
  * I'm glad to share my knowledge with you all.
  */
 public class YoungActor extends AbsActor {	
-	//ÄêÇáÑİÔ±×îÏ²»¶Ñİ¹¦·òÏ·
+	//å¹´è½»æ¼”å‘˜æœ€å–œæ¬¢æ¼”åŠŸå¤«æˆ
 	public void act(KungFuRole role){
-		System.out.println("×îÏ²»¶Ñİ¹¦·ò½ÇÉ«");
+		System.out.println("æœ€å–œæ¬¢æ¼”åŠŸå¤«è§’è‰²");
 	}
 }

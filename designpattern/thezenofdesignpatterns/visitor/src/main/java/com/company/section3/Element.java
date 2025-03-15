@@ -5,9 +5,9 @@ package com.company.section3;
  * I'm glad to share my knowledge with you all.
  */
 public abstract class Element {
-	//定义业务逻辑
+	//瀹氫箟涓氬姟閫昏緫
 	public abstract void doSomething();
 	
-	//允许谁来访问
+	//鍏佽璋佹潵璁块棶
 	public abstract void accept(IVisitor visitor);
 }

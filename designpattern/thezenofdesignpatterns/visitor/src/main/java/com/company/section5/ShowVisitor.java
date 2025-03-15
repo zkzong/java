@@ -3,31 +3,31 @@ package com.company.section5;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * Õ¹Ê¾±¨±í£¬¸Ã·ÃÎÊÕßµÄ¹¤×÷¾ÍÊÇ¿´µ½Ê²Ã´Êı¾İÕ¹Ê¾Ê²Ã´Êı¾İ
+ * å±•ç¤ºæŠ¥è¡¨ï¼Œè¯¥è®¿é—®è€…çš„å·¥ä½œå°±æ˜¯çœ‹åˆ°ä»€ä¹ˆæ•°æ®å±•ç¤ºä»€ä¹ˆæ•°æ®
  */
 public class ShowVisitor implements IShowVisitor {
 	private String info = "";
 	
-	//´òÓ¡³ö±¨±í
+	//æ‰“å°å‡ºæŠ¥è¡¨
 	public void report() {
 		System.out.println(this.info);
 	}
 
-	//·ÃÎÊÆÕÍ¨Ô±¹¤£¬×é×°ĞÅÏ¢
+	//è®¿é—®æ™®é€šå‘˜å·¥ï¼Œç»„è£…ä¿¡æ¯
 	public void visit(CommonEmployee commonEmployee) {
-		this.info = this.info + this.getBasicInfo(commonEmployee)+ "¹¤×÷£º"+commonEmployee.getJob()+"\t\n";
+		this.info = this.info + this.getBasicInfo(commonEmployee)+ "å·¥ä½œï¼š"+commonEmployee.getJob()+"\t\n";
 	}
 
-	//·ÃÎÊ¾­Àí£¬È»ºó×é×°ĞÅÏ¢
+	//è®¿é—®ç»ç†ï¼Œç„¶åç»„è£…ä¿¡æ¯
 	public void visit(Manager manager) {
-		this.info = this.info + this.getBasicInfo(manager) +  "Òµ¼¨£º"+manager.getPerformance() + "\t\n";
+		this.info = this.info + this.getBasicInfo(manager) +  "ä¸šç»©ï¼š"+manager.getPerformance() + "\t\n";
 	}
 	
-	//×é×°³ö»ù±¾ĞÅÏ¢
+	//ç»„è£…å‡ºåŸºæœ¬ä¿¡æ¯
 	private String getBasicInfo(Employee employee){
-		String info = "ĞÕÃû£º" + employee.getName() + "\t";
-		info = info + "ĞÔ±ğ£º" + (employee.getSex() == Employee.FEMALE?"Å®":"ÄĞ") + "\t";
-		info = info + "Ğ½Ë®£º" + employee.getSalary()  + "\t";
+		String info = "å§“åï¼š" + employee.getName() + "\t";
+		info = info + "æ€§åˆ«ï¼š" + (employee.getSex() == Employee.FEMALE?"å¥³":"ç”·") + "\t";
+		info = info + "è–ªæ°´ï¼š" + employee.getSalary()  + "\t";
 		
 		return info;
 	}

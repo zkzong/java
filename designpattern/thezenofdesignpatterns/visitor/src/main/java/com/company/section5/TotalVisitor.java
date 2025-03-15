@@ -3,31 +3,31 @@ package com.company.section5;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * »ã×Ü±í£¬¸Ã·ÃÎÊÕßÆğ»ã×Ü×÷ÓÃ£¬°ÑÈİÆ÷ÖĞµÄÊı¾İÒ»¸öÒ»¸ö±ãÀû£¬È»ºó»ã×Ü
+ * æ±‡æ€»è¡¨ï¼Œè¯¥è®¿é—®è€…èµ·æ±‡æ€»ä½œç”¨ï¼ŒæŠŠå®¹å™¨ä¸­çš„æ•°æ®ä¸€ä¸ªä¸€ä¸ªä¾¿åˆ©ï¼Œç„¶åæ±‡æ€»
  */
 public class TotalVisitor implements ITotalVisitor {
-	//²¿ÃÅ¾­ÀíµÄ¹¤×ÊÏµÊıÊÇ5
+	//éƒ¨é—¨ç»ç†çš„å·¥èµ„ç³»æ•°æ˜¯5
 	private final static int MANAGER_COEFFICIENT = 5;
 	
-	//Ô±¹¤µÄ¹¤×ÊÏµÊıÊÇ2
+	//å‘˜å·¥çš„å·¥èµ„ç³»æ•°æ˜¯2
 	private final static int COMMONEMPLOYEE_COEFFICIENT = 2;
 	
-	//ÆÕÍ¨Ô±¹¤µÄ¹¤×Ê×ÜºÍ
+	//æ™®é€šå‘˜å·¥çš„å·¥èµ„æ€»å’Œ
 	private int commonTotalSalary = 0;
 	
-	//²¿ÃÅ¾­ÀíµÄ¹¤×Ê×ÜºÍ
+	//éƒ¨é—¨ç»ç†çš„å·¥èµ„æ€»å’Œ
 	private int managerTotalSalary =0;
 
 	public void totalSalary() {
-		System.out.println("±¾¹«Ë¾µÄÔÂ¹¤×Ê×Ü¶îÊÇ" + (this.commonTotalSalary + this.managerTotalSalary));
+		System.out.println("æœ¬å…¬å¸çš„æœˆå·¥èµ„æ€»é¢æ˜¯" + (this.commonTotalSalary + this.managerTotalSalary));
 	}
 
-	//·ÃÎÊÆÕÍ¨Ô±¹¤£¬¼ÆËã¹¤×Ê×Ü¶î
+	//è®¿é—®æ™®é€šå‘˜å·¥ï¼Œè®¡ç®—å·¥èµ„æ€»é¢
 	public void visit(CommonEmployee commonEmployee) {
 		this.commonTotalSalary = this.commonTotalSalary + commonEmployee.getSalary()*COMMONEMPLOYEE_COEFFICIENT;
 	}
 
-	//·ÃÎÊ²¿ÃÅ¾­Àí£¬¼ÆËã¹¤×Ê×Ü¶î
+	//è®¿é—®éƒ¨é—¨ç»ç†ï¼Œè®¡ç®—å·¥èµ„æ€»é¢
 	public void visit(Manager manager) {
 		this.managerTotalSalary = this.managerTotalSalary + manager.getSalary() *MANAGER_COEFFICIENT ;
 	}

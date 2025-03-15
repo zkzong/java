@@ -5,6 +5,6 @@ package com.company.section6;
  * I'm glad to share my knowledge with you all.
  */
 public interface Role {
-	//演员要扮演的角色
+	//婕斿憳瑕佹壆婕旂殑瑙掕壊
 }
 

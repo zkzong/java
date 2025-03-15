@@ -5,5 +5,5 @@ package com.company.section6;
  * I'm glad to share my knowledge with you all.
  */
 public class KungFuRole implements Role {
-	//�书���ӵ�һ�Ľ�ɫ
+	//武功天子第一的角色
 }

@@ -6,12 +6,12 @@ package com.company.section3;
  */
 public class ConcreteElement1 extends Element{
 	
-	//ÍêÉÆÒµÎñÂß¼­
+	//å®Œå–„ä¸šåŠ¡é€»è¾‘
 	public void doSomething(){
-		//ÒµÎñ´¦Àí
+		//ä¸šåŠ¡å¤„ç†
 	}
 	
-	//ÔÊĞíÄÇ¸ö·ÃÎÊÕß·ÃÎÊ
+	//å…è®¸é‚£ä¸ªè®¿é—®è€…è®¿é—®
 	public void accept(IVisitor visitor){
 		visitor.visit(this);
 	}

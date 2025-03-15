@@ -6,37 +6,37 @@ package com.company.section2;
  */
 public class Visitor implements IVisitor {
 
-	//·ÃÎÊÆÕÍ¨Ô±¹¤£¬´òÓ¡³ö±¨±í
+	//è®¿é—®æ™®é€šå‘˜å·¥ï¼Œæ‰“å°å‡ºæŠ¥è¡¨
 	public void visit(CommonEmployee commonEmployee) {
 		System.out.println(this.getCommonEmployee(commonEmployee));
 	}
 
-	//·ÃÎÊ²¿ÃÅ¾­Àí£¬´òÓ¡³ö±¨±í
+	//è®¿é—®éƒ¨é—¨ç»ç†ï¼Œæ‰“å°å‡ºæŠ¥è¡¨
 	public void visit(Manager manager) {
 		System.out.println(this.getManagerInfo(manager));
 
 	}
 	
-	//×é×°³ö»ù±¾ĞÅÏ¢
+	//ç»„è£…å‡ºåŸºæœ¬ä¿¡æ¯
 	private String getBasicInfo(Employee employee){
-		String info = "ĞÕÃû£º" + employee.getName() + "\t";
-		info = info + "ĞÔ±ğ£º" + (employee.getSex() == Employee.FEMALE?"Å®":"ÄĞ") + "\t";
-		info = info + "Ğ½Ë®£º" + employee.getSalary()  + "\t";
+		String info = "å§“åï¼š" + employee.getName() + "\t";
+		info = info + "æ€§åˆ«ï¼š" + (employee.getSex() == Employee.FEMALE?"å¥³":"ç”·") + "\t";
+		info = info + "è–ªæ°´ï¼š" + employee.getSalary()  + "\t";
 		
 		return info;
 	}
 	
-	//×é×°³ö²¿ÃÅ¾­ÀíµÄĞÅÏ¢
+	//ç»„è£…å‡ºéƒ¨é—¨ç»ç†çš„ä¿¡æ¯
 	private String getManagerInfo(Manager manager){
 		String basicInfo = this.getBasicInfo(manager);
-		String otherInfo = "Òµ¼¨£º"+manager.getPerformance() + "\t";
+		String otherInfo = "ä¸šç»©ï¼š"+manager.getPerformance() + "\t";
 		return basicInfo + otherInfo;
 	}
 	
-	//×é×°³öÆÕÍ¨Ô±¹¤ĞÅÏ¢
+	//ç»„è£…å‡ºæ™®é€šå‘˜å·¥ä¿¡æ¯
 	private String getCommonEmployee(CommonEmployee commonEmployee){
 		String basicInfo = this.getBasicInfo(commonEmployee);
-		String otherInfo = "¹¤×÷£º"+commonEmployee.getJob()+"\t";
+		String otherInfo = "å·¥ä½œï¼š"+commonEmployee.getJob()+"\t";
 		return basicInfo + otherInfo;
 	}
 }

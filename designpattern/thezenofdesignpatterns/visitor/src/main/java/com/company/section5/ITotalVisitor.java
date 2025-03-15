@@ -3,9 +3,9 @@ package com.company.section5;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¸ºÔðÍ³¼Æ±¨±íµÄ²úÉú
+ * è´Ÿè´£ç»Ÿè®¡æŠ¥è¡¨çš„äº§ç”Ÿ
  */
 public interface ITotalVisitor extends IVisitor {
-	//Í³¼ÆËùÓÐÔ±¹¤¹¤×Ê×ÜºÍ
+	//ç»Ÿè®¡æ‰€æœ‰å‘˜å·¥å·¥èµ„æ€»å’Œ
 	public void totalSalary();
 }

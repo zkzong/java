@@ -3,11 +3,11 @@ package com.company.section1;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÆÕÍ¨Ô±¹¤£¬Ò²¾ÍÊÇ×îĞ¡µÄĞ¡±ø
+ * æ™®é€šå‘˜å·¥ï¼Œä¹Ÿå°±æ˜¯æœ€å°çš„å°å…µ
  */
 public class CommonEmployee extends Employee {
 	
-	//¹¤×÷ÄÚÈİ£¬Õâ¸ö·Ç³£ÖØÒª£¬ÒÔºóµÄÖ°Òµ¹æ»®¾ÍÊÇ¿¿Õâ¸öÁË
+	//å·¥ä½œå†…å®¹ï¼Œè¿™ä¸ªéå¸¸é‡è¦ï¼Œä»¥åçš„èŒä¸šè§„åˆ’å°±æ˜¯é è¿™ä¸ªäº†
 	private String job;
 
 	public String getJob() {
@@ -19,7 +19,7 @@ public class CommonEmployee extends Employee {
 	}
 	
 	protected String getOtherInfo(){
-		return "¹¤×÷£º"+ this.job + "\t";
+		return "å·¥ä½œï¼š"+ this.job + "\t";
 	}
 	
 }

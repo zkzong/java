@@ -5,12 +5,12 @@ package com.company.section7;
  * I'm glad to share my knowledge with you all.
  */
 public abstract class AbsActor {
-	//ящт╠╤╪дэ╧╩ящр╩╦Ж╫ги╚
+	//Ф╪■Е▒≤И┐╫Х┐╫Е╓÷Ф╪■Д╦─Д╦╙Х╖▓Х┴╡
 	public void act(Role role){
-		System.out.println("ящт╠©ирт╟Гящхн╨н╫ги╚");
+		System.out.println("Ф╪■Е▒≤Е▐╞Д╩╔Ф┴╝Ф╪■Д╩╩Д╫∙Х╖▓Х┴╡");
 	}	
-	//©иртящ╧╕╥Ро╥
+	//Е▐╞Д╩╔Ф╪■Е┼÷Е╓╚Ф┬▐
 	public void act(KungFuRole role){
-		System.out.println("ящт╠╤╪©иртящ╧╕╥Р╫ги╚");
+		System.out.println("Ф╪■Е▒≤И┐╫Е▐╞Д╩╔Ф╪■Е┼÷Е╓╚Х╖▓Х┴╡");
 	}
 }

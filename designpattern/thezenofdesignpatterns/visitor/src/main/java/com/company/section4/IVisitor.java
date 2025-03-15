@@ -3,16 +3,16 @@ package com.company.section4;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ·ÃÎÊÕß£¬ÎÒÒªÈ¥·ÃÎÊÈË¼ÒµÄÊı¾İÁË
+ * è®¿é—®è€…ï¼Œæˆ‘è¦å»è®¿é—®äººå®¶çš„æ•°æ®äº†
  */
 public interface IVisitor {
 	
-	//Ê×ÏÈ¶¨ÒåÎÒ¿ÉÒÔ·ÃÎÊÆÕÍ¨Ô±¹¤
+	//é¦–å…ˆå®šä¹‰æˆ‘å¯ä»¥è®¿é—®æ™®é€šå‘˜å·¥
 	public void visit(CommonEmployee commonEmployee);
 	
-	//Æä´Î¶¨Òå£¬ÎÒ»¹¿ÉÒÔ·ÃÎÊ²¿ÃÅ¾­Àí
+	//å…¶æ¬¡å®šä¹‰ï¼Œæˆ‘è¿˜å¯ä»¥è®¿é—®éƒ¨é—¨ç»ç†
 	public void visit(Manager manager);
 	
-	//Í³¼ÆËùÓĞÔ±¹¤¹¤×Ê×ÜºÍ
+	//ç»Ÿè®¡æ‰€æœ‰å‘˜å·¥å·¥èµ„æ€»å’Œ
 	public int getTotalSalary();
 }

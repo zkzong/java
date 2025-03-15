@@ -3,11 +3,11 @@ package com.company.section1;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ¾­Àí¼¶ÈËÎï
+ * ç»ç†çº§äººç‰©
  */
 public class Manager extends Employee {
 
-	//ÕâÀàÈËÎïµÄÖ°Ôğ·Ç³£Ã÷È·£ºÒµ¼¨
+	//è¿™ç±»äººç‰©çš„èŒè´£éå¸¸æ˜ç¡®ï¼šä¸šç»©
 	private String performance;
 
 	public String getPerformance() {
@@ -19,7 +19,7 @@ public class Manager extends Employee {
 	}   
 	
 	protected String getOtherInfo(){
-		return "Òµ¼¨£º"+ this.performance + "\t";
+		return "ä¸šç»©ï¼š"+ this.performance + "\t";
 		
 	}
 }

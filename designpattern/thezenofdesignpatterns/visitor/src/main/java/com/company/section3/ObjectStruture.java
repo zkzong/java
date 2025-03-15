@@ -8,7 +8,7 @@ import java.util.Random;
  */
 public class ObjectStruture {
 
-	//¶ÔÏóÉú³ÉÆ÷£¬ÕâÀïÍ¨¹ýÒ»¸ö¹¤³§·½·¨Ä£Ê½Ä£Äâ
+	//å¯¹è±¡ç”Ÿæˆå™¨ï¼Œè¿™é‡Œé€šè¿‡ä¸€ä¸ªå·¥åŽ‚æ–¹æ³•æ¨¡å¼æ¨¡æ‹Ÿ
 	public static Element createElement(){
 		Random rand = new Random();
 		if(rand.nextInt(100) > 50){

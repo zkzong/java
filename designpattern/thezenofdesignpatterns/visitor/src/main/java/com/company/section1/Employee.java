@@ -3,21 +3,21 @@ package com.company.section1;
 /**
  * @author cbf4Life cbf4life@126.com
  * I'm glad to share my knowledge with you all.
- * ÔÚÒ»¸öµ¥Î»ÀïË­¶¼ÊÇÔ±¹¤£¬±Â¹ÜÄãÊÇ²¿ÃÅ¾­Àí»¹ÊÇĞ¡±ø
+ * åœ¨ä¸€ä¸ªå•ä½é‡Œè°éƒ½æ˜¯å‘˜å·¥ï¼Œç”­ç®¡ä½ æ˜¯éƒ¨é—¨ç»ç†è¿˜æ˜¯å°å…µ
  */
 public abstract class Employee {
-	public final static int MALE = 0;  //0´ú±íÊÇÄĞĞÔ
-	public final static int FEMALE = 1; //1´ú±íÊÇÅ®ĞÔ
-	//±Â¹ÜÊÇË­£¬¶¼ÓĞ¹¤×Ê
+	public final static int MALE = 0;  //0ä»£è¡¨æ˜¯ç”·æ€§
+	public final static int FEMALE = 1; //1ä»£è¡¨æ˜¯å¥³æ€§
+	//ç”­ç®¡æ˜¯è°ï¼Œéƒ½æœ‰å·¥èµ„
 	private String name;
 	
-	//Ö»ÒªÊÇÔ±¹¤ÄÇ¾ÍÓĞĞ½Ë®
+	//åªè¦æ˜¯å‘˜å·¥é‚£å°±æœ‰è–ªæ°´
 	private int salary;
 	
-	//ĞÔ±ğºÜÖØÒª
+	//æ€§åˆ«å¾ˆé‡è¦
 	private int sex;
 
-	//ÒÔÏÂÊÇ¼òµ¥µÄgetter/setter£¬²»¶àËµ
+	//ä»¥ä¸‹æ˜¯ç®€å•çš„getter/setterï¼Œä¸å¤šè¯´
 	public String getName() {
 		return name;
 	}
@@ -42,18 +42,18 @@ public abstract class Employee {
 		this.sex = sex;
 	}
 	
-	//´òÓ¡³öÔ±¹¤µÄĞÅÏ¢
+	//æ‰“å°å‡ºå‘˜å·¥çš„ä¿¡æ¯
 	public final void  report(){
-		String info = "ĞÕÃû£º" + this.name + "\t";
-		info = info + "ĞÔ±ğ£º" + (this.sex == FEMALE?"Å®":"ÄĞ") + "\t";
-		info = info + "Ğ½Ë®£º" + this.salary  + "\t";
+		String info = "å§“åï¼š" + this.name + "\t";
+		info = info + "æ€§åˆ«ï¼š" + (this.sex == FEMALE?"å¥³":"ç”·") + "\t";
+		info = info + "è–ªæ°´ï¼š" + this.salary  + "\t";
 		
-		//»ñµÃÔ±¹¤µÄÆäËûĞÅÏ¢
+		//è·å¾—å‘˜å·¥çš„å…¶ä»–ä¿¡æ¯
 		info = info + this.getOtherInfo();
 		System.out.println(info);
 	}
 	
-	//Æ´×°Ô±¹¤µÄÆäËûĞÅÏ¢
+	//æ‹¼è£…å‘˜å·¥çš„å…¶ä»–ä¿¡æ¯
 	protected abstract String getOtherInfo();
 	
 }
