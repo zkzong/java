@@ -19,7 +19,7 @@
     <modules>
         <module>thinkinginjava</module>
         <module>test-java</module>
-        <module>collection</module>
+<!--        <module>collection</module>-->
         <module>jvm</module>
         <module>interview</module>
         <module>thread</module>
