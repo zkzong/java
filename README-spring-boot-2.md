@@ -40,4 +40,10 @@ https://mp.weixin.qq.com/s/_y6PC4VFa1wlGlprtuRs1A
 
 使用注解+切面方式打印日志
 
+## seata-demo
+
+nacos 1.4.1
+
+seata 1.4.2
+
 
