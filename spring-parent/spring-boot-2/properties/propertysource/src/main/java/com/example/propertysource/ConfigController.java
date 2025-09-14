@@ -10,7 +10,7 @@ public class ConfigController {
     @Autowired
     private Configs configs;
 
-    @GetMapping("get")
+    @GetMapping("/get")
     public String get() {
         String username = configs.getUsername();
         String password = configs.getPassword();
