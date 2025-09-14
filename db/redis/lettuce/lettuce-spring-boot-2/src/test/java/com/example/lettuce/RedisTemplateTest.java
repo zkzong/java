@@ -1,5 +1,6 @@
 package com.example.lettuce;
 
+import com.example.lettuce.config.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class LettuceApplicationTest {
+public class RedisTemplateTest {
 
     @Autowired
     private RedisTemplate redisTemplate;
@@ -34,6 +35,23 @@ public class LettuceApplicationTest {
         System.out.println(increment);
 
         lettuceConnectionFactory.getClientConfiguration();
+    }
+
+    @Test
+    public void setString() {
+        redisTemplate.opsForValue().set("name", "张三");
+        Object name = redisTemplate.opsForValue().get("name");
+        System.out.println(name);
+    }
+
+    @Test
+    public void setObject() {
+        User user = new User();
+        user.setName("张三");
+        user.setAge(30);
+        redisTemplate.opsForValue().set("user", user);
+        User userResult = (User) redisTemplate.opsForValue().get("user");
+        System.out.println(userResult);
     }
 
     @Test
