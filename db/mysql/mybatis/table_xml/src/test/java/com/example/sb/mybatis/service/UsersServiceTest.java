@@ -41,7 +41,7 @@ public class UsersServiceTest {
     public void insertBatch() {
         List<Users> list = new ArrayList<>();
         Users u1 = new Users();
-        u1.setUserName("zong");
+        u1.setUserName("Jack");
         u1.setAge(10);
         list.add(u1);
         Users u2 = new Users();
@@ -69,14 +69,14 @@ public class UsersServiceTest {
 
     @Test
     public void findByIndex() {
-        Users user = usersService.findByIndex("zong", 30);
+        Users user = usersService.findByIndex("Jack", 30);
         System.out.println(user);
     }
 
     @Test
     public void findByMap() {
         Map map = new HashMap();
-        map.put("userName", "zong");
+        map.put("userName", "Jack");
         map.put("age", 30);
         Users user = usersService.findByMap(map);
         System.out.println(user);
@@ -84,7 +84,7 @@ public class UsersServiceTest {
 
     @Test
     public void findByParam() {
-        Users user = usersService.findByParam("zong", 30);
+        Users user = usersService.findByParam("Jack", 30);
         System.out.println(user);
     }
 

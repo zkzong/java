@@ -6,4 +6,4 @@ CREATE TABLE t_users(
   sex tinyint default 1 comment '性别：1-男，2-女'
 );
 
-insert into t_users(user_name, sex) VALUES ('zong', 1);
+insert into t_users(user_name, sex) VALUES ('Jack', 1);

@@ -112,7 +112,7 @@ public class WebController {
      */
     @PostMapping("/jsonfield")
     public String jsonField(@RequestBody JsonFieldClass jsonFieldClass) {
-        //JsonFieldClass jsonFieldClass = JsonFieldClass.builder().name("zong")
+        //JsonFieldClass jsonFieldClass = JsonFieldClass.builder().name("Jack")
         //        .age(10).sex(1).build();
         //使用JSON.toJSONString时@JSONField起作用
         System.out.println(JSON.toJSONString(jsonFieldClass));

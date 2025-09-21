@@ -6,4 +6,4 @@ CREATE TABLE users(
   age int
 );
 
-insert into users(name, age) VALUES ('zong', 30);
+insert into users(name, age) VALUES ('Jack', 30);
