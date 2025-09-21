@@ -71,6 +71,9 @@ public class BeanUtilTest {
         System.out.println(BeanUtil.isEmpty(man));
     }
 
+    /**
+     * beanToMap
+     */
     @Test
     public void beanToMap() {
         Man man = new Man();
@@ -80,14 +83,22 @@ public class BeanUtilTest {
         System.out.println(map);
     }
 
+    /**
+     * fillBeanWithMap
+     */
     @Test
-    public void copyToList() {
-        List<More> moreList = new ArrayList<>();
-        More more = new More(1, "zong", 1);
-        more.setSex("1");
-        moreList.add(more);
-        List<Less> lesses = BeanUtil.copyToList(moreList, Less.class);
-        System.out.println(lesses);
+    public void mapToBean() {
+        Map<String, Object> map = new HashMap<>();
+        map.put("userName", "Jack");
+        map.put("age", 10);
+        map.put("sex", 1);
+        Man man = new Man();
+        BeanUtil.fillBeanWithMap(map, man, false);
+        System.out.println(man);
+        BeanUtil.fillBeanWithMap(map, man,
+                CopyOptions.create().setIgnoreNullValue(true)
+                        .setFieldValueEditor((fieldName, value) -> value.toString()));
+        System.out.println(man);
     }
 
 }
