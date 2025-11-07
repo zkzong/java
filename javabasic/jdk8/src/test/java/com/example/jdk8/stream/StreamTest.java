@@ -19,6 +19,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Function;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static java.util.Arrays.sort;
 
@@ -119,6 +120,7 @@ public class StreamTest {
     @Test
     public void flatMap() {
         List<ParentSub> parentSubs = intData();
+        // 需要打开intData的注释，否则p.getSubList()报错
         List<ParentSub> collect = parentSubs.stream().filter(p -> p.getParentId() == 0).flatMap(p -> p.getSubList().stream()).collect(Collectors.toList());
         System.out.println("扁平化后：" + collect);
     }
@@ -140,6 +142,8 @@ public class StreamTest {
         u12.setName("ab");
         u12.setAge(8);
         u12.setParentId(1);
+        //List<ParentSub> ps1 = Arrays.asList(u11, u12);
+        //u1.setSubList(ps1);
 
 
         ParentSub u2 = new ParentSub();
@@ -152,6 +156,8 @@ public class StreamTest {
         u21.setName("bb");
         u21.setAge(18);
         u21.setParentId(4);
+        //List<ParentSub> ps2 = Arrays.asList(u21);
+        //u2.setSubList(ps2);
 
         return Arrays.asList(u1, u11, u12, u2, u21);
 
@@ -273,6 +279,25 @@ public class StreamTest {
         // 倒序
         collect3 = users.stream().collect(Collectors.toMap(User::getName, Function.identity(), (o1, o2) -> o2, ConcurrentHashMap::new));
         System.out.println(collect3);
+    }
+
+    /**
+     * 类的多个字段合并成集合
+     */
+    @Test
+    public void streamof() {
+        // Stream.of()
+        List<? extends Number> collect = users.stream()
+                .flatMap(user -> Stream.of(user.getAge(), user.getSalary()))
+                .collect(Collectors.toList());
+        System.out.println(collect);
+
+        // Arrays.stream()
+        List<? extends Number> collect1 = users.stream()
+                .flatMap(user -> Arrays.asList(user.getAge(), user.getSalary()).stream())
+                .collect(Collectors.toList());
+        System.out.println(collect1);
+
     }
 
 }
