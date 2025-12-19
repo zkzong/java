@@ -308,7 +308,7 @@ public class StreamTest {
 
     }
 
-    /***
+    /**
      * 使用predicate过滤
      */
     @Test
