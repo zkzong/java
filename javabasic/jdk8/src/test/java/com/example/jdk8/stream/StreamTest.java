@@ -17,6 +17,7 @@ import java.util.Random;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Function;
+import java.util.function.Predicate;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -266,6 +267,12 @@ public class StreamTest {
     }
 
     @Test
+    public void toMap() {
+        Map<BigDecimal, User> map = users.stream().collect(Collectors.toMap(User::getSalary, t -> t));
+        System.out.println(map);
+    }
+
+    @Test
     public void identity() {
         // name相同时报错
         Map<String, User> collect1 = users.stream().collect(Collectors.toMap(user -> user.getName(), t -> t));
@@ -274,7 +281,8 @@ public class StreamTest {
         System.out.println(collect2);
         // 不报错
         // 正序
-        Map<String, User> collect3 = users.stream().collect(Collectors.toMap(User::getName, Function.identity(), (o1, o2) -> o1, ConcurrentHashMap::new));
+        Map<String, User> collect3;
+        collect3 = users.stream().collect(Collectors.toMap(User::getName, Function.identity(), (o1, o2) -> o1, ConcurrentHashMap::new));
         System.out.println(collect3);
         // 倒序
         collect3 = users.stream().collect(Collectors.toMap(User::getName, Function.identity(), (o1, o2) -> o2, ConcurrentHashMap::new));
@@ -298,6 +306,16 @@ public class StreamTest {
                 .collect(Collectors.toList());
         System.out.println(collect1);
 
+    }
+
+    /***
+     * 使用predicate过滤
+     */
+    @Test
+    public void predicate() {
+        Predicate<User> predicate = user -> user.getAge() == 10;
+        List<User> collect = users.stream().filter(predicate).collect(Collectors.toList());
+        System.out.println(collect);
     }
 
 }
