@@ -64,6 +64,15 @@ public class StreamTest2 {
     }
 
     @Test
+    public void flatMap1() {
+        // 对象的不同字段组成
+        List<Author> authors = getAuthors();
+        authors.stream()
+                .flatMap(author -> Stream.of(author.getName(), author.getIntro()))
+                .forEach(s -> System.out.println(s));
+    }
+
+    @Test
     public void toMap() {
         // 获取一个Map集合，map的key为作者名，value为List<Book>
         List<Author> authors = getAuthors();
