@@ -20,6 +20,7 @@ import lombok.Data;
 import org.junit.Test;
 
 import java.math.RoundingMode;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.LinkedHashSet;
@@ -106,6 +107,24 @@ public class CollectTest {
         System.out.println(list.size());
         list = Lists.newArrayListWithExpectedSize(10);
         System.out.println(list.size());
+    }
+
+
+    @Test
+    public void partition() {
+        // 创建一个示例 List
+        List<Integer> originalList = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+        // 指定每段的大小
+        int segmentSize = 3;
+
+        // 使用 Guava 进行分段
+        List<List<Integer>> segmentedLists = Lists.partition(originalList, segmentSize);
+
+        // 打印结果
+        for (List<Integer> segment : segmentedLists) {
+            System.out.println(segment);
+        }
     }
 
     // ==============================Map==============================
