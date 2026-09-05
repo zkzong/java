@@ -2,6 +2,7 @@ package com.example.json;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.TypeReference;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.example.json.entity.ListInfo;
 import com.example.json.entity.User;
@@ -72,6 +73,31 @@ public class FastJsonTest {
         String s = "{\"list\":[],\"name\":\"java\"}";
         ListInfo info = JSON.parseObject(s, ListInfo.class);
         System.out.println(info.getList().size());
+    }
+
+    @Test
+    public void alternateNames() {
+        String s = "{\n" +
+                "    \"code\": \"200\",\n" +
+                "    \"msg\": \"success\",\n" +
+                "    \"Data\": {\n" +
+                "        \"name\": \"z\"\n" +
+                "    }\n" +
+                "}";
+        Resp<User> resp = JSON.parseObject(s, new TypeReference<Resp<User>>() {
+        });
+        System.out.println(resp);
+
+        s = "{\n" +
+                "    \"code\": \"200\",\n" +
+                "    \"msg\": \"success\",\n" +
+                "    \"Datas\": {\n" +
+                "        \"name\": \"z\"\n" +
+                "    }\n" +
+                "}";
+        resp = JSON.parseObject(s, new TypeReference<Resp<User>>() {
+        });
+        System.out.println(resp);
     }
 
 }
