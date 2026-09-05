@@ -21,8 +21,10 @@ public class DateUtilTest {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 
         // between
-        final long between = DateUtil.between(sdf.parse("2021-09-25 20:00:00"), new Date(), DateUnit.DAY);
-        System.out.println("相隔天数：" + between);
+        final long day = DateUtil.between(sdf.parse("2021-09-25 20:00:00"), new Date(), DateUnit.DAY);
+        System.out.println("相隔天数：" + day);
+        final long minute = DateUtil.between(sdf.parse("2021-09-25 20:00:00"), new Date(), DateUnit.MINUTE);
+        System.out.println("相隔分钟数：" + minute);
 
         // compare
         final long compare = DateUtil.compare(sdf.parse("2021-09-25 20:00:00"), new Date());
